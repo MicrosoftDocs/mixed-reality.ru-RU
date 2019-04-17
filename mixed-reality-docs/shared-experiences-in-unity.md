@@ -1,0 +1,37 @@
+---
+title: Публикацию в Unity
+description: Совместное использование одной голограммы между несколькими пользователями в приложении Unity.
+author: thetuvix
+ms.author: alexturn
+ms.date: 02/24/2019
+ms.topic: article
+keywords: Совместное использование, привязки, WorldAnchor, MR, совместное использование 250, WorldAnchorTransferBatch, SpatialPerception, Azure, Azure пространственных привязки, ASA
+ms.openlocfilehash: fe755c15d942660b1e16b2335db28d3d7ce72816
+ms.sourcegitcommit: f7fc9afdf4632dd9e59bd5493e974e4fec412fc4
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/13/2019
+ms.locfileid: "59605073"
+---
+# <a name="shared-experiences-in-unity"></a><span data-ttu-id="39daa-104">Публикацию в Unity</span><span class="sxs-lookup"><span data-stu-id="39daa-104">Shared experiences in Unity</span></span>
+
+<span data-ttu-id="39daa-105">Общий интерфейс, где несколько пользователей, каждый из которых собственные HoloLens, устройстве iOS или Android, вместе просматривать и взаимодействовать с тем же голограмма, который расположен в фиксированной точки в пространстве.</span><span class="sxs-lookup"><span data-stu-id="39daa-105">A shared experience is one where multiple users, each with their own HoloLens, iOS or Android device, collectively view and interact with the same hologram which is positioned at a fixed point in space.</span></span> <span data-ttu-id="39daa-106">Это достигается через предоставление совместного доступа пространственных привязки.</span><span class="sxs-lookup"><span data-stu-id="39daa-106">This is accomplished through spatial anchor sharing.</span></span>
+
+## <a name="azure-spatial-anchors"></a><span data-ttu-id="39daa-107">Пространственная привязка Azure</span><span class="sxs-lookup"><span data-stu-id="39daa-107">Azure Spatial Anchors</span></span>
+
+<span data-ttu-id="39daa-108">Можно использовать <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">привязки пространственных Azure</a> для создания устойчивых облачных резервных пространственных привязки, что приложение можно найти в нескольких HoloLens, iOS и устройств Android.</span><span class="sxs-lookup"><span data-stu-id="39daa-108">You can use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> to create durable cloud-backed spatial anchors, which your app can then locate across multiple HoloLens, iOS and Android devices.</span></span>  <span data-ttu-id="39daa-109">Совместное использование общих пространственных привязки на нескольких устройствах, каждый пользователь может видеть содержимое отображается относительно эту привязку, в том же физическом расположении.</span><span class="sxs-lookup"><span data-stu-id="39daa-109">By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location.</span></span>  <span data-ttu-id="39daa-110">Это позволяет выполнять публикацию в режиме реального времени.</span><span class="sxs-lookup"><span data-stu-id="39daa-110">This allows for real-time shared experiences.</span></span>
+
+<span data-ttu-id="39daa-111">Можно также использовать <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">привязки пространственных Azure</a> для асинхронной голограмма сохраняемости на устройствах Android, iOS и HoloLens.</span><span class="sxs-lookup"><span data-stu-id="39daa-111">You can also use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> for asynchronous hologram persistence across HoloLens, iOS and Android devices.</span></span>  <span data-ttu-id="39daa-112">По электронной почте на привязку пространственных надежные облачные, несколько устройств можно наблюдать за же материализованных голограмма со временем, даже если эти устройства не существуют друг с другом в то же время.</span><span class="sxs-lookup"><span data-stu-id="39daa-112">By sharing a durable cloud spatial anchor, multiple devices can observe the same persisted hologram over time, even if those devices are not present together at the same time.</span></span>
+
+<span data-ttu-id="39daa-113">Чтобы приступить к работе, создания общих возможностей в Unity, изучите 5-минутные <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">краткие руководства по Azure пространственных привязки Unity</a>.</span><span class="sxs-lookup"><span data-stu-id="39daa-113">To get started building shared experiences in Unity, try out the 5-minute <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">Azure Spatial Anchors Unity quickstarts</a>.</span></span>
+
+<span data-ttu-id="39daa-114">После того, как приступить к работе с пространственными привязки Azure, вы можете затем <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">создать и найдите привязки в Unity</a>.</span><span class="sxs-lookup"><span data-stu-id="39daa-114">Once you're up and running with Azure Spatial Anchors, you can then <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">create and locate anchors in Unity</a>.</span></span>
+
+## <a name="local-anchor-transfers"></a><span data-ttu-id="39daa-115">Передача локального привязки</span><span class="sxs-lookup"><span data-stu-id="39daa-115">Local anchor transfers</span></span>
+
+<span data-ttu-id="39daa-116">В ситуациях, когда невозможно использовать Azure пространственных привязки [передачи локального привязки](local-anchor-transfers-in-unity.md) включить одно устройство HoloLens Экспорт привязки импортируемой второе устройство HoloLens.</span><span class="sxs-lookup"><span data-stu-id="39daa-116">In situations where you cannot use Azure Spatial Anchors, [local anchor transfers](local-anchor-transfers-in-unity.md) enable one HoloLens device to export an anchor to be imported by a second HoloLens device.</span></span>  <span data-ttu-id="39daa-117">Обратите внимание, что такой подход обеспечивает менее надежны, отзыв привязки, чем пространственных привязки Azure устройств iOS и Android, этот подход не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="39daa-117">Note that this approach provides less robust anchor recall than Azure Spatial Anchors, and iOS and Android devices are not supported by this approach.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="39daa-118">См. также</span><span class="sxs-lookup"><span data-stu-id="39daa-118">See also</span></span>
+* [<span data-ttu-id="39daa-119">Общие возможности в смешанной реальности</span><span class="sxs-lookup"><span data-stu-id="39daa-119">Shared experiences in mixed reality</span></span>](shared-experiences-in-mixed-reality.md)
+* <span data-ttu-id="39daa-120"><a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure пространственных привязки</a></span><span class="sxs-lookup"><span data-stu-id="39daa-120"><a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a></span></span>
+* <span data-ttu-id="39daa-121"><a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure пространственных привязки пакета SDK для Unity</a></span><span class="sxs-lookup"><span data-stu-id="39daa-121"><a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a></span></span>
