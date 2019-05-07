@@ -7,12 +7,12 @@ ms.author: vanesa
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
-ms.openlocfilehash: 60cd3bbaa5b5e6d76a78b9c858d3b08141995b94
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: e36c903f93cc13d941a93331164cff6b4db4980e
+ms.sourcegitcommit: ff7eb8b92170eb8107935de4bd96b236087395ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59589000"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "65030576"
 ---
 # <a name="mixed-reality-documentation"></a>Документация по смешанной реальности
 
@@ -146,34 +146,34 @@ ms.locfileid: "59589000"
 
 [![HoloLens 2](images/hololens2.jpg)](https://www.microsoft.com/hololens/hardware)
 
-[HoloLens 2](https://www.microsoft.com/hololens/hardware) предлагает наиболее комфортную и иммерсивную среду смешанной реальности из всех существующих на сегодняшний день. Это стало возможным благодаря ведущим в отрасли решениям, ценность которых подтвердилась практически сразу же после выпуска, а также надежности, безопасности и масштабируемости облачных служб и служб искусственного интеллекта от Майкрософт.
+[HoloLens 2](https://www.microsoft.com/hololens/hardware) предлагает наиболее комфортную и иммерсивную среду смешанной реальности из всех существующих на сегодняшний день. Это стало возможным благодаря ведущим в отрасли решениям, ценность которых подтвердилась практически сразу же после выпуска, а также надежности, безопасности и масштабируемости облачных служб и служб искусственного интеллекта от Майкрософт. [HoloLens 2 Development Edition](https://www.microsoft.com/en-us/hololens/developers) поможет вам быстро начать работу с планами смешанной реальности благодаря предложению, в котором сочетаются HoloLens 2, бесплатные пробные версии программного обеспечения Unity и средства на счете Azure для работы с облачными службами.
 
 <h2>Новости и замечания</h2>
 
-<h3>Февраль 2019 г.</h3>
+<h3>Апрель 2019 г.</h3>
 
-В течение следующих нескольких месяцев мы с радостью расскажем вам еще много интересного о смешанной реальности. Мы ждем ваших отзывов и предлагаем [присоединиться к обсуждению](https://holodevelopersslack.azurewebsites.net/) тем, которые вас интересуют, с людьми, с которыми вы хотели бы пообщаться, а также получить руководства и рекомендации, которые могут потребоваться вам для работы. Вы также можете связаться с нами в [Twitter](https://twitter.com/MxdRealityDev) или [присоединиться к нашей программе для разработчиков](https://aka.ms/iwantmr), чтобы напрямую получать свежую информацию о новых документах, средствах, мероприятиях и так далее. 
+Как и обещали, мы с радостью расскажем вам еще много интересного о смешанной реальности. Мы ждем ваших отзывов и предлагаем [присоединиться к обсуждению](https://holodevelopersslack.azurewebsites.net/) тем, которые вас интересуют, с людьми, с которыми вы хотели бы пообщаться, а также получить руководства и рекомендации, которые могут потребоваться вам для работы. Вы также можете связаться с нами в [Twitter](https://twitter.com/MxdRealityDev) или [присоединиться к нашей программе для разработчиков](https://aka.ms/iwantmr), чтобы напрямую получать свежую информацию о новых документах, средствах, мероприятиях и так далее. Следите за новостями!
 
 <table>
 <tr>
-<th style="width: 400px; text-align:left;">Содержимое</th><th style="width: 125px; text-align:left;">Дата выпуска</th>
+<th style="width: 400px; text-align:left;">Содержимое</th><th style="width: 125px; text-align:left;">Дата выпуска</th><th style="width: 125px; text-align:left;">УЖЕ ДОСТУПНО</th>
 </tr> 
 <tr>
 <td><b>Руководства по переносу приложений</b> <br>1. Из набора средств HoloToolKit (HTK)/Mixed Reality Toolkit Mixed Reality (MRTK) в MRTK версии 2
 <br>2. Из HoloLens (1-го поколения) в HoloLens 2 (из x86 в ARM, рекомендации по взаимодействию и разработке)
-</td></td><td>Март — май 2019 г.</td>
+</td></td><td>Март — май 2019 г.</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-porting-guide>Подготовка существующего приложения для использования с HoloLens 2</a><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html>Переход с HoloToolKit на API-интерфейсы MRTK </a></td>
 </tr>
 <tr>
-<td>Выпускаемые ежемесячно модули по разработке с открытым кодом (руководства и примеры приложений)</td><td>Март — июнь 2019 г.</td>
+<td>Выпускаемые ежемесячно модули по разработке с открытым кодом (руководства и примеры приложений)</td><td>Март — июнь 2019 г.</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1>Основной модуль обучения работе со смешанной реальностью</a></td>
 </tr>
 <tr>
-<td>Предварительная версия новых возможностей в MRTK для HoloLens 2</td><td>Апрель 2019 г.</td>
+<td>Предварительная версия новых возможностей в MRTK для HoloLens 2</td><td>Апрель 2019 г.</td><td> <ul><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html>Документация по MRTK</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-getting-started>Приступая к работе с MRTK версии 2</a></td>
 </tr>
 <tr>
-<td>Руководство по проектированию и разработке для HoloLens 2</td><td>Апрель 2019 г.</td>
+<td>Руководство по проектированию и разработке для HoloLens 2</td><td>Апрель 2019 г.</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools>Установка средств</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-hololens-emulator>Эмулятор HoloLens 2</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/interaction-fundamentals>Руководство по проектированию инстинктивного взаимодействия</a>
 </tr>
 <tr>
-<td>Дополнительные сведения об Unreal</td><td>Май 2019 г.</td>
+  <td>Дополнительные сведения об Unreal</td><td>Май 2019 г.</td><td></td>
 </tr>
 </table>
 

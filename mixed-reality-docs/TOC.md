@@ -80,21 +80,28 @@
 ## Приступая к проектированию
 ### [Что такое смешанная реальность?](mixed-reality.md)
 ### [Что такое голограмма?](hologram.md)
+### [Комфорт](Comfort.md)
+### [Голографический кадр](Holographic-frame.md)
+### [Проектирование пространственного сопоставления](Spatial-mapping-design.md)
+### [Проектирование пространственного звука](Spatial-sound-design.md)
 ### [Мой первый год в группе проектирования](case-study-my-first-year-on-the-hololens-design-team.md)
 ### [Расширение процесса проектирования смешанной реальности](case-study-expanding-the-design-process-for-mixed-reality.md)
 ### [Цель — персонализация вычислений](case-study-the-pursuit-of-more-personal-computing.md)
 ### [Процесс AfterNow: выработка концепции, создание прототипов, разработка](case-study-afternows-process-envisioning,-prototyping,-building.md)
-## Проектирование взаимодействия
-### [Основы взаимодействия](Interaction-fundamentals.md)
-### [Комфорт](Comfort.md)
-### [Нацеливание взглядом](Gaze-targeting.md)
-### [Жесты](Gestures.md)
-### [Проектирование голосового взаимодействия](Voice-design.md)
-### [Что такое голограмма?](Hologram.md)
-### [Голографический кадр](Holographic-frame.md)
-### [Проектирование пространственного сопоставления](Spatial-mapping-design.md)
-### [Проектирование пространственного звука](Spatial-sound-design.md)
-### [Контроллеры движения](Motion-controllers.md)
+## Система и средства для проектирования смешанной реальности
+### [Инстинктивное взаимодействие](Interaction-fundamentals.md)
+#### [Руки и контроллеры движения](hands-and-tools.md)
+##### [Непосредственное манипулирование](direct-manipulation.md)
+##### [Наведение и фиксация](point-and-commit.md)
+##### [Контроллеры движения](Motion-controllers.md)
+#### [Режимы без использования рук](hands-free.md)
+##### [Взгляд и остановка](Gaze-and-dwell.md)
+##### [Взгляд и голос](Voice-design.md)
+#### [Направление головы и фиксация](gaze-and-commit.md)
+### Дополнительные виды взаимодействия
+#### [Отслеживание глаз](eye-tracking.md)
+#### [Нацеливание взглядом](Gaze-targeting.md)
+#### [Жесты](Gestures.md)
 ## Стиль
 ### [Цвет, свет и материалы](color,-light-and-materials.md)
 ### [Проектирование пространственного звука](spatial-sound-design.md)
@@ -130,7 +137,8 @@
 ## Unity
 ### [Обзор разработки в Unity](unity-development-overview.md)
 ### Начало работы
-#### [Набор средств для смешанной реальности](mrtk-getting-started.md)
+#### [Ускорение разработки с помощью MRTK (набора средств для смешанной реальности) версии 2](mrtk-getting-started.md)
+#### [Настройка проекта Unity для Windows Mixed Reality](Configure-Unity-Project.md)
 #### [Рекомендуемые параметры для Unity](recommended-settings-for-unity.md)
 #### [Режим воспроизведения в Unity](unity-play-mode.md)
 #### [Экспорт и разработка решения Visual Studio для Unity](exporting-and-building-a-unity-visual-studio-solution.md)
@@ -141,6 +149,7 @@
 #### [Сохраняемость в Unity](persistence-in-unity.md)
 #### [Взгляд в Unity](gaze-in-unity.md)
 #### [Жесты и контроллеры движения в Unity](gestures-and-motion-controllers-in-unity.md)
+#### [Отслеживание рук и глаз в Unity](hand-eye-in-unit.md)
 #### [Голосовой ввод в Unity](voice-input-in-unity.md)
 #### [Пространственное сопоставление в Unity](spatial-mapping-in-unity.md)
 #### [Пространственный звук в Unity](spatial-sound-in-unity.md)
@@ -153,6 +162,7 @@
 ### Более сложные темы
 #### [Использование пространства имен Windows с приложениями Unity для HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 #### [Использование Vuforia с Unity](vuforia-development-overview.md)
+### Устаревшие документы (Unity 2017.4/HTK/MRTK версии 1)
 ## Unreal
 ### Unreal для HoloLens 2 — ожидается в ближайшее время!
 ## DirectX
@@ -176,9 +186,18 @@
 #### [Добавление голографического удаленного взаимодействия](add-holographic-remoting.md)
 ## WebVR
 ### [Использование WebVR в Edge с Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
-## [Руководства и примеры приложений](academy.md)
+## [Руководства и примеры приложений](tutorials.md)
 ### Unity
-#### Примеры приложений с открытым кодом
+#### Учебные модули для смешанной реальности
+##### HoloLens 2
+###### [Основной модуль — общие сведения и цели](mrlearning-base.md)
+####### [Инициализация проекта и первое приложение](mrlearning-base-ch1.md)
+####### [Настройка пользовательского интерфейса, средства отслеживания рук и набора средств для смешанной реальности](mrlearning-base-ch2.md)
+####### [Динамическое размещение содержимого и решатели](mrlearning-base-ch3.md)
+####### [Взаимодействие трехмерных объектов](mrlearning-base-ch4.md)
+####### [Расширенный ввод](mrlearning-base-ch5.md)
+####### [Демонстрационное приложение](mrlearning-base-ch6.md)
+#### Примеры приложений с открытым кодом для HoloLens (1-го поколения)
 ##### [Периодическая таблица элементов](periodic-table-of-the-elements.md)
 ##### [Лунный модуль](lunar-module.md)
 ##### [Исследование галактики](galaxy-explorer.md)
@@ -266,8 +285,8 @@
 
 # Программы и мероприятия
 ## [Mixed Reality Dev Days](mr-dev-days.md)
+### [Семинары на Mixed Reality Dev Days](mr-dev-days-sessions.md)
 ### [Вопросы и ответы по Mixed Reality Dev Days](mr-dev-days-faq.md)
-## [The Realities Show](realities-show.md)
 ## [Календарь мероприятий Reactor Academy в Сан-Франциско](sf-academy-events.md)
 ## [CVPR 2018: семинар по режиму исследования в HoloLens](cvpr-2018.md)
 ## [ECCV 2018: HoloLens как инструмент для исследования компьютерного зрения](eccv-2018.md)
