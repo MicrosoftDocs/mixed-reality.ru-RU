@@ -7,12 +7,12 @@ ms.author: grbury
 ms.date: 02/12/2019
 ms.topic: article
 keywords: Смешанной реальности, разработки, разработки, HoloLens, unity, directx
-ms.openlocfilehash: e48a1cbfbe084de9382b9fa1104b2d5fc0f68fcc
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: b4fa41171fff1f1fdc10359c93f4d1e7e4a84867
+ms.sourcegitcommit: aa88f6b42aa8d83e43104b78964afb506a368fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59597499"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "64993594"
 ---
 # <a name="development-launchpad"></a>Панель запуска разработки
 
@@ -38,7 +38,7 @@ ms.locfileid: "59597499"
                             <a href="install-the-tools.md">Установка средств</a>
                         </p>
                         <p>
-                            <a href="holograms-100.md">Учебники и примеры приложений</a>
+                            <a href="mrlearning-base-ch1.md">Г-н обучения: HoloLens 2 и MRTK v2</a>
                         </p>
                     </div>
                 </div>
@@ -132,10 +132,10 @@ Unreal — ожидается в ближайшее время!
                     <div class="cardText">
                         <h3>Руководства по портированию приложений</h3>
                         <p>
-                            <a href="mrtk-porting-guide.md">Обновление до последней Mixed<br>Набор средств реальности (MRTK)</a>
+                            <a href="mrtk-porting-guide.md">Обновление приложений для HoloLens 2<br>из HoloLens (1-го поколения)</a>
                         </p>
                         <p>
-HoloLens (1-го поколения) до HoloLens 2<br>- Скоро!
+                            <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html">Набор средств смешанной реальности (MRTK)<br>Руководство по переносу API</a>
                         </p>
                         <p>
                             <a href="porting-guides.md">Гарнитура иммерсивных приложений</a>
@@ -208,7 +208,7 @@ HoloLens (1-го поколения) до HoloLens 2<br>- Скоро!
 </tr><tr>
 <td> <a href="coordinate-systems.md">Мировые координаты</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td> <a href="spatial-sound.md">Пространственные звука</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td> <a href="spatial-sound.md">Пространственный звук</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td> <a href="spatial-mapping.md">Пространственное сопоставление</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td></td>
 </tr>
@@ -235,5 +235,5 @@ HoloLens (1-го поколения) до HoloLens 2<br>- Скоро!
 * [Портал устройств Windows](using-the-windows-device-portal.md)
 * [Эмулятор HoloLens](using-the-hololens-emulator.md)
 * [Симулятор Windows Mixed Reality](using-the-windows-mixed-reality-simulator.md)
-* [Критерии контроля качества приложения](app-quality-criteria.md)
+* [Критерии качества приложения](app-quality-criteria.md)
 

@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: Начало работы, основы, HoloLens, HoloLens 2, иммерсивных гарнитура, unity, visual studio
-ms.openlocfilehash: 1d23e458477cc23252ccd4c44f67c400aa356965
-ms.sourcegitcommit: f7fc9afdf4632dd9e59bd5493e974e4fec412fc4
+ms.openlocfilehash: 23bd173f89a468b4403d44236534bfe811a968dd
+ms.sourcegitcommit: 90ce9415889e7121dd2fd76a893dc3734672881b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "59605113"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64873969"
 ---
 # <a name="development-overview"></a>Общие сведения о разработке
 
@@ -47,7 +47,7 @@ ms.locfileid: "59605113"
 </tr><tr>
 <td> <a href="coordinate-systems.md">Мировые координаты</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td> <a href="spatial-sound.md">Пространственные звука</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td> <a href="spatial-sound.md">Пространственный звук</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td> <a href="spatial-mapping.md">Пространственное сопоставление</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td></td>
 </tr>
@@ -75,13 +75,13 @@ ms.locfileid: "59605113"
 * [Портал устройств Windows](using-the-windows-device-portal.md)
 * [Эмулятор HoloLens](using-the-hololens-emulator.md) (эмулятор HoloLens 2 ожидается в ближайшее время)
 * [Симулятор Windows Mixed Reality](using-the-windows-mixed-reality-simulator.md)
-* [Критерии контроля качества приложения](app-quality-criteria.md)
+* [Критерии качества приложения](app-quality-criteria.md)
 
 ## <a name="see-also"></a>См. также
 * [Установка средств](install-the-tools.md)
 * <a href="https://azure.microsoft.com/topic/mixed-reality" target="_blank">Смешанная реальность служб</a>
-* [Учебники смешанной реальности](academy.md)
+* [Учебники смешанной реальности](tutorials.md)
 * [Проекты с открытым кодом](open-source-projects.md)
-* [Общие сведения об MR 100: Приступая к работе с Unity](holograms-100.md)
+* [100. Основы смешанной реальности: начало работы с Unity](holograms-100.md)
 * [Windows Mixed Reality минимальное ПК совместимости рекомендаций по оборудованию](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Отправка приложения в Windows Store](submitting-an-app-to-the-microsoft-store.md)

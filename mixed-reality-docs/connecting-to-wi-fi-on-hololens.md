@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 09/27/2018
 ms.topic: article
 keywords: HoloLens, Wi-Fi, беспроводные сети, Интернет, IP-адрес, IP-адрес
-ms.openlocfilehash: 0440c3dad48d73db51e7d730e79d6eb1e74a5694
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: b064514124d861c0734ca51b3878d4a68b592fab
+ms.sourcegitcommit: f5c1dedb3b9e29f27f627025b9e7613931a7ce18
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59604111"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670116"
 ---
 # <a name="connecting-to-wi-fi-on-hololens"></a>Подключение к Wi-Fi на HoloLens
 
@@ -40,7 +40,7 @@ HoloLens содержит 802.11 AC-2, поддержка x 2 Wi-Fi-радио. 
 5. Выберите параметр "ползунок" Wi-Fi, чтобы переместить его в положение «Выкл.». Это будет отключить компоненты RF Wi-Fi-радио и отключить все функциональные возможности Wi-Fi на HoloLens. 
 
     >[!WARNING]
-    >HoloLens, не смогут автоматически загружать вашей [пробелы](environment-considerations-for-hololens.md#spaces) при отключении Wi-Fi-радио.
+    >HoloLens, не смогут автоматически загружать вашей [пробелы](environment-considerations-for-hololens.md#WiFi fingerprint considerations) при отключении Wi-Fi-радио.
     
 6. Переместите параметр ползунок в положение «Вкл.» Включение Wi-Fi-радио и восстановить функции Wi-Fi в Microsoft HoloLens. Выбранное состояние переключателя Wi-Fi («вкл.» из «Выкл.») будут сохраняться между перезагрузками.
 
