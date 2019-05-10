@@ -1,21 +1,21 @@
 ---
-title: Проектирование голоса
+title: Взглядом и речи
 description: Взглядом взгляды, жесты и голос (GGV) являются основным способом взаимодействия на HoloLens. Эта статья содержит подробное руководство по созданию на проектирование голоса.
-author: rwinj
-ms.author: randyw
-ms.date: 03/21/2018
+author: grbury
+ms.author: grbury
+ms.date: 04/21/2019
 ms.topic: article
 keywords: Windows Mixed Reality, разработки, взаимодействия, голоса
-ms.openlocfilehash: 2df0e15c66891b08577fcf203d11f7c7008247f1
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: 35e4c72026acaa36e5fd686cf892dd602f6626d6
+ms.sourcegitcommit: a4a53e6772805d89a47588857e3e8fb1fd8d9710
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59604143"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65469074"
 ---
-# <a name="voice-design"></a>Проектирование голоса
+# <a name="gaze-and-voice"></a>Взглядом и речи
 
-Взглядом взгляды, жесты и голос (GGV) являются основным способом взаимодействия на HoloLens. [Помощи](gaze.md) использовании [курсор](cursors.md) — это механизм для пользователя назначение контента, они смогут взаимодействовать. [Жест](gestures.md) или [голоса](voice-input.md) — это механизмы, намерение. Взглядом можно с помощью жестов и голосовых для завершения взаимодействия.
+Взглядом взгляды, жесты и голос (GGV) являются основным способом взаимодействия на HoloLens (1-го поколения). [Помощи](gaze.md) использовании [курсор](cursors.md) — это механизм для пользователя назначение контента, они смогут взаимодействовать. [Жест](gestures.md) или [голоса](voice-input.md) — это механизмы, намерение. Взглядом можно с помощью жестов и голосовых для завершения взаимодействия.
 
 На иммерсивную, являются основным средством взаимодействия взглядом и фиксации и точки и фиксации (с [контроллера движения](motion-controllers.md)). Если пользователь имеет гарнитуры с помощью возможностей голосовой связи, голосовой можно использовать в сочетании с взглядом или точки для выполнения действия.
 
@@ -25,9 +25,9 @@ ms.locfileid: "59604143"
 
 <table>
 <tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
+<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
 </tr><tr>
-<td> Голосовые команды</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️ (с гарнитура подключен)</td>
+<td>Взглядом и речи</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️ (с гарнитура подключен)</td>
 </tr>
 </table>
 

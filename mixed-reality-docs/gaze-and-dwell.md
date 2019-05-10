@@ -6,12 +6,12 @@ ms.author: liamar
 ms.date: 03/31/2019
 ms.topic: article
 keywords: Смешанной реальности, взглядом, простоя, взаимодействие, проектирование
-ms.openlocfilehash: a50ae948a351f5152ebb98778da9be8c08090d72
-ms.sourcegitcommit: 222cba2d622b47f75949bf8af80d5c62de4dceab
+ms.openlocfilehash: d99180b6eb278eb6d7bf322c01a1c7cceb7fad1f
+ms.sourcegitcommit: a4a53e6772805d89a47588857e3e8fb1fd8d9710
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64914609"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65469066"
 ---
 # <a name="gaze-and-dwell"></a>Взглядом и простоя
 
@@ -127,8 +127,8 @@ ms.locfileid: "64914609"
  * Размещайте все целевые объекты простоя на в любое время из-за повторяющихся внешний вид кругов с накоплением
  
  ## <a name="see-also"></a>См. также
-* [Прямые манипуляции](direct-manipulation.md)
-* [Точки и фиксации](point-and-commit.md)
+* [Непосредственное манипулирование](direct-manipulation.md)
+* [Наведение и фиксация](point-and-commit.md)
 * [Основы взаимодействия](interaction-fundamentals.md)
-* [HEAD взглядом и фиксации](gaze-and-commit.md)
-* [Взглядом и речи](voice-design.md)
+* [Направление головы и фиксация](gaze-and-commit.md)
+* [Взгляд и голос](voice-design.md)
