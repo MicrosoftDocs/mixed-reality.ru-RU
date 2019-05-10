@@ -7,12 +7,12 @@ ms.author: randyw
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, разработки, взаимодействия, стиль, цвет, шаблоны приложений, элементы управления, примеры приложений, смешанной реальности средств, MRTK
-ms.openlocfilehash: 470dff4319abded630e084f46193dcc79531aa54
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: 8d5618b6f01f379b70f95e6493bdc670a1338e4c
+ms.sourcegitcommit: a4a53e6772805d89a47588857e3e8fb1fd8d9710
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59603704"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65469095"
 ---
 # <a name="design-for-mixed-reality"></a>Разработка для смешанной реальности
 
@@ -64,21 +64,21 @@ ms.locfileid: "59603704"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Разработка взаимодействия</h3>
-                        <p>
-                            <a href="interaction-fundamentals.md">Основы взаимодействия</a>
-                        </p>
+                        <h3>Проектирование взаимодействия</h3>
                         <p>
                             <a href="comfort.md">Комфорта</a>
                         </p>
-                        <p>
-                            <a href="gaze-targeting.md">Нацеливание взглядом</a>
+            <p>
+                            <a href="interaction-fundamentals.md">Instinctual взаимодействия</a>
                         </p>
                         <p>
-                            <a href="gestures.md">Жесты</a>
+                            <a href="hands-and-tools.md">Руки и контроллеры</a>
+                        </p>
+                        <p>
+                            <a href="hands-free.md">Без участия пользователя</a>
                         </p>
                          <p>
-                            <a href="voice-design.md">Проектирование голоса</a>
+                            <a href="gaze-and-commit.md">HEAD взглядом и фиксации</a>
                         </p>
                     </div>
                 </div>
