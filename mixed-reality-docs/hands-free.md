@@ -6,12 +6,12 @@ ms.author: liamar
 ms.date: 04/20/2019
 ms.topic: article
 keywords: Смешанной реальности, без участия пользователя, помощи и помощи, предназначенных для взаимодействия с разработки
-ms.openlocfilehash: b64dec802d8ed2886021a54f302ba4a948c4f5b9
-ms.sourcegitcommit: f5c1dedb3b9e29f27f627025b9e7613931a7ce18
+ms.openlocfilehash: f39a9524831161997b59be6cf89b124fa5b29c78
+ms.sourcegitcommit: d6d96d552ec10cd7e6502fbbc1905432e2878325
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2019
-ms.locfileid: "64581034"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524331"
 ---
 # <a name="optimizing-your-app-for-hands-free"></a>Оптимизация приложения для без участия пользователя
 
@@ -42,7 +42,7 @@ ms.locfileid: "64581034"
 
 В некоторых ситуациях без участия пользователя с помощью голоса не идеальный или даже возможно. Громкий производственной среде, конфиденциальности и социальных сетей нормы может быть ограничений. Заголовок помощи + вдаваясь модель позволяет пользователю переходить в приложение с помощью их головной вектор к точке, во время ожидание, или перебои на кнопке будет активировать его истечении определенного времени (обычно около 1 секунды или около того). 
 
-* [Взглядом и простоя](gaze-and-dwell.md)
+* [Взгляд и остановка](gaze-and-dwell.md)
 
 ## <a name="transitioning-in-and-out-of-hands-free"></a>Переход и из него без участия пользователя
 
@@ -97,6 +97,6 @@ ms.locfileid: "64581034"
 
 
 ## <a name="see-also"></a>См. также
-* [Взглядом и фиксации](gaze-and-commit.md)
-* [Прямые манипуляции](direct-manipulation.md)
-* [Точки и фиксации](point-and-commit.md)
+* [Направление головы и фиксация](gaze-and-commit.md)
+* [Непосредственное манипулирование](direct-manipulation.md)
+* [Наведение и фиксация](point-and-commit.md)
