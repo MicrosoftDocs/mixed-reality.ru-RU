@@ -48,11 +48,13 @@
 ### [Процесс AfterNow: выработка концепции, создание прототипов, разработка](case-study-afternows-process-envisioning,-prototyping,-building.md)
 ### [Разработка HoloSketch — приложения для создания пространственных макетов и эскизов интерфейса для HoloLens](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
 ### [Запись и создание содержимого для HoloTour](case-study-capturing-and-creating-content-for-holotour.md)
-### [Создание галактики в смешанной реальности](case-study-creating-a-galaxy-in-mixed-reality.md)
 ### [Создание иммерсивного интерфейса в Fragments](case-study-creating-an-immersive-experience-in-fragments.md)
 ### [Создание невероятных видов для HoloTour](case-study-creating-impossible-perspectives-for-holotour.md)
 ### [Расширение процесса проектирования смешанной реальности](case-study-expanding-the-design-process-for-mixed-reality.md)
 ### [Расширение возможностей пространственного сопоставления HoloLens](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
+### Galaxy Explorer
+#### [Создание галактики в смешанной реальности для Hololens (1-го поколения)](case-study-creating-a-galaxy-in-mixed-reality.md)
+#### [Обновление Galaxy Explorer для HoloLens 2](galaxy-explorer-update.md)
 ### [Выводы, касающиеся проектирования пользовательского интерфейса и взаимодействия в HoloStudio](case-study-3-holostudio-ui-and-interaction-design-learnings.md)
 ### [Уроки, извлеченные из проекта по визуализации кухни Lowe's](case-study-lessons-from-the-lowes-kitchen.md)
 ### [Взгляд сквозь отверстия в реальности](case-study-looking-through-holes-in-your-reality.md)
@@ -190,7 +192,8 @@
 ### Unity
 #### Учебные модули для смешанной реальности
 ##### HoloLens 2
-###### [Основной модуль — общие сведения и цели](mrlearning-base.md)
+###### Основной модуль
+####### [Основной модуль — общие сведения и цели](mrlearning-base.md)
 ####### [Инициализация проекта и первое приложение](mrlearning-base-ch1.md)
 ####### [Настройка пользовательского интерфейса, средства отслеживания рук и набора средств для смешанной реальности](mrlearning-base-ch2.md)
 ####### [Динамическое размещение содержимого и решатели](mrlearning-base-ch3.md)
