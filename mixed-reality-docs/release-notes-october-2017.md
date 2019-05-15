@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Release notes, версии, windows 10, сборки, rs3, операционной системы
 ms.openlocfilehash: 7274dcf1db449fa35981eb72192fea9873fcc90a
 ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59597829"
@@ -86,8 +86,8 @@ Windows 10 Fall Creators Update официально добавлена подд
 * Если большое количество голограммы поместили в вашей Windows Mixed Reality home, некоторые исчезают и снова при рассмотрении возможности. Чтобы избежать этого, удалите некоторые голограммы в этой области Windows Mixed Reality home.
 
 ### <a name="motion-controllers"></a>Контроллеры движения
-* Иногда Если щелкнуть веб-страницы в браузере Edge, содержимое будет масштаб вместо щелкните.
-* Иногда в том случае, если щелкнуть ссылку в Edge, выделение не будет работать.
+* Иногда Если щелкнуть веб-страницы в браузере Microsoft Edge, содержимое будет масштаб вместо щелкните.
+* Иногда в том случае, если щелкнуть ссылку в Microsoft Edge, выделение не будет работать.
 
 ## <a name="prior-release-notes"></a>Заметки о выпуске для предыдущих
 * [Заметки о выпуске — август 2016 г.](release-notes-august-2016.md)
