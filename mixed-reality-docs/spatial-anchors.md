@@ -5,13 +5,14 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: системы координат, пространственные системы координат, world и масштабирования, world, масштабирования, позиция, ориентация, привязки, пространственных привязки, заблокирован для мира, блокировка в мире, сохранение, совместное использование
-ms.openlocfilehash: eb0fae7881f1b6517da57305ef2fa3cb1ed78648
-ms.sourcegitcommit: f7fc9afdf4632dd9e59bd5493e974e4fec412fc4
+ms.openlocfilehash: 16165194d040ad22f7885897eddcc65cf9dcaec3
+ms.sourcegitcommit: 1c0fbee8fa887525af6ed92174edc42c05b25f90
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "59605106"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65730862"
 ---
 # <a name="spatial-anchors"></a>Пространственные привязки
 
@@ -74,8 +75,8 @@ ms.locfileid: "59605106"
 
 ## <a name="see-also"></a>См. также
 * [Системы координат](coordinate-systems.md)
-* [Общие возможности в смешанной реальности](shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure пространственных привязки</a>
+* [Общий доступ в смешанной реальности](shared-experiences-in-mixed-reality.md)
+* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Пространственные привязки Azure</a>
 * [Сохраняемость в Unity](persistence-in-unity.md)
 * [Пространственные привязки в DirectX](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-spatial-anchors)
 * [Пример использования - просматривая отверстия в реальности](case-study-looking-through-holes-in-your-reality.md)

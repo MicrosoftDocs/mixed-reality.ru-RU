@@ -5,13 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Смешанная реальность, unity, руководство, hololens
-ms.openlocfilehash: 344b3bc892839bc22445e10af644771bc7008ac3
-ms.sourcegitcommit: a32f673814a6cd6ff00f936f448885788b3b882c
+ms.openlocfilehash: 45e772de0825fe2161f880a165d6c75c755b849e
+ms.sourcegitcommit: 1c0fbee8fa887525af6ed92174edc42c05b25f90
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64929581"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65730908"
 ---
 # <a name="mr-learning-base-module---3d-object-interaction"></a>Модуль MR обучения Base - взаимодействия трехмерного объекта
 

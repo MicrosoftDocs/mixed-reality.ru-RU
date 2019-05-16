@@ -5,13 +5,14 @@ author: sostel
 ms.author: sostel
 ms.date: 04/05/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Отслеживание глаза, смешанный реальность, входные данные, взглядом глаз
-ms.openlocfilehash: 75cbba9048b620e4b00492ad3f71315fabf86677
-ms.sourcegitcommit: f5c1dedb3b9e29f27f627025b9e7613931a7ce18
+ms.openlocfilehash: f61f813c702cbeaa03ddc50c6a1958af3566bc1c
+ms.sourcegitcommit: 1c0fbee8fa887525af6ed92174edc42c05b25f90
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2019
-ms.locfileid: "64581054"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65730769"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Отслеживания на HoloLens 2
 HoloLens 2 позволяет совершенно новый уровень контекста и человека пониманию Holographic качества, предоставляя разработчикам невероятные возможности с помощью сведений о новые пользователи рассматривают. На этой странице приведены общие сведения о как разработчики могут использовать преимущества глаз отслеживания различных сценариев использования, и что нужно обратить внимание при проектировании глаз взглядом на основе пользовательских интерфейсов. 

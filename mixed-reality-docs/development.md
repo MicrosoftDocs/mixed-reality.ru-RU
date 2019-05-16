@@ -6,13 +6,14 @@ author: grbury
 ms.author: grbury
 ms.date: 02/12/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Смешанной реальности, разработки, разработки, HoloLens, unity, directx
-ms.openlocfilehash: b4fa41171fff1f1fdc10359c93f4d1e7e4a84867
-ms.sourcegitcommit: aa88f6b42aa8d83e43104b78964afb506a368fb4
+ms.openlocfilehash: 59b41c6b71e546bac6e3b76c038229d6de45b535
+ms.sourcegitcommit: 1c0fbee8fa887525af6ed92174edc42c05b25f90
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "64993594"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65730787"
 ---
 # <a name="development-launchpad"></a>Панель запуска разработки
 
@@ -188,11 +189,11 @@ Unreal — ожидается в ближайшее время!
 
 <table>
 <tr>
-<th style="width:175px">Ввод</th><th style="width:125px; text-align: center;"><a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:125px; text-align: center;">HoloLens 2</a></th><th style="width:125px; text-align: center;"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
+<th style="width:175px">Ввод</th><th style="width:125px; text-align: center;"><a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:125px; text-align: center;">HoloLens 2</a></th><th style="width:125px; text-align: center;"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
 </tr><tr>
 <td> <a href="gaze.md">HEAD взглядом</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td> <a href="gaze.md">Взглядом глаз</a></td><td></td><td style="text-align: center;">✔️</td><td></td>
+<td> <a href="gaze.md">Отслеживание глаз</a></td><td></td><td style="text-align: center;">✔️</td><td></td>
 </tr><tr>
  <td> <a href="gestures.md">Ясно сформулированные руки</a></td><td></td><td style="text-align: center;">✔️</td><td></td>
 </tr><tr>
@@ -204,7 +205,7 @@ Unreal — ожидается в ближайшее время!
 </tr><tr>
 <td> <a href="motion-controllers.md">Контроллеры движения</a></td><td></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<th style="width:175px">Восприятие и функции обработки пространственных данных</th><th style="width:125px; text-align: center;"><a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:125px; text-align: center;">HoloLens 2</a></th><th style="width:125px; text-align: center;"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
+<th style="width:175px">Восприятие и функции обработки пространственных данных</th><th style="width:125px; text-align: center;"><a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:125px; text-align: center;">HoloLens 2</a></th><th style="width:125px; text-align: center;"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
 </tr><tr>
 <td> <a href="coordinate-systems.md">Мировые координаты</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
