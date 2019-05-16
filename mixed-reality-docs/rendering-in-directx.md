@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, голограммы, подготовки к просмотру, 3D-графики, HolographicFrame, просмотру цикла, цикл обновления, пошаговое руководство, пример кода
-ms.openlocfilehash: fd35f971af4c3c9dfd7f21ee396c92216b3246e9
-ms.sourcegitcommit: f7fc9afdf4632dd9e59bd5493e974e4fec412fc4
+ms.openlocfilehash: 6edcaf808f2d7d48f480169e5579adb8984678a0
+ms.sourcegitcommit: 45676da11ebe33a2aa3dccec0e8ad7d714420853
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "59605163"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65629038"
 ---
 # <a name="rendering-in-directx"></a>Подготовка к просмотру в DirectX
 
@@ -89,7 +89,7 @@ auto viewTransformContainer = cameraPose.TryGetViewTransform(coordinateSystem);
 
 ### <a name="process-gaze-and-gesture-input"></a>Процесс взглядом и жест ввода
 
-[Помощи](gaze.md) и [жест](gestures.md) входные данные не создаются на основе времени и не имеют для обновления в **StepTimer** функции. Тем не менее [вводимых](gaze,-gestures,-and-motion-controllers-in-directx.md) является то, что приложение должно выглядеть в каждом кадре.
+[Помощи](gaze-in-directx.md) и [руки](hands-and-motion-controllers-in-directx.md) входные данные не создаются на основе времени и не имеют для обновления в **StepTimer** функции. Тем не менее эти входные данные — это то, что приложение должно выглядеть в каждом кадре.
 
 ### <a name="process-time-based-updates"></a>Обработка обновлений по времени
 

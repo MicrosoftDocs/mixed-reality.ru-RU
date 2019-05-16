@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: DirectX, holographic визуализации, приложение native собственных приложений, WinRT, WinRT, интерфейсы API, пользовательской подсистемы платформы по промежуточного слоя
-ms.openlocfilehash: 047144cb8fcf158f74375e9ec69dca92a2a1cf01
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: 60c4de7025099f38f0902e2ff24579e7088835a6
+ms.sourcegitcommit: 45676da11ebe33a2aa3dccec0e8ad7d714420853
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59598629"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65628997"
 ---
 # <a name="directx-development-overview"></a>Общие сведения о разработке DirectX
 
-Приложения используют Windows Mixed Reality [holographic отрисовки](rendering.md), [помощи](gaze.md), [жест](gestures.md), [контроллера движения](motion-controllers.md), [голоса ](voice-input.md) и [пространственное сопоставление](spatial-mapping.md) API-интерфейсы для создания [смешанной реальности](mixed-reality.md) возможности для HoloLens и иммерсивную. Вы можете создавать приложения смешанной реальности, с помощью надежной подсистемы 3D, такие как [Unity](unity-development-overview.md), можно использовать интерфейсы API Windows смешанной реальности, DirectX 11. Обратите внимание на то, что DirectX 12 сейчас не поддерживается. Если вы используете непосредственно платформы, вы будете по сути разрабатывать собственные по промежуточного слоя или платформы. API-интерфейсы Windows поддерживает приложения, написанные в обоих C++ и C#. Если вы хотите использовать C#, приложения могут использовать [SharpDX](http://sharpdx.org/) библиотека программного обеспечения с открытым кодом.
+Приложения используют Windows Mixed Reality [holographic отрисовки](rendering.md), [помощи](gaze.md), [жест](gestures.md), [контроллера движения](motion-controllers.md), [голоса ](voice-input.md) и [пространственное сопоставление](spatial-mapping.md) API-интерфейсы для создания [смешанной реальности](mixed-reality.md) возможности для HoloLens и иммерсивную. Вы можете создавать приложения смешанной реальности, с помощью надежной подсистемы 3D, такие как [Unity](unity-development-overview.md), или вы можете писать код непосредственно для смешанной реальности интерфейсы API Windows с помощью DirectX 11 или DirectX 12. Если вы используете непосредственно платформы, вы будете по сути разрабатывать собственные по промежуточного слоя или платформы. API-интерфейсы Windows поддерживает приложения, написанные в обоих C++ и C#. Если вы хотите использовать C#, приложения могут использовать [SharpDX](http://sharpdx.org/) библиотека программного обеспечения с открытым кодом.
 
 Поддерживает Windows Mixed Reality [два вида приложений](app-views.md):
 * **Приложениях смешанной реальности** (UWP или Win32), которых используют [HolographicSpace API](getting-a-holographicspace.md) для подготовки к просмотру [иммерсивных представление](app-views.md) пользователю, который заполняет гарнитура отображения.
@@ -25,7 +25,7 @@ ms.locfileid: "59598629"
 
 Чтобы приступить к разработке мощных приложений:
 * Для **приложений универсальной платформы Windows**, [создайте новый проект универсальной платформы Windows с помощью шаблонов в Visual Studio](creating-a-holographic-directx-project.md). В зависимости от вашего языка **Visual C++**  или **Visual C#** , вы найдете шаблоны универсальной платформы Windows в разделе **универсальной Windows**  >   **Holographic**.
-* Для **приложения Win32**, [создайте новый проект рабочего стола Win32](creating-a-holographic-directx-project.md#creating-a-win32-project) и следуйте инструкциям Win32 на [начало HolographicSpace](getting-a-holographicspace.md) страницу, чтобы получить HolographicSpace.
+* Для **приложения Win32**, [запуск из *BasicHologram* пример Win32](creating-a-holographic-directx-project.md#creating-a-win32-project).
 
 Это отличный способ получить код, необходимо добавить поддержку holographic отрисовки для существующего приложения или ядра. Код и основные понятия представлены в шаблоне способом, который знакома любому разработчику в режиме реального времени интерактивные программного обеспечения.
 
@@ -40,16 +40,17 @@ ms.locfileid: "59598629"
 ## <a name="adding-mixed-reality-capabilities-and-inputs"></a>Добавление возможности смешанной реальности и входные данные
 
 Чтобы обеспечить максимальное удобство для пользователей иммерсивных приложений, вам понадобится для поддержки следующих ключей стандартных блоках.
-* [Взглядом, жесты и контроллеры движения в DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+* [HEAD и глаз взглядом в DirectX](gaze-in-directx.md)
+* [Руки и контроллеры движения в DirectX](hands-and-motion-controllers-in-directx.md)
 * [Голосовой ввод в DirectX](voice-input-in-directx.md)
-* [Пространственные звук в DirectX](spatial-sound-in-directx.md)
+* [Пространственный звук в DirectX](spatial-sound-in-directx.md)
 * [Пространственное сопоставление в DirectX](spatial-mapping-in-directx.md)
 
 Существуют другие ключевые функции, которые многие мощных приложений будет использоваться, которые также предоставляются для приложений DirectX:
-* [Общие пространственных привязки в DirectX](shared-spatial-anchors-in-directx.md)
-* [Может быть найдена камеры в DirectX](locatable-camera-in-directx.md)
-* [Входные данные контроллера в DirectX, клавиатуры и мыши](keyboard,-mouse,-and-controller-input-in-directx.md)
+* [Общие пространственные привязки в DirectX](shared-spatial-anchors-in-directx.md)
+* [Камера с определяемым местоположением в DirectX](locatable-camera-in-directx.md)
+* [Ввод с помощью клавиатуры, мыши и контроллера в DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
 
 ## <a name="see-also"></a>См. также
 * [Модель приложений](app-model.md)
-* [Представления приложения](app-views.md)
+* [Представления приложений](app-views.md)

@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: критерии контроля качества приложений, смешанной реальности, смешанный реальности
-ms.openlocfilehash: 8070a434be462a636b314527c59f299ca77fb6d4
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: e9f6cd5a6017e11cd167c8141d29b82f89af08e4
+ms.sourcegitcommit: 45676da11ebe33a2aa3dccec0e8ad7d714420853
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59602379"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65628992"
 ---
 # <a name="app-quality-criteria"></a>Критерии контроля качества приложения
 
@@ -173,7 +173,7 @@ Misalignments из голограммы с физические объекты (
 
 #### <a name="tools-and-tutorials"></a>Инструменты и учебники
 
-* [MR пространственных 230: Пространственное сопоставление](holograms-230.md)
+* [230. Пространство в смешанной реальности: пространственное сопоставление](holograms-230.md)
 * [Набор MR средств, библиотек пространственное сопоставление](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialMapping/README.md)
 * [Комплект Companion MR, пример плакат калибровки](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/PosterCalibrationSample)
 * [Набор MR Companion, Kinect IPD](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
@@ -225,7 +225,7 @@ Misalignments из голограммы с физические объекты (
 ### <a name="resources"></a>Ресурсы
 
 * [Визуализации расстояния](hologram-stability.md#hologram-render-distances)
-* [Точку фокуса в Unity](focus-point-in-unity.md)
+* [Точка фокусировки в Unity](focus-point-in-unity.md)
 * [Поэкспериментировав с масштабом](scale.md#experimenting-with-scale)
 * [Текст, размер шрифта рекомендуется](typography.md#recommended-font-size)
 
@@ -260,7 +260,7 @@ Misalignments из голограммы с физические объекты (
 ### <a name="resources"></a>Ресурсы
 
 * [Визуализации расстояния](hologram-stability.md#hologram-render-distances)
-* [Точку фокуса в Unity](focus-point-in-unity.md)
+* [Точка фокусировки в Unity](focus-point-in-unity.md)
 
 ## <a name="use-of-spatial-sound"></a>Использование пространственных звука
 
@@ -300,15 +300,15 @@ Misalignments из голограммы с физические объекты (
 
 #### <a name="documentation"></a>Документация
 
-* [Пространственные звука](spatial-sound.md)
-* [Пространственные систему](spatial-sound-design.md)
-* [Пространственные звук в Unity](spatial-sound-in-unity.md)
+* [Пространственный звук](spatial-sound.md)
+* [Проектирование пространственного звука](spatial-sound-design.md)
+* [Пространственный звук в Unity](spatial-sound-in-unity.md)
 * [Пример использования, звук для HoloTour пространственный индекс](case-study-spatial-sound-design-for-holotour.md)
 * [Пример использования можно с помощью пространственных звук в RoboRaid](case-study-using-spatial-sound-in-roboraid.md)
 
 #### <a name="tools-and-tutorials"></a>Инструменты и учебники
 
-* [MR пространственных 220: Пространственные звука](holograms-220.md)
+* [220. Пространство в смешанной реальности: пространственный звук](holograms-220.md)
 * [MRToolkit пространственных аудио](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
 
 ## <a name="focus-on-holographic-frame-fov-boundaries"></a>Сосредоточиться на границы holographic фрейма (FOV)
@@ -348,7 +348,7 @@ Misalignments из голограммы с физические объекты (
 
 #### <a name="documentation"></a>Документация
 
-* [Holographic кадра](holographic-frame.md)
+* [Голографический кадр](holographic-frame.md)
 * [Пример использования, HoloStudio пользовательского интерфейса и полученные данные разработки для взаимодействия](case-study-3-holostudio-ui-and-interaction-design-learnings.md?#problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame)
 * [Масштабирование объектов и сред](scale.md)
 * [Курсоры, визуальные подсказки](cursors.md#visual-cues)
@@ -402,13 +402,13 @@ Misalignments из голограммы с физические объекты (
 
 * [Разработка взаимодействия](hologram.md)
 * [Цвет света и материал](color,-light-and-materials.md)
-* [Биллбординга и tag-along](billboarding-and-tag-along.md)
+* [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
 * [Основы взаимодействия](interaction-fundamentals.md)
 * [Самостоятельно движения и locomotion пользователя](comfort.md#self-motion-and-user-locomotion)
 
 #### <a name="tools-and-tutorials"></a>Инструменты и учебники
 
-* [Входные данные MR 210: Взглядом](holograms-210.md)
+* [210. Ввод в смешанной реальности: взгляд](holograms-210.md)
 
 ## <a name="input-interaction-clarity"></a>Ясности входной взаимодействия
 
@@ -458,15 +458,16 @@ Misalignments из голограммы с физические объекты (
 * [Комфорт и взглядом](comfort.md#gaze-direction)
 * [Жесты](gestures.md)
 * [Голосовой ввод](voice-input.md)
-* [Проектирование голоса](voice-design.md)
+* [Проектирование голосового взаимодействия](voice-design.md)
 * [Контроллеры движения](motion-controllers.md)
-* [Руководство по для Unity переносу входных данных](input-porting-guide-for-unity.md)
+* [Руководство по переносу логики ввода для Unity](input-porting-guide-for-unity.md)
 * [Ввод с клавиатуры в Unity](keyboard-input-in-unity.md)
-* [Помощи в Unity](gaze-in-unity.md)
-* [Жестов и контроллеры движения в Unity](gestures-and-motion-controllers-in-unity.md)
+* [Взгляд в Unity](gaze-in-unity.md)
+* [Жесты и контроллеры движения в Unity](gestures-and-motion-controllers-in-unity.md)
 * [Голосовой ввод в Unity](voice-input-in-unity.md)
-* [Входные данные контроллера в DirectX, клавиатуры и мыши](keyboard,-mouse,-and-controller-input-in-directx.md)
-* [Взглядом, жестов и контроллеры движения в DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+* [Ввод с помощью клавиатуры, мыши и контроллера в DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
+* [HEAD и глаз взглядом в DirectX](gaze-in-directx.md)
+* [Руки и контроллеры движения в DirectX](hands-and-motion-controllers-in-directx.md)
 * [Голосовой ввод в DirectX](voice-input-in-directx.md)
 
 #### <a name="tools-and-tutorials"></a>Инструменты и учебники
@@ -475,9 +476,9 @@ Misalignments из голограммы с физические объекты (
 * [Приведен пример использования: Пользовательский Интерфейс HoloStudio и полученные данные разработки для взаимодействия](case-study-3-holostudio-ui-and-interaction-design-learnings.md)
 * [Пример приложения. Периодическая таблица элементов](periodic-table-of-the-elements.md)
 * [Пример приложения. Модуль лунного](lunar-module.md)
-* [Входные данные MR 210: Взглядом](holograms-210.md)
-* [Входные данные MR 211: Жесты](holograms-211.md)
-* [Входные данные MR 212: Голоса](holograms-212.md)
+* [210. Ввод в смешанной реальности: взгляд](holograms-210.md)
+* [211. Ввод в смешанной реальности: Жесты](holograms-211.md)
+* [212. Ввод в смешанной реальности: голос](holograms-212.md)
 
 ## <a name="interactable-objects"></a>Элементом объектов
 
@@ -515,10 +516,10 @@ Misalignments из голограммы с физические объекты (
 
 #### <a name="documentation"></a>Документация
 
-* [Элементом объекта](interactable-object.md)
+* [Активный объект](interactable-object.md)
 * [Текст в Unity](text-in-unity.md)
 * [Панель приложения и ограничивающий прямоугольник](app-bar-and-bounding-box.md)
-* [Проектирование голоса](voice-design.md)
+* [Проектирование голосового взаимодействия](voice-design.md)
 
 #### <a name="tools-and-tutorials"></a>Инструменты и учебники
 
@@ -560,7 +561,7 @@ Misalignments из голограммы с физические объекты (
 
 #### <a name="documentation"></a>Документация
 
-* [Визуализация сканирования комнаты](room-scan-visualization.md)
+* [Визуализация при сканировании комнаты](room-scan-visualization.md)
 * [Пример внедрения: Расширение пространственных сопоставление возможности HoloLens](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
 * [Пример внедрения: Пространственные систему для HoloTour](case-study-spatial-sound-design-for-holotour.md)
 * [Пример внедрения: Создание присутствия в фрагментов](case-study-creating-an-immersive-experience-in-fragments.md)
@@ -600,7 +601,7 @@ Misalignments из голограммы с физические объекты (
 
 ### <a name="resources"></a>Ресурсы
 
-* [Holographic кадра](holographic-frame.md)
+* [Голографический кадр](holographic-frame.md)
 
 ## <a name="data-loading"></a>Загрузка данных
 
@@ -632,4 +633,4 @@ Misalignments из голограммы с физические объекты (
 
 ### <a name="resources"></a>Ресурсы
 
-* [Отображение хода выполнения](progress.md)
+* [Индикация хода выполнения](progress.md)

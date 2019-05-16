@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: контроллеры 6dof, движения
-ms.openlocfilehash: b44964ab872bd080349ecf1b04b3f7082b521a24
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: 7db1c16f8243081dc8f53e8722391f102c38e0d3
+ms.sourcegitcommit: 45676da11ebe33a2aa3dccec0e8ad7d714420853
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59604963"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65629112"
 ---
 # <a name="motion-controllers"></a>Контроллеры движения
 
@@ -24,7 +24,7 @@ ms.locfileid: "59604963"
 
 <table>
 <tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
+<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
 </tr><tr>
 <td> Контроллеры движения</td><td style="text-align: center;"></td><td style="text-align: center;"></td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -230,10 +230,10 @@ Windows Mixed Reality поддерживает движения контролл
 [Отзыв о нас](give-us-feedback.md) в центр отзывов с помощью категории «"Смешанной реальности->" ВВОД».
 
 ## <a name="see-also"></a>См. также
-* [Жестов и контроллеры движения в Unity](gestures-and-motion-controllers-in-unity.md)
-* [Взглядом, жесты и контроллеры движения в DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+* [Жесты и контроллеры движения в Unity](gestures-and-motion-controllers-in-unity.md)
+* [Руки и контроллеры движения в DirectX](hands-and-motion-controllers-in-directx.md)
 * [Жесты](gestures.md)
-* [Входные данные MR 213: Контроллеры движения](mixed-reality-213.md)
+* [213. Ввод в смешанной реальности: контроллеры движения](mixed-reality-213.md)
 * [Руководство по кого. В Windows Mixed Reality home](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
 * [Руководство по кого. С помощью игры и приложения в Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
 * [Как работает отслеживание поперек](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)

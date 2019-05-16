@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Смешанная реальность, взглядом, взаимодействие, проектирование
-ms.openlocfilehash: 9a12a5a3b3a583477fd98caeaa2f6890c67e2655
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: 738ba9063a5d00f3bbedce989d93076d56ad1a44
+ms.sourcegitcommit: 45676da11ebe33a2aa3dccec0e8ad7d714420853
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59604973"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65629110"
 ---
 # <a name="gaze"></a>Взгляд
 
@@ -29,7 +29,7 @@ ms.locfileid: "59604973"
 
 <table>
 <tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
+<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
 </tr><tr>
 <td> HEAD взглядом</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr><tr>
@@ -61,6 +61,6 @@ ms.locfileid: "59604973"
 Пользователь целью голограмма или объекта реального мира, используя их взглядом, их следующим шагом после действий для этого объекта. Это основной способ для пользователя выполнить действие, выполняются через [жесты](gestures.md), [движения контроллеров](motion-controllers.md) и [голоса](voice-input.md).
 
 ## <a name="see-also"></a>См. также
-* [Входные данные MR 210: Взглядом](holograms-210.md)
-* [Взглядом, жесты и контроллеры движения в DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
-* [Помощи в Unity](gaze-in-unity.md)
+* [210. Ввод в смешанной реальности: взгляд](holograms-210.md)
+* [HEAD и глаз взглядом в DirectX](gaze-in-directx.md)
+* [Взгляд в Unity](gaze-in-unity.md)

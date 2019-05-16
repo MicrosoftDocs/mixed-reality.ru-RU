@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Смешанная реальность, жесты, взаимодействие, конструктор
-ms.openlocfilehash: afebefddfd620b4697b86616e8ecc930b271dca2
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: fabd47fef424186b826c410de725f805ff7005f5
+ms.sourcegitcommit: 45676da11ebe33a2aa3dccec0e8ad7d714420853
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59597566"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65629070"
 ---
 # <a name="gestures"></a>Жесты
 
@@ -25,7 +25,7 @@ ms.locfileid: "59597566"
 
 <table>
 <tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
+<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
 </tr><tr>
 <td> Жесты</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -111,8 +111,8 @@ HoloLens распознает жестами руками, отслеживая 
 
 ## <a name="see-also"></a>См. также
 * [Нацеливание взглядом](gaze-targeting.md)
-* [Проектирование голоса](voice-design.md)
-* [Входные данные MR 211: Жест](holograms-211.md)
-* [Жестов и контроллеры движения в Unity](gestures-and-motion-controllers-in-unity.md)
-* [Взглядом, жесты и контроллеры движения в DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+* [Проектирование голосового взаимодействия](voice-design.md)
+* [211. Ввод в смешанной реальности: жест](holograms-211.md)
+* [Жесты и контроллеры движения в Unity](gestures-and-motion-controllers-in-unity.md)
+* [Руки и контроллеры движения в DirectX](hands-and-motion-controllers-in-directx.md)
 * [Контроллеры движения](motion-controllers.md)
