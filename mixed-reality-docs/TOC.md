@@ -90,20 +90,17 @@
 ### [Расширение процесса проектирования смешанной реальности](case-study-expanding-the-design-process-for-mixed-reality.md)
 ### [Цель — персонализация вычислений](case-study-the-pursuit-of-more-personal-computing.md)
 ### [Процесс AfterNow: выработка концепции, создание прототипов, разработка](case-study-afternows-process-envisioning,-prototyping,-building.md)
-## Система и средства для проектирования смешанной реальности
-### [Инстинктивное взаимодействие](Interaction-fundamentals.md)
-#### [Руки и контроллеры движения](hands-and-tools.md)
-##### [Непосредственное манипулирование](direct-manipulation.md)
-##### [Наведение и фиксация](point-and-commit.md)
-##### [Контроллеры движения](Motion-controllers.md)
-#### [Режимы без использования рук](hands-free.md)
-##### [Взгляд и остановка](Gaze-and-dwell.md)
-##### [Взгляд и голос](Voice-design.md)
-#### [Направление головы и фиксация](gaze-and-commit.md)
+## [Инстинктивное взаимодействие](Interaction-fundamentals.md)
+### [Руки и контроллеры движения](hands-and-tools.md)
+#### [Непосредственное манипулирование с использованием рук](direct-manipulation.md)
+#### [Наведение и фиксация с использованием рук](point-and-commit.md)
+#### [Контроллеры движения](Motion-controllers.md)
+### [Режимы без использования рук](hands-free.md)
+#### [Голосовые команды](Voice-design.md)
+#### [Направление головы и остановка](Gaze-and-dwell.md)
+### [Направление головы и фиксация](gaze-and-commit.md)
 ### Дополнительные виды взаимодействия
-#### [Отслеживание глаз](eye-tracking.md)
-#### [Нацеливание взглядом](Gaze-targeting.md)
-#### [Жесты](Gestures.md)
+#### [Направление взгляда](eye-tracking.md)
 ## Стиль
 ### [Цвет, свет и материалы](color,-light-and-materials.md)
 ### [Проектирование пространственного звука](spatial-sound-design.md)
@@ -175,7 +172,8 @@
 #### [Отрисовка в DirectX](rendering-in-directx.md)
 ### Основные компоненты
 #### [Системы координат в DirectX](coordinate-systems-in-directx.md)
-#### [Взгляд, жесты и контроллеры движения в DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+#### [Направление головы и взгляда в DirectX](gaze-in-directx.md)
+#### [Контроллеры движения и жестов в DirectX](hands-and-motion-controllers-in-directx.md)
 #### [Голосовой ввод в DirectX](voice-input-in-directx.md)
 #### [Пространственный звук в DirectX](spatial-sound-in-directx.md)
 #### [Пространственное сопоставление в DirectX](spatial-mapping-in-directx.md)
@@ -186,6 +184,7 @@
 ### Более сложные темы
 #### [Использование XAML с голографическими приложениями DirectX](using-xaml-with-holographic-directx-apps.md)
 #### [Добавление голографического удаленного взаимодействия](add-holographic-remoting.md)
+### [OpenXR](openxr.md)
 ## WebVR
 ### [Использование WebVR в Edge с Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
 ## [Руководства и примеры приложений](tutorials.md)
