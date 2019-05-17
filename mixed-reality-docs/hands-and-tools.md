@@ -6,12 +6,12 @@ ms.author: shengkait
 ms.date: 04/26/2019
 ms.topic: article
 keywords: Смешанной реальности, руки, контроллеров движения, взаимодействие, проектирование
-ms.openlocfilehash: 4f4231dd816dc71e42d16aca1b518ad03440116e
-ms.sourcegitcommit: 45676da11ebe33a2aa3dccec0e8ad7d714420853
+ms.openlocfilehash: b13efadd111ca970abe625221fb8045644822c37
+ms.sourcegitcommit: b5bad4eeb5cdd0c2a7b639442656c306e8b5853b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65629026"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65813980"
 ---
 # <a name="hands-and-motion-controllers"></a>Руки и контроллеры движения
 ## <a name="scenarios"></a>Сценарии
@@ -25,10 +25,10 @@ ms.locfileid: "65629026"
 * Расположения и на основе служб игры с помощью реального мира в качестве фона
 
 ## <a name="hands-and-motion-controllers-modalities"></a>Руки и модальностей контроллеры движения
-### <a name="direct-manipulation-with-handsdirect-manipulationmd"></a>[Работать с ними руки](direct-manipulation.md)
-Это связано с эффективностью руки, с которыми пользователи способны прикосновения и прямое управление голограммы модальность. По leaveraging конфигураций повседневную жизнь и программное обеспечение правильной visual читаемости, пользователи могут использовать для взаимодействия с виртуальной из них так же управления объекты реального мира.   
+### <a name="direct-manipulation-with-handsdirect-manipulationmd"></a>[Непосредственное манипулирование с использованием рук](direct-manipulation.md)
+Это связано с эффективностью руки, с которыми пользователи способны прикосновения и прямое управление голограммы модальность. По leaveraging конфигураций повседневную жизнь и программное обеспечение правильной visual читаемости, пользователи могут использовать для взаимодействия с виртуальной из них так же, обработка объектов реального мира.   
 
-### <a name="point-and-commit-with-handspoint-and-commitmd"></a>[Точки, чтобы зафиксировать с руки](point-and-commit.md)
+### <a name="point-and-commit-with-handspoint-and-commitmd"></a>[Наведение и фиксация с использованием рук](point-and-commit.md)
 Этот модальность позволяет пользователям взаимодействовать с голограммы в расстояние. Он позволяет пользователям наиболее эффективно использовать окружающей среды. Пользователей можно разместить в любом голограммы и можно по-прежнему обращаться к ним с любого расстояния. Ментальных моделей и жесты для контроля и управления ими голограммы 2D и 3D синхронизированы высокой с соответствующими прямого управления.
 
 ### <a name="motion-controllersmotion-controllersmd"></a>[Контроллеры движения](motion-controllers.md)
