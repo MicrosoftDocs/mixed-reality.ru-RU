@@ -160,6 +160,7 @@
 #### [Ввод с клавиатуры в Unity](keyboard-input-in-unity.md)
 ### Более сложные темы
 #### [Использование пространства имен Windows с приложениями Unity для HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
+#### [Собственные объекты смешанной реальности в Unity](unity-xrdevice-advanced.md)
 #### [Использование Vuforia с Unity](vuforia-development-overview.md)
 ### Устаревшие документы (Unity 2017.4/HTK/MRTK версии 1)
 ## Unreal
