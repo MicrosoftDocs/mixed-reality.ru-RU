@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: критерии контроля качества приложений, смешанной реальности, смешанный реальности
-ms.openlocfilehash: e9f6cd5a6017e11cd167c8141d29b82f89af08e4
-ms.sourcegitcommit: 45676da11ebe33a2aa3dccec0e8ad7d714420853
+ms.openlocfilehash: 756bc148f290aa3406c9ac8bb7003d463c62772c
+ms.sourcegitcommit: c20563b8195c0c374a927b96708d958b127ffc8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65628992"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65974742"
 ---
 # <a name="app-quality-criteria"></a>Критерии контроля качества приложения
 
@@ -403,7 +403,7 @@ Misalignments из голограммы с физические объекты (
 * [Разработка взаимодействия](hologram.md)
 * [Цвет света и материал](color,-light-and-materials.md)
 * [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
-* [Основы взаимодействия](interaction-fundamentals.md)
+* [Инстинктивное взаимодействие](interaction-fundamentals.md)
 * [Самостоятельно движения и locomotion пользователя](comfort.md#self-motion-and-user-locomotion)
 
 #### <a name="tools-and-tutorials"></a>Инструменты и учебники
@@ -451,14 +451,14 @@ Misalignments из голограммы с физические объекты (
 
 #### <a name="documentation"></a>Документация
 
-* [Основы взаимодействия Windows MR](interaction-fundamentals.md)
+* [Инстинктивное взаимодействие](interaction-fundamentals.md)
 * [Элементом объектов](interactable-object.md)
-* [Нацеливание взглядом](gaze-targeting.md)
+* [Направление головы и остановка](gaze-and-dwell.md)
 * [Курсоры](cursors.md)
 * [Комфорт и взглядом](comfort.md#gaze-direction)
 * [Жесты](gestures.md)
 * [Голосовой ввод](voice-input.md)
-* [Проектирование голосового взаимодействия](voice-design.md)
+* [Голосовые команды](voice-design.md)
 * [Контроллеры движения](motion-controllers.md)
 * [Руководство по переносу логики ввода для Unity](input-porting-guide-for-unity.md)
 * [Ввод с клавиатуры в Unity](keyboard-input-in-unity.md)
@@ -466,8 +466,8 @@ Misalignments из голограммы с физические объекты (
 * [Жесты и контроллеры движения в Unity](gestures-and-motion-controllers-in-unity.md)
 * [Голосовой ввод в Unity](voice-input-in-unity.md)
 * [Ввод с помощью клавиатуры, мыши и контроллера в DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
-* [HEAD и глаз взглядом в DirectX](gaze-in-directx.md)
-* [Руки и контроллеры движения в DirectX](hands-and-motion-controllers-in-directx.md)
+* [Направление головы и взгляда в DirectX](gaze-in-directx.md)
+* [Контроллеры движения и жестов в DirectX](hands-and-motion-controllers-in-directx.md)
 * [Голосовой ввод в DirectX](voice-input-in-directx.md)
 
 #### <a name="tools-and-tutorials"></a>Инструменты и учебники
@@ -519,7 +519,7 @@ Misalignments из голограммы с физические объекты (
 * [Активный объект](interactable-object.md)
 * [Текст в Unity](text-in-unity.md)
 * [Панель приложения и ограничивающий прямоугольник](app-bar-and-bounding-box.md)
-* [Проектирование голосового взаимодействия](voice-design.md)
+* [Голосовые команды](voice-design.md)
 
 #### <a name="tools-and-tutorials"></a>Инструменты и учебники
 

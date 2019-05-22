@@ -7,12 +7,12 @@ ms.date: 05/13/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Смешанной реальности, взглядом, простоя, взаимодействие, проектирование
-ms.openlocfilehash: 05457b35c13422c8aa6663bdf52a489a4f5afdaa
-ms.sourcegitcommit: b5bad4eeb5cdd0c2a7b639442656c306e8b5853b
+ms.openlocfilehash: aa4713407f14e94c88e654ae6648c4949f98e580
+ms.sourcegitcommit: c20563b8195c0c374a927b96708d958b127ffc8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65813995"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65974867"
 ---
 # <a name="head-gaze-and-dwell"></a>HEAD взглядом и простоя
 
@@ -124,8 +124,8 @@ HEAD взглядом и простоя предназначен в сценар
 * повторно используйте тот же шаблон так часто, как можно установить UX Знакомство
  
  ## <a name="see-also"></a>См. также
-* [Непосредственное манипулирование](direct-manipulation.md)
-* [Наведение и фиксация](point-and-commit.md)
-* [Основы взаимодействия](interaction-fundamentals.md)
+* [Непосредственное манипулирование с использованием рук](direct-manipulation.md)
+* [Наведение и фиксация с использованием рук](point-and-commit.md)
+* [Инстинктивное взаимодействие](interaction-fundamentals.md)
 * [Направление головы и фиксация](gaze-and-commit.md)
-* [Взгляд и голос](voice-design.md)
+* [Голосовые команды](voice-design.md)

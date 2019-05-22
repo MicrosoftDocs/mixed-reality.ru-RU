@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Смешанная реальность, жесты, взаимодействие, конструктор
-ms.openlocfilehash: fabd47fef424186b826c410de725f805ff7005f5
-ms.sourcegitcommit: 45676da11ebe33a2aa3dccec0e8ad7d714420853
+ms.openlocfilehash: 52ba7070e2c9b5632d5978c70571fcf9cda3f499
+ms.sourcegitcommit: c20563b8195c0c374a927b96708d958b127ffc8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65629070"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65974887"
 ---
 # <a name="gestures"></a>Жесты
 
@@ -110,9 +110,9 @@ HoloLens распознает жестами руками, отслеживая 
 * Следует свести к минимуму последствия нарушения работы границы рамки жест. Как правило это означает, что результат жеста должно быть остановлено на границе, однако не в обратном порядке. Например, если пользователь перемещается какой-либо объект holographic двух зала, перемещения следует остановить при нарушении кадра жестов, но **не** возвращаться к начальной точке. Пользователь может возникать некоторые разочарование затем может быстрее определить границы слоя, но не нужно перезапускать при каждом их полного необходимые действия.
 
 ## <a name="see-also"></a>См. также
-* [Нацеливание взглядом](gaze-targeting.md)
+* [Направление головы и остановка](gaze-and-dwell.md)
 * [Проектирование голосового взаимодействия](voice-design.md)
 * [211. Ввод в смешанной реальности: жест](holograms-211.md)
 * [Жесты и контроллеры движения в Unity](gestures-and-motion-controllers-in-unity.md)
-* [Руки и контроллеры движения в DirectX](hands-and-motion-controllers-in-directx.md)
+* [Контроллеры движения и жестов в DirectX](hands-and-motion-controllers-in-directx.md)
 * [Контроллеры движения](motion-controllers.md)

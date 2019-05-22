@@ -7,12 +7,12 @@ ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Смешанный реальность, взглядом, взглядом, предназначенные для взаимодействия, проектирования, hololens, MMR, multimodal
-ms.openlocfilehash: 771ebe44dc984c9d4550638bef405810d86b8d69
-ms.sourcegitcommit: 1c0fbee8fa887525af6ed92174edc42c05b25f90
+ms.openlocfilehash: 9d0e639d7474c7e8728282acfa8d288cfeec7043
+ms.sourcegitcommit: c20563b8195c0c374a927b96708d958b127ffc8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65730825"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65974907"
 ---
 # <a name="introducing-instinctual-interactions"></a>Знакомство с instinctual взаимодействия
 
@@ -141,12 +141,13 @@ ms.locfileid: "65730825"
 
 ## <a name="see-also"></a>См. также
 * [Направление головы и фиксация](gaze-and-commit.md)
-* [Непосредственное манипулирование](direct-manipulation.md)
-* [Наведение и фиксация](point-and-commit.md)
-* [Нацеливание взглядом](gaze-targeting.md)
+* [Направление головы и остановка](gaze-and-dwell.md)
+* [Непосредственное манипулирование с использованием рук](direct-manipulation.md)
+* [Наведение и фиксация с использованием рук](point-and-commit.md)
 * [Жесты](gestures.md)
-* [Проектирование голосового взаимодействия](voice-design.md)
+* [Голосовые команды](voice-design.md)
 * [Контроллеры движения](motion-controllers.md)
 * [Проектирование пространственного звука](spatial-sound-design.md)
 * [Проектирование пространственного сопоставления](spatial-mapping-design.md)
 * [Комфорт](comfort.md)
+

@@ -6,12 +6,12 @@ ms.author: jennyk
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Смешанный реальность, взглядом, взглядом, предназначенные для взаимодействия, проектирование
-ms.openlocfilehash: 1ac4f06208a7574fced0a7e27e93469ec93bf6e0
-ms.sourcegitcommit: 90ce9415889e7121dd2fd76a893dc3734672881b
+ms.openlocfilehash: bbacf9bc0039280b9944f2ad6616108d9ceae1cd
+ms.sourcegitcommit: c20563b8195c0c374a927b96708d958b127ffc8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64873927"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65974927"
 ---
 # <a name="gaze-and-dwell"></a>Взглядом и простоя
 Существует множество различных способов подтверждения _фиксации_ такие как объединение взглядом с _голоса_ или _передать жесты_.
@@ -41,7 +41,7 @@ ms.locfileid: "64873927"
 
 <table>
 <tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
+<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
 </tr><tr>
 <td> Нацеливание взглядом</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️ </td>
 </tr><tr>
@@ -99,5 +99,5 @@ ms.locfileid: "64873927"
 
 ## <a name="see-also"></a>См. также
 * [Жесты](gestures.md)
-* [Проектирование голосового взаимодействия](voice-design.md)
+* [Голосовые команды](voice-design.md)
 * [Курсоры](cursors.md)

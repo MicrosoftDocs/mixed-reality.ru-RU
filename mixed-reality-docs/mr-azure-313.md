@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Azure, смешанной реальности, academy, edge, edge Интернета вещей, руководство, api, уведомления, функции, таблицы, hololens, насыщенные, виртуальной реальности, Интернета, виртуальная машина, ubuntu, python
 ms.openlocfilehash: 1ab7c48ac3cff1cb2283cadb171098af9e148628
 ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59597569"
@@ -320,7 +320,7 @@ ms.locfileid: "59597569"
 
     1.  Клавиши со стрелками на клавиатуре для прокрутки вниз (необходимо будет выполнить прокрутку вниз немного способом), для доступа к строке, которая содержит»:
 
-        "**\<ДОБАВЬТЕ СТРОКУ ПОДКЛЮЧЕНИЯ УСТРОЙСТВА &GT;**«.
+        "**\<ДОБАВЬТЕ СТРОКУ ПОДКЛЮЧЕНИЯ УСТРОЙСТВА &GT;**".
 
     2. Замените строки, **включая скобки**, с помощью **Device Connection String** отмечали ранее.
 

@@ -6,12 +6,12 @@ ms.author: yoyoz
 ms.date: 11/06/2018
 ms.topic: article
 keywords: VR lbe, развлечения на основе расположения, vr arcade arcade эффект присутствия, qr, QR-кода
-ms.openlocfilehash: b0f4480496c15f811979f76143acbd456d89e249
-ms.sourcegitcommit: f7fc9afdf4632dd9e59bd5493e974e4fec412fc4
+ms.openlocfilehash: e6588552c0cfa8bffa19ac2be5c247c5f73dc19c
+ms.sourcegitcommit: c20563b8195c0c374a927b96708d958b127ffc8f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "59605116"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65974895"
 ---
 # <a name="qr-code-tracking"></a>QR-код отслеживания
 
@@ -176,7 +176,7 @@ QR-код отслеживания реализуется в драйвере Wi
 Пример использования API отслеживания QR в смешанной реальности Toolkit можно найти [сайт GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker).
 
 MRTK реализовала необходимые скрипты для simpilify QR, отслеживание использования. Все необходимые ресурсы для разработки QR отслеживания приложений находятся в папке «QRTracker». Существуют двумя сценами: во-первых, пример, чтобы просто отобразить сведения о QR-коды, как их обнаружения, а второй показано, как использовать систему координат, подключенный к QR-код для отображения голограммы.
-Нет prefab «QRScanner», добавлены все необходимые scrips автоматически использовать QRCodes. QRCodeManager он singileton класс, реализующий QRCode API, его можно добавить вы сцену. Сценарии «AttachToQRCode» используется для присоединения голограммы к системам coodridnate QR-код, этот сценарий можно добавить к любому из вашей голограммы. «SpatialGraphCoordinateSystem» показано, как используется система координат QRCode. Эти сценарии можно использовать как есть в сценах вашего проекта, или можно написать собственный непосредственно с помощью подключаемого модуля как описано выше.
+Нет prefab «QRScanner», добавлены все необходимые скрипты автоматически использовать QRCodes. Сценарий QRCodeManager является singleton-класс, реализующий QRCode API. Это должен быть добавлен в сцену. Сценарий «AttachToQRCode» используется для присоединения голограммы для системы координат QR-код, этот сценарий можно добавить к любому из вашей голограммы. «SpatialGraphCoordinateSystem» показано, как используется система координат QRCode. Эти сценарии можно использовать в качестве-находится в проекте сцен. также можно написать собственный непосредственно с помощью подключаемого модуля как описано выше.
 
 ### <a name="implementing-qr-code-tracking-in-unity-without-mrtk"></a>Реализация отслеживания в Unity без MRTK QR-кода
 
