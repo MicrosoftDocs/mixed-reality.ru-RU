@@ -7,12 +7,12 @@ ms.date: 05/13/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Смешанной реальности, взглядом, простоя, взаимодействие, проектирование
-ms.openlocfilehash: aa4713407f14e94c88e654ae6648c4949f98e580
-ms.sourcegitcommit: c20563b8195c0c374a927b96708d958b127ffc8f
+ms.openlocfilehash: ae4688da791fd3afb7be66069049bbe51102dd7e
+ms.sourcegitcommit: 8d6e5723283c03f984f1fafef81afa5aab5d04bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65974867"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66039197"
 ---
 # <a name="head-gaze-and-dwell"></a>HEAD взглядом и простоя
 

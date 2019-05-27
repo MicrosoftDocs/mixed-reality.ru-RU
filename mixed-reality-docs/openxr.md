@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 3/18/2019
 ms.topic: article
 keywords: Смешанная реальность OpenXR Developer Preview
-ms.openlocfilehash: c5ac87145ca23e4a6fbe578a285e27d50f1f22a1
-ms.sourcegitcommit: 36192101052666da01dd6c59cad4cfabd4ecb6f9
+ms.openlocfilehash: 723b0b85785d4b6dd735430aa76a24b9ce05b5c7
+ms.sourcegitcommit: 8d6e5723283c03f984f1fafef81afa5aab5d04bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65048500"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66039183"
 ---
 # <a name="openxr"></a>OpenXR
 
@@ -36,7 +36,7 @@ OpenXR является открытым стандартом отчислени
 
 Чтобы приступить к работе со смешанной реальности OpenXR Developer Preview для настольных компьютеров:
 
-1. Убедитесь, что выполняется по крайней мере Windows 10 октября 2018 обновление (1809).  Если вы используете более раннюю версию Windows 10, можно обновить до октября 2018 обновление с помощью [Windows 10 Update Assistant](https://www.microsoft.com/en-us/software-download/windows10).  Если у вас рискнуть, вы можете установить [сборки Windows 10 Insider Preview мая 2019 обновления (1903)](https://insider.windows.com).
+1. Убедитесь, что на компьютере под управлением Windows 10 октября 2018 Update (1809) или Windows 10 могут 2019 г. обновление (1903).  Если вы используете более раннюю версию Windows 10, можно обновить до мая 2019 обновить с помощью [Windows 10 Update Assistant](https://www.microsoft.com/en-us/software-download/windows10).
 1. Установка гарнитуры смешанной реальности Windows или следуйте инструкциям, чтобы [включить в симуляторе Windows Mixed Reality](using-the-windows-mixed-reality-simulator.md).
 1. Установка [смешанной реальности OpenXR для разработчиков приложений](https://www.microsoft.com/store/productId/9n5cvvl23qbt).  Получает это приложение можно настроить с помощью предварительной версии среды выполнения OpenXR в Windows 10 октября 2018 Update (1809) или более поздней версии.  После установки этого приложения Windows Store будет обновлять среды выполнения.
 1. Запустите приложение смешанной реальности OpenXR Developer Preview из меню "Пуск" и следуйте инструкциям, чтобы сделать активной среды выполнения.  В ближайшее время это приложение позволит вам изучить отладки других OpenXR.
@@ -45,7 +45,9 @@ OpenXR является открытым стандартом отчислени
 
 ### <a name="support-for-windows-10-october-2018-update"></a>Поддержка Windows 10 октября 2018 с обновлением
 
-Чтобы приступить к работе со смешанной реальности OpenXR Developer Preview для настольных компьютеров с Windows 10 октября 2018 Update (1809, текущая версия Windows), вам потребуется выполнить несколько дополнительных действий:
+Если вы используете Windows 10 мая 2019 (1903) и выполнили шаги выше, вы должны быть готовы использовать смешанной реальности OpenXR Developer Preview!
+
+Если вы еще не готовы [обновление настольного компьютера до мая 2019 обновления](https://www.microsoft.com/en-us/software-download/windows10), вы могли приступить к работе в ОС Windows 10 октября 2018 г. Обновите (1809), выполнив одно действие:
 
 1. Выполните действия, чтобы установить смешанной реальности OpenXR Developer Preview.
 1. Для смешанной реальности OpenXR Developer Preview в качестве системы, активной среды выполнения OpenXR, установить [смешанной реальности OpenXR разработчика совместимости пакет для предварительной версии](https://aka.ms/openxr-compat).
@@ -70,7 +72,7 @@ OpenXR является открытым стандартом отчислени
 
 ### <a name="mixed-reality-openxr-developer-preview-app-cannot-be-installed"></a>Невозможно установить приложение смешанной реальности OpenXR Developer Preview 
 
-Убедитесь, что выполняется по крайней мере Windows 10 октября 2018 обновление (1809).  Если вы используете более раннюю версию Windows 10, можно обновить до октября 2018 обновление с помощью [Windows 10 Update Assistant](https://www.microsoft.com/en-us/software-download/windows10).
+Убедитесь, что выполняется по крайней мере Windows 10 октября 2018 обновление (1809).  Если вы используете более раннюю версию Windows 10, можно обновить до мая 2019 (1903) использовать для обновления [Windows 10 Update Assistant](https://www.microsoft.com/en-us/software-download/windows10).
 
 Если установку, нажмите кнопку приложения смешанной реальности OpenXR Developer Preview не ничего в Windows 10 октября 2018 г. обновления по, системы имеют кэшированных устаревшие системные требования для приложения.  Можно выполнить команду `wsreset.exe` из командной строки, чтобы очистить кэш.
 

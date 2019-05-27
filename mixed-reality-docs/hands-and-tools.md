@@ -6,12 +6,12 @@ ms.author: shengkait
 ms.date: 04/26/2019
 ms.topic: article
 keywords: Смешанной реальности, руки, контроллеров движения, взаимодействие, проектирование
-ms.openlocfilehash: b13efadd111ca970abe625221fb8045644822c37
-ms.sourcegitcommit: b5bad4eeb5cdd0c2a7b639442656c306e8b5853b
+ms.openlocfilehash: d0e54c71ab42a09f2f9c6063a85441b98e729af1
+ms.sourcegitcommit: 8d6e5723283c03f984f1fafef81afa5aab5d04bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65813980"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66039169"
 ---
 # <a name="hands-and-motion-controllers"></a>Руки и контроллеры движения
 ## <a name="scenarios"></a>Сценарии
@@ -38,7 +38,7 @@ ms.locfileid: "65813980"
 
 ## <a name="see-also"></a>См. также
 * [Направление головы и фиксация](gaze-and-commit.md)
-* [Прямые манипуляции (рядом с правым взаимодействия вручную)](direct-manipulation.md)
-* [Точки, чтобы зафиксировать (Far взаимодействия вручную)](point-and-commit.md)
+* [Направление головы и остановка](gaze-and-dwell.md)
+* [Непосредственное манипулирование с использованием рук](direct-manipulation.md)
+* [Наведение и фиксация с использованием рук](point-and-commit.md)
 * [Режимы без использования рук](hands-free.md)
-* [Взгляд и остановка](gaze-targeting.md)
