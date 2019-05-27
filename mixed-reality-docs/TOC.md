@@ -24,6 +24,7 @@
 #### [Просмотр фотографий](see-your-photos.md)
 #### [Настройка датчиков](sensor-tuning.md)
 #### [Обновление HoloLens](updating-hololens.md)
+#### [Общий доступ к устройствам](device-sharing.md)
 #### [Руководство по регулировке и чистке устройства HoloLens](hololens-demo-guide.md)
 ### Иммерсивные гарнитуры
 #### [Сведения об оборудовании иммерсивных гарнитур](immersive-headset-hardware-details.md)
