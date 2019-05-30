@@ -1,23 +1,25 @@
 ---
 title: Коммерческие функции
-description: Microsoft HoloLens пакет Commercial Suite включает в себя функции, которые упрощают процесс для бизнеса для управления устройствами HoloLens.
-author: xerxesb85
-ms.author: xerxesb
-ms.date: 03/21/2018
+description: Microsoft HoloLens пакет Commercial Suite включает в себя функции, которые упрощают процесс для бизнеса для управления устройствами HoloLens.  HoloLens 2 являются equipt с коммерческие возможности по умолчанию.
+author: scooley
+ms.author: scooley
+ms.date: 05/23/2019
 ms.topic: article
 keywords: HoloLens, коммерческих и функции управления мобильными устройствами, управление мобильными устройствами, полноэкранный режим
-ms.openlocfilehash: 5fd5c56983fb3e94376fac08c6e96510bccc0002
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: 4da540072fd32ac99692f0a13eb5852337c493bb
+ms.sourcegitcommit: aba33a8ad1416f7598048ac35ae9ab1734bd5c37
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59604993"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66270361"
 ---
 # <a name="commercial-features"></a>Коммерческие функции
 
-Microsoft HoloLens пакет Commercial Suite включает в себя функции, которые упрощают процесс для бизнеса для управления устройствами HoloLens. Коммерческие функции включены в операционной системе Windows, но они включены по лицензии. Почти всегда подразумевается лицензии обеспечивается управление устройствами Microsoft HoloLens, зарегистрированными в организации. Обратитесь к местному менеджеру Майкрософт для приобретения Microsoft HoloLens пакет Commercial Suite.
+Microsoft HoloLens пакет Commercial Suite включает в себя функции, которые упрощают процесс для бизнеса для управления устройствами HoloLens.
 
-&nbsp;
+HoloLens прилагается два варианта лицензирования, лицензию разработчика и коммерческой лицензии.  Обновить до коммерческой лицензии для разблокировки коммерческих capabilitis HoloLens liense разработчика.  Обратитесь к местному менеджеру Майкрософт для приобретения Microsoft HoloLens пакет Commercial Suite.
+
+**Возможности HoloLens 2** -состав 2 HoloLens все коммерческие функции, доступные на каждом устройстве.
 
 >[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
@@ -30,7 +32,7 @@ Microsoft HoloLens пакет Commercial Suite включает в себя фу
 * **Управление мобильными устройствами (MDM) для HoloLens.** Ваш ИТ-отдел может управлять несколькими устройствами HoloLens, одновременно с помощью решений, таких как Microsoft Intune. Можно изменять параметры, выбирать приложения для установки и задавать настройки безопасности в соответствии с потребностями вашей организации.
 
   ![Управление мобильными устройствами на HoloLens предоставляет корпоративное управление устройствами корпоративного уровня на нескольких устройствах.](images/201608-enterprisemanagement-400px.png)
-  
+   
 * **Центр обновления Windows для бизнеса.** Контролировал обновления операционной системы на устройствах и поддержка ветвь долгосрочного обслуживания.
 * **Безопасность данных.** Шифрование данных BitLocker с включенной HoloLens для предоставления тот же уровень защиты, как любые другие устройства Windows.
 * **Рабочий доступ.** Все пользователи в организации можно удаленно подключаться к корпоративной сети через виртуальную частную сеть на HoloLens. HoloLens также имеют доступ к сетям Wi-Fi, которым требуются учетные данные.
@@ -40,7 +42,7 @@ Microsoft HoloLens пакет Commercial Suite включает в себя фу
 
 <table>
 <tr>
-<th>Компоненты</th><th>HoloLens Development Edition</th><th>HoloLens Commercial Suite</th><th>HoloLens 2</th>
+<th>Компоненты</th><th>HoloLens Development Edition</th><th>HoloLens Commercial Suite</th><th>HoloLens 2</th>
 </tr><tr>
 <td>Шифрование устройства (Bitlocker)</td><td></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -84,7 +86,7 @@ Microsoft HoloLens пакет Commercial Suite включает в себя фу
 
 ## <a name="enabling-commercial-features"></a>Включение возможности профессиональной
 
-Коммерческие функции, такие как Microsoft Store для бизнеса, полноэкранный режим и enterprise доступа Wi-Fi, программа установки по организации ИТ-администратору. [ИТ-центр Windows для HoloLens](https://technet.microsoft.com/itpro/hololens/index) содержит пошаговые инструкции по регистрации устройств и установка приложений из Microsoft Store для бизнеса.
+Коммерческие функции, такие как Microsoft Store для бизнеса, полноэкранный режим и enterprise доступа Wi-Fi, программа установки по организации ИТ-администратору. [ИТ-центр Windows для HoloLens](https://docs.microsoft.com/hololens) содержит пошаговые инструкции по регистрации устройств и установка приложений из Microsoft Store для бизнеса.
 
 ## <a name="see-also"></a>См. также
 * [IT Pro руководство для HoloLens](https://technet.microsoft.com/itpro/hololens/index)

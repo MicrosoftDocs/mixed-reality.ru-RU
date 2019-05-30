@@ -6,17 +6,21 @@ ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, голограммы, holographic удаленного взаимодействия, удаленной визуализации, визуализации, HoloLens, голограммы удаленной сети
-ms.openlocfilehash: 4726c6af43fe1b89fc8298e459a1af9dfa5fc667
-ms.sourcegitcommit: f7fc9afdf4632dd9e59bd5493e974e4fec412fc4
+ms.openlocfilehash: 1e9567976bad1e2b72e95feca292bf3475893230
+ms.sourcegitcommit: aba33a8ad1416f7598048ac35ae9ab1734bd5c37
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "59605126"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66270349"
 ---
 # <a name="add-holographic-remoting"></a>Добавление holographic удаленного взаимодействия
 
+## <a name="hololens-2"></a>HoloLens 2
+
 > [!NOTE]
 > Дополнительные рекомендации, относящиеся к HoloLens 2 [ожидается в ближайшее время](index.md#news-and-notes).
+
+HoloLens разработчики, использующие Holographic удаленное взаимодействие потребуется обновить свои приложения, чтобы обеспечить их совместимость с HoloLens 2.  Это потребует новой версии пакета NuGet Holographic удаленного взаимодействия, не является общедоступным еще.  Если приложение, с помощью пакета HoloLens NuGet пытается подключиться к Holographic проигрыватель удаленного взаимодействия на HoloLens 2, соединение будет разорвано.  Посмотрите эту страницу для обновления после доступен пакет HoloLens 2 NuGet.
 
 ## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>Добавление holographic удаленного взаимодействия на рабочий стол или приложение универсальной платформы Windows
 

@@ -6,12 +6,12 @@ ms.author: jlyons
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, Holographic удаленного взаимодействия
-ms.openlocfilehash: 16add6c72b594822cacbef6c92ce196ab9b13429
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: 24213444686dd2e5dbda4016dd551a8ead8f305a
+ms.sourcegitcommit: aba33a8ad1416f7598048ac35ae9ab1734bd5c37
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59605003"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66270315"
 ---
 # <a name="holographic-remoting-player"></a>Проигрыватель holographic удаленного взаимодействия
 
@@ -19,8 +19,7 @@ Holographic проигрыватель удаленного взаимодейс
 
 Holographic проигрыватель удаленного взаимодействия может использоваться только с помощью приложений, которые специально предназначены для поддержки Holographic удаленного взаимодействия.
 
-> [!NOTE]
-> Дополнительные рекомендации, относящиеся к HoloLens 2 [ожидается в ближайшее время](index.md#news-and-notes).
+Для HoloLens и HoloLens 2 доступна Holographic проигрыватель удаленного взаимодействия.  Приложения ПК, которые поддерживаются Holographic удаленного взаимодействия с HoloLens должны быть обновлены для поддержки Holographic Remtoing с HoloLens 2.  Обратитесь к поставщику приложения, если у вас есть вопросы о том, какие версии поддерживаются.
 
 ## <a name="connecting-to-the-holographic-remoting-player"></a>Подключение к исполнителю Holographic удаленного взаимодействия
 
@@ -48,10 +47,10 @@ Holographic проигрыватель удаленного взаимодейс
 В главном окне, можно сказать **«отключить диагностику»** Чтобы отключить диагностику.
 
 ## <a name="pc-system-requirements"></a>Требования к системе ПК
-* Компьютер **необходимо** работать под управлением Windows 10 Anniversary Update.
+* Компьютер **необходимо** работать под управлением Юбилейного обновления Windows 10 или более поздней версии.
 * Мы рекомендуем GeForce GTX 970 или AMD Radeon R9 290 или лучше видеокарте.
 * Мы рекомендуем подключении компьютера к сети через ethernet, чтобы уменьшить количество прыжков беспроводной связи.
 
 ## <a name="see-also"></a>См. также
-* [Условия лицензионного соглашения на использование программного обеспечения holographic удаленного взаимодействия](microsoft-holographic-remoting-software-license-terms.md)
+* [Условия лицензии на использование ПО для голографического удаленного взаимодействия](microsoft-holographic-remoting-software-license-terms.md)
 * [Заявление о конфиденциальности Майкрософт](https://go.microsoft.com/fwlink/?LinkId=521839)
