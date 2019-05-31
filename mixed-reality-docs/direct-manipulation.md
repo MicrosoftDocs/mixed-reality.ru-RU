@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Смешанный реальность, взглядом, взглядом, предназначенные для взаимодействия, проектирования, руки near, HoloLens
-ms.openlocfilehash: 412d77a1d7446f82ddf43f051fdb149cb1fd559c
-ms.sourcegitcommit: d565a69a9320e736304372b3f010af1a4d286a62
+ms.openlocfilehash: 6e3512eab4070680c48ee8e95240a17e9925822f
+ms.sourcegitcommit: 5b4292ef786447549c0199003e041ca48bb454cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65940764"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402394"
 ---
 # <a name="direct-manipulation-with-hands"></a>Работать с ними руки
 Прямого управления представляют собой входные модель, которая включает в себя касаясь голограммы прямо с рук. Цель с помощью прямого управления — объекты ведут себя так же, как и в реальном мире. Кнопки можно активировать, просто нажав их и объектов, могут быть получены, взяв их двухмерное содержимое ведет себя как виртуальный сенсорного экрана.  По этой причине прямые манипуляции прост для пользователей узнать, оно также прошло fun слишком.  Он считается «рядом с» модель ввода, это означает, что лучше всего подходит для взаимодействия с содержимым, которое находится в руки достичь.
@@ -22,9 +22,9 @@ ms.locfileid: "65940764"
 ## <a name="device-support"></a>Поддержка устройств
 
 
-| Модель ввода | [HoloLens (1-го поколения)](https://review.docs.microsoft.com/en-us/windows/mixed-reality/hololens-hardware-details?branch=master) | HoloLens 2 |[Иммерсивную](https://review.docs.microsoft.com/en-us/windows/mixed-reality/immersive-headset-hardware-details?branch=master)|
+| Модель ввода | [HoloLens (1-го поколения)](hololens-hardware-details.md) | HoloLens 2 |[Иммерсивную](immersive-headset-hardware-details.md)|
 |:-------- | :-------| :--------| :------------|
-| Прямые манипуляции | ❌ Не поддерживается | Рекомендуется ✔️ | ➕ альтернативы [точки и зафиксировать](https://review.docs.microsoft.com/en-us/windows/mixed-reality/point-and-commit?branch=master) рекомендуется.
+| Работать с ними руки | ❌ Не поддерживается | Рекомендуется ✔️ | ➕ другой вариант — [точки и зафиксировать с руки](point-and-commit.md) рекомендуется.
 
 Непосредственной работы со основной модели ввода для HoloLens 2 и представляет новую ясно сформулированные систему отслеживания вручную. Модель ввода также можно найти в иммерсивную при помощи движения контроллеров, но не рекомендуется в качестве основного средства взаимодействия за пределами объектами.  Прямой manipluation недоступна на HoloLens (1-го поколения).
 
