@@ -165,7 +165,7 @@
 #### [Использование Vuforia с Unity](vuforia-development-overview.md)
 ### Устаревшие документы (Unity 2017.4/HTK/MRTK версии 1)
 ## Unreal
-### Unreal для HoloLens 2 — ожидается в ближайшее время!
+### [Ранний доступ к Unreal для HoloLens 2](https://www.unrealengine.com/en-US/blog/unreal-engine-4-support-for-hololens-2-released-in-early-access)
 ## DirectX
 ### [Обзор разработки в DirectX](directx-development-overview.md)
 ### Начало работы
@@ -273,7 +273,7 @@
 ### [Использование портала устройств Windows](using-the-windows-device-portal.md)
 ### [Справочник по API портала устройств](device-portal-api-reference.md)
 ### [Holographic Remoting Player](holographic-remoting-player.md)
-## Другое
+## Другие
 ### [Отслеживание QR-кода](qr-code-tracking.md)
 ### [Общий доступ в смешанной реальности](shared-experiences-in-mixed-reality.md)
 ### [Камера с определяемым местоположением](locatable-camera.md)
