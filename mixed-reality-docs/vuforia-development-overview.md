@@ -1,17 +1,17 @@
 ---
 title: С помощью Vuforia с помощью Unity
 description: Использовать Vuforia для создания приложений Windows смешанной реальности в Unity.
-author: ChimeraScorn
-ms.author: cwhite
-ms.date: 03/21/2018
+author: ailyadis
+ms.author: ''
+ms.date: 01/28/2019
 ms.topic: article
 keywords: Vuforia, маркеры, координаты, системой отсчета координат, отслеживание
-ms.openlocfilehash: 43a74989b931fee898af0aeae9e240303b2eef01
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: c0d2f6d0707e1ddd3ee00d3eb80af9fb459f252b
+ms.sourcegitcommit: c2a5bff423feba7d29d5431c870b6017c2fe1bc2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59603175"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66750349"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>С помощью Vuforia ядра с помощью Unity
 
@@ -93,8 +93,8 @@ ms.locfileid: "59603175"
 * [Установка средств](install-the-tools.md)
 * [Системы координат](coordinate-systems.md)
 * [Пространственное сопоставление](spatial-mapping.md)
-* [Камеры в Unity](camera-in-unity.md)
-* [Экспорт и создание решения Visual Studio для Unity](exporting-and-building-a-unity-visual-studio-solution.md)
+* [Камера в Unity](camera-in-unity.md)
+* [Экспорт и разработка решения Visual Studio для Unity](exporting-and-building-a-unity-visual-studio-solution.md)
 * [Документация по Vuforia: Разработка для Windows 10 в Unity](https://library.vuforia.com/articles/Solution/Developing-for-Windows-10-in-Unity)
 * [Документация по Vuforia: Как установить расширение Vuforia Unity](https://library.vuforia.com/articles/Solution/Installing-the-Unity-Extension)
 * [Документация по Vuforia: Работа с примером HoloLens в Unity](https://library.vuforia.com/articles/Solution/Working-with-the-HoloLens-sample-in-Unity)
