@@ -133,7 +133,7 @@
 ## Облачные службы смешанной реальности
 ### [Пространственные привязки Azure](https://docs.microsoft.com/azure/spatial-anchors)
 ### [Holographic Remoting Player](holographic-remoting-player.md)
-### [Условия лицензии на использование ПО для голографического удаленного взаимодействия](microsoft-holographic-remoting-software-license-terms.md)
+### [Условия лицензии на использование ПО для голографического удаленного взаимодействия](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 ## Unity
 ### [Обзор разработки в Unity](unity-development-overview.md)
 ### Начало работы
@@ -273,7 +273,7 @@
 ### [Использование портала устройств Windows](using-the-windows-device-portal.md)
 ### [Справочник по API портала устройств](device-portal-api-reference.md)
 ### [Holographic Remoting Player](holographic-remoting-player.md)
-## Другие
+## Другое
 ### [Отслеживание QR-кода](qr-code-tracking.md)
 ### [Общий доступ в смешанной реальности](shared-experiences-in-mixed-reality.md)
 ### [Камера с определяемым местоположением](locatable-camera.md)
