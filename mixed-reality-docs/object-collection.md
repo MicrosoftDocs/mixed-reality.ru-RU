@@ -6,19 +6,19 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, элементы управления, разработки
-ms.openlocfilehash: 88ab0359d5083d43d5d6312ef1185f67ca0caa7d
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: 7c3bbd82ec909b5a2e3c81f122366be564934f4d
+ms.sourcegitcommit: c6b59f532a9c5818d9b25c355a174a231f5fa943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59605013"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66813889"
 ---
 # <a name="object-collection"></a>Коллекция объектов
 
-Коллекция объектов — это элемент управления макета, который служит для размещения является массивом объектов в стандартных трехмерной фигуры. Он поддерживает четыре различных стилей поверхности - **плоскости, цилиндр, sphere** и **точечной**. Можно настроить radius и размер объектов, а также пробела между ними. Коллекция объектов поддерживает любой объект из Unity — 2D и 3D. В  **[смешанной реальности Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_ObjectCollection.md)**, мы создали сценарий Unity и [сцены пример](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Scenes/ObjectCollectionExample.unity) , помогут вам создать коллекции объектов.
+Коллекция объектов — это элемент управления макета, который служит для размещения является массивом объектов в стандартных трехмерной фигуры. Он поддерживает различные стили поверхности - **плоскости, цилиндр, sphere** и **радиального**. Можно настроить radius и размер объектов, а также пробела между ними. Коллекция объектов поддерживает любой объект из Unity — 2D и 3D. В  **[смешанной реальности Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** , мы создали скриптов Unity, и примеры, которые помогут вам создать коллекции объектов.
 
 ![Коллекция объектов, используемых в таблице периодически элементы приложения](images/640px-objectcollection-hero-640px.jpg)<br>
-*Коллекция объектов, используемых в таблице периодически элементов примера приложения*
+*Примеры использования коллекции объектов*
 
 ## <a name="object-collection-examples"></a>Примеры коллекции объектов
 
@@ -41,8 +41,9 @@ ms.locfileid: "59605013"
 ![Пример изображения с помощью коллекции объектов](images/640px-layout-3dobjects-3.jpg)
 
 ![Пример изображения с помощью коллекции объектов](images/640px-layout-2dimages.jpg)<br>
-*Примеры двумерные изображения с помощью коллекции объектов*
+*Примеры использования коллекции объектов с двумерные изображения*
 
 ## <a name="see-also"></a>См. также
-* [Сценарии и prefabs для коллекции объектов в смешанной реальности Toolkit на сайте GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/UX)
-* [Элементом объекта](interactable-object.md)
+* [Сценарии и prefabs для коллекции объектов в смешанной реальности Toolkit на сайте GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_ObjectCollection.md)
+* [Активный объект](interactable-object.md)
+* [Ограничивающий прямоугольник](app-bar-and-bounding-box.md)

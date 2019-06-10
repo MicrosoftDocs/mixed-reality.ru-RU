@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, разработки, элементы управления, пользовательский интерфейс, ux
-ms.openlocfilehash: 9edddc7800f0d7334d1ceba97b9a06fd6d4580ac
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: d62d86c690233f351b6c156c66eba33cb2687ea6
+ms.sourcegitcommit: c6b59f532a9c5818d9b25c355a174a231f5fa943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59603215"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66813725"
 ---
 # <a name="displaying-progress"></a>Отображение хода выполнения
 
 Элемент управления "Ход выполнения" служит для уведомления пользователя о том, что выполняется длительная операция. Это может означать, что пользователь не сможет взаимодействовать с приложением, когда индикатор выполнения отображается. Также в зависимости от того, какой индикатор используется, он может отображать время ожидания.
 
-![Пример кольца хода выполнения в HoloLens](images/640px-progress-hero.jpg)<br>
+![Пример кольца хода выполнения в HoloLens](images/HoloLens2_Loader.gif)<br>
 *Пример кольца хода выполнения в HoloLens*
 
 ## <a name="types-of-progress"></a>Типы хода выполнения
@@ -47,7 +47,8 @@ ms.locfileid: "59603215"
 * Всегда рекомендуется предоставлять сведения о состоянии о происходящем для пользователя. Ход выполнения prefab предоставляет различные стили оформления, включая предоставление состояния процесса выполнения стандартных типу кольцевого Windows. Также можно использовать пользовательские сетки с анимацией Если стиль ход выравнивание по торговой марки вашего приложения.
 
 ## <a name="see-also"></a>См. также
-* [Сценарии и prefabs для отслеживания хода выполнения, о наборе средств для смешанной реальности](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_ProgressExample.md)
-* [Элементом объекта](interactable-object.md)
+* [Ход выполнения скриптов и prefabs о наборе средств для смешанной реальности](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Loader)
+* [Ограничивающий прямоугольник](app-bar-and-bounding-box.md)
+* [Активный объект](interactable-object.md)
 * [Коллекция объектов](object-collection.md)
-* [Биллбординга и tag-along](billboarding-and-tag-along.md)
+* [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
