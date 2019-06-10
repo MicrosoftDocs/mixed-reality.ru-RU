@@ -8,12 +8,12 @@ ms.date: 02/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
-ms.openlocfilehash: ed319e2abf61caed5f36b425a4cc609ca9501dec
-ms.sourcegitcommit: 1c0fbee8fa887525af6ed92174edc42c05b25f90
+ms.openlocfilehash: 810d9846fd217cd1acb3ae0060c11f5c9173191e
+ms.sourcegitcommit: c6b59f532a9c5818d9b25c355a174a231f5fa943
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65730889"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66813748"
 ---
 # <a name="mixed-reality-documentation"></a>Документация по смешанной реальности
 
@@ -171,10 +171,10 @@ ms.locfileid: "65730889"
 <td>Предварительная версия новых возможностей в MRTK для HoloLens 2</td><td>Апрель 2019 г.</td><td> <ul><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html>Документация по MRTK</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-getting-started>Приступая к работе с MRTK версии 2</a></td>
 </tr>
 <tr>
-<td>Руководство по проектированию и разработке для HoloLens 2</td><td>Апрель 2019 г.</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools>Установка средств</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-hololens-emulator>Эмулятор HoloLens 2</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/interaction-fundamentals>Руководство по проектированию инстинктивного взаимодействия</a>
+<td>Руководство по проектированию и разработке для HoloLens 2</td><td>Апрель 2019 г.</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools>Установка средств</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-hololens-emulator>Эмулятор HoloLens 2</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/interaction-fundamentals>Руководство по проектированию инстинктивного взаимодействия</a></td>
 </tr>
 <tr>
-  <td>Дополнительные сведения об Unreal</td><td>Май 2019 г.</td><td></td>
+  <td>Дополнительные сведения об Unreal</td><td>Май 2019 г.</td><td> <ul><li><a href=https://www.unrealengine.com/en-US/blog/unreal-engine-4-support-for-hololens-2-released-in-early-access>Ранний доступ к Unreal Engine 4</a></td>
 </tr>
 </table>
 
