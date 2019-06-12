@@ -3,15 +3,15 @@ title: Добавление holographic удаленного взаимодей�
 description: В этой статье описывается использование Holographic удаленного взаимодействия для подготовки к просмотру голограммы для HoloLens по сети.
 author: MikeRiches
 ms.author: mriches
-ms.date: 03/21/2018
+ms.date: 05/24/2019
 ms.topic: article
 keywords: Windows Mixed Reality, голограммы, holographic удаленного взаимодействия, удаленной визуализации, визуализации, HoloLens, голограммы удаленной сети
-ms.openlocfilehash: 1e9567976bad1e2b72e95feca292bf3475893230
-ms.sourcegitcommit: aba33a8ad1416f7598048ac35ae9ab1734bd5c37
+ms.openlocfilehash: 8d645f634ff0fc820893f5554fd602aa3a2f38e3
+ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66270349"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66829620"
 ---
 # <a name="add-holographic-remoting"></a>Добавление holographic удаленного взаимодействия
 

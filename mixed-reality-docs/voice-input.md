@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: ggv голосовых, cortana, речи, входные данные
-ms.openlocfilehash: 7fb5618c13ff1ed446241f744b598cfe2484ea45
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: e21310b940e4a4c3019f61edea695b452e74ab62
+ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59604743"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66829951"
 ---
 # <a name="voice-input"></a>Голосовой ввод
 
@@ -26,11 +26,24 @@ ms.locfileid: "59604743"
 ## <a name="device-support"></a>Поддержка устройств
 
 <table>
-<tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"><a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
-</tr><tr>
-<td> Голосовой ввод</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️ (с микрофона)</td>
-</tr>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Возможность</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1-го поколения)</strong></a></td>
+        <td><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+    </tr>
+     <tr>
+        <td>Голосовой ввод</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️ (с микрофона)</td>
+    </tr>
 </table>
 
 ## <a name="the-select-command"></a>Команда «select»
@@ -114,4 +127,4 @@ HoloLens имеет модель «см. в разделе, он, скажите
 ## <a name="see-also"></a>См. также
 * [Голосовой ввод в DirectX](voice-input-in-directx.md)
 * [Голосовой ввод в Unity](voice-input-in-unity.md)
-* [Входные данные MR 212: Голоса](holograms-212.md)
+* [212. Ввод в смешанной реальности: голос](holograms-212.md)

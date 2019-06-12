@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Пространственные звук, объемного звука, 3d аудио, 3d звука, пространственных аудио
-ms.openlocfilehash: ccb236a8b53e757ba632a1c7c6cb2d4f07735910
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: a30a484c4e47593556fbd1786158262551e11d22
+ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59600836"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66829922"
 ---
 # <a name="spatial-sound"></a>Пространственное звучание
 
@@ -26,13 +26,24 @@ ms.locfileid: "59600836"
 ## <a name="device-support"></a>Поддержка устройств
 
 <table>
-<tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"><a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
-</tr><tr>
-
-<td> Пространственное звучание</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️ (с использованием)</td>
-
-</tr>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Возможность</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1-го поколения)</strong></a></td>
+        <td><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+    </tr>
+     <tr>
+        <td>Пространственное звучание</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️ (с использованием)</td>
+    </tr>
 </table>
 
 ## <a name="simulating-the-perceived-location-and-distance-of-sounds"></a>Имитация предполагаемых местоположение и расстояние звуков
@@ -60,6 +71,6 @@ ms.locfileid: "59600836"
 
 ## <a name="see-also"></a>См. также
 * [Г-н пространственных 220](holograms-220.md)
-* [Пространственные звук в Unity](spatial-sound-in-unity.md)
-* [Пространственные звук в DirectX](spatial-sound-in-directx.md)
-* [Пространственные систему](spatial-sound-design.md)
+* [Пространственный звук в Unity](spatial-sound-in-unity.md)
+* [Пространственный звук в DirectX](spatial-sound-in-directx.md)
+* [Проектирование пространственного звука](spatial-sound-design.md)

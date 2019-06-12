@@ -6,18 +6,18 @@ ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Windows Device Portal, HoloLens
-ms.openlocfilehash: 8b9935d6b64abfd22e2e856e0142c953a6366008
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: f4319e1efa94d90bfb8cc4e5815ffa87fc865a7f
+ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59600966"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66830004"
 ---
 # <a name="using-the-windows-device-portal"></a>С помощью Windows Device Portal
 
 <table>
 <tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"><a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
+<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"><a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
 </tr><tr>
 <td> Портал устройств Windows</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
@@ -36,7 +36,7 @@ Windows Device Portal для HoloLens позволяет настраивать 
 5. Выберите пункт меню **Для разработчиков**.
 6. Включите **Режим разработчика**.
 7. [Прокрутите вниз](gestures.md#composite-gestures) и включить **портал устройств**.
-8. Если вы настраиваете Windows Device Portal, поэтому вы можете развертывать приложения для этого HoloLens через USB или Wi-Fi, нажмите кнопку **пары** для [создать связывания ПИН-код](using-visual-studio.md#pairing-your-device-hololens). Выйти из приложения параметров во всплывающее окно ПИН-код, пока не будет введено ПИН-кода в Visual Studio во время первого развертывания.
+8. Если вы настраиваете Windows Device Portal, поэтому вы можете развертывать приложения для этого HoloLens через USB или Wi-Fi, нажмите кнопку **пары** для [создать связывания ПИН-код](using-visual-studio.md). Выйти из приложения параметров во всплывающее окно ПИН-код, пока не будет введено ПИН-кода в Visual Studio во время первого развертывания.
 
    ![Включение режима разработчика в настройках приложения для Windows Holographic](images/deviceportalsettings.png)
 
@@ -56,7 +56,7 @@ Windows Device Portal для HoloLens позволяет настраивать 
 
 ## <a name="connecting-to-an-emulator"></a>Подключение к эмулятору
 
-Можно также использовать Портал устройства вместе с эмулятором. Чтобы подключиться к порталу устройства, используйте [инструментов](using-the-hololens-emulator.md#anatomy-of-the-hololens-emulator). Щелкните этот значок: ![Значок открытия портал устройств](images/emulator-deviceportal.png) **открыть портал устройства**: Откройте Windows Device Portal для HoloLens операционной системы в эмуляторе.
+Можно также использовать Портал устройства вместе с эмулятором. Чтобы подключиться к порталу устройства, используйте [инструментов](using-the-hololens-emulator.md). Щелкните этот значок: ![Значок открытия портал устройств](images/emulator-deviceportal.png) **открыть портал устройства**: Откройте Windows Device Portal для HoloLens операционной системы в эмуляторе.
 
 ## <a name="creating-a-username-and-password"></a>Создание имени пользователя и пароля
 
@@ -71,7 +71,7 @@ Windows Device Portal для HoloLens позволяет настраивать 
 5. Введите пароль и подтвердите его. Длина пароля не должна быть менее 7 символов. Он может не соответствовать паролю учетной записи MSA или домена.софт или домена.
 6. Нажмите кнопку **пары** для подключения к Windows Device Portal на HoloLens.
 
-Если вы хотите изменить это имя пользователя или пароль в любое время, можно повторить этот процесс, посетив страницу безопасности устройства, либо нажав **безопасности** ссылку в верхней правой или переходе по адресу: https://<YOUR_HOLOLENS_IP_ АДРЕС > / devicesecurity.htm.
+Если вы хотите изменить это имя пользователя или пароль в любое время, можно повторить этот процесс, посетив страницу безопасности устройства, перейдя по адресу: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicepair.htm.
 
 ## <a name="security-certificate"></a>Сертификат безопасности
 
@@ -80,7 +80,7 @@ Windows Device Portal для HoloLens позволяет настраивать 
 Каждое устройство HoloLens создает уникальный самозаверяющий сертификат для своего подключения SSL. По умолчанию веб-браузер на вашем ПК не доверяет этому сертификату, и вы можете получить «ошибку сертификата». Скачав этот сертификат с вашего устройства HoloLens (по USB или доверенной сети Wi-Fi) и настроив доверие к нему на своем ПК, можно безопасно подключаться к устройству.
 1. **Убедитесь, что вы находитесь в защищенной сети (USB или сети Wi-Fi, в которой вы доверяете).**
 2. Скачайте сертификат, это устройство, на странице «Безопасность» на портале устройства.
-   * Либо нажмите кнопку **безопасности** ссылку в верхнем правом списке значков или перейдите к: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicesecurity.htm
+   * Перейдите к: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicepair.htm
 3. Установите сертификат в «доверенные корневые центры сертификации» хранить на Компьютере.
    * В меню Windows введите: Управление сертификатами компьютеров и запустить приложение.
    * Разверните **доверенным корневым центром сертификации** папки.
@@ -103,7 +103,7 @@ Windows Device Portal для HoloLens позволяет настраивать 
 * **Завершение работы**: Отключение устройства.
 * **Перезапустите**: Циклов питания на устройстве.
 * **Безопасность**: Откроется страница безопасности устройств.
-* **"Холодный"**: Указывает температуру устройства.
+* **"Холодный"** : Указывает температуру устройства.
 * **ПИТАНИЯ**: Указывает, подключено ли устройство и взимать плату.
 * **Справка**: Открывает страницу документации интерфейса REST.
 

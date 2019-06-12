@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: системы координат, пространственные системы координат, только для ориентации, установки и масштабирования, положение и масштабирования, места и масштабирования, всему миру и масштабирования, сидели 360 градусов, положение, комнаты, world, масштабирования, позиция, ориентация, неподвижным, подключенный этап, привязки, пространственных привязки, заблокирован для мира, блокировки в мире, заблокирован для текста, текст блокировку, границы, сохраняемости, совместное использование, отслеживание потери, облако пространственных привязки
-ms.openlocfilehash: fc76a30895a85ab5ca8396540a82965cc35c494e
-ms.sourcegitcommit: f7fc9afdf4632dd9e59bd5493e974e4fec412fc4
+ms.openlocfilehash: f4b945a3ffb83b9ac0a94e0d793a19939aece3bb
+ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "59605146"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66829860"
 ---
 # <a name="coordinate-systems"></a>Системы координат
 
@@ -24,19 +24,48 @@ ms.locfileid: "59605146"
 ## <a name="device-support"></a>Поддержка устройств
 
 <table>
-<tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
-</tr><tr>
-<td> <a href="coordinate-systems.md#stationary-frame-of-reference">Стационарной системой отсчета координат</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr><tr>
-<td> <a href="coordinate-systems.md#attached-frame-of-reference">Для присоединенных ссылок</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr><tr>
-<td> <a href="coordinate-systems.md#stage-frame-of-reference">Этап системой отсчета координат</a></td><td style="text-align: center;"> Пока не поддерживается</td><td style="text-align: center;"> Пока не поддерживается</td><td style="text-align: center;"> ✔️</td>
-</tr><tr>
-<td> <a href="coordinate-systems.md#spatial-anchors">Пространственные привязки</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr><tr>
-<td> <a href="spatial-mapping.md">Пространственное сопоставление</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
-</tr>
+    <colgroup>
+    <col width="40%" />
+    <col width="20%" />
+    <col width="20%" />
+    <col width="20%" />
+    </colgroup>
+    <tr>
+        <td><strong>Возможность</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1-го поколения)</strong></a></td>
+        <td><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+    </tr>
+     <tr>
+        <td><a href="coordinate-systems.md#stationary-frame-of-reference">Стационарной системой отсчета координат</a></td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️</td>
+    </tr>
+    <tr>
+        <td><a href="coordinate-systems.md#attached-frame-of-reference">Для присоединенных ссылок</a></td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️</td>
+    </tr>
+    <tr>
+        <td><a href="coordinate-systems.md#stage-frame-of-reference">Этап системой отсчета координат</a></td>
+        <td>Пока не поддерживается</td>
+        <td>Пока не поддерживается</td>
+        <td>✔️</td>
+    </tr>
+    <tr>
+        <td><a href="coordinate-systems.md#spatial-anchors">Пространственные привязки</a></td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️</td>
+    </tr>
+    <tr>
+        <td><a href="spatial-mapping.md">Пространственное сопоставление</a></td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
 </table>
 
 ## <a name="mixed-reality-experience-scales"></a>Масштабирует качества смешанной реальности
@@ -197,6 +226,6 @@ Windows Mixed Reality решает проблему, описанную в пр�
 * [Системы координат в Unity](coordinate-systems-in-unity.md)
 * [Системы координат в DirectX](coordinate-systems-in-directx.md)
 * [Пространственные привязки](spatial-anchors.md)
-* [Общие возможности в смешанной реальности](shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure пространственных привязки</a>
+* [Общий доступ в смешанной реальности](shared-experiences-in-mixed-reality.md)
+* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Пространственные привязки Azure</a>
 * [Пример использования - просматривая отверстия в реальности](case-study-looking-through-holes-in-your-reality.md)

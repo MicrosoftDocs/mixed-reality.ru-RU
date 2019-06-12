@@ -6,12 +6,12 @@ ms.author: dgedye
 ms.date: 05/03/2018
 ms.topic: article
 keywords: режим исследований, cv, rs4, компьютерного зрения, исследований, HoloLens
-ms.openlocfilehash: 5feda021bd6a1a90fd98c751b1cea768eed980af
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: e9a7683f8d582b459185066e74655e8f2b236db4
+ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59597509"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66829930"
 ---
 # <a name="hololens-research-mode"></a>Режим HoloLens Research
 
@@ -29,11 +29,21 @@ ms.locfileid: "59597509"
 ## <a name="device-support"></a>Поддержка устройств
 
 <table>
-<tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
-</tr><tr>
-<td> Режим справочные материалы</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><strong>Возможность</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+    </tr>
+     <tr>
+        <td>Режим справочные материалы</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
 </table>
 
 ## <a name="before-using-research-mode"></a>Прежде чем использовать режим справочные материалы
@@ -72,4 +82,4 @@ ms.locfileid: "59597509"
 
 * [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197)
 * [Репозиторий HoloLensForCV GitHub](https://github.com/Microsoft/HoloLensForCV)
-* [С помощью Windows Device Portal](using-the-windows-device-portal.md)
+* [Использование портала устройств Windows](using-the-windows-device-portal.md)

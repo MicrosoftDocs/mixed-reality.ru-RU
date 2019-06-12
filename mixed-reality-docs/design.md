@@ -1,27 +1,27 @@
 ---
 layout: LandingPage
 title: Оформление
-description: Это руководство является автором Microsoft конструкторы, разработчики, руководители программ и исследователей, в которых охватывает holographic устройства (например, HoloLens) и иммерсивных устройства (например, гарнитуры Acer и смешанной реальности HP Windows). Таким образом можно считать эту работу набор разделы «о разработке для Windows подключенном head отображается».
+description: Это руководство составили проектировщики, разработчики, руководители программ и исследователи корпорации Майкрософт, работающие с голографическими (например, HoloLens) и иммерсивными устройствами (например, гарнитуры смешанной реальности Acer и HP для Windows). Результат их работы представляет собой серию статей по проектированию решений для виртуального шлема Windows.
 author: rwinj
 ms.author: randyw
 ms.date: 03/21/2018
 ms.topic: article
 ms.localizationpriority: high
-keywords: Windows Mixed Reality, разработки, взаимодействия, стиль, цвет, шаблоны приложений, элементы управления, примеры приложений, смешанной реальности средств, MRTK
+keywords: Windows Mixed Reality, design, Interaction, Style, Color, app patterns, controls, sample apps, Mixed Reality Toolkit, MRTK
 ms.openlocfilehash: 88de9008dbea6cce3b980bbbe3d0f45b7818e7c9
-ms.sourcegitcommit: 8d6e5723283c03f984f1fafef81afa5aab5d04bc
-ms.translationtype: MT
+ms.sourcegitcommit: f20beea6a539d04e1d1fc98116f7601137eebebe
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
+ms.lasthandoff: 06/05/2019
 ms.locfileid: "66039210"
 ---
-# <a name="design-for-mixed-reality"></a>Разработка для смешанной реальности
+# <a name="design-for-mixed-reality"></a>Проектирование решений для смешанной реальности
 
-![Разработка для смешанной реальности](images/Bicycle-Leschi10.gif)
+![Проектирование решений для смешанной реальности](images/Bicycle-Leschi10.gif)
 
-Это руководство является автором Microsoft конструкторы, разработчики, руководители программ и исследователей, в которых охватывает holographic устройства (например, HoloLens) и иммерсивных устройства (например, гарнитуры Acer и смешанной реальности HP Windows). Таким образом можно считать эту работу набор разделы «о разработке для Windows подключенном head отображается».
+Это руководство составили проектировщики, разработчики, руководители программ и исследователи корпорации Майкрософт, работающие с голографическими (например, HoloLens) и иммерсивными устройствами (например, гарнитуры смешанной реальности Acer и HP для Windows). Результат их работы представляет собой серию статей по проектированию решений для виртуального шлема Windows.
 
-## <a name="article-categories"></a>Статья категории
+## <a name="article-categories"></a>Категории статей
 
 <ul class="panelContent cardsF">
     <li>
@@ -34,21 +34,21 @@ ms.locfileid: "66039210"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Приступить к проектированию</h3>
+                        <h3>Приступая к проектированию</h3>
                         <p>
-                            <a href="mixed-reality.md">Что является смешанной реальности?</a>
+                            <a href="mixed-reality.md">Что такое смешанная реальность?</a>
                         </p>
                         <p>
-                            <a href="about-this-design-guidance.md">Об этом руководстве</a>
+                            <a href="about-this-design-guidance.md">Сведения об этом руководстве</a>
                         </p>
                         <p>
-                            <a href="case-study-my-first-year-on-the-hololens-design-team.md">Мой первый год в группе разработки</a>
+                            <a href="case-study-my-first-year-on-the-hololens-design-team.md">Мой первый год в команде проектирования</a>
                         </p>
                         <p>
-                            <a href="case-study-expanding-the-design-process-for-mixed-reality.md">Расширение процесса разработки для смешанной реальности</a>
+                            <a href="case-study-expanding-the-design-process-for-mixed-reality.md">Расширение процесса проектирования решений смешанной реальности</a>
                         </p>
                         <p>
-                            <a href="case-study-the-pursuit-of-more-personal-computing.md">Для достижения более персональных компьютерах</a>
+                            <a href="case-study-the-pursuit-of-more-personal-computing.md">Цель — персонализация вычислений</a>
                         </p>
                     </div>
                 </div>
@@ -67,19 +67,19 @@ ms.locfileid: "66039210"
                     <div class="cardText">
                         <h3>Система и средства для проектирования смешанной реальности</h3>
                         <p>
-                            <a href="comfort.md">Комфорта</a>
+                            <a href="comfort.md">Комфорт</a>
                         </p>
             <p>
-                            <a href="interaction-fundamentals.md">Instinctual взаимодействия</a>
+                            <a href="interaction-fundamentals.md">Инстинктивное взаимодействие</a>
                         </p>
                         <p>
-                            <a href="hands-and-tools.md">Руки и контроллеры движения</a>
+                            <a href="hands-and-tools.md">Контроллеры движения и жестов</a>
                         </p>
                         <p>
-                            <a href="hands-free.md">Без участия пользователя</a>
+                            <a href="hands-free.md">Режимы без использования рук</a>
                         </p>
                          <p>
-                            <a href="gaze-and-commit.md">HEAD взглядом и фиксации</a>
+                            <a href="gaze-and-commit.md">Направление головы и фиксация</a>
                         </p>
                     </div>
                 </div>
@@ -101,13 +101,13 @@ ms.locfileid: "66039210"
                             <a href="color,-light-and-materials.md">Цвет, свет и материалы</a>
                         </p>
                          <p>
-                            <a href="spatial-sound-design.md">Пространственные систему</a>
+                            <a href="spatial-sound-design.md">Проектирование пространственного звука</a>
                         </p>
                         <p>
-                            <a href="typography.md">Оформления</a>
+                            <a href="typography.md">Оформление текста</a>
                         </p>
                         <p>
-                            <a href="scale.md">Масштаб</a>
+                            <a href="scale.md">Масштабирование</a>
                         </p>                      
                     </div>
                 </div>
@@ -126,16 +126,16 @@ ms.locfileid: "66039210"
                     <div class="cardText">
                         <h3>Шаблоны приложений</h3>
                         <p>
-                            <a href="types-of-mixed-reality-apps.md">Типы приложений, смешанной реальности</a>
+                            <a href="types-of-mixed-reality-apps.md">Типы приложений смешанной реальности</a>
                         </p>
                         <p>
-                            <a href="room-scan-visualization.md">Визуализация сканирования комнаты</a>
+                            <a href="room-scan-visualization.md">Визуализация при сканировании комнаты</a>
                         </p>
                         <p>
                             <a href="cursors.md">Курсоры</a>
                         </p>
                         <p>
-                            <a href="billboarding-and-tag-along.md">Биллбординга и tag-along</a>
+                            <a href="billboarding-and-tag-along.md">Биллбординг и закрепление элемента в пространстве</a>
                         </p>
                     </div>
                 </div>
@@ -157,16 +157,16 @@ ms.locfileid: "66039210"
                             <a href="text-in-unity.md">Текст в Unity</a>
                         </p>
                         <p>
-                            <a href="interactable-object.md">Элементом объекта</a>
+                            <a href="interactable-object.md">Интерактивный объект</a>
                         </p>
                         <p>
                             <a href="object-collection.md">Коллекция объектов</a>
                         </p>
                         <p>
-                            <a href="progress.md">Отображение хода выполнения</a>
+                            <a href="progress.md">Индикация хода выполнения</a>
                         </p>
                         <p>
-                            <a href="app-bar-and-bounding-box.md">Панель приложения и ограничивающий прямоугольник</a>
+                            <a href="app-bar-and-bounding-box.md">Панель приложения и ограничивающая рамка</a>
                         </p>
                     </div>
                 </div>
@@ -178,7 +178,7 @@ ms.locfileid: "66039210"
 
 ## <a name="sample-apps"></a>Примеры приложений
 
-Обеспечения качественной работы из примеров, которые проектируют и создают нашей группой.
+Создавайте великолепные решения на основе примеров, которые разработала и создала наша команда.
 
 <br>
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
@@ -194,7 +194,7 @@ ms.locfileid: "66039210"
                         </div>
                         <div class="cardText">
                             <h3>Периодическая таблица элементов</h3>
-                            <p>Узнайте, как создание макета является массивом объектов в трехмерном пространстве с помощью различных типов поверхности, с помощью коллекции объектов.</p>
+                            <p>Узнайте, как расположить массив объектов в трехмерном пространстве с различными типами поверхности, используя коллекции объектов.</p>
                         </div>
                     </div>
                 </div>
@@ -202,7 +202,7 @@ ms.locfileid: "66039210"
         </a>        
     </li>
     <li>
-        <a href="lunar-module.md" title="Модуль лунного" data-linktype="absolute-path">
+        <a href="lunar-module.md" title="Лунный модуль" data-linktype="absolute-path">
             <div class="cardSize">
                 <div class="cardPadding">
                     <div class="card">
@@ -212,8 +212,8 @@ ms.locfileid: "66039210"
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Модуль лунного</h3>
-                            <p>Дополнительные сведения о расширении HoloLens базовый жесты, использующих обе руки отслеживания и входные данные контроллера Xbox.</p>
+                            <h3>Лунный модуль</h3>
+                            <p>Узнайте, как расширить набор базовых жестов HoloLens, используя отслеживание движений обеих рук и ввод с помощью контроллера Xbox.</p>
                         </div>
                     </div>
                 </div>
@@ -221,7 +221,7 @@ ms.locfileid: "66039210"
         </a>
     </li>
     <li>
-        <a href="galaxy-explorer.md" title="Galaxy Explorer" data-linktype="absolute-path">
+        <a href="galaxy-explorer.md" title="Исследование галактики" data-linktype="absolute-path">
             <div class="cardSize">
                 <div class="cardPadding">
                     <div class="card">
@@ -232,7 +232,7 @@ ms.locfileid: "66039210"
                         </div>
                         <div class="cardText">
                             <h3>Galaxy Explorer</h3>
-                            <p>Проект Explorer Galaxy готов. Совместно с сообществом своими идеями, выбранное приложение, смотрели команды сборки, а также теперь можно получить исходный код.</p>
+                            <p>Проект "Исследование галактики" готов. Вы поделились с сообществом своими идеями, выбрали приложение, наблюдали за процессом его создания, а теперь можете получить для него исходный код.</p>
                         </div>
                     </div>
                 </div>
@@ -248,7 +248,7 @@ ms.locfileid: "66039210"
 
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
     <li>
-    <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" title="Набор средств для смешанной реальности - Unity" data-linktype="absolute-path">
+    <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" title="Набор средств для смешанной реальности — Unity" data-linktype="absolute-path">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -258,7 +258,7 @@ ms.locfileid: "66039210"
                         </div>
                     </div>                    
             <div class="cardText">
-                        <h3>Набор средств для смешанной реальности - Unity</h3>
+                        <h3>Набор средств для смешанной реальности — Unity</h3>
                         <p> </p>
                     </div>
                 </div>
@@ -326,11 +326,11 @@ ms.locfileid: "66039210"
 </ul>
 
 
-## <a name="general-design-resources"></a>Ресурсы для общей разработки
+## <a name="general-design-resources"></a>Общие ресурсы для разработки
 
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
     <li>
-    <a href="http://fluent.microsoft.com" title="Fluent Design System" data-linktype="absolute-path">
+    <a href="http://fluent.microsoft.com" title="Система Fluent Design" data-linktype="absolute-path">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -349,7 +349,7 @@ ms.locfileid: "66039210"
       </a>  
     </li>
     <li>
-    <a href="https://www.microsoft.com/design/inclusive" title="Инклюзивные разработки в корпорации Microsoft" data-linktype="absolute-path">
+    <a href="https://www.microsoft.com/design/inclusive" title="Разработка инклюзивных приложений в Майкрософт" data-linktype="absolute-path">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -359,7 +359,7 @@ ms.locfileid: "66039210"
                         </div>
                     </div>                    
             <div class="cardText">
-                        <h3>Инклюзивные разработки в корпорации Microsoft</h3>
+                        <h3>Разработка инклюзивных приложений в Майкрософт</h3>
                         <p> </p>
                     </div>
                 </div>

@@ -6,12 +6,12 @@ ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, шаблоны приложений, разработки, HoloLens, сканирование комнаты, пространственных сопоставление, область реконструкции, mesh
-ms.openlocfilehash: 8ffde9d476e25016f986321377dce8125ee3a596
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: 09df4464ea4dac01dfad637886b07b861f468d4d
+ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59604646"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66829911"
 ---
 # <a name="room-scan-visualization"></a>Визуализация сканирования комнаты
 
@@ -27,11 +27,21 @@ ms.locfileid: "59604646"
 ## <a name="device-support"></a>Поддержка устройств
 
 <table>
-<tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
-</tr><tr>
-<td> Визуализация сканирования комнаты</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><strong>Возможность</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+    </tr>
+     <tr>
+        <td>Визуализация сканирования комнаты</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
 </table>
 
 
@@ -83,6 +93,6 @@ Active сканирование во время интерфейс может б
 Хороший вариант для этого метода является одним где голограммы будут взаимодействовать с перемещением объектов, например holographic автомобиль, диски в процессе установки может потребоваться правильно столкнувшихся с дверь в зависимости от того, является ли это открытым или закрытым.
 
 ## <a name="see-also"></a>См. также
-* [Пространственное сопоставление конструктора](spatial-mapping-design.md)
+* [Проектирование пространственного сопоставления](spatial-mapping-design.md)
 * [Системы координат](coordinate-systems.md)
-* [Пространственные систему](spatial-sound-design.md)
+* [Проектирование пространственного звука](spatial-sound-design.md)

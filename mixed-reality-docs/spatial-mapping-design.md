@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Сопоставление Windows Mixed Reality, разработки, пространственных, HoloLens, surface реконструкции, сетки
-ms.openlocfilehash: d2ddcbf9458769a60cd3ed2871c5f3405c75f10c
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: 451213a79e1d482d64725ce750065611830beec3
+ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59597886"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66829961"
 ---
 # <a name="spatial-mapping-design"></a>Пространственное сопоставление конструктора
 
@@ -20,11 +20,21 @@ ms.locfileid: "59597886"
 ## <a name="device-support"></a>Поддержка устройств
 
 <table>
-<tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
-</tr><tr>
-<td> Пространственное сопоставление</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><strong>Возможность</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+    </tr>
+     <tr>
+        <td>Пространственное сопоставление конструктора</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
 </table>
 
 ## <a name="why-is-spatial-mapping-important"></a>Почему важна пространственное сопоставление?
@@ -196,6 +206,6 @@ HoloLens узнает о поверхности в среде, так как п�
 * Рекомендуется выполнить тестирование с использованием реальных (и в идеале без coached) пользователей, так как они могут не использовать HoloLens или ваше приложение в точно так же, как и. На самом деле возможно, вас удивит поведение как разные люди, знаний и предположения может быть!
 
 ## <a name="see-also"></a>См. также
-* [Визуализация сканирования комнаты](room-scan-visualization.md)
-* [Пространственные систему](spatial-sound-design.md)
+* [Визуализация при сканировании комнаты](room-scan-visualization.md)
+* [Проектирование пространственного звука](spatial-sound-design.md)
 * [Сохраняемость в Unity](persistence-in-unity.md)

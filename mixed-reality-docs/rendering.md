@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: отрисовка, голограмма
-ms.openlocfilehash: 9d87af1b445bc6f730dd02bd7bd7f3aefe7f53db
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: 5271e94521b99e76998c2cbb43475a5f3f847917
+ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59604823"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66829899"
 ---
 # <a name="rendering"></a>Подготовка к просмотру
 
@@ -20,11 +20,24 @@ Holographic отрисовки позволяет приложению рисо�
 ## <a name="device-support"></a>Поддержка устройств
 
 <table>
-<tr>
-<th>Компонент</th><th style="width:150px"><a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"><a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
-</tr><tr>
-<td>Имя статьи</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
-</tr>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Возможность</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1-го поколения)</strong></a></td>
+        <td><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+    </tr>
+     <tr>
+        <td>Подготовка к просмотру</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️</td>
+    </tr>
 </table>
 
 ## <a name="holographic-rendering"></a>Holographic отрисовки
@@ -84,5 +97,5 @@ Windows Mixed Reality введено понятие **holographic камеры**
 
 
 ## <a name="see-also"></a>См. также
-* [Голограмма стабильность](hologram-stability.md)
-* [Подготовка к просмотру в DirectX](rendering-in-directx.md)
+* [Стабильность голограммы](hologram-stability.md)
+* [Отрисовка в DirectX](rendering-in-directx.md)

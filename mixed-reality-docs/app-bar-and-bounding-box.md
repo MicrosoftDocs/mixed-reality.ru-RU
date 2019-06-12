@@ -1,17 +1,17 @@
 ---
-title: Панель приложения и ограничивающий прямоугольник
+title: Ограничивающим поле, а также панель приложения
 description: Панели приложения — это меню уровня объектов, содержащий ряд кнопок, которое будет отображаться на нижнего края границы голограмма.
 author: radicalad
 ms.author: adlinv
-ms.date: 03/21/2018
+ms.date: 06/07/2019
 ms.topic: article
 keywords: Смешанная реальность Windows, приложения, линейчатым диаграммам, ограничивающий прямоугольник
-ms.openlocfilehash: ab472e1c988e6bdfb0a69d90e90280082b3db759
-ms.sourcegitcommit: c6b59f532a9c5818d9b25c355a174a231f5fa943
+ms.openlocfilehash: d289be31129324c6ff419b69dbce52bd8f62eb64
+ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66813848"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66829683"
 ---
 # <a name="bounding-box-and-app-bar"></a>Ограничивающим поле, а также панель приложения
 ![Ограничивающего прямоугольника имеет стандартный интерфейс для обработки объекта в смешанной реальности.](images/640px-boundingbox-hero.jpg)<br>
