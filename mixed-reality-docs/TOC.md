@@ -119,7 +119,7 @@
 ### [Активный объект](interactable-object.md)
 ### [Коллекция объектов](object-collection.md)
 ### [Индикация хода выполнения](progress.md)
-### [Панель приложения и ограничивающий прямоугольник](app-bar-and-bounding-box.md)
+### [Ограничивающая рамка и панель приложения](app-bar-and-bounding-box.md)
 ## Проектирование дома со смешанной реальностью
 ### [Руководство по проектированию средств запуска трехмерных приложений](3d-app-launcher-design-guidance.md)
 ### [Создание трехмерных моделей для использования в домашних условиях](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
