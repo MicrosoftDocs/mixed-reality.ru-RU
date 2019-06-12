@@ -6,17 +6,17 @@ ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D, модели, место на домашней странице, место, всему миру, моделирования, смешанной реальности домашней, Интернет, приложения
-ms.openlocfilehash: 3a50353aae8e03c3ebb3ee9ec2f642f21836e925
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: 954086b79e3614e1b75ceb7560f9fc87435530fa
+ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59605023"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66829736"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Включение размещения 3D-моделей в смешанной реальности home
 
 > [!NOTE]
-> Эта функция была добавлена как часть [обновления Windows 10 апреля 2018 г.](release-notes-april-2018.md). Более старые версии Windows не совместимы с помощью этой функции.
+> Эта функция была добавлена как часть [обновления Windows 10 апреля 2018 г](release-notes-april-2018.md). Более старые версии Windows не совместимы с помощью этой функции.
 
 [Windows Mixed Reality домашней](navigating-the-windows-mixed-reality-home.md) является отправной точкой, где пользователи будут располагаться перед запуском приложения. В некоторых сценариях 2D приложения (такие как голограммы) целенаправленного размещения трехмерных моделей непосредственно в домашней смешанной реальности, как оформление или для дальнейшей проверки в полностью трехмерном режиме. *Добавьте протокол модели* можно отправить к трехмерной модели из веб-сайта или приложения непосредственно в Windows Mixed Reality дома, где будет сохраняться, например [средствах запуска приложений 3D](3d-app-launcher-design-guidance.md), 2D приложения и голограммы. 
 
@@ -25,11 +25,21 @@ ms.locfileid: "59605023"
 ## <a name="device-support"></a>Поддержка устройств
 
 <table>
-<tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
-</tr><tr>
-<td>Добавление протокола модели</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><strong>Возможность</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+    </tr>
+     <tr>
+        <td>Добавление протокола модели</td>
+        <td>✔️</td>
+        <td>✔️</td>
+    </tr>
 </table>
 
 ## <a name="overview"></a>Обзор
@@ -84,4 +94,4 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 ## <a name="see-also"></a>См. также
 
 * [Создании трехмерных моделей для использования в домашних Windows Mixed Reality](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
-* [Перемещение Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
+* [Навигация по дому с технологией Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md)
