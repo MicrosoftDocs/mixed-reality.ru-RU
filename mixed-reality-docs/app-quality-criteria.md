@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: критерии контроля качества приложений, смешанной реальности, смешанный реальности
-ms.openlocfilehash: dfa1390190fad8d84982171dfbcfa101b20501dc
-ms.sourcegitcommit: c2a5bff423feba7d29d5431c870b6017c2fe1bc2
+ms.openlocfilehash: 8e635585c0981d81bf71fb5577232af28f2a0fdd
+ms.sourcegitcommit: 150d258a23130026c8792da383a3993657841fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750315"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67024495"
 ---
 # <a name="app-quality-criteria"></a>Критерии контроля качества приложения
 
@@ -37,7 +37,7 @@ ms.locfileid: "66750315"
     </colgroup>
     <tr>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -100,7 +100,7 @@ ms.locfileid: "66750315"
     </colgroup>
     <tr>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -162,7 +162,7 @@ Misalignments из голограммы с физические объекты (
     </colgroup>
     <tr>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -226,7 +226,7 @@ Misalignments из голограммы с физические объекты (
     </colgroup>
     <tr>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -283,7 +283,7 @@ Misalignments из голограммы с физические объекты (
     </colgroup>
     <tr>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -326,7 +326,7 @@ Misalignments из голограммы с физические объекты (
     </colgroup>
     <tr>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -385,7 +385,7 @@ Misalignments из голограммы с физические объекты (
     </colgroup>
     <tr>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -441,7 +441,7 @@ Misalignments из голограммы с физические объекты (
     </colgroup>
     <tr>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -504,7 +504,7 @@ Misalignments из голограммы с физические объекты (
     </colgroup>
     <tr>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -584,7 +584,7 @@ Misalignments из голограммы с физические объекты (
     </colgroup>
     <tr>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -618,7 +618,7 @@ Misalignments из голограммы с физические объекты (
 
 * [Активный объект](interactable-object.md)
 * [Текст в Unity](text-in-unity.md)
-* [Панель приложения и ограничивающий прямоугольник](app-bar-and-bounding-box.md)
+* [Ограничивающая рамка и панель приложения](app-bar-and-bounding-box.md)
 * [Голосовые команды](voice-design.md)
 
 #### <a name="tools-and-tutorials"></a>Инструменты и учебники
@@ -639,7 +639,7 @@ Misalignments из голограммы с физические объекты (
     </colgroup>
     <tr>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -694,7 +694,7 @@ Misalignments из голограммы с физические объекты (
     </colgroup>
     <tr>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -737,7 +737,7 @@ Misalignments из голограммы с физические объекты (
     </colgroup>
     <tr>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
         <td></td>
     </tr>
      <tr>

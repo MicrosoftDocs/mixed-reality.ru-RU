@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: контроллеры 6dof, движения
-ms.openlocfilehash: 7db1c16f8243081dc8f53e8722391f102c38e0d3
-ms.sourcegitcommit: 45676da11ebe33a2aa3dccec0e8ad7d714420853
+ms.openlocfilehash: fc6b0dcf7f338224af9ea9bc59e07187c33adda2
+ms.sourcegitcommit: 150d258a23130026c8792da383a3993657841fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65629112"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67024553"
 ---
 # <a name="motion-controllers"></a>Контроллеры движения
 
@@ -23,10 +23,23 @@ ms.locfileid: "65629112"
 ## <a name="device-support"></a>Поддержка устройств
 
 <table>
+<colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+</colgroup>
 <tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
-</tr><tr>
-<td> Контроллеры движения</td><td style="text-align: center;"></td><td style="text-align: center;"></td><td style="text-align: center;"> ✔️</td>
+     <td><strong>Возможность</strong></td>
+     <td><a href="hololens-hardware-details.md"><strong>HoloLens (1-го поколения)</strong></a></td>
+     <td><strong>HoloLens 2</strong></td>
+     <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
+</tr>
+<tr>
+     <td>Контроллеры движения</td>
+     <td>❌</td>
+     <td>❌</td>
+     <td>✔️</td>
 </tr>
 </table>
 
@@ -185,7 +198,7 @@ Windows Mixed Reality поддерживает движения контролл
 
 ## <a name="composite-gestures-high-level-spatial-input"></a>Составные жесты: Высокоуровневые пространственных входных данных
 
-Оба [передать жесты](gestures.md) и контроллеры движения могут отслеживаться в долгосрочной перспективе для определения общего набора обобщенных  **[составные жесты](gestures.md#composite-gestures)**. Это позволяет приложению определить высокоуровневые **коснитесь**, **хранения**, **манипуляции** и **навигации** жесты, ли пользователи в итоге руки или контроллеров.
+Оба [передать жесты](gestures.md) и контроллеры движения могут отслеживаться в долгосрочной перспективе для определения общего набора обобщенных  **[составные жесты](gestures.md#composite-gestures)** . Это позволяет приложению определить высокоуровневые **коснитесь**, **хранения**, **манипуляции** и **навигации** жесты, ли пользователи в итоге руки или контроллеров.
 
 ## <a name="rendering-the-motion-controller-model"></a>Подготовка к просмотру модели контроллера движения
 
@@ -231,7 +244,7 @@ Windows Mixed Reality поддерживает движения контролл
 
 ## <a name="see-also"></a>См. также
 * [Жесты и контроллеры движения в Unity](gestures-and-motion-controllers-in-unity.md)
-* [Руки и контроллеры движения в DirectX](hands-and-motion-controllers-in-directx.md)
+* [Контроллеры движения и жестов в DirectX](hands-and-motion-controllers-in-directx.md)
 * [Жесты](gestures.md)
 * [213. Ввод в смешанной реальности: контроллеры движения](mixed-reality-213.md)
 * [Руководство по кого. В Windows Mixed Reality home](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)

@@ -6,12 +6,12 @@ ms.author: pbarnett
 ms.date: 4/25/2019
 ms.topic: article
 keywords: HoloLens, эмулятор, сборки версии
-ms.openlocfilehash: 75ea6d1ab3f949d28364baca408d79ec9e4bb846
-ms.sourcegitcommit: 222cba2d622b47f75949bf8af80d5c62de4dceab
+ms.openlocfilehash: 017193756b5c57c5bb45351db208533f980701a7
+ms.sourcegitcommit: 150d258a23130026c8792da383a3993657841fb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64914645"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67024486"
 ---
 Эмулятор HoloLens (1-го поколения) и side-by-side установить построений HoloLens 2 эмулятора. Обычно рекомендуется использовать последняя сборка, но возможны случаи, когда требуется или необходимо выполнять тестирование приложения с использованием старого эмулятора. Эта страница содержит ссылки на выпущенных версий.
 
@@ -21,7 +21,8 @@ ms.locfileid: "64914645"
 
 |  Сборка |  Дата выпуска |  Примечания | 
 |----------|----------|----------|
-|  [Эмулятор 2 HoloLens сборки 10.0.18362.1005](https://go.microsoft.com/fwlink/?linkid=2087187) | 16 апреля 2019 г. | Последняя сборка HoloLens 2. |
+|  [Эмулятор 2 HoloLens сборки 10.0.18362.1019](https://go.microsoft.com/fwlink/?linkid=2095316) | 11 июня 2019 г. | Последняя сборка HoloLens 2.  Больше не требуется запуск от имени администратора.  Главное меню добавлены. |
+|  [Эмулятор 2 HoloLens сборки 10.0.18362.1005](https://go.microsoft.com/fwlink/?linkid=2087187) | 16 апреля 2019 г. |  |
 
 
 # <a name="hololens-emulator-1st-gen-archive"></a>Эмулятор HoloLens (1-го поколения) архива
@@ -32,7 +33,7 @@ ms.locfileid: "64914645"
 |  [Эмулятор HoloLens сборки 10.0.17763.253](https://go.microsoft.com/fwlink/?linkid=2065980) | 19 ноября 2018 г. | Последние HoloLens (1-го поколения) сборки. 10 октября 2018 с обновлением Windows. |
 |  [Эмулятор HoloLens сборки 10.0.17134.80](https://go.microsoft.com/fwlink/?linkid=874531) | 21 мая 2018 г. | 
 |  [Эмулятор HoloLens сборки 10.0.14393.1358](https://go.microsoft.com/fwlink/?linkid=852626) |  7 июля 2017 г. |
-|  [Эмулятор HoloLens сборки 10.0.14393.0](http://go.microsoft.com/fwlink/?LinkID=823018) |  2 августа 2016 г. |
+|  [Эмулятор HoloLens сборки 10.0.14393.0](http://go.microsoft.com/fwlink/?LinkID=823018) |  2 августа 2016 г. |
 |  [Эмулятор HoloLens сборки 10.0.14342.1018](http://go.microsoft.com/fwlink/?LinkID=823018) |  31 мая 2016 г. |
 |  [Эмулятор HoloLens сборки 10.0.11082.1033](http://go.microsoft.com/fwlink/?LinkID=724053) |  30 марта 2016 г. |
 

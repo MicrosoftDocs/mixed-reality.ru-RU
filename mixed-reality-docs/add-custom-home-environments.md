@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
 keywords: Windows Mixed Reality, смешанной реальности, виртуальной реальности, виртуальной Реальности, MR, Home, пользовательских сред, местах, Александр дома, skyloft, пользователя, создание
-ms.openlocfilehash: 8f5a3a1bdf5728260b0b7717c74a50f3356ca04a
-ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
-ms.translationtype: HT
+ms.openlocfilehash: d0cdb878f1994cb5f898f06b98d74dee3dd4fdf1
+ms.sourcegitcommit: 150d258a23130026c8792da383a3993657841fb4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829638"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67024530"
 ---
 # <a name="add-custom-home-environments"></a>Добавление пользовательских сред home
 
@@ -33,7 +33,7 @@ ms.locfileid: "66829638"
     <tr>
         <td><strong>Возможность</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
     </tr>
      <tr>
         <td>Пользовательские домашней среды</td>
@@ -150,6 +150,5 @@ Spawn расположение по умолчанию расположен в 0
 При создании пользовательской среды, он будет использовать моделирование отрисовки шума, которое не соответствует физического пространства, которую вы создали. Звук, могут поступать из так направлениях и может показаться muffled. 
 
 ## <a name="see-also"></a>См. также
-* [Перемещение Windows смешанный домашней реальность](#navigating-the-windows-mixed-reality-home.md)
 * [Windows смешанный преобразователь активов реальности (на GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)
 
