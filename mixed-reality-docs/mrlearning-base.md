@@ -1,17 +1,17 @@
 ---
-title: Введение базового обучения MR модуля
-description: Выполните этот курс, чтобы узнать, как реализовать распознавание лиц Azure в приложениях смешанной реальности.
+title: Общие сведения о модуле MR обучения базы
+description: В рамках этого курса вы узнаете, как реализовать функцию распознавания лиц Azure в приложении смешанной реальности.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
-keywords: Смешанная реальность, unity, руководство, hololens
-ms.openlocfilehash: 2fe07efe87086e9a8c06e1953fcef8544b03c80a
-ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
+keywords: mixed reality, unity, tutorial, hololens
+ms.openlocfilehash: d4220527a7de8e596f2825fd9d199d536510b972
+ms.sourcegitcommit: 2f600e5ad00cd447b180b0f89192b4b9d86bbc7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829885"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "67148628"
 ---
 # <a name="mr-learning-base-module-overview--objectives"></a>Общие сведения о модуле Base обучения MR & цели
 
@@ -28,7 +28,7 @@ ms.locfileid: "66829885"
         <td><strong>Курс</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1-го поколения)</strong></a></td>
         <td><a href="https://www.microsoft.com/en-us/hololens/hardware"><strong>HoloLens 2</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
     </tr>
      <tr>
         <td></td>

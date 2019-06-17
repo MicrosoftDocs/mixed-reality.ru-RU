@@ -1,9 +1,9 @@
 # [Установка средств](install-the-tools.md)
 # [Подготовка приложения для HL2](mrtk-porting-guide.md)
-# [Ознакомление](index.md)
+# Обнаружение
+## [Документация по смешанной реальности](index.md)
 ## [Что такое смешанная реальность?](mixed-reality.md)
 ## [Что такое голограмма?](hologram.md)
-
 ## Оборудование
 ### HoloLens
 #### [Сведения об оборудовании HoloLens 2](https://www.microsoft.com/hololens/hardware)
@@ -78,7 +78,8 @@
 ### [Заметки о выпуске — май 2016 г.](release-notes-may-2016.md)
 ### [Заметки о выпуске — март 2016 г.](release-notes-march-2016.md)
 
-# [Оформление](design.md)
+# Оформление
+## [Создание решений для смешанной реальности](design.md)
 ## [Сведения о руководстве по проектированию](about-this-design-guidance.md)
 ## Приступая к проектированию
 ### [Что такое смешанная реальность?](mixed-reality.md)
@@ -129,7 +130,8 @@
 ### [HoloSketch](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
 ### [Процесс создания ресурсов](asset-creation-process.md)
 
-# [Разработка](development.md)
+# Разработка
+## [Панель запуска для разработки](development.md)
 ## Облачные службы смешанной реальности
 ### [Пространственные привязки Azure](https://docs.microsoft.com/azure/spatial-anchors)
 ### [Holographic Remoting Player](holographic-remoting-player.md)

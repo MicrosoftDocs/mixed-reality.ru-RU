@@ -3,15 +3,15 @@ title: Элементом объекта
 description: Кнопка уже давно метафоры, вызывающих срабатывание события в мире двухмерной абстрактным. В мире трехмерного смешанной реальности мы не нужно ограничиваться мире больше абстракции.
 author: cre8ivepark
 ms.author: jennyk
-ms.date: 02/24/2019
+ms.date: 06/06/2019
 ms.topic: article
 keywords: Смешанная реальность, элементов управления, взаимодействие, пользовательского интерфейса, ux
-ms.openlocfilehash: eea7eff6c591a9319b920936ce2be511cecb7496
-ms.sourcegitcommit: c6b59f532a9c5818d9b25c355a174a231f5fa943
+ms.openlocfilehash: b0397e00763f70e4caf55a84b6541085e56fafd4
+ms.sourcegitcommit: 2f600e5ad00cd447b180b0f89192b4b9d86bbc7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66813803"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "67148739"
 ---
 # <a name="interactable-object"></a>Элементом объекта
 
@@ -84,20 +84,51 @@ HoloLens 2 поддерживает ясно сформулированные р
 
 <img src="images/640px-interactibleobject-voicecommand.jpg" alt="Tooltip for the voice command" title="Всплывающая подсказка для голосовых команд" width="350"><br/>*Всплывающая подсказка для голосовых команд*
 
+## <a name="sizing"></a>Изменения размера
+Чтобы убедиться, что все объекты элементом можно легко затронутых пользователей мы рекомендуем обеспечение элементом соответствует минимальный размер (часто она измеряется в градусах visual угол) зависимости от расстояния, он помещается от пользователя. Угол visual градусов зависимости от расстояния между пользователем и объект и остается неизменным, хотя физический размер целевого объекта может изменяться, когда расстояние от изменения, внесенные пользователем. Для определения необходимости физического размера объекта, основанного на расстояние от том и степень visual угол попробуйте с помощью калькулятора, например: http://elvers.us/perception/visualAngle/
+
+Ниже приведены рекомендации по минимальные размеры элементом содержимого
+
+### <a name="target-size-for-direct-hand-interaction"></a>Целевой размер для взаимодействия с прямой вручную
+| расстояние | Угол обзора | Размер |
+|---------|---------|---------|
+| 45cm  | не менее 2° | 1,6 1.6 cm |
+
+![Целевой размер для взаимодействия с прямой вручную](images/TargetSizingNear.jpg)<br>
+*Целевой размер для взаимодействия с прямой вручную*
+
+При создании кнопки для прямого взаимодействия, мы рекомендуем увеличить минимальный размер, равный cm 3.2 x 3.2, чтобы убедиться, что существует достаточно пространства для значка и потенциально некоторые текст **
+
+| расстояние | Минимальный размер |
+|---------|---------|
+| 45cm  | 3.2 x 3.2 cm |
+
+![Целевой размер для кнопок](images/TargetSizingButtons.png)<br>
+*Целевой размер для кнопок*
+
+
+### <a name="target-size-for-hand-ray-or-gaze-interaction"></a>Целевой размер для Рэя вручную или при помощи взаимодействия
+| расстояние | Угол обзора | Размер |
+|---------|---------|---------|
+| 2 МБ  | не менее 1° | 3,5 3.5 cm |
+
+![Целевой размер для Рэя вручную или при помощи взаимодействия](images/TargetSizingFar.jpg)<br>
+*Целевой размер для Рэя вручную или при помощи взаимодействия*
+
 ## <a name="creating-interactable-object-with-mixed-reality-toolkit-mrtk"></a>Создание элементом объекта с помощью набора средств смешанной реальности (MRTK)
 
 В  **[смешанной реальности Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)** , вы найдете ряд скриптов Unity и prefabs, которые помогут вам создавать объекты элементом. Их можно использовать для реагировать на различные виды состояний взаимодействия входных объектов.
 
-* **[Элементом](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)**
-* **[Кнопка](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)**
-* **[Стороны взаимодействия примеры сцены](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)**
+* [Элементом](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
+* [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* [Стороны взаимодействия примеры сцены](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 Стандартный шейдера MixedRealityToolkit предоставляет различные параметры, такие как **light с учетом расположения** , помогающее создавать звуковые и подсказки.
-* **[Стандартный шейдера MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)**
+* [Стандартный шейдера MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)
 
 
 ## <a name="see-also"></a>См. также
 
-* **[Ограничивающий прямоугольник](app-bar-and-bounding-box.md)**
-* **[Коллекция объектов](object-collection.md)**
-* **[Биллбординга и tag-along](billboarding-and-tag-along.md)**
+* [ограничивающий прямоугольник](app-bar-and-bounding-box.md)
+* [Коллекция объектов](object-collection.md)
+* [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
