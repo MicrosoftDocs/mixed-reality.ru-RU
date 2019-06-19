@@ -145,6 +145,7 @@
 #### [Режим воспроизведения в Unity](unity-play-mode.md)
 #### [Экспорт и разработка решения Visual Studio для Unity](exporting-and-building-a-unity-visual-studio-solution.md)
 #### [Рекомендации по работе с Unity и Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
+#### [Управляемая отладка с помощью Unity IL2CPP](managed-debugging-with-unity-il2cpp.md)
 ### Основные компоненты
 #### [Камера в Unity](camera-in-unity.md)
 #### [Системы координат в Unity](coordinate-systems-in-unity.md)
