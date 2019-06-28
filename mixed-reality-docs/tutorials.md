@@ -7,18 +7,18 @@ ms.author: kurtie
 ms.date: 03/21/2018
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit unity, academy, учебник
-ms.openlocfilehash: b94f1be256d3373deb5f177be0ee9bc0c8be3180
-ms.sourcegitcommit: 90ce9415889e7121dd2fd76a893dc3734672881b
+ms.openlocfilehash: 4f1402cb9b91e0d0619c0516de9120302323b799
+ms.sourcegitcommit: d8700260f349a09c53948e519bd6d8ed6f9bc4b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64874056"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67415406"
 ---
 # <a name="tutorials-and-sample-apps"></a>Учебники и примеры приложений
 
 В настоящее время все наши руководства и примеры приложений, на основе Unity.  Как мы разработки содержимого для других модулей и платформ, их можно найти под заголовком соответствующие в оглавлении.
 
-## <a name="mr-learning-modules"></a>MR Learning Modules
+## <a name="mr-learning-modules"></a>Учебные модули для смешанной реальности
 
 MR Learning Modules призваны помочь разработчикам Дополнительные методики и рекомендации по разработке приложений для смешанной реальности.  Начальная модулей предназначены для HoloLens 2 и реализовать смешанной реальности Toolkit 2.0 (MRTK 2.0).
 * Основной модуль предназначен для разработчиков показано, как их проект с MRTK, а также для реализации пользовательского интерфейса, пространственных сопоставление и основные и расширенные взаимодействий
