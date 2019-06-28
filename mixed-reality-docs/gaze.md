@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Смешанный реальность, взглядом, взаимодействие, проектирование
-ms.openlocfilehash: e0c1a925f6faeb37ec35e511cef36f9c06672c8a
-ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
+ms.openlocfilehash: 7e65d26d3e9edabbd01d35a887ffc8622a3c6337
+ms.sourcegitcommit: d8700260f349a09c53948e519bd6d8ed6f9bc4b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829738"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67414370"
 ---
 # <a name="gaze"></a>Взгляд
 
@@ -38,8 +38,8 @@ ms.locfileid: "66829738"
     <tr>
         <td><strong>Возможность</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1-го поколения)</strong></a></td>
-        <td><strong>HoloLens 2</strong></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивную</strong></a></td>
+        <td><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
     </tr>
      <tr>
         <td>HEAD взглядом</td>
@@ -84,5 +84,5 @@ ms.locfileid: "66829738"
 * [210. Ввод в смешанной реальности: HEAD взглядом](holograms-210.md)
 * [Направление головы и взгляда в DirectX](gaze-in-directx.md)
 * [Взглядом HEAD в Unity](gaze-in-unity.md)
-* [Отслеживания на HoloLens 2](eye-tracking.md)
+* [Глаз взглядом на HoloLens 2](eye-tracking.md)
 * [Взглядом глаза в Unity, использование набора средств для смешанной реальности](https://aka.ms/mrtk-eyes)

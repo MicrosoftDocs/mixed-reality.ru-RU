@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 2D приложение, UWP, плоский приложения, HoloLens, иммерсивных гарнитура, модель приложения резервного кнопки, панели приложения, точек на дюйм, разрешения, масштабирование
-ms.openlocfilehash: 35a2e7774a79e35893821467f7e9ef8c004efa20
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: f9792a7e5fd9729bf9f5f632c699c74c58c10ddf
+ms.sourcegitcommit: d8700260f349a09c53948e519bd6d8ed6f9bc4b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59602186"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67414225"
 ---
 # <a name="updating-2d-uwp-apps-for-mixed-reality"></a>Обновление 2D uwp для смешанной реальности
 
@@ -147,7 +147,7 @@ Windows 10 перемещает все визуального проектиро
 
 **Заголовок:** отображает *displayname* плитки, связанные с экземпляром приложения
 
-**Кнопка "Назад":** вызывает *[BackRequested](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* событие при нажатии. Управляется назад видимость кнопки  *[SystemNavigationManager.AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)*.
+**Кнопка "Назад":** вызывает *[BackRequested](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* событие при нажатии. Управляется назад видимость кнопки  *[SystemNavigationManager.AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)* .
 
 ![Приложение панели пользовательского интерфейса в представлении 2D приложения](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
 *Приложение панели пользовательского интерфейса в представлении 2D приложения*
@@ -177,9 +177,9 @@ Windows берет на себя все эти сложности для при�
 
 ## <a name="see-also"></a>См. также
 * [Модель приложений](app-model.md)
-* [Взглядом](gaze.md)
+* [Взгляд](gaze.md)
 * [Жест](gestures.md)
 * [Контроллеры движения](motion-controllers.md)
-* [Голоса](voice-input.md)
+* [Голосовой ввод](voice-input.md)
 * [Отправка приложения в Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 * [Использование эмулятора HoloLens](using-the-hololens-emulator.md)

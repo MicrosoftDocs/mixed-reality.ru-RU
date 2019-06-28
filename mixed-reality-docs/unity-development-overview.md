@@ -6,16 +6,16 @@ ms.author: Yoyoz
 ms.date: 04/15/2018
 ms.topic: article
 keywords: Смешанный реальность, разработка, Приступая к работе, новый проект, перенос, возможность, камеры, моделирования, эмуляции, документация по Unity
-ms.openlocfilehash: 2cdcd5e997ab7e3f6d340377464e453a8e7c025c
-ms.sourcegitcommit: 90ce9415889e7121dd2fd76a893dc3734672881b
+ms.openlocfilehash: 24217b4c61bf2d438ebc1c4114bc9dc20dc62f64
+ms.sourcegitcommit: d8700260f349a09c53948e519bd6d8ed6f9bc4b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64874004"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67414525"
 ---
 # <a name="unity-development-overview"></a>Общие сведения о разработке Unity
 
-Самый быстрый путь к стандартных [приложением смешанной реальности](app-views.md) с [Unity](http://aka.ms/HoloLensUnity). Рекомендуется, чтобы тратить время на изучение [учебники Unity](https://unity3d.com/learn/tutorials). Если вам нужна активы, Unity имеет исчерпывающий [Asset Store](https://www.assetstore.unity3d.com/). После создания копии базовое представление о Unity, вы можете посетить [учебники](tutorials.md) Дополнительные особенности разработки смешанной реальности, с помощью Unity. Не забудьте посетить [форумы смешанной реальности Unity](http://forum.unity3d.com/forums/hololens.102/) для привлечения остальным членам сообщества создавать приложения смешанной реальности в Unity и поиск решений проблем, вы можете столкнуться.
+Самый быстрый путь к стандартных [приложением смешанной реальности](app-views.md) с [Unity](http://aka.ms/HoloLensUnity). Рекомендуется выполнить время рассмотреть [учебники Unity](https://unity3d.com/learn/tutorials). Если вам нужна активы, Unity имеет исчерпывающий [Asset Store](https://www.assetstore.unity3d.com/). После создания копии базовое представление о Unity, вы можете посетить [учебники](tutorials.md) Дополнительные особенности разработки смешанной реальности, с помощью Unity. Не забудьте посетить [форумы смешанной реальности Unity](http://forum.unity3d.com/forums/hololens.102/) для привлечения остальным членам сообщества создавать приложения смешанной реальности в Unity и поиск решений проблем, вы можете столкнуться.
 
 
 Чтобы приступить к созданию приложений смешанной реальности в Unity, сначала [установить средства](install-the-tools.md). 
@@ -30,7 +30,7 @@ ms.locfileid: "64874004"
 
 ## <a name="configuring-new-unity-project-for-windows-mixed-reality"></a>Настройка нового проекта Unity для Windows Mixed Reality
 
-Если вы хотите создать новый проект Unity без импорта смешанной реальности Toolkit, есть небольшой набор параметров Unity, вам потребуется вручную измените для смешанной реальности Windows, чтобы разделить на две категории: отдельных проектов и на сцене. Здесь приведены пошаговые инструкции для [настроить новый Unity проекта для Windows Mixed Reality](Configure-Unity-Project.md)
+Если вы хотите создать новый проект Unity без импорта смешанной реальности Toolkit, есть небольшой набор параметров Unity, вам потребуется вручную изменить для смешанной реальности Windows. Эта стоимость разбита на две категории: отдельных проектов и на сцене. Здесь приведены пошаговые инструкции для [настроить новый Unity проекта для Windows Mixed Reality](Configure-Unity-Project.md)
 
 ## <a name="adding-mixed-reality-capabilities-and-inputs"></a>Добавление возможности смешанной реальности и входные данные
 
@@ -38,12 +38,12 @@ ms.locfileid: "64874004"
 
 Добавлена поддержка функций Windows Mixed Reality, такие как [пространственных этапы](coordinate-systems.md#spatial-coordinate-systems), [жесты, контроллеры движения](gestures-and-motion-controllers-in-unity.md) или [голоса](voice-input-in-unity.md) достигается с помощью API-интерфейсы, построенные непосредственно в Unity. 
 
-Прежде всего следует просмотреть [возникнуть шкал](coordinate-systems.md) , предназначенных для приложения:
+Во-первых, просмотрите [возникнуть шкал](coordinate-systems.md) applicatioin вашего предназначенное для:
 * Если вы хотите создать **только для ориентации** или **сидели высококлассные возможности**, необходимо задать тип пространства для отслеживания Unity [стационарные](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience).
 * Если вы хотите создать **положение шкалы** или **комнаты высококлассные возможности**, вам потребуется убедиться Unity отслеживания тип пространства успешно присвоено [RoomScale](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience).
-* Если вы хотите создать **высококлассные world** взаимодействия на HoloLens, позволяя пользователям перемещаться за пределы 5 м, вам потребуется использовать [WorldAnchor](coordinate-systems-in-unity.md#building-a-world-scale-experience) компонента.
+* Если вы хотите создать **высококлассные world** возникают на HoloLens, который позволяет пользователям перемещаться за пределы 5 м, вам потребуется использовать [WorldAnchor](coordinate-systems-in-unity.md#building-a-world-scale-experience) компонента.
 
-Все основные строительные блоки для смешанной реальности приложений, представлены в форме, совместимой с другими интерфейсами API Unity. Они также доступны в этой смешанной реальности Toolkit.
+Все основные строительные блоки для смешанной реальности приложений, представлены в форме, совместимой с другими интерфейсами API Unity. Они также доступны через набор средств смешанной реальности.
 * [Камера](camera-in-unity.md)
 * [Системы координат](coordinate-systems-in-unity.md)
 * [Взгляд](gaze-in-unity.md)
@@ -53,7 +53,7 @@ ms.locfileid: "64874004"
 * [Пространственный звук](spatial-sound-in-unity.md)
 * [Пространственное сопоставление](spatial-mapping-in-unity.md)
 
-Существуют другие ключевые функции, что во многих приложениях смешанной реальности будете использовать, также предоставляются для приложений Unity:
+Существуют другие ключевые функции, которые многие смешанной реальности, нужные приложения для использования, которые также доступны в приложения Unity:
 * [Общие возможности](shared-experiences-in-unity.md)
 * [Камера с определяемым местоположением](locatable-camera-in-unity.md)
 * [Точку фокуса](focus-point-in-unity.md)
@@ -62,7 +62,7 @@ ms.locfileid: "64874004"
 
 ## <a name="running-your-unity-project-on-a-real-or-simulated-device"></a>Запуск проекта Unity на физическое или виртуальное устройство
 
-После того, как проект Unity holographic готовы протестировать, ваш следующий шаг — [экспорта и сборки решения Visual Studio для Unity](exporting-and-building-a-unity-visual-studio-solution.md).
+После того, как проект Unity holographic готова к тестированию, ваш следующий шаг — [экспорта и сборки решения Visual Studio для Unity](exporting-and-building-a-unity-visual-studio-solution.md).
 
 С помощью этого решения VS в наличии затем запуском приложения в одном из трех способов, с помощью физическое или виртуальное устройство:
 * [Развертывание на реальных HoloLens или Windows Mixed Reality иммерсивных гарнитуры](using-visual-studio.md)

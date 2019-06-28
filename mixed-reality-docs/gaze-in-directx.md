@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 05/09/2019
 ms.topic: article
 keywords: взглядом, головного взглядом, head отслеживания, отслеживания, directx, входные данные и голограммы
-ms.openlocfilehash: ac72c5305527ed2d68945aeb32051cf2246a736e
-ms.sourcegitcommit: 60060386305eabfac2758a2c861a43c36286b151
+ms.openlocfilehash: edf20a621178d76bfc97477f9f9b2eca200f1318
+ms.sourcegitcommit: d8700260f349a09c53948e519bd6d8ed6f9bc4b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66453740"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67414411"
 ---
 # <a name="head-and-eye-gaze-input-in-directx"></a>HEAD и глаз помощи входных данных в DirectX
 
@@ -149,7 +149,7 @@ if (pointerPose)
 
 ## <a name="see-also"></a>См. также
 * [Головной модель ввода, взглядом и фиксации](gaze-and-commit.md)
-* [Отслеживания на HoloLens 2](eye-tracking.md)
+* [Глаз взглядом на HoloLens 2](eye-tracking.md)
 * [Системы координат в DirectX](coordinate-systems-in-directx.md)
 * [Голосовой ввод в DirectX](voice-input-in-directx.md)
 * [Контроллеры движения и жестов в DirectX](hands-and-motion-controllers-in-directx.md)
