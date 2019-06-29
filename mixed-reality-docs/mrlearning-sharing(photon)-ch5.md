@@ -6,18 +6,18 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 941bdc64ed614d5ce71f58f05585d0dfc86c3bb7
-ms.sourcegitcommit: d8700260f349a09c53948e519bd6d8ed6f9bc4b4
+ms.openlocfilehash: 2a16d318c6d749bcbf6ed9db0d6cd2228a6ea06e
+ms.sourcegitcommit: 78e21e887bf4357c96c9ab2164559d610e8c041e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67415935"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465202"
 ---
 # <a name="azure-spatial-anchors-and-shared-experiences"></a>Azure пространственных привязки и отзывов
 
-На этом занятии будет рассказано как интегрировать Azure пространственных привязки (ASA) в наш общий интерфейс. ASA позволяет иметь общее представление, если их физической среды, чтобы привязать виртуальный таким образом, чтобы все участники см. в разделе объектов находится там же физических несколько совмещенной устройства.
+В этом уроке мы узнаем, как интегрировать Azure пространственных привязки (ASA) в наш общий интерфейс. ASA позволяет иметь Справочник по общим, если их физической среды виртуальные компоненты для работы привязки таким образом, чтобы все участники см. в разделе объектов находится там же физических несколько совмещенной устройства.
 
-Прежде чем продолжить с этого занятия, будет необходимо выполнить модуль ASA обучения, который мы рассмотрим основы ASA, учетная запись Azure и создание ресурсов и других блоков фундаментальные здания, которые необходимы, прежде чем мы можете интегрировать ASA в наш общий интерфейс.
+Прежде чем продолжить с этого занятия, нам потребуется для выполнения модуля обучения ASA, который мы рассмотрим основы ASA, учетная запись Azure и создание ресурсов и других блоков фундаментальные здания, которые необходимы, прежде чем мы можете интегрировать ASA в наш общий интерфейс.
 
 Цели:
 
@@ -28,22 +28,22 @@ ms.locfileid: "67415935"
 
 1. Сохраните проект на предыдущем занятии (CTRL + S) и назовите его «HLSharedProjectMainPart5.unity», так как это было легко найти, когда она понадобится снова.
 
-2. Выберите prefab TableAnchor под «MixedRealityPlayspace» родительского объекта и удалите его.
+2. Выберите prefab TableAnchor под MixedRealityPlayspace родительского объекта и удалите его.
 
 ![Module3Chapter5tep2im](images/module3chapter5step2im.PNG)
 
 
 
-3.  В представлении проекта, перейдите к активам > ресурсы > Prefabs и перетащите TableAnchor prefab поверх SharedPlayground объект в качестве дочернего.
-4.  Разверните родительский объект «MixedRealityPlayspace», то объект «TableAnchor», а также объект «кнопки». 
+3.  В представлении проекта перейти к ресурсам, "->" ресурсы "->" Prefabs, а затем перетащите prefab TableAnchor поверх SharedPlayground объект в качестве дочернего.
+4.  Разверните MixedRealityPlayspace родительский объект, объект TableAnchor, а также объект кнопки. 
 
 ![Module3hapter5step5im](images/module3chapter5step5im.PNG)
 
-4. Теперь в иерархии, выберите «ShareAzureAnchorButton» и переместите вашего внимания к панели инспектора. Прокрутите вниз, чтобы в раскрывающемся меню, показанный на рисунке ниже и выберите «AnchorModuleScript» и щелкните «ShareAnchorNetework().»
+4. Теперь в иерархии, выберите ShareAzureAnchorButton и переместите вашего внимания Inaspector панели. Прокрутите вниз до раскрывающееся меню, показанный на рисунке ниже, выберите AnchorModuleScript и нажмите кнопку ShareAnchorNetework().
 
 ![Module3hapter5step6im](images/module3chapter5step6im.PNG)
 
-5. Подобно шаг 4 выберите «GetAzureAnchorButton» и переместите вашего внимания, вернитесь к панели инспектора. Прокрутите вниз, чтобы в раскрывающемся меню, показанный на рисунке ниже и выберите «AnchorModuleScript» и щелкните «GetSharedAnchorNetwork().» Затем сохраните.
+5. Выберите GetAzureAnchorButton (см. шаг 4), и переместите вашего внимания, вернитесь к панели инспектора. Прокрутите вниз до раскрывающееся меню, показанный на рисунке ниже и выберите AnchorModuleScript и нажмите кнопку GetSharedAnchorNetwork() и сохраните.
 
 ![Module3hapter5step7im](images/module3chapter5step7im.PNG)
 
