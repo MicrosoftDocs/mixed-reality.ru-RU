@@ -8,12 +8,12 @@ ms.date: 02/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
-ms.openlocfilehash: 810d9846fd217cd1acb3ae0060c11f5c9173191e
-ms.sourcegitcommit: c6b59f532a9c5818d9b25c355a174a231f5fa943
+ms.openlocfilehash: cf513cebbbf4f05721811cb82d584f9039e378b7
+ms.sourcegitcommit: d8700260f349a09c53948e519bd6d8ed6f9bc4b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66813748"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67415387"
 ---
 # <a name="mixed-reality-documentation"></a>Документация по смешанной реальности
 
@@ -151,7 +151,7 @@ ms.locfileid: "66813748"
 
 <h2>Новости и замечания</h2>
 
-<h3>Апрель 2019 г.</h3>
+<h3>Июнь 2019 г.</h3>
 
 Как и обещали, мы с радостью расскажем вам еще много интересного о смешанной реальности. Мы ждем ваших отзывов и предлагаем [присоединиться к обсуждению](https://holodevelopersslack.azurewebsites.net/) тем, которые вас интересуют, с людьми, с которыми вы хотели бы пообщаться, а также получить руководства и рекомендации, которые могут потребоваться вам для работы. Вы также можете связаться с нами в [Twitter](https://twitter.com/MxdRealityDev) или [присоединиться к нашей программе для разработчиков](https://aka.ms/iwantmr), чтобы напрямую получать свежую информацию о новых документах, средствах, мероприятиях и так далее. Следите за новостями!
 
@@ -162,7 +162,7 @@ ms.locfileid: "66813748"
 <tr>
 <td><b>Руководства по переносу приложений</b> <br>1. Из набора средств HoloToolKit (HTK)/Mixed Reality Toolkit Mixed Reality (MRTK) в MRTK версии 2
 <br>2. Из HoloLens (1-го поколения) в HoloLens 2 (из x86 в ARM, рекомендации по взаимодействию и разработке)
-</td></td><td>Март — май 2019 г.</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-porting-guide>Подготовка существующего приложения для использования с HoloLens 2</a><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html>Переход с HoloToolKit на API-интерфейсы MRTK </a></td>
+</td></td><td>Март — май 2019 г.</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-porting-guide>Подготовка существующего приложения к использованию с HoloLens 2</a><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html>Переход с HoloToolKit на API-интерфейсы MRTK </a></td>
 </tr>
 <tr>
 <td>Выпускаемые ежемесячно модули по разработке с открытым кодом (руководства и примеры приложений)</td><td>Март — июнь 2019 г.</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1>Основной модуль обучения работе со смешанной реальностью</a></td>
@@ -183,4 +183,4 @@ ms.locfileid: "66813748"
 
 
 >[!IMPORTANT]
->Все материалы по разработке решений смешанной реальности, содержащиеся на этом сайте, предоставляются исключительно для ознакомления. Вы как разработчик приложения несете полную ответственность за приложение, его использование и влияние на конечных пользователей. В том числе вы гарантируете, что приложение не станет причиной дискомфорта, травмирования или любого другого вреда для конечных пользователей. Также вы отвечаете за наличие соответствующих предупреждений и заявлений об отказе от ответственности. Вы должны во всех случаях предпринимать соответствующие действия, касающиеся разработки и публикации приложения, чтобы гарантировать его безопасность и выполнение всех обязательств, установленных в [соглашении между разработчиком приложений и корпорацией Майкрософт](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement). 
+>Все материалы по разработке решений смешанной реальности, содержащиеся на этом сайте, предоставляются исключительно для ознакомления. Вы как разработчик приложения несете полную ответственность за приложение, его использование и влияние на конечных пользователей. В частности вы гарантируете, что приложение не станет причиной дискомфорта, травмирования или любого другого вреда для пользователей. Также вы отвечаете за наличие соответствующих предупреждений и заявлений об отказе от ответственности. Вы должны во всех случаях предпринимать соответствующие действия, касающиеся разработки и публикации приложения, чтобы гарантировать его безопасность и выполнение всех обязательств, установленных в [соглашении между разработчиком приложений и корпорацией Майкрософт](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement). 
