@@ -6,16 +6,16 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: b729de818dfa21df8fbce782a24a611a365ac795
-ms.sourcegitcommit: 78e21e887bf4357c96c9ab2164559d610e8c041e
+ms.openlocfilehash: 2a4ea599fd4887f30589c2d839be305d3dc8d1bd
+ms.sourcegitcommit: cf9f8ebbca0301e9d277853771ff6e47701ba1c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465226"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67523195"
 ---
-# <a name="synchronizing-shared-object-movements"></a>Синхронизация общий объект перемещения
+# <a name="4-sharing-object-movements-with-multiple-users"></a>4. Совместное использование перемещений объект с несколькими пользователями
 
-В этом уроке мы узнаем, как совместно использовать перемещения объектов всех участников сеанса совместной работы могут работать вместе и просмотра взаимодействия других пользователей. Это занятие основано лунный запуска, который был создан как часть [учебники базового модуля](mrlearning-base.md).
+В этом руководстве мы узнаем, как совместно использовать перемещения объектов всех участников сеанса совместной работы могут работать вместе и просмотра взаимодействия других пользователей. Это занятие основано лунный запуска, который был создан как часть [учебники базового модуля](mrlearning-base.md).
 
 Цели:
 
@@ -26,7 +26,7 @@ ms.locfileid: "67465226"
 ### <a name="instructions"></a>Инструкция
 
 
-1. Сохраните сцены на предыдущем занятии (CTRL + + S). Вы можете назвать приложение HLSharedProjectMainPart4.unity, чтобы его было легко найти, когда это необходимо.
+1. Сохраните сцены на предыдущем занятии (CTRL + + S). Вы можете назвать приложение HLSharedProjectMainPart4.unity, так как это было легко найти, когда это необходимо.
 
 2. В окне проекта в ресурсах "->" в папку Scripts, дважды щелкните GenericNetSync, чтобы открыть его в Visual Studio или какой-либо код редактора, которую вы используете.  ![](images/module3chapter4updatestep2.png)
 

@@ -6,12 +6,12 @@ ms.author: wguyman, cdedmonds
 ms.date: 06/12/2019
 ms.topic: article
 keywords: камеры, hololens, цвет камеры, обращенные, hololens 2, cv, компьютерного зрения, fiducial, маркеры, QR-код, qr, фото, видео
-ms.openlocfilehash: e4e7fce50ec2865650b6b7cbafa59af8819d220c
-ms.sourcegitcommit: d8700260f349a09c53948e519bd6d8ed6f9bc4b4
+ms.openlocfilehash: 323c05ca01e000942a6f8ee6dc82de7546578324
+ms.sourcegitcommit: cf9f8ebbca0301e9d277853771ff6e47701ba1c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67415261"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67523313"
 ---
 # <a name="locatable-camera"></a>Может быть найдена камеры
 
@@ -43,6 +43,7 @@ HoloLens включает world камера на передней части у
   | Профиль                                         | Видео     | Предварительный просмотр   | По-прежнему     | Частота кадров | Горизонтальное поле of обзора H- | Предлагается использовать                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
   | Для прежних версий, 0 BalancedVideoAndPhoto, 100             | 2272 x 1278 | 2272 x 1278 |           | 15,30       | 64.69                            | Запись видео высокого качества                |
+  | Для прежних версий, 0 BalancedVideoAndPhoto, 100             | 896 x 504   | 896 x 504   |           | 15,30       | 64.69                            | Запись видео высокого качества                |
   | Для прежних версий, 0 BalancedVideoAndPhoto, 100             |           |           | 3904 x 2196 |             | 64.69                            | Высокое качество фотосъемки                  |
   | BalancedVideoAndPhoto, 120                       | 1952 x 1100 | 1952 x 1100 | 1952 x 1100 | 15,30       | 64.69                            | Долгая длительность сценариев                     |
   | BalancedVideoAndPhoto, 120                       | 1504 x 846  | 1504 x 846  |           | 15,30       | 64.69                            | Долгая длительность сценариев                     |

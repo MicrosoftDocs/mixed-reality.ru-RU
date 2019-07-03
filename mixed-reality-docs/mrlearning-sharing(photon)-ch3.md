@@ -6,14 +6,14 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 4625acfcb3353e9537961a444012452139705359
-ms.sourcegitcommit: 78e21e887bf4357c96c9ab2164559d610e8c041e
+ms.openlocfilehash: 44cc41b10ed79d3085ec601ec9cf21af47b0fea5
+ms.sourcegitcommit: cf9f8ebbca0301e9d277853771ff6e47701ba1c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465218"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67523302"
 ---
-# <a name="connecting-multiple-users"></a>**Подключение нескольких пользователей** 
+# <a name="connecting-multiple-users"></a>Подключение нескольких пользователей
 
 В этом уроке мы узнаем, как для подключения нескольких пользователей в рамках динамической общей работы. К концу урока вы сможете открыть приложение на нескольких устройствах и аватар, представленный сфера, каждый пользователь, который соединяет представления см. в разделе. 
 
