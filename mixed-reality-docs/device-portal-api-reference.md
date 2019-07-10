@@ -6,12 +6,12 @@ ms.author: JLyons
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, Windows Device Portal, API
-ms.openlocfilehash: 507ab98734adea80d0aad41d99124e3d91846f28
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: 4b5b48c13b1b7ec8bfdf447f42097a8448b6a0e6
+ms.sourcegitcommit: 06ac2200d10b50fb5bcc413ce2a839e0ab6d6ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59603279"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67694437"
 ---
 # <a name="device-portal-api-reference"></a>Портал устройств Справочник по API
 
@@ -278,17 +278,6 @@ ms.locfileid: "59603279"
 
 ## <a name="mixed-reality-capture"></a>Смешанный захват реальности
 
-**/API/holographic/MRC/File (удаление)**
-
-Удаляет смешанной реальности, записи с устройства.
-
-Параметры
-* Имя файла: Имя, hex64 кодировке файла для удаления
-
-**/API/holographic/MRC/Settings (GET)**
-
-Получает значение по умолчанию смешанной реальности параметры записи
-
 **/API/holographic/MRC/File (GET)**
 
 Загружает файл смешанной реальности из устройства. Используйте op = параметр запроса потока для потоковой передачи.
@@ -297,6 +286,38 @@ ms.locfileid: "59603279"
 * Имя файла: Имя, hex64, кодирования видео для получения файла
 * op: поток
 
+**/API/holographic/MRC/File (удаление)**
+
+Удаляет смешанной реальности, записи с устройства.
+
+Параметры
+* Имя файла: Имя, hex64 кодировке файла для удаления
+
+**/API/holographic/MRC/Files (GET)**
+
+Возвращает список файлов смешанной реальности, хранящихся на устройстве
+
+**/API/holographic/MRC/Photo (POST)**
+
+Делает снимок смешанной реальности и создает файл на устройстве
+
+Параметры
+* holo: захват голограммы: true или false (по умолчанию — false)
+* PV: записи PV камеры: true или false (по умолчанию — false)
+* RenderFromCamera: Отрисовки (только для HoloLens 2) с точки зрения камеры фото и видео: true или false (по умолчанию — true)
+
+**/API/holographic/MRC/Settings (GET)**
+
+Получает значение по умолчанию смешанной реальности параметры записи
+
+**/API/holographic/MRC/Settings (POST)**
+
+Задает значение по умолчанию смешанной реальности параметры записи.  Некоторые из этих параметров применяются к фотографии MRC системы и видеозаписи.
+
+**/API/holographic/MRC/Status (GET)**
+
+Возвращает состояние смешанной реальности записи ("выполняется", "Остановлено")
+
 **/API/holographic/MRC/Thumbnail (GET)**
 
 Возвращает эскиз для указанного файла.
@@ -304,81 +325,56 @@ ms.locfileid: "59603279"
 Параметры
 * Имя файла: Имя, hex64 в кодировке, для которого запрашивается эскиза файла
 
-**/API/holographic/MRC/Status (GET)**
-
-Возвращает состояние смешанной реальности записи ("выполняется", "Остановлено")
-
-**/API/holographic/MRC/Files (GET)**
-
-Возвращает список файлов смешанной реальности, хранящихся на устройстве
-
-**/API/holographic/MRC/Settings (POST)**
-
-Задает значение по умолчанию смешанной реальности параметры записи
-
 **/API/holographic/MRC/Video/Control/Start (POST)**
 
 Запускает запись смешанной реальности
 
 Параметры
-* holo: захват голограммы: true или false
-* PV: записи PV камеры: true или false
-* MIC: "микрофон" захвата: true или false
-* замыкания на себя: запись звука приложения: true или false
+* holo: захват голограммы: true или false (по умолчанию — false)
+* PV: записи PV камеры: true или false (по умолчанию — false)
+* MIC: "микрофон" захвата: true или false (по умолчанию — false)
+* замыкания на себя: запись звука приложения: true или false (по умолчанию — false)
+* RenderFromCamera: Отрисовки (только для HoloLens 2) с точки зрения камеры фото и видео: true или false (по умолчанию — true)
+* vstab: Стабилизации видео enable (только для HoloLens 2): true или false (по умолчанию — true)
+* vstabbuffer: Задержка буфера стабилизации видео (только для HoloLens 2): 0 до 30 кадров (по умолчанию — 15 кадров)
 
 **/API/holographic/MRC/Video/Control/Stop (POST)**
 
 Останавливает текущий смешанный записи реальность
 
-**/API/holographic/MRC/Photo (POST)**
+## <a name="mixed-reality-streaming"></a>Смешанная реальность потоковой передачи
 
-Делает снимок смешанной реальности и создает файл на устройстве
+HoloLens поддерживает интерактивный просмотр смешанной реальности через фрагментированный загрузки фрагментированного mp4.
 
-Параметры
+Смешанная реальность потоки совместно используют тот же набор параметров для управления, что записывается:
 * holo: захват голограммы: true или false
 * PV: записи PV камеры: true или false
+* MIC: "микрофон" захвата: true или false
+* замыкания на себя: запись звука приложения: true или false
 
-Смешанная реальность потоковой передачи
+Если не указан ни один из них: голограммы камеры фото и видео и аудио приложения будут записаны<br>
+Если указаны какие: Незаданные параметры по умолчанию используется значение false
+
+Необязательные параметры (только для HoloLens 2)
+* RenderFromCamera: отрисовки с точки зрения камеры фото и видео: true или false (по умолчанию — true)
+* vstab: включить стабилизации видео: true или false (по умолчанию — false)
+* vstabbuffer: задержка буфера стабилизации видео: 0 до 30 кадров (по умолчанию — 15 кадров)
 
 **/API/holographic/Stream/Live.MP4 (GET)**
 
-Инициализация поблочной загрузки фрагментированного файла MP4
-
-Параметры
-* holo: захват голограммы: true или false
-* PV: записи PV камеры: true или false
-* MIC: "микрофон" захвата: true или false
-* замыкания на себя: запись звука приложения: true или false
+Поток 5Mbit 1280x720p 30 кадров/с.
 
 **/API/holographic/Stream/live_high.MP4 (GET)**
 
-Инициализация поблочной загрузки фрагментированного файла MP4
-
-Параметры
-* holo: захват голограммы: true или false
-* PV: записи PV камеры: true или false
-* MIC: "микрофон" захвата: true или false
-* замыкания на себя: запись звука приложения: true или false
-
-**/API/holographic/Stream/live_low.MP4 (GET)**
-
-Инициализация поблочной загрузки фрагментированного файла MP4
-
-Параметры
-* holo: захват голограммы: true или false
-* PV: записи PV камеры: true или false
-* MIC: "микрофон" захвата: true или false
-* замыкания на себя: запись звука приложения: true или false
+Поток 5Mbit 1280x720p 30 кадров/с.
 
 **/API/holographic/Stream/live_med.MP4 (GET)**
 
-Инициализация поблочной загрузки фрагментированного файла MP4
+Поток 854x480p 2.5Mbit 30 кадров/с.
 
-Параметры
-* holo: захват голограммы: true или false
-* PV: записи PV камеры: true или false
-* MIC: "микрофон" захвата: true или false
-* замыкания на себя: запись звука приложения: true или false
+**/API/holographic/Stream/live_low.MP4 (GET)**
+
+Поток 428x240p 0.6Mbit 15 кадров/с.
 
 ## <a name="networking"></a>Сеть
 
@@ -532,5 +528,5 @@ ms.locfileid: "59603279"
 * При запуске возвращает состояние сеанса WPR.
 
 ## <a name="see-also"></a>См. также
-* [С помощью Windows Device Portal](using-the-windows-device-portal.md)
+* [Использование портала устройств Windows](using-the-windows-device-portal.md)
 * [Core портала устройства Справочник по API (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)

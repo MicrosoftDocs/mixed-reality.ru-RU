@@ -6,19 +6,16 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: MRC, фото, видео, записи, камера
-ms.openlocfilehash: c2d98baf16b2ea724247224aabadc1e2ca533ec1
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.openlocfilehash: d1675d2d6c74c6d15ca245a66719e00f2a7c2111
+ms.sourcegitcommit: 06ac2200d10b50fb5bcc413ce2a839e0ab6d6ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59599456"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67694366"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>Смешанный реальности записи для разработчиков
 
-> [!NOTE]
-> Дополнительные рекомендации, относящиеся к HoloLens 2 [ожидается в ближайшее время](index.md#news-and-notes). 
-
-См. в разделе [Включение MRC в приложении](#enabling-mrc-in-your-app) ниже рекомендации по новую возможность MRC для HoloLens 2.
+> [ПРИМЕЧАНИЕ] См. в разделе [визуализации от камеры PV](#render-from-the-pv-camera-opt-in) ниже рекомендации по новую возможность MRC для HoloLens 2.
 
 Так как пользователь может воспользоваться [смешанный захвата реальности](mixed-reality-capture.md) photo (MRC) или видео в любое время, существует несколько действий, которые следует помнить при разработке приложения. Сюда входят рекомендации по MRC качества и выполняется быстро реагировать на изменения системы, хотя MRCs фиксируются.
 
@@ -34,22 +31,91 @@ MRC на HoloLens (первого) поддерживает видео и фот
 
 ### <a name="enabling-mrc-in-your-app"></a>Включение MRC в приложении
 
-По умолчанию приложения не выполняет никаких действий, чтобы пользователи могли воспользоваться захваты смешанной реальности. Тем не менее, разработки HoloLens 2 увеличивается, расстояние от камеры фото и видео (PV) и отображением, мы включим новый параметр, позволяющий создать 3-й отрисовки камеры, выровненным по камеры PV **HoloLens 2**. 
+По умолчанию приложения не выполняет никаких действий, чтобы пользователи могли воспользоваться захваты смешанной реальности.
 
-Желанию в 3-й камеры визуализацию предложениями для HoloLens 2 следующие улучшения в MRC взаимодействия по умолчанию:
-* Голограмма выравнивание для физической среды и руки (для взаимодействия практически) должно быть точным вообще расстояния, вместо того смещение на расстоянии, отличное от [сосредоточиться точки](focus-point-in-unity.md) как можно увидеть в MRC по умолчанию.
+### <a name="enabling-improved-alignment-for-mrc-in-your-app"></a>Включение улучшенное выравнивание для MRC в приложении
+
+По умолчанию записи смешанной реальности объединяет holographic выходных данных справа глаз камерой фото и видео (PV). Эти два источника объединяются с помощью точку фокуса задается запущенного иммерсивные приложения.
+
+Это означает, что голограммы за пределами плоскости фокус не удается выровнять также (из-за физической расстояние между PV камеры и окна).
+
+#### <a name="set-the-focus-point"></a>Задайте точку фокуса
+
+Следует задать мощных приложений (на HoloLens) [сосредоточиться точки](focus-point-in-unity.md) из откуда угодно их плоскости стабилизации быть. Это обеспечивает наилучшее выравнивание в обоих гарнитуры и смешанной реальности записи.
+
+Если точку фокуса не задано, по умолчанию два счетчика стабилизации плоскости.
+
+#### <a name="render-from-the-pv-camera-opt-in"></a>Визуализации от камеры PV (opt-in)
+
+HoloLens 2 добавляет иммерсивные приложения для **визуализации от камеры PV** во время захвата смешанной реальности. Чтобы убедиться, что приложение поддерживает дополнительные визуализации правильно, приложение должно согласиться на эту функцию.
+
+Визуализацию из предложения камеры PV следующие улучшения в MRC взаимодействия по умолчанию:
+* Голограмма выравнивание для физической среды и руки (для взаимодействия практически) должно быть точным вообще расстояния, вместо смещение на расстоянии, отличный от точку фокуса, как можно увидеть в значение по умолчанию MRC.
 * Правом глаза в гарнитура не будут скомпрометированы, так как оно не будет использоваться для подготовки к просмотру голограммы для выходных данных MRC.
+
+Чтобы включить отрисовку с камеры PV трех этапов:
+1. Включить PhotoVideoCamera HolographicViewConfiguration
+2. Обрабатывать дополнительные визуализации HolographicCamera
+3. Проверка шейдеров и код правильного отображения от этого дополнительные HolographicCamera
+
+##### <a name="enable-the-photovideocamera-holographicviewconfiguration"></a>Включить PhotoVideoCamera HolographicViewConfiguration
+
+Чтобы согласиться, приложение просто включает PhotoVideoCamera [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration):
+```csharp
+var display = Windows.Graphics.Holographic.HolographicDisplay.GetDefault();
+var view = display.TryGetViewConfiguration(Windows.Graphics.Holographic.HolographicViewConfiguration.PhotoVideoCamera);
+if (view != null)
+{
+   view.IsEnabled = true;
+}
+```
+
+##### <a name="handle-the-additional-holographiccamera-render-in-directx"></a>Обрабатывать дополнительные HolographicCamera визуализации в DirectX
+
+Когда приложение имеет согласиться для подготовки к просмотру с камеры PV и смешанной реальности записи начинает:
+1. Событие CameraAdded HolographicSpace будут срабатывать. Это событие может быть отложена, если приложение не может обработать камеры в данный момент.
+2. После завершения события (при этом нет ожидающих задержек) HolographicCamera отобразится в списке AddedCameras Далее HolographicFrame.
+
+Когда смешанной реальности захват заканчивается (или если приложение отключает конфигурацию представления во время захвата смешанной реальности): HolographicCamera отобразится в списке RemovedCameras Далее HolographicFrame и будет HolographicSpace CameraRemoved событий срабатывание.
+
+Объект [ViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration) свойство было добавлено к HolographicCamera для определения конфигурации, принадлежит веб-камеры.
+
+##### <a name="handle-the-additional-holographiccamera-render-in-unity"></a>Обрабатывать дополнительные визуализации HolographicCamera в Unity
+
+>[!NOTE]
+> Поддержка Unity для подготовки к просмотру с камеры PV находится в стадии разработки и не может использоваться, пока. Эта документация будет обновляться при выходе сборки Unity с поддержкой для подготовки к просмотру с камеры PV.
+
+##### <a name="verify-shaders-and-code-support-additional-cameras"></a>Проверка шейдеров и кода поддержки дополнительных камеры
+
+Выполнение записи смешанной реальности и поиск необычных выравнивание, отсутствующее содержимое или проблем с производительностью. Обновить шейдеры и код соответствующим образом.
+
+При возникновении определенных сцены, не поддерживающие отрисовки для дополнительные камеры, вы можете отключить HolographicViewConfiguration PhotoVideoCamera во время их.
 
 ### <a name="disabling-mrc-in-your-app"></a>Отключение MRC в приложении
 
-Если используется двухмерная приложения [DXGI_PRESENT_RESTRICT_TO_OUTPUT](https://msdn.microsoft.com/library/windows/desktop/bb509554(v=vs.85).aspx) или [DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED](https://msdn.microsoft.com/library/windows/desktop/bb173076(v=vs.85).aspx) Показать защищенное содержимое с цепочку правильно настроенный обмена, будет визуального содержимого приложения автоматически закрывать друг друга во время захвата смешанной реальности.
+#### <a name="2d-app"></a>2D приложения
+
+2D приложений можно выбрать их визуального содержимого при записи смешанной реальности выполняется по:
+* С [DXGI_PRESENT_RESTRICT_TO_OUTPUT](https://docs.microsoft.com/windows/desktop/direct3ddxgi/dxgi-present) флаг
+* Создание цепочки буферов приложения с [DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED](https://docs.microsoft.com/windows/desktop/api/dxgi/ne-dxgi-dxgi_swap_chain_flag) флаг
+* С Windows 10 могут 2019 обновить, Настройка ApplicationView [IsScreenCaptureEnabled](https://docs.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.isscreencaptureenabled)
+
+#### <a name="immersive-app"></a>Насыщенные приложения
+
+Мощных приложений можно выбрать их визуальное содержимое исключены из записи смешанной реальности по:
+* Задание элемента HolographicCameraRenderingParameter [IsContentProtectionEnabled](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.iscontentprotectionenabled) для отключения отслеживания смешанной реальности для связанном с ним кадре
+* Задание элемента HolographicCamera [IsHardwareContentProtectionEnabled](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled) для отключения отслеживания смешанной реальности для ее связанных holographic камеры
+
+#### <a name="password-keyboard"></a>Пароль клавиатуры
+
+С Windows 10 2019 обновление за май, визуальное содержимое автоматически исключаются из записи смешанной реальности, клавиатура пароль или ПИН-код отображается, когда.
 
 ### <a name="knowing-when-mrc-is-active"></a>Зная, когда активно MRC
 
-[AppCapture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.appcapture.aspx) класс может использоваться приложением знать, когда выполняется смешанный реальности записи системы (для аудио или видео).
+[AppCapture](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.AppCapture) класс может использоваться приложением знать, когда выполняется смешанный реальности записи системы (для аудио или видео).
 
 >[!NOTE]
->В AppCapture [GetForCurrentView](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.appcapture.getforcurrentview.aspx) API может возвращать значение null, если смешанный реальности записи не поддерживается на устройстве. Также важно отменять регистрацию CapturingChanged событие при приостановке приложения, в противном случае MRC можно получить в блокированном состоянии.
+>В AppCapture [GetForCurrentView](https://docs.microsoft.com/uwp/api/windows.media.capture.appcapture.getforcurrentview) API может возвращать значение null, если смешанный реальности записи не поддерживается на устройстве. Также важно отменять регистрацию CapturingChanged событие при приостановке приложения, в противном случае MRC можно получить в блокированном состоянии.
 
 ### <a name="best-practices-hololens-specific"></a>Рекомендации (стандартом HoloLens)
 
@@ -119,19 +185,20 @@ MRC должен работать без дополнительных дейст
 
 Увидите приложений Unity [Locatable_camera_in_Unity](locatable-camera-in-unity.md) для этого свойства разрешает голограммы.
 
-Другие приложения это можно сделать с помощью [API-интерфейсы Windows Media захвата](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) для управления камеры и добавления эффекта MRC видео и аудио для включения виртуальной голограммы и звуком в приложения в голосов и видео.
+Другие приложения это можно сделать с помощью [API-интерфейсы Windows Media захвата](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaCapture) для управления камеры и добавления эффекта MRC видео и аудио для включения виртуальной голограммы и звуком в приложения в голосов и видео.
 
 Приложения имеют два варианта, чтобы добавить эффект:
-* Старый API: [Windows.Media.Capture.MediaCapture.AddEffectAsync()](https://msdn.microsoft.com/library/windows/apps/br211961.aspx)
-* Новые возможности Майкрософт рекомендуется использовать API (Возвращает объект, что позволяет управлять динамические свойства): [Windows.Media.Capture.MediaCapture.AddVideoEffectAsync()](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.addvideoeffectasync.aspx) / [Windows.Media.Capture.MediaCapture.AddAudioEffectAsync()](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.addaudioeffectasync.aspx) , требующую приложению создавать собственную реализацию [IVideoEffectDefinition](https://msdn.microsoft.com/library/windows/apps/windows.media.effects.ivideoeffectdefinition.aspx) и [IAudioEffectDefinition](https://msdn.microsoft.com/library/windows/apps/windows.media.effects.iaudioeffectdefinition.aspx). См. в образце эффект MRC для пример использования.
+* Старый API: [Windows.Media.Capture.MediaCapture.AddEffectAsync()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addeffectasync)
+* Новые возможности Майкрософт рекомендуется использовать API (Возвращает объект, что позволяет управлять динамические свойства): [Windows.Media.Capture.MediaCapture.AddVideoEffectAsync()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync) / [Windows.Media.Capture.MediaCapture.AddAudioEffectAsync()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) , требующую приложению создавать собственную реализацию [IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition) и [IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition). См. в образце эффект MRC для пример использования.
 
-(Обратите внимание, что эти пространства имен, не распознаваться Visual Studio, но по-прежнему допустимы строки)
+>[!NOTE]
+> Пространство имен Windows.Media.MixedRealityCapture не распознается Visual Studio, но по-прежнему допустимы строки.
 
 Эффект видео MRC (**Windows.Media.MixedRealityCapture.MixedRealityCaptureVideoEffect**)
 
-|  Имя свойства  |  Тип  |  Значение по умолчанию  |  Описание | 
+|  Имя свойства  |  Type  |  Default Value  |  Описание | 
 |----------|----------|----------|----------|
-|  StreamType  |  UINT32 ([MediaStreamType](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediastreamtype.aspx))  |  1 (VideoRecord)  |  Описания какой поток записи, этот эффект применяется для. Звук не доступен. | 
+|  StreamType  |  UINT32 ([MediaStreamType](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (VideoRecord)  |  Описания какой поток записи, этот эффект применяется для. Звук не доступен. | 
 |  HologramCompositionEnabled  |  Логический  |  TRUE  |  Флаг, чтобы включить или отключить голограммы в видеозаписи. | 
 |  RecordingIndicatorEnabled  |  Логический  |  TRUE  |  Флаг, чтобы включить или отключить индикатор записи на экране во время записи голограмма. | 
 |  VideoStabilizationEnabled  |  Логический  |  FALSE  |  Флаг, чтобы включить или отключить на платформе инспектор HoloLens стабилизации видео. | 
@@ -139,14 +206,16 @@ MRC должен работать без дополнительных дейст
 |  GlobalOpacityCoefficient  |  float  |  0.9 (HoloLens) 1.0 (Иммерсивных гарнитуры)  |  Задать коэффициент непрозрачности глобального голограмма в диапазоне от 0.0 (полностью прозрачный) до 1.0 (полностью непрозрачный). | 
 |  BlankOnProtectedContent  |  Логический  |  FALSE  |  Флаг, чтобы включить или отключить, возвращая пустая рамка, если 2d содержимое защищенных отображение приложения универсальной платформы Windows. Если этот флаг имеет значение false, а также двухмерных приложения универсальной платформы Windows — это отображение защищенные материалы, 2d приложения универсальной платформы Windows будет заменен защищенного содержимого текстуры в обоих гарнитуры и в записи, смешанной реальности. |
 |  ShowHiddenMesh  |  Логический  |  FALSE  |  Флаг, чтобы включить или отключить отображение сетки скрытую область holographic камеры и соседних содержимого. |
+| OutputSize | Size | 0, 0 | Задайте размер требуемых выходных данных после обрезки для стабилизации видео. Размер по умолчанию — Обрезка выбирается в том случае, если указан 0 или размер недопустимые выходные данные. |
+| PreferredHologramPerspective | UINT32 | 1 (PhotoVideoCamera) | Перечисление используется для указания, какие holographic камеры Просмотр конфигурации должны быть зафиксированы. Параметр 0 (дисплей) означает, что приложение не будет запросить об исполнении от камеры, фото и видео |
 
 Эффект аудио MRC (**Windows.Media.MixedRealityCapture.MixedRealityCaptureAudioEffect**)
 
 <table>
 <tr>
 <th>Имя свойства</th>
-<th>Тип</th>
-<th>Значение по умолчанию</th>
+<th>Type</th>
+<th>Default Value</th>
 <th>Описание</th>
 </tr>
 <tr>
@@ -171,9 +240,25 @@ MRC должен работать без дополнительных дейст
 
 Число процессов, которые будут доступны в то же время ограничено камеры фото и видео. Во время процесса записи видео или сделать снимок любого другого процесса смогут получить камеры фото и видео. (это относится к смешанной реальности захвата и записи стандартных фотографий и видео)
 
-В Windows 10 апреля 2018 г. обновления, это ограничение не применяется при встроенный пользовательский Интерфейс камеры MRC позволяет перевести фото или видео, после запуска приложения с помощью камеры фото и видео. Когда это происходит, разрешения и частоты кадров встроенной камеры MRC пользовательского интерфейса может быть снижена из его нормальных значений.
+С HoloLens 2, приложение может использовать его MediaCaptureInitializationSettings [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) свойство, указывающее, что возникает необходимость в выполнении SharedReadOnly, если они не требуется исключительный контроль над камеры фото и видео. Результате разрешения и частоты кадров записи будет ограничен тем, что другие приложения настроено камеры для предоставления.
 
-В Windows 10 октября 2018 обновлением, это ограничение не применяется для потоковой передачи MRC через Miracast.
+##### <a name="built-in-mrc-photovideo-camera-access"></a>Доступ к камере встроенные MRC фото и видео
+
+MRC функций, встроенных в Windows 10 (с помощью Cortana, меню "Пуск", сочетания клавиш для оборудования, Miracast, Windows Device Portal):
+* По умолчанию будет выполняться с ExclusiveControl
+
+Тем не менее добавлена поддержка для каждой подсистемы, для работы в режиме общего доступа:
+* Если приложение запрашивает ExclusiveControl доступ к камере фото и видео, встроенные MRC будет автоматически остановлена с помощью камеры фото и видео, поэтому запрос приложения будет выполнен успешно
+* Если встроенные MRC запускается, пока приложение имеет ExclusiveControl, встроенные MRC будет работать в режиме SharedReadOnly
+
+Эта функция в режиме общего доступа имеет некоторые ограничения:
+* Фотографии с помощью Кортаны, аппаратных клавиш или меню "Пуск": Требуется Windows 10 апреля 2018 г. обновление (или более поздней версии)
+* Видео с помощью Кортаны, аппаратных клавиш или меню "Пуск". Требуется Windows 10 апреля 2018 г. обновление (или более поздней версии)
+* Потоковой передачи MRC через Miracast: Требуется Windows 10 октября 2018 обновление (или более поздней версии)
+* Потоковая передача MRC через Windows Device Portal или через сопутствующее приложение HoloLens: Требуется HoloLens 2
+
+>[!NOTE]
+> Разрешение и частоте кадров встроенной камеры MRC пользовательского интерфейса может быть снижена из его нормальных значений, когда другое приложение использует камеры фото и видео.
 
 #### <a name="mrc-access"></a>MRC доступа
 
@@ -182,5 +267,5 @@ MRC должен работать без дополнительных дейст
 Предыдущие для Windows 10 апреля 2018 г. обновления, пользовательские MRC записи приложения был взаимно исключают друг друга с системой MRC (захват фото, записывает видео или потоковая передача из Windows Device Portal).
 
 ## <a name="see-also"></a>См. также
-* [Захват смешанной реальности](mixed-reality-capture.md)
-* [Представление spectator](spectator-view.md)
+* [Съемка смешанной реальности](mixed-reality-capture.md)
+* [Зрительское представление](spectator-view.md)

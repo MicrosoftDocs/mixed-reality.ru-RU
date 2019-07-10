@@ -6,18 +6,18 @@ ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Windows Device Portal, HoloLens
-ms.openlocfilehash: f4319e1efa94d90bfb8cc4e5815ffa87fc865a7f
-ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
+ms.openlocfilehash: 79a4a1f99125028fcaf71e185eb00093aa8c742f
+ms.sourcegitcommit: 06ac2200d10b50fb5bcc413ce2a839e0ab6d6ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66830004"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67694581"
 ---
 # <a name="using-the-windows-device-portal"></a>С помощью Windows Device Portal
 
 <table>
 <tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"><a href="immersive-headset-hardware-details.md">Иммерсивную</a></th>
+<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"><a href="immersive-headset-hardware-details.md">Иммерсивные гарнитуры</a></th>
 </tr><tr>
 <td> Портал устройств Windows</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
@@ -56,7 +56,7 @@ Windows Device Portal для HoloLens позволяет настраивать 
 
 ## <a name="connecting-to-an-emulator"></a>Подключение к эмулятору
 
-Можно также использовать Портал устройства вместе с эмулятором. Чтобы подключиться к порталу устройства, используйте [инструментов](using-the-hololens-emulator.md). Щелкните этот значок: ![Значок открытия портал устройств](images/emulator-deviceportal.png) **открыть портал устройства**: Откройте Windows Device Portal для HoloLens операционной системы в эмуляторе.
+Можно также использовать Портал устройства вместе с эмулятором. Чтобы подключиться к порталу устройства, используйте [инструментов](using-the-hololens-emulator.md). Щелкните этот значок: ![Значок открытия портал устройств](images/emulator-deviceportal.png) **открыть портал устройства**: Открывает в эмуляторе портал устройств Windows для HoloLens OS.
 
 ## <a name="creating-a-username-and-password"></a>Создание имени пользователя и пароля
 
@@ -144,19 +144,29 @@ Windows Device Portal для HoloLens позволяет настраивать 
 ![Смешанная страница захвата реальность в Windows Device Portal на Microsoft HoloLens](images/windows-device-portal-mixed-reality-capture-page-1000px.png)<br>
 *Смешанная страница захвата реальность в Windows Device Portal на Microsoft HoloLens*
 
-Используйте [смешанной реальности захвата](mixed-reality-capture.md) страницы, чтобы сохранить потоков мультимедиа из HoloLens.
+Используйте страницу «Смешанный захват реальности», чтобы сохранить мультимедийные потоки для устройства HoloLens.
 * **Параметры**: Управления мультимедиа, которые регистрируются, установив следующие параметры:
   * **Голограммы**: Захватывает holographic содержимое в поток видео. Голограммы обрабатываются в режиме моно, а не стерео.
   * **Камера PV**: Записывает поток видео от камеры, фото и видео.
   * **MIC аудио**: Записывает звук из массива "микрофон".
   * **Приложение аудио**: Записывает звук из запущенного приложения.
+  * **Визуализации с камеры**: Выравнивает захвата с точки зрения камеры фото и видео, если [поддерживаемый запущенным приложением](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) (только для HoloLens 2).
   * **Качество предварительной версии Live**: Выберите разрешение экрана, частота кадров и частота потоковой передачи для динамического просмотра.
 * Щелкните или коснитесь **динамического просмотра** кнопку, чтобы показать поток записи. **Динамический просмотр Stop** останавливает поток записи.
 * Щелкните или коснитесь **записи** для запуска записи потока смешанной реальности, используя указанные параметры. **Остановить запись** завершает запись и сохраняет его.
 * Щелкните или коснитесь **Take photo** вступили в образ будет по-прежнему из потока записи.
 * **Видео и фотографии**: Список видео и фотографий выделений, затраченное на устройстве.
 
-Обратите внимание, что приложения HoloLens не смогут захватить фотографию или видео MRC, пока вы записываете или воспроизводите поток в режиме предварительного просмотра в реальном времени на Портале устройств.
+> [!NOTE]
+> Существуют [ограничения для одновременных MRC](mixed-reality-capture-for-developers.md#simultaneous-mrc-limitations):
+> * Если приложение пытается получить доступ к камере фото и видео, пока Windows Device Portal записи видео, перестанут видеозаписи.
+>   * HoloLens 2 не будет останавливать запись видео, если приложение acesses камеры фото или видео с режимом SharedReadOnly.
+> * Если приложение активно использует камеры фото и видео, Windows Device Portal имеет возможность снять фото или записи видео.
+> * Потоковая трансляция:
+>   * HoloLens (1-го поколения) запрещает доступ к камере фото и видео во время динамической потоковой передачи из Windows Device Portal приложения.
+>   * HoloLens (1-го поколения) не удастся live stream, если приложение активно использует камеры фото и видео.
+>   * HoloLens 2 автоматически останавливает потоковой трансляции, когда приложение пытается получить доступ к камере фото и видео в режиме ExclusiveControl.
+>   * HoloLens 2, может запустить потока в реальном времени, когда приложение активно использует PV камеры.
 
 ### <a name="performance-tracing"></a>Мониторинг производительности
 

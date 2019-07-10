@@ -6,12 +6,12 @@ ms.author: pbarnett
 ms.date: 4/25/2019
 ms.topic: article
 keywords: HoloLens, эмулятор, сборки версии
-ms.openlocfilehash: 34aee87310cbdfed4e209fbba955db9cf3ff722f
-ms.sourcegitcommit: d8700260f349a09c53948e519bd6d8ed6f9bc4b4
+ms.openlocfilehash: b209e444c223c3183d2680976f68c33a3b6ed79b
+ms.sourcegitcommit: 06ac2200d10b50fb5bcc413ce2a839e0ab6d6ed1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67414405"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67694429"
 ---
 Эмулятор HoloLens (1-го поколения) и side-by-side установить построений HoloLens 2 эмулятора. Обычно рекомендуется использовать последняя сборка, но возможны случаи, когда требуется или необходимо выполнять тестирование приложения с использованием старого эмулятора. Эта страница содержит ссылки на выпущенных версий.
 
@@ -21,7 +21,8 @@ ms.locfileid: "67414405"
 
 |  Сборка |  Дата выпуска |  Примечания | 
 |----------|----------|----------|
-|  [Эмулятор 2 HoloLens сборки 10.0.18362.1019](https://go.microsoft.com/fwlink/?linkid=2095316) | 11 июня 2019 г. | Последняя сборка HoloLens 2.  Больше не требуется запуск от имени администратора.  Главное меню добавлены. |
+|  [Эмулятор 2 HoloLens сборки 10.0.18362.1021](https://go.microsoft.com/fwlink/?linkid=2098508) | 8 июля 2019 г. | Последняя сборка HoloLens 2.  Устраняет проблему с DiskStream.dll подписи |
+|  [Эмулятор 2 HoloLens сборки 10.0.18362.1019](https://go.microsoft.com/fwlink/?linkid=2095316) | 11 июня 2019 г. | Больше не требуется запуск от имени администратора.  Главное меню добавлены. |
 |  [Эмулятор 2 HoloLens сборки 10.0.18362.1005](https://go.microsoft.com/fwlink/?linkid=2087187) | 16 апреля 2019 г. |  |
 
 
