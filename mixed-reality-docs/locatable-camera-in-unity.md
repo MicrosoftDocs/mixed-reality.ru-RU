@@ -1,47 +1,47 @@
 ---
-title: Может быть найдена камеры в Unity
-description: Использование может быть найдена камеры HoloLens в Unity.
+title: Камера размещаемые в Unity
+description: Использование камеры HoloLens размещаемые в Unity.
 author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: фото, видео, hololens, камеры, unity, может быть найдена
+keywords: Фото, видео, hololens, Камера, Unity, размещаемые
 ms.openlocfilehash: f0183400f55b1c6663a9a20ab4992befe5ad0718
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59601769"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "63515432"
 ---
-# <a name="locatable-camera-in-unity"></a><span data-ttu-id="523a3-104">Может быть найдена камеры в Unity</span><span class="sxs-lookup"><span data-stu-id="523a3-104">Locatable camera in Unity</span></span>
+# <a name="locatable-camera-in-unity"></a><span data-ttu-id="574bb-104">Камера размещаемые в Unity</span><span class="sxs-lookup"><span data-stu-id="574bb-104">Locatable camera in Unity</span></span>
 
-## <a name="enabling-the-capability-for-photo-video-camera"></a><span data-ttu-id="523a3-105">Включение возможности для видеокамера фото</span><span class="sxs-lookup"><span data-stu-id="523a3-105">Enabling the capability for Photo Video Camera</span></span>
+## <a name="enabling-the-capability-for-photo-video-camera"></a><span data-ttu-id="574bb-105">Включение возможности для видеокамеры</span><span class="sxs-lookup"><span data-stu-id="574bb-105">Enabling the capability for Photo Video Camera</span></span>
 
-<span data-ttu-id="523a3-106">Функция «Веб-камера» должен быть объявлен для приложения для использования [камеры](locatable-camera.md).</span><span class="sxs-lookup"><span data-stu-id="523a3-106">The "WebCam" capability must be declared for an app to use the [camera](locatable-camera.md).</span></span>
-1. <span data-ttu-id="523a3-107">В редакторе Unity, перейдите к параметрам проигрывателя, перейдя на страницу «Изменить > проекта Параметры > Player»</span><span class="sxs-lookup"><span data-stu-id="523a3-107">In the Unity Editor, go to the player settings by navigating to "Edit > Project Settings > Player" page</span></span>
-2. <span data-ttu-id="523a3-108">Перейдите на вкладку «Windows Store»</span><span class="sxs-lookup"><span data-stu-id="523a3-108">Click on the "Windows Store" tab</span></span>
-3. <span data-ttu-id="523a3-109">В разделе «Возможности публикации > Параметры» установите флажок **веб-камера** и **"микрофон"** возможности</span><span class="sxs-lookup"><span data-stu-id="523a3-109">In the "Publishing Settings > Capabilities" section, check the **WebCam** and **Microphone** capabilities</span></span>
+<span data-ttu-id="574bb-106">Для использования [камеры](locatable-camera.md)приложение должно быть объявлено как "веб-камера".</span><span class="sxs-lookup"><span data-stu-id="574bb-106">The "WebCam" capability must be declared for an app to use the [camera](locatable-camera.md).</span></span>
+1. <span data-ttu-id="574bb-107">В редакторе Unity перейдите к параметрам проигрывателя, перейдя на страницу "Изменение > параметров проекта > Player".</span><span class="sxs-lookup"><span data-stu-id="574bb-107">In the Unity Editor, go to the player settings by navigating to "Edit > Project Settings > Player" page</span></span>
+2. <span data-ttu-id="574bb-108">Перейдите на вкладку "Магазин Windows".</span><span class="sxs-lookup"><span data-stu-id="574bb-108">Click on the "Windows Store" tab</span></span>
+3. <span data-ttu-id="574bb-109">В разделе "Параметры публикации > возможности" Проверьте возможности веб- **камеры** и **микрофона** .</span><span class="sxs-lookup"><span data-stu-id="574bb-109">In the "Publishing Settings > Capabilities" section, check the **WebCam** and **Microphone** capabilities</span></span>
 
-<span data-ttu-id="523a3-110">Одновременно с камеры могут возникнуть только одну операцию.</span><span class="sxs-lookup"><span data-stu-id="523a3-110">Only a single operation can occur with the camera at a time.</span></span> <span data-ttu-id="523a3-111">Чтобы определить, какой режим (фото, видео или none) камеры в данный момент, можно проверить UnityEngine.XR.WSA.WebCam.Mode.</span><span class="sxs-lookup"><span data-stu-id="523a3-111">To determine which mode (photo, video, or none) the camera is currently in, you can check UnityEngine.XR.WSA.WebCam.Mode.</span></span>
+<span data-ttu-id="574bb-110">Только одна операция может выполняться с камерой за раз.</span><span class="sxs-lookup"><span data-stu-id="574bb-110">Only a single operation can occur with the camera at a time.</span></span> <span data-ttu-id="574bb-111">Чтобы определить, в каком режиме в настоящее время используется камера (Фото, видео или нет), можно проверить UnityEngine. XR. WSA. Camera. Mode.</span><span class="sxs-lookup"><span data-stu-id="574bb-111">To determine which mode (photo, video, or none) the camera is currently in, you can check UnityEngine.XR.WSA.WebCam.Mode.</span></span>
 
-## <a name="photo-capture"></a><span data-ttu-id="523a3-112">Фотосъемки</span><span class="sxs-lookup"><span data-stu-id="523a3-112">Photo Capture</span></span>
+## <a name="photo-capture"></a><span data-ttu-id="574bb-112">Запись фотографий</span><span class="sxs-lookup"><span data-stu-id="574bb-112">Photo Capture</span></span>
 
-<span data-ttu-id="523a3-113">**Пространство имен:** *UnityEngine.XR.WSA.WebCam*</span><span class="sxs-lookup"><span data-stu-id="523a3-113">**Namespace:** *UnityEngine.XR.WSA.WebCam*</span></span><br>
-<span data-ttu-id="523a3-114">**Тип:** *PhotoCapture*</span><span class="sxs-lookup"><span data-stu-id="523a3-114">**Type:** *PhotoCapture*</span></span>
+<span data-ttu-id="574bb-113">**Имен** *UnityEngine. XR. WSA. веб-камера*</span><span class="sxs-lookup"><span data-stu-id="574bb-113">**Namespace:** *UnityEngine.XR.WSA.WebCam*</span></span><br>
+<span data-ttu-id="574bb-114">**Тип** *Фотозапись*</span><span class="sxs-lookup"><span data-stu-id="574bb-114">**Type:** *PhotoCapture*</span></span>
 
-<span data-ttu-id="523a3-115">*PhotoCapture* типа позволяет по-прежнему воспользоваться фотографии с видеокамеры фотографии.</span><span class="sxs-lookup"><span data-stu-id="523a3-115">The *PhotoCapture* type allows you to take still photographs with the Photo Video Camera.</span></span> <span data-ttu-id="523a3-116">Общий шаблон с помощью *PhotoCapture* чтобы сделать фотографию выглядит следующим образом:</span><span class="sxs-lookup"><span data-stu-id="523a3-116">The general pattern for using *PhotoCapture* to take a photo is as follows:</span></span>
-1. <span data-ttu-id="523a3-117">Создание *PhotoCapture* объекта</span><span class="sxs-lookup"><span data-stu-id="523a3-117">Create a *PhotoCapture* object</span></span>
-2. <span data-ttu-id="523a3-118">Создание *CameraParameters* с параметрами, мы хотим</span><span class="sxs-lookup"><span data-stu-id="523a3-118">Create a *CameraParameters* object with the settings we want</span></span>
-3. <span data-ttu-id="523a3-119">Перейти в режим фотографий с помощью *StartPhotoModeAsync*</span><span class="sxs-lookup"><span data-stu-id="523a3-119">Start Photo Mode via *StartPhotoModeAsync*</span></span>
-4. <span data-ttu-id="523a3-120">Сделать нужные фото</span><span class="sxs-lookup"><span data-stu-id="523a3-120">Take the desired photo</span></span>
-    * <span data-ttu-id="523a3-121">(необязательно) Взаимодействовать с изображения</span><span class="sxs-lookup"><span data-stu-id="523a3-121">(optional) Interact with that picture</span></span>
-5. <span data-ttu-id="523a3-122">Выход из режима фотографии и очистка ресурсов</span><span class="sxs-lookup"><span data-stu-id="523a3-122">Stop Photo Mode and clean up resources</span></span>
+<span data-ttu-id="574bb-115">Тип *фотосъемки* позволяет вам по-прежнему иметь фотографии фотокамеры.</span><span class="sxs-lookup"><span data-stu-id="574bb-115">The *PhotoCapture* type allows you to take still photographs with the Photo Video Camera.</span></span> <span data-ttu-id="574bb-116">Общий шаблон использования фотосъемки  для получения фотографий выглядит следующим образом:</span><span class="sxs-lookup"><span data-stu-id="574bb-116">The general pattern for using *PhotoCapture* to take a photo is as follows:</span></span>
+1. <span data-ttu-id="574bb-117">Создание объекта *Фотозаписи*</span><span class="sxs-lookup"><span data-stu-id="574bb-117">Create a *PhotoCapture* object</span></span>
+2. <span data-ttu-id="574bb-118">Создание объекта *камерапараметерс* с нужными параметрами</span><span class="sxs-lookup"><span data-stu-id="574bb-118">Create a *CameraParameters* object with the settings we want</span></span>
+3. <span data-ttu-id="574bb-119">Запуск фоторежима через *стартфотомодеасинк*</span><span class="sxs-lookup"><span data-stu-id="574bb-119">Start Photo Mode via *StartPhotoModeAsync*</span></span>
+4. <span data-ttu-id="574bb-120">Взять нужную фотографию</span><span class="sxs-lookup"><span data-stu-id="574bb-120">Take the desired photo</span></span>
+    * <span data-ttu-id="574bb-121">используемых Взаимодействие с этим изображением</span><span class="sxs-lookup"><span data-stu-id="574bb-121">(optional) Interact with that picture</span></span>
+5. <span data-ttu-id="574bb-122">Отключение режима фото и очистка ресурсов</span><span class="sxs-lookup"><span data-stu-id="574bb-122">Stop Photo Mode and clean up resources</span></span>
 
-### <a name="common-set-up-for-photocapture"></a><span data-ttu-id="523a3-123">Общие настройки для PhotoCapture</span><span class="sxs-lookup"><span data-stu-id="523a3-123">Common Set Up for PhotoCapture</span></span>
+### <a name="common-set-up-for-photocapture"></a><span data-ttu-id="574bb-123">Стандартная настройка для фотозахвата</span><span class="sxs-lookup"><span data-stu-id="574bb-123">Common Set Up for PhotoCapture</span></span>
 
-<span data-ttu-id="523a3-124">Для всех трех целей мы начнем с тем же сначала 3 описанные выше действия</span><span class="sxs-lookup"><span data-stu-id="523a3-124">For all three uses, we start with the same first 3 steps above</span></span>
+<span data-ttu-id="574bb-124">Для всех трех вариантов использования мы начнем с тех же самых первых 3 шагов.</span><span class="sxs-lookup"><span data-stu-id="574bb-124">For all three uses, we start with the same first 3 steps above</span></span>
 
-<span data-ttu-id="523a3-125">Мы начнем с создания *PhotoCapture* объекта</span><span class="sxs-lookup"><span data-stu-id="523a3-125">We start by creating a *PhotoCapture* object</span></span>
+<span data-ttu-id="574bb-125">Начнем с создания объекта *фотосъемки* .</span><span class="sxs-lookup"><span data-stu-id="574bb-125">We start by creating a *PhotoCapture* object</span></span>
 
 ```cs
 PhotoCapture photoCaptureObject = null;
@@ -51,7 +51,7 @@ PhotoCapture photoCaptureObject = null;
    }
 ```
 
-<span data-ttu-id="523a3-126">Далее мы хранения нашего объекта, значение списка параметров и Photo режим запуска</span><span class="sxs-lookup"><span data-stu-id="523a3-126">Next we store our object, set our parameters, and start Photo Mode</span></span>
+<span data-ttu-id="574bb-126">Далее мы сохраняем наш объект, настроили наши параметры и запускаем Фоторежим.</span><span class="sxs-lookup"><span data-stu-id="574bb-126">Next we store our object, set our parameters, and start Photo Mode</span></span>
 
 ```cs
 void OnPhotoCaptureCreated(PhotoCapture captureObject)
@@ -70,7 +70,7 @@ void OnPhotoCaptureCreated(PhotoCapture captureObject)
    }
 ```
 
-<span data-ttu-id="523a3-127">В конце концов мы также применяются те же очистки здесь код</span><span class="sxs-lookup"><span data-stu-id="523a3-127">In the end, we will also use the same clean up code presented here</span></span>
+<span data-ttu-id="574bb-127">В итоге мы также будем использовать тот же код очистки, представленный здесь.</span><span class="sxs-lookup"><span data-stu-id="574bb-127">In the end, we will also use the same clean up code presented here</span></span>
 
 ```cs
 void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
@@ -80,13 +80,13 @@ void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="523a3-128">После выполнения этих шагов можно выбрать тип фотографии для записи.</span><span class="sxs-lookup"><span data-stu-id="523a3-128">After these steps, you can choose which type of photo to capture.</span></span>
+<span data-ttu-id="574bb-128">После выполнения этих действий можно выбрать тип фотографии для записи.</span><span class="sxs-lookup"><span data-stu-id="574bb-128">After these steps, you can choose which type of photo to capture.</span></span>
 
-### <a name="capture-a-photo-to-a-file"></a><span data-ttu-id="523a3-129">Захват фото в файл</span><span class="sxs-lookup"><span data-stu-id="523a3-129">Capture a Photo to a File</span></span>
+### <a name="capture-a-photo-to-a-file"></a><span data-ttu-id="574bb-129">Запись фотографии в файл</span><span class="sxs-lookup"><span data-stu-id="574bb-129">Capture a Photo to a File</span></span>
 
-<span data-ttu-id="523a3-130">Самый простой операции — извлечение фотографии непосредственно в файл.</span><span class="sxs-lookup"><span data-stu-id="523a3-130">The simplest operation is to capture a photo directly to a file.</span></span> <span data-ttu-id="523a3-131">Фотографии могут сохраняться как JPG или PNG.</span><span class="sxs-lookup"><span data-stu-id="523a3-131">The photo can be saved as a JPG or a PNG.</span></span>
+<span data-ttu-id="574bb-130">Самой простой операцией является запись фотографии непосредственно в файл.</span><span class="sxs-lookup"><span data-stu-id="574bb-130">The simplest operation is to capture a photo directly to a file.</span></span> <span data-ttu-id="574bb-131">Фотографию можно сохранить в формате JPG или PNG.</span><span class="sxs-lookup"><span data-stu-id="574bb-131">The photo can be saved as a JPG or a PNG.</span></span>
 
-<span data-ttu-id="523a3-132">Если мы успешно запущен режим фотографий, мы теперь будет сделать фотографию и сохранять их на диске</span><span class="sxs-lookup"><span data-stu-id="523a3-132">If we successfully started photo mode, we now will take a photo and store it on disk</span></span>
+<span data-ttu-id="574bb-132">Если вы успешно начали работу с фото-режимом, теперь мы будем делать фотографию и хранить ее на диске.</span><span class="sxs-lookup"><span data-stu-id="574bb-132">If we successfully started photo mode, we now will take a photo and store it on disk</span></span>
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -105,7 +105,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="523a3-133">После сохранения фотографий на диск, мы выйти из режима фотографии и затем выполнить очистку объектов</span><span class="sxs-lookup"><span data-stu-id="523a3-133">After capturing the photo to disk, we will exit photo mode and then clean up our objects</span></span>
+<span data-ttu-id="574bb-133">После записи фотографии на диск мы будем выходить из фоторежимов, а затем очищать наши объекты.</span><span class="sxs-lookup"><span data-stu-id="574bb-133">After capturing the photo to disk, we will exit photo mode and then clean up our objects</span></span>
 
 ```cs
 void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
@@ -122,13 +122,13 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-### <a name="capture-a-photo-to-a-texture2d"></a><span data-ttu-id="523a3-134">Записать фотографию, чтобы Texture2D</span><span class="sxs-lookup"><span data-stu-id="523a3-134">Capture a Photo to a Texture2D</span></span>
+### <a name="capture-a-photo-to-a-texture2d"></a><span data-ttu-id="574bb-134">Запись фотографии в Texture2D</span><span class="sxs-lookup"><span data-stu-id="574bb-134">Capture a Photo to a Texture2D</span></span>
 
-<span data-ttu-id="523a3-135">При записи данных Texture2D, процесс аналогичен чрезвычайно записи на диск.</span><span class="sxs-lookup"><span data-stu-id="523a3-135">When capturing data to a Texture2D, the process is extremely similar to capturing to disk.</span></span>
+<span data-ttu-id="574bb-135">При записи данных в Texture2D процесс очень похож на запись на диск.</span><span class="sxs-lookup"><span data-stu-id="574bb-135">When capturing data to a Texture2D, the process is extremely similar to capturing to disk.</span></span>
 
-<span data-ttu-id="523a3-136">Мы будем следовать выше процесс установки.</span><span class="sxs-lookup"><span data-stu-id="523a3-136">We will follow the set up process above.</span></span>
+<span data-ttu-id="574bb-136">Мы будем следовать процессу настройки выше.</span><span class="sxs-lookup"><span data-stu-id="574bb-136">We will follow the set up process above.</span></span>
 
-<span data-ttu-id="523a3-137">В *OnPhotoModeStarted*, мы будет захвата кадра в память.</span><span class="sxs-lookup"><span data-stu-id="523a3-137">In *OnPhotoModeStarted*, we will capture a frame to memory.</span></span>
+<span data-ttu-id="574bb-137">В *онфотомодестартед*мы будем записывать кадр в память.</span><span class="sxs-lookup"><span data-stu-id="574bb-137">In *OnPhotoModeStarted*, we will capture a frame to memory.</span></span>
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -144,7 +144,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="523a3-138">Затем мы наш результат применения к текстуре и использоваться общие очистки приведенный выше код.</span><span class="sxs-lookup"><span data-stu-id="523a3-138">We will then apply our result to a texture and use the common clean up code above.</span></span>
+<span data-ttu-id="574bb-138">Затем мы будем применять наш результат к текстуре и используем наиболее распространенный код очистки.</span><span class="sxs-lookup"><span data-stu-id="574bb-138">We will then apply our result to a texture and use the common clean up code above.</span></span>
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -163,11 +163,11 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
    }
 ```
 
-### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a><span data-ttu-id="523a3-139">Захват фото и взаимодействие с необработанными байтами</span><span class="sxs-lookup"><span data-stu-id="523a3-139">Capture a Photo and Interact with the Raw bytes</span></span>
+### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a><span data-ttu-id="574bb-139">Запись фотографии и взаимодействие с необработанными байтами</span><span class="sxs-lookup"><span data-stu-id="574bb-139">Capture a Photo and Interact with the Raw bytes</span></span>
 
-<span data-ttu-id="523a3-140">Для взаимодействия с необработанные байты обработки в памяти кадра, мы будем следовать те же самые действия, что и выше и *OnPhotoModeStarted* как захват фотографию, чтобы Texture2D.</span><span class="sxs-lookup"><span data-stu-id="523a3-140">To interact with the raw bytes of an in memory frame, we will follow the same set up steps as above and *OnPhotoModeStarted* as in capturing a photo to a Texture2D.</span></span> <span data-ttu-id="523a3-141">Различие заключается в *OnCapturedPhotoToMemory* где мы можем получать необработанные байты и взаимодействовать с ними.</span><span class="sxs-lookup"><span data-stu-id="523a3-141">The difference is in *OnCapturedPhotoToMemory* where we can get the raw bytes and interact with them.</span></span>
+<span data-ttu-id="574bb-140">Чтобы взаимодействовать с необработанными байтами в кадре памяти, мы будем выполнять те же действия по настройке, что и в примере выше, и *онфотомодестартед* , как при записи фотографии в Texture2D.</span><span class="sxs-lookup"><span data-stu-id="574bb-140">To interact with the raw bytes of an in memory frame, we will follow the same set up steps as above and *OnPhotoModeStarted* as in capturing a photo to a Texture2D.</span></span> <span data-ttu-id="574bb-141">Разница заключается в *онкаптуредфототомемори* , где можно получить необработанные байты и взаимодействовать с ними.</span><span class="sxs-lookup"><span data-stu-id="574bb-141">The difference is in *OnCapturedPhotoToMemory* where we can get the raw bytes and interact with them.</span></span>
 
-<span data-ttu-id="523a3-142">В этом примере мы создадим *списка<Color>*  которого может быть дополнительно обработаны или применить к текстуры с помощью *SetPixels()*</span><span class="sxs-lookup"><span data-stu-id="523a3-142">In this example, we will create a *List<Color>* which could be further processed or applied to a texture via *SetPixels()*</span></span>
+<span data-ttu-id="574bb-142">В этом примере мы создадим *список<Color>*  , который можно обработать или применить к текстуре с помощью *сетпикселс ()* .</span><span class="sxs-lookup"><span data-stu-id="574bb-142">In this example, we will create a *List<Color>* which could be further processed or applied to a texture via *SetPixels()*</span></span>
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -200,20 +200,20 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
    }
 ```
 
-## <a name="video-capture"></a><span data-ttu-id="523a3-143">Видеозаписи</span><span class="sxs-lookup"><span data-stu-id="523a3-143">Video Capture</span></span>
+## <a name="video-capture"></a><span data-ttu-id="574bb-143">Видеозапись</span><span class="sxs-lookup"><span data-stu-id="574bb-143">Video Capture</span></span>
 
-<span data-ttu-id="523a3-144">**Пространство имен:** *UnityEngine.XR.WSA.WebCam*</span><span class="sxs-lookup"><span data-stu-id="523a3-144">**Namespace:** *UnityEngine.XR.WSA.WebCam*</span></span><br>
-<span data-ttu-id="523a3-145">**Тип:** *VideoCapture*</span><span class="sxs-lookup"><span data-stu-id="523a3-145">**Type:** *VideoCapture*</span></span>
+<span data-ttu-id="574bb-144">**Имен** *UnityEngine. XR. WSA. веб-камера*</span><span class="sxs-lookup"><span data-stu-id="574bb-144">**Namespace:** *UnityEngine.XR.WSA.WebCam*</span></span><br>
+<span data-ttu-id="574bb-145">**Тип** *видеокаптуре*</span><span class="sxs-lookup"><span data-stu-id="574bb-145">**Type:** *VideoCapture*</span></span>
 
-<span data-ttu-id="523a3-146">*VideoCapture* функции, подобные очень *PhotoCapture*.</span><span class="sxs-lookup"><span data-stu-id="523a3-146">*VideoCapture* functions very similarly to *PhotoCapture*.</span></span> <span data-ttu-id="523a3-147">Только два различия, что необходимо указать значение кадры на второй (кадров/с), и можно сохранить только непосредственно на диск как MP4-файл.</span><span class="sxs-lookup"><span data-stu-id="523a3-147">The only two differences are that you must specify a Frames Per Second (FPS) value and you can only save directly to disk as an .mp4 file.</span></span> <span data-ttu-id="523a3-148">Указания по использованию *VideoCapture* таковы:</span><span class="sxs-lookup"><span data-stu-id="523a3-148">The steps to use *VideoCapture* are as follows:</span></span>
-1. <span data-ttu-id="523a3-149">Создание *VideoCapture* объекта</span><span class="sxs-lookup"><span data-stu-id="523a3-149">Create a *VideoCapture* object</span></span>
-2. <span data-ttu-id="523a3-150">Создание *CameraParameters* с параметрами, мы хотим</span><span class="sxs-lookup"><span data-stu-id="523a3-150">Create a *CameraParameters* object with the settings we want</span></span>
-3. <span data-ttu-id="523a3-151">Запуск видеорежима через *StartVideoModeAsync*</span><span class="sxs-lookup"><span data-stu-id="523a3-151">Start Video Mode via *StartVideoModeAsync*</span></span>
-4. <span data-ttu-id="523a3-152">Начать запись видео</span><span class="sxs-lookup"><span data-stu-id="523a3-152">Start recording video</span></span>
-5. <span data-ttu-id="523a3-153">Остановить запись видео</span><span class="sxs-lookup"><span data-stu-id="523a3-153">Stop recording video</span></span>
-6. <span data-ttu-id="523a3-154">Выход из режима видео и очистка ресурсов</span><span class="sxs-lookup"><span data-stu-id="523a3-154">Stop Video Mode and clean up resources</span></span>
+<span data-ttu-id="574bb-146">Функция *видеокаптуре* очень похожа на функцию фотозахвата.</span><span class="sxs-lookup"><span data-stu-id="574bb-146">*VideoCapture* functions very similarly to *PhotoCapture*.</span></span> <span data-ttu-id="574bb-147">Единственное отличие заключается в том, что необходимо указать значение кадров в секунду, которое можно сохранить непосредственно на диск в виде MP4-файла.</span><span class="sxs-lookup"><span data-stu-id="574bb-147">The only two differences are that you must specify a Frames Per Second (FPS) value and you can only save directly to disk as an .mp4 file.</span></span> <span data-ttu-id="574bb-148">Ниже приведены действия по использованию *видеокаптуре* .</span><span class="sxs-lookup"><span data-stu-id="574bb-148">The steps to use *VideoCapture* are as follows:</span></span>
+1. <span data-ttu-id="574bb-149">Создание объекта *видеокаптуре*</span><span class="sxs-lookup"><span data-stu-id="574bb-149">Create a *VideoCapture* object</span></span>
+2. <span data-ttu-id="574bb-150">Создание объекта *камерапараметерс* с нужными параметрами</span><span class="sxs-lookup"><span data-stu-id="574bb-150">Create a *CameraParameters* object with the settings we want</span></span>
+3. <span data-ttu-id="574bb-151">Запуск видеорежима через *стартвидеомодеасинк*</span><span class="sxs-lookup"><span data-stu-id="574bb-151">Start Video Mode via *StartVideoModeAsync*</span></span>
+4. <span data-ttu-id="574bb-152">Начать запись видео</span><span class="sxs-lookup"><span data-stu-id="574bb-152">Start recording video</span></span>
+5. <span data-ttu-id="574bb-153">Закончить запись видео</span><span class="sxs-lookup"><span data-stu-id="574bb-153">Stop recording video</span></span>
+6. <span data-ttu-id="574bb-154">Воспроизведение видеорежима и очистка ресурсов</span><span class="sxs-lookup"><span data-stu-id="574bb-154">Stop Video Mode and clean up resources</span></span>
 
-<span data-ttu-id="523a3-155">Мы начнем с создания нашей *VideoCapture* объект *VideoCapture m_VideoCapture = null;*</span><span class="sxs-lookup"><span data-stu-id="523a3-155">We start by creating our *VideoCapture* object *VideoCapture m_VideoCapture = null;*</span></span>
+<span data-ttu-id="574bb-155">Начнем с создания нашего объекта *Видеокаптуре* *видеокаптуре m_VideoCapture = NULL;*</span><span class="sxs-lookup"><span data-stu-id="574bb-155">We start by creating our *VideoCapture* object *VideoCapture m_VideoCapture = null;*</span></span>
 
 ```cs
 void Start ()
@@ -222,7 +222,7 @@ void Start ()
    }
 ```
 
-<span data-ttu-id="523a3-156">Мы затем настроим параметры, которые нам потребуются средства для записи и запуска.</span><span class="sxs-lookup"><span data-stu-id="523a3-156">We then will set up the parameters we will want for the recording and start.</span></span>
+<span data-ttu-id="574bb-156">Затем будут настроены параметры, которые будут нужны для записи и запуска.</span><span class="sxs-lookup"><span data-stu-id="574bb-156">We then will set up the parameters we will want for the recording and start.</span></span>
 
 ```cs
 void OnVideoCaptureCreated (VideoCapture videoCapture)
@@ -252,7 +252,7 @@ void OnVideoCaptureCreated (VideoCapture videoCapture)
    }
 ```
 
-<span data-ttu-id="523a3-157">После запуска, мы начнем с записи</span><span class="sxs-lookup"><span data-stu-id="523a3-157">Once started, we will begin the recording</span></span>
+<span data-ttu-id="574bb-157">После запуска запись начнется</span><span class="sxs-lookup"><span data-stu-id="574bb-157">Once started, we will begin the recording</span></span>
 
 ```cs
 void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
@@ -267,7 +267,7 @@ void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="523a3-158">После запуска записи удалось обновить пользовательский Интерфейс или поведения, чтобы включить остановки.</span><span class="sxs-lookup"><span data-stu-id="523a3-158">After recording has started, you could update your UI or behaviors to enable stopping.</span></span> <span data-ttu-id="523a3-159">Здесь мы просто в журнал</span><span class="sxs-lookup"><span data-stu-id="523a3-159">Here we just log</span></span>
+<span data-ttu-id="574bb-158">После начала записи можно обновить пользовательский интерфейс или поведение, чтобы включить остановку.</span><span class="sxs-lookup"><span data-stu-id="574bb-158">After recording has started, you could update your UI or behaviors to enable stopping.</span></span> <span data-ttu-id="574bb-159">Вот только журнал</span><span class="sxs-lookup"><span data-stu-id="574bb-159">Here we just log</span></span>
 
 ```cs
 void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
@@ -277,7 +277,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="523a3-160">В дальнейшем необходимо остановить запись.</span><span class="sxs-lookup"><span data-stu-id="523a3-160">At a later point, we will want to stop the recording.</span></span> <span data-ttu-id="523a3-161">Это может произойти с таймером или пользовательского ввода, для экземпляра.</span><span class="sxs-lookup"><span data-stu-id="523a3-161">This could happen from a timer or user input, for instance.</span></span>
+<span data-ttu-id="574bb-160">На более позднем этапе нам нужно будет отключить запись.</span><span class="sxs-lookup"><span data-stu-id="574bb-160">At a later point, we will want to stop the recording.</span></span> <span data-ttu-id="574bb-161">Например, это может произойти из таймера или ввода пользователя.</span><span class="sxs-lookup"><span data-stu-id="574bb-161">This could happen from a timer or user input, for instance.</span></span>
 
 ```cs
 // The user has indicated to stop recording
@@ -287,7 +287,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-<span data-ttu-id="523a3-162">После остановки записи нужно будет остановить видеорежима и очистить наши ресурсы.</span><span class="sxs-lookup"><span data-stu-id="523a3-162">Once the recording has stopped, we will stop video mode and clean up our resources.</span></span>
+<span data-ttu-id="574bb-162">После остановки записи будет остановлен видеорежим и очищены ресурсы.</span><span class="sxs-lookup"><span data-stu-id="574bb-162">Once the recording has stopped, we will stop video mode and clean up our resources.</span></span>
 
 ```cs
 void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
@@ -303,9 +303,9 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-## <a name="troubleshooting"></a><span data-ttu-id="523a3-163">Устранение неполадок</span><span class="sxs-lookup"><span data-stu-id="523a3-163">Troubleshooting</span></span>
-* <span data-ttu-id="523a3-164">Никаких действий не доступны.</span><span class="sxs-lookup"><span data-stu-id="523a3-164">No resolutions are available</span></span>
-    * <span data-ttu-id="523a3-165">Убедитесь, **веб-камера** возможности, указанные в проекте.</span><span class="sxs-lookup"><span data-stu-id="523a3-165">Ensure the **WebCam** capability is specified in your project.</span></span>
+## <a name="troubleshooting"></a><span data-ttu-id="574bb-163">Устранение неполадок</span><span class="sxs-lookup"><span data-stu-id="574bb-163">Troubleshooting</span></span>
+* <span data-ttu-id="574bb-164">Нет доступных разрешений</span><span class="sxs-lookup"><span data-stu-id="574bb-164">No resolutions are available</span></span>
+    * <span data-ttu-id="574bb-165">Убедитесь, что в проекте указана возможность использования **веб-камеры** .</span><span class="sxs-lookup"><span data-stu-id="574bb-165">Ensure the **WebCam** capability is specified in your project.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="523a3-166">См. также</span><span class="sxs-lookup"><span data-stu-id="523a3-166">See Also</span></span>
-* [<span data-ttu-id="523a3-167">Может быть найдена камеры</span><span class="sxs-lookup"><span data-stu-id="523a3-167">Locatable camera</span></span>](locatable-camera.md)
+## <a name="see-also"></a><span data-ttu-id="574bb-166">См. также</span><span class="sxs-lookup"><span data-stu-id="574bb-166">See Also</span></span>
+* [<span data-ttu-id="574bb-167">Камера с определяемым местоположением</span><span class="sxs-lookup"><span data-stu-id="574bb-167">Locatable camera</span></span>](locatable-camera.md)
