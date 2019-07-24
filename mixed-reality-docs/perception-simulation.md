@@ -1,6 +1,6 @@
 ---
-title: Моделирование восприятие
-description: Руководство по использованию библиотеки восприятие моделирования для автоматизации имитации ввода для иммерсивных приложений
+title: Имитация восприятия
+description: Рекомендации по использованию библиотеки моделирования восприятия для автоматизации имитации входных данных для впечатляющих приложений
 author: pbarnettms
 ms.author: pbarnett
 ms.date: 04/26/2019
@@ -13,46 +13,46 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 06/27/2019
 ms.locfileid: "67414530"
 ---
-# <a name="perception-simulation"></a><span data-ttu-id="53ce1-104">Моделирование восприятие</span><span class="sxs-lookup"><span data-stu-id="53ce1-104">Perception simulation</span></span>
+# <a name="perception-simulation"></a><span data-ttu-id="68e0c-104">Имитация восприятия</span><span class="sxs-lookup"><span data-stu-id="68e0c-104">Perception simulation</span></span>
 
-<span data-ttu-id="53ce1-105">Вы хотите создавать автоматические тесты для своего приложения?</span><span class="sxs-lookup"><span data-stu-id="53ce1-105">Do you want to build an automated test for your app?</span></span> <span data-ttu-id="53ce1-106">Вы хотите, чтобы тесты выходят за рамки уровня компонента модульное тестирование и действительно производить вашего приложения end-to-end?</span><span class="sxs-lookup"><span data-stu-id="53ce1-106">Do you want your tests to go beyond component-level unit testing and really exercise your app end-to-end?</span></span> <span data-ttu-id="53ce1-107">Симулятор восприятия —, что вы искали.</span><span class="sxs-lookup"><span data-stu-id="53ce1-107">Perception Simulation is what you're looking for.</span></span> <span data-ttu-id="53ce1-108">В библиотеке имитации восприятие отправляет человека и world входные данные в приложение, чтобы тесты можно автоматизировать.</span><span class="sxs-lookup"><span data-stu-id="53ce1-108">The Perception Simulation library sends human and world input data to your app so you can automate your tests.</span></span> <span data-ttu-id="53ce1-109">Например вы можете имитировать входные данные человека поиска в конкретных, повторяемый позицию и затем выполняет жест или с помощью контроллера движения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-109">For example, you can simulate the input of a human looking to a specific, repeatable position and then performing a gesture or using a motion controller.</span></span>
+<span data-ttu-id="68e0c-105">Вы хотите создать автоматический тест для приложения?</span><span class="sxs-lookup"><span data-stu-id="68e0c-105">Do you want to build an automated test for your app?</span></span> <span data-ttu-id="68e0c-106">Вы хотите, чтобы тесты переходили за пределы модульного тестирования на уровне компонентов и действительно протестировали свое приложение как можно более полное?</span><span class="sxs-lookup"><span data-stu-id="68e0c-106">Do you want your tests to go beyond component-level unit testing and really exercise your app end-to-end?</span></span> <span data-ttu-id="68e0c-107">Имитация восприятия — это то, что вы ищете.</span><span class="sxs-lookup"><span data-stu-id="68e0c-107">Perception Simulation is what you're looking for.</span></span> <span data-ttu-id="68e0c-108">Библиотека моделирования восприятия отправляет в приложение пользовательские и мировые входные данные, что позволяет автоматизировать тесты.</span><span class="sxs-lookup"><span data-stu-id="68e0c-108">The Perception Simulation library sends human and world input data to your app so you can automate your tests.</span></span> <span data-ttu-id="68e0c-109">Например, можно имитировать входные данные человека, который смотрит в конкретную повторяемую единицу, а затем выполнить жест или использовать контроллер движения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-109">For example, you can simulate the input of a human looking to a specific, repeatable position and then performing a gesture or using a motion controller.</span></span>
 
-<span data-ttu-id="53ce1-110">Моделирование восприятие можно отправлять физических HoloLens, эмулятор HoloLens имитации ввода следующим образом установлен HoloLens 2 эмулятора или ПК с помощью портала смешанной реальности (1-го поколения,).</span><span class="sxs-lookup"><span data-stu-id="53ce1-110">Perception Simulation can send simulated input like this to a physical HoloLens, the HoloLens emulator (1st gen), the HoloLens 2 Emulator, or a PC with Mixed Reality Portal installed.</span></span> <span data-ttu-id="53ce1-111">Восприятие имитации обходит динамической датчиков на устройстве смешанной реальности и отправляет смоделированные входных данных для приложений, выполняющихся на устройстве.</span><span class="sxs-lookup"><span data-stu-id="53ce1-111">Perception Simulation bypasses the live sensors on a Mixed Reality device and sends simulated input to applications running on the device.</span></span> <span data-ttu-id="53ce1-112">Приложения получают эти события ввода через API-интерфейсы, они всегда использовать и не может определить разницу между запуском с физическими датчиками и при выполнении с моделирования восприятие.</span><span class="sxs-lookup"><span data-stu-id="53ce1-112">Applications receive these input events through the same APIs they always use and can't tell the difference between running with real sensors versus running with Perception Simulation.</span></span> <span data-ttu-id="53ce1-113">Моделирование восприятие та же технология используется для отправки имитации входных данных к виртуальной машине HoloLens эмуляторы HoloLens.</span><span class="sxs-lookup"><span data-stu-id="53ce1-113">Perception Simulation is the same technology used by the HoloLens emulators to send simulated input to the HoloLens Virtual Machine.</span></span>
+<span data-ttu-id="68e0c-110">Имитация восприятия может отправить смоделированные входные данные на физический HoloLens, эмулятор HoloLens (1 общий), эмулятор HoloLens 2 или компьютер с установленным порталом смешанной реальности.</span><span class="sxs-lookup"><span data-stu-id="68e0c-110">Perception Simulation can send simulated input like this to a physical HoloLens, the HoloLens emulator (1st gen), the HoloLens 2 Emulator, or a PC with Mixed Reality Portal installed.</span></span> <span data-ttu-id="68e0c-111">Имитация восприятия обходит активные датчики на устройстве смешанной реальности и отправляет смоделированные входные данные приложениям, работающим на устройстве.</span><span class="sxs-lookup"><span data-stu-id="68e0c-111">Perception Simulation bypasses the live sensors on a Mixed Reality device and sends simulated input to applications running on the device.</span></span> <span data-ttu-id="68e0c-112">Приложения получают эти события ввода через те же API-интерфейсы, которые они всегда используют, и не могут сообщать о различиях между выполнением с реальными датчиками и с имитацией восприятия.</span><span class="sxs-lookup"><span data-stu-id="68e0c-112">Applications receive these input events through the same APIs they always use and can't tell the difference between running with real sensors versus running with Perception Simulation.</span></span> <span data-ttu-id="68e0c-113">Имитация восприятия — это та же технология, которая используется эмуляторами HoloLens для отправки смоделированных входных данных на виртуальную машину HoloLens.</span><span class="sxs-lookup"><span data-stu-id="68e0c-113">Perception Simulation is the same technology used by the HoloLens emulators to send simulated input to the HoloLens Virtual Machine.</span></span>
 
-<span data-ttu-id="53ce1-114">Чтобы приступить к использованию моделирования в коде, начните с создания объекта IPerceptionSimulationManager.</span><span class="sxs-lookup"><span data-stu-id="53ce1-114">To begin using simulation in your code, start by creating an IPerceptionSimulationManager object.</span></span> <span data-ttu-id="53ce1-115">Из этого объекта можно выполнить команды для управления свойства имитации «человека», включая головной позиции, положение руки и жестов, и можно включить и управлять контроллерами движения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-115">From that object, you can issue commands to control properties of a simulated "human", including head position, hand position, and gestures, and you can enable and manipulate motion controllers.</span></span>
+<span data-ttu-id="68e0c-114">Чтобы приступить к использованию моделирования в коде, начните с создания объекта Иперцептионсимулатионманажер.</span><span class="sxs-lookup"><span data-stu-id="68e0c-114">To begin using simulation in your code, start by creating an IPerceptionSimulationManager object.</span></span> <span data-ttu-id="68e0c-115">Из этого объекта можно выдавать команды для управления свойствами имитации «человека», включая позиционирование головной стороны, расположение руки и жесты, а также включать и управлять контроллерами движения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-115">From that object, you can issue commands to control properties of a simulated "human", including head position, hand position, and gestures, and you can enable and manipulate motion controllers.</span></span>
 
-## <a name="setting-up-a-visual-studio-project-for-perception-simulation"></a><span data-ttu-id="53ce1-116">Настройка проекта Visual Studio для моделирования восприятие</span><span class="sxs-lookup"><span data-stu-id="53ce1-116">Setting Up a Visual Studio Project for Perception Simulation</span></span>
-1. <span data-ttu-id="53ce1-117">[Установить эмулятор HoloLens](install-the-tools.md) на Компьютере разработки.</span><span class="sxs-lookup"><span data-stu-id="53ce1-117">[Install the HoloLens emulator](install-the-tools.md) on your development PC.</span></span> <span data-ttu-id="53ce1-118">Эмулятор включает библиотеки, которая будет использоваться для моделирования восприятие.</span><span class="sxs-lookup"><span data-stu-id="53ce1-118">The emulator includes the libraries you will use for Perception Simulation.</span></span>
-2. <span data-ttu-id="53ce1-119">Создание новой Visual Studio C# проект для настольной системы (консольный проект прекрасно работает Чтобы приступить к работе).</span><span class="sxs-lookup"><span data-stu-id="53ce1-119">Create a new Visual Studio C# desktop project (a Console Project works great to get started).</span></span>
-3. <span data-ttu-id="53ce1-120">Добавьте следующие двоичные файлы в проект как ссылки (проект -> Добавить -> ссылка...). Их можно найти в % ProgramFiles (x86) %\Microsoft XDE\\(версия), такие как **% ProgramFiles (x86) %\Microsoft XDE\\10.0.18362.0** для эмулятора 2 HoloLens.</span><span class="sxs-lookup"><span data-stu-id="53ce1-120">Add the following binaries to your project as references (Project->Add->Reference...). You can find them in %ProgramFiles(x86)%\Microsoft XDE\\(version), such as **%ProgramFiles(x86)%\Microsoft XDE\\10.0.18362.0** for the HoloLens 2 Emulator.</span></span>  <span data-ttu-id="53ce1-121">(Обратите внимание: несмотря на то, что двоичные файлы являются частью эмулятор 2 HoloLens, которые также работают в Windows Mixed Reality на рабочем столе.) .</span><span class="sxs-lookup"><span data-stu-id="53ce1-121">(Note: although the binaries are part of the HoloLens 2 Emulator, they also work for Windows Mixed Reality on the desktop.) a.</span></span> <span data-ttu-id="53ce1-122">PerceptionSimulationManager.Interop.dll - управляемых C# программы-оболочки для восприятия моделирования.</span><span class="sxs-lookup"><span data-stu-id="53ce1-122">PerceptionSimulationManager.Interop.dll - Managed C# wrapper for Perception Simulation.</span></span>
-    <span data-ttu-id="53ce1-123">2\.</span><span class="sxs-lookup"><span data-stu-id="53ce1-123">b.</span></span> <span data-ttu-id="53ce1-124">PerceptionSimulationRest.dll - библиотеки для настройки веб-сокет коммуникационного канала HoloLens или эмуляторе.</span><span class="sxs-lookup"><span data-stu-id="53ce1-124">PerceptionSimulationRest.dll - Library for setting up a web-socket communication channel to the HoloLens or emulator.</span></span>
-    <span data-ttu-id="53ce1-125">В.</span><span class="sxs-lookup"><span data-stu-id="53ce1-125">c.</span></span> <span data-ttu-id="53ce1-126">SimulationStream.Interop.dll - общие типы для моделирования.</span><span class="sxs-lookup"><span data-stu-id="53ce1-126">SimulationStream.Interop.dll - Shared types for simulation.</span></span>
-4. <span data-ttu-id="53ce1-127">Добавьте реализацию двоичный PerceptionSimulationManager.dll в проект.</span><span class="sxs-lookup"><span data-stu-id="53ce1-127">Add the implementation binary PerceptionSimulationManager.dll to your project a.</span></span> <span data-ttu-id="53ce1-128">Сначала добавьте его как двоичный файл в проект (проект -> Добавить -> существующий элемент...). Сохраните его как ссылку, чтобы он не копируются в папку исходного проекта.</span><span class="sxs-lookup"><span data-stu-id="53ce1-128">First add it as a binary to the project (Project->Add->Existing Item...). Save it as a link so that it doesn't copy it to your project source folder.</span></span> <span data-ttu-id="53ce1-129">![Добавьте в проект как ссылку PerceptionSimulationManager.dll](images/saveaslink.png) b.</span><span class="sxs-lookup"><span data-stu-id="53ce1-129">![Add PerceptionSimulationManager.dll to the project as a link](images/saveaslink.png) b.</span></span> <span data-ttu-id="53ce1-130">Убедитесь, что его получить копируется в папку выходных данных построения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-130">Then make sure that it get's copied to your output folder on build.</span></span> <span data-ttu-id="53ce1-131">Это в окне свойств для двоичного файла.</span><span class="sxs-lookup"><span data-stu-id="53ce1-131">This is in the property sheet for the binary .</span></span> <span data-ttu-id="53ce1-132">![Марк PerceptionSimulationManager.dll Копировать в выходной каталог](images/copyalways.png)</span><span class="sxs-lookup"><span data-stu-id="53ce1-132">![Mark PerceptionSimulationManager.dll to copy to the output directory](images/copyalways.png)</span></span>
-5. <span data-ttu-id="53ce1-133">Присвоено x64 вашей Активная платформа решения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-133">Set your active solution platform to x64.</span></span>  <span data-ttu-id="53ce1-134">(Используйте Configuration Manager, создайте запись платформы для x64 в том случае, если он еще не существует.)</span><span class="sxs-lookup"><span data-stu-id="53ce1-134">(Use the Configuration Manager to create a Platform entry for x64 if one does not already exist.)</span></span>
+## <a name="setting-up-a-visual-studio-project-for-perception-simulation"></a><span data-ttu-id="68e0c-116">Настройка проекта Visual Studio для имитации восприятия</span><span class="sxs-lookup"><span data-stu-id="68e0c-116">Setting Up a Visual Studio Project for Perception Simulation</span></span>
+1. <span data-ttu-id="68e0c-117">[Установите эмулятор HoloLens](install-the-tools.md) на компьютере разработки.</span><span class="sxs-lookup"><span data-stu-id="68e0c-117">[Install the HoloLens emulator](install-the-tools.md) on your development PC.</span></span> <span data-ttu-id="68e0c-118">Эмулятор включает библиотеки, которые будут использоваться для имитации восприятия.</span><span class="sxs-lookup"><span data-stu-id="68e0c-118">The emulator includes the libraries you will use for Perception Simulation.</span></span>
+2. <span data-ttu-id="68e0c-119">Создайте проект Visual Studio C# для настольных систем (проект консоли прекрасно работает, чтобы начать работу).</span><span class="sxs-lookup"><span data-stu-id="68e0c-119">Create a new Visual Studio C# desktop project (a Console Project works great to get started).</span></span>
+3. <span data-ttu-id="68e0c-120">Добавьте в проект следующие двоичные файлы в виде ссылок (проект-> Добавить > ссылку...). Их можно найти в% ProgramFiles (x86)% \ Microsoft XDE\\(версия), например **% ProgramFiles (x86)% \ Microsoft XDE\\10.0.18362.0** для эмулятора HoloLens 2.</span><span class="sxs-lookup"><span data-stu-id="68e0c-120">Add the following binaries to your project as references (Project->Add->Reference...). You can find them in %ProgramFiles(x86)%\Microsoft XDE\\(version), such as **%ProgramFiles(x86)%\Microsoft XDE\\10.0.18362.0** for the HoloLens 2 Emulator.</span></span>  <span data-ttu-id="68e0c-121">(Примечание. Хотя двоичные файлы являются частью эмулятора HoloLens 2, они также работают для Windows Mixed Reality на настольном компьютере.) конкретного.</span><span class="sxs-lookup"><span data-stu-id="68e0c-121">(Note: although the binaries are part of the HoloLens 2 Emulator, they also work for Windows Mixed Reality on the desktop.) a.</span></span> <span data-ttu-id="68e0c-122">Перцептионсимулатионманажер. Interop. dll — управляемая C# оболочка для имитации восприятия.</span><span class="sxs-lookup"><span data-stu-id="68e0c-122">PerceptionSimulationManager.Interop.dll - Managed C# wrapper for Perception Simulation.</span></span>
+    <span data-ttu-id="68e0c-123">2\.</span><span class="sxs-lookup"><span data-stu-id="68e0c-123">b.</span></span> <span data-ttu-id="68e0c-124">Перцептионсимулатионрест. DLL — библиотека для настройки канала связи через веб-сокет с HoloLens или Emulator.</span><span class="sxs-lookup"><span data-stu-id="68e0c-124">PerceptionSimulationRest.dll - Library for setting up a web-socket communication channel to the HoloLens or emulator.</span></span>
+    <span data-ttu-id="68e0c-125">В.</span><span class="sxs-lookup"><span data-stu-id="68e0c-125">c.</span></span> <span data-ttu-id="68e0c-126">Симулатионстреам. Interop. dll — общие типы для моделирования.</span><span class="sxs-lookup"><span data-stu-id="68e0c-126">SimulationStream.Interop.dll - Shared types for simulation.</span></span>
+4. <span data-ttu-id="68e0c-127">Добавьте в проект a двоичный файл Перцептионсимулатионманажер. dll реализации.</span><span class="sxs-lookup"><span data-stu-id="68e0c-127">Add the implementation binary PerceptionSimulationManager.dll to your project a.</span></span> <span data-ttu-id="68e0c-128">Сначала добавьте его в качестве двоичного файла в проект (проект-> Добавить-> существующий элемент...). Сохраните его как ссылку, чтобы он не скопировал его в исходную папку проекта.</span><span class="sxs-lookup"><span data-stu-id="68e0c-128">First add it as a binary to the project (Project->Add->Existing Item...). Save it as a link so that it doesn't copy it to your project source folder.</span></span> <span data-ttu-id="68e0c-129">![Добавьте перцептионсимулатионманажер. dll в проект как ссылку](images/saveaslink.png) b.</span><span class="sxs-lookup"><span data-stu-id="68e0c-129">![Add PerceptionSimulationManager.dll to the project as a link](images/saveaslink.png) b.</span></span> <span data-ttu-id="68e0c-130">Затем убедитесь, что он скопирован в выходную папку при сборке.</span><span class="sxs-lookup"><span data-stu-id="68e0c-130">Then make sure that it get's copied to your output folder on build.</span></span> <span data-ttu-id="68e0c-131">Он находится на странице свойств двоичного файла.</span><span class="sxs-lookup"><span data-stu-id="68e0c-131">This is in the property sheet for the binary .</span></span> <span data-ttu-id="68e0c-132">![Пометьте Перцептионсимулатионманажер. dll для копирования в выходной каталог](images/copyalways.png)</span><span class="sxs-lookup"><span data-stu-id="68e0c-132">![Mark PerceptionSimulationManager.dll to copy to the output directory](images/copyalways.png)</span></span>
+5. <span data-ttu-id="68e0c-133">Задайте для активной платформы решения x64.</span><span class="sxs-lookup"><span data-stu-id="68e0c-133">Set your active solution platform to x64.</span></span>  <span data-ttu-id="68e0c-134">(Используйте Configuration Manager, чтобы создать запись платформы для x64, если она еще не существует.)</span><span class="sxs-lookup"><span data-stu-id="68e0c-134">(Use the Configuration Manager to create a Platform entry for x64 if one does not already exist.)</span></span>
 
-## <a name="creating-an-iperceptionsimulation-manager-object"></a><span data-ttu-id="53ce1-135">Создание объекта диспетчера IPerceptionSimulation</span><span class="sxs-lookup"><span data-stu-id="53ce1-135">Creating an IPerceptionSimulation Manager Object</span></span>
+## <a name="creating-an-iperceptionsimulation-manager-object"></a><span data-ttu-id="68e0c-135">Создание объекта Иперцептионсимулатион Manager</span><span class="sxs-lookup"><span data-stu-id="68e0c-135">Creating an IPerceptionSimulation Manager Object</span></span>
 
-<span data-ttu-id="53ce1-136">Чтобы управлять моделирования, вам отправить обновления в объекты, возвращенные из объекта IPerceptionSimulationManager.</span><span class="sxs-lookup"><span data-stu-id="53ce1-136">To control simulation, you'll issue updates to objects retrieved from an IPerceptionSimulationManager object.</span></span> <span data-ttu-id="53ce1-137">Первым делом для получения этого объекта и подключить его к целевое устройство или эмулятор.</span><span class="sxs-lookup"><span data-stu-id="53ce1-137">The first step is to get that object and connect it to your target device or emulator.</span></span> <span data-ttu-id="53ce1-138">IP-адрес симулятора можно получить, щелкнув кнопку портал устройств в [панели инструментов](using-the-hololens-emulator.md)</span><span class="sxs-lookup"><span data-stu-id="53ce1-138">You can get the IP address of your emulator by clicking on the Device Portal button in the [toolbar](using-the-hololens-emulator.md)</span></span>
+<span data-ttu-id="68e0c-136">Для управления имитацией вы получаете обновления объектов, полученных из объекта Иперцептионсимулатионманажер.</span><span class="sxs-lookup"><span data-stu-id="68e0c-136">To control simulation, you'll issue updates to objects retrieved from an IPerceptionSimulationManager object.</span></span> <span data-ttu-id="68e0c-137">Первым шагом является получение этого объекта и его подключение к целевому устройству или эмулятору.</span><span class="sxs-lookup"><span data-stu-id="68e0c-137">The first step is to get that object and connect it to your target device or emulator.</span></span> <span data-ttu-id="68e0c-138">Вы можете получить IP-адрес эмулятора, нажав кнопку на портале устройства на [панели инструментов](using-the-hololens-emulator.md) .</span><span class="sxs-lookup"><span data-stu-id="68e0c-138">You can get the IP address of your emulator by clicking on the Device Portal button in the [toolbar](using-the-hololens-emulator.md)</span></span>
 
-<span data-ttu-id="53ce1-139">![Значок открытия портал устройств](images/emulator-deviceportal.png) **открыть портал устройства**: Открывает в эмуляторе портал устройств Windows для HoloLens OS.</span><span class="sxs-lookup"><span data-stu-id="53ce1-139">![Open Device Portal icon](images/emulator-deviceportal.png) **Open Device Portal**: Open the Windows Device Portal for the HoloLens OS in the emulator.</span></span>  <span data-ttu-id="53ce1-140">Для Windows Mixed Reality, это значение можно получить в приложении "Параметры" в разделе «Обновления и безопасность», затем «для разработчиков» в «подключение с использованием:» раздела «Включение портал устройств».</span><span class="sxs-lookup"><span data-stu-id="53ce1-140">For Windows Mixed Reality, this can be retrieved in the Settings app under "Update & Security", then "For developers" in the "Connect using:" section under "Enable Device Portal."</span></span>  <span data-ttu-id="53ce1-141">Обязательно запомните IP-адрес и порт.</span><span class="sxs-lookup"><span data-stu-id="53ce1-141">Be sure to note both the IP address and port.</span></span>
+<span data-ttu-id="68e0c-139">![Значок](images/emulator-deviceportal.png) "открыть портал устройств" **откройте портал устройств**: Открывает в эмуляторе портал устройств Windows для HoloLens OS.</span><span class="sxs-lookup"><span data-stu-id="68e0c-139">![Open Device Portal icon](images/emulator-deviceportal.png) **Open Device Portal**: Open the Windows Device Portal for the HoloLens OS in the emulator.</span></span>  <span data-ttu-id="68e0c-140">Для Windows Mixed Reality это можно получить в приложении "Параметры" в разделе "Обновление & безопасность", а затем "для разработчиков" в разделе "подключение с помощью:" раздела "Включение портала устройств".</span><span class="sxs-lookup"><span data-stu-id="68e0c-140">For Windows Mixed Reality, this can be retrieved in the Settings app under "Update & Security", then "For developers" in the "Connect using:" section under "Enable Device Portal."</span></span>  <span data-ttu-id="68e0c-141">Обязательно запишите IP-адрес и порт.</span><span class="sxs-lookup"><span data-stu-id="68e0c-141">Be sure to note both the IP address and port.</span></span>
 
-<span data-ttu-id="53ce1-142">Во-первых вы вызовете RestSimulationStreamSink.Create для получения объекта RestSimulationStreamSink.</span><span class="sxs-lookup"><span data-stu-id="53ce1-142">First, you'll call RestSimulationStreamSink.Create to get a RestSimulationStreamSink object.</span></span> <span data-ttu-id="53ce1-143">Это целевое устройство или эмулятор, который будет управлять по протоколу http.</span><span class="sxs-lookup"><span data-stu-id="53ce1-143">This is the target device or emulator that you will control over an http connection.</span></span> <span data-ttu-id="53ce1-144">Ваши команды будут передаваться и обрабатываются [Windows Device Portal](using-the-windows-device-portal.md) на устройстве или эмуляторе.</span><span class="sxs-lookup"><span data-stu-id="53ce1-144">Your commands will be passed to and handled by the [Windows Device Portal](using-the-windows-device-portal.md) running on the device or emulator.</span></span> <span data-ttu-id="53ce1-145">Ниже приведены четыре параметра, необходимо создать объект.</span><span class="sxs-lookup"><span data-stu-id="53ce1-145">The four parameters you'll need to create an object are:</span></span>
-* <span data-ttu-id="53ce1-146">Uri URI - IP-адрес целевого устройства (например, "http://123.123.123.123 «или» http://123.123.123.123:50080 «)</span><span class="sxs-lookup"><span data-stu-id="53ce1-146">Uri uri - IP address of the target device (e.g., "http://123.123.123.123" or "http://123.123.123.123:50080")</span></span>
-* <span data-ttu-id="53ce1-147">Учетные данные System.Net.NetworkCredential — имя пользователя и пароль для подключения к [Windows Device Portal](using-the-windows-device-portal.md) на целевом устройстве или эмуляторе.</span><span class="sxs-lookup"><span data-stu-id="53ce1-147">System.Net.NetworkCredential credentials - Username/password for connecting to the [Windows Device Portal](using-the-windows-device-portal.md) on the target device or emulator.</span></span> <span data-ttu-id="53ce1-148">При подключении к эмулятору с помощью его локальный адрес (например, 168. *.* . \*) на локальном ПК, будут приняты любые учетные данные.</span><span class="sxs-lookup"><span data-stu-id="53ce1-148">If you are connecting to the emulator via its local address (e.g., 168.*.*.\*) on the same PC, any credentials will be accepted.</span></span>
-* <span data-ttu-id="53ce1-149">normal — логическое значение True для нормального приоритета, значение false для с низким приоритетом.</span><span class="sxs-lookup"><span data-stu-id="53ce1-149">bool normal - True for normal priority, false for low priority.</span></span> <span data-ttu-id="53ce1-150">Обычно требуется устанавливать равным *true* для тестовых сценариев, что позволяет контролировать теста.</span><span class="sxs-lookup"><span data-stu-id="53ce1-150">You generally want to set this to *true* for test scenarios, which allows your test to take control.</span></span>  <span data-ttu-id="53ce1-151">Эмулятор и моделирование Windows Mixed Reality использовать подключения с низким приоритетом.</span><span class="sxs-lookup"><span data-stu-id="53ce1-151">The emulator and Windows Mixed Reality simulation use low priority connections.</span></span>  <span data-ttu-id="53ce1-152">Если тест также использует соединение с низким приоритетом, наиболее недавно установлено, что будет использоваться для соединения в элементе управления.</span><span class="sxs-lookup"><span data-stu-id="53ce1-152">If your test also uses a low priority connection, the most recently established connection will be in control.</span></span>
-* <span data-ttu-id="53ce1-153">Токен System.Threading.CancellationToken - токен для отмены асинхронной операции.</span><span class="sxs-lookup"><span data-stu-id="53ce1-153">System.Threading.CancellationToken token - Token to cancel the async operation.</span></span>
+<span data-ttu-id="68e0c-142">Во-первых, вы вызываете Рестсимулатионстреамсинк. Create для получения объекта Рестсимулатионстреамсинк.</span><span class="sxs-lookup"><span data-stu-id="68e0c-142">First, you'll call RestSimulationStreamSink.Create to get a RestSimulationStreamSink object.</span></span> <span data-ttu-id="68e0c-143">Это целевое устройство или эмулятор, которым будет управлять HTTP-соединением.</span><span class="sxs-lookup"><span data-stu-id="68e0c-143">This is the target device or emulator that you will control over an http connection.</span></span> <span data-ttu-id="68e0c-144">Команды будут переданы и обработаны на [портале устройств Windows](using-the-windows-device-portal.md) , работающем на устройстве или в эмуляторе.</span><span class="sxs-lookup"><span data-stu-id="68e0c-144">Your commands will be passed to and handled by the [Windows Device Portal](using-the-windows-device-portal.md) running on the device or emulator.</span></span> <span data-ttu-id="68e0c-145">Ниже приведены четыре параметра, которые необходимо создать для объекта.</span><span class="sxs-lookup"><span data-stu-id="68e0c-145">The four parameters you'll need to create an object are:</span></span>
+* <span data-ttu-id="68e0c-146">URI URI — IP-адрес целевого устройства (например, "http://123.123.123.123" или "http://123.123.123.123:50080").</span><span class="sxs-lookup"><span data-stu-id="68e0c-146">Uri uri - IP address of the target device (e.g., "http://123.123.123.123" or "http://123.123.123.123:50080")</span></span>
+* <span data-ttu-id="68e0c-147">System .NET. NetworkCredential Credentials — имя пользователя и пароль для подключения к [порталу устройств Windows](using-the-windows-device-portal.md) на целевом устройстве или эмуляторе.</span><span class="sxs-lookup"><span data-stu-id="68e0c-147">System.Net.NetworkCredential credentials - Username/password for connecting to the [Windows Device Portal](using-the-windows-device-portal.md) on the target device or emulator.</span></span> <span data-ttu-id="68e0c-148">При подключении к эмулятору через его локальный адрес (например, 168. *.* . \*) на том же компьютере будут приниматься любые учетные данные.</span><span class="sxs-lookup"><span data-stu-id="68e0c-148">If you are connecting to the emulator via its local address (e.g., 168.*.*.\*) on the same PC, any credentials will be accepted.</span></span>
+* <span data-ttu-id="68e0c-149">bool обычная — true для обычного приоритета, false для низкого приоритета.</span><span class="sxs-lookup"><span data-stu-id="68e0c-149">bool normal - True for normal priority, false for low priority.</span></span> <span data-ttu-id="68e0c-150">Обычно необходимо задать для этого параметра значение *true* для тестовых сценариев, что позволяет вашему тесту осуществлять управление.</span><span class="sxs-lookup"><span data-stu-id="68e0c-150">You generally want to set this to *true* for test scenarios, which allows your test to take control.</span></span>  <span data-ttu-id="68e0c-151">Эмулятор и имитация Windows Mixed Reality используют соединения с низким приоритетом.</span><span class="sxs-lookup"><span data-stu-id="68e0c-151">The emulator and Windows Mixed Reality simulation use low priority connections.</span></span>  <span data-ttu-id="68e0c-152">Если в тесте также используется подключение с низким приоритетом, то последнее установленное соединение будет управляться.</span><span class="sxs-lookup"><span data-stu-id="68e0c-152">If your test also uses a low priority connection, the most recently established connection will be in control.</span></span>
+* <span data-ttu-id="68e0c-153">Для отмены асинхронной операции маркера токена System. Threading. CancellationToken.</span><span class="sxs-lookup"><span data-stu-id="68e0c-153">System.Threading.CancellationToken token - Token to cancel the async operation.</span></span>
 
-<span data-ttu-id="53ce1-154">Во-вторых, вы создадите IPerceptionSimulationManager.</span><span class="sxs-lookup"><span data-stu-id="53ce1-154">Second you will create the IPerceptionSimulationManager.</span></span> <span data-ttu-id="53ce1-155">Это объект, который используется для управления моделирования.</span><span class="sxs-lookup"><span data-stu-id="53ce1-155">This is the object you use to control simulation.</span></span> <span data-ttu-id="53ce1-156">Обратите внимание на то, что это необходимо сделать в асинхронном методе.</span><span class="sxs-lookup"><span data-stu-id="53ce1-156">Note that this must also be done in an async method.</span></span>
+<span data-ttu-id="68e0c-154">Во вторых, вы создадите Иперцептионсимулатионманажер.</span><span class="sxs-lookup"><span data-stu-id="68e0c-154">Second you will create the IPerceptionSimulationManager.</span></span> <span data-ttu-id="68e0c-155">Это объект, используемый для управления имитацией.</span><span class="sxs-lookup"><span data-stu-id="68e0c-155">This is the object you use to control simulation.</span></span> <span data-ttu-id="68e0c-156">Обратите внимание, что это также необходимо сделать в асинхронном методе.</span><span class="sxs-lookup"><span data-stu-id="68e0c-156">Note that this must also be done in an async method.</span></span>
 
-## <a name="control-the-simulated-human"></a><span data-ttu-id="53ce1-157">Элемент управления как имитации человеку</span><span class="sxs-lookup"><span data-stu-id="53ce1-157">Control the simulated Human</span></span>
+## <a name="control-the-simulated-human"></a><span data-ttu-id="68e0c-157">Управление имитируемым человеком</span><span class="sxs-lookup"><span data-stu-id="68e0c-157">Control the simulated Human</span></span>
 
-<span data-ttu-id="53ce1-158">IPerceptionSimulationManager имеет человека свойство, которое возвращает объект ISimulatedHuman.</span><span class="sxs-lookup"><span data-stu-id="53ce1-158">An IPerceptionSimulationManager has a Human property that returns an ISimulatedHuman object.</span></span> <span data-ttu-id="53ce1-159">Для управления как имитации человеку, выполняют операции над объектом.</span><span class="sxs-lookup"><span data-stu-id="53ce1-159">To control the simulated human, perform operations on this object.</span></span> <span data-ttu-id="53ce1-160">Пример:</span><span class="sxs-lookup"><span data-stu-id="53ce1-160">For example:</span></span>
+<span data-ttu-id="68e0c-158">Иперцептионсимулатионманажер имеет свойство человеческого, которое возвращает объект Исимулатедхуман.</span><span class="sxs-lookup"><span data-stu-id="68e0c-158">An IPerceptionSimulationManager has a Human property that returns an ISimulatedHuman object.</span></span> <span data-ttu-id="68e0c-159">Для управления имитируемым человеком выполните операции с этим объектом.</span><span class="sxs-lookup"><span data-stu-id="68e0c-159">To control the simulated human, perform operations on this object.</span></span> <span data-ttu-id="68e0c-160">Пример:</span><span class="sxs-lookup"><span data-stu-id="68e0c-160">For example:</span></span>
 
 ```
 manager.Human.Move(new Vector3(0.1f, 0.0f, 0.0f))
 ```
 
-## <a name="basic-sample-c-console-application"></a><span data-ttu-id="53ce1-161">Пример простого C# консольное приложение</span><span class="sxs-lookup"><span data-stu-id="53ce1-161">Basic Sample C# console application</span></span>
+## <a name="basic-sample-c-console-application"></a><span data-ttu-id="68e0c-161">Простой пример C# консольного приложения</span><span class="sxs-lookup"><span data-stu-id="68e0c-161">Basic Sample C# console application</span></span>
 
 ```
 using System;
@@ -108,7 +108,7 @@ namespace ConsoleApplication1
 }
 ```
 
-## <a name="extended-sample-c-console-application"></a><span data-ttu-id="53ce1-162">Расширенный пример C# консольное приложение</span><span class="sxs-lookup"><span data-stu-id="53ce1-162">Extended Sample C# console application</span></span>
+## <a name="extended-sample-c-console-application"></a><span data-ttu-id="68e0c-162">Расширенный пример C# консольного приложения</span><span class="sxs-lookup"><span data-stu-id="68e0c-162">Extended Sample C# console application</span></span>
 
 ```
 using System;
@@ -216,45 +216,45 @@ namespace ConsoleApplication1
 }
 ```
 
-## <a name="note-on-6-dof-controllers"></a><span data-ttu-id="53ce1-163">Обратите внимание на контроллерах 6 DOF</span><span class="sxs-lookup"><span data-stu-id="53ce1-163">Note on 6-DOF controllers</span></span>
+## <a name="note-on-6-dof-controllers"></a><span data-ttu-id="68e0c-163">Примечание о 6-ДОФ контроллерах</span><span class="sxs-lookup"><span data-stu-id="68e0c-163">Note on 6-DOF controllers</span></span>
 
-<span data-ttu-id="53ce1-164">Прежде чем выполнять какие-либо свойства на методы в контроллере имитации 6-DOF, необходимо активировать контроллера.</span><span class="sxs-lookup"><span data-stu-id="53ce1-164">Before calling any properties on methods on a simulated 6-DOF controller, you must activate the controller.</span></span>  <span data-ttu-id="53ce1-165">Не это приведет к возникновению исключения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-165">Not doing so will result in an exception.</span></span>  <span data-ttu-id="53ce1-166">Начиная с Windows 10 может обновлять 2019 г., имитации 6-DOF контроллеры могут устанавливаться и активации, задав свойство Status объекта ISimulatedSixDofController SimulatedSixDofControllerStatus.Active.</span><span class="sxs-lookup"><span data-stu-id="53ce1-166">Starting with the Windows 10 May 2019 Update, simulated 6-DOF controllers can be installed and activated by setting the Status property on the ISimulatedSixDofController object to SimulatedSixDofControllerStatus.Active.</span></span>
-<span data-ttu-id="53ce1-167">В Windows 10 октября 2018 г. обновление и более ранних версиях необходимо отдельно установить контроллер имитации 6-DOF во-первых, вызвав средство PerceptionSimulationDevice, расположенное в папке \Windows\System32.</span><span class="sxs-lookup"><span data-stu-id="53ce1-167">In the Windows 10 October 2018 Update and earlier, you must separately install a simulated 6-DOF controller first by calling the PerceptionSimulationDevice tool located in the \Windows\System32 folder.</span></span>  <span data-ttu-id="53ce1-168">Использование этого средства выглядит следующим образом:</span><span class="sxs-lookup"><span data-stu-id="53ce1-168">The usage of this tool is as follows:</span></span>
+<span data-ttu-id="68e0c-164">Перед вызовом каких-либо свойств для методов смоделированного 6-ДОФ контроллера необходимо активировать контроллер.</span><span class="sxs-lookup"><span data-stu-id="68e0c-164">Before calling any properties on methods on a simulated 6-DOF controller, you must activate the controller.</span></span>  <span data-ttu-id="68e0c-165">Это приведет к исключению.</span><span class="sxs-lookup"><span data-stu-id="68e0c-165">Not doing so will result in an exception.</span></span>  <span data-ttu-id="68e0c-166">Начиная с Windows 10 Can 2019 обновление, смоделированные 6-ДОФ контроллеры можно установить и активировать, задав для свойства Status объекта Исимулатедсиксдофконтроллер значение Симулатедсиксдофконтроллерстатус. Active.</span><span class="sxs-lookup"><span data-stu-id="68e0c-166">Starting with the Windows 10 May 2019 Update, simulated 6-DOF controllers can be installed and activated by setting the Status property on the ISimulatedSixDofController object to SimulatedSixDofControllerStatus.Active.</span></span>
+<span data-ttu-id="68e0c-167">В обновлении Windows 10 октября 2018 и более ранних версиях необходимо отдельно установить смоделированный 6-ДОФ контроллер, вызвав средство Перцептионсимулатиондевице, расположенное в папке \Windows\System32.</span><span class="sxs-lookup"><span data-stu-id="68e0c-167">In the Windows 10 October 2018 Update and earlier, you must separately install a simulated 6-DOF controller first by calling the PerceptionSimulationDevice tool located in the \Windows\System32 folder.</span></span>  <span data-ttu-id="68e0c-168">Использование этого средства выглядит следующим образом:</span><span class="sxs-lookup"><span data-stu-id="68e0c-168">The usage of this tool is as follows:</span></span>
 
 
 ```
     PerceptionSimulationDevice.exe <action> 6dof <instance>
 ```
 
-<span data-ttu-id="53ce1-169">Например</span><span class="sxs-lookup"><span data-stu-id="53ce1-169">For example</span></span>
+<span data-ttu-id="68e0c-169">Например</span><span class="sxs-lookup"><span data-stu-id="68e0c-169">For example</span></span>
 
 ```
     PerceptionSimulationDevice.exe i 6dof 1
 ```
 
-<span data-ttu-id="53ce1-170">Ниже приведены поддерживаемые действия:</span><span class="sxs-lookup"><span data-stu-id="53ce1-170">Supported actions are:</span></span>
-* <span data-ttu-id="53ce1-171">я = install</span><span class="sxs-lookup"><span data-stu-id="53ce1-171">i = install</span></span>
-* <span data-ttu-id="53ce1-172">q = запрос</span><span class="sxs-lookup"><span data-stu-id="53ce1-172">q = query</span></span>
-* <span data-ttu-id="53ce1-173">r = Удаление</span><span class="sxs-lookup"><span data-stu-id="53ce1-173">r = remove</span></span>
+<span data-ttu-id="68e0c-170">Поддерживаются следующие действия:</span><span class="sxs-lookup"><span data-stu-id="68e0c-170">Supported actions are:</span></span>
+* <span data-ttu-id="68e0c-171">i = установить</span><span class="sxs-lookup"><span data-stu-id="68e0c-171">i = install</span></span>
+* <span data-ttu-id="68e0c-172">q = запрос</span><span class="sxs-lookup"><span data-stu-id="68e0c-172">q = query</span></span>
+* <span data-ttu-id="68e0c-173">r = удалить</span><span class="sxs-lookup"><span data-stu-id="68e0c-173">r = remove</span></span>
 
-<span data-ttu-id="53ce1-174">Ниже приведены поддерживаемые экземпляры.</span><span class="sxs-lookup"><span data-stu-id="53ce1-174">Supported instances are:</span></span>
-* <span data-ttu-id="53ce1-175">1 = слева 6-DOF контроллера</span><span class="sxs-lookup"><span data-stu-id="53ce1-175">1 = the left 6-DOF controller</span></span>
-* <span data-ttu-id="53ce1-176">2 = правой 6-DOF контроллера</span><span class="sxs-lookup"><span data-stu-id="53ce1-176">2 = the right 6-DOF controller</span></span>
+<span data-ttu-id="68e0c-174">Поддерживаются следующие экземпляры:</span><span class="sxs-lookup"><span data-stu-id="68e0c-174">Supported instances are:</span></span>
+* <span data-ttu-id="68e0c-175">1 = левый 6-ДОФ контроллер</span><span class="sxs-lookup"><span data-stu-id="68e0c-175">1 = the left 6-DOF controller</span></span>
+* <span data-ttu-id="68e0c-176">2 = правильный 6-ДОФ контроллер</span><span class="sxs-lookup"><span data-stu-id="68e0c-176">2 = the right 6-DOF controller</span></span>
 
-<span data-ttu-id="53ce1-177">Код выхода процесса укажет (нулевое возвращаемое значение) успешность (ненулевое возвращаемое значение).</span><span class="sxs-lookup"><span data-stu-id="53ce1-177">The exit code of the process will indicate success (a zero return value) or failure (a non-zero return value).</span></span>  <span data-ttu-id="53ce1-178">При использовании действия «q» для запроса, установлен ли контроллер, возвращаемое значение будет ноль (0), если контроллер еще не установлен или один (1) Если установлен контроллер.</span><span class="sxs-lookup"><span data-stu-id="53ce1-178">When using the 'q' action to query whether or not a controller is installed, the return value will be zero (0) if the controller is not already installed or one (1) if the controller is installed.</span></span>
+<span data-ttu-id="68e0c-177">Код выхода процесса будет указывать на успех (нулевое возвращаемое значение) или ошибку (ненулевое возвращаемое значение).</span><span class="sxs-lookup"><span data-stu-id="68e0c-177">The exit code of the process will indicate success (a zero return value) or failure (a non-zero return value).</span></span>  <span data-ttu-id="68e0c-178">При использовании действия "q" для запроса того, установлен ли контроллер, возвращаемое значение будет равно нулю (0), если контроллер еще не установлен, или один (1), если контроллер установлен.</span><span class="sxs-lookup"><span data-stu-id="68e0c-178">When using the 'q' action to query whether or not a controller is installed, the return value will be zero (0) if the controller is not already installed or one (1) if the controller is installed.</span></span>
 
-<span data-ttu-id="53ce1-179">При удалении контроллера в ОС Windows 10 октября 2018 г. обновление или ранее, задайте его статус на Off через API во-первых, затем вызовите PerceptionSimulationDevice средство.</span><span class="sxs-lookup"><span data-stu-id="53ce1-179">When removing a controller on the Windows 10 October 2018 Update or earlier, set its status to Off via the API first, then call the PerceptionSimulationDevice tool.</span></span>
+<span data-ttu-id="68e0c-179">При удалении контроллера в Windows 10 октября с обновлением 2018 или более ранней версии установите его состояние в OFF через API, а затем вызовите средство Перцептионсимулатиондевице.</span><span class="sxs-lookup"><span data-stu-id="68e0c-179">When removing a controller on the Windows 10 October 2018 Update or earlier, set its status to Off via the API first, then call the PerceptionSimulationDevice tool.</span></span>
 
-<span data-ttu-id="53ce1-180">Обратите внимание, что это средство необходимо запускать от имени администратора.</span><span class="sxs-lookup"><span data-stu-id="53ce1-180">Note that this tool must be run as Administrator.</span></span>
-
-
+<span data-ttu-id="68e0c-180">Обратите внимание, что это средство необходимо запускать от имени администратора.</span><span class="sxs-lookup"><span data-stu-id="68e0c-180">Note that this tool must be run as Administrator.</span></span>
 
 
-## <a name="api-reference"></a><span data-ttu-id="53ce1-181">Справочник по API</span><span class="sxs-lookup"><span data-stu-id="53ce1-181">API Reference</span></span>
 
-### <a name="microsoftperceptionsimulationsimulateddevicetype"></a><span data-ttu-id="53ce1-182">Microsoft.PerceptionSimulation.SimulatedDeviceType</span><span class="sxs-lookup"><span data-stu-id="53ce1-182">Microsoft.PerceptionSimulation.SimulatedDeviceType</span></span>
 
-<span data-ttu-id="53ce1-183">Описывает тип виртуального устройства</span><span class="sxs-lookup"><span data-stu-id="53ce1-183">Describes a simulated device type</span></span>
+## <a name="api-reference"></a><span data-ttu-id="68e0c-181">Справочник по API</span><span class="sxs-lookup"><span data-stu-id="68e0c-181">API Reference</span></span>
+
+### <a name="microsoftperceptionsimulationsimulateddevicetype"></a><span data-ttu-id="68e0c-182">Microsoft. Перцептионсимулатион. Симулатеддевицетипе</span><span class="sxs-lookup"><span data-stu-id="68e0c-182">Microsoft.PerceptionSimulation.SimulatedDeviceType</span></span>
+
+<span data-ttu-id="68e0c-183">Описывает тип имитации устройства</span><span class="sxs-lookup"><span data-stu-id="68e0c-183">Describes a simulated device type</span></span>
 
 ```
 public enum SimulatedDeviceType
@@ -263,13 +263,13 @@ public enum SimulatedDeviceType
 }
 ```
 
-<span data-ttu-id="53ce1-184">**Microsoft.PerceptionSimulation.SimulatedDeviceType.Reference**</span><span class="sxs-lookup"><span data-stu-id="53ce1-184">**Microsoft.PerceptionSimulation.SimulatedDeviceType.Reference**</span></span>
+<span data-ttu-id="68e0c-184">**Microsoft. Перцептионсимулатион. Симулатеддевицетипе. Reference**</span><span class="sxs-lookup"><span data-stu-id="68e0c-184">**Microsoft.PerceptionSimulation.SimulatedDeviceType.Reference**</span></span>
 
-<span data-ttu-id="53ce1-185">Устройство с вымышленными ссылку, по умолчанию для PerceptionSimulationManager</span><span class="sxs-lookup"><span data-stu-id="53ce1-185">A fictitious reference device, the default for PerceptionSimulationManager</span></span>
+<span data-ttu-id="68e0c-185">Фиктивное эталонное устройство, используемое по умолчанию для Перцептионсимулатионманажер</span><span class="sxs-lookup"><span data-stu-id="68e0c-185">A fictitious reference device, the default for PerceptionSimulationManager</span></span>
 
-### <a name="microsoftperceptionsimulationheadtrackermode"></a><span data-ttu-id="53ce1-186">Microsoft.PerceptionSimulation.HeadTrackerMode</span><span class="sxs-lookup"><span data-stu-id="53ce1-186">Microsoft.PerceptionSimulation.HeadTrackerMode</span></span>
+### <a name="microsoftperceptionsimulationheadtrackermode"></a><span data-ttu-id="68e0c-186">Microsoft. Перцептионсимулатион. Хеадтраккермоде</span><span class="sxs-lookup"><span data-stu-id="68e0c-186">Microsoft.PerceptionSimulation.HeadTrackerMode</span></span>
 
-<span data-ttu-id="53ce1-187">Описывает режим головной tracker</span><span class="sxs-lookup"><span data-stu-id="53ce1-187">Describes a head tracker mode</span></span>
+<span data-ttu-id="68e0c-187">Описывает режим «головной транспортер»</span><span class="sxs-lookup"><span data-stu-id="68e0c-187">Describes a head tracker mode</span></span>
 
 ```
 public enum HeadTrackerMode
@@ -280,21 +280,21 @@ public enum HeadTrackerMode
 }
 ```
 
-<span data-ttu-id="53ce1-188">**Microsoft.PerceptionSimulation.HeadTrackerMode.Default**</span><span class="sxs-lookup"><span data-stu-id="53ce1-188">**Microsoft.PerceptionSimulation.HeadTrackerMode.Default**</span></span>
+<span data-ttu-id="68e0c-188">**Microsoft. Перцептионсимулатион. Хеадтраккермоде. Default**</span><span class="sxs-lookup"><span data-stu-id="68e0c-188">**Microsoft.PerceptionSimulation.HeadTrackerMode.Default**</span></span>
 
-<span data-ttu-id="53ce1-189">По умолчанию Head отслеживания.</span><span class="sxs-lookup"><span data-stu-id="53ce1-189">Default Head Tracking.</span></span> <span data-ttu-id="53ce1-190">Это означает, что система может выбрать лучший заголовок, режим, в зависимости от условий среды выполнения отслеживания.</span><span class="sxs-lookup"><span data-stu-id="53ce1-190">This means the system may select the best head tracking mode based upon runtime conditions.</span></span>
+<span data-ttu-id="68e0c-189">Отслеживание головок по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="68e0c-189">Default Head Tracking.</span></span> <span data-ttu-id="68e0c-190">Это означает, что система может выбрать оптимальный режим отслеживания головной системы на основе условий среды выполнения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-190">This means the system may select the best head tracking mode based upon runtime conditions.</span></span>
 
-<span data-ttu-id="53ce1-191">**Microsoft.PerceptionSimulation.HeadTrackerMode.Orientation**</span><span class="sxs-lookup"><span data-stu-id="53ce1-191">**Microsoft.PerceptionSimulation.HeadTrackerMode.Orientation**</span></span>
+<span data-ttu-id="68e0c-191">**Microsoft. Перцептионсимулатион. Хеадтраккермоде. Orientation**</span><span class="sxs-lookup"><span data-stu-id="68e0c-191">**Microsoft.PerceptionSimulation.HeadTrackerMode.Orientation**</span></span>
 
-<span data-ttu-id="53ce1-192">Ориентация только головные отслеживания.</span><span class="sxs-lookup"><span data-stu-id="53ce1-192">Orientation Only Head Tracking.</span></span> <span data-ttu-id="53ce1-193">Это означает, что отслеживаемые положение может быть недостаточно надежен, что некоторые функции зависят от головного позиции не могут быть доступны.</span><span class="sxs-lookup"><span data-stu-id="53ce1-193">This means that the tracked position may not be reliable, and some functionality dependent on head position may not be available.</span></span>
+<span data-ttu-id="68e0c-192">Только отслеживание головной страницы.</span><span class="sxs-lookup"><span data-stu-id="68e0c-192">Orientation Only Head Tracking.</span></span> <span data-ttu-id="68e0c-193">Это означает, что отслеживающее расположение может быть ненадежным, а некоторые функциональные возможности, зависящие от головного расположения, могут быть недоступны.</span><span class="sxs-lookup"><span data-stu-id="68e0c-193">This means that the tracked position may not be reliable, and some functionality dependent on head position may not be available.</span></span>
 
-<span data-ttu-id="53ce1-194">**Microsoft.PerceptionSimulation.HeadTrackerMode.Position**</span><span class="sxs-lookup"><span data-stu-id="53ce1-194">**Microsoft.PerceptionSimulation.HeadTrackerMode.Position**</span></span>
+<span data-ttu-id="68e0c-194">**Microsoft. Перцептионсимулатион. Хеадтраккермоде. положением**</span><span class="sxs-lookup"><span data-stu-id="68e0c-194">**Microsoft.PerceptionSimulation.HeadTrackerMode.Position**</span></span>
 
-<span data-ttu-id="53ce1-195">Отслеживание позиционные Head.</span><span class="sxs-lookup"><span data-stu-id="53ce1-195">Positional Head Tracking.</span></span> <span data-ttu-id="53ce1-196">Это означает, что отслеживаемые головной положение и ориентацию оба надежных</span><span class="sxs-lookup"><span data-stu-id="53ce1-196">This means that the tracked head position and orientation are both reliable</span></span>
+<span data-ttu-id="68e0c-195">Отслеживание позиционированных головок.</span><span class="sxs-lookup"><span data-stu-id="68e0c-195">Positional Head Tracking.</span></span> <span data-ttu-id="68e0c-196">Это означает, что положение и ориентация отслеживающей головки надежны</span><span class="sxs-lookup"><span data-stu-id="68e0c-196">This means that the tracked head position and orientation are both reliable</span></span>
 
-### <a name="microsoftperceptionsimulationsimulatedgesture"></a><span data-ttu-id="53ce1-197">Microsoft.PerceptionSimulation.SimulatedGesture</span><span class="sxs-lookup"><span data-stu-id="53ce1-197">Microsoft.PerceptionSimulation.SimulatedGesture</span></span>
+### <a name="microsoftperceptionsimulationsimulatedgesture"></a><span data-ttu-id="68e0c-197">Microsoft. Перцептионсимулатион. Симулатеджестуре</span><span class="sxs-lookup"><span data-stu-id="68e0c-197">Microsoft.PerceptionSimulation.SimulatedGesture</span></span>
 
-<span data-ttu-id="53ce1-198">Описание имитации жестов</span><span class="sxs-lookup"><span data-stu-id="53ce1-198">Describes a simulated gesture</span></span>
+<span data-ttu-id="68e0c-198">Описывает имитацию жеста</span><span class="sxs-lookup"><span data-stu-id="68e0c-198">Describes a simulated gesture</span></span>
 
 ```
 public enum SimulatedGesture
@@ -307,29 +307,29 @@ public enum SimulatedGesture
 }
 ```
 
-<span data-ttu-id="53ce1-199">**Microsoft.PerceptionSimulation.SimulatedGesture.None**</span><span class="sxs-lookup"><span data-stu-id="53ce1-199">**Microsoft.PerceptionSimulation.SimulatedGesture.None**</span></span>
+<span data-ttu-id="68e0c-199">**Microsoft. Перцептионсимулатион. Симулатеджестуре. None**</span><span class="sxs-lookup"><span data-stu-id="68e0c-199">**Microsoft.PerceptionSimulation.SimulatedGesture.None**</span></span>
 
-<span data-ttu-id="53ce1-200">Значение sentinel, используемый для указания никаких жестов.</span><span class="sxs-lookup"><span data-stu-id="53ce1-200">A sentinel value used to indicate no gestures.</span></span>
+<span data-ttu-id="68e0c-200">Значение Sentinel, используемое для обозначения отсутствия жестов.</span><span class="sxs-lookup"><span data-stu-id="68e0c-200">A sentinel value used to indicate no gestures.</span></span>
 
-<span data-ttu-id="53ce1-201">**Microsoft.PerceptionSimulation.SimulatedGesture.FingerPressed**</span><span class="sxs-lookup"><span data-stu-id="53ce1-201">**Microsoft.PerceptionSimulation.SimulatedGesture.FingerPressed**</span></span>
+<span data-ttu-id="68e0c-201">**Microsoft. Перцептионсимулатион. Симулатеджестуре. Финжерпрессед**</span><span class="sxs-lookup"><span data-stu-id="68e0c-201">**Microsoft.PerceptionSimulation.SimulatedGesture.FingerPressed**</span></span>
 
-<span data-ttu-id="53ce1-202">Палец нажата жест.</span><span class="sxs-lookup"><span data-stu-id="53ce1-202">A finger pressed gesture.</span></span>
+<span data-ttu-id="68e0c-202">Жест нажатия пальца.</span><span class="sxs-lookup"><span data-stu-id="68e0c-202">A finger pressed gesture.</span></span>
 
-<span data-ttu-id="53ce1-203">**Microsoft.PerceptionSimulation.SimulatedGesture.FingerReleased**</span><span class="sxs-lookup"><span data-stu-id="53ce1-203">**Microsoft.PerceptionSimulation.SimulatedGesture.FingerReleased**</span></span>
+<span data-ttu-id="68e0c-203">**Microsoft. Перцептионсимулатион. Симулатеджестуре. Финжеррелеасед**</span><span class="sxs-lookup"><span data-stu-id="68e0c-203">**Microsoft.PerceptionSimulation.SimulatedGesture.FingerReleased**</span></span>
 
-<span data-ttu-id="53ce1-204">Палец выпустила жест.</span><span class="sxs-lookup"><span data-stu-id="53ce1-204">A finger released gesture.</span></span>
+<span data-ttu-id="68e0c-204">Жест отпуска пальца.</span><span class="sxs-lookup"><span data-stu-id="68e0c-204">A finger released gesture.</span></span>
 
-<span data-ttu-id="53ce1-205">**Microsoft.PerceptionSimulation.SimulatedGesture.Home**</span><span class="sxs-lookup"><span data-stu-id="53ce1-205">**Microsoft.PerceptionSimulation.SimulatedGesture.Home**</span></span>
+<span data-ttu-id="68e0c-205">**Microsoft. Перцептионсимулатион. Симулатеджестуре. Home**</span><span class="sxs-lookup"><span data-stu-id="68e0c-205">**Microsoft.PerceptionSimulation.SimulatedGesture.Home**</span></span>
 
-<span data-ttu-id="53ce1-206">Жест home/system.</span><span class="sxs-lookup"><span data-stu-id="53ce1-206">The home/system gesture.</span></span>
+<span data-ttu-id="68e0c-206">Жест домашнего или системного.</span><span class="sxs-lookup"><span data-stu-id="68e0c-206">The home/system gesture.</span></span>
 
-<span data-ttu-id="53ce1-207">**Microsoft.PerceptionSimulation.SimulatedGesture.Max**</span><span class="sxs-lookup"><span data-stu-id="53ce1-207">**Microsoft.PerceptionSimulation.SimulatedGesture.Max**</span></span>
+<span data-ttu-id="68e0c-207">**Microsoft. Перцептионсимулатион. Симулатеджестуре. Max**</span><span class="sxs-lookup"><span data-stu-id="68e0c-207">**Microsoft.PerceptionSimulation.SimulatedGesture.Max**</span></span>
 
-<span data-ttu-id="53ce1-208">Максимальный допустимый жест.</span><span class="sxs-lookup"><span data-stu-id="53ce1-208">The maximum valid gesture.</span></span>
+<span data-ttu-id="68e0c-208">Максимально допустимый жест.</span><span class="sxs-lookup"><span data-stu-id="68e0c-208">The maximum valid gesture.</span></span>
 
-### <a name="microsoftperceptionsimulationsimulatedsixdofcontrollerstatus"></a><span data-ttu-id="53ce1-209">Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus</span><span class="sxs-lookup"><span data-stu-id="53ce1-209">Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus</span></span>
+### <a name="microsoftperceptionsimulationsimulatedsixdofcontrollerstatus"></a><span data-ttu-id="68e0c-209">Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллерстатус</span><span class="sxs-lookup"><span data-stu-id="68e0c-209">Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus</span></span>
 
-<span data-ttu-id="53ce1-210">Возможные состояния контроллера имитации 6-DOF.</span><span class="sxs-lookup"><span data-stu-id="53ce1-210">The possible states of a simulated 6-DOF controller.</span></span>
+<span data-ttu-id="68e0c-210">Возможные состояния имитации 6-ДОФ контроллера.</span><span class="sxs-lookup"><span data-stu-id="68e0c-210">The possible states of a simulated 6-DOF controller.</span></span>
 
 ```
 public enum SimulatedSixDofControllerStatus
@@ -340,21 +340,21 @@ public enum SimulatedSixDofControllerStatus
 }
 ```
 
-<span data-ttu-id="53ce1-211">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.Off**</span><span class="sxs-lookup"><span data-stu-id="53ce1-211">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.Off**</span></span>
+<span data-ttu-id="68e0c-211">**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллерстатус. Off**</span><span class="sxs-lookup"><span data-stu-id="68e0c-211">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.Off**</span></span>
 
-<span data-ttu-id="53ce1-212">6-DOF контроллер будет отключено.</span><span class="sxs-lookup"><span data-stu-id="53ce1-212">The 6-DOF controller is turned off.</span></span>
+<span data-ttu-id="68e0c-212">6-ДОФ контроллер отключен.</span><span class="sxs-lookup"><span data-stu-id="68e0c-212">The 6-DOF controller is turned off.</span></span>
 
-<span data-ttu-id="53ce1-213">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.Active**</span><span class="sxs-lookup"><span data-stu-id="53ce1-213">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.Active**</span></span>
+<span data-ttu-id="68e0c-213">**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллерстатус. Active**</span><span class="sxs-lookup"><span data-stu-id="68e0c-213">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.Active**</span></span>
 
-<span data-ttu-id="53ce1-214">6-DOF контроллера включается и отслеживаются.</span><span class="sxs-lookup"><span data-stu-id="53ce1-214">The 6-DOF controller is turned on and tracked.</span></span>
+<span data-ttu-id="68e0c-214">Контроллер ДОФ включается и отключается.</span><span class="sxs-lookup"><span data-stu-id="68e0c-214">The 6-DOF controller is turned on and tracked.</span></span>
 
-<span data-ttu-id="53ce1-215">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.TrackingLost**</span><span class="sxs-lookup"><span data-stu-id="53ce1-215">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.TrackingLost**</span></span>
+<span data-ttu-id="68e0c-215">**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллерстатус. Траккинглост**</span><span class="sxs-lookup"><span data-stu-id="68e0c-215">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.TrackingLost**</span></span>
 
-<span data-ttu-id="53ce1-216">6-DOF контроллера включена, но не отслеживается.</span><span class="sxs-lookup"><span data-stu-id="53ce1-216">The 6-DOF controller is turned on but cannot be tracked.</span></span>
+<span data-ttu-id="68e0c-216">6-ДОФ контроллер включен, но не может быть записан.</span><span class="sxs-lookup"><span data-stu-id="68e0c-216">The 6-DOF controller is turned on but cannot be tracked.</span></span>
 
-### <a name="microsoftperceptionsimulationsimulatedsixdofcontrollerbutton"></a><span data-ttu-id="53ce1-217">Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton</span><span class="sxs-lookup"><span data-stu-id="53ce1-217">Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton</span></span>
+### <a name="microsoftperceptionsimulationsimulatedsixdofcontrollerbutton"></a><span data-ttu-id="68e0c-217">Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон</span><span class="sxs-lookup"><span data-stu-id="68e0c-217">Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton</span></span>
 
-<span data-ttu-id="53ce1-218">Поддерживаемые кнопки на контроллере имитации 6-DOF.</span><span class="sxs-lookup"><span data-stu-id="53ce1-218">The supported buttons on a simulated 6-DOF controller.</span></span>
+<span data-ttu-id="68e0c-218">Поддерживаемые кнопки на имитации 6-ДОФ контроллера.</span><span class="sxs-lookup"><span data-stu-id="68e0c-218">The supported buttons on a simulated 6-DOF controller.</span></span>
 
 ```
 public enum SimulatedSixDofControllerButton
@@ -371,46 +371,46 @@ public enum SimulatedSixDofControllerButton
 }
 ```
 
-<span data-ttu-id="53ce1-219">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.None**</span><span class="sxs-lookup"><span data-stu-id="53ce1-219">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.None**</span></span>
+<span data-ttu-id="68e0c-219">**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. None**</span><span class="sxs-lookup"><span data-stu-id="68e0c-219">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.None**</span></span>
 
-<span data-ttu-id="53ce1-220">Значение sentinel, используемый для указания кнопок.</span><span class="sxs-lookup"><span data-stu-id="53ce1-220">A sentinel value used to indicate no buttons.</span></span>
+<span data-ttu-id="68e0c-220">Значение Sentinel, используемое для отсутствия кнопок.</span><span class="sxs-lookup"><span data-stu-id="68e0c-220">A sentinel value used to indicate no buttons.</span></span>
 
-<span data-ttu-id="53ce1-221">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Home**</span><span class="sxs-lookup"><span data-stu-id="53ce1-221">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Home**</span></span>
+<span data-ttu-id="68e0c-221">**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. Home**</span><span class="sxs-lookup"><span data-stu-id="68e0c-221">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Home**</span></span>
 
-<span data-ttu-id="53ce1-222">Нажата кнопка домашней.</span><span class="sxs-lookup"><span data-stu-id="53ce1-222">The Home button is pressed.</span></span>
+<span data-ttu-id="68e0c-222">Нажата кнопка Главная.</span><span class="sxs-lookup"><span data-stu-id="68e0c-222">The Home button is pressed.</span></span>
 
-<span data-ttu-id="53ce1-223">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Menu**</span><span class="sxs-lookup"><span data-stu-id="53ce1-223">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Menu**</span></span>
+<span data-ttu-id="68e0c-223">**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. Menu**</span><span class="sxs-lookup"><span data-stu-id="68e0c-223">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Menu**</span></span>
 
-<span data-ttu-id="53ce1-224">Нажата кнопка меню.</span><span class="sxs-lookup"><span data-stu-id="53ce1-224">The Menu button is pressed.</span></span>
+<span data-ttu-id="68e0c-224">Нажата кнопка меню.</span><span class="sxs-lookup"><span data-stu-id="68e0c-224">The Menu button is pressed.</span></span>
 
-<span data-ttu-id="53ce1-225">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Grip**</span><span class="sxs-lookup"><span data-stu-id="53ce1-225">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Grip**</span></span>
+<span data-ttu-id="68e0c-225">**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. захват**</span><span class="sxs-lookup"><span data-stu-id="68e0c-225">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Grip**</span></span>
 
-<span data-ttu-id="53ce1-226">Нажата кнопка захвата для изменения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-226">The Grip button is pressed.</span></span>
+<span data-ttu-id="68e0c-226">Нажата кнопка захвата.</span><span class="sxs-lookup"><span data-stu-id="68e0c-226">The Grip button is pressed.</span></span>
 
-<span data-ttu-id="53ce1-227">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.TouchpadPress**</span><span class="sxs-lookup"><span data-stu-id="53ce1-227">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.TouchpadPress**</span></span>
+<span data-ttu-id="68e0c-227">**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. Таучпадпресс**</span><span class="sxs-lookup"><span data-stu-id="68e0c-227">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.TouchpadPress**</span></span>
 
-<span data-ttu-id="53ce1-228">Нажата сенсорной панели.</span><span class="sxs-lookup"><span data-stu-id="53ce1-228">The TouchPad is pressed.</span></span>
+<span data-ttu-id="68e0c-228">Сенсорная панель нажата.</span><span class="sxs-lookup"><span data-stu-id="68e0c-228">The TouchPad is pressed.</span></span>
 
-<span data-ttu-id="53ce1-229">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Select**</span><span class="sxs-lookup"><span data-stu-id="53ce1-229">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Select**</span></span>
+<span data-ttu-id="68e0c-229">**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. Select**</span><span class="sxs-lookup"><span data-stu-id="68e0c-229">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Select**</span></span>
 
-<span data-ttu-id="53ce1-230">Нажата кнопка "выбрать".</span><span class="sxs-lookup"><span data-stu-id="53ce1-230">The Select button is pressed.</span></span>
+<span data-ttu-id="68e0c-230">Нажата кнопка выбрать.</span><span class="sxs-lookup"><span data-stu-id="68e0c-230">The Select button is pressed.</span></span>
 
-<span data-ttu-id="53ce1-231">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.TouchpadTouch**</span><span class="sxs-lookup"><span data-stu-id="53ce1-231">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.TouchpadTouch**</span></span>
+<span data-ttu-id="68e0c-231">**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. Таучпадтауч**</span><span class="sxs-lookup"><span data-stu-id="68e0c-231">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.TouchpadTouch**</span></span>
 
-<span data-ttu-id="53ce1-232">Возникает при просмотре сенсорной панели.</span><span class="sxs-lookup"><span data-stu-id="53ce1-232">The TouchPad is touched.</span></span>
+<span data-ttu-id="68e0c-232">Сенсорная панель затронута.</span><span class="sxs-lookup"><span data-stu-id="68e0c-232">The TouchPad is touched.</span></span>
 
-<span data-ttu-id="53ce1-233">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Thumbstick**</span><span class="sxs-lookup"><span data-stu-id="53ce1-233">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Thumbstick**</span></span>
+<span data-ttu-id="68e0c-233">**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. аналоговый стик**</span><span class="sxs-lookup"><span data-stu-id="68e0c-233">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Thumbstick**</span></span>
 
-<span data-ttu-id="53ce1-234">Джойстик нажата.</span><span class="sxs-lookup"><span data-stu-id="53ce1-234">The Thumbstick is pressed.</span></span>
+<span data-ttu-id="68e0c-234">Аналоговый стик нажат.</span><span class="sxs-lookup"><span data-stu-id="68e0c-234">The Thumbstick is pressed.</span></span>
 
-<span data-ttu-id="53ce1-235">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Max**</span><span class="sxs-lookup"><span data-stu-id="53ce1-235">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Max**</span></span>
+<span data-ttu-id="68e0c-235">**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. Max**</span><span class="sxs-lookup"><span data-stu-id="68e0c-235">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Max**</span></span>
 
-<span data-ttu-id="53ce1-236">Максимальное число допустимых кнопок.</span><span class="sxs-lookup"><span data-stu-id="53ce1-236">The maximum valid button.</span></span>
+<span data-ttu-id="68e0c-236">Максимальная допустимая кнопка.</span><span class="sxs-lookup"><span data-stu-id="68e0c-236">The maximum valid button.</span></span>
 
 
-### <a name="microsoftperceptionsimulationsimulatedeyescalibrationstate"></a><span data-ttu-id="53ce1-237">Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState</span><span class="sxs-lookup"><span data-stu-id="53ce1-237">Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState</span></span>
+### <a name="microsoftperceptionsimulationsimulatedeyescalibrationstate"></a><span data-ttu-id="68e0c-237">Microsoft. Перцептионсимулатион. Симулатедэйескалибратионстате</span><span class="sxs-lookup"><span data-stu-id="68e0c-237">Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState</span></span>
 
-<span data-ttu-id="53ce1-238">Состояние имитации глаза калибровки</span><span class="sxs-lookup"><span data-stu-id="53ce1-238">The calibration state of the simulated eyes</span></span>
+<span data-ttu-id="68e0c-238">Состояние калибровки имитации глаз</span><span class="sxs-lookup"><span data-stu-id="68e0c-238">The calibration state of the simulated eyes</span></span>
 
 ```
 public enum SimulatedGesture
@@ -422,25 +422,25 @@ public enum SimulatedGesture
 }
 ```
 
-<span data-ttu-id="53ce1-239">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Unavailable**</span><span class="sxs-lookup"><span data-stu-id="53ce1-239">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Unavailable**</span></span>
+<span data-ttu-id="68e0c-239">**Microsoft. Перцептионсимулатион. Симулатедэйескалибратионстате. недоступно**</span><span class="sxs-lookup"><span data-stu-id="68e0c-239">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Unavailable**</span></span>
 
-<span data-ttu-id="53ce1-240">Калибровка глаза недоступна.</span><span class="sxs-lookup"><span data-stu-id="53ce1-240">The eyes calibration is unavailable.</span></span>
+<span data-ttu-id="68e0c-240">Калибровка глаз недоступна.</span><span class="sxs-lookup"><span data-stu-id="68e0c-240">The eyes calibration is unavailable.</span></span>
 
-<span data-ttu-id="53ce1-241">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Ready**</span><span class="sxs-lookup"><span data-stu-id="53ce1-241">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Ready**</span></span>
+<span data-ttu-id="68e0c-241">**Microsoft. Перцептионсимулатион. Симулатедэйескалибратионстате. ready**</span><span class="sxs-lookup"><span data-stu-id="68e0c-241">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Ready**</span></span>
 
-<span data-ttu-id="53ce1-242">Были калибровки глаза.</span><span class="sxs-lookup"><span data-stu-id="53ce1-242">The eyes have been calibrated.</span></span>  <span data-ttu-id="53ce1-243">Это значение по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="53ce1-243">This is the default value.</span></span>
+<span data-ttu-id="68e0c-242">Эти глаза были откалиброваны.</span><span class="sxs-lookup"><span data-stu-id="68e0c-242">The eyes have been calibrated.</span></span>  <span data-ttu-id="68e0c-243">Это значение по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="68e0c-243">This is the default value.</span></span>
 
-<span data-ttu-id="53ce1-244">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Configuring**</span><span class="sxs-lookup"><span data-stu-id="53ce1-244">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Configuring**</span></span>
+<span data-ttu-id="68e0c-244">**Microsoft. Перцептионсимулатион. Симулатедэйескалибратионстате. Настройка**</span><span class="sxs-lookup"><span data-stu-id="68e0c-244">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Configuring**</span></span>
 
-<span data-ttu-id="53ce1-245">Откалиброваны глаза.</span><span class="sxs-lookup"><span data-stu-id="53ce1-245">The eyes are being calibrated.</span></span>
+<span data-ttu-id="68e0c-245">Эти глаза откалиброваны.</span><span class="sxs-lookup"><span data-stu-id="68e0c-245">The eyes are being calibrated.</span></span>
 
-<span data-ttu-id="53ce1-246">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.UserCalibrationNeeded**</span><span class="sxs-lookup"><span data-stu-id="53ce1-246">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.UserCalibrationNeeded**</span></span>
+<span data-ttu-id="68e0c-246">**Microsoft. Перцептионсимулатион. Симулатедэйескалибратионстате. Усеркалибратионнидед**</span><span class="sxs-lookup"><span data-stu-id="68e0c-246">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.UserCalibrationNeeded**</span></span>
 
-<span data-ttu-id="53ce1-247">Глаза должны можно уточнять.</span><span class="sxs-lookup"><span data-stu-id="53ce1-247">The eyes need to be calibrated.</span></span>
+<span data-ttu-id="68e0c-247">Необходимо откалибровать глаза.</span><span class="sxs-lookup"><span data-stu-id="68e0c-247">The eyes need to be calibrated.</span></span>
 
-### <a name="microsoftperceptionsimulationsimulatedhandjointtrackingaccuracy"></a><span data-ttu-id="53ce1-248">Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy</span><span class="sxs-lookup"><span data-stu-id="53ce1-248">Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy</span></span>
+### <a name="microsoftperceptionsimulationsimulatedhandjointtrackingaccuracy"></a><span data-ttu-id="68e0c-248">Microsoft. Перцептионсимулатион. Симулатедханджоинттраккингаккураци</span><span class="sxs-lookup"><span data-stu-id="68e0c-248">Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy</span></span>
 
-<span data-ttu-id="53ce1-249">Точность отслеживания соединения вручную.</span><span class="sxs-lookup"><span data-stu-id="53ce1-249">The tracking accuracy of a joint of the hand.</span></span>
+<span data-ttu-id="68e0c-249">Точность отслеживания соединения руки.</span><span class="sxs-lookup"><span data-stu-id="68e0c-249">The tracking accuracy of a joint of the hand.</span></span>
 
 ```
 public enum SimulatedHandJointTrackingAccuracy
@@ -451,21 +451,21 @@ public enum SimulatedHandJointTrackingAccuracy
 }
 ```
 
-<span data-ttu-id="53ce1-250">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Unavailable**</span><span class="sxs-lookup"><span data-stu-id="53ce1-250">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Unavailable**</span></span>
+<span data-ttu-id="68e0c-250">**Microsoft. Перцептионсимулатион. Симулатедханджоинттраккингаккураци. недоступно**</span><span class="sxs-lookup"><span data-stu-id="68e0c-250">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Unavailable**</span></span>
 
-<span data-ttu-id="53ce1-251">Соединение не отслеживается.</span><span class="sxs-lookup"><span data-stu-id="53ce1-251">The joint is not tracked.</span></span>
+<span data-ttu-id="68e0c-251">Совместное соединение не производится.</span><span class="sxs-lookup"><span data-stu-id="68e0c-251">The joint is not tracked.</span></span>
 
-<span data-ttu-id="53ce1-252">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Approximate**</span><span class="sxs-lookup"><span data-stu-id="53ce1-252">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Approximate**</span></span>
+<span data-ttu-id="68e0c-252">**Microsoft. Перцептионсимулатион. Симулатедханджоинттраккингаккураци. приблизительный**</span><span class="sxs-lookup"><span data-stu-id="68e0c-252">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Approximate**</span></span>
 
-<span data-ttu-id="53ce1-253">Совместные позиции выводится.</span><span class="sxs-lookup"><span data-stu-id="53ce1-253">The joint position is inferred.</span></span>
+<span data-ttu-id="68e0c-253">Совместное размещение выводится.</span><span class="sxs-lookup"><span data-stu-id="68e0c-253">The joint position is inferred.</span></span>
 
-<span data-ttu-id="53ce1-254">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Visible**</span><span class="sxs-lookup"><span data-stu-id="53ce1-254">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Visible**</span></span>
+<span data-ttu-id="68e0c-254">**Microsoft. Перцептионсимулатион. Симулатедханджоинттраккингаккураци. Visible**</span><span class="sxs-lookup"><span data-stu-id="68e0c-254">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Visible**</span></span>
 
-<span data-ttu-id="53ce1-255">Полностью отслеживается в качестве объединителя.</span><span class="sxs-lookup"><span data-stu-id="53ce1-255">The joint is fully tracked.</span></span>
+<span data-ttu-id="68e0c-255">Совместное соединение полностью отслеживание.</span><span class="sxs-lookup"><span data-stu-id="68e0c-255">The joint is fully tracked.</span></span>
 
-### <a name="microsoftperceptionsimulationsimulatedhandpose"></a><span data-ttu-id="53ce1-256">Microsoft.PerceptionSimulation.SimulatedHandPose</span><span class="sxs-lookup"><span data-stu-id="53ce1-256">Microsoft.PerceptionSimulation.SimulatedHandPose</span></span>
+### <a name="microsoftperceptionsimulationsimulatedhandpose"></a><span data-ttu-id="68e0c-256">Microsoft. Перцептионсимулатион. Симулатедхандпосе</span><span class="sxs-lookup"><span data-stu-id="68e0c-256">Microsoft.PerceptionSimulation.SimulatedHandPose</span></span>
 
-<span data-ttu-id="53ce1-257">Точность отслеживания соединения вручную.</span><span class="sxs-lookup"><span data-stu-id="53ce1-257">The tracking accuracy of a joint of the hand.</span></span>
+<span data-ttu-id="68e0c-257">Точность отслеживания соединения руки.</span><span class="sxs-lookup"><span data-stu-id="68e0c-257">The tracking accuracy of a joint of the hand.</span></span>
 
 ```
 public enum SimulatedHandPose
@@ -478,30 +478,30 @@ public enum SimulatedHandPose
 }
 ```
 
-<span data-ttu-id="53ce1-258">**Microsoft.PerceptionSimulation.SimulatedHandPose.Closed**</span><span class="sxs-lookup"><span data-stu-id="53ce1-258">**Microsoft.PerceptionSimulation.SimulatedHandPose.Closed**</span></span>
+<span data-ttu-id="68e0c-258">**Microsoft. Перцептионсимулатион. Симулатедхандпосе. Closed**</span><span class="sxs-lookup"><span data-stu-id="68e0c-258">**Microsoft.PerceptionSimulation.SimulatedHandPose.Closed**</span></span>
 
-<span data-ttu-id="53ce1-259">Рука палец соединений были настроены для отражения закрытых позу.</span><span class="sxs-lookup"><span data-stu-id="53ce1-259">The hand's finger joints are configured to reflect a closed pose.</span></span>
+<span data-ttu-id="68e0c-259">Соединения пальца руки настраиваются для отражения закрытого объекта.</span><span class="sxs-lookup"><span data-stu-id="68e0c-259">The hand's finger joints are configured to reflect a closed pose.</span></span>
 
-<span data-ttu-id="53ce1-260">**Microsoft.PerceptionSimulation.SimulatedHandPose.Open**</span><span class="sxs-lookup"><span data-stu-id="53ce1-260">**Microsoft.PerceptionSimulation.SimulatedHandPose.Open**</span></span>
+<span data-ttu-id="68e0c-260">**Microsoft. Перцептионсимулатион. Симулатедхандпосе. Open**</span><span class="sxs-lookup"><span data-stu-id="68e0c-260">**Microsoft.PerceptionSimulation.SimulatedHandPose.Open**</span></span>
 
-<span data-ttu-id="53ce1-261">Шарнирные соединения вручную палец настраиваются в соответствии с открытым поза.</span><span class="sxs-lookup"><span data-stu-id="53ce1-261">The hand's finger joints are configured to reflect an open pose.</span></span>
+<span data-ttu-id="68e0c-261">Соединения пальца руки настраиваются для отражения открытой части.</span><span class="sxs-lookup"><span data-stu-id="68e0c-261">The hand's finger joints are configured to reflect an open pose.</span></span>
 
-<span data-ttu-id="53ce1-262">**Microsoft.PerceptionSimulation.SimulatedHandPose.Point**</span><span class="sxs-lookup"><span data-stu-id="53ce1-262">**Microsoft.PerceptionSimulation.SimulatedHandPose.Point**</span></span>
+<span data-ttu-id="68e0c-262">**Microsoft. Перцептионсимулатион. Симулатедхандпосе. Point**</span><span class="sxs-lookup"><span data-stu-id="68e0c-262">**Microsoft.PerceptionSimulation.SimulatedHandPose.Point**</span></span>
 
-<span data-ttu-id="53ce1-263">Рука палец соединений были настроены для отражения указывающего позу.</span><span class="sxs-lookup"><span data-stu-id="53ce1-263">The hand's finger joints are configured to reflect a pointing pose.</span></span>
+<span data-ttu-id="68e0c-263">Соединения пальца руки настраиваются в соответствии с указывающим на себя.</span><span class="sxs-lookup"><span data-stu-id="68e0c-263">The hand's finger joints are configured to reflect a pointing pose.</span></span>
 
-<span data-ttu-id="53ce1-264">**Microsoft.PerceptionSimulation.SimulatedHandPose.Pinch**</span><span class="sxs-lookup"><span data-stu-id="53ce1-264">**Microsoft.PerceptionSimulation.SimulatedHandPose.Pinch**</span></span>
+<span data-ttu-id="68e0c-264">**Microsoft. Перцептионсимулатион. Симулатедхандпосе. сжатие**</span><span class="sxs-lookup"><span data-stu-id="68e0c-264">**Microsoft.PerceptionSimulation.SimulatedHandPose.Pinch**</span></span>
 
-<span data-ttu-id="53ce1-265">Рука палец соединений были настроены для отражения pinching позу.</span><span class="sxs-lookup"><span data-stu-id="53ce1-265">The hand's finger joints are configured to reflect a pinching pose.</span></span>
+<span data-ttu-id="68e0c-265">Соединения пальца руки настраиваются в соответствии с набором сжатия.</span><span class="sxs-lookup"><span data-stu-id="68e0c-265">The hand's finger joints are configured to reflect a pinching pose.</span></span>
 
-<span data-ttu-id="53ce1-266">**Microsoft.PerceptionSimulation.SimulatedHandPose.Max**</span><span class="sxs-lookup"><span data-stu-id="53ce1-266">**Microsoft.PerceptionSimulation.SimulatedHandPose.Max**</span></span>
+<span data-ttu-id="68e0c-266">**Microsoft. Перцептионсимулатион. Симулатедхандпосе. Max**</span><span class="sxs-lookup"><span data-stu-id="68e0c-266">**Microsoft.PerceptionSimulation.SimulatedHandPose.Max**</span></span>
 
-<span data-ttu-id="53ce1-267">Максимальное допустимое значение для SimulatedHandPose.</span><span class="sxs-lookup"><span data-stu-id="53ce1-267">The maximum valid value for SimulatedHandPose.</span></span>
+<span data-ttu-id="68e0c-267">Максимальное допустимое значение для Симулатедхандпосе.</span><span class="sxs-lookup"><span data-stu-id="68e0c-267">The maximum valid value for SimulatedHandPose.</span></span>
 
 
-### <a name="microsoftperceptionsimulationplaybackstate"></a><span data-ttu-id="53ce1-268">Microsoft.PerceptionSimulation.PlaybackState</span><span class="sxs-lookup"><span data-stu-id="53ce1-268">Microsoft.PerceptionSimulation.PlaybackState</span></span>
+### <a name="microsoftperceptionsimulationplaybackstate"></a><span data-ttu-id="68e0c-268">Microsoft. Перцептионсимулатион. Плайбаккстате</span><span class="sxs-lookup"><span data-stu-id="68e0c-268">Microsoft.PerceptionSimulation.PlaybackState</span></span>
 
-<span data-ttu-id="53ce1-269">Описывает состояние воспроизведения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-269">Describes the state of a playback.</span></span>
+<span data-ttu-id="68e0c-269">Описывает состояние воспроизведения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-269">Describes the state of a playback.</span></span>
 
 ```
 public enum PlaybackState
@@ -513,25 +513,25 @@ public enum PlaybackState
 }
 ```
 
-<span data-ttu-id="53ce1-270">**Microsoft.PerceptionSimulation.PlaybackState.Stopped**</span><span class="sxs-lookup"><span data-stu-id="53ce1-270">**Microsoft.PerceptionSimulation.PlaybackState.Stopped**</span></span>
+<span data-ttu-id="68e0c-270">**Microsoft. Перцептионсимулатион. Плайбаккстате. Stopped**</span><span class="sxs-lookup"><span data-stu-id="68e0c-270">**Microsoft.PerceptionSimulation.PlaybackState.Stopped**</span></span>
 
-<span data-ttu-id="53ce1-271">Запись в данный момент остановлена и все готово для воспроизведения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-271">The recording is currently stopped and ready for playback.</span></span>
+<span data-ttu-id="68e0c-271">Запись сейчас остановлена и готова к воспроизведению.</span><span class="sxs-lookup"><span data-stu-id="68e0c-271">The recording is currently stopped and ready for playback.</span></span>
 
-<span data-ttu-id="53ce1-272">**Microsoft.PerceptionSimulation.PlaybackState.Playing**</span><span class="sxs-lookup"><span data-stu-id="53ce1-272">**Microsoft.PerceptionSimulation.PlaybackState.Playing**</span></span>
+<span data-ttu-id="68e0c-272">**Microsoft. Перцептионсимулатион. Плайбаккстате. Play**</span><span class="sxs-lookup"><span data-stu-id="68e0c-272">**Microsoft.PerceptionSimulation.PlaybackState.Playing**</span></span>
 
-<span data-ttu-id="53ce1-273">Запись в настоящее время воспроизведения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-273">The recording is currently playing.</span></span>
+<span data-ttu-id="68e0c-273">Сейчас запись воспроизводится.</span><span class="sxs-lookup"><span data-stu-id="68e0c-273">The recording is currently playing.</span></span>
 
-<span data-ttu-id="53ce1-274">**Microsoft.PerceptionSimulation.PlaybackState.Paused**</span><span class="sxs-lookup"><span data-stu-id="53ce1-274">**Microsoft.PerceptionSimulation.PlaybackState.Paused**</span></span>
+<span data-ttu-id="68e0c-274">**Microsoft. Перцептионсимулатион. Плайбаккстате. приостановлено**</span><span class="sxs-lookup"><span data-stu-id="68e0c-274">**Microsoft.PerceptionSimulation.PlaybackState.Paused**</span></span>
 
-<span data-ttu-id="53ce1-275">Запись приостановлена.</span><span class="sxs-lookup"><span data-stu-id="53ce1-275">The recording is currently paused.</span></span>
+<span data-ttu-id="68e0c-275">Запись в данный момент приостановлена.</span><span class="sxs-lookup"><span data-stu-id="68e0c-275">The recording is currently paused.</span></span>
 
-<span data-ttu-id="53ce1-276">**Microsoft.PerceptionSimulation.PlaybackState.End**</span><span class="sxs-lookup"><span data-stu-id="53ce1-276">**Microsoft.PerceptionSimulation.PlaybackState.End**</span></span>
+<span data-ttu-id="68e0c-276">**Microsoft. Перцептионсимулатион. Плайбаккстате. end**</span><span class="sxs-lookup"><span data-stu-id="68e0c-276">**Microsoft.PerceptionSimulation.PlaybackState.End**</span></span>
 
-<span data-ttu-id="53ce1-277">Запись уже истек.</span><span class="sxs-lookup"><span data-stu-id="53ce1-277">The recording has reached the end.</span></span>
+<span data-ttu-id="68e0c-277">Запись достигла конца.</span><span class="sxs-lookup"><span data-stu-id="68e0c-277">The recording has reached the end.</span></span>
 
-### <a name="microsoftperceptionsimulationvector3"></a><span data-ttu-id="53ce1-278">Microsoft.PerceptionSimulation.Vector3</span><span class="sxs-lookup"><span data-stu-id="53ce1-278">Microsoft.PerceptionSimulation.Vector3</span></span>
+### <a name="microsoftperceptionsimulationvector3"></a><span data-ttu-id="68e0c-278">Microsoft. Перцептионсимулатион. Vector3</span><span class="sxs-lookup"><span data-stu-id="68e0c-278">Microsoft.PerceptionSimulation.Vector3</span></span>
 
-<span data-ttu-id="53ce1-279">Описывает вектор 3 компонента, который может описывать точку или вектор в трехмерном пространстве.</span><span class="sxs-lookup"><span data-stu-id="53ce1-279">Describes a 3 components vector, which might describe a point or a vector in 3D space.</span></span>
+<span data-ttu-id="68e0c-279">Описывает вектор 3 компонентов, который может описывать точку или вектор в трехмерном пространстве.</span><span class="sxs-lookup"><span data-stu-id="68e0c-279">Describes a 3 components vector, which might describe a point or a vector in 3D space.</span></span>
 
 ```
 public struct Vector3
@@ -543,30 +543,30 @@ public struct Vector3
 }
 ```
 
-<span data-ttu-id="53ce1-280">**Microsoft.PerceptionSimulation.Vector3.X**</span><span class="sxs-lookup"><span data-stu-id="53ce1-280">**Microsoft.PerceptionSimulation.Vector3.X**</span></span>
+<span data-ttu-id="68e0c-280">**Microsoft. Перцептионсимулатион. Vector3. X**</span><span class="sxs-lookup"><span data-stu-id="68e0c-280">**Microsoft.PerceptionSimulation.Vector3.X**</span></span>
 
-<span data-ttu-id="53ce1-281">Координата X вектора.</span><span class="sxs-lookup"><span data-stu-id="53ce1-281">The X component of the vector.</span></span>
+<span data-ttu-id="68e0c-281">Компонент X вектора.</span><span class="sxs-lookup"><span data-stu-id="68e0c-281">The X component of the vector.</span></span>
 
-<span data-ttu-id="53ce1-282">**Microsoft.PerceptionSimulation.Vector3.Y**</span><span class="sxs-lookup"><span data-stu-id="53ce1-282">**Microsoft.PerceptionSimulation.Vector3.Y**</span></span>
+<span data-ttu-id="68e0c-282">**Microsoft. Перцептионсимулатион. Vector3. Y**</span><span class="sxs-lookup"><span data-stu-id="68e0c-282">**Microsoft.PerceptionSimulation.Vector3.Y**</span></span>
 
-<span data-ttu-id="53ce1-283">Компонент Y вектора.</span><span class="sxs-lookup"><span data-stu-id="53ce1-283">The Y component of the vector.</span></span>
+<span data-ttu-id="68e0c-283">Компонент Y вектора.</span><span class="sxs-lookup"><span data-stu-id="68e0c-283">The Y component of the vector.</span></span>
 
-<span data-ttu-id="53ce1-284">**Microsoft.PerceptionSimulation.Vector3.Z**</span><span class="sxs-lookup"><span data-stu-id="53ce1-284">**Microsoft.PerceptionSimulation.Vector3.Z**</span></span>
+<span data-ttu-id="68e0c-284">**Microsoft. Перцептионсимулатион. Vector3. Z**</span><span class="sxs-lookup"><span data-stu-id="68e0c-284">**Microsoft.PerceptionSimulation.Vector3.Z**</span></span>
 
-<span data-ttu-id="53ce1-285">Компонент Z вектора.</span><span class="sxs-lookup"><span data-stu-id="53ce1-285">The Z component of the vector.</span></span>
+<span data-ttu-id="68e0c-285">Компонент Z вектора.</span><span class="sxs-lookup"><span data-stu-id="68e0c-285">The Z component of the vector.</span></span>
 
-<span data-ttu-id="53ce1-286">**Microsoft.PerceptionSimulation.Vector3.#ctor(System.Single,System.Single,System.Single)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-286">**Microsoft.PerceptionSimulation.Vector3.#ctor(System.Single,System.Single,System.Single)**</span></span>
+<span data-ttu-id="68e0c-286">**Microsoft. Перцептионсимулатион. Vector3. #ctor (System. Single, System. Single, System. Single)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-286">**Microsoft.PerceptionSimulation.Vector3.#ctor(System.Single,System.Single,System.Single)**</span></span>
 
-<span data-ttu-id="53ce1-287">Создайте новый Vector3.</span><span class="sxs-lookup"><span data-stu-id="53ce1-287">Construct a new Vector3.</span></span>
+<span data-ttu-id="68e0c-287">Создайте новый Vector3.</span><span class="sxs-lookup"><span data-stu-id="68e0c-287">Construct a new Vector3.</span></span>
 
-<span data-ttu-id="53ce1-288">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-288">Parameters</span></span>
-* <span data-ttu-id="53ce1-289">x - координату объекта vector.</span><span class="sxs-lookup"><span data-stu-id="53ce1-289">x - The x component of the vector.</span></span>
-* <span data-ttu-id="53ce1-290">y - координату объекта vector.</span><span class="sxs-lookup"><span data-stu-id="53ce1-290">y - The y component of the vector.</span></span>
-* <span data-ttu-id="53ce1-291">z - компонент z вектора.</span><span class="sxs-lookup"><span data-stu-id="53ce1-291">z - The z component of the vector.</span></span>
+<span data-ttu-id="68e0c-288">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-288">Parameters</span></span>
+* <span data-ttu-id="68e0c-289">x — компонент x вектора.</span><span class="sxs-lookup"><span data-stu-id="68e0c-289">x - The x component of the vector.</span></span>
+* <span data-ttu-id="68e0c-290">y — компонент y вектора.</span><span class="sxs-lookup"><span data-stu-id="68e0c-290">y - The y component of the vector.</span></span>
+* <span data-ttu-id="68e0c-291">z — компонент z вектора.</span><span class="sxs-lookup"><span data-stu-id="68e0c-291">z - The z component of the vector.</span></span>
 
-### <a name="microsoftperceptionsimulationrotation3"></a><span data-ttu-id="53ce1-292">Microsoft.PerceptionSimulation.Rotation3</span><span class="sxs-lookup"><span data-stu-id="53ce1-292">Microsoft.PerceptionSimulation.Rotation3</span></span>
+### <a name="microsoftperceptionsimulationrotation3"></a><span data-ttu-id="68e0c-292">Microsoft. Перцептионсимулатион. Rotation3</span><span class="sxs-lookup"><span data-stu-id="68e0c-292">Microsoft.PerceptionSimulation.Rotation3</span></span>
 
-<span data-ttu-id="53ce1-293">Описывает поворот 3 компонента.</span><span class="sxs-lookup"><span data-stu-id="53ce1-293">Describes a 3 components rotation.</span></span>
+<span data-ttu-id="68e0c-293">Описывает поворот 3 компонентов.</span><span class="sxs-lookup"><span data-stu-id="68e0c-293">Describes a 3 components rotation.</span></span>
 
 ```
 public struct Rotation3
@@ -578,30 +578,30 @@ public struct Rotation3
 }
 ```
 
-<span data-ttu-id="53ce1-294">**Microsoft.PerceptionSimulation.Rotation3.Pitch**</span><span class="sxs-lookup"><span data-stu-id="53ce1-294">**Microsoft.PerceptionSimulation.Rotation3.Pitch**</span></span>
+<span data-ttu-id="68e0c-294">**Microsoft. Перцептионсимулатион. Rotation3. шаг**</span><span class="sxs-lookup"><span data-stu-id="68e0c-294">**Microsoft.PerceptionSimulation.Rotation3.Pitch**</span></span>
 
-<span data-ttu-id="53ce1-295">Компонент шаг поворота вокруг оси X вниз.</span><span class="sxs-lookup"><span data-stu-id="53ce1-295">The Pitch component of the Rotation, down around the X axis.</span></span>
+<span data-ttu-id="68e0c-295">Компонент шаг поворота вокруг оси X.</span><span class="sxs-lookup"><span data-stu-id="68e0c-295">The Pitch component of the Rotation, down around the X axis.</span></span>
 
-<span data-ttu-id="53ce1-296">**Microsoft.PerceptionSimulation.Rotation3.Yaw**</span><span class="sxs-lookup"><span data-stu-id="53ce1-296">**Microsoft.PerceptionSimulation.Rotation3.Yaw**</span></span>
+<span data-ttu-id="68e0c-296">**Microsoft. Перцептионсимулатион. Rotation3. значения нутации**</span><span class="sxs-lookup"><span data-stu-id="68e0c-296">**Microsoft.PerceptionSimulation.Rotation3.Yaw**</span></span>
 
-<span data-ttu-id="53ce1-297">Компонент Нутации поворота вокруг оси Y.</span><span class="sxs-lookup"><span data-stu-id="53ce1-297">The Yaw component of the Rotation, right around the Y axis.</span></span>
+<span data-ttu-id="68e0c-297">Компонент значения нутации вращения, который находится справа вокруг оси Y.</span><span class="sxs-lookup"><span data-stu-id="68e0c-297">The Yaw component of the Rotation, right around the Y axis.</span></span>
 
-<span data-ttu-id="53ce1-298">**Microsoft.PerceptionSimulation.Rotation3.Roll**</span><span class="sxs-lookup"><span data-stu-id="53ce1-298">**Microsoft.PerceptionSimulation.Rotation3.Roll**</span></span>
+<span data-ttu-id="68e0c-298">**Microsoft. Перцептионсимулатион. Rotation3. рулон**</span><span class="sxs-lookup"><span data-stu-id="68e0c-298">**Microsoft.PerceptionSimulation.Rotation3.Roll**</span></span>
 
-<span data-ttu-id="53ce1-299">Компонент наката поворота вокруг оси Z.</span><span class="sxs-lookup"><span data-stu-id="53ce1-299">The Roll component of the Rotation, right around the Z axis.</span></span>
+<span data-ttu-id="68e0c-299">Компонент рулона поворота, который находится справа вокруг оси Z.</span><span class="sxs-lookup"><span data-stu-id="68e0c-299">The Roll component of the Rotation, right around the Z axis.</span></span>
 
-<span data-ttu-id="53ce1-300">**Microsoft.PerceptionSimulation.Rotation3.#ctor(System.Single,System.Single,System.Single)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-300">**Microsoft.PerceptionSimulation.Rotation3.#ctor(System.Single,System.Single,System.Single)**</span></span>
+<span data-ttu-id="68e0c-300">**Microsoft. Перцептионсимулатион. Rotation3. #ctor (System. Single, System. Single, System. Single)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-300">**Microsoft.PerceptionSimulation.Rotation3.#ctor(System.Single,System.Single,System.Single)**</span></span>
 
-<span data-ttu-id="53ce1-301">Создает новый Rotation3.</span><span class="sxs-lookup"><span data-stu-id="53ce1-301">Construct a new Rotation3.</span></span>
+<span data-ttu-id="68e0c-301">Создайте новый Rotation3.</span><span class="sxs-lookup"><span data-stu-id="68e0c-301">Construct a new Rotation3.</span></span>
 
-<span data-ttu-id="53ce1-302">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-302">Parameters</span></span>
-* <span data-ttu-id="53ce1-303">шаг - компонент шаг поворота.</span><span class="sxs-lookup"><span data-stu-id="53ce1-303">pitch - The pitch component of the Rotation.</span></span>
-* <span data-ttu-id="53ce1-304">Поворот - компонент нутации поворота.</span><span class="sxs-lookup"><span data-stu-id="53ce1-304">yaw - The yaw component of the Rotation.</span></span>
-* <span data-ttu-id="53ce1-305">Развертывание - наката компонент поворота.</span><span class="sxs-lookup"><span data-stu-id="53ce1-305">roll - The roll component of the Rotation.</span></span>
+<span data-ttu-id="68e0c-302">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-302">Parameters</span></span>
+* <span data-ttu-id="68e0c-303">шаг — компонент шага поворота.</span><span class="sxs-lookup"><span data-stu-id="68e0c-303">pitch - The pitch component of the Rotation.</span></span>
+* <span data-ttu-id="68e0c-304">значения нутации — компонент значения нутации вращения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-304">yaw - The yaw component of the Rotation.</span></span>
+* <span data-ttu-id="68e0c-305">рулон — компонент рулона поворота.</span><span class="sxs-lookup"><span data-stu-id="68e0c-305">roll - The roll component of the Rotation.</span></span>
 
-### <a name="microsoftperceptionsimulationsimulatedhandjointconfiguration"></a><span data-ttu-id="53ce1-306">Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration</span><span class="sxs-lookup"><span data-stu-id="53ce1-306">Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration</span></span>
+### <a name="microsoftperceptionsimulationsimulatedhandjointconfiguration"></a><span data-ttu-id="68e0c-306">Microsoft. Перцептионсимулатион. Симулатедханджоинтконфигуратион</span><span class="sxs-lookup"><span data-stu-id="68e0c-306">Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration</span></span>
 
-<span data-ttu-id="53ce1-307">Описание настройки соединения с имитации стороны.</span><span class="sxs-lookup"><span data-stu-id="53ce1-307">Describes the configuration of a joint on a simulated hand.</span></span>
+<span data-ttu-id="68e0c-307">Описывает конфигурацию соединения с имитацией руки.</span><span class="sxs-lookup"><span data-stu-id="68e0c-307">Describes the configuration of a joint on a simulated hand.</span></span>
 
 ```
 public struct SimulatedHandJointConfiguration
@@ -612,22 +612,22 @@ public struct SimulatedHandJointConfiguration
 }
 ```
 
-<span data-ttu-id="53ce1-308">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.Position**</span><span class="sxs-lookup"><span data-stu-id="53ce1-308">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.Position**</span></span>
+<span data-ttu-id="68e0c-308">**Microsoft. Перцептионсимулатион. Симулатедханджоинтконфигуратион. положением**</span><span class="sxs-lookup"><span data-stu-id="68e0c-308">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.Position**</span></span>
 
-<span data-ttu-id="53ce1-309">Позиция соединения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-309">The position of the joint.</span></span>
+<span data-ttu-id="68e0c-309">Расположение соединения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-309">The position of the joint.</span></span>
 
-<span data-ttu-id="53ce1-310">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.Rotation**</span><span class="sxs-lookup"><span data-stu-id="53ce1-310">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.Rotation**</span></span>
+<span data-ttu-id="68e0c-310">**Microsoft. Перцептионсимулатион. Симулатедханджоинтконфигуратион. вращение**</span><span class="sxs-lookup"><span data-stu-id="68e0c-310">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.Rotation**</span></span>
 
-<span data-ttu-id="53ce1-311">Угол поворота соединения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-311">The rotation of the joint.</span></span>
+<span data-ttu-id="68e0c-311">Поворот соединения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-311">The rotation of the joint.</span></span>
 
-<span data-ttu-id="53ce1-312">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.TrackingAccuracy**</span><span class="sxs-lookup"><span data-stu-id="53ce1-312">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.TrackingAccuracy**</span></span>
+<span data-ttu-id="68e0c-312">**Microsoft. Перцептионсимулатион. Симулатедханджоинтконфигуратион. Траккингаккураци**</span><span class="sxs-lookup"><span data-stu-id="68e0c-312">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.TrackingAccuracy**</span></span>
 
-<span data-ttu-id="53ce1-313">Точность отслеживания соединения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-313">The tracking accuracy of the joint.</span></span>
+<span data-ttu-id="68e0c-313">Точность отслеживания соединения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-313">The tracking accuracy of the joint.</span></span>
 
 
-### <a name="microsoftperceptionsimulationfrustum"></a><span data-ttu-id="53ce1-314">Microsoft.PerceptionSimulation.Frustum</span><span class="sxs-lookup"><span data-stu-id="53ce1-314">Microsoft.PerceptionSimulation.Frustum</span></span>
+### <a name="microsoftperceptionsimulationfrustum"></a><span data-ttu-id="68e0c-314">Microsoft. Перцептионсимулатион. Фрустум</span><span class="sxs-lookup"><span data-stu-id="68e0c-314">Microsoft.PerceptionSimulation.Frustum</span></span>
 
-<span data-ttu-id="53ce1-315">Описывает усеченная, как это обычно используется веб-камеры.</span><span class="sxs-lookup"><span data-stu-id="53ce1-315">Describes a view frustum, as typically used by a camera.</span></span>
+<span data-ttu-id="68e0c-315">Описывает представление фрустум, как обычно используется камерой.</span><span class="sxs-lookup"><span data-stu-id="68e0c-315">Describes a view frustum, as typically used by a camera.</span></span>
 
 ```
 public struct Frustum
@@ -639,25 +639,25 @@ public struct Frustum
 }
 ```
 
-<span data-ttu-id="53ce1-316">**Microsoft.PerceptionSimulation.Frustum.Near**</span><span class="sxs-lookup"><span data-stu-id="53ce1-316">**Microsoft.PerceptionSimulation.Frustum.Near**</span></span>
+<span data-ttu-id="68e0c-316">**Microsoft. Перцептионсимулатион. Фрустум. Near**</span><span class="sxs-lookup"><span data-stu-id="68e0c-316">**Microsoft.PerceptionSimulation.Frustum.Near**</span></span>
 
-<span data-ttu-id="53ce1-317">Минимальное расстояние, которое содержится в панелью видимого пространства.</span><span class="sxs-lookup"><span data-stu-id="53ce1-317">The minimum distance that is contained in the frustum.</span></span>
+<span data-ttu-id="68e0c-317">Минимальное расстояние, которое содержится в фрустум.</span><span class="sxs-lookup"><span data-stu-id="68e0c-317">The minimum distance that is contained in the frustum.</span></span>
 
-<span data-ttu-id="53ce1-318">**Microsoft.PerceptionSimulation.Frustum.Far**</span><span class="sxs-lookup"><span data-stu-id="53ce1-318">**Microsoft.PerceptionSimulation.Frustum.Far**</span></span>
+<span data-ttu-id="68e0c-318">**Microsoft. Перцептионсимулатион. Фрустум. FAR**</span><span class="sxs-lookup"><span data-stu-id="68e0c-318">**Microsoft.PerceptionSimulation.Frustum.Far**</span></span>
 
-<span data-ttu-id="53ce1-319">Максимальное расстояние, которое содержится в панелью видимого пространства.</span><span class="sxs-lookup"><span data-stu-id="53ce1-319">The maximum distance that is contained in the frustum.</span></span>
+<span data-ttu-id="68e0c-319">Максимальное расстояние, которое содержится в фрустум.</span><span class="sxs-lookup"><span data-stu-id="68e0c-319">The maximum distance that is contained in the frustum.</span></span>
 
-<span data-ttu-id="53ce1-320">**Microsoft.PerceptionSimulation.Frustum.FieldOfView**</span><span class="sxs-lookup"><span data-stu-id="53ce1-320">**Microsoft.PerceptionSimulation.Frustum.FieldOfView**</span></span>
+<span data-ttu-id="68e0c-320">**Microsoft. Перцептионсимулатион. Фрустум. Фиелдофвиев**</span><span class="sxs-lookup"><span data-stu-id="68e0c-320">**Microsoft.PerceptionSimulation.Frustum.FieldOfView**</span></span>
 
-<span data-ttu-id="53ce1-321">Горизонтальное поле представления из пирамиды обзора, в радианах (меньше, чем PI).</span><span class="sxs-lookup"><span data-stu-id="53ce1-321">The horizontal field of view of the frustum, in radians (less than PI).</span></span>
+<span data-ttu-id="68e0c-321">Горизонтальное поле представления фрустум в радианах (меньше PI).</span><span class="sxs-lookup"><span data-stu-id="68e0c-321">The horizontal field of view of the frustum, in radians (less than PI).</span></span>
 
-<span data-ttu-id="53ce1-322">**Microsoft.PerceptionSimulation.Frustum.AspectRatio**</span><span class="sxs-lookup"><span data-stu-id="53ce1-322">**Microsoft.PerceptionSimulation.Frustum.AspectRatio**</span></span>
+<span data-ttu-id="68e0c-322">**Microsoft. Перцептионсимулатион. Фрустум. Аспектратио**</span><span class="sxs-lookup"><span data-stu-id="68e0c-322">**Microsoft.PerceptionSimulation.Frustum.AspectRatio**</span></span>
 
-<span data-ttu-id="53ce1-323">Отношение количества горизонтальное поле представления для вертикального поля зрения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-323">The ratio of horizontal field of view to vertical field of view.</span></span>
+<span data-ttu-id="68e0c-323">Отношение горизонтального поля представления к вертикальному полю представления.</span><span class="sxs-lookup"><span data-stu-id="68e0c-323">The ratio of horizontal field of view to vertical field of view.</span></span>
 
-### <a name="microsoftperceptionsimulationiperceptionsimulationmanager"></a><span data-ttu-id="53ce1-324">Microsoft.PerceptionSimulation.IPerceptionSimulationManager</span><span class="sxs-lookup"><span data-stu-id="53ce1-324">Microsoft.PerceptionSimulation.IPerceptionSimulationManager</span></span>
+### <a name="microsoftperceptionsimulationiperceptionsimulationmanager"></a><span data-ttu-id="68e0c-324">Microsoft. Перцептионсимулатион. Иперцептионсимулатионманажер</span><span class="sxs-lookup"><span data-stu-id="68e0c-324">Microsoft.PerceptionSimulation.IPerceptionSimulationManager</span></span>
 
-<span data-ttu-id="53ce1-325">Корневой элемент для создания пакетов, которые используются для управления устройством.</span><span class="sxs-lookup"><span data-stu-id="53ce1-325">Root for generating the packets used to control a device.</span></span>
+<span data-ttu-id="68e0c-325">Корень для создания пакетов, используемых для управления устройством.</span><span class="sxs-lookup"><span data-stu-id="68e0c-325">Root for generating the packets used to control a device.</span></span>
 
 ```
 public interface IPerceptionSimulationManager
@@ -668,21 +668,21 @@ public interface IPerceptionSimulationManager
 }
 ```
 
-<span data-ttu-id="53ce1-326">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Device**</span><span class="sxs-lookup"><span data-stu-id="53ce1-326">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Device**</span></span>
+<span data-ttu-id="68e0c-326">**Microsoft. Перцептионсимулатион. Иперцептионсимулатионманажер. Device**</span><span class="sxs-lookup"><span data-stu-id="68e0c-326">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Device**</span></span>
 
-<span data-ttu-id="53ce1-327">Получить объект виртуального устройства, который интерпретирует как имитации человеку и мир имитации.</span><span class="sxs-lookup"><span data-stu-id="53ce1-327">Retrieve the simulated device object that interprets the simulated human and the simulated world.</span></span>
+<span data-ttu-id="68e0c-327">Извлеките объект имитации устройства, который интерпретирует имитацию человека и имитации мира.</span><span class="sxs-lookup"><span data-stu-id="68e0c-327">Retrieve the simulated device object that interprets the simulated human and the simulated world.</span></span>
 
-<span data-ttu-id="53ce1-328">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Human**</span><span class="sxs-lookup"><span data-stu-id="53ce1-328">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Human**</span></span>
+<span data-ttu-id="68e0c-328">**Microsoft. Перцептионсимулатион. Иперцептионсимулатионманажер. человеческий**</span><span class="sxs-lookup"><span data-stu-id="68e0c-328">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Human**</span></span>
 
-<span data-ttu-id="53ce1-329">Извлечь объект, управляющий имитации отдела.</span><span class="sxs-lookup"><span data-stu-id="53ce1-329">Retrieve the object that controls the simulated human.</span></span>
+<span data-ttu-id="68e0c-329">Извлеките объект, управляющий имитацией человека.</span><span class="sxs-lookup"><span data-stu-id="68e0c-329">Retrieve the object that controls the simulated human.</span></span>
 
-<span data-ttu-id="53ce1-330">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Reset**</span><span class="sxs-lookup"><span data-stu-id="53ce1-330">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Reset**</span></span>
+<span data-ttu-id="68e0c-330">**Microsoft. Перцептионсимулатион. Иперцептионсимулатионманажер. Reset**</span><span class="sxs-lookup"><span data-stu-id="68e0c-330">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Reset**</span></span>
 
-<span data-ttu-id="53ce1-331">Сбрасывает моделирование в состояние по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="53ce1-331">Resets the simulation to its default state.</span></span>
+<span data-ttu-id="68e0c-331">Сбрасывает состояние имитации до состояния по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="68e0c-331">Resets the simulation to its default state.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulateddevice"></a><span data-ttu-id="53ce1-332">Microsoft.PerceptionSimulation.ISimulatedDevice</span><span class="sxs-lookup"><span data-stu-id="53ce1-332">Microsoft.PerceptionSimulation.ISimulatedDevice</span></span>
+### <a name="microsoftperceptionsimulationisimulateddevice"></a><span data-ttu-id="68e0c-332">Microsoft. Перцептионсимулатион. Исимулатеддевице</span><span class="sxs-lookup"><span data-stu-id="68e0c-332">Microsoft.PerceptionSimulation.ISimulatedDevice</span></span>
 
-<span data-ttu-id="53ce1-333">Интерфейс, описывающий устройства, который интерпретирует виртуального мира и имитации человеком</span><span class="sxs-lookup"><span data-stu-id="53ce1-333">Interface describing the device which interprets the simulated world and the simulated human</span></span>
+<span data-ttu-id="68e0c-333">Интерфейс, описывающий устройство, которое интерпретирует имитацию мира и имитацию человека</span><span class="sxs-lookup"><span data-stu-id="68e0c-333">Interface describing the device which interprets the simulated world and the simulated human</span></span>
 
 ```
 public interface ISimulatedDevice
@@ -693,24 +693,24 @@ public interface ISimulatedDevice
 }
 ```
 
-<span data-ttu-id="53ce1-334">**Microsoft.PerceptionSimulation.ISimulatedDevice.HeadTracker**</span><span class="sxs-lookup"><span data-stu-id="53ce1-334">**Microsoft.PerceptionSimulation.ISimulatedDevice.HeadTracker**</span></span>
+<span data-ttu-id="68e0c-334">**Microsoft. Перцептионсимулатион. Исимулатеддевице. Хеадтраккер**</span><span class="sxs-lookup"><span data-stu-id="68e0c-334">**Microsoft.PerceptionSimulation.ISimulatedDevice.HeadTracker**</span></span>
 
-<span data-ttu-id="53ce1-335">Получить средство отслеживания Head с виртуального устройства.</span><span class="sxs-lookup"><span data-stu-id="53ce1-335">Retrieve the Head Tracker from the Simulated Device.</span></span>
+<span data-ttu-id="68e0c-335">Извлеките головной датчик из имитации устройства.</span><span class="sxs-lookup"><span data-stu-id="68e0c-335">Retrieve the Head Tracker from the Simulated Device.</span></span>
 
-<span data-ttu-id="53ce1-336">**Microsoft.PerceptionSimulation.ISimulatedDevice.HandTracker**</span><span class="sxs-lookup"><span data-stu-id="53ce1-336">**Microsoft.PerceptionSimulation.ISimulatedDevice.HandTracker**</span></span>
+<span data-ttu-id="68e0c-336">**Microsoft. Перцептионсимулатион. Исимулатеддевице. Хандтраккер**</span><span class="sxs-lookup"><span data-stu-id="68e0c-336">**Microsoft.PerceptionSimulation.ISimulatedDevice.HandTracker**</span></span>
 
-<span data-ttu-id="53ce1-337">Получить средство отслеживания вручную из имитации устройства.</span><span class="sxs-lookup"><span data-stu-id="53ce1-337">Retrieve the Hand Tracker from the Simulated Device.</span></span>
+<span data-ttu-id="68e0c-337">Получите датчик руки от имитации устройства.</span><span class="sxs-lookup"><span data-stu-id="68e0c-337">Retrieve the Hand Tracker from the Simulated Device.</span></span>
 
-<span data-ttu-id="53ce1-338">**Microsoft.PerceptionSimulation.ISimulatedDevice.SetSimulatedDeviceType(Microsoft.PerceptionSimulation.SimulatedDeviceType)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-338">**Microsoft.PerceptionSimulation.ISimulatedDevice.SetSimulatedDeviceType(Microsoft.PerceptionSimulation.SimulatedDeviceType)**</span></span>
+<span data-ttu-id="68e0c-338">**Microsoft. Перцептионсимулатион. Исимулатеддевице. Сетсимулатеддевицетипе (Microsoft. Перцептионсимулатион. SimulatedDeviceType)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-338">**Microsoft.PerceptionSimulation.ISimulatedDevice.SetSimulatedDeviceType(Microsoft.PerceptionSimulation.SimulatedDeviceType)**</span></span>
 
-<span data-ttu-id="53ce1-339">Задание свойств виртуального устройства в соответствии с типом предоставленного устройства.</span><span class="sxs-lookup"><span data-stu-id="53ce1-339">Set the properties of the simulated device to match the provided device type.</span></span>
+<span data-ttu-id="68e0c-339">Задайте свойства виртуального устройства в соответствии с указанным типом устройства.</span><span class="sxs-lookup"><span data-stu-id="68e0c-339">Set the properties of the simulated device to match the provided device type.</span></span>
 
-<span data-ttu-id="53ce1-340">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-340">Parameters</span></span>
-* <span data-ttu-id="53ce1-341">Type - новый тип Simulated Device</span><span class="sxs-lookup"><span data-stu-id="53ce1-341">type - The new type of Simulated Device</span></span>
+<span data-ttu-id="68e0c-340">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-340">Parameters</span></span>
+* <span data-ttu-id="68e0c-341">тип — новый тип имитации устройства.</span><span class="sxs-lookup"><span data-stu-id="68e0c-341">type - The new type of Simulated Device</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedheadtracker"></a><span data-ttu-id="53ce1-342">Microsoft.PerceptionSimulation.ISimulatedHeadTracker</span><span class="sxs-lookup"><span data-stu-id="53ce1-342">Microsoft.PerceptionSimulation.ISimulatedHeadTracker</span></span>
+### <a name="microsoftperceptionsimulationisimulatedheadtracker"></a><span data-ttu-id="68e0c-342">Microsoft. Перцептионсимулатион. Исимулатедхеадтраккер</span><span class="sxs-lookup"><span data-stu-id="68e0c-342">Microsoft.PerceptionSimulation.ISimulatedHeadTracker</span></span>
 
-<span data-ttu-id="53ce1-343">Интерфейс, описывающий часть имитированное устройство, которое отслеживает начало имитации отдела.</span><span class="sxs-lookup"><span data-stu-id="53ce1-343">Interface describing the portion of the simulated device that tracks the head of the simulated human.</span></span>
+<span data-ttu-id="68e0c-343">Интерфейс, описывающий часть имитации устройства, которая отслеживает заголовку имитации человека.</span><span class="sxs-lookup"><span data-stu-id="68e0c-343">Interface describing the portion of the simulated device that tracks the head of the simulated human.</span></span>
 
 ```
 public interface ISimulatedHeadTracker
@@ -719,13 +719,13 @@ public interface ISimulatedHeadTracker
 };
 ```
 
-<span data-ttu-id="53ce1-344">**Microsoft.PerceptionSimulation.ISimulatedHeadTracker.HeadTrackerMode**</span><span class="sxs-lookup"><span data-stu-id="53ce1-344">**Microsoft.PerceptionSimulation.ISimulatedHeadTracker.HeadTrackerMode**</span></span>
+<span data-ttu-id="68e0c-344">**Microsoft. Перцептионсимулатион. Исимулатедхеадтраккер. Хеадтраккермоде**</span><span class="sxs-lookup"><span data-stu-id="68e0c-344">**Microsoft.PerceptionSimulation.ISimulatedHeadTracker.HeadTrackerMode**</span></span>
 
-<span data-ttu-id="53ce1-345">Получает и задает текущий режим головной tracker.</span><span class="sxs-lookup"><span data-stu-id="53ce1-345">Retrieves and sets the current head tracker mode.</span></span>
+<span data-ttu-id="68e0c-345">Извлекает и устанавливает текущий режим трассировки головного подразделения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-345">Retrieves and sets the current head tracker mode.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedhandtracker"></a><span data-ttu-id="53ce1-346">Microsoft.PerceptionSimulation.ISimulatedHandTracker</span><span class="sxs-lookup"><span data-stu-id="53ce1-346">Microsoft.PerceptionSimulation.ISimulatedHandTracker</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhandtracker"></a><span data-ttu-id="68e0c-346">Microsoft. Перцептионсимулатион. Исимулатедхандтраккер</span><span class="sxs-lookup"><span data-stu-id="68e0c-346">Microsoft.PerceptionSimulation.ISimulatedHandTracker</span></span>
 
-<span data-ttu-id="53ce1-347">Интерфейс, описывающий часть имитированное устройство, которое отслеживает руки имитации отдела</span><span class="sxs-lookup"><span data-stu-id="53ce1-347">Interface describing the portion of the simulated device that tracks the hands of the simulated human</span></span>
+<span data-ttu-id="68e0c-347">Интерфейс, описывающий часть имитации устройства, которая отслеживает руки имитации человека</span><span class="sxs-lookup"><span data-stu-id="68e0c-347">Interface describing the portion of the simulated device that tracks the hands of the simulated human</span></span>
 
 ```
 public interface ISimulatedHandTracker
@@ -738,29 +738,29 @@ public interface ISimulatedHandTracker
 }
 ```
 
-<span data-ttu-id="53ce1-348">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.WorldPosition**</span><span class="sxs-lookup"><span data-stu-id="53ce1-348">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.WorldPosition**</span></span>
+<span data-ttu-id="68e0c-348">**Microsoft. Перцептионсимулатион. Исимулатедхандтраккер. Ворлдпоситион**</span><span class="sxs-lookup"><span data-stu-id="68e0c-348">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.WorldPosition**</span></span>
 
-<span data-ttu-id="53ce1-349">Получите позицию узла по всему миру, в метрах.</span><span class="sxs-lookup"><span data-stu-id="53ce1-349">Retrieve the position of the node with relation to the world, in meters.</span></span>
+<span data-ttu-id="68e0c-349">Получение расположения узла относительно мира в метрах.</span><span class="sxs-lookup"><span data-stu-id="68e0c-349">Retrieve the position of the node with relation to the world, in meters.</span></span>
 
-<span data-ttu-id="53ce1-350">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Position**</span><span class="sxs-lookup"><span data-stu-id="53ce1-350">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Position**</span></span>
+<span data-ttu-id="68e0c-350">**Microsoft. Перцептионсимулатион. Исимулатедхандтраккер. положением**</span><span class="sxs-lookup"><span data-stu-id="68e0c-350">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Position**</span></span>
 
-<span data-ttu-id="53ce1-351">Получить и задать положение датчик имитации руки, относительно центра элемента head.</span><span class="sxs-lookup"><span data-stu-id="53ce1-351">Retrieve and set the position of the simulated hand tracker, relative to the center of the head.</span></span>
+<span data-ttu-id="68e0c-351">Извлечение и задание положения объекта Tracker для имитации относительно центра головки.</span><span class="sxs-lookup"><span data-stu-id="68e0c-351">Retrieve and set the position of the simulated hand tracker, relative to the center of the head.</span></span>
 
-<span data-ttu-id="53ce1-352">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Pitch**</span><span class="sxs-lookup"><span data-stu-id="53ce1-352">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Pitch**</span></span>
+<span data-ttu-id="68e0c-352">**Microsoft. Перцептионсимулатион. Исимулатедхандтраккер. шаг**</span><span class="sxs-lookup"><span data-stu-id="68e0c-352">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Pitch**</span></span>
 
-<span data-ttu-id="53ce1-353">Получить и задать вниз pitch датчик имитации руки.</span><span class="sxs-lookup"><span data-stu-id="53ce1-353">Retrieve and set the downward pitch of the simulated hand tracker.</span></span>
+<span data-ttu-id="68e0c-353">Извлеките и задайте шаг вниз для смоделированного средства записи.</span><span class="sxs-lookup"><span data-stu-id="68e0c-353">Retrieve and set the downward pitch of the simulated hand tracker.</span></span>
 
-<span data-ttu-id="53ce1-354">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.FrustumIgnored**</span><span class="sxs-lookup"><span data-stu-id="53ce1-354">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.FrustumIgnored**</span></span>
+<span data-ttu-id="68e0c-354">**Microsoft. Перцептионсимулатион. Исимулатедхандтраккер. Фрустумигноред**</span><span class="sxs-lookup"><span data-stu-id="68e0c-354">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.FrustumIgnored**</span></span>
 
-<span data-ttu-id="53ce1-355">Получить и задать ли пирамиды обзора средства отслеживания имитации наличии учитывается.</span><span class="sxs-lookup"><span data-stu-id="53ce1-355">Retrieve and set whether the frustum of the simulated hand tracker is ignored.</span></span> <span data-ttu-id="53ce1-356">При обоих руки всегда видимы.</span><span class="sxs-lookup"><span data-stu-id="53ce1-356">When ignored, both hands are always visible.</span></span> <span data-ttu-id="53ce1-357">Если не учитывается (по умолчанию) руки доступны только внутри пирамиды обзора средства отслеживания вручную.</span><span class="sxs-lookup"><span data-stu-id="53ce1-357">When not ignored (the default) hands are only visible when they are within the frustum of the hand tracker.</span></span>
+<span data-ttu-id="68e0c-355">Получите и задайте значение, определяющее, пропускается ли фрустум транспортера для имитации.</span><span class="sxs-lookup"><span data-stu-id="68e0c-355">Retrieve and set whether the frustum of the simulated hand tracker is ignored.</span></span> <span data-ttu-id="68e0c-356">Если игнорируется, обе руки всегда видимы.</span><span class="sxs-lookup"><span data-stu-id="68e0c-356">When ignored, both hands are always visible.</span></span> <span data-ttu-id="68e0c-357">Если параметр не пропускается (по умолчанию), руки отображаются только в том случае, если они находятся в фрустуме средства записи.</span><span class="sxs-lookup"><span data-stu-id="68e0c-357">When not ignored (the default) hands are only visible when they are within the frustum of the hand tracker.</span></span>
 
-<span data-ttu-id="53ce1-358">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Frustum**</span><span class="sxs-lookup"><span data-stu-id="53ce1-358">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Frustum**</span></span>
+<span data-ttu-id="68e0c-358">**Microsoft. Перцептионсимулатион. Исимулатедхандтраккер. Фрустум**</span><span class="sxs-lookup"><span data-stu-id="68e0c-358">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Frustum**</span></span>
 
-<span data-ttu-id="53ce1-359">Получить и задать свойства пирамиды обзора, позволяет определить, если руки являются видимыми для датчик имитации руки.</span><span class="sxs-lookup"><span data-stu-id="53ce1-359">Retrieve and set the frustum properties used to determine if hands are visible to the simulated hand tracker.</span></span>
+<span data-ttu-id="68e0c-359">Получите и задайте свойства фрустум, используемые для определения, видны ли руки для имитации средства записи.</span><span class="sxs-lookup"><span data-stu-id="68e0c-359">Retrieve and set the frustum properties used to determine if hands are visible to the simulated hand tracker.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedhuman"></a><span data-ttu-id="53ce1-360">Microsoft.PerceptionSimulation.ISimulatedHuman</span><span class="sxs-lookup"><span data-stu-id="53ce1-360">Microsoft.PerceptionSimulation.ISimulatedHuman</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhuman"></a><span data-ttu-id="68e0c-360">Microsoft. Перцептионсимулатион. Исимулатедхуман</span><span class="sxs-lookup"><span data-stu-id="68e0c-360">Microsoft.PerceptionSimulation.ISimulatedHuman</span></span>
 
-<span data-ttu-id="53ce1-361">Интерфейс верхнего уровня для управления как имитации человеку.</span><span class="sxs-lookup"><span data-stu-id="53ce1-361">Top level interface for controlling the simulated human.</span></span>
+<span data-ttu-id="68e0c-361">Интерфейс верхнего уровня для управления имитируемым человеком.</span><span class="sxs-lookup"><span data-stu-id="68e0c-361">Top level interface for controlling the simulated human.</span></span>
 
 ```
 public interface ISimulatedHuman 
@@ -776,47 +776,47 @@ public interface ISimulatedHuman
 }
 ```
 
-<span data-ttu-id="53ce1-362">**Microsoft.PerceptionSimulation.ISimulatedHuman.WorldPosition**</span><span class="sxs-lookup"><span data-stu-id="53ce1-362">**Microsoft.PerceptionSimulation.ISimulatedHuman.WorldPosition**</span></span>
+<span data-ttu-id="68e0c-362">**Microsoft. Перцептионсимулатион. Исимулатедхуман. Ворлдпоситион**</span><span class="sxs-lookup"><span data-stu-id="68e0c-362">**Microsoft.PerceptionSimulation.ISimulatedHuman.WorldPosition**</span></span>
 
-<span data-ttu-id="53ce1-363">Получить и задать положение узла по всему миру, в метрах.</span><span class="sxs-lookup"><span data-stu-id="53ce1-363">Retrieve and set the position of the node with relation to the world, in meters.</span></span> <span data-ttu-id="53ce1-364">Соответствует позиция точки в центре фута как человеку.</span><span class="sxs-lookup"><span data-stu-id="53ce1-364">The position corresponds to a point at the center of the human's feet.</span></span>
+<span data-ttu-id="68e0c-363">Извлечение и Установка расположения узла относительно мира в метрах.</span><span class="sxs-lookup"><span data-stu-id="68e0c-363">Retrieve and set the position of the node with relation to the world, in meters.</span></span> <span data-ttu-id="68e0c-364">Это расположение соответствует точке в центре метров человека.</span><span class="sxs-lookup"><span data-stu-id="68e0c-364">The position corresponds to a point at the center of the human's feet.</span></span>
 
-<span data-ttu-id="53ce1-365">**Microsoft.PerceptionSimulation.ISimulatedHuman.Direction**</span><span class="sxs-lookup"><span data-stu-id="53ce1-365">**Microsoft.PerceptionSimulation.ISimulatedHuman.Direction**</span></span>
+<span data-ttu-id="68e0c-365">**Microsoft. Перцептионсимулатион. Исимулатедхуман. Direction**</span><span class="sxs-lookup"><span data-stu-id="68e0c-365">**Microsoft.PerceptionSimulation.ISimulatedHuman.Direction**</span></span>
 
-<span data-ttu-id="53ce1-366">Получить и задать направление имитации человеческих лиц в мире.</span><span class="sxs-lookup"><span data-stu-id="53ce1-366">Retrieve and set the direction the simulated human faces in the world.</span></span> <span data-ttu-id="53ce1-367">0 радиан сталкивается вниз отрицательной полуоси Z.</span><span class="sxs-lookup"><span data-stu-id="53ce1-367">0 radians faces down the negative Z axis.</span></span> <span data-ttu-id="53ce1-368">Положительное радианах поворот по часовой стрелке вокруг оси Y.</span><span class="sxs-lookup"><span data-stu-id="53ce1-368">Positive radians rotate clockwise about the Y axis.</span></span>
+<span data-ttu-id="68e0c-366">Извлеките и задайте направление имитации человеческих лиц в мире.</span><span class="sxs-lookup"><span data-stu-id="68e0c-366">Retrieve and set the direction the simulated human faces in the world.</span></span> <span data-ttu-id="68e0c-367">0 радианы отменяют отрицательную ось Z.</span><span class="sxs-lookup"><span data-stu-id="68e0c-367">0 radians faces down the negative Z axis.</span></span> <span data-ttu-id="68e0c-368">Положительные радианы поворачиваются по часовой стрелке относительно оси Y.</span><span class="sxs-lookup"><span data-stu-id="68e0c-368">Positive radians rotate clockwise about the Y axis.</span></span>
 
-<span data-ttu-id="53ce1-369">**Microsoft.PerceptionSimulation.ISimulatedHuman.Height**</span><span class="sxs-lookup"><span data-stu-id="53ce1-369">**Microsoft.PerceptionSimulation.ISimulatedHuman.Height**</span></span>
+<span data-ttu-id="68e0c-369">**Microsoft. Перцептионсимулатион. Исимулатедхуман. Height**</span><span class="sxs-lookup"><span data-stu-id="68e0c-369">**Microsoft.PerceptionSimulation.ISimulatedHuman.Height**</span></span>
 
-<span data-ttu-id="53ce1-370">Получить и задать высоту как имитации человеку в метрах.</span><span class="sxs-lookup"><span data-stu-id="53ce1-370">Retrieve and set the height of the simulated human, in meters.</span></span>
+<span data-ttu-id="68e0c-370">Получение и задание высоты имитации человека в метрах.</span><span class="sxs-lookup"><span data-stu-id="68e0c-370">Retrieve and set the height of the simulated human, in meters.</span></span>
 
-<span data-ttu-id="53ce1-371">**Microsoft.PerceptionSimulation.ISimulatedHuman.LeftHand**</span><span class="sxs-lookup"><span data-stu-id="53ce1-371">**Microsoft.PerceptionSimulation.ISimulatedHuman.LeftHand**</span></span>
+<span data-ttu-id="68e0c-371">**Microsoft. Перцептионсимулатион. Исимулатедхуман. LeftHand**</span><span class="sxs-lookup"><span data-stu-id="68e0c-371">**Microsoft.PerceptionSimulation.ISimulatedHuman.LeftHand**</span></span>
 
-<span data-ttu-id="53ce1-372">Получите левой части имитации отдела.</span><span class="sxs-lookup"><span data-stu-id="53ce1-372">Retrieve the left hand of the simulated human.</span></span>
+<span data-ttu-id="68e0c-372">Получите левую руку имитации человека.</span><span class="sxs-lookup"><span data-stu-id="68e0c-372">Retrieve the left hand of the simulated human.</span></span>
 
-<span data-ttu-id="53ce1-373">**Microsoft.PerceptionSimulation.ISimulatedHuman.RightHand**</span><span class="sxs-lookup"><span data-stu-id="53ce1-373">**Microsoft.PerceptionSimulation.ISimulatedHuman.RightHand**</span></span>
+<span data-ttu-id="68e0c-373">**Microsoft. Перцептионсимулатион. Исимулатедхуман. Ригхсанд**</span><span class="sxs-lookup"><span data-stu-id="68e0c-373">**Microsoft.PerceptionSimulation.ISimulatedHuman.RightHand**</span></span>
 
-<span data-ttu-id="53ce1-374">Получите правой стороны из имитации отдела.</span><span class="sxs-lookup"><span data-stu-id="53ce1-374">Retrieve the right hand of the simulated human.</span></span>
+<span data-ttu-id="68e0c-374">Получите правую руку имитации человека.</span><span class="sxs-lookup"><span data-stu-id="68e0c-374">Retrieve the right hand of the simulated human.</span></span>
 
-<span data-ttu-id="53ce1-375">**Microsoft.PerceptionSimulation.ISimulatedHuman.Head**</span><span class="sxs-lookup"><span data-stu-id="53ce1-375">**Microsoft.PerceptionSimulation.ISimulatedHuman.Head**</span></span>
+<span data-ttu-id="68e0c-375">**Microsoft. Перцептионсимулатион. Исимулатедхуман. Head**</span><span class="sxs-lookup"><span data-stu-id="68e0c-375">**Microsoft.PerceptionSimulation.ISimulatedHuman.Head**</span></span>
 
-<span data-ttu-id="53ce1-376">Получите заголовок как имитации человеку.</span><span class="sxs-lookup"><span data-stu-id="53ce1-376">Retrieve the head of the simulated human.</span></span>
+<span data-ttu-id="68e0c-376">Получите заголовок имитации человека.</span><span class="sxs-lookup"><span data-stu-id="68e0c-376">Retrieve the head of the simulated human.</span></span>
 
-<span data-ttu-id="53ce1-377">**Microsoft.PerceptionSimulation.ISimulatedHuman.Move(Microsoft.PerceptionSimulation.Vector3)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-377">**Microsoft.PerceptionSimulation.ISimulatedHuman.Move(Microsoft.PerceptionSimulation.Vector3)**</span></span>
+<span data-ttu-id="68e0c-377">**Microsoft. Перцептионсимулатион. Исимулатедхуман. Move (Microsoft. Перцептионсимулатион. Vector3)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-377">**Microsoft.PerceptionSimulation.ISimulatedHuman.Move(Microsoft.PerceptionSimulation.Vector3)**</span></span>
 
-<span data-ttu-id="53ce1-378">Переместите имитации human относительно текущей позиции, в метрах.</span><span class="sxs-lookup"><span data-stu-id="53ce1-378">Move the simulated human relative to its current position, in meters.</span></span>
+<span data-ttu-id="68e0c-378">Перемещение имитации человека относительно его текущего положения в метрах.</span><span class="sxs-lookup"><span data-stu-id="68e0c-378">Move the simulated human relative to its current position, in meters.</span></span>
 
-<span data-ttu-id="53ce1-379">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-379">Parameters</span></span>
-* <span data-ttu-id="53ce1-380">Трансляция - перевода для перемещения относительно текущей позиции.</span><span class="sxs-lookup"><span data-stu-id="53ce1-380">translation - The translation to move, relative to current position.</span></span>
+<span data-ttu-id="68e0c-379">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-379">Parameters</span></span>
+* <span data-ttu-id="68e0c-380">перевод — перевод, который необходимо переместить, относительно текущего положения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-380">translation - The translation to move, relative to current position.</span></span>
 
-<span data-ttu-id="53ce1-381">**Microsoft.PerceptionSimulation.ISimulatedHuman.Rotate(System.Single)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-381">**Microsoft.PerceptionSimulation.ISimulatedHuman.Rotate(System.Single)**</span></span>
+<span data-ttu-id="68e0c-381">**Microsoft. Перцептионсимулатион. Исимулатедхуман. вращение (System. Single)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-381">**Microsoft.PerceptionSimulation.ISimulatedHuman.Rotate(System.Single)**</span></span>
 
-<span data-ttu-id="53ce1-382">Поворот имитации человека по отношению к его текущее направление, по часовой стрелке относительно оси Y</span><span class="sxs-lookup"><span data-stu-id="53ce1-382">Rotate the simulated human relative to its current direction, clockwise about the Y axis</span></span>
+<span data-ttu-id="68e0c-382">Поворот имитации человека относительно текущего направления по часовой стрелке по оси Y</span><span class="sxs-lookup"><span data-stu-id="68e0c-382">Rotate the simulated human relative to its current direction, clockwise about the Y axis</span></span>
 
-<span data-ttu-id="53ce1-383">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-383">Parameters</span></span>
-* <span data-ttu-id="53ce1-384">RADIANS - степень поворота вокруг оси Y.</span><span class="sxs-lookup"><span data-stu-id="53ce1-384">radians - The amount to rotate around the Y axis.</span></span>
+<span data-ttu-id="68e0c-383">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-383">Parameters</span></span>
+* <span data-ttu-id="68e0c-384">радианы — величина поворота вокруг оси Y.</span><span class="sxs-lookup"><span data-stu-id="68e0c-384">radians - The amount to rotate around the Y axis.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedhuman2"></a><span data-ttu-id="53ce1-385">Microsoft.PerceptionSimulation.ISimulatedHuman2</span><span class="sxs-lookup"><span data-stu-id="53ce1-385">Microsoft.PerceptionSimulation.ISimulatedHuman2</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhuman2"></a><span data-ttu-id="68e0c-385">Microsoft. Перцептионсимулатион. ISimulatedHuman2</span><span class="sxs-lookup"><span data-stu-id="68e0c-385">Microsoft.PerceptionSimulation.ISimulatedHuman2</span></span>
 
-<span data-ttu-id="53ce1-386">Доступны дополнительные свойства путем приведения ISimulatedHuman для ISimulatedHuman2</span><span class="sxs-lookup"><span data-stu-id="53ce1-386">Additional properties are available by casting the ISimulatedHuman to ISimulatedHuman2</span></span>
+<span data-ttu-id="68e0c-386">Дополнительные свойства доступны путем приведения Исимулатедхуман к ISimulatedHuman2.</span><span class="sxs-lookup"><span data-stu-id="68e0c-386">Additional properties are available by casting the ISimulatedHuman to ISimulatedHuman2</span></span>
 
 ```
 public interface ISimulatedHuman2
@@ -827,18 +827,18 @@ public interface ISimulatedHuman2
 }
 ```
 
-<span data-ttu-id="53ce1-387">**Microsoft.PerceptionSimulation.ISimulatedHuman2.LeftController**</span><span class="sxs-lookup"><span data-stu-id="53ce1-387">**Microsoft.PerceptionSimulation.ISimulatedHuman2.LeftController**</span></span>
+<span data-ttu-id="68e0c-387">**Microsoft. Перцептионсимулатион. ISimulatedHuman2. Лефтконтроллер**</span><span class="sxs-lookup"><span data-stu-id="68e0c-387">**Microsoft.PerceptionSimulation.ISimulatedHuman2.LeftController**</span></span>
 
-<span data-ttu-id="53ce1-388">Получите левой 6-DOF контроллера.</span><span class="sxs-lookup"><span data-stu-id="53ce1-388">Retrieve the left 6-DOF controller.</span></span>
+<span data-ttu-id="68e0c-388">Получите левый 6-ДОФ контроллер.</span><span class="sxs-lookup"><span data-stu-id="68e0c-388">Retrieve the left 6-DOF controller.</span></span>
 
-<span data-ttu-id="53ce1-389">**Microsoft.PerceptionSimulation.ISimulatedHuman2.RightController**</span><span class="sxs-lookup"><span data-stu-id="53ce1-389">**Microsoft.PerceptionSimulation.ISimulatedHuman2.RightController**</span></span>
+<span data-ttu-id="68e0c-389">**Microsoft. Перцептионсимулатион. ISimulatedHuman2. Ригхтконтроллер**</span><span class="sxs-lookup"><span data-stu-id="68e0c-389">**Microsoft.PerceptionSimulation.ISimulatedHuman2.RightController**</span></span>
 
-<span data-ttu-id="53ce1-390">Получите контроллер правой 6-DOF.</span><span class="sxs-lookup"><span data-stu-id="53ce1-390">Retrieve the right 6-DOF controller.</span></span>
+<span data-ttu-id="68e0c-390">Получите подходящий 6-ДОФ контроллер.</span><span class="sxs-lookup"><span data-stu-id="68e0c-390">Retrieve the right 6-DOF controller.</span></span>
 
 
-### <a name="microsoftperceptionsimulationisimulatedhand"></a><span data-ttu-id="53ce1-391">Microsoft.PerceptionSimulation.ISimulatedHand</span><span class="sxs-lookup"><span data-stu-id="53ce1-391">Microsoft.PerceptionSimulation.ISimulatedHand</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhand"></a><span data-ttu-id="68e0c-391">Microsoft. Перцептионсимулатион. Исимулатедханд</span><span class="sxs-lookup"><span data-stu-id="68e0c-391">Microsoft.PerceptionSimulation.ISimulatedHand</span></span>
 
-<span data-ttu-id="53ce1-392">Интерфейс, описывающий форму руки имитации отдела</span><span class="sxs-lookup"><span data-stu-id="53ce1-392">Interface describing a hand of the simulated human</span></span>
+<span data-ttu-id="68e0c-392">Интерфейс, описывающий руки имитации человека</span><span class="sxs-lookup"><span data-stu-id="68e0c-392">Interface describing a hand of the simulated human</span></span>
 
 ```
 public interface ISimulatedHand
@@ -853,43 +853,43 @@ public interface ISimulatedHand
 }
 ```
 
-<span data-ttu-id="53ce1-393">**Microsoft.PerceptionSimulation.ISimulatedHand.WorldPosition**</span><span class="sxs-lookup"><span data-stu-id="53ce1-393">**Microsoft.PerceptionSimulation.ISimulatedHand.WorldPosition**</span></span>
+<span data-ttu-id="68e0c-393">**Microsoft. Перцептионсимулатион. Исимулатедханд. Ворлдпоситион**</span><span class="sxs-lookup"><span data-stu-id="68e0c-393">**Microsoft.PerceptionSimulation.ISimulatedHand.WorldPosition**</span></span>
 
-<span data-ttu-id="53ce1-394">Получите позицию узла по всему миру, в метрах.</span><span class="sxs-lookup"><span data-stu-id="53ce1-394">Retrieve the position of the node with relation to the world, in meters.</span></span>
+<span data-ttu-id="68e0c-394">Получение расположения узла относительно мира в метрах.</span><span class="sxs-lookup"><span data-stu-id="68e0c-394">Retrieve the position of the node with relation to the world, in meters.</span></span>
 
-<span data-ttu-id="53ce1-395">**Microsoft.PerceptionSimulation.ISimulatedHand.Position**</span><span class="sxs-lookup"><span data-stu-id="53ce1-395">**Microsoft.PerceptionSimulation.ISimulatedHand.Position**</span></span>
+<span data-ttu-id="68e0c-395">**Microsoft. Перцептионсимулатион. Исимулатедханд. положением**</span><span class="sxs-lookup"><span data-stu-id="68e0c-395">**Microsoft.PerceptionSimulation.ISimulatedHand.Position**</span></span>
 
-<span data-ttu-id="53ce1-396">Получить и задать положение имитации Рука относительно как человеку в метрах.</span><span class="sxs-lookup"><span data-stu-id="53ce1-396">Retrieve and set the position of the simulated hand relative to the human, in meters.</span></span>
+<span data-ttu-id="68e0c-396">Получение и установка положения смоделированной руки относительно человека в метрах.</span><span class="sxs-lookup"><span data-stu-id="68e0c-396">Retrieve and set the position of the simulated hand relative to the human, in meters.</span></span>
 
-<span data-ttu-id="53ce1-397">**Microsoft.PerceptionSimulation.ISimulatedHand.Activated**</span><span class="sxs-lookup"><span data-stu-id="53ce1-397">**Microsoft.PerceptionSimulation.ISimulatedHand.Activated**</span></span>
+<span data-ttu-id="68e0c-397">**Microsoft. Перцептионсимулатион. Исимулатедханд. Activated**</span><span class="sxs-lookup"><span data-stu-id="68e0c-397">**Microsoft.PerceptionSimulation.ISimulatedHand.Activated**</span></span>
 
-<span data-ttu-id="53ce1-398">Получить и задать ли Рука, активированного в данный момент.</span><span class="sxs-lookup"><span data-stu-id="53ce1-398">Retrieve and set whether the hand is currently activated.</span></span>
+<span data-ttu-id="68e0c-398">Извлечение и задание того, активирована ли рука в настоящий момент.</span><span class="sxs-lookup"><span data-stu-id="68e0c-398">Retrieve and set whether the hand is currently activated.</span></span>
 
-<span data-ttu-id="53ce1-399">**Microsoft.PerceptionSimulation.ISimulatedHand.Visible**</span><span class="sxs-lookup"><span data-stu-id="53ce1-399">**Microsoft.PerceptionSimulation.ISimulatedHand.Visible**</span></span>
+<span data-ttu-id="68e0c-399">**Microsoft. Перцептионсимулатион. Исимулатедханд. Visible**</span><span class="sxs-lookup"><span data-stu-id="68e0c-399">**Microsoft.PerceptionSimulation.ISimulatedHand.Visible**</span></span>
 
-<span data-ttu-id="53ce1-400">Получите ли Рука видимой в данный момент для SimulatedDevice, (ie, будь то умеющий определяться с помощью HandTracker).</span><span class="sxs-lookup"><span data-stu-id="53ce1-400">Retrieve whether the hand is currently visible to the SimulatedDevice (ie, whether it's in a position to be detected by the HandTracker).</span></span>
+<span data-ttu-id="68e0c-400">Извлеките, является ли рука в настоящий момент видимой для SimulatedDevice (IE, находится ли она в положении, которое должно быть обнаружено Хандтраккер).</span><span class="sxs-lookup"><span data-stu-id="68e0c-400">Retrieve whether the hand is currently visible to the SimulatedDevice (ie, whether it's in a position to be detected by the HandTracker).</span></span>
 
-<span data-ttu-id="53ce1-401">**Microsoft.PerceptionSimulation.ISimulatedHand.EnsureVisible**</span><span class="sxs-lookup"><span data-stu-id="53ce1-401">**Microsoft.PerceptionSimulation.ISimulatedHand.EnsureVisible**</span></span>
+<span data-ttu-id="68e0c-401">**Microsoft. Перцептионсимулатион. Исимулатедханд. Енсуревисибле**</span><span class="sxs-lookup"><span data-stu-id="68e0c-401">**Microsoft.PerceptionSimulation.ISimulatedHand.EnsureVisible**</span></span>
 
-<span data-ttu-id="53ce1-402">Переместите Рука, таким образом, оно становится видимым для SimulatedDevice.</span><span class="sxs-lookup"><span data-stu-id="53ce1-402">Move the hand such that it is visible to the SimulatedDevice.</span></span>
+<span data-ttu-id="68e0c-402">Переместите руку так, чтобы она была видна SimulatedDevice.</span><span class="sxs-lookup"><span data-stu-id="68e0c-402">Move the hand such that it is visible to the SimulatedDevice.</span></span>
 
-<span data-ttu-id="53ce1-403">**Microsoft.PerceptionSimulation.ISimulatedHand.Move(Microsoft.PerceptionSimulation.Vector3)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-403">**Microsoft.PerceptionSimulation.ISimulatedHand.Move(Microsoft.PerceptionSimulation.Vector3)**</span></span>
+<span data-ttu-id="68e0c-403">**Microsoft. Перцептионсимулатион. Исимулатедханд. Move (Microsoft. Перцептионсимулатион. Vector3)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-403">**Microsoft.PerceptionSimulation.ISimulatedHand.Move(Microsoft.PerceptionSimulation.Vector3)**</span></span>
 
-<span data-ttu-id="53ce1-404">Изменить положение имитации Рука относительно текущей позиции, в метрах.</span><span class="sxs-lookup"><span data-stu-id="53ce1-404">Move the position of the simulated hand relative to its current position, in meters.</span></span>
+<span data-ttu-id="68e0c-404">Переместить положение моделируемой руки относительно ее текущей должности в метрах.</span><span class="sxs-lookup"><span data-stu-id="68e0c-404">Move the position of the simulated hand relative to its current position, in meters.</span></span>
 
-<span data-ttu-id="53ce1-405">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-405">Parameters</span></span>
-* <span data-ttu-id="53ce1-406">Трансляция - трансляции имитации вручную.</span><span class="sxs-lookup"><span data-stu-id="53ce1-406">translation - The amount to translate the simulated hand.</span></span>
+<span data-ttu-id="68e0c-405">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-405">Parameters</span></span>
+* <span data-ttu-id="68e0c-406">перевод — величина, на которую переводятся смоделированные руки.</span><span class="sxs-lookup"><span data-stu-id="68e0c-406">translation - The amount to translate the simulated hand.</span></span>
 
-<span data-ttu-id="53ce1-407">**Microsoft.PerceptionSimulation.ISimulatedHand.PerformGesture(Microsoft.PerceptionSimulation.SimulatedGesture)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-407">**Microsoft.PerceptionSimulation.ISimulatedHand.PerformGesture(Microsoft.PerceptionSimulation.SimulatedGesture)**</span></span>
+<span data-ttu-id="68e0c-407">**Microsoft. Перцептионсимулатион. Исимулатедханд. Перформжестуре (Microsoft. Перцептионсимулатион. Симулатеджестуре)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-407">**Microsoft.PerceptionSimulation.ISimulatedHand.PerformGesture(Microsoft.PerceptionSimulation.SimulatedGesture)**</span></span>
 
-<span data-ttu-id="53ce1-408">Сделайте жест, с помощью имитации вручную.</span><span class="sxs-lookup"><span data-stu-id="53ce1-408">Perform a gesture using the simulated hand.</span></span>  <span data-ttu-id="53ce1-409">Она будет только обнаружена системой при включении Рука.</span><span class="sxs-lookup"><span data-stu-id="53ce1-409">It will only be detected by the system if the hand is enabled.</span></span>
+<span data-ttu-id="68e0c-408">Выполните жест, используя имитацию руки.</span><span class="sxs-lookup"><span data-stu-id="68e0c-408">Perform a gesture using the simulated hand.</span></span>  <span data-ttu-id="68e0c-409">Она будет обнаружена системой только в том случае, если она включена.</span><span class="sxs-lookup"><span data-stu-id="68e0c-409">It will only be detected by the system if the hand is enabled.</span></span>
 
-<span data-ttu-id="53ce1-410">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-410">Parameters</span></span>
-* <span data-ttu-id="53ce1-411">жест - жестов для выполнения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-411">gesture - The gesture to perform.</span></span>
+<span data-ttu-id="68e0c-410">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-410">Parameters</span></span>
+* <span data-ttu-id="68e0c-411">жест — жест, который необходимо выполнить.</span><span class="sxs-lookup"><span data-stu-id="68e0c-411">gesture - The gesture to perform.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedhand2"></a><span data-ttu-id="53ce1-412">Microsoft.PerceptionSimulation.ISimulatedHand2</span><span class="sxs-lookup"><span data-stu-id="53ce1-412">Microsoft.PerceptionSimulation.ISimulatedHand2</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhand2"></a><span data-ttu-id="68e0c-412">Microsoft. Перцептионсимулатион. ISimulatedHand2</span><span class="sxs-lookup"><span data-stu-id="68e0c-412">Microsoft.PerceptionSimulation.ISimulatedHand2</span></span>
 
-<span data-ttu-id="53ce1-413">Путем приведения ISimulatedHand для ISimulatedHand2 доступны дополнительные свойства.</span><span class="sxs-lookup"><span data-stu-id="53ce1-413">Additional properties are available by casting an ISimulatedHand to ISimulatedHand2.</span></span>
+<span data-ttu-id="68e0c-413">Дополнительные свойства доступны путем приведения Исимулатедханд к ISimulatedHand2.</span><span class="sxs-lookup"><span data-stu-id="68e0c-413">Additional properties are available by casting an ISimulatedHand to ISimulatedHand2.</span></span>
 ```
 public interface ISimulatedHand2
 {
@@ -898,13 +898,13 @@ public interface ISimulatedHand2
 }
 ```
 
-<span data-ttu-id="53ce1-414">**Microsoft.PerceptionSimulation.ISimulatedHand2.Orientation**</span><span class="sxs-lookup"><span data-stu-id="53ce1-414">**Microsoft.PerceptionSimulation.ISimulatedHand2.Orientation**</span></span>
+<span data-ttu-id="68e0c-414">**Microsoft. Перцептионсимулатион. ISimulatedHand2. Orientation**</span><span class="sxs-lookup"><span data-stu-id="68e0c-414">**Microsoft.PerceptionSimulation.ISimulatedHand2.Orientation**</span></span>
 
-<span data-ttu-id="53ce1-415">Получить или задать угол поворота имитации вручную.</span><span class="sxs-lookup"><span data-stu-id="53ce1-415">Retrieve or set the rotation of the simulated hand.</span></span>  <span data-ttu-id="53ce1-416">Положительное радианах поворот по часовой стрелке, при взгляде на оси.</span><span class="sxs-lookup"><span data-stu-id="53ce1-416">Positive radians rotate clockwise when looking along the axis.</span></span>
+<span data-ttu-id="68e0c-415">Возвращает или задает поворот моделируемой руки.</span><span class="sxs-lookup"><span data-stu-id="68e0c-415">Retrieve or set the rotation of the simulated hand.</span></span>  <span data-ttu-id="68e0c-416">Положительные радианы при просмотре по оси поворачиваются по часовой стрелке.</span><span class="sxs-lookup"><span data-stu-id="68e0c-416">Positive radians rotate clockwise when looking along the axis.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedhand3"></a><span data-ttu-id="53ce1-417">Microsoft.PerceptionSimulation.ISimulatedHand3</span><span class="sxs-lookup"><span data-stu-id="53ce1-417">Microsoft.PerceptionSimulation.ISimulatedHand3</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhand3"></a><span data-ttu-id="68e0c-417">Microsoft. Перцептионсимулатион. ISimulatedHand3</span><span class="sxs-lookup"><span data-stu-id="68e0c-417">Microsoft.PerceptionSimulation.ISimulatedHand3</span></span>
 
-<span data-ttu-id="53ce1-418">Доступны дополнительные свойства путем приведения ISimulatedHand для ISimulatedHand3</span><span class="sxs-lookup"><span data-stu-id="53ce1-418">Additional properties are available by casting an ISimulatedHand to ISimulatedHand3</span></span>
+<span data-ttu-id="68e0c-418">Дополнительные свойства доступны путем приведения Исимулатедханд к ISimulatedHand3.</span><span class="sxs-lookup"><span data-stu-id="68e0c-418">Additional properties are available by casting an ISimulatedHand to ISimulatedHand3</span></span>
 ```
 public interface ISimulatedHand3
 {
@@ -915,22 +915,22 @@ public interface ISimulatedHand3
 }
 ```
 
-<span data-ttu-id="53ce1-419">**Microsoft.PerceptionSimulation.ISimulatedHand3.GetJointConfiguration**</span><span class="sxs-lookup"><span data-stu-id="53ce1-419">**Microsoft.PerceptionSimulation.ISimulatedHand3.GetJointConfiguration**</span></span>
+<span data-ttu-id="68e0c-419">**Microsoft. Перцептионсимулатион. ISimulatedHand3. Жетжоинтконфигуратион**</span><span class="sxs-lookup"><span data-stu-id="68e0c-419">**Microsoft.PerceptionSimulation.ISimulatedHand3.GetJointConfiguration**</span></span>
 
-<span data-ttu-id="53ce1-420">Получите совместные конфигурацию для указанного соединения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-420">Get the joint configuration for the specified joint.</span></span>
+<span data-ttu-id="68e0c-420">Получение конфигурации соединения для указанного соединения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-420">Get the joint configuration for the specified joint.</span></span>
 
-<span data-ttu-id="53ce1-421">**Microsoft.PerceptionSimulation.ISimulatedHand3.SetJointConfiguration**</span><span class="sxs-lookup"><span data-stu-id="53ce1-421">**Microsoft.PerceptionSimulation.ISimulatedHand3.SetJointConfiguration**</span></span>
+<span data-ttu-id="68e0c-421">**Microsoft. Перцептионсимулатион. ISimulatedHand3. Сетжоинтконфигуратион**</span><span class="sxs-lookup"><span data-stu-id="68e0c-421">**Microsoft.PerceptionSimulation.ISimulatedHand3.SetJointConfiguration**</span></span>
 
-<span data-ttu-id="53ce1-422">Определить совместные конфигурацию для указанного соединения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-422">Set the joint configuration for the specified joint.</span></span>
+<span data-ttu-id="68e0c-422">Задает конфигурацию соединения для указанного соединения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-422">Set the joint configuration for the specified joint.</span></span>
 
-<span data-ttu-id="53ce1-423">**Microsoft.PerceptionSimulation.ISimulatedHand3.SetHandPose**</span><span class="sxs-lookup"><span data-stu-id="53ce1-423">**Microsoft.PerceptionSimulation.ISimulatedHand3.SetHandPose**</span></span>
+<span data-ttu-id="68e0c-423">**Microsoft. Перцептионсимулатион. ISimulatedHand3. Сесандпосе**</span><span class="sxs-lookup"><span data-stu-id="68e0c-423">**Microsoft.PerceptionSimulation.ISimulatedHand3.SetHandPose**</span></span>
 
-<span data-ttu-id="53ce1-424">Значение Рука известных поза с необязательный флаг для анимации.</span><span class="sxs-lookup"><span data-stu-id="53ce1-424">Set the hand to a known pose with an optional flag to animate.</span></span>  <span data-ttu-id="53ce1-425">Примечание: анимация не привести соединений, немедленно отражения их окончательной объединенной конфигурации.</span><span class="sxs-lookup"><span data-stu-id="53ce1-425">Note: animating won't result in joints immediately reflecting their final joint configurations.</span></span>
+<span data-ttu-id="68e0c-424">Задайте для параметра "рука" известное значение с необязательным флагом для анимации.</span><span class="sxs-lookup"><span data-stu-id="68e0c-424">Set the hand to a known pose with an optional flag to animate.</span></span>  <span data-ttu-id="68e0c-425">Примечание. анимация не приведет к тому, что присоединения будут немедленно отражены в своих окончательно Объединенных конфигурациях.</span><span class="sxs-lookup"><span data-stu-id="68e0c-425">Note: animating won't result in joints immediately reflecting their final joint configurations.</span></span>
 
 
-### <a name="microsoftperceptionsimulationisimulatedhead"></a><span data-ttu-id="53ce1-426">Microsoft.PerceptionSimulation.ISimulatedHead</span><span class="sxs-lookup"><span data-stu-id="53ce1-426">Microsoft.PerceptionSimulation.ISimulatedHead</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhead"></a><span data-ttu-id="68e0c-426">Microsoft. Перцептионсимулатион. Исимулатедхеад</span><span class="sxs-lookup"><span data-stu-id="68e0c-426">Microsoft.PerceptionSimulation.ISimulatedHead</span></span>
 
-<span data-ttu-id="53ce1-427">Интерфейс, описывающий заголовок как имитации человеку.</span><span class="sxs-lookup"><span data-stu-id="53ce1-427">Interface describing the head of the simulated human.</span></span>
+<span data-ttu-id="68e0c-427">Интерфейс, описывающий заголовок имитации человека.</span><span class="sxs-lookup"><span data-stu-id="68e0c-427">Interface describing the head of the simulated human.</span></span>
 
 ```
 public interface ISimulatedHead
@@ -942,28 +942,28 @@ public interface ISimulatedHead
 }
 ```
 
-<span data-ttu-id="53ce1-428">**Microsoft.PerceptionSimulation.ISimulatedHead.WorldPosition**</span><span class="sxs-lookup"><span data-stu-id="53ce1-428">**Microsoft.PerceptionSimulation.ISimulatedHead.WorldPosition**</span></span>
+<span data-ttu-id="68e0c-428">**Microsoft. Перцептионсимулатион. Исимулатедхеад. Ворлдпоситион**</span><span class="sxs-lookup"><span data-stu-id="68e0c-428">**Microsoft.PerceptionSimulation.ISimulatedHead.WorldPosition**</span></span>
 
-<span data-ttu-id="53ce1-429">Получите позицию узла по всему миру, в метрах.</span><span class="sxs-lookup"><span data-stu-id="53ce1-429">Retrieve the position of the node with relation to the world, in meters.</span></span>
+<span data-ttu-id="68e0c-429">Получение расположения узла относительно мира в метрах.</span><span class="sxs-lookup"><span data-stu-id="68e0c-429">Retrieve the position of the node with relation to the world, in meters.</span></span>
 
-<span data-ttu-id="53ce1-430">**Microsoft.PerceptionSimulation.ISimulatedHead.Rotation**</span><span class="sxs-lookup"><span data-stu-id="53ce1-430">**Microsoft.PerceptionSimulation.ISimulatedHead.Rotation**</span></span>
+<span data-ttu-id="68e0c-430">**Microsoft. Перцептионсимулатион. Исимулатедхеад. вращение**</span><span class="sxs-lookup"><span data-stu-id="68e0c-430">**Microsoft.PerceptionSimulation.ISimulatedHead.Rotation**</span></span>
 
-<span data-ttu-id="53ce1-431">Получите поворот головы имитации.</span><span class="sxs-lookup"><span data-stu-id="53ce1-431">Retrieve the rotation of the simulated head.</span></span> <span data-ttu-id="53ce1-432">Положительное радианах поворот по часовой стрелке, при взгляде на оси.</span><span class="sxs-lookup"><span data-stu-id="53ce1-432">Positive radians rotate clockwise when looking along the axis.</span></span>
+<span data-ttu-id="68e0c-431">Извлеките поворот моделируемой головки.</span><span class="sxs-lookup"><span data-stu-id="68e0c-431">Retrieve the rotation of the simulated head.</span></span> <span data-ttu-id="68e0c-432">Положительные радианы при просмотре по оси поворачиваются по часовой стрелке.</span><span class="sxs-lookup"><span data-stu-id="68e0c-432">Positive radians rotate clockwise when looking along the axis.</span></span>
 
-<span data-ttu-id="53ce1-433">**Microsoft.PerceptionSimulation.ISimulatedHead.Diameter**</span><span class="sxs-lookup"><span data-stu-id="53ce1-433">**Microsoft.PerceptionSimulation.ISimulatedHead.Diameter**</span></span>
+<span data-ttu-id="68e0c-433">**Microsoft. Перцептионсимулатион. Исимулатедхеад. диаметр**</span><span class="sxs-lookup"><span data-stu-id="68e0c-433">**Microsoft.PerceptionSimulation.ISimulatedHead.Diameter**</span></span>
 
-<span data-ttu-id="53ce1-434">Получите диаметр имитации головного элемента.</span><span class="sxs-lookup"><span data-stu-id="53ce1-434">Retrieve the simulated head's diameter.</span></span> <span data-ttu-id="53ce1-435">Это значение используется для определения center головного элемента (точка вращения).</span><span class="sxs-lookup"><span data-stu-id="53ce1-435">This value is used to determine the head's center (point of rotation).</span></span>
+<span data-ttu-id="68e0c-434">Получение диаметра смоделированного головного элемента.</span><span class="sxs-lookup"><span data-stu-id="68e0c-434">Retrieve the simulated head's diameter.</span></span> <span data-ttu-id="68e0c-435">Это значение используется для определения центра заголовка (точки вращения).</span><span class="sxs-lookup"><span data-stu-id="68e0c-435">This value is used to determine the head's center (point of rotation).</span></span>
 
-<span data-ttu-id="53ce1-436">**Microsoft.PerceptionSimulation.ISimulatedHead.Rotate(Microsoft.PerceptionSimulation.Rotation3)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-436">**Microsoft.PerceptionSimulation.ISimulatedHead.Rotate(Microsoft.PerceptionSimulation.Rotation3)**</span></span>
+<span data-ttu-id="68e0c-436">**Microsoft. Перцептионсимулатион. Исимулатедхеад. вращение (Microsoft. Перцептионсимулатион. Rotation3)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-436">**Microsoft.PerceptionSimulation.ISimulatedHead.Rotate(Microsoft.PerceptionSimulation.Rotation3)**</span></span>
 
-<span data-ttu-id="53ce1-437">Поворот имитации head относительно текущего вращения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-437">Rotate the simulated head relative to its current rotation.</span></span> <span data-ttu-id="53ce1-438">Положительное радианах поворот по часовой стрелке, при взгляде на оси.</span><span class="sxs-lookup"><span data-stu-id="53ce1-438">Positive radians rotate clockwise when looking along the axis.</span></span>
+<span data-ttu-id="68e0c-437">Поворот смоделированной головки относительно текущего поворота.</span><span class="sxs-lookup"><span data-stu-id="68e0c-437">Rotate the simulated head relative to its current rotation.</span></span> <span data-ttu-id="68e0c-438">Положительные радианы при просмотре по оси поворачиваются по часовой стрелке.</span><span class="sxs-lookup"><span data-stu-id="68e0c-438">Positive radians rotate clockwise when looking along the axis.</span></span>
 
-<span data-ttu-id="53ce1-439">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-439">Parameters</span></span>
-* <span data-ttu-id="53ce1-440">Поворот - сумму для поворота.</span><span class="sxs-lookup"><span data-stu-id="53ce1-440">rotation - The amount to rotate.</span></span>
+<span data-ttu-id="68e0c-439">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-439">Parameters</span></span>
+* <span data-ttu-id="68e0c-440">вращение — величина поворота.</span><span class="sxs-lookup"><span data-stu-id="68e0c-440">rotation - The amount to rotate.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedhead2"></a><span data-ttu-id="53ce1-441">Microsoft.PerceptionSimulation.ISimulatedHead2</span><span class="sxs-lookup"><span data-stu-id="53ce1-441">Microsoft.PerceptionSimulation.ISimulatedHead2</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhead2"></a><span data-ttu-id="68e0c-441">Microsoft. Перцептионсимулатион. ISimulatedHead2</span><span class="sxs-lookup"><span data-stu-id="68e0c-441">Microsoft.PerceptionSimulation.ISimulatedHead2</span></span>
 
-<span data-ttu-id="53ce1-442">Доступны дополнительные свойства путем приведения ISimulatedHead для ISimulatedHead2</span><span class="sxs-lookup"><span data-stu-id="53ce1-442">Additional properties are available by casting an ISimulatedHead to ISimulatedHead2</span></span>
+<span data-ttu-id="68e0c-442">Дополнительные свойства доступны путем приведения Исимулатедхеад к ISimulatedHead2.</span><span class="sxs-lookup"><span data-stu-id="68e0c-442">Additional properties are available by casting an ISimulatedHead to ISimulatedHead2</span></span>
 
 ```
 public interface ISimulatedHead2
@@ -973,13 +973,13 @@ public interface ISimulatedHead2
 }
 ```
 
-<span data-ttu-id="53ce1-443">**Microsoft.PerceptionSimulation.ISimulatedHead2.Eyes**</span><span class="sxs-lookup"><span data-stu-id="53ce1-443">**Microsoft.PerceptionSimulation.ISimulatedHead2.Eyes**</span></span>
+<span data-ttu-id="68e0c-443">**Microsoft. Перцептионсимулатион. ISimulatedHead2. глаза**</span><span class="sxs-lookup"><span data-stu-id="68e0c-443">**Microsoft.PerceptionSimulation.ISimulatedHead2.Eyes**</span></span>
 
-<span data-ttu-id="53ce1-444">Получите с точки зрения как имитации человеку.</span><span class="sxs-lookup"><span data-stu-id="53ce1-444">Retrieve the eyes of the simulated human.</span></span>
+<span data-ttu-id="68e0c-444">Извлеките глаза имитации человека.</span><span class="sxs-lookup"><span data-stu-id="68e0c-444">Retrieve the eyes of the simulated human.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedsixdofcontroller"></a><span data-ttu-id="53ce1-445">Microsoft.PerceptionSimulation.ISimulatedSixDofController</span><span class="sxs-lookup"><span data-stu-id="53ce1-445">Microsoft.PerceptionSimulation.ISimulatedSixDofController</span></span>
+### <a name="microsoftperceptionsimulationisimulatedsixdofcontroller"></a><span data-ttu-id="68e0c-445">Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер</span><span class="sxs-lookup"><span data-stu-id="68e0c-445">Microsoft.PerceptionSimulation.ISimulatedSixDofController</span></span>
 
-<span data-ttu-id="53ce1-446">Интерфейс, описывающий 6 DOF контроллер, связанный с имитации отдела.</span><span class="sxs-lookup"><span data-stu-id="53ce1-446">Interface describing a 6-DOF controller associated with the simulated human.</span></span>
+<span data-ttu-id="68e0c-446">Интерфейс, описывающий ДОФ контроллер, связанный с имитируемым человеком.</span><span class="sxs-lookup"><span data-stu-id="68e0c-446">Interface describing a 6-DOF controller associated with the simulated human.</span></span>
 
 ```
 public interface ISimulatedSixDofController
@@ -996,62 +996,62 @@ public interface ISimulatedSixDofController
 }
 ```
 
-<span data-ttu-id="53ce1-447">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.WorldPosition**</span><span class="sxs-lookup"><span data-stu-id="53ce1-447">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.WorldPosition**</span></span>
+<span data-ttu-id="68e0c-447">**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. Ворлдпоситион**</span><span class="sxs-lookup"><span data-stu-id="68e0c-447">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.WorldPosition**</span></span>
 
-<span data-ttu-id="53ce1-448">Получите позицию узла по всему миру, в метрах.</span><span class="sxs-lookup"><span data-stu-id="53ce1-448">Retrieve the position of the node with relation to the world, in meters.</span></span>
+<span data-ttu-id="68e0c-448">Получение расположения узла относительно мира в метрах.</span><span class="sxs-lookup"><span data-stu-id="68e0c-448">Retrieve the position of the node with relation to the world, in meters.</span></span>
 
-<span data-ttu-id="53ce1-449">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Status**</span><span class="sxs-lookup"><span data-stu-id="53ce1-449">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Status**</span></span>
+<span data-ttu-id="68e0c-449">**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. status**</span><span class="sxs-lookup"><span data-stu-id="68e0c-449">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Status**</span></span>
 
-<span data-ttu-id="53ce1-450">Получить или задать текущее состояние контроллера.</span><span class="sxs-lookup"><span data-stu-id="53ce1-450">Retrieve or set the current state of the controller.</span></span>  <span data-ttu-id="53ce1-451">Состояние контроллера должно быть присвоено значение, отличные от Off перед любым вызовом перемещение, поворот и нажмите кнопки будет выполнена успешно.</span><span class="sxs-lookup"><span data-stu-id="53ce1-451">The controller status must be set to a value other than Off before any calls to move, rotate or press buttons will succeed.</span></span>
+<span data-ttu-id="68e0c-450">Возвращает или задает текущее состояние контроллера.</span><span class="sxs-lookup"><span data-stu-id="68e0c-450">Retrieve or set the current state of the controller.</span></span>  <span data-ttu-id="68e0c-451">Для состояния контроллера должно быть задано значение, отличное от OFF, прежде чем все вызовы для перемещения, вращения или нажатия кнопки будут выполнены.</span><span class="sxs-lookup"><span data-stu-id="68e0c-451">The controller status must be set to a value other than Off before any calls to move, rotate or press buttons will succeed.</span></span>
 
-<span data-ttu-id="53ce1-452">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Position**</span><span class="sxs-lookup"><span data-stu-id="53ce1-452">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Position**</span></span>
+<span data-ttu-id="68e0c-452">**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. положением**</span><span class="sxs-lookup"><span data-stu-id="68e0c-452">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Position**</span></span>
 
-<span data-ttu-id="53ce1-453">Получить или задать положение виртуального контроллера относительно как человеку в метрах.</span><span class="sxs-lookup"><span data-stu-id="53ce1-453">Retrieve or set the position of the simulated controller relative to the human, in meters.</span></span>
+<span data-ttu-id="68e0c-453">Получение или установка положения имитации контроллера относительно человека в метрах.</span><span class="sxs-lookup"><span data-stu-id="68e0c-453">Retrieve or set the position of the simulated controller relative to the human, in meters.</span></span>
 
-<span data-ttu-id="53ce1-454">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Orientation**</span><span class="sxs-lookup"><span data-stu-id="53ce1-454">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Orientation**</span></span>
+<span data-ttu-id="68e0c-454">**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. Orientation**</span><span class="sxs-lookup"><span data-stu-id="68e0c-454">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Orientation**</span></span>
 
-<span data-ttu-id="53ce1-455">Получить или задать ориентацию имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="53ce1-455">Retrieve or set the orientation of the simulated controller.</span></span>
+<span data-ttu-id="68e0c-455">Получение или установка ориентации имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="68e0c-455">Retrieve or set the orientation of the simulated controller.</span></span>
 
-<span data-ttu-id="53ce1-456">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Move(Microsoft.PerceptionSimulation.Vector3)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-456">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Move(Microsoft.PerceptionSimulation.Vector3)**</span></span>
+<span data-ttu-id="68e0c-456">**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. Move (Microsoft. Перцептионсимулатион. Vector3)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-456">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Move(Microsoft.PerceptionSimulation.Vector3)**</span></span>
 
-<span data-ttu-id="53ce1-457">Изменить положение виртуального контроллера относительно текущей позиции, в метрах.</span><span class="sxs-lookup"><span data-stu-id="53ce1-457">Move the position of the simulated controller relative to its current position, in meters.</span></span>
+<span data-ttu-id="68e0c-457">Переместить положение имитации контроллера относительно его текущего положения в метрах.</span><span class="sxs-lookup"><span data-stu-id="68e0c-457">Move the position of the simulated controller relative to its current position, in meters.</span></span>
 
-<span data-ttu-id="53ce1-458">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-458">Parameters</span></span>
-* <span data-ttu-id="53ce1-459">Трансляция - трансляции имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="53ce1-459">translation - The amount to translate the simulated controller.</span></span>
+<span data-ttu-id="68e0c-458">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-458">Parameters</span></span>
+* <span data-ttu-id="68e0c-459">перевод — это величина, на которую нужно перевести имитируемый контроллер.</span><span class="sxs-lookup"><span data-stu-id="68e0c-459">translation - The amount to translate the simulated controller.</span></span>
 
-<span data-ttu-id="53ce1-460">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.PressButton(SimulatedSixDofControllerButton)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-460">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.PressButton(SimulatedSixDofControllerButton)**</span></span>
+<span data-ttu-id="68e0c-460">**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. Прессбуттон (Симулатедсиксдофконтроллербуттон)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-460">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.PressButton(SimulatedSixDofControllerButton)**</span></span>
 
-<span data-ttu-id="53ce1-461">Нажмите кнопку имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="53ce1-461">Press a button on the simulated controller.</span></span>  <span data-ttu-id="53ce1-462">Она будет только обнаружена системой при включении контроллера.</span><span class="sxs-lookup"><span data-stu-id="53ce1-462">It will only be detected by the system if the controller is enabled.</span></span>
+<span data-ttu-id="68e0c-461">Нажмите кнопку на имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="68e0c-461">Press a button on the simulated controller.</span></span>  <span data-ttu-id="68e0c-462">Она будет обнаружена системой только в том случае, если контроллер включен.</span><span class="sxs-lookup"><span data-stu-id="68e0c-462">It will only be detected by the system if the controller is enabled.</span></span>
 
-<span data-ttu-id="53ce1-463">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-463">Parameters</span></span>
-* <span data-ttu-id="53ce1-464">Кнопка - клавиши.</span><span class="sxs-lookup"><span data-stu-id="53ce1-464">button - The button to press.</span></span>
+<span data-ttu-id="68e0c-463">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-463">Parameters</span></span>
+* <span data-ttu-id="68e0c-464">Кнопка для нажатия кнопки.</span><span class="sxs-lookup"><span data-stu-id="68e0c-464">button - The button to press.</span></span>
 
-<span data-ttu-id="53ce1-465">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.ReleaseButton(SimulatedSixDofControllerButton)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-465">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.ReleaseButton(SimulatedSixDofControllerButton)**</span></span>
+<span data-ttu-id="68e0c-465">**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. Релеасебуттон (Симулатедсиксдофконтроллербуттон)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-465">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.ReleaseButton(SimulatedSixDofControllerButton)**</span></span>
 
-<span data-ttu-id="53ce1-466">Отпустите кнопку на контроллере имитации.</span><span class="sxs-lookup"><span data-stu-id="53ce1-466">Release a button on the simulated controller.</span></span>  <span data-ttu-id="53ce1-467">Она будет только обнаружена системой при включении контроллера.</span><span class="sxs-lookup"><span data-stu-id="53ce1-467">It will only be detected by the system if the controller is enabled.</span></span>
+<span data-ttu-id="68e0c-466">Выпустите кнопку на имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="68e0c-466">Release a button on the simulated controller.</span></span>  <span data-ttu-id="68e0c-467">Она будет обнаружена системой только в том случае, если контроллер включен.</span><span class="sxs-lookup"><span data-stu-id="68e0c-467">It will only be detected by the system if the controller is enabled.</span></span>
 
-<span data-ttu-id="53ce1-468">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-468">Parameters</span></span>
-* <span data-ttu-id="53ce1-469">Кнопка — для освобождения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-469">button - The button to release.</span></span>
+<span data-ttu-id="68e0c-468">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-468">Parameters</span></span>
+* <span data-ttu-id="68e0c-469">Кнопка для выпуска.</span><span class="sxs-lookup"><span data-stu-id="68e0c-469">button - The button to release.</span></span>
 
-<span data-ttu-id="53ce1-470">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.GetTouchpadPosition (out float, float)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-470">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.GetTouchpadPosition(out float, out float)**</span></span>
+<span data-ttu-id="68e0c-470">**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. Жеттаучпадпоситион (out float, out float)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-470">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.GetTouchpadPosition(out float, out float)**</span></span>
 
-<span data-ttu-id="53ce1-471">Получает позицию имитации пальцем на сенсорной панели имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="53ce1-471">Get the position of a simulated finger on the simulated controller's touchpad.</span></span>
+<span data-ttu-id="68e0c-471">Получить расположение имитации пальца на сенсорной панели имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="68e0c-471">Get the position of a simulated finger on the simulated controller's touchpad.</span></span>
 
-<span data-ttu-id="53ce1-472">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-472">Parameters</span></span>
-* <span data-ttu-id="53ce1-473">x - горизонтальное положение пальца.</span><span class="sxs-lookup"><span data-stu-id="53ce1-473">x - The horizontal position of the finger.</span></span>
-* <span data-ttu-id="53ce1-474">y - вертикальное положение пальца.</span><span class="sxs-lookup"><span data-stu-id="53ce1-474">y - The vertical position of the finger.</span></span>
+<span data-ttu-id="68e0c-472">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-472">Parameters</span></span>
+* <span data-ttu-id="68e0c-473">x — горизонтальное расположение пальца.</span><span class="sxs-lookup"><span data-stu-id="68e0c-473">x - The horizontal position of the finger.</span></span>
+* <span data-ttu-id="68e0c-474">y — вертикальное расположение пальца.</span><span class="sxs-lookup"><span data-stu-id="68e0c-474">y - The vertical position of the finger.</span></span>
 
-<span data-ttu-id="53ce1-475">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.SetTouchpadPosition (float, float)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-475">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.SetTouchpadPosition(float, float)**</span></span>
+<span data-ttu-id="68e0c-475">**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. Сеттаучпадпоситион (float, float)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-475">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.SetTouchpadPosition(float, float)**</span></span>
 
-<span data-ttu-id="53ce1-476">Установка для позиции имитации палец на сенсорной панели имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="53ce1-476">Set the position of a simulated finger on the simulated controller's touchpad.</span></span>
+<span data-ttu-id="68e0c-476">Установите расположение имитации пальца на сенсорной панели имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="68e0c-476">Set the position of a simulated finger on the simulated controller's touchpad.</span></span>
 
-<span data-ttu-id="53ce1-477">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-477">Parameters</span></span>
-* <span data-ttu-id="53ce1-478">x - горизонтальное положение пальца.</span><span class="sxs-lookup"><span data-stu-id="53ce1-478">x - The horizontal position of the finger.</span></span>
-* <span data-ttu-id="53ce1-479">y - вертикальное положение пальца.</span><span class="sxs-lookup"><span data-stu-id="53ce1-479">y - The vertical position of the finger.</span></span>
+<span data-ttu-id="68e0c-477">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-477">Parameters</span></span>
+* <span data-ttu-id="68e0c-478">x — горизонтальное расположение пальца.</span><span class="sxs-lookup"><span data-stu-id="68e0c-478">x - The horizontal position of the finger.</span></span>
+* <span data-ttu-id="68e0c-479">y — вертикальное расположение пальца.</span><span class="sxs-lookup"><span data-stu-id="68e0c-479">y - The vertical position of the finger.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedsixdofcontroller2"></a><span data-ttu-id="53ce1-480">Microsoft.PerceptionSimulation.ISimulatedSixDofController2</span><span class="sxs-lookup"><span data-stu-id="53ce1-480">Microsoft.PerceptionSimulation.ISimulatedSixDofController2</span></span>
+### <a name="microsoftperceptionsimulationisimulatedsixdofcontroller2"></a><span data-ttu-id="68e0c-480">Microsoft. Перцептионсимулатион. ISimulatedSixDofController2</span><span class="sxs-lookup"><span data-stu-id="68e0c-480">Microsoft.PerceptionSimulation.ISimulatedSixDofController2</span></span>
 
-<span data-ttu-id="53ce1-481">Дополнительные свойства и методы доступны путем приведения ISimulatedSixDofController для ISimulatedSixDofController2</span><span class="sxs-lookup"><span data-stu-id="53ce1-481">Additional properties and methods are available by casting an ISimulatedSixDofController to ISimulatedSixDofController2</span></span>
+<span data-ttu-id="68e0c-481">Дополнительные свойства и методы доступны путем приведения Исимулатедсиксдофконтроллер к ISimulatedSixDofController2.</span><span class="sxs-lookup"><span data-stu-id="68e0c-481">Additional properties and methods are available by casting an ISimulatedSixDofController to ISimulatedSixDofController2</span></span>
 
 ```
 public interface ISimulatedSixDofController2
@@ -1063,30 +1063,30 @@ public interface ISimulatedSixDofController2
 }
 ```
 
-<span data-ttu-id="53ce1-482">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.GetThumbstickPosition (out float, float)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-482">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.GetThumbstickPosition(out float, out float)**</span></span>
+<span data-ttu-id="68e0c-482">**Microsoft. Перцептионсимулатион. ISimulatedSixDofController2. Жетсумбстиккпоситион (out float, out float)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-482">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.GetThumbstickPosition(out float, out float)**</span></span>
 
-<span data-ttu-id="53ce1-483">Получает позицию имитации джойстик имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="53ce1-483">Get the position of the simulated thumbstick on the simulated controller.</span></span>
+<span data-ttu-id="68e0c-483">Получение расположения имитации аналогового стика на имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="68e0c-483">Get the position of the simulated thumbstick on the simulated controller.</span></span>
 
-<span data-ttu-id="53ce1-484">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-484">Parameters</span></span>
-* <span data-ttu-id="53ce1-485">x - горизонтальное положение джойстик.</span><span class="sxs-lookup"><span data-stu-id="53ce1-485">x - The horizontal position of the thumbstick.</span></span>
-* <span data-ttu-id="53ce1-486">y - вертикальное положение джойстик.</span><span class="sxs-lookup"><span data-stu-id="53ce1-486">y - The vertical position of the thumbstick.</span></span>
+<span data-ttu-id="68e0c-484">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-484">Parameters</span></span>
+* <span data-ttu-id="68e0c-485">x — горизонтальное расположение стика.</span><span class="sxs-lookup"><span data-stu-id="68e0c-485">x - The horizontal position of the thumbstick.</span></span>
+* <span data-ttu-id="68e0c-486">y — вертикальное расположение стика.</span><span class="sxs-lookup"><span data-stu-id="68e0c-486">y - The vertical position of the thumbstick.</span></span>
 
-<span data-ttu-id="53ce1-487">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.SetThumbstickPosition (float, float)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-487">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.SetThumbstickPosition(float, float)**</span></span>
+<span data-ttu-id="68e0c-487">**Microsoft. Перцептионсимулатион. ISimulatedSixDofController2. Сетсумбстиккпоситион (float, float)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-487">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.SetThumbstickPosition(float, float)**</span></span>
 
-<span data-ttu-id="53ce1-488">Установка для позиции имитации джойстик имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="53ce1-488">Set the position of the simulated thumbstick on the simulated controller.</span></span>
+<span data-ttu-id="68e0c-488">Задайте расположение имитации аналогового стика на имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="68e0c-488">Set the position of the simulated thumbstick on the simulated controller.</span></span>
 
-<span data-ttu-id="53ce1-489">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-489">Parameters</span></span>
-* <span data-ttu-id="53ce1-490">x - горизонтальное положение джойстик.</span><span class="sxs-lookup"><span data-stu-id="53ce1-490">x - The horizontal position of the thumbstick.</span></span>
-* <span data-ttu-id="53ce1-491">y - вертикальное положение джойстик.</span><span class="sxs-lookup"><span data-stu-id="53ce1-491">y - The vertical position of the thumbstick.</span></span>
+<span data-ttu-id="68e0c-489">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-489">Parameters</span></span>
+* <span data-ttu-id="68e0c-490">x — горизонтальное расположение стика.</span><span class="sxs-lookup"><span data-stu-id="68e0c-490">x - The horizontal position of the thumbstick.</span></span>
+* <span data-ttu-id="68e0c-491">y — вертикальное расположение стика.</span><span class="sxs-lookup"><span data-stu-id="68e0c-491">y - The vertical position of the thumbstick.</span></span>
 
-<span data-ttu-id="53ce1-492">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.BatteryLevel**</span><span class="sxs-lookup"><span data-stu-id="53ce1-492">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.BatteryLevel**</span></span>
+<span data-ttu-id="68e0c-492">**Microsoft. Перцептионсимулатион. ISimulatedSixDofController2. Баттерилевел**</span><span class="sxs-lookup"><span data-stu-id="68e0c-492">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.BatteryLevel**</span></span>
 
-<span data-ttu-id="53ce1-493">Извлечение или уровня заряда батареи имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="53ce1-493">Retrieve or set the battery level of the simulated controller.</span></span>  <span data-ttu-id="53ce1-494">Значение должно быть больше 0,0 и меньше или равна 100,0.</span><span class="sxs-lookup"><span data-stu-id="53ce1-494">The value must be greater than 0.0 and less than or equal to 100.0.</span></span>
+<span data-ttu-id="68e0c-493">Получение или установка уровня заряда батареи для имитации контроллера.</span><span class="sxs-lookup"><span data-stu-id="68e0c-493">Retrieve or set the battery level of the simulated controller.</span></span>  <span data-ttu-id="68e0c-494">Значение должно быть больше 0,0 и меньше или равно 100,0.</span><span class="sxs-lookup"><span data-stu-id="68e0c-494">The value must be greater than 0.0 and less than or equal to 100.0.</span></span>
 
 
-### <a name="microsoftperceptionsimulationisimulatedeyes"></a><span data-ttu-id="53ce1-495">Microsoft.PerceptionSimulation.ISimulatedEyes</span><span class="sxs-lookup"><span data-stu-id="53ce1-495">Microsoft.PerceptionSimulation.ISimulatedEyes</span></span>
+### <a name="microsoftperceptionsimulationisimulatedeyes"></a><span data-ttu-id="68e0c-495">Microsoft. Перцептионсимулатион. Исимулатедэйес</span><span class="sxs-lookup"><span data-stu-id="68e0c-495">Microsoft.PerceptionSimulation.ISimulatedEyes</span></span>
 
-<span data-ttu-id="53ce1-496">Интерфейс, описывающий с точки зрения как имитации человеку.</span><span class="sxs-lookup"><span data-stu-id="53ce1-496">Interface describing the eyes of the simulated human.</span></span>
+<span data-ttu-id="68e0c-496">Интерфейс, описывающий глаза имитации человека.</span><span class="sxs-lookup"><span data-stu-id="68e0c-496">Interface describing the eyes of the simulated human.</span></span>
 
 ```
 public interface ISimulatedEyes
@@ -1098,29 +1098,29 @@ public interface ISimulatedEyes
 }
 ```
 
-<span data-ttu-id="53ce1-497">**Microsoft.PerceptionSimulation.ISimulatedEyes.Rotation**</span><span class="sxs-lookup"><span data-stu-id="53ce1-497">**Microsoft.PerceptionSimulation.ISimulatedEyes.Rotation**</span></span>
+<span data-ttu-id="68e0c-497">**Microsoft. Перцептионсимулатион. Исимулатедэйес. вращение**</span><span class="sxs-lookup"><span data-stu-id="68e0c-497">**Microsoft.PerceptionSimulation.ISimulatedEyes.Rotation**</span></span>
 
-<span data-ttu-id="53ce1-498">Получите угол поворота имитации глаза.</span><span class="sxs-lookup"><span data-stu-id="53ce1-498">Retrieve the rotation of the simulated eyes.</span></span> <span data-ttu-id="53ce1-499">Положительное радианах поворот по часовой стрелке, при взгляде на оси.</span><span class="sxs-lookup"><span data-stu-id="53ce1-499">Positive radians rotate clockwise when looking along the axis.</span></span>
+<span data-ttu-id="68e0c-498">Извлеките поворот имитации глаз.</span><span class="sxs-lookup"><span data-stu-id="68e0c-498">Retrieve the rotation of the simulated eyes.</span></span> <span data-ttu-id="68e0c-499">Положительные радианы при просмотре по оси поворачиваются по часовой стрелке.</span><span class="sxs-lookup"><span data-stu-id="68e0c-499">Positive radians rotate clockwise when looking along the axis.</span></span>
 
-<span data-ttu-id="53ce1-500">**Microsoft.PerceptionSimulation.ISimulatedEyes.Rotate(Microsoft.PerceptionSimulation.Rotation3)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-500">**Microsoft.PerceptionSimulation.ISimulatedEyes.Rotate(Microsoft.PerceptionSimulation.Rotation3)**</span></span>
+<span data-ttu-id="68e0c-500">**Microsoft. Перцептионсимулатион. Исимулатедэйес. вращение (Microsoft. Перцептионсимулатион. Rotation3)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-500">**Microsoft.PerceptionSimulation.ISimulatedEyes.Rotate(Microsoft.PerceptionSimulation.Rotation3)**</span></span>
 
-<span data-ttu-id="53ce1-501">Поворот имитации глаза относительно текущего вращения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-501">Rotate the simulated eyes relative to its current rotation.</span></span> <span data-ttu-id="53ce1-502">Положительное радианах поворот по часовой стрелке, при взгляде на оси.</span><span class="sxs-lookup"><span data-stu-id="53ce1-502">Positive radians rotate clockwise when looking along the axis.</span></span>
+<span data-ttu-id="68e0c-501">Поворот имитации глаз относительно текущего вращения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-501">Rotate the simulated eyes relative to its current rotation.</span></span> <span data-ttu-id="68e0c-502">Положительные радианы при просмотре по оси поворачиваются по часовой стрелке.</span><span class="sxs-lookup"><span data-stu-id="68e0c-502">Positive radians rotate clockwise when looking along the axis.</span></span>
 
-<span data-ttu-id="53ce1-503">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-503">Parameters</span></span>
-* <span data-ttu-id="53ce1-504">Поворот - сумму для поворота.</span><span class="sxs-lookup"><span data-stu-id="53ce1-504">rotation - The amount to rotate.</span></span>
+<span data-ttu-id="68e0c-503">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-503">Parameters</span></span>
+* <span data-ttu-id="68e0c-504">вращение — величина поворота.</span><span class="sxs-lookup"><span data-stu-id="68e0c-504">rotation - The amount to rotate.</span></span>
 
-<span data-ttu-id="53ce1-505">**Microsoft.PerceptionSimulation.ISimulatedEyes.CalibrationState**</span><span class="sxs-lookup"><span data-stu-id="53ce1-505">**Microsoft.PerceptionSimulation.ISimulatedEyes.CalibrationState**</span></span>
+<span data-ttu-id="68e0c-505">**Microsoft. Перцептионсимулатион. Исимулатедэйес. Калибратионстате**</span><span class="sxs-lookup"><span data-stu-id="68e0c-505">**Microsoft.PerceptionSimulation.ISimulatedEyes.CalibrationState**</span></span>
 
-<span data-ttu-id="53ce1-506">Получает или задает состояние калибровки имитации глаз.</span><span class="sxs-lookup"><span data-stu-id="53ce1-506">Retrieves or sets the calibration state of the simulated eyes.</span></span>
+<span data-ttu-id="68e0c-506">Возвращает или задает состояние калибровки для имитации глаз.</span><span class="sxs-lookup"><span data-stu-id="68e0c-506">Retrieves or sets the calibration state of the simulated eyes.</span></span>
 
-<span data-ttu-id="53ce1-507">**Microsoft.PerceptionSimulation.ISimulatedEyes.WorldPosition**</span><span class="sxs-lookup"><span data-stu-id="53ce1-507">**Microsoft.PerceptionSimulation.ISimulatedEyes.WorldPosition**</span></span>
+<span data-ttu-id="68e0c-507">**Microsoft. Перцептионсимулатион. Исимулатедэйес. Ворлдпоситион**</span><span class="sxs-lookup"><span data-stu-id="68e0c-507">**Microsoft.PerceptionSimulation.ISimulatedEyes.WorldPosition**</span></span>
 
-<span data-ttu-id="53ce1-508">Получите позицию узла по всему миру, в метрах.</span><span class="sxs-lookup"><span data-stu-id="53ce1-508">Retrieve the position of the node with relation to the world, in meters.</span></span>
+<span data-ttu-id="68e0c-508">Получение расположения узла относительно мира в метрах.</span><span class="sxs-lookup"><span data-stu-id="68e0c-508">Retrieve the position of the node with relation to the world, in meters.</span></span>
 
 
-### <a name="microsoftperceptionsimulationisimulationrecording"></a><span data-ttu-id="53ce1-509">Microsoft.PerceptionSimulation.ISimulationRecording</span><span class="sxs-lookup"><span data-stu-id="53ce1-509">Microsoft.PerceptionSimulation.ISimulationRecording</span></span>
+### <a name="microsoftperceptionsimulationisimulationrecording"></a><span data-ttu-id="68e0c-509">Microsoft. Перцептионсимулатион. Исимулатионрекординг</span><span class="sxs-lookup"><span data-stu-id="68e0c-509">Microsoft.PerceptionSimulation.ISimulationRecording</span></span>
 
-<span data-ttu-id="53ce1-510">Для воспроизведения загрузить интерфейс для взаимодействия с одной записью.</span><span class="sxs-lookup"><span data-stu-id="53ce1-510">Interface for interacting with a single recording loaded for playback.</span></span>
+<span data-ttu-id="68e0c-510">Интерфейс для взаимодействия с одной записью, загруженной для воспроизведения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-510">Interface for interacting with a single recording loaded for playback.</span></span>
 
 ```
 public interface ISimulationRecording
@@ -1134,36 +1134,36 @@ public interface ISimulationRecording
 };
 ```
 
-<span data-ttu-id="53ce1-511">**Microsoft.PerceptionSimulation.ISimulationRecording.DataTypes**</span><span class="sxs-lookup"><span data-stu-id="53ce1-511">**Microsoft.PerceptionSimulation.ISimulationRecording.DataTypes**</span></span>
+<span data-ttu-id="68e0c-511">**Типы Microsoft. Перцептионсимулатион. Исимулатионрекординг.**</span><span class="sxs-lookup"><span data-stu-id="68e0c-511">**Microsoft.PerceptionSimulation.ISimulationRecording.DataTypes**</span></span>
 
-<span data-ttu-id="53ce1-512">Извлекает список типов данных в записи.</span><span class="sxs-lookup"><span data-stu-id="53ce1-512">Retrieves the list of data types in the recording.</span></span>
+<span data-ttu-id="68e0c-512">Возвращает список типов данных в записи.</span><span class="sxs-lookup"><span data-stu-id="68e0c-512">Retrieves the list of data types in the recording.</span></span>
 
-<span data-ttu-id="53ce1-513">**Microsoft.PerceptionSimulation.ISimulationRecording.State**</span><span class="sxs-lookup"><span data-stu-id="53ce1-513">**Microsoft.PerceptionSimulation.ISimulationRecording.State**</span></span>
+<span data-ttu-id="68e0c-513">**Microsoft. Перцептионсимулатион. Исимулатионрекординг. State**</span><span class="sxs-lookup"><span data-stu-id="68e0c-513">**Microsoft.PerceptionSimulation.ISimulationRecording.State**</span></span>
 
-<span data-ttu-id="53ce1-514">Возвращает текущее состояние записи.</span><span class="sxs-lookup"><span data-stu-id="53ce1-514">Retrieves the current state of the recording.</span></span>
+<span data-ttu-id="68e0c-514">Извлекает текущее состояние записи.</span><span class="sxs-lookup"><span data-stu-id="68e0c-514">Retrieves the current state of the recording.</span></span>
 
-<span data-ttu-id="53ce1-515">**Microsoft.PerceptionSimulation.ISimulationRecording.Play**</span><span class="sxs-lookup"><span data-stu-id="53ce1-515">**Microsoft.PerceptionSimulation.ISimulationRecording.Play**</span></span>
+<span data-ttu-id="68e0c-515">**Microsoft. Перцептионсимулатион. Исимулатионрекординг. Play**</span><span class="sxs-lookup"><span data-stu-id="68e0c-515">**Microsoft.PerceptionSimulation.ISimulationRecording.Play**</span></span>
 
-<span data-ttu-id="53ce1-516">Запустите воспроизведение.</span><span class="sxs-lookup"><span data-stu-id="53ce1-516">Start the playback.</span></span> <span data-ttu-id="53ce1-517">Если запись приостановлена, воспроизведение возобновляется из приостановленного расположения; При остановке воспроизведения начнется в начале.</span><span class="sxs-lookup"><span data-stu-id="53ce1-517">If the recording is paused, playback will resume from the paused location; if stopped, playback will start at the beginning.</span></span> <span data-ttu-id="53ce1-518">Если уже воспроизведение, этот вызов учитывается.</span><span class="sxs-lookup"><span data-stu-id="53ce1-518">If already playing, this call is ignored.</span></span>
+<span data-ttu-id="68e0c-516">Запустите воспроизведение.</span><span class="sxs-lookup"><span data-stu-id="68e0c-516">Start the playback.</span></span> <span data-ttu-id="68e0c-517">Если запись приостановлена, воспроизведение будет возобновлено из приостановленного расположения. При остановке воспроизведение начнется с самого начала.</span><span class="sxs-lookup"><span data-stu-id="68e0c-517">If the recording is paused, playback will resume from the paused location; if stopped, playback will start at the beginning.</span></span> <span data-ttu-id="68e0c-518">Если воспроизведение уже проигрывается, этот вызов игнорируется.</span><span class="sxs-lookup"><span data-stu-id="68e0c-518">If already playing, this call is ignored.</span></span>
 
-<span data-ttu-id="53ce1-519">**Microsoft.PerceptionSimulation.ISimulationRecording.Pause**</span><span class="sxs-lookup"><span data-stu-id="53ce1-519">**Microsoft.PerceptionSimulation.ISimulationRecording.Pause**</span></span>
+<span data-ttu-id="68e0c-519">**Microsoft. Перцептионсимулатион. Исимулатионрекординг. Pause**</span><span class="sxs-lookup"><span data-stu-id="68e0c-519">**Microsoft.PerceptionSimulation.ISimulationRecording.Pause**</span></span>
 
-<span data-ttu-id="53ce1-520">Приостанавливает воспроизведение на текущем месте.</span><span class="sxs-lookup"><span data-stu-id="53ce1-520">Pauses the playback at its current location.</span></span> <span data-ttu-id="53ce1-521">Если запись остановлена, вызов игнорируется.</span><span class="sxs-lookup"><span data-stu-id="53ce1-521">If the recording is stopped, the call is ignored.</span></span>
+<span data-ttu-id="68e0c-520">Приостанавливает воспроизведение в текущем расположении.</span><span class="sxs-lookup"><span data-stu-id="68e0c-520">Pauses the playback at its current location.</span></span> <span data-ttu-id="68e0c-521">Если запись остановлена, вызов игнорируется.</span><span class="sxs-lookup"><span data-stu-id="68e0c-521">If the recording is stopped, the call is ignored.</span></span>
 
-<span data-ttu-id="53ce1-522">**Microsoft.PerceptionSimulation.ISimulationRecording.Seek(System.UInt64)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-522">**Microsoft.PerceptionSimulation.ISimulationRecording.Seek(System.UInt64)**</span></span>
+<span data-ttu-id="68e0c-522">**Microsoft. Перцептионсимулатион. Исимулатионрекординг. Seek (System. UInt64)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-522">**Microsoft.PerceptionSimulation.ISimulationRecording.Seek(System.UInt64)**</span></span>
 
-<span data-ttu-id="53ce1-523">Ищет запись в указанное время (в 100 наносекунд интервалов с самого начала) и приостановит выполнение в этом расположении.</span><span class="sxs-lookup"><span data-stu-id="53ce1-523">Seeks the recording to the specified time (in 100 nanoseconds intervals from the beginning) and pauses at that location.</span></span> <span data-ttu-id="53ce1-524">Если время выходит за пределы записи, оно было приостановлено в последнем фрейме.</span><span class="sxs-lookup"><span data-stu-id="53ce1-524">If the time is beyond the end of the recording, it is paused at the last frame.</span></span>
+<span data-ttu-id="68e0c-523">Ищет запись в указанное время (в 100 наносекундах с начала) и останавливается в этом расположении.</span><span class="sxs-lookup"><span data-stu-id="68e0c-523">Seeks the recording to the specified time (in 100 nanoseconds intervals from the beginning) and pauses at that location.</span></span> <span data-ttu-id="68e0c-524">Если время превышает окончание записи, оно приостанавливается на последнем кадре.</span><span class="sxs-lookup"><span data-stu-id="68e0c-524">If the time is beyond the end of the recording, it is paused at the last frame.</span></span>
 
-<span data-ttu-id="53ce1-525">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-525">Parameters</span></span>
-* <span data-ttu-id="53ce1-526">такты - время которого осуществляется поиск.</span><span class="sxs-lookup"><span data-stu-id="53ce1-526">ticks - The time to which to seek.</span></span>
+<span data-ttu-id="68e0c-525">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-525">Parameters</span></span>
+* <span data-ttu-id="68e0c-526">такты — время поиска.</span><span class="sxs-lookup"><span data-stu-id="68e0c-526">ticks - The time to which to seek.</span></span>
 
-<span data-ttu-id="53ce1-527">**Microsoft.PerceptionSimulation.ISimulationRecording.Stop**</span><span class="sxs-lookup"><span data-stu-id="53ce1-527">**Microsoft.PerceptionSimulation.ISimulationRecording.Stop**</span></span>
+<span data-ttu-id="68e0c-527">**Microsoft. Перцептионсимулатион. Исимулатионрекординг. останавливаться**</span><span class="sxs-lookup"><span data-stu-id="68e0c-527">**Microsoft.PerceptionSimulation.ISimulationRecording.Stop**</span></span>
 
-<span data-ttu-id="53ce1-528">Останавливает воспроизведение и сбрасывает позицию в начало.</span><span class="sxs-lookup"><span data-stu-id="53ce1-528">Stops the playback and resets the position to the beginning.</span></span>
+<span data-ttu-id="68e0c-528">Останавливает воспроизведение и сбрасывает текущую точку в начало.</span><span class="sxs-lookup"><span data-stu-id="68e0c-528">Stops the playback and resets the position to the beginning.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulationrecordingcallback"></a><span data-ttu-id="53ce1-529">Microsoft.PerceptionSimulation.ISimulationRecordingCallback</span><span class="sxs-lookup"><span data-stu-id="53ce1-529">Microsoft.PerceptionSimulation.ISimulationRecordingCallback</span></span>
+### <a name="microsoftperceptionsimulationisimulationrecordingcallback"></a><span data-ttu-id="68e0c-529">Microsoft. Перцептионсимулатион. Исимулатионрекордингкаллбакк</span><span class="sxs-lookup"><span data-stu-id="68e0c-529">Microsoft.PerceptionSimulation.ISimulationRecordingCallback</span></span>
 
-<span data-ttu-id="53ce1-530">Интерфейс для получения изменений состояния во время воспроизведения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-530">Interface for receiving state changes during playback.</span></span>
+<span data-ttu-id="68e0c-530">Интерфейс для получения изменений состояния во время воспроизведения.</span><span class="sxs-lookup"><span data-stu-id="68e0c-530">Interface for receiving state changes during playback.</span></span>
 
 ```
 public interface ISimulationRecordingCallback
@@ -1172,16 +1172,16 @@ public interface ISimulationRecordingCallback
 };
 ```
 
-<span data-ttu-id="53ce1-531">**Microsoft.PerceptionSimulation.ISimulationRecordingCallback.PlaybackStateChanged(Microsoft.PerceptionSimulation.PlaybackState)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-531">**Microsoft.PerceptionSimulation.ISimulationRecordingCallback.PlaybackStateChanged(Microsoft.PerceptionSimulation.PlaybackState)**</span></span>
+<span data-ttu-id="68e0c-531">**Microsoft. Перцептионсимулатион. Исимулатионрекордингкаллбакк. Плайбаккстатечанжед (Microsoft. Перцептионсимулатион. PlaybackState)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-531">**Microsoft.PerceptionSimulation.ISimulationRecordingCallback.PlaybackStateChanged(Microsoft.PerceptionSimulation.PlaybackState)**</span></span>
 
-<span data-ttu-id="53ce1-532">Вызывается, когда изменилось состояние ISimulationRecording воспроизведения.</span><span class="sxs-lookup"><span data-stu-id="53ce1-532">Called when an ISimulationRecording's playback state has changed.</span></span>
+<span data-ttu-id="68e0c-532">Вызывается при изменении состояния воспроизведения Исимулатионрекординг.</span><span class="sxs-lookup"><span data-stu-id="68e0c-532">Called when an ISimulationRecording's playback state has changed.</span></span>
 
-<span data-ttu-id="53ce1-533">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-533">Parameters</span></span>
-* <span data-ttu-id="53ce1-534">новое состояние - новое состояние записи.</span><span class="sxs-lookup"><span data-stu-id="53ce1-534">newState - The new state of the recording.</span></span>
+<span data-ttu-id="68e0c-533">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-533">Parameters</span></span>
+* <span data-ttu-id="68e0c-534">newState — новое состояние записи.</span><span class="sxs-lookup"><span data-stu-id="68e0c-534">newState - The new state of the recording.</span></span>
 
-### <a name="microsoftperceptionsimulationperceptionsimulationmanager"></a><span data-ttu-id="53ce1-535">Microsoft.PerceptionSimulation.PerceptionSimulationManager</span><span class="sxs-lookup"><span data-stu-id="53ce1-535">Microsoft.PerceptionSimulation.PerceptionSimulationManager</span></span>
+### <a name="microsoftperceptionsimulationperceptionsimulationmanager"></a><span data-ttu-id="68e0c-535">Microsoft. Перцептионсимулатион. Перцептионсимулатионманажер</span><span class="sxs-lookup"><span data-stu-id="68e0c-535">Microsoft.PerceptionSimulation.PerceptionSimulationManager</span></span>
 
-<span data-ttu-id="53ce1-536">Корневой объект для создания объектов восприятие моделирования.</span><span class="sxs-lookup"><span data-stu-id="53ce1-536">Root object for creating Perception Simulation objects.</span></span>
+<span data-ttu-id="68e0c-536">Корневой объект для создания объектов имитации восприятия.</span><span class="sxs-lookup"><span data-stu-id="68e0c-536">Root object for creating Perception Simulation objects.</span></span>
 
 ```
 public static class PerceptionSimulationManager
@@ -1192,56 +1192,56 @@ public static class PerceptionSimulationManager
     public static ISimulationRecording LoadPerceptionSimulationRecording(string path, ISimulationStreamSinkFactory factory, ISimulationRecordingCallback callback);
 ```
 
-<span data-ttu-id="53ce1-537">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationManager(Microsoft.PerceptionSimulation.ISimulationStreamSink)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-537">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationManager(Microsoft.PerceptionSimulation.ISimulationStreamSink)**</span></span>
+<span data-ttu-id="68e0c-537">**Microsoft. Перцептионсимулатион. Перцептионсимулатионманажер. Креатеперцептионсимулатионманажер (Microsoft. PerceptionSimulation. ISimulationStreamSink)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-537">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationManager(Microsoft.PerceptionSimulation.ISimulationStreamSink)**</span></span>
 
-<span data-ttu-id="53ce1-538">Создание объекта для создания имитации пакетов и их доставки в указанный приемник.</span><span class="sxs-lookup"><span data-stu-id="53ce1-538">Create on object for generating simulated packets and delivering them to the provided sink.</span></span>
+<span data-ttu-id="68e0c-538">Создать на объекте для создания смоделированных пакетов и доставки их в предоставленный приемник.</span><span class="sxs-lookup"><span data-stu-id="68e0c-538">Create on object for generating simulated packets and delivering them to the provided sink.</span></span>
 
-<span data-ttu-id="53ce1-539">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-539">Parameters</span></span>
-* <span data-ttu-id="53ce1-540">приемник - приемник, который будет получать все созданные пакеты.</span><span class="sxs-lookup"><span data-stu-id="53ce1-540">sink - The sink that will receive all generated packets.</span></span>
+<span data-ttu-id="68e0c-539">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-539">Parameters</span></span>
+* <span data-ttu-id="68e0c-540">приемник — приемник, который будет принимать все созданные пакеты.</span><span class="sxs-lookup"><span data-stu-id="68e0c-540">sink - The sink that will receive all generated packets.</span></span>
 
-<span data-ttu-id="53ce1-541">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="53ce1-541">Return value</span></span>
+<span data-ttu-id="68e0c-541">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="68e0c-541">Return value</span></span>
 
-<span data-ttu-id="53ce1-542">Созданный диспетчер.</span><span class="sxs-lookup"><span data-stu-id="53ce1-542">The created Manager.</span></span>
+<span data-ttu-id="68e0c-542">Созданный диспетчер.</span><span class="sxs-lookup"><span data-stu-id="68e0c-542">The created Manager.</span></span>
 
-<span data-ttu-id="53ce1-543">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationRecording(System.String)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-543">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationRecording(System.String)**</span></span>
+<span data-ttu-id="68e0c-543">**Microsoft. Перцептионсимулатион. Перцептионсимулатионманажер. Креатеперцептионсимулатионрекординг (System. String)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-543">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationRecording(System.String)**</span></span>
 
-<span data-ttu-id="53ce1-544">Создание приемника, который сохраняет все принимаемые пакеты в файл по указанному пути.</span><span class="sxs-lookup"><span data-stu-id="53ce1-544">Create a sink which stores all received packets in a file at the specified path.</span></span>
+<span data-ttu-id="68e0c-544">Создание приемника, в котором хранятся все полученные пакеты в файле по указанному пути.</span><span class="sxs-lookup"><span data-stu-id="68e0c-544">Create a sink which stores all received packets in a file at the specified path.</span></span>
 
-<span data-ttu-id="53ce1-545">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-545">Parameters</span></span>
-* <span data-ttu-id="53ce1-546">Path - путь к файлу для создания.</span><span class="sxs-lookup"><span data-stu-id="53ce1-546">path - The path of the file to create.</span></span>
+<span data-ttu-id="68e0c-545">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-545">Parameters</span></span>
+* <span data-ttu-id="68e0c-546">путь — путь к создаваемому файлу.</span><span class="sxs-lookup"><span data-stu-id="68e0c-546">path - The path of the file to create.</span></span>
 
-<span data-ttu-id="53ce1-547">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="53ce1-547">Return value</span></span>
+<span data-ttu-id="68e0c-547">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="68e0c-547">Return value</span></span>
 
-<span data-ttu-id="53ce1-548">Созданный приемник.</span><span class="sxs-lookup"><span data-stu-id="53ce1-548">The created sink.</span></span>
+<span data-ttu-id="68e0c-548">Созданный приемник.</span><span class="sxs-lookup"><span data-stu-id="68e0c-548">The created sink.</span></span>
 
-<span data-ttu-id="53ce1-549">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.LoadPerceptionSimulationRecording(System.String,Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-549">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.LoadPerceptionSimulationRecording(System.String,Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory)**</span></span>
+<span data-ttu-id="68e0c-549">**Microsoft. Перцептионсимулатион. Перцептионсимулатионманажер. Лоадперцептионсимулатионрекординг (System. String, Microsoft. PerceptionSimulation. ISimulationStreamSinkFactory)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-549">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.LoadPerceptionSimulationRecording(System.String,Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory)**</span></span>
 
-<span data-ttu-id="53ce1-550">Загрузите записи из указанного файла.</span><span class="sxs-lookup"><span data-stu-id="53ce1-550">Load a recording from the specified file.</span></span>
+<span data-ttu-id="68e0c-550">Загрузка записи из указанного файла.</span><span class="sxs-lookup"><span data-stu-id="68e0c-550">Load a recording from the specified file.</span></span>
 
-<span data-ttu-id="53ce1-551">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-551">Parameters</span></span>
-* <span data-ttu-id="53ce1-552">Path - путь к загружаемому файлу.</span><span class="sxs-lookup"><span data-stu-id="53ce1-552">path - The path of the file to load.</span></span>
-* <span data-ttu-id="53ce1-553">Фабрика - фабрики, используемые записи для создания ISimulationStreamSink при необходимости.</span><span class="sxs-lookup"><span data-stu-id="53ce1-553">factory - A factory used by the recording for creating an ISimulationStreamSink when required.</span></span>
+<span data-ttu-id="68e0c-551">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-551">Parameters</span></span>
+* <span data-ttu-id="68e0c-552">путь — путь к загружаемому файлу.</span><span class="sxs-lookup"><span data-stu-id="68e0c-552">path - The path of the file to load.</span></span>
+* <span data-ttu-id="68e0c-553">Factory — фабрика, используемая записью для создания Исимулатионстреамсинк при необходимости.</span><span class="sxs-lookup"><span data-stu-id="68e0c-553">factory - A factory used by the recording for creating an ISimulationStreamSink when required.</span></span>
 
-<span data-ttu-id="53ce1-554">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="53ce1-554">Return value</span></span>
+<span data-ttu-id="68e0c-554">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="68e0c-554">Return value</span></span>
 
-<span data-ttu-id="53ce1-555">Загрузить записи.</span><span class="sxs-lookup"><span data-stu-id="53ce1-555">The loaded recording.</span></span>
+<span data-ttu-id="68e0c-555">Загруженная запись.</span><span class="sxs-lookup"><span data-stu-id="68e0c-555">The loaded recording.</span></span>
 
-<span data-ttu-id="53ce1-556">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.LoadPerceptionSimulationRecording (System.String,Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory, Microsoft.PerceptionSimulation.ISimulationRecordingCallback)**</span><span class="sxs-lookup"><span data-stu-id="53ce1-556">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.LoadPerceptionSimulationRecording(System.String,Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory,Microsoft.PerceptionSimulation.ISimulationRecordingCallback)**</span></span>
+<span data-ttu-id="68e0c-556">**Microsoft. Перцептионсимулатион. Перцептионсимулатионманажер. Лоадперцептионсимулатионрекординг (System. String, Microsoft. PerceptionSimulation. ISimulationStreamSinkFactory, Microsoft. Перцептионсимулатион. Исимулатионрекордингкаллбакк)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-556">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.LoadPerceptionSimulationRecording(System.String,Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory,Microsoft.PerceptionSimulation.ISimulationRecordingCallback)**</span></span>
 
-<span data-ttu-id="53ce1-557">Загрузите записи из указанного файла.</span><span class="sxs-lookup"><span data-stu-id="53ce1-557">Load a recording from the specified file.</span></span>
+<span data-ttu-id="68e0c-557">Загрузка записи из указанного файла.</span><span class="sxs-lookup"><span data-stu-id="68e0c-557">Load a recording from the specified file.</span></span>
 
-<span data-ttu-id="53ce1-558">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-558">Parameters</span></span>
-* <span data-ttu-id="53ce1-559">Path - путь к загружаемому файлу.</span><span class="sxs-lookup"><span data-stu-id="53ce1-559">path - The path of the file to load.</span></span>
-* <span data-ttu-id="53ce1-560">Фабрика - фабрики, используемые записи для создания ISimulationStreamSink при необходимости.</span><span class="sxs-lookup"><span data-stu-id="53ce1-560">factory - A factory used by the recording for creating an ISimulationStreamSink when required.</span></span>
-* <span data-ttu-id="53ce1-561">обновляет обратного вызова, который получает обратный вызов - regrading записи состояния.</span><span class="sxs-lookup"><span data-stu-id="53ce1-561">callback - A callback which receives updates regrading the recording's status.</span></span>
+<span data-ttu-id="68e0c-558">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-558">Parameters</span></span>
+* <span data-ttu-id="68e0c-559">путь — путь к загружаемому файлу.</span><span class="sxs-lookup"><span data-stu-id="68e0c-559">path - The path of the file to load.</span></span>
+* <span data-ttu-id="68e0c-560">Factory — фабрика, используемая записью для создания Исимулатионстреамсинк при необходимости.</span><span class="sxs-lookup"><span data-stu-id="68e0c-560">factory - A factory used by the recording for creating an ISimulationStreamSink when required.</span></span>
+* <span data-ttu-id="68e0c-561">Callback — обратный вызов, который получает обновления с пределом состояния записи.</span><span class="sxs-lookup"><span data-stu-id="68e0c-561">callback - A callback which receives updates regrading the recording's status.</span></span>
 
-<span data-ttu-id="53ce1-562">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="53ce1-562">Return value</span></span>
+<span data-ttu-id="68e0c-562">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="68e0c-562">Return value</span></span>
 
-<span data-ttu-id="53ce1-563">Загрузить записи.</span><span class="sxs-lookup"><span data-stu-id="53ce1-563">The loaded recording.</span></span>
+<span data-ttu-id="68e0c-563">Загруженная запись.</span><span class="sxs-lookup"><span data-stu-id="68e0c-563">The loaded recording.</span></span>
 
-### <a name="microsoftperceptionsimulationstreamdatatypes"></a><span data-ttu-id="53ce1-564">Microsoft.PerceptionSimulation.StreamDataTypes</span><span class="sxs-lookup"><span data-stu-id="53ce1-564">Microsoft.PerceptionSimulation.StreamDataTypes</span></span>
+### <a name="microsoftperceptionsimulationstreamdatatypes"></a><span data-ttu-id="68e0c-564">Microsoft. Перцептионсимулатион. Стреамдататипес</span><span class="sxs-lookup"><span data-stu-id="68e0c-564">Microsoft.PerceptionSimulation.StreamDataTypes</span></span>
 
-<span data-ttu-id="53ce1-565">Описание различных типов потоковых данных.</span><span class="sxs-lookup"><span data-stu-id="53ce1-565">Describes the different types of stream data.</span></span>
+<span data-ttu-id="68e0c-565">Описывает различные типы потоковых данных.</span><span class="sxs-lookup"><span data-stu-id="68e0c-565">Describes the different types of stream data.</span></span>
 
 ```
 public enum StreamDataTypes
@@ -1256,37 +1256,37 @@ public enum StreamDataTypes
 }
 ```
 
-<span data-ttu-id="53ce1-566">**Microsoft.PerceptionSimulation.StreamDataTypes.None**</span><span class="sxs-lookup"><span data-stu-id="53ce1-566">**Microsoft.PerceptionSimulation.StreamDataTypes.None**</span></span>
+<span data-ttu-id="68e0c-566">**Microsoft. Перцептионсимулатион. Стреамдататипес. None**</span><span class="sxs-lookup"><span data-stu-id="68e0c-566">**Microsoft.PerceptionSimulation.StreamDataTypes.None**</span></span>
 
-<span data-ttu-id="53ce1-567">Значение sentinel, используемый для указания нет типов данных stream.</span><span class="sxs-lookup"><span data-stu-id="53ce1-567">A sentinel value used to indicate no stream data types.</span></span>
+<span data-ttu-id="68e0c-567">Значение Sentinel, используемое для обозначения отсутствия типов данных потока.</span><span class="sxs-lookup"><span data-stu-id="68e0c-567">A sentinel value used to indicate no stream data types.</span></span>
 
-<span data-ttu-id="53ce1-568">**Microsoft.PerceptionSimulation.StreamDataTypes.Head**</span><span class="sxs-lookup"><span data-stu-id="53ce1-568">**Microsoft.PerceptionSimulation.StreamDataTypes.Head**</span></span>
+<span data-ttu-id="68e0c-568">**Microsoft. Перцептионсимулатион. Стреамдататипес. Head**</span><span class="sxs-lookup"><span data-stu-id="68e0c-568">**Microsoft.PerceptionSimulation.StreamDataTypes.Head**</span></span>
 
-<span data-ttu-id="53ce1-569">Stream данные, касающиеся положение и ориентацию орла.</span><span class="sxs-lookup"><span data-stu-id="53ce1-569">Stream of data regarding the position and orientation of the head.</span></span>
+<span data-ttu-id="68e0c-569">Поток данных, относящийся к положению и ориентации головного элемента.</span><span class="sxs-lookup"><span data-stu-id="68e0c-569">Stream of data regarding the position and orientation of the head.</span></span>
 
-<span data-ttu-id="53ce1-570">**Microsoft.PerceptionSimulation.StreamDataTypes.Hands**</span><span class="sxs-lookup"><span data-stu-id="53ce1-570">**Microsoft.PerceptionSimulation.StreamDataTypes.Hands**</span></span>
+<span data-ttu-id="68e0c-570">**Microsoft. Перцептионсимулатион. Стреамдататипес. руки**</span><span class="sxs-lookup"><span data-stu-id="68e0c-570">**Microsoft.PerceptionSimulation.StreamDataTypes.Hands**</span></span>
 
-<span data-ttu-id="53ce1-571">Stream данные, касающиеся позиции и жесты руки.</span><span class="sxs-lookup"><span data-stu-id="53ce1-571">Stream of data regarding the position and gestures of hands.</span></span>
+<span data-ttu-id="68e0c-571">Поток данных о положении и жестах руки.</span><span class="sxs-lookup"><span data-stu-id="68e0c-571">Stream of data regarding the position and gestures of hands.</span></span>
 
-<span data-ttu-id="53ce1-572">**Microsoft.PerceptionSimulation.StreamDataTypes.SpatialMapping**</span><span class="sxs-lookup"><span data-stu-id="53ce1-572">**Microsoft.PerceptionSimulation.StreamDataTypes.SpatialMapping**</span></span>
+<span data-ttu-id="68e0c-572">**Microsoft. Перцептионсимулатион. Стреамдататипес. Спатиалмаппинг**</span><span class="sxs-lookup"><span data-stu-id="68e0c-572">**Microsoft.PerceptionSimulation.StreamDataTypes.SpatialMapping**</span></span>
 
-<span data-ttu-id="53ce1-573">Stream данные, касающиеся пространственное сопоставление среды.</span><span class="sxs-lookup"><span data-stu-id="53ce1-573">Stream of data regarding spatial mapping of the environment.</span></span>
+<span data-ttu-id="68e0c-573">Поток данных о пространственном сопоставлении среды.</span><span class="sxs-lookup"><span data-stu-id="68e0c-573">Stream of data regarding spatial mapping of the environment.</span></span>
 
-<span data-ttu-id="53ce1-574">**Microsoft.PerceptionSimulation.StreamDataTypes.Calibration**</span><span class="sxs-lookup"><span data-stu-id="53ce1-574">**Microsoft.PerceptionSimulation.StreamDataTypes.Calibration**</span></span>
+<span data-ttu-id="68e0c-574">**Microsoft. Перцептионсимулатион. Стреамдататипес. Калибровка**</span><span class="sxs-lookup"><span data-stu-id="68e0c-574">**Microsoft.PerceptionSimulation.StreamDataTypes.Calibration**</span></span>
 
-<span data-ttu-id="53ce1-575">Stream данные, касающиеся калибровки устройства.</span><span class="sxs-lookup"><span data-stu-id="53ce1-575">Stream of data regarding calibration of the device.</span></span> <span data-ttu-id="53ce1-576">Калибровка пакетов принимаются только системой в удаленном режиме.</span><span class="sxs-lookup"><span data-stu-id="53ce1-576">Calibration packets are only accepted by a system in Remote Mode.</span></span>
+<span data-ttu-id="68e0c-575">Поток данных, касающихся калибровки устройства.</span><span class="sxs-lookup"><span data-stu-id="68e0c-575">Stream of data regarding calibration of the device.</span></span> <span data-ttu-id="68e0c-576">Пакеты калибровки принимаются только системой в удаленном режиме.</span><span class="sxs-lookup"><span data-stu-id="68e0c-576">Calibration packets are only accepted by a system in Remote Mode.</span></span>
 
-<span data-ttu-id="53ce1-577">**Microsoft.PerceptionSimulation.StreamDataTypes.Environment**</span><span class="sxs-lookup"><span data-stu-id="53ce1-577">**Microsoft.PerceptionSimulation.StreamDataTypes.Environment**</span></span>
+<span data-ttu-id="68e0c-577">**Microsoft. Перцептионсимулатион. Стреамдататипес. Environment**</span><span class="sxs-lookup"><span data-stu-id="68e0c-577">**Microsoft.PerceptionSimulation.StreamDataTypes.Environment**</span></span>
 
-<span data-ttu-id="53ce1-578">Stream данные о среде устройства.</span><span class="sxs-lookup"><span data-stu-id="53ce1-578">Stream of data regarding the environment of the device.</span></span>
+<span data-ttu-id="68e0c-578">Поток данных о среде устройства.</span><span class="sxs-lookup"><span data-stu-id="68e0c-578">Stream of data regarding the environment of the device.</span></span>
 
-<span data-ttu-id="53ce1-579">**Microsoft.PerceptionSimulation.StreamDataTypes.All**</span><span class="sxs-lookup"><span data-stu-id="53ce1-579">**Microsoft.PerceptionSimulation.StreamDataTypes.All**</span></span>
+<span data-ttu-id="68e0c-579">**Microsoft. Перцептионсимулатион. Стреамдататипес. ALL**</span><span class="sxs-lookup"><span data-stu-id="68e0c-579">**Microsoft.PerceptionSimulation.StreamDataTypes.All**</span></span>
 
-<span data-ttu-id="53ce1-580">Значение sentinel, используемый для указания всех типов записанные данные.</span><span class="sxs-lookup"><span data-stu-id="53ce1-580">A sentinel value used to indicate all recorded data types.</span></span>
+<span data-ttu-id="68e0c-580">Значение Sentinel, используемое для указания всех записанных типов данных.</span><span class="sxs-lookup"><span data-stu-id="68e0c-580">A sentinel value used to indicate all recorded data types.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulationstreamsink"></a><span data-ttu-id="53ce1-581">Microsoft.PerceptionSimulation.ISimulationStreamSink</span><span class="sxs-lookup"><span data-stu-id="53ce1-581">Microsoft.PerceptionSimulation.ISimulationStreamSink</span></span>
+### <a name="microsoftperceptionsimulationisimulationstreamsink"></a><span data-ttu-id="68e0c-581">Microsoft. Перцептионсимулатион. Исимулатионстреамсинк</span><span class="sxs-lookup"><span data-stu-id="68e0c-581">Microsoft.PerceptionSimulation.ISimulationStreamSink</span></span>
 
-<span data-ttu-id="53ce1-582">Объект, который получает пакеты данных из потока моделирования.</span><span class="sxs-lookup"><span data-stu-id="53ce1-582">An object that receives data packets from a simulation stream.</span></span>
+<span data-ttu-id="68e0c-582">Объект, получающий пакеты данных из потока имитации.</span><span class="sxs-lookup"><span data-stu-id="68e0c-582">An object that receives data packets from a simulation stream.</span></span>
 
 ```
 public interface ISimulationStreamSink
@@ -1295,17 +1295,17 @@ public interface ISimulationStreamSink
 }
 ```
 
-<span data-ttu-id="53ce1-583">**Microsoft.PerceptionSimulation.ISimulationStreamSink.OnPacketReceived (целое число без знака длиной, пакет byte [])**</span><span class="sxs-lookup"><span data-stu-id="53ce1-583">**Microsoft.PerceptionSimulation.ISimulationStreamSink.OnPacketReceived(uint length, byte[] packet)**</span></span>
+<span data-ttu-id="68e0c-583">**Microsoft. Перцептионсимулатион. Исимулатионстреамсинк. Онпаккетрецеивед (длина uint, Byte [], пакет)**</span><span class="sxs-lookup"><span data-stu-id="68e0c-583">**Microsoft.PerceptionSimulation.ISimulationStreamSink.OnPacketReceived(uint length, byte[] packet)**</span></span>
 
-<span data-ttu-id="53ce1-584">Получает один пакет, внутренне типизированных и с контролем версий.</span><span class="sxs-lookup"><span data-stu-id="53ce1-584">Receives a single packet, which is internally typed and versioned.</span></span>
+<span data-ttu-id="68e0c-584">Получает один пакет, который внутренне типизирован и имеет версию.</span><span class="sxs-lookup"><span data-stu-id="68e0c-584">Receives a single packet, which is internally typed and versioned.</span></span>
 
-<span data-ttu-id="53ce1-585">Параметры</span><span class="sxs-lookup"><span data-stu-id="53ce1-585">Parameters</span></span>
-* <span data-ttu-id="53ce1-586">Длина — длина пакета.</span><span class="sxs-lookup"><span data-stu-id="53ce1-586">length - The length of the packet.</span></span>
-* <span data-ttu-id="53ce1-587">пакет - данные пакета.</span><span class="sxs-lookup"><span data-stu-id="53ce1-587">packet - The data of the packet.</span></span>
+<span data-ttu-id="68e0c-585">Параметры</span><span class="sxs-lookup"><span data-stu-id="68e0c-585">Parameters</span></span>
+* <span data-ttu-id="68e0c-586">Длина — Длина пакета.</span><span class="sxs-lookup"><span data-stu-id="68e0c-586">length - The length of the packet.</span></span>
+* <span data-ttu-id="68e0c-587">пакет — данные пакета.</span><span class="sxs-lookup"><span data-stu-id="68e0c-587">packet - The data of the packet.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulationstreamsinkfactory"></a><span data-ttu-id="53ce1-588">Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory</span><span class="sxs-lookup"><span data-stu-id="53ce1-588">Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory</span></span>
+### <a name="microsoftperceptionsimulationisimulationstreamsinkfactory"></a><span data-ttu-id="68e0c-588">Microsoft. Перцептионсимулатион. Исимулатионстреамсинкфактори</span><span class="sxs-lookup"><span data-stu-id="68e0c-588">Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory</span></span>
 
-<span data-ttu-id="53ce1-589">Объект, который создает ISimulationStreamSink.</span><span class="sxs-lookup"><span data-stu-id="53ce1-589">An object that creates ISimulationStreamSink.</span></span>
+<span data-ttu-id="68e0c-589">Объект, создающий Исимулатионстреамсинк.</span><span class="sxs-lookup"><span data-stu-id="68e0c-589">An object that creates ISimulationStreamSink.</span></span>
 
 ```
 public interface ISimulationStreamSinkFactory
@@ -1314,10 +1314,10 @@ public interface ISimulationStreamSinkFactory
 }
 ```
 
-<span data-ttu-id="53ce1-590">**Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory.CreateSimulationStreamSink()**</span><span class="sxs-lookup"><span data-stu-id="53ce1-590">**Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory.CreateSimulationStreamSink()**</span></span>
+<span data-ttu-id="68e0c-590">**Microsoft. Перцептионсимулатион. Исимулатионстреамсинкфактори. Креатесимулатионстреамсинк ()**</span><span class="sxs-lookup"><span data-stu-id="68e0c-590">**Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory.CreateSimulationStreamSink()**</span></span>
 
-<span data-ttu-id="53ce1-591">Создает один экземпляр ISimulationStreamSink.</span><span class="sxs-lookup"><span data-stu-id="53ce1-591">Creates a single instance of ISimulationStreamSink.</span></span>
+<span data-ttu-id="68e0c-591">Создает единственный экземпляр Исимулатионстреамсинк.</span><span class="sxs-lookup"><span data-stu-id="68e0c-591">Creates a single instance of ISimulationStreamSink.</span></span>
 
-<span data-ttu-id="53ce1-592">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="53ce1-592">Return value</span></span>
+<span data-ttu-id="68e0c-592">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="68e0c-592">Return value</span></span>
 
-<span data-ttu-id="53ce1-593">Созданный приемник.</span><span class="sxs-lookup"><span data-stu-id="53ce1-593">The created sink.</span></span>
+<span data-ttu-id="68e0c-593">Созданный приемник.</span><span class="sxs-lookup"><span data-stu-id="68e0c-593">The created sink.</span></span>
