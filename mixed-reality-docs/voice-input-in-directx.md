@@ -1,38 +1,38 @@
 ---
-title: Голосовой ввод в DirectX
-description: Объясняется, как реализовать голосовые команды и небольших распознавания фразы и предложения в приложение DirectX для Windows смешанной реальности.
+title: Ввод голоса в DirectX
+description: В этой статье объясняется, как реализовать голосовые команды и небольшие фразы и распознавание предложений в приложении DirectX для Windows Mixed Reality.
 author: MikeRiches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Пошаговое руководство, голосовых команд, фразы, распознавания, речи, directx, платформа, cortana, смешанной реальности windows
+keywords: Пошаговое руководство, голосовая команда, фраза, распознавание, речь, DirectX, платформа, Кортана, Windows Mixed Reality
 ms.openlocfilehash: 728457a495616e5f65ec3986dfb6ac60231f9e46
-ms.sourcegitcommit: f7fc9afdf4632dd9e59bd5493e974e4fec412fc4
+ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "59605103"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "63548664"
 ---
-# <a name="voice-input-in-directx"></a>Голосовой ввод в DirectX
+# <a name="voice-input-in-directx"></a>Ввод голоса в DirectX
 
-В этом разделе приведены сведения о реализации [голосовые команды](voice-input.md)и небольшой распознавания фразы и предложения в приложении DirectX для Windows смешанной реальности.
+В этом разделе объясняется, как реализовать [голосовые команды](voice-input.md)и небольшие фразы и распознавание предложений в приложении DirectX для Windows Mixed Reality.
 
 >[!NOTE]
->Фрагменты кода в этой статье, в настоящее время демонстрации применения C++/CX, а не C ++ 17-совместимым C++/WinRT в [ C++ шаблон проекта holographic](creating-a-holographic-directx-project.md).  Основные понятия будут эквивалентны C++/WinRT проекта, то, что необходимо преобразовать код в код.
+>Фрагменты кода в этой статье в настоящее время демонстрируют использование C++языка/CX вместо C + +17, соответствующего C++/WinRT, как используется в [ C++ шаблоне проекта holographic](creating-a-holographic-directx-project.md).  Понятия эквивалентны для проекта C++/WinRT, хотя код необходимо преобразовать.
 
-## <a name="use-a-speechrecognizer-for-continuous-recognition-of-voice-commands"></a>Использовать SpeechRecognizer для непрерывного распознавание голосовых команд
+## <a name="use-a-speechrecognizer-for-continuous-recognition-of-voice-commands"></a>Использование Спичрекогнизер для непрерывного распознавания голосовых команд
 
-В этом разделе описано, как пользоваться распознаванием речи непрерывной, чтобы включить голосовые команды в приложении. В этом пошаговом руководстве используется код из [HolographicVoiceInput](http://go.microsoft.com/fwlink/p/?LinkId=844964) образца. При запуске образца произнести имя одного из зарегистрированных цвет команд, чтобы изменить цвет вращающегося куба.
+В этом разделе описано, как использовать непрерывное распознавание речи для включения голосовых команд в приложение. В этом пошаговом руководстве используется код из примера [холографиквоицеинпут](http://go.microsoft.com/fwlink/p/?LinkId=844964) . При запуске образца говорите с именем одной из команд зарегистрированного цвета, чтобы изменить цвет вращающегося куба.
 
-Во-первых, создайте новый **Windows::Media::SpeechRecognition::SpeechRecognizer** экземпляра.
+Сначала создайте новый экземпляр **Windows:: Media:: спичрекогнитион:: спичрекогнизер** .
 
-Из *HolographicVoiceInputSampleMain::CreateSpeechConstraintsForCurrentState*:
+Из *холографиквоицеинпутсамплемаин:: креатеспичконстраинтсфоркуррентстате*:
 
 ```
 m_speechRecognizer = ref new SpeechRecognizer();
 ```
 
-Вам потребуется для создания списка команд речи для распознавателя для прослушивания. Здесь мы формируют набор команд для изменения цвета голограмма. Для большего удобства мы также создадим данные, мы будем использовать позже для команд.
+Для прослушивания распознавателя необходимо создать список речевых команд. Здесь мы создаем набор команд для изменения цвета голограммы. Для удобства мы также создадим данные, которые будут использоваться для команд далее.
 
 ```
 m_speechCommandList = ref new Platform::Collections::Vector<String^>();
@@ -57,14 +57,14 @@ m_speechCommandList = ref new Platform::Collections::Vector<String^>();
    m_speechCommandData.push_back(float4(1.f, 0.f, 1.f, 1.f));
 ```
 
-Можно указать команды, используя фонетическое слова, которые не могут быть в словаре:
+Команды можно указать с помощью фонетических слов, которые могут отсутствовать в словаре:
 
 ```
 m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-Список команд, загружаются в список ограничений для распознавателя речи. Это делается с помощью [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) объекта.
+Список команд загружается в список ограничений для распознавателя речи. Это делается с помощью объекта [спичрекогнитионлистконстраинт](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) .
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -83,7 +83,7 @@ SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListCon
    });
 ```
 
-Подпишитесь на [ResultGenerated](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx) событий в распознаватель речи [SpeechContinuousRecognitionSession](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx). Это событие уведомляет приложение, если один из ваших команд был распознан.
+Подпишитесь на событие [ресултженератед](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx) в [спичконтинуаусрекогнитионсессион](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx)распознавателя речи. Это событие уведомляет ваше приложение о том, что одна из команд распознана.
 
 ```
 m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
@@ -92,9 +92,9 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-Ваш **OnResultGenerated** обработчик событий получает данные события в [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) экземпляра. Если достоверности выше порогового значения, которые вы определили, приложения следует отметить, что произошло событие. Сохраните данные о событии, таким образом, чтобы использовать его в цикле последующие обновления.
+Обработчик событий **онресултженератед** получает данные события в экземпляре [спичконтинуаусрекогнитионресултженератедевентаргс](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) . Если достоверность превышает установленное пороговое значение, приложение должно отметить, что событие произошло. Сохраните данные события, чтобы их можно было использовать в последующем цикле обновления.
 
-Из *HolographicVoiceInputSampleMain.cpp*:
+Из *холографиквоицеинпутсамплемаин. cpp*:
 
 ```
 // Change the cube color, if we get a valid result.
@@ -107,9 +107,9 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
    }
 ```
 
-Сделать использования данных, тем не менее подходящий для вашего сценария приложения. В нашем примере кода мы изменить цвет голограмма вращающегося куба в соответствии с команды пользователя.
+Используйте данные, но применимы к сценарию приложения. В нашем примере кода мы изменим цвет для кубика с голограммой в соответствии с пользовательской командой.
 
-Из *HolographicVoiceInputSampleMain::Update*:
+Из *холографиквоицеинпутсамплемаин:: Update*:
 
 ```
 // Check for new speech input since the last frame.
@@ -132,17 +132,17 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
    }
 ```
 
-## <a name="use-dictation-for-one-shot-recognition-of-speech-phrases-and-sentences"></a>Использовать режим диктовки для одноразовой распознавания речи фразы и предложения
+## <a name="use-dictation-for-one-shot-recognition-of-speech-phrases-and-sentences"></a>Использование диктовки для одноразового распознавания речевых фраз и предложений
 
-Вы можете настроить распознаватель речи для прослушивания фраз или предложений, произносятся пользователем. В этом случае мы применяем SpeechRecognitionTopicConstraint, который сообщает в распознаватель речи, какой тип входных данных следует ожидать. Рабочий процесс приложения выглядит следующим образом, для такого варианта использования:
-1. Ваше приложение создает SpeechRecognizer, предоставляет приглашений пользовательского интерфейса и начинает прослушивание команд для произнесения немедленно.
-2. Пользователь произносит фразу или предложение.
-3. Распознавание речи пользователя выполняется и возвращает результат в приложение. На этом этапе приложение должно предоставлять запросы пользовательского интерфейса, показывающее, что произошло распознавания.
-4. В зависимости от уровня надежности, как нужно реагировать на них и уровень достоверности результата распознавания речи ваше приложение может обрабатывать результат и реагировать соответствующим образом.
+Вы можете настроить распознаватель речи для прослушивания фраз или предложений, произнесенных пользователем. В этом случае мы применяем Спичрекогнитионтопикконстраинт, который сообщает распознавателю распознавания речи, какой тип входных данных следует рассчитывать. Ниже приведен рабочий процесс приложения для этого типа сценария.
+1. Приложение создает Спичрекогнизер, предоставляет запросы пользовательского интерфейса и начинает прослушивание команды для немедленной речи.
+2. Пользователь говорит о фразе или предложении.
+3. Выполняется распознавание речи пользователя, и результат возвращается в приложение. На этом этапе приложение должно предоставить запрос пользовательского интерфейса, указывающий на то, что произошло распознавание.
+4. В зависимости от уровня достоверности, на который вы хотите ответить, и уровня достоверности результатов распознавания речи, приложение может обработать результат и ответить соответствующим образом.
 
-В этом разделе описывается создание SpeechRecognizer, компиляции ограничение и прослушивать речевого ввода.
+В этом разделе описывается создание Спичрекогнизер, компиляция ограничения и прослушивание речевого ввода.
 
-Следующий код компилирует ограничения раздела, которое в данном случае оптимизирован для поиска в Интернете.
+Следующий код компилирует ограничение раздела, которое в этом случае оптимизировано для поиска в Интернете.
 
 ```
 auto constraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::WebSearch, L"webSearch");
@@ -153,7 +153,7 @@ auto constraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScen
    {
 ```
 
-Если компиляция выполнена успешно, можно продолжить распознавания речи.
+Если компиляция выполнена, можно продолжить распознавание речи.
 
 ```
 try
@@ -168,7 +168,7 @@ try
                {
 ```
 
-Затем результат возвращается в приложение. Если мы приобрела достаточно уверенности в результат, мы сможем обработать команду. Данный пример кода обрабатывает результаты с уверенностью по крайней мере среднего размера.
+Затем результат возвращается приложению. Если у нас достаточно уверенности в результате, мы можем обработать команду. Этот пример кода обрабатывает результаты по крайней мере средней достоверности.
 
 ```
 try
@@ -209,7 +209,7 @@ try
                    }
 ```
 
-Каждый раз при использовании распознавания речи, необходимо следить за исключений, которые могут указывать, что пользователь отключил эту "микрофон" в параметрах конфиденциальности системы. Это может произойти во время инициализации или во время распознавания.
+При использовании распознавания речи следует следить за исключениями, которые могут означать, что пользователь отключил микрофон в настройках конфиденциальности системы. Это может произойти во время инициализации или во время распознавания.
 
 ```
 catch (Exception^ exception)
@@ -252,7 +252,7 @@ catch (Exception^ exception)
    });
 ```
 
-**ПРИМЕЧАНИЕ.** Несколько предопределенных [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) для оптимизации распознавания речи.
+**ПРИМЕЧАНИЕ.** Существует несколько предопределенных [спичрекогнитионсценариос](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) , доступных для оптимизации распознавания речи.
 * Если вы хотите оптимизировать для диктовки, используйте сценарий диктовки:
 
 ```
@@ -260,31 +260,31 @@ catch (Exception^ exception)
    auto dictationConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::Dictation, "dictation");
    m_speechRecognizer->Constraints->Append(dictationConstraint);
 ```
-* При использовании распознавания речи для выполнения поиска в Интернете, ограничение сценария веб задачи можно использовать следующим образом:
+* При использовании речи для поиска в Интернете можно использовать ограничение для веб-сценариев следующим образом.
 
 ```
 // Add a web search topic constraint to the recognizer.
    auto webSearchConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::WebSearch, "webSearch");
    speechRecognizer->Constraints->Append(webSearchConstraint);
 ```
-* Используйте ограничение формы для заполнения форм. В этом случае лучше применить собственные грамматики, которая оптимизирована для заполнения формы.
+* Используйте ограничение формы для заполнения форм. В этом случае лучше применить собственную грамматику, оптимизированную для заполнения формы.
 
 ```
 // Add a form constraint to the recognizer.
    auto formConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::FormFilling, "formFilling");
    speechRecognizer->Constraints->Append(formConstraint );
 ```
-* Вы можете предоставить собственные грамматики в формате SRGS.
+* Вы можете предоставить собственную грамматику, используя формат SRGS.
 
-## <a name="use-continuous-freeform-speech-dictation"></a>Использовать диктовки непрерывной, произвольные речи
+## <a name="use-continuous-freeform-speech-dictation"></a>Использование непрерывной диктовки в произвольных рукописных сообщениях
 
-См. в образце кода речи Windows 10 UWP для сценария непрерывной диктовки [здесь.](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp)
+См. пример кода речи Windows 10 UWP для сценария непрерывной диктовки [.](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp)
 
-## <a name="handle-degradation-in-quality"></a>Дескриптор снижение качества
+## <a name="handle-degradation-in-quality"></a>Ухудшение качества
 
-Условия в среде иногда мешает работе распознавания речи. Например возможно, комнате слишком часто срабатывает, или пользователь может произнести слишком большого объема. API распознавания речи предоставляет сведения, где это возможно, об условиях, которые привели к снижению качества.
+Иногда условия в среде могут препятствовать работе распознавания речи. Например, комната может оказаться слишком шумным или пользователь мог говорить на слишком высоком томе. API распознавания речи предоставляет сведения, где это возможно, о условиях, которые привели к ухудшению качества.
 
-Эта информация помещается в приложение с помощью события WinRT. Вот пример того, как подписаться на это событие.
+Эти сведения помещаются в приложение с помощью события WinRT. Ниже приведен пример подписки на это событие.
 
 ```
 m_speechRecognizer->RecognitionQualityDegrading +=
@@ -293,7 +293,7 @@ m_speechRecognizer->RecognitionQualityDegrading +=
            );
 ```
 
-В нашем примере мы выбираем для записи сведений условия в консоли отладки. Приложение может пожелать предоставить отзывы пользователю с помощью пользовательского интерфейса, синтеза речи и т. д., или может потребоваться работать по-разному, при прерывании речи временный снижение качества.
+В нашем примере кода мы решили записать сведения об условиях в консоль отладки. Приложение может захотеть предоставить отзыв пользователю через пользовательский интерфейс, синтез речи и т. д. или, если речь прерывается за счет временного снижения качества.
 
 ```
 void HolographicSpeechPromptSampleMain::OnSpeechQualityDegraded(SpeechRecognizer^ recognizer, SpeechRecognitionQualityDegradingEventArgs^ args)
@@ -332,7 +332,7 @@ void HolographicSpeechPromptSampleMain::OnSpeechQualityDegraded(SpeechRecognizer
    }
 ```
 
-Если вы не используете классы ссылок для создания приложения DirectX, необходимо отменить подписку на событие перед освобождением или повторном создании вашей распознаватель речи. HolographicSpeechPromptSample имеет процедуру для остановки распознавания и Отмена подписки на события следующим образом:
+Если вы не используете классы ссылок для создания приложения DirectX, необходимо отказаться от подписки на событие перед освобождением или повторным созданием распознавателя речи. В Холографикспичпромптсампле есть подпрограммы для прекращения распознавания и отмены подписки на события следующим образом:
 
 ```
 Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizerIfExists()
@@ -359,26 +359,26 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
    }
 ```
 
-## <a name="use-speech-synthesis-to-provide-audible-voice-prompts"></a>Используйте синтеза речи для предоставления звуковые голосовые инструкции
+## <a name="use-speech-synthesis-to-provide-audible-voice-prompts"></a>Использование синтеза речи для ввода голосовых запросов
 
-В примерах holographic речи используются синтеза речи в качестве звуковой инструкции для пользователя. В этом разделе рассматривается процесс создания образца синтезированного голоса и воспроизведение с помощью API-интерфейсы аудио HRTF.
+В пошаговых примерах holographic речь используется синтез речи для предоставления пользователю инструкций. В этом разделе рассматривается процесс создания примера синтезированного голоса и его воспроизведения с помощью API аудио ХРТФ.
 
-Необходимо предоставить свои собственные речи запросов при запросе ввода фразы. Это можно также полезно, указывающие при можно произношении голосовые команды для непрерывного распознавания сценария. Вот пример того, как сделать это с помощью синтезаторов речи; Обратите внимание на то, что можно также использовать предварительно записанные голосовое сообщение, пользовательский Интерфейс visual или другой индикатор того, что сказать, например в сценариях, где строки не является динамическим.
+При запросе ввода фразы необходимо указать собственные голосовые запросы. Это также может быть полезным для того, чтобы указать, когда можно говорить о голосовых командах, для сценария непрерывного распознавания. Ниже приведен пример того, как это сделать с помощью синтезатора речи. Обратите внимание, что можно также использовать предварительно записанный голосовый ролик, визуальный пользовательский интерфейс или другой индикатор того, что следует сказать, например в сценариях, где запрос не является динамическим.
 
-Во-первых создайте объект SpeechSynthesizer:
+Сначала создайте объект Спичсинсесизер:
 
 ```
 auto speechSynthesizer = ref new Windows::Media::SpeechSynthesis::SpeechSynthesizer();
 ```
 
-Необходимо также строка с текстом для синтезирования:
+Кроме того, требуется строка с текстом для синтезирования:
 
 ```
 // Phrase recognition works best when requesting a phrase or sentence.
    StringReference voicePrompt = L"At the prompt: Say a phrase, asking me to change the cube to a specific color.";
 ```
 
-Речь синтезировать асинхронно с помощью SynthesizeTextToStreamAsync. Здесь мы начнем асинхронной задачи для синтезирования речи.
+Речь засинтезирована асинхронно с помощью Синсесизетексттостреамасинк. Здесь мы начнем асинхронную задачу для синтезирования речи.
 
 ```
 create_task(speechSynthesizer->SynthesizeTextToStreamAsync(voicePrompt), task_continuation_context::use_current())
@@ -388,7 +388,7 @@ create_task(speechSynthesizer->SynthesizeTextToStreamAsync(voicePrompt), task_co
        {
 ```
 
-Синтеза речи отправляется в виде байтового потока. Мы можете инициализировать XAudio2 голоса с помощью этого потока байтов; наши примеры holographic кода мы воспроизводить его с аудио HRTF эффекта.
+Синтез речи отправляется в виде потока байтов. Мы можем инициализировать XAudio2 голоса, используя этот поток байтов. для наших примеров кода мы воспроизводим его как ХРТФ Audio.
 
 ```
 Windows::Media::SpeechSynthesis::SpeechSynthesisStream^ stream = synthesisStreamTask.get();
@@ -410,7 +410,7 @@ Windows::Media::SpeechSynthesis::SpeechSynthesisStream^ stream = synthesisStream
        }
 ```
 
-Как с помощью распознавания речи, синтеза речи будет создания исключения, если что-то пойдет не так.
+Как и при распознавании речи, синтез речи создает исключение, если что-то пойдет не так.
 
 ```
 catch (Exception^ exception)
@@ -427,6 +427,6 @@ catch (Exception^ exception)
 ```
 
 ## <a name="see-also"></a>См. также
-* [Проектирование приложений для распознавания речи](https://msdn.microsoft.com/library/dn596121.aspx)
-* [Пространственные звук в DirectX](spatial-sound-in-directx.md)
-* [Пример SpeechRecognitionAndSynthesis](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)
+* [Разработка речевых приложений](https://msdn.microsoft.com/library/dn596121.aspx)
+* [Пространственный звук в DirectX](spatial-sound-in-directx.md)
+* [Пример Спичрекогнитионандсинсесис](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)

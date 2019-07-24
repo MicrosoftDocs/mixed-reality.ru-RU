@@ -1,36 +1,36 @@
 ---
-title: Сопоставление общего доступа к
-description: Мэтт будет ввести описание.
+title: Совместное использование карт
+description: Мэтт будет записывать описание.
 author: yoyozilla
 ms.author: yoyoz
 ms.date: 10/02/2018
 ms.topic: article
-keywords: Matt заполнит их
+keywords: Мэтт заполнит эти поля
 ms.openlocfilehash: 25519f3752e9ed23ee355d03b952c2c6089bbb34
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59603703"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "63515264"
 ---
-# <a name="map-sharing"></a>Сопоставление общего доступа к
+# <a name="map-sharing"></a>Совместное использование карт
 
-Описывают, что это такое и зачем это нужно разработчиков
+Опишите, что это такое и зачем разработчики
 
-## <a name="section-one---maybe-an-outline"></a>Раздел, один — возможно структуры
+## <a name="section-one---maybe-an-outline"></a>Раздел один — возможно, структура
 
-Замещающий текст
+Текст заполнителя
 
-## <a name="feature-section"></a>Функция раздел
-
-### <a name="sub-section"></a>Подраздел
-
-Текст заполнителя подраздел
+## <a name="feature-section"></a>Раздел функций
 
 ### <a name="sub-section"></a>Подраздел
 
-Текст заполнителя подраздел
+Текст подраздела заполнителя
 
-## <a name="feature-section"></a>Функция раздел
+### <a name="sub-section"></a>Подраздел
 
-Применяется, если вы хотите или не удалите.
+Текст подраздела заполнителя
+
+## <a name="feature-section"></a>Раздел функций
+
+Используйте этот параметр, если хотите или удалить.

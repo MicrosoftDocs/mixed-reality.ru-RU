@@ -1,123 +1,123 @@
 ---
-title: Заметки о выпуске — август 2016 г.
-description: HoloLens заметки о выпуске для Windows 10 Anniversary выпуска (осенью 2016 г.)
+title: Заметки о выпуске — 2016 августа
+description: Заметки о выпуске HoloLens для годовщины Windows 10 (попадают 2016)
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: HoloLens, release notes, ОС, платформы, функции, пакет commercial suite
+keywords: HoloLens, заметки о выпуске, ОС, платформа, функции, коммерческий набор
 ms.openlocfilehash: 2fde8665f3572589abd3dcdfb3747ca487b66afb
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59603664"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "63524281"
 ---
-# <a name="release-notes---august-2016"></a>Заметки о выпуске — август 2016 г.
+# <a name="release-notes---august-2016"></a>Заметки о выпуске — 2016 августа
 
-Команда HoloLens относимся к отзывам, от разработчиков в программе предварительной оценки Windows для определения приоритета нашей работы. Переходите к [отзыв о нас](give-us-feedback.md) через Центр обратной связи, [форумы для разработчиков](https://forums.hololens.com) и [Twitter с помощью @HoloLens ](https://twitter.com/hololens). Как Windows 10 включает обновления Годовщина HoloLens team — рады доставлять улучшить в голографический интерфейс. В этом обновлении мы ознакомились с основной исправления, улучшения и вводные сведения о функциональных возможностей, запрашиваемых бизнесу и доступные в Microsoft HoloLens пакет Commercial Suite.
+Команда HoloLens прослушивает Отзывы разработчиков в программе предварительной оценки Windows, чтобы задать приоритеты для нашей работы. Отправьте [нам отзыв](give-us-feedback.md) через центр обратной связи, форумы для [разработчиков](https://forums.hololens.com) и [Twitter с помощью @HoloLens ](https://twitter.com/hololens). Так как в Windows 10 включено годовщина, Группа HoloLens с радостью попытается улучшить работу с Holographic. В этом обновлении мы посвящены основным исправлениям, улучшениям и внедрению функций, запрошенных компаниями и доступных в коммерческом наборе Microsoft HoloLens.
 
-**Последний выпуск:** Обновление Windows Holographic август 2016 г. (**10.0.14393.0**, Юбилейного выпуска Windows 10)
+**Последний выпуск:** Обновление Windows holographic 2016 августа (**10.0.14393.0**, Юбилейная версия Windows 10)
 
 >[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
-Для [обновление до текущего выпуска](updating-hololens.md)откройте *параметры* приложение, перейдите к *обновление и безопасность*, а затем выберите *проверять наличие обновлений* кнопка.
+Чтобы [обновить текущий выпуск](updating-hololens.md), откройте приложение " *Параметры* ", перейдите в раздел " *Обновление & безопасность*", а затем нажмите кнопку " *проверить обновления* ".
 
 ## <a name="new-features"></a>Новые возможности
 
-**Присоединение к отладке процесса** HoloLens теперь поддерживает присоединение к процессу отладки. Visual Studio 2015 с обновлением 3 можно использовать для подключения к выполняемому приложению на HoloLens и [начать его отладку](using-visual-studio.md#debugging-an-installed-or-running-app). Это работает без необходимости развертывать из проекта Visual Studio.
+**Присоединение к процессу отладки** HoloLens теперь поддерживает отладку присоединения к процессу. Вы можете использовать обновление 3 для Visual Studio 2015, чтобы подключиться к работающему приложению на HoloLens и [начать его отладку](using-visual-studio.md#debugging-an-installed-or-running-app). Это работает без необходимости развертывания из проекта Visual Studio.
 
-**Обновить эмулятор HoloLens** мы также выпустили обновленную версию эмулятора HoloLens.
+**Обновленный эмулятор HoloLens** Мы также выпустили обновленную версию эмулятора HoloLens.
 
-**Поддержка игровой** теперь можно связать и использование Bluetooth игровые панели с HoloLens! Недавно выпущенный S контроллера Xbox беспроводной функции Bluetooth возможности и может использоваться для воспроизведения в свои любимые игры с поддержкой игровой и приложений. Объект [обновление контроллера](http://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) должны применяться перед подключением S контроллера Xbox беспроводной связи с HoloLens. Поддерживается S контроллера Xbox беспроводной [XInput](https://msdn.microsoft.com/library/windows/desktop/hh405053(v=vs.85).aspx) и [Windows.Gaming.Input](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) API-интерфейсы. Дополнительные модели Bluetooth контроллеров может осуществляться через [Windows.Gaming.Input](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) API.
+**Поддержка игровых** устройств Теперь вы можете связывать и использовать игровые устройства Bluetooth с HoloLens! Недавно выпущенный адаптер Xbox Wireless поддерживает функции Bluetooth и может использоваться для воспроизведения избранных игр и приложений, поддерживающих игровой планшет. Перед подключением контроллера беспроводной сети Xbox к серверу HoloLens необходимо применить [Обновление контроллера](http://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) . Контроллер беспроводной связи Xbox S поддерживается интерфейсами API [ксинпут](https://msdn.microsoft.com/library/windows/desktop/hh405053(v=vs.85).aspx) и [Windows. Gaming. input.](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) Доступ к дополнительным моделям контроллеров Bluetooth можно получить с помощью API [Windows. Gaming. Input](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) .
 
 ## <a name="improvements-and-fixes"></a>Улучшения и исправления
 
-Мы синхронизированы с остальной частью Юбилейного обновления Windows 10, поэтому помимо определенные исправления Hololens, вы также получили описывает все преимущества из центра обновления Windows для повышения надежности платформы и производительности. Ваши отзывы очень с табличным значением и приоритеты для устранения проблемы в выпуске.
+Мы работаем над обновлением годовщины Windows 10, поэтому в дополнение к исправлениям для Hololens вы получаете также все самое самое от центра обновления Windows, чтобы повысить надежность и производительность платформы. Ваши отзывы очень значимы и имеют приоритет для исправлений в выпуске.
 
-Мы улучшили следующие задачи:
-* Войдите в возможности.
-* Присоединение к рабочему месту.
-* энергопотребление устройств power переходов между состояниями.
-* стабильной работы захватывает смешанной реальности.
-* надежность для подключения по Bluetooth
-* голограмма сохраняемости в сценарии с несколькими приложения.
+Мы улучшили следующие возможности:
+* Вход в систему.
+* присоединение к рабочей области.
+* Энергосбережение для переходов в состояние электропитания устройства.
+* стабильность с захватами смешанной реальности.
+* надежность подключения Bluetooth
+* сохраняемая голограмма в сценарии с несколькими приложениями.
 
-Исправлены следующие проблемы:
-* средства профилирования Visual Studio и отладчик графики не удалось подключиться.
-* фотографии и документы не отображаются в проводнике на портале устройства.
-* Панели приложения можно flash, когда курсор находится над ним в режиме изменения.
-* В режиме изменения глаз взглядом точки курсора изменится на курсор в виде стрелки 4 некоторое время медленнее.
-* «Эй Cortana воспроизведение музыки» не запускается Groove.
-* После предыдущего обновления о том, «Go Home» отображается на панели закрепления неправильно.
+Мы устранили следующие проблемы:
+* не удается подключиться к профилировщику и отладчику графики Visual Studio.
+* фотографии & документы не отображаются в проводнике на портале устройств.
+* Панель приложений может мигать, когда курсор помещается над ним в режиме корректировки.
+* В режиме корректировки курсор глаза будет меняться на указатель с 4 стрелками, что приведет к более медленной точке.
+* "Привет, Кортана, воспроизведение музыки" не запускает Groove.
+* После предыдущего обновления, говорящего на «Go Home», панель «контакты» не отображается правильно.
 
-## <a name="introducing-microsoft-hololens-commercial-suite"></a>Общие сведения о наборе Microsoft HoloLens коммерческих
+## <a name="introducing-microsoft-hololens-commercial-suite"></a>Знакомство с коммерческим набором Microsoft HoloLens
 
-Microsoft HoloLens пакет Commercial Suite готов для корпоративного развертывания. Мы добавили несколько запрашиваемые [возможности профессиональной](commercial-features.md) из наших ранних деловых партнеров.
+Коммерческий набор Microsoft HoloLens готов для корпоративного развертывания. Мы добавили несколько очень востребованных [коммерческих функций](commercial-features.md) от наших ранних бизнес-партнеров.
 
-Обратитесь к местному менеджеру Майкрософт для приобретения Microsoft HoloLens пакет Commercial Suite.
+Обратитесь к локальному менеджеру учетная запись Майкрософт, чтобы приобрести коммерческий набор Microsoft HoloLens.
 
-### <a name="key-commercial-features"></a>Основные коммерческие возможности 
+### <a name="key-commercial-features"></a>Основные коммерческие функции 
 
-* **Режим киоска.** Режим киоска HoloLens позволяет ограничить приложения, которые следует выполнить для включения демонстрации или демонстрации взаимодействия.<br>
-  ![В режиме киоска HoloLens запускается непосредственно в приложение по своему усмотрению.](images/201608-kioskmode-400px.png)
-* **Управление мобильными устройствами (MDM) для HoloLens.** Ваш ИТ-отдел может управлять несколькими устройствами HoloLens, одновременно с помощью решений, таких как Microsoft Intune. Можно изменять параметры, выбирать приложения для установки и задавать настройки безопасности в соответствии с потребностями вашей организации.<br>
-  ![Управление мобильными устройствами на HoloLens предоставляет корпоративное управление устройствами корпоративного уровня на нескольких устройствах.](images/201608-enterprisemanagement-400px.png)
-* **Центр обновления Windows для бизнеса.** Контролировал обновления операционной системы на устройствах и поддержка ветвь долгосрочного обслуживания.
-* **Безопасность данных.** Шифрование данных BitLocker с включенной HoloLens для предоставления тот же уровень защиты, как любые другие устройства Windows.
-* **Рабочий доступ.** Все пользователи в организации можно удаленно подключаться к корпоративной сети через виртуальную частную сеть на HoloLens. HoloLens также имеют доступ к сетям Wi-Fi, которым требуются учетные данные.
-* **Microsoft Store для бизнеса.** Ваш ИТ-отдел можно также настроить enterprise частного магазина, содержащий только приложений вашей компании для конкретного использования HoloLens. Безопасно распространять программное обеспечение предприятия для определенной группы пользователей предприятия.
+* **Режим киоска.** С помощью режима киоска HoloLens можно ограничить количество приложений, которые будут запускаться, чтобы включить демонстрационные или демонстрационные возможности.<br>
+  ![В режиме киоска HoloLens запускается непосредственно в выбранном приложении.](images/201608-kioskmode-400px.png)
+* **Управление мобильными устройствами (MDM) для HoloLens.** ИТ-отдел может управлять несколькими устройствами HoloLens одновременно, используя такие решения, как Microsoft Intune. Можно изменять параметры, выбирать приложения для установки и задавать настройки безопасности в соответствии с потребностями вашей организации.<br>
+  ![Управление мобильными устройствами в HoloLens обеспечивает управление устройствами корпоративного класса на нескольких устройствах.](images/201608-enterprisemanagement-400px.png)
+* **Центр обновления Windows для бизнеса.** Контролируемые обновления операционной системы на устройствах и поддержка долгосрочного обслуживания.
+* **Безопасность данных.** Шифрование данных BitLocker включено в HoloLens для обеспечения того же уровня защиты безопасности, что и любое другое устройство Windows.
+* **Рабочий доступ.** Любой пользователь в Организации может удаленно подключаться к корпоративной сети через виртуальную частную сеть на HoloLens. HoloLens также может получать доступ к сетям Wi-Fi, которым требуются учетные данные.
+* **Microsoft Store для бизнеса.** ИТ-отдел также может настроить корпоративное личное хранилище, содержащее только приложения вашей компании для конкретного использования HoloLens. Безопасное распространение корпоративного программного обеспечения в выбранную группу корпоративных пользователей.
 
-### <a name="development-edition-vs-commercial-suite"></a>Development Edition vs. Пакет Commercial Suite
+### <a name="development-edition-vs-commercial-suite"></a>Выпуск для разработки и Коммерческий набор
 
 <table>
 <tr>
-<th>Компоненты</th><th>Development Edition</th><th>Пакет Commercial Suite</th>
+<th>Компоненты</th><th>Выпуск для разработки</th><th>Коммерческий набор</th>
 </tr><tr>
-<td>Шифрование устройства (Bitlocker)</td><td></td><td style="text-align: center;">✔️</td>
+<td>Шифрование устройства (BitLocker)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>Виртуальная частная сеть (VPN)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="using-the-windows-device-portal.md#kiosk-mode">Полноэкранный режим</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="using-the-windows-device-portal.md#kiosk-mode">Режим киоска</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> Управление и развертывание</th>
 </tr><tr>
 <td>Управление мобильными устройствами (MDM)</td><td style="text-align: center;"></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Блокировать отмены регистрации</td><td></td><td style="text-align: center;">✔️</td>
+<td>Возможность блокировать отмену регистрации</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Доступа к корпоративной сети Wi-Fi на основе сертификатов</td><td></td><td style="text-align: center;">✔️</td>
+<td>Доступ к корпоративному Wi-Fi на основе сертификата</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Microsoft Store (потребитель)</td><td style="text-align: center;">Потребитель</td><td style="text-align: center;">Фильтрация с помощью MDM</td>
+<td>Microsoft Store (потребитель)</td><td style="text-align: center;">Потребителей</td><td style="text-align: center;">Фильтрация с помощью MDM</td>
 </tr><tr>
-<td><a href="https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps">Портал Store для бизнеса</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps">Портал бизнес-магазина</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> Безопасность и идентификация</th>
 </tr><tr>
-<td>Имя входа с Azure Active Directory (AAD)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Вход с Azure Active Directory (AAD)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Имя входа с учетной записью Майкрософт (MSA)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Вход с использованием учетной записи Майкрософт (MSA)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Разблокировать следующего поколения учетные данные с ПИН-код</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Учетные данные следующего поколения с разблокированием ПИН-кода</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td><a href="https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview">Безопасная загрузка</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<th colspan="3" style="text-align: left;"> Система обслуживания и поддержки</th>
+<th colspan="3" style="text-align: left;"> Обслуживание и поддержка</th>
 </tr><tr>
-<td>Автоматическая система обновляет при их поступлении</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Автоматические обновления системы по мере их поступления</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td><a href="https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business">Центр обновления Windows для бизнеса</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Ветвь обслуживания долгосрочной перспективе</td><td></td><td style="text-align: center;">✔️</td>
+<td>Долгосрочная ветвь обслуживания</td><td></td><td style="text-align: center;">✔️</td>
 </tr>
 </table>
 
-## <a name="prior-release-notes"></a>Заметки о выпуске для предыдущих
-* [Заметки о выпуске — май 2016 г.](release-notes-may-2016.md)
-* [Заметки о выпуске — март 2016 г.](release-notes-march-2016.md)
+## <a name="prior-release-notes"></a>Заметки о предыдущем выпуске
+* [Заметки о выпуске — май 2016 г.](release-notes-may-2016.md)
+* [Заметки о выпуске — март 2016 г.](release-notes-march-2016.md)
 
 ## <a name="see-also"></a>См. также
-* [Известные проблемы HoloLens](hololens-known-issues.md)
+* [Известные проблемы с HoloLens](hololens-known-issues.md)
 * [Коммерческие функции](commercial-features.md)
 * [Установка средств](install-the-tools.md)
 * [Использование эмулятора HoloLens](using-the-hololens-emulator.md)

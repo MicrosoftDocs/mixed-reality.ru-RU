@@ -1,11 +1,11 @@
 ---
-title: Смешанной реальности собственных объектов в Unity
-description: Получите доступ к Holographic собственных объектов в Unity.
+title: Собственные объекты смешанной реальности в Unity
+description: Получить доступ к базовым объектам holographic в Unity.
 author: vladkol
 ms.author: vladkol
 ms.date: 05/20/2018
 ms.topic: article
-keywords: Unity, смешанный реальность, машинный код, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr
+keywords: Unity, Mixed Reality, Native, ксрдевице, спатиалкурдинатесистем, холографикфраме, холографиккамера, испатиалкурдинатесистем, iholographicframe, iholographiccamera, getnativeptr
 ms.openlocfilehash: 76073f5b2adfdf27cfbb153f95bb3a533d02e196
 ms.sourcegitcommit: d565a69a9320e736304372b3f010af1a4d286a62
 ms.translationtype: MT
@@ -13,18 +13,18 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/20/2019
 ms.locfileid: "65942100"
 ---
-# <a name="mixed-reality-native-objects-in-unity"></a>Смешанной реальности собственных объектов в Unity
+# <a name="mixed-reality-native-objects-in-unity"></a>Собственные объекты смешанной реальности в Unity
 
-[Начало HolographicSpace](getting-a-holographicspace.md) — каждые смешанной реальности, приложение выполняет перед началом получения данных камеры и отрисовки кадров. В Unity ядро берет на себя эти действия для вас обработки Holographic объектов и обновляет внутренне, как часть его цикл прорисовки.
+[Получение холографикспаце](getting-a-holographicspace.md) — это то, что делает каждое приложение смешанной реальности до того, как оно начнет получать данные камеры и кадры визуализации. В Unity подсистема выполняет эти действия для вас, обрабатывая holographic и внутренне обновления в рамках цикла подготовки к просмотру.
 
-Однако в более сложных сценариях может потребоваться получить доступ к собственных объектов, таких как <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> и текущих <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>. <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">UnityEngine.XR.XRDevice</a> именно это и обеспечивает доступ к этим объектам собственного.
+Однако в сложных сценариях может потребоваться получить доступ к базовым собственным объектам, таким как <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">холографиккамера</a> и Current <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">холографикфраме</a>. <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">UnityEngine. XR. ксрдевице</a> предоставляет доступ к этим собственным объектам.
 
-## <a name="xrdevice"></a>XRDevice 
+## <a name="xrdevice"></a>ксрдевице 
 
-**Пространство имен:** *UnityEngine.XR*<br>
-**Тип:** *XRDevice*
+**Имен** *UnityEngine. XR*<br>
+**Тип** *ксрдевице*
 
-*XRDevice* тип позволяет получить доступ к собственных объектов с помощью <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">GetNativePtr</a> метод. Возвращает GetNativePtr различается для разных платформ. В универсальной Windows платформы, при разработке для Windows SDK XR смешанной реальности XRDevice.GetNativePtr возвращается указатель (IntPtr) со следующей структурой: 
+Тип *ксрдевице* позволяет получить доступ к базовым машинным объектам с помощью метода <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">жетнативептр</a> . Возвращаемые Жетнативептр различаются между различными платформами. На универсальная платформа Windows при использовании пакета SDK XR для Windows Mixed Reality Ксрдевице. Жетнативептр возвращает указатель (IntPtr) в следующую структуру: 
 
 ```cs
 using System;
@@ -40,22 +40,22 @@ struct HolographicFrameNativeData
     public IntPtr IHolographicCameraPtr; // // Windows::Graphics::Holographic::IHolographicCamera
 }
 ```
-Его можно преобразовать с помощью метода Marshal.PtrToStructure HolographicFrameNativeData:
+Его можно преобразовать в Холографикфраменативедата с помощью метода Marshal. PtrToStructure нарушают:
 ```cs
 var nativePtr = UnityEngine.XR.XRDevice.GetNativePtr();
 HolographicFrameNativeData hfd = Marshal.PtrToStructure<HolographicFrameNativeData>(nativePtr);
 ```
-***IHolographicCameraPtr** представляет собой массив IntPtr, маршалирован как UnmanagedType.ByValArray с длиной, равной MaxNumberOfCameras* 
+***Ихолографиккамераптр** — это массив IntPtr, упакованный как UnmanagedType. ByValArray с длиной, равной макснумберофкамерас* 
 
 
-### <a name="using-holographicframenativedata"></a>С помощью HolographicFrameNativeData
+### <a name="using-holographicframenativedata"></a>Использование Холографикфраменативедата
 
 > [!NOTE]
-> Изменение состояния для собственных объектов, полученных в ходе HolographicFrameNativeData может вызвать непредсказуемое поведение и артефакты отрисовки, особенно в том случае, если Unity также причинам об этом же состоянии.  Например, не следует вызывать HolographicFrame.UpdateCurrentPrediction, иначе поза прогноза, который Unity при отображении этого кадра будет синхронизирован с поза, ожидающей Windows, это позволит снизить [голограмма стабильность](hologram-stability.md).
+> Изменение состояния собственных объектов, полученных через Холографикфраменативедата, может привести к непредсказуемому поведению и артефактам визуализации, особенно если Unity также является причиной того же состояния.  Например, не следует вызывать Холографикфраме. Упдатекуррентпредиктион, или, в противном случае прогнозирование, которое Unity визуализирует с этим кадром, будет не синхронизировано с объектом, который ожидается Windows, что снизит [стабильность](hologram-stability.md).
 
-Если необходим доступ для собственных интерфейсов для отрисовки или отладки в ваши собственные подключаемые модули можно использовать данные из HolographicFrameNativeData или C# кода. 
+Вы можете использовать данные из Холографикфраменативедата, когда доступ к собственным интерфейсам требуется для подготовки к просмотру или отладке, в C# собственных подключаемых модулях или коде. 
 
-Ниже приведен пример того, как можно использовать для получения текущего кадра прогноз для времени photon HolographicFrameNativeData. 
+Ниже приведен пример того, как можно использовать Холографикфраменативедата для получения прогноза текущего кадра для времени Photon. 
 ```cs
 using System;
 using System.Runtime.InteropServices;
@@ -86,7 +86,7 @@ public static bool GetCurrentFrameDateTime(out DateTime frameDateTime)
 ```
 
 ## <a name="see-also"></a>См. также
-* <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>
-* <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>
+* <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">спатиалкурдинатесистем</a>
+* <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">холографикфраме</a>
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a>
 * [Отрисовка в DirectX](rendering-in-directx.md)

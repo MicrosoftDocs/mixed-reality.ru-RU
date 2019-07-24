@@ -1,6 +1,6 @@
 ---
-title: Моделирование восприятие
-description: Руководство по использованию библиотеки восприятие моделирования для автоматизации имитации ввода для иммерсивных приложений
+title: Имитация восприятия
+description: Рекомендации по использованию библиотеки моделирования восприятия для автоматизации имитации входных данных для впечатляющих приложений
 author: pbarnettms
 ms.author: pbarnett
 ms.date: 04/26/2019
@@ -13,46 +13,46 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 06/27/2019
 ms.locfileid: "67414530"
 ---
-# <a name="perception-simulation"></a>Моделирование восприятие
+# <a name="perception-simulation"></a>Имитация восприятия
 
-Вы хотите создавать автоматические тесты для своего приложения? Вы хотите, чтобы тесты выходят за рамки уровня компонента модульное тестирование и действительно производить вашего приложения end-to-end? Симулятор восприятия —, что вы искали. В библиотеке имитации восприятие отправляет человека и world входные данные в приложение, чтобы тесты можно автоматизировать. Например вы можете имитировать входные данные человека поиска в конкретных, повторяемый позицию и затем выполняет жест или с помощью контроллера движения.
+Вы хотите создать автоматический тест для приложения? Вы хотите, чтобы тесты переходили за пределы модульного тестирования на уровне компонентов и действительно протестировали свое приложение как можно более полное? Имитация восприятия — это то, что вы ищете. Библиотека моделирования восприятия отправляет в приложение пользовательские и мировые входные данные, что позволяет автоматизировать тесты. Например, можно имитировать входные данные человека, который смотрит в конкретную повторяемую единицу, а затем выполнить жест или использовать контроллер движения.
 
-Моделирование восприятие можно отправлять физических HoloLens, эмулятор HoloLens имитации ввода следующим образом установлен HoloLens 2 эмулятора или ПК с помощью портала смешанной реальности (1-го поколения,). Восприятие имитации обходит динамической датчиков на устройстве смешанной реальности и отправляет смоделированные входных данных для приложений, выполняющихся на устройстве. Приложения получают эти события ввода через API-интерфейсы, они всегда использовать и не может определить разницу между запуском с физическими датчиками и при выполнении с моделирования восприятие. Моделирование восприятие та же технология используется для отправки имитации входных данных к виртуальной машине HoloLens эмуляторы HoloLens.
+Имитация восприятия может отправить смоделированные входные данные на физический HoloLens, эмулятор HoloLens (1 общий), эмулятор HoloLens 2 или компьютер с установленным порталом смешанной реальности. Имитация восприятия обходит активные датчики на устройстве смешанной реальности и отправляет смоделированные входные данные приложениям, работающим на устройстве. Приложения получают эти события ввода через те же API-интерфейсы, которые они всегда используют, и не могут сообщать о различиях между выполнением с реальными датчиками и с имитацией восприятия. Имитация восприятия — это та же технология, которая используется эмуляторами HoloLens для отправки смоделированных входных данных на виртуальную машину HoloLens.
 
-Чтобы приступить к использованию моделирования в коде, начните с создания объекта IPerceptionSimulationManager. Из этого объекта можно выполнить команды для управления свойства имитации «человека», включая головной позиции, положение руки и жестов, и можно включить и управлять контроллерами движения.
+Чтобы приступить к использованию моделирования в коде, начните с создания объекта Иперцептионсимулатионманажер. Из этого объекта можно выдавать команды для управления свойствами имитации «человека», включая позиционирование головной стороны, расположение руки и жесты, а также включать и управлять контроллерами движения.
 
-## <a name="setting-up-a-visual-studio-project-for-perception-simulation"></a>Настройка проекта Visual Studio для моделирования восприятие
-1. [Установить эмулятор HoloLens](install-the-tools.md) на Компьютере разработки. Эмулятор включает библиотеки, которая будет использоваться для моделирования восприятие.
-2. Создание новой Visual Studio C# проект для настольной системы (консольный проект прекрасно работает Чтобы приступить к работе).
-3. Добавьте следующие двоичные файлы в проект как ссылки (проект -> Добавить -> ссылка...). Их можно найти в % ProgramFiles (x86) %\Microsoft XDE\\(версия), такие как **% ProgramFiles (x86) %\Microsoft XDE\\10.0.18362.0** для эмулятора 2 HoloLens.  (Обратите внимание: несмотря на то, что двоичные файлы являются частью эмулятор 2 HoloLens, которые также работают в Windows Mixed Reality на рабочем столе.) . PerceptionSimulationManager.Interop.dll - управляемых C# программы-оболочки для восприятия моделирования.
-    2\. PerceptionSimulationRest.dll - библиотеки для настройки веб-сокет коммуникационного канала HoloLens или эмуляторе.
-    В. SimulationStream.Interop.dll - общие типы для моделирования.
-4. Добавьте реализацию двоичный PerceptionSimulationManager.dll в проект. Сначала добавьте его как двоичный файл в проект (проект -> Добавить -> существующий элемент...). Сохраните его как ссылку, чтобы он не копируются в папку исходного проекта. ![Добавьте в проект как ссылку PerceptionSimulationManager.dll](images/saveaslink.png) b. Убедитесь, что его получить копируется в папку выходных данных построения. Это в окне свойств для двоичного файла. ![Марк PerceptionSimulationManager.dll Копировать в выходной каталог](images/copyalways.png)
-5. Присвоено x64 вашей Активная платформа решения.  (Используйте Configuration Manager, создайте запись платформы для x64 в том случае, если он еще не существует.)
+## <a name="setting-up-a-visual-studio-project-for-perception-simulation"></a>Настройка проекта Visual Studio для имитации восприятия
+1. [Установите эмулятор HoloLens](install-the-tools.md) на компьютере разработки. Эмулятор включает библиотеки, которые будут использоваться для имитации восприятия.
+2. Создайте проект Visual Studio C# для настольных систем (проект консоли прекрасно работает, чтобы начать работу).
+3. Добавьте в проект следующие двоичные файлы в виде ссылок (проект-> Добавить > ссылку...). Их можно найти в% ProgramFiles (x86)% \ Microsoft XDE\\(версия), например **% ProgramFiles (x86)% \ Microsoft XDE\\10.0.18362.0** для эмулятора HoloLens 2.  (Примечание. Хотя двоичные файлы являются частью эмулятора HoloLens 2, они также работают для Windows Mixed Reality на настольном компьютере.) конкретного. Перцептионсимулатионманажер. Interop. dll — управляемая C# оболочка для имитации восприятия.
+    2\. Перцептионсимулатионрест. DLL — библиотека для настройки канала связи через веб-сокет с HoloLens или Emulator.
+    В. Симулатионстреам. Interop. dll — общие типы для моделирования.
+4. Добавьте в проект a двоичный файл Перцептионсимулатионманажер. dll реализации. Сначала добавьте его в качестве двоичного файла в проект (проект-> Добавить-> существующий элемент...). Сохраните его как ссылку, чтобы он не скопировал его в исходную папку проекта. ![Добавьте перцептионсимулатионманажер. dll в проект как ссылку](images/saveaslink.png) b. Затем убедитесь, что он скопирован в выходную папку при сборке. Он находится на странице свойств двоичного файла. ![Пометьте Перцептионсимулатионманажер. dll для копирования в выходной каталог](images/copyalways.png)
+5. Задайте для активной платформы решения x64.  (Используйте Configuration Manager, чтобы создать запись платформы для x64, если она еще не существует.)
 
-## <a name="creating-an-iperceptionsimulation-manager-object"></a>Создание объекта диспетчера IPerceptionSimulation
+## <a name="creating-an-iperceptionsimulation-manager-object"></a>Создание объекта Иперцептионсимулатион Manager
 
-Чтобы управлять моделирования, вам отправить обновления в объекты, возвращенные из объекта IPerceptionSimulationManager. Первым делом для получения этого объекта и подключить его к целевое устройство или эмулятор. IP-адрес симулятора можно получить, щелкнув кнопку портал устройств в [панели инструментов](using-the-hololens-emulator.md)
+Для управления имитацией вы получаете обновления объектов, полученных из объекта Иперцептионсимулатионманажер. Первым шагом является получение этого объекта и его подключение к целевому устройству или эмулятору. Вы можете получить IP-адрес эмулятора, нажав кнопку на портале устройства на [панели инструментов](using-the-hololens-emulator.md) .
 
-![Значок открытия портал устройств](images/emulator-deviceportal.png) **открыть портал устройства**: Открывает в эмуляторе портал устройств Windows для HoloLens OS.  Для Windows Mixed Reality, это значение можно получить в приложении "Параметры" в разделе «Обновления и безопасность», затем «для разработчиков» в «подключение с использованием:» раздела «Включение портал устройств».  Обязательно запомните IP-адрес и порт.
+![Значок](images/emulator-deviceportal.png) "открыть портал устройств" **откройте портал устройств**: Открывает в эмуляторе портал устройств Windows для HoloLens OS.  Для Windows Mixed Reality это можно получить в приложении "Параметры" в разделе "Обновление & безопасность", а затем "для разработчиков" в разделе "подключение с помощью:" раздела "Включение портала устройств".  Обязательно запишите IP-адрес и порт.
 
-Во-первых вы вызовете RestSimulationStreamSink.Create для получения объекта RestSimulationStreamSink. Это целевое устройство или эмулятор, который будет управлять по протоколу http. Ваши команды будут передаваться и обрабатываются [Windows Device Portal](using-the-windows-device-portal.md) на устройстве или эмуляторе. Ниже приведены четыре параметра, необходимо создать объект.
-* Uri URI - IP-адрес целевого устройства (например, "http://123.123.123.123 «или» http://123.123.123.123:50080 «)
-* Учетные данные System.Net.NetworkCredential — имя пользователя и пароль для подключения к [Windows Device Portal](using-the-windows-device-portal.md) на целевом устройстве или эмуляторе. При подключении к эмулятору с помощью его локальный адрес (например, 168. *.* . *) на локальном ПК, будут приняты любые учетные данные.
-* normal — логическое значение True для нормального приоритета, значение false для с низким приоритетом. Обычно требуется устанавливать равным *true* для тестовых сценариев, что позволяет контролировать теста.  Эмулятор и моделирование Windows Mixed Reality использовать подключения с низким приоритетом.  Если тест также использует соединение с низким приоритетом, наиболее недавно установлено, что будет использоваться для соединения в элементе управления.
-* Токен System.Threading.CancellationToken - токен для отмены асинхронной операции.
+Во-первых, вы вызываете Рестсимулатионстреамсинк. Create для получения объекта Рестсимулатионстреамсинк. Это целевое устройство или эмулятор, которым будет управлять HTTP-соединением. Команды будут переданы и обработаны на [портале устройств Windows](using-the-windows-device-portal.md) , работающем на устройстве или в эмуляторе. Ниже приведены четыре параметра, которые необходимо создать для объекта.
+* URI URI — IP-адрес целевого устройства (например, "http://123.123.123.123" или "http://123.123.123.123:50080").
+* System .NET. NetworkCredential Credentials — имя пользователя и пароль для подключения к [порталу устройств Windows](using-the-windows-device-portal.md) на целевом устройстве или эмуляторе. При подключении к эмулятору через его локальный адрес (например, 168. *.* . *) на том же компьютере будут приниматься любые учетные данные.
+* bool обычная — true для обычного приоритета, false для низкого приоритета. Обычно необходимо задать для этого параметра значение *true* для тестовых сценариев, что позволяет вашему тесту осуществлять управление.  Эмулятор и имитация Windows Mixed Reality используют соединения с низким приоритетом.  Если в тесте также используется подключение с низким приоритетом, то последнее установленное соединение будет управляться.
+* Для отмены асинхронной операции маркера токена System. Threading. CancellationToken.
 
-Во-вторых, вы создадите IPerceptionSimulationManager. Это объект, который используется для управления моделирования. Обратите внимание на то, что это необходимо сделать в асинхронном методе.
+Во вторых, вы создадите Иперцептионсимулатионманажер. Это объект, используемый для управления имитацией. Обратите внимание, что это также необходимо сделать в асинхронном методе.
 
-## <a name="control-the-simulated-human"></a>Элемент управления как имитации человеку
+## <a name="control-the-simulated-human"></a>Управление имитируемым человеком
 
-IPerceptionSimulationManager имеет человека свойство, которое возвращает объект ISimulatedHuman. Для управления как имитации человеку, выполняют операции над объектом. Пример:
+Иперцептионсимулатионманажер имеет свойство человеческого, которое возвращает объект Исимулатедхуман. Для управления имитируемым человеком выполните операции с этим объектом. Пример:
 
 ```
 manager.Human.Move(new Vector3(0.1f, 0.0f, 0.0f))
 ```
 
-## <a name="basic-sample-c-console-application"></a>Пример простого C# консольное приложение
+## <a name="basic-sample-c-console-application"></a>Простой пример C# консольного приложения
 
 ```
 using System;
@@ -108,7 +108,7 @@ namespace ConsoleApplication1
 }
 ```
 
-## <a name="extended-sample-c-console-application"></a>Расширенный пример C# консольное приложение
+## <a name="extended-sample-c-console-application"></a>Расширенный пример C# консольного приложения
 
 ```
 using System;
@@ -216,10 +216,10 @@ namespace ConsoleApplication1
 }
 ```
 
-## <a name="note-on-6-dof-controllers"></a>Обратите внимание на контроллерах 6 DOF
+## <a name="note-on-6-dof-controllers"></a>Примечание о 6-ДОФ контроллерах
 
-Прежде чем выполнять какие-либо свойства на методы в контроллере имитации 6-DOF, необходимо активировать контроллера.  Не это приведет к возникновению исключения.  Начиная с Windows 10 может обновлять 2019 г., имитации 6-DOF контроллеры могут устанавливаться и активации, задав свойство Status объекта ISimulatedSixDofController SimulatedSixDofControllerStatus.Active.
-В Windows 10 октября 2018 г. обновление и более ранних версиях необходимо отдельно установить контроллер имитации 6-DOF во-первых, вызвав средство PerceptionSimulationDevice, расположенное в папке \Windows\System32.  Использование этого средства выглядит следующим образом:
+Перед вызовом каких-либо свойств для методов смоделированного 6-ДОФ контроллера необходимо активировать контроллер.  Это приведет к исключению.  Начиная с Windows 10 Can 2019 обновление, смоделированные 6-ДОФ контроллеры можно установить и активировать, задав для свойства Status объекта Исимулатедсиксдофконтроллер значение Симулатедсиксдофконтроллерстатус. Active.
+В обновлении Windows 10 октября 2018 и более ранних версиях необходимо отдельно установить смоделированный 6-ДОФ контроллер, вызвав средство Перцептионсимулатиондевице, расположенное в папке \Windows\System32.  Использование этого средства выглядит следующим образом:
 
 
 ```
@@ -232,18 +232,18 @@ namespace ConsoleApplication1
     PerceptionSimulationDevice.exe i 6dof 1
 ```
 
-Ниже приведены поддерживаемые действия:
-* я = install
+Поддерживаются следующие действия:
+* i = установить
 * q = запрос
-* r = Удаление
+* r = удалить
 
-Ниже приведены поддерживаемые экземпляры.
-* 1 = слева 6-DOF контроллера
-* 2 = правой 6-DOF контроллера
+Поддерживаются следующие экземпляры:
+* 1 = левый 6-ДОФ контроллер
+* 2 = правильный 6-ДОФ контроллер
 
-Код выхода процесса укажет (нулевое возвращаемое значение) успешность (ненулевое возвращаемое значение).  При использовании действия «q» для запроса, установлен ли контроллер, возвращаемое значение будет ноль (0), если контроллер еще не установлен или один (1) Если установлен контроллер.
+Код выхода процесса будет указывать на успех (нулевое возвращаемое значение) или ошибку (ненулевое возвращаемое значение).  При использовании действия "q" для запроса того, установлен ли контроллер, возвращаемое значение будет равно нулю (0), если контроллер еще не установлен, или один (1), если контроллер установлен.
 
-При удалении контроллера в ОС Windows 10 октября 2018 г. обновление или ранее, задайте его статус на Off через API во-первых, затем вызовите PerceptionSimulationDevice средство.
+При удалении контроллера в Windows 10 октября с обновлением 2018 или более ранней версии установите его состояние в OFF через API, а затем вызовите средство Перцептионсимулатиондевице.
 
 Обратите внимание, что это средство необходимо запускать от имени администратора.
 
@@ -252,9 +252,9 @@ namespace ConsoleApplication1
 
 ## <a name="api-reference"></a>Справочник по API
 
-### <a name="microsoftperceptionsimulationsimulateddevicetype"></a>Microsoft.PerceptionSimulation.SimulatedDeviceType
+### <a name="microsoftperceptionsimulationsimulateddevicetype"></a>Microsoft. Перцептионсимулатион. Симулатеддевицетипе
 
-Описывает тип виртуального устройства
+Описывает тип имитации устройства
 
 ```
 public enum SimulatedDeviceType
@@ -263,13 +263,13 @@ public enum SimulatedDeviceType
 }
 ```
 
-**Microsoft.PerceptionSimulation.SimulatedDeviceType.Reference**
+**Microsoft. Перцептионсимулатион. Симулатеддевицетипе. Reference**
 
-Устройство с вымышленными ссылку, по умолчанию для PerceptionSimulationManager
+Фиктивное эталонное устройство, используемое по умолчанию для Перцептионсимулатионманажер
 
-### <a name="microsoftperceptionsimulationheadtrackermode"></a>Microsoft.PerceptionSimulation.HeadTrackerMode
+### <a name="microsoftperceptionsimulationheadtrackermode"></a>Microsoft. Перцептионсимулатион. Хеадтраккермоде
 
-Описывает режим головной tracker
+Описывает режим «головной транспортер»
 
 ```
 public enum HeadTrackerMode
@@ -280,21 +280,21 @@ public enum HeadTrackerMode
 }
 ```
 
-**Microsoft.PerceptionSimulation.HeadTrackerMode.Default**
+**Microsoft. Перцептионсимулатион. Хеадтраккермоде. Default**
 
-По умолчанию Head отслеживания. Это означает, что система может выбрать лучший заголовок, режим, в зависимости от условий среды выполнения отслеживания.
+Отслеживание головок по умолчанию. Это означает, что система может выбрать оптимальный режим отслеживания головной системы на основе условий среды выполнения.
 
-**Microsoft.PerceptionSimulation.HeadTrackerMode.Orientation**
+**Microsoft. Перцептионсимулатион. Хеадтраккермоде. Orientation**
 
-Ориентация только головные отслеживания. Это означает, что отслеживаемые положение может быть недостаточно надежен, что некоторые функции зависят от головного позиции не могут быть доступны.
+Только отслеживание головной страницы. Это означает, что отслеживающее расположение может быть ненадежным, а некоторые функциональные возможности, зависящие от головного расположения, могут быть недоступны.
 
-**Microsoft.PerceptionSimulation.HeadTrackerMode.Position**
+**Microsoft. Перцептионсимулатион. Хеадтраккермоде. положением**
 
-Отслеживание позиционные Head. Это означает, что отслеживаемые головной положение и ориентацию оба надежных
+Отслеживание позиционированных головок. Это означает, что положение и ориентация отслеживающей головки надежны
 
-### <a name="microsoftperceptionsimulationsimulatedgesture"></a>Microsoft.PerceptionSimulation.SimulatedGesture
+### <a name="microsoftperceptionsimulationsimulatedgesture"></a>Microsoft. Перцептионсимулатион. Симулатеджестуре
 
-Описание имитации жестов
+Описывает имитацию жеста
 
 ```
 public enum SimulatedGesture
@@ -307,29 +307,29 @@ public enum SimulatedGesture
 }
 ```
 
-**Microsoft.PerceptionSimulation.SimulatedGesture.None**
+**Microsoft. Перцептионсимулатион. Симулатеджестуре. None**
 
-Значение sentinel, используемый для указания никаких жестов.
+Значение Sentinel, используемое для обозначения отсутствия жестов.
 
-**Microsoft.PerceptionSimulation.SimulatedGesture.FingerPressed**
+**Microsoft. Перцептионсимулатион. Симулатеджестуре. Финжерпрессед**
 
-Палец нажата жест.
+Жест нажатия пальца.
 
-**Microsoft.PerceptionSimulation.SimulatedGesture.FingerReleased**
+**Microsoft. Перцептионсимулатион. Симулатеджестуре. Финжеррелеасед**
 
-Палец выпустила жест.
+Жест отпуска пальца.
 
-**Microsoft.PerceptionSimulation.SimulatedGesture.Home**
+**Microsoft. Перцептионсимулатион. Симулатеджестуре. Home**
 
-Жест home/system.
+Жест домашнего или системного.
 
-**Microsoft.PerceptionSimulation.SimulatedGesture.Max**
+**Microsoft. Перцептионсимулатион. Симулатеджестуре. Max**
 
-Максимальный допустимый жест.
+Максимально допустимый жест.
 
-### <a name="microsoftperceptionsimulationsimulatedsixdofcontrollerstatus"></a>Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus
+### <a name="microsoftperceptionsimulationsimulatedsixdofcontrollerstatus"></a>Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллерстатус
 
-Возможные состояния контроллера имитации 6-DOF.
+Возможные состояния имитации 6-ДОФ контроллера.
 
 ```
 public enum SimulatedSixDofControllerStatus
@@ -340,21 +340,21 @@ public enum SimulatedSixDofControllerStatus
 }
 ```
 
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.Off**
+**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллерстатус. Off**
 
-6-DOF контроллер будет отключено.
+6-ДОФ контроллер отключен.
 
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.Active**
+**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллерстатус. Active**
 
-6-DOF контроллера включается и отслеживаются.
+Контроллер ДОФ включается и отключается.
 
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.TrackingLost**
+**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллерстатус. Траккинглост**
 
-6-DOF контроллера включена, но не отслеживается.
+6-ДОФ контроллер включен, но не может быть записан.
 
-### <a name="microsoftperceptionsimulationsimulatedsixdofcontrollerbutton"></a>Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton
+### <a name="microsoftperceptionsimulationsimulatedsixdofcontrollerbutton"></a>Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон
 
-Поддерживаемые кнопки на контроллере имитации 6-DOF.
+Поддерживаемые кнопки на имитации 6-ДОФ контроллера.
 
 ```
 public enum SimulatedSixDofControllerButton
@@ -371,46 +371,46 @@ public enum SimulatedSixDofControllerButton
 }
 ```
 
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.None**
+**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. None**
 
-Значение sentinel, используемый для указания кнопок.
+Значение Sentinel, используемое для отсутствия кнопок.
 
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Home**
+**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. Home**
 
-Нажата кнопка домашней.
+Нажата кнопка Главная.
 
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Menu**
+**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. Menu**
 
 Нажата кнопка меню.
 
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Grip**
+**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. захват**
 
-Нажата кнопка захвата для изменения.
+Нажата кнопка захвата.
 
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.TouchpadPress**
+**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. Таучпадпресс**
 
-Нажата сенсорной панели.
+Сенсорная панель нажата.
 
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Select**
+**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. Select**
 
-Нажата кнопка "выбрать".
+Нажата кнопка выбрать.
 
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.TouchpadTouch**
+**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. Таучпадтауч**
 
-Возникает при просмотре сенсорной панели.
+Сенсорная панель затронута.
 
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Thumbstick**
+**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. аналоговый стик**
 
-Джойстик нажата.
+Аналоговый стик нажат.
 
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Max**
+**Microsoft. Перцептионсимулатион. Симулатедсиксдофконтроллербуттон. Max**
 
-Максимальное число допустимых кнопок.
+Максимальная допустимая кнопка.
 
 
-### <a name="microsoftperceptionsimulationsimulatedeyescalibrationstate"></a>Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState
+### <a name="microsoftperceptionsimulationsimulatedeyescalibrationstate"></a>Microsoft. Перцептионсимулатион. Симулатедэйескалибратионстате
 
-Состояние имитации глаза калибровки
+Состояние калибровки имитации глаз
 
 ```
 public enum SimulatedGesture
@@ -422,25 +422,25 @@ public enum SimulatedGesture
 }
 ```
 
-**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Unavailable**
+**Microsoft. Перцептионсимулатион. Симулатедэйескалибратионстате. недоступно**
 
-Калибровка глаза недоступна.
+Калибровка глаз недоступна.
 
-**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Ready**
+**Microsoft. Перцептионсимулатион. Симулатедэйескалибратионстате. ready**
 
-Были калибровки глаза.  Это значение по умолчанию.
+Эти глаза были откалиброваны.  Это значение по умолчанию.
 
-**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Configuring**
+**Microsoft. Перцептионсимулатион. Симулатедэйескалибратионстате. Настройка**
 
-Откалиброваны глаза.
+Эти глаза откалиброваны.
 
-**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.UserCalibrationNeeded**
+**Microsoft. Перцептионсимулатион. Симулатедэйескалибратионстате. Усеркалибратионнидед**
 
-Глаза должны можно уточнять.
+Необходимо откалибровать глаза.
 
-### <a name="microsoftperceptionsimulationsimulatedhandjointtrackingaccuracy"></a>Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy
+### <a name="microsoftperceptionsimulationsimulatedhandjointtrackingaccuracy"></a>Microsoft. Перцептионсимулатион. Симулатедханджоинттраккингаккураци
 
-Точность отслеживания соединения вручную.
+Точность отслеживания соединения руки.
 
 ```
 public enum SimulatedHandJointTrackingAccuracy
@@ -451,21 +451,21 @@ public enum SimulatedHandJointTrackingAccuracy
 }
 ```
 
-**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Unavailable**
+**Microsoft. Перцептионсимулатион. Симулатедханджоинттраккингаккураци. недоступно**
 
-Соединение не отслеживается.
+Совместное соединение не производится.
 
-**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Approximate**
+**Microsoft. Перцептионсимулатион. Симулатедханджоинттраккингаккураци. приблизительный**
 
-Совместные позиции выводится.
+Совместное размещение выводится.
 
-**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Visible**
+**Microsoft. Перцептионсимулатион. Симулатедханджоинттраккингаккураци. Visible**
 
-Полностью отслеживается в качестве объединителя.
+Совместное соединение полностью отслеживание.
 
-### <a name="microsoftperceptionsimulationsimulatedhandpose"></a>Microsoft.PerceptionSimulation.SimulatedHandPose
+### <a name="microsoftperceptionsimulationsimulatedhandpose"></a>Microsoft. Перцептионсимулатион. Симулатедхандпосе
 
-Точность отслеживания соединения вручную.
+Точность отслеживания соединения руки.
 
 ```
 public enum SimulatedHandPose
@@ -478,28 +478,28 @@ public enum SimulatedHandPose
 }
 ```
 
-**Microsoft.PerceptionSimulation.SimulatedHandPose.Closed**
+**Microsoft. Перцептионсимулатион. Симулатедхандпосе. Closed**
 
-Рука палец соединений были настроены для отражения закрытых позу.
+Соединения пальца руки настраиваются для отражения закрытого объекта.
 
-**Microsoft.PerceptionSimulation.SimulatedHandPose.Open**
+**Microsoft. Перцептионсимулатион. Симулатедхандпосе. Open**
 
-Шарнирные соединения вручную палец настраиваются в соответствии с открытым поза.
+Соединения пальца руки настраиваются для отражения открытой части.
 
-**Microsoft.PerceptionSimulation.SimulatedHandPose.Point**
+**Microsoft. Перцептионсимулатион. Симулатедхандпосе. Point**
 
-Рука палец соединений были настроены для отражения указывающего позу.
+Соединения пальца руки настраиваются в соответствии с указывающим на себя.
 
-**Microsoft.PerceptionSimulation.SimulatedHandPose.Pinch**
+**Microsoft. Перцептионсимулатион. Симулатедхандпосе. сжатие**
 
-Рука палец соединений были настроены для отражения pinching позу.
+Соединения пальца руки настраиваются в соответствии с набором сжатия.
 
-**Microsoft.PerceptionSimulation.SimulatedHandPose.Max**
+**Microsoft. Перцептионсимулатион. Симулатедхандпосе. Max**
 
-Максимальное допустимое значение для SimulatedHandPose.
+Максимальное допустимое значение для Симулатедхандпосе.
 
 
-### <a name="microsoftperceptionsimulationplaybackstate"></a>Microsoft.PerceptionSimulation.PlaybackState
+### <a name="microsoftperceptionsimulationplaybackstate"></a>Microsoft. Перцептионсимулатион. Плайбаккстате
 
 Описывает состояние воспроизведения.
 
@@ -513,25 +513,25 @@ public enum PlaybackState
 }
 ```
 
-**Microsoft.PerceptionSimulation.PlaybackState.Stopped**
+**Microsoft. Перцептионсимулатион. Плайбаккстате. Stopped**
 
-Запись в данный момент остановлена и все готово для воспроизведения.
+Запись сейчас остановлена и готова к воспроизведению.
 
-**Microsoft.PerceptionSimulation.PlaybackState.Playing**
+**Microsoft. Перцептионсимулатион. Плайбаккстате. Play**
 
-Запись в настоящее время воспроизведения.
+Сейчас запись воспроизводится.
 
-**Microsoft.PerceptionSimulation.PlaybackState.Paused**
+**Microsoft. Перцептионсимулатион. Плайбаккстате. приостановлено**
 
-Запись приостановлена.
+Запись в данный момент приостановлена.
 
-**Microsoft.PerceptionSimulation.PlaybackState.End**
+**Microsoft. Перцептионсимулатион. Плайбаккстате. end**
 
-Запись уже истек.
+Запись достигла конца.
 
-### <a name="microsoftperceptionsimulationvector3"></a>Microsoft.PerceptionSimulation.Vector3
+### <a name="microsoftperceptionsimulationvector3"></a>Microsoft. Перцептионсимулатион. Vector3
 
-Описывает вектор 3 компонента, который может описывать точку или вектор в трехмерном пространстве.
+Описывает вектор 3 компонентов, который может описывать точку или вектор в трехмерном пространстве.
 
 ```
 public struct Vector3
@@ -543,30 +543,30 @@ public struct Vector3
 }
 ```
 
-**Microsoft.PerceptionSimulation.Vector3.X**
+**Microsoft. Перцептионсимулатион. Vector3. X**
 
-Координата X вектора.
+Компонент X вектора.
 
-**Microsoft.PerceptionSimulation.Vector3.Y**
+**Microsoft. Перцептионсимулатион. Vector3. Y**
 
 Компонент Y вектора.
 
-**Microsoft.PerceptionSimulation.Vector3.Z**
+**Microsoft. Перцептионсимулатион. Vector3. Z**
 
 Компонент Z вектора.
 
-**Microsoft.PerceptionSimulation.Vector3.#ctor(System.Single,System.Single,System.Single)**
+**Microsoft. Перцептионсимулатион. Vector3. #ctor (System. Single, System. Single, System. Single)**
 
 Создайте новый Vector3.
 
 Параметры
-* x - координату объекта vector.
-* y - координату объекта vector.
-* z - компонент z вектора.
+* x — компонент x вектора.
+* y — компонент y вектора.
+* z — компонент z вектора.
 
-### <a name="microsoftperceptionsimulationrotation3"></a>Microsoft.PerceptionSimulation.Rotation3
+### <a name="microsoftperceptionsimulationrotation3"></a>Microsoft. Перцептионсимулатион. Rotation3
 
-Описывает поворот 3 компонента.
+Описывает поворот 3 компонентов.
 
 ```
 public struct Rotation3
@@ -578,30 +578,30 @@ public struct Rotation3
 }
 ```
 
-**Microsoft.PerceptionSimulation.Rotation3.Pitch**
+**Microsoft. Перцептионсимулатион. Rotation3. шаг**
 
-Компонент шаг поворота вокруг оси X вниз.
+Компонент шаг поворота вокруг оси X.
 
-**Microsoft.PerceptionSimulation.Rotation3.Yaw**
+**Microsoft. Перцептионсимулатион. Rotation3. значения нутации**
 
-Компонент Нутации поворота вокруг оси Y.
+Компонент значения нутации вращения, который находится справа вокруг оси Y.
 
-**Microsoft.PerceptionSimulation.Rotation3.Roll**
+**Microsoft. Перцептионсимулатион. Rotation3. рулон**
 
-Компонент наката поворота вокруг оси Z.
+Компонент рулона поворота, который находится справа вокруг оси Z.
 
-**Microsoft.PerceptionSimulation.Rotation3.#ctor(System.Single,System.Single,System.Single)**
+**Microsoft. Перцептионсимулатион. Rotation3. #ctor (System. Single, System. Single, System. Single)**
 
-Создает новый Rotation3.
+Создайте новый Rotation3.
 
 Параметры
-* шаг - компонент шаг поворота.
-* Поворот - компонент нутации поворота.
-* Развертывание - наката компонент поворота.
+* шаг — компонент шага поворота.
+* значения нутации — компонент значения нутации вращения.
+* рулон — компонент рулона поворота.
 
-### <a name="microsoftperceptionsimulationsimulatedhandjointconfiguration"></a>Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration
+### <a name="microsoftperceptionsimulationsimulatedhandjointconfiguration"></a>Microsoft. Перцептионсимулатион. Симулатедханджоинтконфигуратион
 
-Описание настройки соединения с имитации стороны.
+Описывает конфигурацию соединения с имитацией руки.
 
 ```
 public struct SimulatedHandJointConfiguration
@@ -612,22 +612,22 @@ public struct SimulatedHandJointConfiguration
 }
 ```
 
-**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.Position**
+**Microsoft. Перцептионсимулатион. Симулатедханджоинтконфигуратион. положением**
 
-Позиция соединения.
+Расположение соединения.
 
-**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.Rotation**
+**Microsoft. Перцептионсимулатион. Симулатедханджоинтконфигуратион. вращение**
 
-Угол поворота соединения.
+Поворот соединения.
 
-**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.TrackingAccuracy**
+**Microsoft. Перцептионсимулатион. Симулатедханджоинтконфигуратион. Траккингаккураци**
 
 Точность отслеживания соединения.
 
 
-### <a name="microsoftperceptionsimulationfrustum"></a>Microsoft.PerceptionSimulation.Frustum
+### <a name="microsoftperceptionsimulationfrustum"></a>Microsoft. Перцептионсимулатион. Фрустум
 
-Описывает усеченная, как это обычно используется веб-камеры.
+Описывает представление фрустум, как обычно используется камерой.
 
 ```
 public struct Frustum
@@ -639,25 +639,25 @@ public struct Frustum
 }
 ```
 
-**Microsoft.PerceptionSimulation.Frustum.Near**
+**Microsoft. Перцептионсимулатион. Фрустум. Near**
 
-Минимальное расстояние, которое содержится в панелью видимого пространства.
+Минимальное расстояние, которое содержится в фрустум.
 
-**Microsoft.PerceptionSimulation.Frustum.Far**
+**Microsoft. Перцептионсимулатион. Фрустум. FAR**
 
-Максимальное расстояние, которое содержится в панелью видимого пространства.
+Максимальное расстояние, которое содержится в фрустум.
 
-**Microsoft.PerceptionSimulation.Frustum.FieldOfView**
+**Microsoft. Перцептионсимулатион. Фрустум. Фиелдофвиев**
 
-Горизонтальное поле представления из пирамиды обзора, в радианах (меньше, чем PI).
+Горизонтальное поле представления фрустум в радианах (меньше PI).
 
-**Microsoft.PerceptionSimulation.Frustum.AspectRatio**
+**Microsoft. Перцептионсимулатион. Фрустум. Аспектратио**
 
-Отношение количества горизонтальное поле представления для вертикального поля зрения.
+Отношение горизонтального поля представления к вертикальному полю представления.
 
-### <a name="microsoftperceptionsimulationiperceptionsimulationmanager"></a>Microsoft.PerceptionSimulation.IPerceptionSimulationManager
+### <a name="microsoftperceptionsimulationiperceptionsimulationmanager"></a>Microsoft. Перцептионсимулатион. Иперцептионсимулатионманажер
 
-Корневой элемент для создания пакетов, которые используются для управления устройством.
+Корень для создания пакетов, используемых для управления устройством.
 
 ```
 public interface IPerceptionSimulationManager
@@ -668,21 +668,21 @@ public interface IPerceptionSimulationManager
 }
 ```
 
-**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Device**
+**Microsoft. Перцептионсимулатион. Иперцептионсимулатионманажер. Device**
 
-Получить объект виртуального устройства, который интерпретирует как имитации человеку и мир имитации.
+Извлеките объект имитации устройства, который интерпретирует имитацию человека и имитации мира.
 
-**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Human**
+**Microsoft. Перцептионсимулатион. Иперцептионсимулатионманажер. человеческий**
 
-Извлечь объект, управляющий имитации отдела.
+Извлеките объект, управляющий имитацией человека.
 
-**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Reset**
+**Microsoft. Перцептионсимулатион. Иперцептионсимулатионманажер. Reset**
 
-Сбрасывает моделирование в состояние по умолчанию.
+Сбрасывает состояние имитации до состояния по умолчанию.
 
-### <a name="microsoftperceptionsimulationisimulateddevice"></a>Microsoft.PerceptionSimulation.ISimulatedDevice
+### <a name="microsoftperceptionsimulationisimulateddevice"></a>Microsoft. Перцептионсимулатион. Исимулатеддевице
 
-Интерфейс, описывающий устройства, который интерпретирует виртуального мира и имитации человеком
+Интерфейс, описывающий устройство, которое интерпретирует имитацию мира и имитацию человека
 
 ```
 public interface ISimulatedDevice
@@ -693,24 +693,24 @@ public interface ISimulatedDevice
 }
 ```
 
-**Microsoft.PerceptionSimulation.ISimulatedDevice.HeadTracker**
+**Microsoft. Перцептионсимулатион. Исимулатеддевице. Хеадтраккер**
 
-Получить средство отслеживания Head с виртуального устройства.
+Извлеките головной датчик из имитации устройства.
 
-**Microsoft.PerceptionSimulation.ISimulatedDevice.HandTracker**
+**Microsoft. Перцептионсимулатион. Исимулатеддевице. Хандтраккер**
 
-Получить средство отслеживания вручную из имитации устройства.
+Получите датчик руки от имитации устройства.
 
-**Microsoft.PerceptionSimulation.ISimulatedDevice.SetSimulatedDeviceType(Microsoft.PerceptionSimulation.SimulatedDeviceType)**
+**Microsoft. Перцептионсимулатион. Исимулатеддевице. Сетсимулатеддевицетипе (Microsoft. Перцептионсимулатион. SimulatedDeviceType)**
 
-Задание свойств виртуального устройства в соответствии с типом предоставленного устройства.
+Задайте свойства виртуального устройства в соответствии с указанным типом устройства.
 
 Параметры
-* Type - новый тип Simulated Device
+* тип — новый тип имитации устройства.
 
-### <a name="microsoftperceptionsimulationisimulatedheadtracker"></a>Microsoft.PerceptionSimulation.ISimulatedHeadTracker
+### <a name="microsoftperceptionsimulationisimulatedheadtracker"></a>Microsoft. Перцептионсимулатион. Исимулатедхеадтраккер
 
-Интерфейс, описывающий часть имитированное устройство, которое отслеживает начало имитации отдела.
+Интерфейс, описывающий часть имитации устройства, которая отслеживает заголовку имитации человека.
 
 ```
 public interface ISimulatedHeadTracker
@@ -719,13 +719,13 @@ public interface ISimulatedHeadTracker
 };
 ```
 
-**Microsoft.PerceptionSimulation.ISimulatedHeadTracker.HeadTrackerMode**
+**Microsoft. Перцептионсимулатион. Исимулатедхеадтраккер. Хеадтраккермоде**
 
-Получает и задает текущий режим головной tracker.
+Извлекает и устанавливает текущий режим трассировки головного подразделения.
 
-### <a name="microsoftperceptionsimulationisimulatedhandtracker"></a>Microsoft.PerceptionSimulation.ISimulatedHandTracker
+### <a name="microsoftperceptionsimulationisimulatedhandtracker"></a>Microsoft. Перцептионсимулатион. Исимулатедхандтраккер
 
-Интерфейс, описывающий часть имитированное устройство, которое отслеживает руки имитации отдела
+Интерфейс, описывающий часть имитации устройства, которая отслеживает руки имитации человека
 
 ```
 public interface ISimulatedHandTracker
@@ -738,29 +738,29 @@ public interface ISimulatedHandTracker
 }
 ```
 
-**Microsoft.PerceptionSimulation.ISimulatedHandTracker.WorldPosition**
+**Microsoft. Перцептионсимулатион. Исимулатедхандтраккер. Ворлдпоситион**
 
-Получите позицию узла по всему миру, в метрах.
+Получение расположения узла относительно мира в метрах.
 
-**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Position**
+**Microsoft. Перцептионсимулатион. Исимулатедхандтраккер. положением**
 
-Получить и задать положение датчик имитации руки, относительно центра элемента head.
+Извлечение и задание положения объекта Tracker для имитации относительно центра головки.
 
-**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Pitch**
+**Microsoft. Перцептионсимулатион. Исимулатедхандтраккер. шаг**
 
-Получить и задать вниз pitch датчик имитации руки.
+Извлеките и задайте шаг вниз для смоделированного средства записи.
 
-**Microsoft.PerceptionSimulation.ISimulatedHandTracker.FrustumIgnored**
+**Microsoft. Перцептионсимулатион. Исимулатедхандтраккер. Фрустумигноред**
 
-Получить и задать ли пирамиды обзора средства отслеживания имитации наличии учитывается. При обоих руки всегда видимы. Если не учитывается (по умолчанию) руки доступны только внутри пирамиды обзора средства отслеживания вручную.
+Получите и задайте значение, определяющее, пропускается ли фрустум транспортера для имитации. Если игнорируется, обе руки всегда видимы. Если параметр не пропускается (по умолчанию), руки отображаются только в том случае, если они находятся в фрустуме средства записи.
 
-**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Frustum**
+**Microsoft. Перцептионсимулатион. Исимулатедхандтраккер. Фрустум**
 
-Получить и задать свойства пирамиды обзора, позволяет определить, если руки являются видимыми для датчик имитации руки.
+Получите и задайте свойства фрустум, используемые для определения, видны ли руки для имитации средства записи.
 
-### <a name="microsoftperceptionsimulationisimulatedhuman"></a>Microsoft.PerceptionSimulation.ISimulatedHuman
+### <a name="microsoftperceptionsimulationisimulatedhuman"></a>Microsoft. Перцептионсимулатион. Исимулатедхуман
 
-Интерфейс верхнего уровня для управления как имитации человеку.
+Интерфейс верхнего уровня для управления имитируемым человеком.
 
 ```
 public interface ISimulatedHuman 
@@ -776,47 +776,47 @@ public interface ISimulatedHuman
 }
 ```
 
-**Microsoft.PerceptionSimulation.ISimulatedHuman.WorldPosition**
+**Microsoft. Перцептионсимулатион. Исимулатедхуман. Ворлдпоситион**
 
-Получить и задать положение узла по всему миру, в метрах. Соответствует позиция точки в центре фута как человеку.
+Извлечение и Установка расположения узла относительно мира в метрах. Это расположение соответствует точке в центре метров человека.
 
-**Microsoft.PerceptionSimulation.ISimulatedHuman.Direction**
+**Microsoft. Перцептионсимулатион. Исимулатедхуман. Direction**
 
-Получить и задать направление имитации человеческих лиц в мире. 0 радиан сталкивается вниз отрицательной полуоси Z. Положительное радианах поворот по часовой стрелке вокруг оси Y.
+Извлеките и задайте направление имитации человеческих лиц в мире. 0 радианы отменяют отрицательную ось Z. Положительные радианы поворачиваются по часовой стрелке относительно оси Y.
 
-**Microsoft.PerceptionSimulation.ISimulatedHuman.Height**
+**Microsoft. Перцептионсимулатион. Исимулатедхуман. Height**
 
-Получить и задать высоту как имитации человеку в метрах.
+Получение и задание высоты имитации человека в метрах.
 
-**Microsoft.PerceptionSimulation.ISimulatedHuman.LeftHand**
+**Microsoft. Перцептионсимулатион. Исимулатедхуман. LeftHand**
 
-Получите левой части имитации отдела.
+Получите левую руку имитации человека.
 
-**Microsoft.PerceptionSimulation.ISimulatedHuman.RightHand**
+**Microsoft. Перцептионсимулатион. Исимулатедхуман. Ригхсанд**
 
-Получите правой стороны из имитации отдела.
+Получите правую руку имитации человека.
 
-**Microsoft.PerceptionSimulation.ISimulatedHuman.Head**
+**Microsoft. Перцептионсимулатион. Исимулатедхуман. Head**
 
-Получите заголовок как имитации человеку.
+Получите заголовок имитации человека.
 
-**Microsoft.PerceptionSimulation.ISimulatedHuman.Move(Microsoft.PerceptionSimulation.Vector3)**
+**Microsoft. Перцептионсимулатион. Исимулатедхуман. Move (Microsoft. Перцептионсимулатион. Vector3)**
 
-Переместите имитации human относительно текущей позиции, в метрах.
-
-Параметры
-* Трансляция - перевода для перемещения относительно текущей позиции.
-
-**Microsoft.PerceptionSimulation.ISimulatedHuman.Rotate(System.Single)**
-
-Поворот имитации человека по отношению к его текущее направление, по часовой стрелке относительно оси Y
+Перемещение имитации человека относительно его текущего положения в метрах.
 
 Параметры
-* RADIANS - степень поворота вокруг оси Y.
+* перевод — перевод, который необходимо переместить, относительно текущего положения.
 
-### <a name="microsoftperceptionsimulationisimulatedhuman2"></a>Microsoft.PerceptionSimulation.ISimulatedHuman2
+**Microsoft. Перцептионсимулатион. Исимулатедхуман. вращение (System. Single)**
 
-Доступны дополнительные свойства путем приведения ISimulatedHuman для ISimulatedHuman2
+Поворот имитации человека относительно текущего направления по часовой стрелке по оси Y
+
+Параметры
+* радианы — величина поворота вокруг оси Y.
+
+### <a name="microsoftperceptionsimulationisimulatedhuman2"></a>Microsoft. Перцептионсимулатион. ISimulatedHuman2
+
+Дополнительные свойства доступны путем приведения Исимулатедхуман к ISimulatedHuman2.
 
 ```
 public interface ISimulatedHuman2
@@ -827,18 +827,18 @@ public interface ISimulatedHuman2
 }
 ```
 
-**Microsoft.PerceptionSimulation.ISimulatedHuman2.LeftController**
+**Microsoft. Перцептионсимулатион. ISimulatedHuman2. Лефтконтроллер**
 
-Получите левой 6-DOF контроллера.
+Получите левый 6-ДОФ контроллер.
 
-**Microsoft.PerceptionSimulation.ISimulatedHuman2.RightController**
+**Microsoft. Перцептионсимулатион. ISimulatedHuman2. Ригхтконтроллер**
 
-Получите контроллер правой 6-DOF.
+Получите подходящий 6-ДОФ контроллер.
 
 
-### <a name="microsoftperceptionsimulationisimulatedhand"></a>Microsoft.PerceptionSimulation.ISimulatedHand
+### <a name="microsoftperceptionsimulationisimulatedhand"></a>Microsoft. Перцептионсимулатион. Исимулатедханд
 
-Интерфейс, описывающий форму руки имитации отдела
+Интерфейс, описывающий руки имитации человека
 
 ```
 public interface ISimulatedHand
@@ -853,43 +853,43 @@ public interface ISimulatedHand
 }
 ```
 
-**Microsoft.PerceptionSimulation.ISimulatedHand.WorldPosition**
+**Microsoft. Перцептионсимулатион. Исимулатедханд. Ворлдпоситион**
 
-Получите позицию узла по всему миру, в метрах.
+Получение расположения узла относительно мира в метрах.
 
-**Microsoft.PerceptionSimulation.ISimulatedHand.Position**
+**Microsoft. Перцептионсимулатион. Исимулатедханд. положением**
 
-Получить и задать положение имитации Рука относительно как человеку в метрах.
+Получение и установка положения смоделированной руки относительно человека в метрах.
 
-**Microsoft.PerceptionSimulation.ISimulatedHand.Activated**
+**Microsoft. Перцептионсимулатион. Исимулатедханд. Activated**
 
-Получить и задать ли Рука, активированного в данный момент.
+Извлечение и задание того, активирована ли рука в настоящий момент.
 
-**Microsoft.PerceptionSimulation.ISimulatedHand.Visible**
+**Microsoft. Перцептионсимулатион. Исимулатедханд. Visible**
 
-Получите ли Рука видимой в данный момент для SimulatedDevice, (ie, будь то умеющий определяться с помощью HandTracker).
+Извлеките, является ли рука в настоящий момент видимой для SimulatedDevice (IE, находится ли она в положении, которое должно быть обнаружено Хандтраккер).
 
-**Microsoft.PerceptionSimulation.ISimulatedHand.EnsureVisible**
+**Microsoft. Перцептионсимулатион. Исимулатедханд. Енсуревисибле**
 
-Переместите Рука, таким образом, оно становится видимым для SimulatedDevice.
+Переместите руку так, чтобы она была видна SimulatedDevice.
 
-**Microsoft.PerceptionSimulation.ISimulatedHand.Move(Microsoft.PerceptionSimulation.Vector3)**
+**Microsoft. Перцептионсимулатион. Исимулатедханд. Move (Microsoft. Перцептионсимулатион. Vector3)**
 
-Изменить положение имитации Рука относительно текущей позиции, в метрах.
-
-Параметры
-* Трансляция - трансляции имитации вручную.
-
-**Microsoft.PerceptionSimulation.ISimulatedHand.PerformGesture(Microsoft.PerceptionSimulation.SimulatedGesture)**
-
-Сделайте жест, с помощью имитации вручную.  Она будет только обнаружена системой при включении Рука.
+Переместить положение моделируемой руки относительно ее текущей должности в метрах.
 
 Параметры
-* жест - жестов для выполнения.
+* перевод — величина, на которую переводятся смоделированные руки.
 
-### <a name="microsoftperceptionsimulationisimulatedhand2"></a>Microsoft.PerceptionSimulation.ISimulatedHand2
+**Microsoft. Перцептионсимулатион. Исимулатедханд. Перформжестуре (Microsoft. Перцептионсимулатион. Симулатеджестуре)**
 
-Путем приведения ISimulatedHand для ISimulatedHand2 доступны дополнительные свойства.
+Выполните жест, используя имитацию руки.  Она будет обнаружена системой только в том случае, если она включена.
+
+Параметры
+* жест — жест, который необходимо выполнить.
+
+### <a name="microsoftperceptionsimulationisimulatedhand2"></a>Microsoft. Перцептионсимулатион. ISimulatedHand2
+
+Дополнительные свойства доступны путем приведения Исимулатедханд к ISimulatedHand2.
 ```
 public interface ISimulatedHand2
 {
@@ -898,13 +898,13 @@ public interface ISimulatedHand2
 }
 ```
 
-**Microsoft.PerceptionSimulation.ISimulatedHand2.Orientation**
+**Microsoft. Перцептионсимулатион. ISimulatedHand2. Orientation**
 
-Получить или задать угол поворота имитации вручную.  Положительное радианах поворот по часовой стрелке, при взгляде на оси.
+Возвращает или задает поворот моделируемой руки.  Положительные радианы при просмотре по оси поворачиваются по часовой стрелке.
 
-### <a name="microsoftperceptionsimulationisimulatedhand3"></a>Microsoft.PerceptionSimulation.ISimulatedHand3
+### <a name="microsoftperceptionsimulationisimulatedhand3"></a>Microsoft. Перцептионсимулатион. ISimulatedHand3
 
-Доступны дополнительные свойства путем приведения ISimulatedHand для ISimulatedHand3
+Дополнительные свойства доступны путем приведения Исимулатедханд к ISimulatedHand3.
 ```
 public interface ISimulatedHand3
 {
@@ -915,22 +915,22 @@ public interface ISimulatedHand3
 }
 ```
 
-**Microsoft.PerceptionSimulation.ISimulatedHand3.GetJointConfiguration**
+**Microsoft. Перцептионсимулатион. ISimulatedHand3. Жетжоинтконфигуратион**
 
-Получите совместные конфигурацию для указанного соединения.
+Получение конфигурации соединения для указанного соединения.
 
-**Microsoft.PerceptionSimulation.ISimulatedHand3.SetJointConfiguration**
+**Microsoft. Перцептионсимулатион. ISimulatedHand3. Сетжоинтконфигуратион**
 
-Определить совместные конфигурацию для указанного соединения.
+Задает конфигурацию соединения для указанного соединения.
 
-**Microsoft.PerceptionSimulation.ISimulatedHand3.SetHandPose**
+**Microsoft. Перцептионсимулатион. ISimulatedHand3. Сесандпосе**
 
-Значение Рука известных поза с необязательный флаг для анимации.  Примечание: анимация не привести соединений, немедленно отражения их окончательной объединенной конфигурации.
+Задайте для параметра "рука" известное значение с необязательным флагом для анимации.  Примечание. анимация не приведет к тому, что присоединения будут немедленно отражены в своих окончательно Объединенных конфигурациях.
 
 
-### <a name="microsoftperceptionsimulationisimulatedhead"></a>Microsoft.PerceptionSimulation.ISimulatedHead
+### <a name="microsoftperceptionsimulationisimulatedhead"></a>Microsoft. Перцептионсимулатион. Исимулатедхеад
 
-Интерфейс, описывающий заголовок как имитации человеку.
+Интерфейс, описывающий заголовок имитации человека.
 
 ```
 public interface ISimulatedHead
@@ -942,28 +942,28 @@ public interface ISimulatedHead
 }
 ```
 
-**Microsoft.PerceptionSimulation.ISimulatedHead.WorldPosition**
+**Microsoft. Перцептионсимулатион. Исимулатедхеад. Ворлдпоситион**
 
-Получите позицию узла по всему миру, в метрах.
+Получение расположения узла относительно мира в метрах.
 
-**Microsoft.PerceptionSimulation.ISimulatedHead.Rotation**
+**Microsoft. Перцептионсимулатион. Исимулатедхеад. вращение**
 
-Получите поворот головы имитации. Положительное радианах поворот по часовой стрелке, при взгляде на оси.
+Извлеките поворот моделируемой головки. Положительные радианы при просмотре по оси поворачиваются по часовой стрелке.
 
-**Microsoft.PerceptionSimulation.ISimulatedHead.Diameter**
+**Microsoft. Перцептионсимулатион. Исимулатедхеад. диаметр**
 
-Получите диаметр имитации головного элемента. Это значение используется для определения center головного элемента (точка вращения).
+Получение диаметра смоделированного головного элемента. Это значение используется для определения центра заголовка (точки вращения).
 
-**Microsoft.PerceptionSimulation.ISimulatedHead.Rotate(Microsoft.PerceptionSimulation.Rotation3)**
+**Microsoft. Перцептионсимулатион. Исимулатедхеад. вращение (Microsoft. Перцептионсимулатион. Rotation3)**
 
-Поворот имитации head относительно текущего вращения. Положительное радианах поворот по часовой стрелке, при взгляде на оси.
+Поворот смоделированной головки относительно текущего поворота. Положительные радианы при просмотре по оси поворачиваются по часовой стрелке.
 
 Параметры
-* Поворот - сумму для поворота.
+* вращение — величина поворота.
 
-### <a name="microsoftperceptionsimulationisimulatedhead2"></a>Microsoft.PerceptionSimulation.ISimulatedHead2
+### <a name="microsoftperceptionsimulationisimulatedhead2"></a>Microsoft. Перцептионсимулатион. ISimulatedHead2
 
-Доступны дополнительные свойства путем приведения ISimulatedHead для ISimulatedHead2
+Дополнительные свойства доступны путем приведения Исимулатедхеад к ISimulatedHead2.
 
 ```
 public interface ISimulatedHead2
@@ -973,13 +973,13 @@ public interface ISimulatedHead2
 }
 ```
 
-**Microsoft.PerceptionSimulation.ISimulatedHead2.Eyes**
+**Microsoft. Перцептионсимулатион. ISimulatedHead2. глаза**
 
-Получите с точки зрения как имитации человеку.
+Извлеките глаза имитации человека.
 
-### <a name="microsoftperceptionsimulationisimulatedsixdofcontroller"></a>Microsoft.PerceptionSimulation.ISimulatedSixDofController
+### <a name="microsoftperceptionsimulationisimulatedsixdofcontroller"></a>Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер
 
-Интерфейс, описывающий 6 DOF контроллер, связанный с имитации отдела.
+Интерфейс, описывающий ДОФ контроллер, связанный с имитируемым человеком.
 
 ```
 public interface ISimulatedSixDofController
@@ -996,62 +996,62 @@ public interface ISimulatedSixDofController
 }
 ```
 
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.WorldPosition**
+**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. Ворлдпоситион**
 
-Получите позицию узла по всему миру, в метрах.
+Получение расположения узла относительно мира в метрах.
 
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Status**
+**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. status**
 
-Получить или задать текущее состояние контроллера.  Состояние контроллера должно быть присвоено значение, отличные от Off перед любым вызовом перемещение, поворот и нажмите кнопки будет выполнена успешно.
+Возвращает или задает текущее состояние контроллера.  Для состояния контроллера должно быть задано значение, отличное от OFF, прежде чем все вызовы для перемещения, вращения или нажатия кнопки будут выполнены.
 
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Position**
+**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. положением**
 
-Получить или задать положение виртуального контроллера относительно как человеку в метрах.
+Получение или установка положения имитации контроллера относительно человека в метрах.
 
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Orientation**
+**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. Orientation**
 
-Получить или задать ориентацию имитации контроллера.
+Получение или установка ориентации имитации контроллера.
 
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Move(Microsoft.PerceptionSimulation.Vector3)**
+**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. Move (Microsoft. Перцептионсимулатион. Vector3)**
 
-Изменить положение виртуального контроллера относительно текущей позиции, в метрах.
-
-Параметры
-* Трансляция - трансляции имитации контроллера.
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.PressButton(SimulatedSixDofControllerButton)**
-
-Нажмите кнопку имитации контроллера.  Она будет только обнаружена системой при включении контроллера.
+Переместить положение имитации контроллера относительно его текущего положения в метрах.
 
 Параметры
-* Кнопка - клавиши.
+* перевод — это величина, на которую нужно перевести имитируемый контроллер.
 
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.ReleaseButton(SimulatedSixDofControllerButton)**
+**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. Прессбуттон (Симулатедсиксдофконтроллербуттон)**
 
-Отпустите кнопку на контроллере имитации.  Она будет только обнаружена системой при включении контроллера.
-
-Параметры
-* Кнопка — для освобождения.
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.GetTouchpadPosition (out float, float)**
-
-Получает позицию имитации пальцем на сенсорной панели имитации контроллера.
+Нажмите кнопку на имитации контроллера.  Она будет обнаружена системой только в том случае, если контроллер включен.
 
 Параметры
-* x - горизонтальное положение пальца.
-* y - вертикальное положение пальца.
+* Кнопка для нажатия кнопки.
 
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.SetTouchpadPosition (float, float)**
+**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. Релеасебуттон (Симулатедсиксдофконтроллербуттон)**
 
-Установка для позиции имитации палец на сенсорной панели имитации контроллера.
+Выпустите кнопку на имитации контроллера.  Она будет обнаружена системой только в том случае, если контроллер включен.
 
 Параметры
-* x - горизонтальное положение пальца.
-* y - вертикальное положение пальца.
+* Кнопка для выпуска.
 
-### <a name="microsoftperceptionsimulationisimulatedsixdofcontroller2"></a>Microsoft.PerceptionSimulation.ISimulatedSixDofController2
+**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. Жеттаучпадпоситион (out float, out float)**
 
-Дополнительные свойства и методы доступны путем приведения ISimulatedSixDofController для ISimulatedSixDofController2
+Получить расположение имитации пальца на сенсорной панели имитации контроллера.
+
+Параметры
+* x — горизонтальное расположение пальца.
+* y — вертикальное расположение пальца.
+
+**Microsoft. Перцептионсимулатион. Исимулатедсиксдофконтроллер. Сеттаучпадпоситион (float, float)**
+
+Установите расположение имитации пальца на сенсорной панели имитации контроллера.
+
+Параметры
+* x — горизонтальное расположение пальца.
+* y — вертикальное расположение пальца.
+
+### <a name="microsoftperceptionsimulationisimulatedsixdofcontroller2"></a>Microsoft. Перцептионсимулатион. ISimulatedSixDofController2
+
+Дополнительные свойства и методы доступны путем приведения Исимулатедсиксдофконтроллер к ISimulatedSixDofController2.
 
 ```
 public interface ISimulatedSixDofController2
@@ -1063,30 +1063,30 @@ public interface ISimulatedSixDofController2
 }
 ```
 
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.GetThumbstickPosition (out float, float)**
+**Microsoft. Перцептионсимулатион. ISimulatedSixDofController2. Жетсумбстиккпоситион (out float, out float)**
 
-Получает позицию имитации джойстик имитации контроллера.
-
-Параметры
-* x - горизонтальное положение джойстик.
-* y - вертикальное положение джойстик.
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.SetThumbstickPosition (float, float)**
-
-Установка для позиции имитации джойстик имитации контроллера.
+Получение расположения имитации аналогового стика на имитации контроллера.
 
 Параметры
-* x - горизонтальное положение джойстик.
-* y - вертикальное положение джойстик.
+* x — горизонтальное расположение стика.
+* y — вертикальное расположение стика.
 
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.BatteryLevel**
+**Microsoft. Перцептионсимулатион. ISimulatedSixDofController2. Сетсумбстиккпоситион (float, float)**
 
-Извлечение или уровня заряда батареи имитации контроллера.  Значение должно быть больше 0,0 и меньше или равна 100,0.
+Задайте расположение имитации аналогового стика на имитации контроллера.
+
+Параметры
+* x — горизонтальное расположение стика.
+* y — вертикальное расположение стика.
+
+**Microsoft. Перцептионсимулатион. ISimulatedSixDofController2. Баттерилевел**
+
+Получение или установка уровня заряда батареи для имитации контроллера.  Значение должно быть больше 0,0 и меньше или равно 100,0.
 
 
-### <a name="microsoftperceptionsimulationisimulatedeyes"></a>Microsoft.PerceptionSimulation.ISimulatedEyes
+### <a name="microsoftperceptionsimulationisimulatedeyes"></a>Microsoft. Перцептионсимулатион. Исимулатедэйес
 
-Интерфейс, описывающий с точки зрения как имитации человеку.
+Интерфейс, описывающий глаза имитации человека.
 
 ```
 public interface ISimulatedEyes
@@ -1098,29 +1098,29 @@ public interface ISimulatedEyes
 }
 ```
 
-**Microsoft.PerceptionSimulation.ISimulatedEyes.Rotation**
+**Microsoft. Перцептионсимулатион. Исимулатедэйес. вращение**
 
-Получите угол поворота имитации глаза. Положительное радианах поворот по часовой стрелке, при взгляде на оси.
+Извлеките поворот имитации глаз. Положительные радианы при просмотре по оси поворачиваются по часовой стрелке.
 
-**Microsoft.PerceptionSimulation.ISimulatedEyes.Rotate(Microsoft.PerceptionSimulation.Rotation3)**
+**Microsoft. Перцептионсимулатион. Исимулатедэйес. вращение (Microsoft. Перцептионсимулатион. Rotation3)**
 
-Поворот имитации глаза относительно текущего вращения. Положительное радианах поворот по часовой стрелке, при взгляде на оси.
+Поворот имитации глаз относительно текущего вращения. Положительные радианы при просмотре по оси поворачиваются по часовой стрелке.
 
 Параметры
-* Поворот - сумму для поворота.
+* вращение — величина поворота.
 
-**Microsoft.PerceptionSimulation.ISimulatedEyes.CalibrationState**
+**Microsoft. Перцептионсимулатион. Исимулатедэйес. Калибратионстате**
 
-Получает или задает состояние калибровки имитации глаз.
+Возвращает или задает состояние калибровки для имитации глаз.
 
-**Microsoft.PerceptionSimulation.ISimulatedEyes.WorldPosition**
+**Microsoft. Перцептионсимулатион. Исимулатедэйес. Ворлдпоситион**
 
-Получите позицию узла по всему миру, в метрах.
+Получение расположения узла относительно мира в метрах.
 
 
-### <a name="microsoftperceptionsimulationisimulationrecording"></a>Microsoft.PerceptionSimulation.ISimulationRecording
+### <a name="microsoftperceptionsimulationisimulationrecording"></a>Microsoft. Перцептионсимулатион. Исимулатионрекординг
 
-Для воспроизведения загрузить интерфейс для взаимодействия с одной записью.
+Интерфейс для взаимодействия с одной записью, загруженной для воспроизведения.
 
 ```
 public interface ISimulationRecording
@@ -1134,34 +1134,34 @@ public interface ISimulationRecording
 };
 ```
 
-**Microsoft.PerceptionSimulation.ISimulationRecording.DataTypes**
+**Типы Microsoft. Перцептионсимулатион. Исимулатионрекординг.**
 
-Извлекает список типов данных в записи.
+Возвращает список типов данных в записи.
 
-**Microsoft.PerceptionSimulation.ISimulationRecording.State**
+**Microsoft. Перцептионсимулатион. Исимулатионрекординг. State**
 
-Возвращает текущее состояние записи.
+Извлекает текущее состояние записи.
 
-**Microsoft.PerceptionSimulation.ISimulationRecording.Play**
+**Microsoft. Перцептионсимулатион. Исимулатионрекординг. Play**
 
-Запустите воспроизведение. Если запись приостановлена, воспроизведение возобновляется из приостановленного расположения; При остановке воспроизведения начнется в начале. Если уже воспроизведение, этот вызов учитывается.
+Запустите воспроизведение. Если запись приостановлена, воспроизведение будет возобновлено из приостановленного расположения. При остановке воспроизведение начнется с самого начала. Если воспроизведение уже проигрывается, этот вызов игнорируется.
 
-**Microsoft.PerceptionSimulation.ISimulationRecording.Pause**
+**Microsoft. Перцептионсимулатион. Исимулатионрекординг. Pause**
 
-Приостанавливает воспроизведение на текущем месте. Если запись остановлена, вызов игнорируется.
+Приостанавливает воспроизведение в текущем расположении. Если запись остановлена, вызов игнорируется.
 
-**Microsoft.PerceptionSimulation.ISimulationRecording.Seek(System.UInt64)**
+**Microsoft. Перцептионсимулатион. Исимулатионрекординг. Seek (System. UInt64)**
 
-Ищет запись в указанное время (в 100 наносекунд интервалов с самого начала) и приостановит выполнение в этом расположении. Если время выходит за пределы записи, оно было приостановлено в последнем фрейме.
+Ищет запись в указанное время (в 100 наносекундах с начала) и останавливается в этом расположении. Если время превышает окончание записи, оно приостанавливается на последнем кадре.
 
 Параметры
-* такты - время которого осуществляется поиск.
+* такты — время поиска.
 
-**Microsoft.PerceptionSimulation.ISimulationRecording.Stop**
+**Microsoft. Перцептионсимулатион. Исимулатионрекординг. останавливаться**
 
-Останавливает воспроизведение и сбрасывает позицию в начало.
+Останавливает воспроизведение и сбрасывает текущую точку в начало.
 
-### <a name="microsoftperceptionsimulationisimulationrecordingcallback"></a>Microsoft.PerceptionSimulation.ISimulationRecordingCallback
+### <a name="microsoftperceptionsimulationisimulationrecordingcallback"></a>Microsoft. Перцептионсимулатион. Исимулатионрекордингкаллбакк
 
 Интерфейс для получения изменений состояния во время воспроизведения.
 
@@ -1172,16 +1172,16 @@ public interface ISimulationRecordingCallback
 };
 ```
 
-**Microsoft.PerceptionSimulation.ISimulationRecordingCallback.PlaybackStateChanged(Microsoft.PerceptionSimulation.PlaybackState)**
+**Microsoft. Перцептионсимулатион. Исимулатионрекордингкаллбакк. Плайбаккстатечанжед (Microsoft. Перцептионсимулатион. PlaybackState)**
 
-Вызывается, когда изменилось состояние ISimulationRecording воспроизведения.
+Вызывается при изменении состояния воспроизведения Исимулатионрекординг.
 
 Параметры
-* новое состояние - новое состояние записи.
+* newState — новое состояние записи.
 
-### <a name="microsoftperceptionsimulationperceptionsimulationmanager"></a>Microsoft.PerceptionSimulation.PerceptionSimulationManager
+### <a name="microsoftperceptionsimulationperceptionsimulationmanager"></a>Microsoft. Перцептионсимулатион. Перцептионсимулатионманажер
 
-Корневой объект для создания объектов восприятие моделирования.
+Корневой объект для создания объектов имитации восприятия.
 
 ```
 public static class PerceptionSimulationManager
@@ -1192,56 +1192,56 @@ public static class PerceptionSimulationManager
     public static ISimulationRecording LoadPerceptionSimulationRecording(string path, ISimulationStreamSinkFactory factory, ISimulationRecordingCallback callback);
 ```
 
-**Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationManager(Microsoft.PerceptionSimulation.ISimulationStreamSink)**
+**Microsoft. Перцептионсимулатион. Перцептионсимулатионманажер. Креатеперцептионсимулатионманажер (Microsoft. PerceptionSimulation. ISimulationStreamSink)**
 
-Создание объекта для создания имитации пакетов и их доставки в указанный приемник.
+Создать на объекте для создания смоделированных пакетов и доставки их в предоставленный приемник.
 
 Параметры
-* приемник - приемник, который будет получать все созданные пакеты.
+* приемник — приемник, который будет принимать все созданные пакеты.
 
 Возвращаемое значение
 
 Созданный диспетчер.
 
-**Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationRecording(System.String)**
+**Microsoft. Перцептионсимулатион. Перцептионсимулатионманажер. Креатеперцептионсимулатионрекординг (System. String)**
 
-Создание приемника, который сохраняет все принимаемые пакеты в файл по указанному пути.
+Создание приемника, в котором хранятся все полученные пакеты в файле по указанному пути.
 
 Параметры
-* Path - путь к файлу для создания.
+* путь — путь к создаваемому файлу.
 
 Возвращаемое значение
 
 Созданный приемник.
 
-**Microsoft.PerceptionSimulation.PerceptionSimulationManager.LoadPerceptionSimulationRecording(System.String,Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory)**
+**Microsoft. Перцептионсимулатион. Перцептионсимулатионманажер. Лоадперцептионсимулатионрекординг (System. String, Microsoft. PerceptionSimulation. ISimulationStreamSinkFactory)**
 
-Загрузите записи из указанного файла.
+Загрузка записи из указанного файла.
 
 Параметры
-* Path - путь к загружаемому файлу.
-* Фабрика - фабрики, используемые записи для создания ISimulationStreamSink при необходимости.
+* путь — путь к загружаемому файлу.
+* Factory — фабрика, используемая записью для создания Исимулатионстреамсинк при необходимости.
 
 Возвращаемое значение
 
-Загрузить записи.
+Загруженная запись.
 
-**Microsoft.PerceptionSimulation.PerceptionSimulationManager.LoadPerceptionSimulationRecording (System.String,Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory, Microsoft.PerceptionSimulation.ISimulationRecordingCallback)**
+**Microsoft. Перцептионсимулатион. Перцептионсимулатионманажер. Лоадперцептионсимулатионрекординг (System. String, Microsoft. PerceptionSimulation. ISimulationStreamSinkFactory, Microsoft. Перцептионсимулатион. Исимулатионрекордингкаллбакк)**
 
-Загрузите записи из указанного файла.
+Загрузка записи из указанного файла.
 
 Параметры
-* Path - путь к загружаемому файлу.
-* Фабрика - фабрики, используемые записи для создания ISimulationStreamSink при необходимости.
-* обновляет обратного вызова, который получает обратный вызов - regrading записи состояния.
+* путь — путь к загружаемому файлу.
+* Factory — фабрика, используемая записью для создания Исимулатионстреамсинк при необходимости.
+* Callback — обратный вызов, который получает обновления с пределом состояния записи.
 
 Возвращаемое значение
 
-Загрузить записи.
+Загруженная запись.
 
-### <a name="microsoftperceptionsimulationstreamdatatypes"></a>Microsoft.PerceptionSimulation.StreamDataTypes
+### <a name="microsoftperceptionsimulationstreamdatatypes"></a>Microsoft. Перцептионсимулатион. Стреамдататипес
 
-Описание различных типов потоковых данных.
+Описывает различные типы потоковых данных.
 
 ```
 public enum StreamDataTypes
@@ -1256,37 +1256,37 @@ public enum StreamDataTypes
 }
 ```
 
-**Microsoft.PerceptionSimulation.StreamDataTypes.None**
+**Microsoft. Перцептионсимулатион. Стреамдататипес. None**
 
-Значение sentinel, используемый для указания нет типов данных stream.
+Значение Sentinel, используемое для обозначения отсутствия типов данных потока.
 
-**Microsoft.PerceptionSimulation.StreamDataTypes.Head**
+**Microsoft. Перцептионсимулатион. Стреамдататипес. Head**
 
-Stream данные, касающиеся положение и ориентацию орла.
+Поток данных, относящийся к положению и ориентации головного элемента.
 
-**Microsoft.PerceptionSimulation.StreamDataTypes.Hands**
+**Microsoft. Перцептионсимулатион. Стреамдататипес. руки**
 
-Stream данные, касающиеся позиции и жесты руки.
+Поток данных о положении и жестах руки.
 
-**Microsoft.PerceptionSimulation.StreamDataTypes.SpatialMapping**
+**Microsoft. Перцептионсимулатион. Стреамдататипес. Спатиалмаппинг**
 
-Stream данные, касающиеся пространственное сопоставление среды.
+Поток данных о пространственном сопоставлении среды.
 
-**Microsoft.PerceptionSimulation.StreamDataTypes.Calibration**
+**Microsoft. Перцептионсимулатион. Стреамдататипес. Калибровка**
 
-Stream данные, касающиеся калибровки устройства. Калибровка пакетов принимаются только системой в удаленном режиме.
+Поток данных, касающихся калибровки устройства. Пакеты калибровки принимаются только системой в удаленном режиме.
 
-**Microsoft.PerceptionSimulation.StreamDataTypes.Environment**
+**Microsoft. Перцептионсимулатион. Стреамдататипес. Environment**
 
-Stream данные о среде устройства.
+Поток данных о среде устройства.
 
-**Microsoft.PerceptionSimulation.StreamDataTypes.All**
+**Microsoft. Перцептионсимулатион. Стреамдататипес. ALL**
 
-Значение sentinel, используемый для указания всех типов записанные данные.
+Значение Sentinel, используемое для указания всех записанных типов данных.
 
-### <a name="microsoftperceptionsimulationisimulationstreamsink"></a>Microsoft.PerceptionSimulation.ISimulationStreamSink
+### <a name="microsoftperceptionsimulationisimulationstreamsink"></a>Microsoft. Перцептионсимулатион. Исимулатионстреамсинк
 
-Объект, который получает пакеты данных из потока моделирования.
+Объект, получающий пакеты данных из потока имитации.
 
 ```
 public interface ISimulationStreamSink
@@ -1295,17 +1295,17 @@ public interface ISimulationStreamSink
 }
 ```
 
-**Microsoft.PerceptionSimulation.ISimulationStreamSink.OnPacketReceived (целое число без знака длиной, пакет byte [])**
+**Microsoft. Перцептионсимулатион. Исимулатионстреамсинк. Онпаккетрецеивед (длина uint, Byte [], пакет)**
 
-Получает один пакет, внутренне типизированных и с контролем версий.
+Получает один пакет, который внутренне типизирован и имеет версию.
 
 Параметры
-* Длина — длина пакета.
-* пакет - данные пакета.
+* Длина — Длина пакета.
+* пакет — данные пакета.
 
-### <a name="microsoftperceptionsimulationisimulationstreamsinkfactory"></a>Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory
+### <a name="microsoftperceptionsimulationisimulationstreamsinkfactory"></a>Microsoft. Перцептионсимулатион. Исимулатионстреамсинкфактори
 
-Объект, который создает ISimulationStreamSink.
+Объект, создающий Исимулатионстреамсинк.
 
 ```
 public interface ISimulationStreamSinkFactory
@@ -1314,9 +1314,9 @@ public interface ISimulationStreamSinkFactory
 }
 ```
 
-**Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory.CreateSimulationStreamSink()**
+**Microsoft. Перцептионсимулатион. Исимулатионстреамсинкфактори. Креатесимулатионстреамсинк ()**
 
-Создает один экземпляр ISimulationStreamSink.
+Создает единственный экземпляр Исимулатионстреамсинк.
 
 Возвращаемое значение
 

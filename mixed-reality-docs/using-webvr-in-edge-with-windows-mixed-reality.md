@@ -1,38 +1,38 @@
 ---
-title: С помощью WebVR в Microsoft Edge с Windows Mixed Reality
-description: Общие сведения о использовании и разработке для WebVR в Windows Mixed Reality
+title: Использование Вебвр в Microsoft погранично с Windows Mixed Reality
+description: Общие сведения об использовании и разработке для Вебвр в Windows Mixed Reality
 author: YashMaster
 ms.author: yabahman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: WebVR, WebXR, WinMR, WebAR, веб-vr, веб-xr, веб-mr, веб-ar, 360, 360 видео 360 видео, 360 фотографий, 360 фотографий, 360 содержимое, иммерсивных web, immersiveweb IW
+keywords: Вебвр, Вебкср, Винмр, Вебар, Web VR, Web XR, Web MR, Web AR, 360, 360 Video, 360 видео, 360 Photo, 360 Фото, 360 Content, иммерсивное веб-, иммерсивевеб, IW
 ms.openlocfilehash: fab17f4dcecc34d8f1ca4836dce6de90522899cd
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59604636"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "63548748"
 ---
-# <a name="using-webvr-in-microsoft-edge-with-windows-mixed-reality"></a>С помощью WebVR в Microsoft Edge с Windows Mixed Reality
+# <a name="using-webvr-in-microsoft-edge-with-windows-mixed-reality"></a>Использование Вебвр в Microsoft погранично с Windows Mixed Reality
 
-## <a name="creating-webvr-content-for-windows-mixed-reality-immersive-headsets"></a>Создание содержимого WebVR для Windows смешанной реальности иммерсивную
+## <a name="creating-webvr-content-for-windows-mixed-reality-immersive-headsets"></a>Создание содержимого Вебвр для впечатляющих головных телефонов Windows Mixed Reality
 
-WebVR 1.1 доступен в Microsoft Edge, начиная с Windows 10 Fall Creators Update. Разработчики теперь могут использовать этот API для создания мощных приложений виртуальной Реальности в Интернете.
+Вебвр 1,1 доступна в Microsoft ребре, начиная с обновления Windows 10 для дизайнеров. Теперь разработчики могут использовать этот API для создания впечатляющих функций VR в Интернете.
 
-WebVR API предоставляет данные поза HMD страницу, которая может использоваться для отображения сцены WebGL издавать HMD. Сведения о поддержке API можно найти в [странице состояние платформы Microsoft Edge](https://developer.microsoft.com/microsoft-edge/platform/status/webvr/). Контактная зона WebVR API присутствует на все время в Microsoft Edge. Тем не менее вызов getVRDisplays() вернет только гарнитуры Если подсоединено гарнитуры или симуляторе был включен.
+API Вебвр предоставляет на страницу данные ХМД, которые можно использовать для отображения стерео WebGL сцены обратно в ХМД. Дополнительные сведения о поддержке API см. на [странице состояния платформы Microsoft ребра](https://developer.microsoft.com/microsoft-edge/platform/status/webvr/). Контактная зона API Вебвр доступна всегда в Microsoft ребро. Однако вызов Жетврдисплайс () возвратит гарнитуру только в том случае, если телефонная гарнитура подключена или симулятор включен.
 
-## <a name="viewing-webvr-content-in-windows-mixed-reality-immersive-headsets"></a>Просмотр содержимого WebVR в Windows Mixed Reality иммерсивную
+## <a name="viewing-webvr-content-in-windows-mixed-reality-immersive-headsets"></a>Просмотр содержимого Вебвр в впечатляющих головных гарнитурах Windows Mixed Reality
 
-Инструкции для доступа к содержимому WebVR в вашей иммерсивных гарнитура можно найти в [кого руководство](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/webvr).
+Инструкции по доступу к содержимому Вебвр в иммерсивное гарнитуру можно найти в статье [о программе энтузиастов](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/webvr).
 
 ## <a name="see-also"></a>См. также
-* [Сведения о WebVR](http://webvr.info)
-* [Спецификация WebVR](https://w3c.github.io/webvr/)
-* [WebVR API](https://msdn.microsoft.com/library/mt806281(v=vs.85).aspx)
+* [Сведения о Вебвр](http://webvr.info)
+* [Спецификация Вебвр](https://w3c.github.io/webvr/)
+* [API Вебвр](https://msdn.microsoft.com/library/mt806281(v=vs.85).aspx)
 * [API WebGL](https://msdn.microsoft.com/library/bg182648(v=vs.85).aspx)
-* [Игровой API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) и [расширения Gamepad](https://w3c.github.io/gamepad/extensions.html)
-* [Обработка потери контекста в WebGL](https://www.khronos.org/webgl/wiki/HandlingContextLost)
-* [Pointerlock](http://www.w3.org/TR/pointerlock/)
-* [glTF](https://www.khronos.org/gltf)
-* [С помощью Babylon.js, чтобы включить WebVR](https://docs.microsoft.com/windows/uwp/get-started/adding-webvr-to-a-babylonjs-game)
+* Расширения [API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) и [игровой](https://w3c.github.io/gamepad/extensions.html) планшета
+* [Обработка потерянного контекста в WebGL](https://www.khronos.org/webgl/wiki/HandlingContextLost)
+* [поинтерлокк](http://www.w3.org/TR/pointerlock/)
+* [глтф](https://www.khronos.org/gltf)
+* [Использование Бабилон. js для включения Вебвр](https://docs.microsoft.com/windows/uwp/get-started/adding-webvr-to-a-babylonjs-game)
 

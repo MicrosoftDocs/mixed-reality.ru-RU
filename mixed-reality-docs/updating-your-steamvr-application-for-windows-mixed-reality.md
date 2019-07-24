@@ -1,71 +1,71 @@
 ---
-title: Обновление приложения для Windows Mixed Reality SteamVR
-description: Рекомендации для обновления приложения SteamVR для обеспечения максимальной совместимости с гарнитуры смешанной реальности Windows.
+title: Обновление приложения Стеамвр для Windows Mixed Reality
+description: Рекомендации по обновлению приложения Стеамвр для оптимизации совместимости с помощью головных телефонов Windows Mixed Reality.
 author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: SteamVR совместимости
+keywords: Стеамвр, совместимость
 ms.openlocfilehash: db21651df8e586edf500f0d05def4b1ea5474284
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59597856"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "63548676"
 ---
-# <a name="updating-your-steamvr-application-for-windows-mixed-reality"></a>Обновление приложения для Windows Mixed Reality SteamVR
+# <a name="updating-your-steamvr-application-for-windows-mixed-reality"></a>Обновление приложения Стеамвр для Windows Mixed Reality
 
-Мы рекомендуем разработчикам тестировать и оптимизировать их опыт SteamVR гарнитуры смешанной реальности Windows под управлением. Общих улучшений, которые разработчики могут сделать, чтобы убедиться, что их работы отлично работает со смешанной реальностью Windows входит в эту документацию.
+Мы советуем разработчикам тестировать и оптимизировать свои Стеамврные возможности для работы на гарнитурах Windows Mixed Reality. В этой документации рассматриваются распространенные улучшения, которые могут быть реализованы разработчиками, чтобы гарантировать, что их работа отлично работает в Windows Mixed Reality.
 
 ## <a name="initial-setup-instructions"></a>Инструкции по начальной настройке
 
-Для запуска тестирования игры или приложения в Windows Mixed Reality убедитесь что на первый выполните наши [руководство по началу работы.](http://aka.ms/WindowsMixedRealitySteamVR)
+Чтобы начать тестирование игры или приложения в Windows Mixed Reality, обязательно ознакомьтесь с нашим [руководством по началу работы.](http://aka.ms/WindowsMixedRealitySteamVR)
 
-## <a name="controller-models"></a>Контроллер моделей
-1. Если приложение отображает моделей контроллера:
-    * Используйте [Windows Mixed Reality движения контроллера моделей](motion-controllers.md#rendering-the-motion-controller-model)
-    * Используйте IVRRenderModel::GetComponentState для получения локального преобразует компонентов (например) Указатель поза)
-2. Действия, которые необходимо иметь представление о рабочей руки пользователя должны получить указания входных данных в API-интерфейсы для различения контроллеров [(например, Unity)](gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table)
+## <a name="controller-models"></a>Модели контроллеров
+1. Если приложение подготавливает модели контроллеров:
+    * Использование [моделей контроллеров движения Windows Mixed Reality](motion-controllers.md#rendering-the-motion-controller-model)
+    * Используйте Ивррендермодел:: Жеткомпонентстате для получения локальных преобразований в части компонентов (например, Указатель a)
+2. Опыт, имеющий понятие правой или левой, должен получать подсказки от входных API-интерфейсов для различения контроллеров [(пример Unity)](gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) .
 
 ## <a name="controls"></a>Элементы управления
 
-При создании или настройке макета элемента управления не забывайте следующий набор зарезервированных команд:
-1. Щелкнув вниз **левой и правой аналоговых джойстик** зарезервирован для **пара мониторинга**.
-2. **Кнопку Windows** всегда будет возвращать пользователей в Windows Mixed Reality home.
+При проектировании или настройке макета элемента управления учитывайте следующий набор зарезервированных команд:
+1. Щелчок **левого и правого аналогового стика** зарезервировано для **панели мониторинга Steam**.
+2. При **нажатии кнопки Windows** всегда будут возвращаться пользователи на домашнюю страницу Windows Mixed Reality.
 
-Если это возможно, по умолчанию, чтобы бегунок палочка основе teleportation в соответствии с [Windows Mixed Reality домашней](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) teleportation поведение
+Если это возможно, по умолчанию закрепить Телепорт на основе закрепления в соответствии с поведением [домашнего транспорта Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) .
 
-## <a name="tooltips-and-ui"></a>Всплывающие подсказки и пользовательского интерфейса
+## <a name="tooltips-and-ui"></a>Подсказки и пользовательский интерфейс
 
-Многие игры VR преимущества подсказки контроллера движения и наложения, чтобы обучить пользователей наиболее важные команды для их игры или приложения. При настройке приложения для Windows смешанной реальности рекомендуется рецензирование этой части работы, чтобы убедиться, что всплывающие подсказки, которые сопоставляются модели контроллера Windows.
+Многие игры VR используют преимущества всплывающих подсказок и наложения контроллера движения для обучения пользователям наиболее важных команд для их игры или приложения. При настройке приложения для Windows Mixed Reality рекомендуется проверить эту часть работы, чтобы убедиться, что всплывающие подсказки сопоставлены с моделями контроллера Windows.
 
-Кроме того при наличии все точки в процесс, где отображение контроллеров не забудьте предоставить обновленные образы с помощью контроллеров движения смешанной реальности Windows.
+Кроме того, при наличии каких бы то ни было точек в вашем интерфейсе, в которых отображаются образы контроллеров, вы должны предоставить обновленные образы с помощью контроллеров движения Windows Mixed Reality.
 
-## <a name="haptics"></a>Haptics
+## <a name="haptics"></a>хаптикс
 
-Начиная с версии [обновления Windows 10 апреля 2018 г.](release-notes-april-2018.md), haptics теперь поддерживаются для работы в SteamVR со смешанной реальностью Windows. Если SteamVR приложение или игра уже включает поддержку haptics, он должен работать теперь (с помощью дополнительных действий) с [контроллеров движения Windows Mixed Reality](motion-controllers.md).
+Начиная с [обновления Windows 10 от апреля 2018](release-notes-april-2018.md)г., хаптикс теперь поддерживаются для стеамврных возможностей Windows Mixed Reality. Если ваше приложение или игра Стеамвр уже включает поддержку хаптикс, теперь она должна работать (без дополнительной работы) с контроллерами [движения Windows Mixed Reality](motion-controllers.md).
 
-Контроллеры движения Windows Mixed Reality использовать стандартный haptics двигатель, в отличие от линейной Приводные механизмы, в некоторых других SteamVR движения контроллеров, что может привести к немного разных ожидаемого при использовании. Таким образом мы рекомендуем, тестирования и настройки макета haptics с контроллерами Windows Mixed Reality движения. Например иногда коротких haptic импульсов (5 – 10 мс) менее заметны на контроллерах Windows Mixed Reality движения. Для создания более заметным pulse, поэкспериментируйте с отправкой больше «click» (40-70 мс) для предоставления motor больше времени для настройки еще не были получены для power off еще раз.
+Контроллеры движения Windows Mixed Reality используют стандартный мотор хаптикс, в отличие от линейных исполнителей, находящихся в некоторых других Стеамвр контроллерах движения, что может привести к слегка отличающимся впечатлениям от ожидаемого взаимодействия с пользователем. Поэтому мы рекомендуем тестировать и настраивать дизайн хаптикс с помощью контроллеров движения Windows Mixed Reality. Например, иногда короткие хаптик пульса (5-10 мс) менее заметны на контроллерах движения Windows Mixed Reality. Чтобы получить более заметный импульс, поэкспериментируйте с отправкой более длительного "щелчка" (40-70ms), чтобы придать мотору больше времени, прежде чем отключать питание.
 
-## <a name="launching-steamvr-apps-from-windows-mixed-reality-start-menu"></a>Запуск приложений SteamVR из меню Windows Пуск смешанной реальности
+## <a name="launching-steamvr-apps-from-windows-mixed-reality-start-menu"></a>Запуск приложений Стеамвр из меню "Пуск" Windows Mixed Reality
 
-Для работы виртуальной Реальности, распространяемые через поток данных, мы улучшили [обновлены смешанной реальности Windows для бета-версии SteamVR](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) вместе с последней [Windows Insider](https://insider.windows.com) рейсы RS5 таким образом, чтобы заголовки SteamVR теперь отображаются в Windows смешанной реальности меню "Пуск" в «все приложения» список автоматически. С помощью этих версий программного обеспечения заказчикам теперь можно запускать SteamVR издательства непосредственно в Windows Mixed Reality домашней, не удаляя их гарнитуры.
+Для функций VR, распространяемых через Steam, мы [обновили бета-версию Windows Mixed Reality для Стеамвр Beta](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) вместе с последними рейсами [Windows Insider](https://insider.windows.com) RS5, чтобы теперь заголовки стеамвр отображались в меню Пуск Windows Mixed Reality в «все приложения». список автоматически. После установки этих версий программного обеспечения клиенты смогут запускать заголовки Стеамвр непосредственно из дома Windows Mixed Reality, не удаляя их гарнитуры.
 
 ## <a name="windows-mixed-reality-logo"></a>Логотип Windows Mixed Reality
 
-Для отображения Windows Mixed Reality поддержка название, перейдите по ссылке «Изменить страницу Store» на целевой странице приложения, перейдите на вкладку «Основные сведения» и прокрутите вниз до «Виртуальной реальности». Снимите флажок «Скрывать Windows Mixed Reality», а затем опубликовать в хранилище.
+Чтобы отобразить поддержку Windows Mixed Reality для вашего заголовка, перейдите на ссылку "Изменить страницу хранилища" на целевой странице приложения, щелкните вкладку "Основные сведения" и прокрутите вниз до пункта "Виртуальная реальность". Снимите флажок "скрыть Windows Mixed Reality", а затем опубликуйте его в хранилище.
 
-## <a name="bugs-and-feedback"></a>Ошибках и отзывы
+## <a name="bugs-and-feedback"></a>Ошибки и отзывы
 
-Ваши отзывы очень полезным, когда дело доходит до повышения удобства работы смешанной реальности SteamVR Windows. Отправьте все отзывы и ошибок с помощью [центр обратной связи Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/filing-feedback). Ниже приведены некоторые [советы о том, как опубликовать ваше мнение о SteamVR, как информативное максимально](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality#sharing-feedback-on-steamvr).
+Ваш отзыв не будет ценным, когда дело доходит до улучшения возможностей Стеамвр Windows Mixed Reality. Отправьте все отзывы и ошибки через [центр обратной связи Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/filing-feedback). Ниже приведены некоторые [советы о том, как сделать отзыв стеамвр как можно более удобным](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality#sharing-feedback-on-steamvr).
 
-Если у вас есть вопросы или комментарии для совместного использования, также нами можно связаться на наших [форум пара](http://steamcommunity.com/app/719950/discussions/).
+Если у вас есть вопросы или комментарии для совместного использования, вы также можете связаться с нами на нашем [форуме Steam](http://steamcommunity.com/app/719950/discussions/).
 
 ## <a name="faqs-and-troubleshooting"></a>Часто задаваемые вопросы и устранение неполадок
 
-Если у вас в общие вопросы по настройке или воспроизводится собственном опыте, [последних Узнайте](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#steamvr).
+Если у вас возникли общие проблемы с настройкой или воспроизведением опыта, [Ознакомьтесь с последними действиями по устранению неполадок](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#steamvr).
 
 ## <a name="see-also"></a>См. также
 * [Установка средств](install-the-tools.md)
-* [Журнал драйвера контроллера гарнитуры и перемещения](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software)
-* [Windows Mixed Reality минимальное ПК совместимости рекомендаций по оборудованию](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
+* [Журнал драйверов контроллера гарнитуры и движения](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software)
+* [Минимальные рекомендации по совместимости Windows Mixed Reality с оборудованием ПК](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)

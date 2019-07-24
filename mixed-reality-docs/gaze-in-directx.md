@@ -1,11 +1,11 @@
 ---
-title: HEAD и глаз взглядом в DirectX
-description: Руководство разработчика по использованию головной взглядом и отслеживания в собственных приложениях DirectX.
+title: Взгляд на головной взгляд и глаз в DirectX
+description: Рекомендации для разработчиков по использованию головного взгляда и отслеживания взгляда в собственных приложениях DirectX.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 05/09/2019
 ms.topic: article
-keywords: взглядом, головного взглядом, head отслеживания, отслеживания, directx, входные данные и голограммы
+keywords: Взгляните, руководитель, отслеживание головок, отслеживание взгляда, DirectX, ввод, голограммы
 ms.openlocfilehash: edf20a621178d76bfc97477f9f9b2eca200f1318
 ms.sourcegitcommit: d8700260f349a09c53948e519bd6d8ed6f9bc4b4
 ms.translationtype: MT
@@ -13,23 +13,23 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 06/27/2019
 ms.locfileid: "67414411"
 ---
-# <a name="head-and-eye-gaze-input-in-directx"></a>HEAD и глаз помощи входных данных в DirectX
+# <a name="head-and-eye-gaze-input-in-directx"></a>Ввод с взгляда на голову в DirectX
 
-В Windows Mixed Reality, глаз и головной взглядом входных данных используется для определения того, что пользователь просматривает. Это может использоваться для диска основных моделей ввода, такие как [головного взглядом и фиксации](gaze-and-commit.md)и Кроме того, чтобы предоставить контекст для типов взаимодействия. Существует два вида взглядом векторы, которые доступны через API: head взглядом и взглядом глаз.  Оба языка поставляются как 3 измерений Рэй с начала координат и направление. Приложения могут затем raycast в их сцены или реальном мире и определить, что он предназначен.
+В Windows Mixed Reality для определения того, что просматривает пользователь, используется ввод с глазом и взглядом на головной взгляд. Это можно использовать для работы с первичными входными моделями, такими как [головное взгляд и фиксация](gaze-and-commit.md), а также для предоставления контекста для типов взаимодействий. Есть два типа векторов взгляда, доступных через API: взгляд на голову и глаз.  Оба значения предоставляются в виде трехмерного луча с исходным и направленным координатами. Приложения могут райкаст в фоновом режиме или в реальном мире, а также определить назначение пользователя.
 
-**HEAD помощи** представляет направление, в указанном head пользователя. Это можно рассматривать как положения и направления переадресации самого устройства, с позиции, представляющий центре точек между двух мониторов.  HEAD взглядом доступна на всех устройствах смешанной реальности.
+**Головной взгляд** обозначает направление, на которое указывает заголовок пользователя. Это следует рассматривать как расположение и направление вперед самого устройства, а также позицию, представляющую центральную точку между двумя дисплеями.  Головной взгляд доступен на всех устройствах смешанной реальности.
 
-**Взглядом глаз** представляет направление, в котором глаза пользователя нужны сторону. Начало координат находится между глаза пользователя.  Она доступна на устройствах смешанной реальности, включающие за системой отслеживания.
+Взгляд **глаз** представляет направление, в котором ищутся глаза пользователя. Источник располагается между глазами пользователя.  Она доступна на устройствах смешанной реальности, включающих систему отслеживания взгляда.
 
-Head и глаз взглядом лучей, доступны через [SpatialPointerPose](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API. Просто вызовите [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) для получения объекта SpatialPointerPose в указанной отметке времени и [системы координат](coordinate-systems-in-directx.md). Этот SpatialPointerPose содержит origin головной взглядом и направление. Он также содержит начала координат глаз взглядом и направление при наличии отслеживания.
+И то, и другое, доступны через API [спатиалпоинтерпосе](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) . Просто вызовите [спатиалпоинтерпосе:: трижетаттиместамп](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) , чтобы получить новый объект спатиалпоинтерпосе в указанной метке времени и [системе координат](coordinate-systems-in-directx.md). Этот Спатиалпоинтерпосе содержит начало и направление головного взгляда. Он также содержит источник и направление взгляда на глаз, если отслеживание взгляда доступно.
 
-## <a name="using-head-gaze"></a>С помощью головного взглядом
+## <a name="using-head-gaze"></a>Использование головного взгляда
 
-Чтобы получить доступ к головному взглядом, запустите путем вызова [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) для получения объекта SpatialPointerPose. Необходимо передать следующие параметры.
- - Объект [SpatialCoordinateSystem](https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial.spatialcoordinatesystem) , представляющий требуемой системы координат для головного взглядом. Это ограничение задается *система coordinateSystem* переменных в следующем коде. Дополнительные сведения см. в статье наших [системы координат](coordinate-systems-in-directx.md) руководство разработчика.
- - Объект [Timestamp](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicframeprediction.timestamp#Windows_Graphics_Holographic_HolographicFramePrediction_Timestamp) , представляющий точное время Головной позу запрошено.  Обычно вы будете использовать метку времени, соответствующее времени, когда будет отображаться текущего кадра. Вы можете получить эту метку времени отображения прогнозируемых из [HolographicFramePrediction](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction) объект, который можно получить с помощью текущего [HolographicFrame](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicframe).  Этот объект HolographicFramePrediction представлен *прогноза* переменной в следующем коде.
+Чтобы получить доступ к главному взгляду, начните с вызова [спатиалпоинтерпосе:: трижетаттиместамп](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) , чтобы получить новый объект спатиалпоинтерпосе. Необходимо передать следующие параметры.
+ - Объект [спатиалкурдинатесистем](https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial.spatialcoordinatesystem) , представляющий нужную систему координат для головного взгляда. Он представлен переменной *курдинатесистем* в следующем коде. Дополнительные сведения см. в нашем разделе, посвященном разработчику [систем координат](coordinate-systems-in-directx.md) .
+ - [Отметка времени](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicframeprediction.timestamp#Windows_Graphics_Holographic_HolographicFramePrediction_Timestamp) , представляющая точное время запроса Head.  Обычно используется метка времени, соответствующая времени, когда будет отображаться текущий кадр. Эту прогнозируемую отметку экрана можно получить из объекта [холографикфрамепредиктион](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction) , доступного через текущий [холографикфраме](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicframe).  Этот объект Холографикфрамепредиктион представляется переменной *прогноза* в следующем коде.
 
- При наличии допустимых SpatialPointerPose головного положения и направления переадресации доступны как свойства.  Ниже показано, как получить к ним доступ.
+ После получения допустимого Спатиалпоинтерпосе расположение головного и прямого направления можно получить в виде свойств.  В следующем коде показано, как получить доступ к ним.
 
  ```cpp
 using namespace winrt::Windows::UI::Input::Spatial;
@@ -45,14 +45,14 @@ if (pointerPose)
 }
 ```
 
-## <a name="using-eye-gaze"></a>С помощью взглядом глаз
+## <a name="using-eye-gaze"></a>Использование взгляда глаз
 
-API взглядом глаз очень похожа на головной взглядом.  Она использует тот же [SpatialPointerPose](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API, предоставляющая луча, начало координат и направление, вы можете raycast от сцены.  Единственная разница в, необходимо явно включить отслеживание глаз перед его использованием. Для этого вам необходимо выполнить два действия:
-1. Запрашивать разрешение пользователя для использования отслеживания в приложении.
-2. Включите функцию «Помощи Input» в манифесте пакета.
+API взгляда на глаза очень похож на голову.  Он использует тот же API [спатиалпоинтерпосе](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) , который предоставляет происхождение и направление луча, которые можно райкаст на сцене.  Единственное отличие заключается в том, что необходимо явно включить отслеживание взгляда перед его использованием. Для этого необходимо выполнить два действия:
+1. Запрос разрешения пользователя на использование отслеживания взгляда в приложении.
+2. Включите функцию "Ввод взгляда" в манифесте пакета.
 
-### <a name="requesting-access-to-gaze-input"></a>Запросить доступ к помощи входных данных
-При запуске приложения вызовите [EyesPose::RequestAccessAsync](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) запрашивать доступ к глаз отслеживания. Система будет запрашивать пользователя, при необходимости и возвращают [GazeInputAccessStatus::Allowed](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.gazeinputaccessstatus) после предоставления доступа. Это асинхронный вызов, поэтому она требует некоторого дополнительного управления. Следующий пример запускает отсоединенных std::thread ожидания результата, который сохраняется в переменную-член вызывается *m_isEyeTrackingEnabled*.
+### <a name="requesting-access-to-gaze-input"></a>Запрос доступа к входным данным взгляда
+При запуске приложения вызовите [эйеспосе:: рекуестакцессасинк](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) , чтобы запросить доступ к отслеживанию глаз. Система запросит пользователя при необходимости и возвратит [газеинпутакцессстатус:: Allowed](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.gazeinputaccessstatus) после предоставления доступа. Это асинхронный вызов, поэтому для него требуется некоторое дополнительное управление. В следующем примере выполняется вращение отсоединенного std:: Thread для ожидания результата, который сохраняется в переменную-член с именем *m_isEyeTrackingEnabled*.
 
 ```cpp
 using namespace winrt::Windows::Perception::People;
@@ -71,10 +71,10 @@ std::thread requestAccessThread([this]()
 requestAccessThread.detach();
 
 ```
-Запуск отсоединенных поток является только один из вариантов для обработки асинхронных вызовов.  Кроме того, можно использовать новый [co_await](https://docs.microsoft.com/en-us/windows/uwp/cpp-and-winrt-apis/concurrency) функциональные возможности, поддерживаемые C++/WinRT.
-Вот еще один пример для запросом разрешения пользователя:
--   EyesPose::IsSupported() позволяет приложению для запуска диалогового окна разрешение только в том случае, если имеется tracker глаз.
--   GazeInputAccessStatus m_gazeInputAccessStatus; Это необходимо для предотвращения многократного всплывающее окно с запросом разрешения.
+Запуск отсоединенного потока — это только один вариант для обработки асинхронных вызовов.  Кроме того, можно использовать новые функции [co_await](https://docs.microsoft.com/en-us/windows/uwp/cpp-and-winrt-apis/concurrency) , поддерживаемые C++/винрт.
+Вот еще один пример для запроса разрешения пользователя:
+-   Эйеспосе:: An () позволяет приложению активировать диалоговое окно разрешения только в том случае, если имеется средство регистрации взгляда.
+-   Газеинпутакцессстатус m_gazeInputAccessStatus; Это позволяет предотвратить повторное извлечение запроса на разрешение.
 
 ```cpp
 GazeInputAccessStatus m_gazeInputAccessStatus; // This is to prevent popping up the permission prompt over and over again.
@@ -101,23 +101,23 @@ if (Windows::Perception::People::EyesPose::IsSupported() &&
 ```
 
 
-### <a name="declaring-the-gaze-input-capability"></a>Объявление *помощи ввода* возможностей
+### <a name="declaring-the-gaze-input-capability"></a>Объявление возможности *ввода* с помощью взгляда
 
-Дважды щелкните файл appxmanifest в *обозревателе решений*.  Затем перейдите к *возможности* и установите *помощи ввода* возможностей. 
+Дважды щелкните файл AppxManifest в *Обозреватель решений*.  Затем перейдите к разделу возможностей и проверьте возможность *ввода* с помощью *средства* выбора. 
 
-![Возможность ввода взглядом](images/gaze-input-capability.png)
+![Возможность ввода с клавиатуры](images/gaze-input-capability.png)
 
-Это добавляет следующие строки, чтобы *пакета* раздела appxmanifest-файла:
+В раздел *пакета* в файле appxmanifest добавляются следующие строки:
 ```xml
   <Capabilities>
     <DeviceCapability Name="gazeInput" />
   </Capabilities>
 ```
 
-### <a name="getting-the-eye-gaze-ray"></a>Начало Рэй взглядом глаз
-После получения доступа к ET, вы можете свободно скопировать Рэй взглядом глаз каждого кадра.  Как и в головном взглядом получить [SpatialPointerPose](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) путем вызова [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) требуемой отметкой времени и системы координат. Содержит SpatialPointerPose [EyesPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose) объекта через [глаза](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) свойство. Это отличное от null, только при включении отслеживания. Оттуда можно проверить, есть ли у пользователя на устройстве за отслеживание калибровки, вызвав [EyesPose::IsCalibrationValid](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  Затем используйте [помощи](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) свойство для получения [SpatialRay](https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial.spatialray) contianing глаза помощи положения и направления. Свойства взглядом могут иногда иметь значение null, поэтому не забудьте проверить это. Это может произойти является, если калиброванных пользователь временно закрывает их глаза.
+### <a name="getting-the-eye-gaze-ray"></a>Получение луча с глазом взгляда
+Когда вы получите доступ к ET, вы можете свободно Взгляните на каждый кадр.  Как и в случае с заголовком, получите [спатиалпоинтерпосе](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) , вызвав [Спатиалпоинтерпосе:: трижетаттиместамп](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) с нужной меткой времени и системой координат. Спатиалпоинтерпосе содержит объект [эйеспосе](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose) через свойство [глаза](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) . Это значение не равно null, только если включено отслеживание глаз. Здесь можно проверить, имеет ли пользователь устройства калибровку отслеживания взгляда, вызвав [эйеспосе:: искалибратионвалид](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  Затем [Используйте свойство "](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) наблюдатель", чтобы получить [спатиалрай](https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial.spatialray) , контианинг расположение и направление взгляда. Свойство "взгляд" иногда может иметь значение null, поэтому обязательно проверьте это. Это может произойти, если калибровка пользователя временно закрывает свои глаза.
 
-Приведенный ниже показано, как получить доступ к Рэй взглядом глаз.
+В следующем коде показано, как получить доступ к элементу взгляда на глаз.
 
 ```cpp
 using namespace winrt::Windows::UI::Input::Spatial;
@@ -141,15 +141,15 @@ if (pointerPose)
 
 ```
 
-## <a name="correlating-gaze-with-other-inputs"></a>Сопоставление взглядом с других входных данных
+## <a name="correlating-gaze-with-other-inputs"></a>Сопоставление взгляда с другими входными данными
 
-Иногда может оказаться необходимым [SpatialPointerPose](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose) , соответствующий с событием в прошлом. Например если пользователь выполняет Air коснитесь кнопки, приложение может потребоваться знать, что они бы все видели. Для этой цели, используя [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) с кадром прогнозируемое время могут быть неточными из-за задержки между системы обработки ввода и отображения времени. Кроме того при использовании взглядом глаза для нацеливания на этот момент, как правило, для перемещения еще до завершения действие фиксации. Это меньше всего важна для простой Air, коснитесь, но становится более критичной, при объединении долго голосовые команды с быстрой глаз перемещений. Один из способов обработки этого сценария — чтобы сделать дополнительный вызов [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp), с помощью исторических метку времени, соответствующее событию ввода.  
+Иногда может оказаться, что требуется [спатиалпоинтерпосе](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose) , соответствующий событию в прошлом. Например, если пользователь выполняет касание Air, приложение может захотеть узнать, что именно оно искало. Для этой цели простое использование [спатиалпоинтерпосе:: трижетаттиместамп](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) с прогнозируемым временем кадров будет неточным из-за задержки между системной обработкой входных данных и временем вывода. Кроме того, если для нацеливания используется взгляд глаз, наши глаза, как правило, переходят даже перед завершением действия фиксации. Это не является проблемой для простого касания воздуха, но становится более важным при объединении длинных голосовых команд с помощью передвижений с быстрым глазом. Одним из способов решения этого сценария является создание дополнительного вызова [спатиалпоинтерпосе:: трижетаттиместамп](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp)с использованием метки времени с предысторией, соответствующей входному событию.  
 
-Однако для входных данных, которая направляет через SpatialInteractionManager, есть более простой метод. [SpatialInteractionSourceState](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) имеет свои собственные [TryGetAtTimestamp](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) функции. Вызова метода, предоставляющий вполне коррелированные [SpatialPointerPose](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose) без догадки. Дополнительные сведения о работе с SpatialInteractionSourceStates взгляните на [руки и контроллеры движения в DirectX](hands-and-motion-controllers-in-directx.md) документации.
+Однако для входных данных, перенаправляющихся через Спатиалинтерактионманажер, существует более простой метод. [Спатиалинтерактионсаурцестате](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) имеет собственную функцию [трижетаттиместамп](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) . Вызов, который предоставит вполне коррелированный [спатиалпоинтерпосе](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose) без предоставляя. Дополнительные сведения о работе с Спатиалинтерактионсаурцестатес см. в документации по [DirectX](hands-and-motion-controllers-in-directx.md) .
 
 ## <a name="see-also"></a>См. также
-* [Головной модель ввода, взглядом и фиксации](gaze-and-commit.md)
-* [Глаз взглядом на HoloLens 2](eye-tracking.md)
+* [Входная модель "руководитель" и "фиксация"](gaze-and-commit.md)
+* [Глаз — Взгляните на HoloLens 2](eye-tracking.md)
 * [Системы координат в DirectX](coordinate-systems-in-directx.md)
-* [Голосовой ввод в DirectX](voice-input-in-directx.md)
+* [Ввод голоса в DirectX](voice-input-in-directx.md)
 * [Контроллеры движения и жестов в DirectX](hands-and-motion-controllers-in-directx.md)
