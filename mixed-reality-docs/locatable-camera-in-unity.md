@@ -1,47 +1,47 @@
 ---
-title: Может быть найдена камеры в Unity
-description: Использование может быть найдена камеры HoloLens в Unity.
+title: Камера размещаемые в Unity
+description: Использование камеры HoloLens размещаемые в Unity.
 author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: фото, видео, hololens, камеры, unity, может быть найдена
+keywords: Фото, видео, hololens, Камера, Unity, размещаемые
 ms.openlocfilehash: f0183400f55b1c6663a9a20ab4992befe5ad0718
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59601769"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "63515432"
 ---
-# <a name="locatable-camera-in-unity"></a>Может быть найдена камеры в Unity
+# <a name="locatable-camera-in-unity"></a>Камера размещаемые в Unity
 
-## <a name="enabling-the-capability-for-photo-video-camera"></a>Включение возможности для видеокамера фото
+## <a name="enabling-the-capability-for-photo-video-camera"></a>Включение возможности для видеокамеры
 
-Функция «Веб-камера» должен быть объявлен для приложения для использования [камеры](locatable-camera.md).
-1. В редакторе Unity, перейдите к параметрам проигрывателя, перейдя на страницу «Изменить > проекта Параметры > Player»
-2. Перейдите на вкладку «Windows Store»
-3. В разделе «Возможности публикации > Параметры» установите флажок **веб-камера** и **"микрофон"** возможности
+Для использования [камеры](locatable-camera.md)приложение должно быть объявлено как "веб-камера".
+1. В редакторе Unity перейдите к параметрам проигрывателя, перейдя на страницу "Изменение > параметров проекта > Player".
+2. Перейдите на вкладку "Магазин Windows".
+3. В разделе "Параметры публикации > возможности" Проверьте возможности веб- **камеры** и **микрофона** .
 
-Одновременно с камеры могут возникнуть только одну операцию. Чтобы определить, какой режим (фото, видео или none) камеры в данный момент, можно проверить UnityEngine.XR.WSA.WebCam.Mode.
+Только одна операция может выполняться с камерой за раз. Чтобы определить, в каком режиме в настоящее время используется камера (Фото, видео или нет), можно проверить UnityEngine. XR. WSA. Camera. Mode.
 
-## <a name="photo-capture"></a>Фотосъемки
+## <a name="photo-capture"></a>Запись фотографий
 
-**Пространство имен:** *UnityEngine.XR.WSA.WebCam*<br>
-**Тип:** *PhotoCapture*
+**Имен** *UnityEngine. XR. WSA. веб-камера*<br>
+**Тип** *Фотозапись*
 
-*PhotoCapture* типа позволяет по-прежнему воспользоваться фотографии с видеокамеры фотографии. Общий шаблон с помощью *PhotoCapture* чтобы сделать фотографию выглядит следующим образом:
-1. Создание *PhotoCapture* объекта
-2. Создание *CameraParameters* с параметрами, мы хотим
-3. Перейти в режим фотографий с помощью *StartPhotoModeAsync*
-4. Сделать нужные фото
-    * (необязательно) Взаимодействовать с изображения
-5. Выход из режима фотографии и очистка ресурсов
+Тип *фотосъемки* позволяет вам по-прежнему иметь фотографии фотокамеры. Общий шаблон использования фотосъемки  для получения фотографий выглядит следующим образом:
+1. Создание объекта *Фотозаписи*
+2. Создание объекта *камерапараметерс* с нужными параметрами
+3. Запуск фоторежима через *стартфотомодеасинк*
+4. Взять нужную фотографию
+    * используемых Взаимодействие с этим изображением
+5. Отключение режима фото и очистка ресурсов
 
-### <a name="common-set-up-for-photocapture"></a>Общие настройки для PhotoCapture
+### <a name="common-set-up-for-photocapture"></a>Стандартная настройка для фотозахвата
 
-Для всех трех целей мы начнем с тем же сначала 3 описанные выше действия
+Для всех трех вариантов использования мы начнем с тех же самых первых 3 шагов.
 
-Мы начнем с создания *PhotoCapture* объекта
+Начнем с создания объекта *фотосъемки* .
 
 ```cs
 PhotoCapture photoCaptureObject = null;
@@ -51,7 +51,7 @@ PhotoCapture photoCaptureObject = null;
    }
 ```
 
-Далее мы хранения нашего объекта, значение списка параметров и Photo режим запуска
+Далее мы сохраняем наш объект, настроили наши параметры и запускаем Фоторежим.
 
 ```cs
 void OnPhotoCaptureCreated(PhotoCapture captureObject)
@@ -70,7 +70,7 @@ void OnPhotoCaptureCreated(PhotoCapture captureObject)
    }
 ```
 
-В конце концов мы также применяются те же очистки здесь код
+В итоге мы также будем использовать тот же код очистки, представленный здесь.
 
 ```cs
 void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
@@ -80,13 +80,13 @@ void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-После выполнения этих шагов можно выбрать тип фотографии для записи.
+После выполнения этих действий можно выбрать тип фотографии для записи.
 
-### <a name="capture-a-photo-to-a-file"></a>Захват фото в файл
+### <a name="capture-a-photo-to-a-file"></a>Запись фотографии в файл
 
-Самый простой операции — извлечение фотографии непосредственно в файл. Фотографии могут сохраняться как JPG или PNG.
+Самой простой операцией является запись фотографии непосредственно в файл. Фотографию можно сохранить в формате JPG или PNG.
 
-Если мы успешно запущен режим фотографий, мы теперь будет сделать фотографию и сохранять их на диске
+Если вы успешно начали работу с фото-режимом, теперь мы будем делать фотографию и хранить ее на диске.
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -105,7 +105,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-После сохранения фотографий на диск, мы выйти из режима фотографии и затем выполнить очистку объектов
+После записи фотографии на диск мы будем выходить из фоторежимов, а затем очищать наши объекты.
 
 ```cs
 void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
@@ -122,13 +122,13 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-### <a name="capture-a-photo-to-a-texture2d"></a>Записать фотографию, чтобы Texture2D
+### <a name="capture-a-photo-to-a-texture2d"></a>Запись фотографии в Texture2D
 
-При записи данных Texture2D, процесс аналогичен чрезвычайно записи на диск.
+При записи данных в Texture2D процесс очень похож на запись на диск.
 
-Мы будем следовать выше процесс установки.
+Мы будем следовать процессу настройки выше.
 
-В *OnPhotoModeStarted*, мы будет захвата кадра в память.
+В *онфотомодестартед*мы будем записывать кадр в память.
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -144,7 +144,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-Затем мы наш результат применения к текстуре и использоваться общие очистки приведенный выше код.
+Затем мы будем применять наш результат к текстуре и используем наиболее распространенный код очистки.
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -163,11 +163,11 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
    }
 ```
 
-### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a>Захват фото и взаимодействие с необработанными байтами
+### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a>Запись фотографии и взаимодействие с необработанными байтами
 
-Для взаимодействия с необработанные байты обработки в памяти кадра, мы будем следовать те же самые действия, что и выше и *OnPhotoModeStarted* как захват фотографию, чтобы Texture2D. Различие заключается в *OnCapturedPhotoToMemory* где мы можем получать необработанные байты и взаимодействовать с ними.
+Чтобы взаимодействовать с необработанными байтами в кадре памяти, мы будем выполнять те же действия по настройке, что и в примере выше, и *онфотомодестартед* , как при записи фотографии в Texture2D. Разница заключается в *онкаптуредфототомемори* , где можно получить необработанные байты и взаимодействовать с ними.
 
-В этом примере мы создадим *списка<Color>*  которого может быть дополнительно обработаны или применить к текстуры с помощью *SetPixels()*
+В этом примере мы создадим *список<Color>*  , который можно обработать или применить к текстуре с помощью *сетпикселс ()* .
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -200,20 +200,20 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
    }
 ```
 
-## <a name="video-capture"></a>Видеозаписи
+## <a name="video-capture"></a>Видеозапись
 
-**Пространство имен:** *UnityEngine.XR.WSA.WebCam*<br>
-**Тип:** *VideoCapture*
+**Имен** *UnityEngine. XR. WSA. веб-камера*<br>
+**Тип** *видеокаптуре*
 
-*VideoCapture* функции, подобные очень *PhotoCapture*. Только два различия, что необходимо указать значение кадры на второй (кадров/с), и можно сохранить только непосредственно на диск как MP4-файл. Указания по использованию *VideoCapture* таковы:
-1. Создание *VideoCapture* объекта
-2. Создание *CameraParameters* с параметрами, мы хотим
-3. Запуск видеорежима через *StartVideoModeAsync*
+Функция *видеокаптуре* очень похожа на функцию фотозахвата. Единственное отличие заключается в том, что необходимо указать значение кадров в секунду, которое можно сохранить непосредственно на диск в виде MP4-файла. Ниже приведены действия по использованию *видеокаптуре* .
+1. Создание объекта *видеокаптуре*
+2. Создание объекта *камерапараметерс* с нужными параметрами
+3. Запуск видеорежима через *стартвидеомодеасинк*
 4. Начать запись видео
-5. Остановить запись видео
-6. Выход из режима видео и очистка ресурсов
+5. Закончить запись видео
+6. Воспроизведение видеорежима и очистка ресурсов
 
-Мы начнем с создания нашей *VideoCapture* объект *VideoCapture m_VideoCapture = null;*
+Начнем с создания нашего объекта *Видеокаптуре* *видеокаптуре m_VideoCapture = NULL;*
 
 ```cs
 void Start ()
@@ -222,7 +222,7 @@ void Start ()
    }
 ```
 
-Мы затем настроим параметры, которые нам потребуются средства для записи и запуска.
+Затем будут настроены параметры, которые будут нужны для записи и запуска.
 
 ```cs
 void OnVideoCaptureCreated (VideoCapture videoCapture)
@@ -252,7 +252,7 @@ void OnVideoCaptureCreated (VideoCapture videoCapture)
    }
 ```
 
-После запуска, мы начнем с записи
+После запуска запись начнется
 
 ```cs
 void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
@@ -267,7 +267,7 @@ void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-После запуска записи удалось обновить пользовательский Интерфейс или поведения, чтобы включить остановки. Здесь мы просто в журнал
+После начала записи можно обновить пользовательский интерфейс или поведение, чтобы включить остановку. Вот только журнал
 
 ```cs
 void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
@@ -277,7 +277,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-В дальнейшем необходимо остановить запись. Это может произойти с таймером или пользовательского ввода, для экземпляра.
+На более позднем этапе нам нужно будет отключить запись. Например, это может произойти из таймера или ввода пользователя.
 
 ```cs
 // The user has indicated to stop recording
@@ -287,7 +287,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-После остановки записи нужно будет остановить видеорежима и очистить наши ресурсы.
+После остановки записи будет остановлен видеорежим и очищены ресурсы.
 
 ```cs
 void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
@@ -304,8 +304,8 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 ```
 
 ## <a name="troubleshooting"></a>Устранение неполадок
-* Никаких действий не доступны.
-    * Убедитесь, **веб-камера** возможности, указанные в проекте.
+* Нет доступных разрешений
+    * Убедитесь, что в проекте указана возможность использования **веб-камеры** .
 
 ## <a name="see-also"></a>См. также
-* [Может быть найдена камеры](locatable-camera.md)
+* [Камера с определяемым местоположением](locatable-camera.md)

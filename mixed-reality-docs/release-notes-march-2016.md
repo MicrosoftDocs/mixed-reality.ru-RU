@@ -1,42 +1,42 @@
 ---
-title: Заметки о выпуске — март 2016 г.
-description: HoloLens заметки о выпуске к выпуску HoloLens и Windows Holographic.
+title: Заметки о выпуске — 2016 марта
+description: Заметки о выпуске HoloLens для запуска HoloLens и Windows Holographic.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: заметки о выпуске, HoloLens, ОС, платформы, функции, сборки, запуск
+keywords: Заметки о выпуске, HoloLens, ОС, платформа, компоненты, сборка, запуск
 ms.openlocfilehash: ef178f84256f21af873e43f663e4dd0b7ffd9ab8
-ms.sourcegitcommit: 384b0087899cd835a3a965f75c6f6c607c9edd1b
+ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59601349"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "63524774"
 ---
-# <a name="release-notes---march-2016"></a>Заметки о выпуске — март 2016 г.
+# <a name="release-notes---march-2016"></a>Заметки о выпуске — 2016 марта
 
-Добро пожаловать в Windows Holographic, доступных в первый раз на Microsoft HoloLens. Мы хотим [ваше мнение](give-us-feedback.md). Использовать центр отзывов, [форумы для разработчиков](https://forums.hololens.com) и [Twitter с помощью @HoloLens ](https://twitter.com/hololens).
+Добро пожаловать в Windows holographic, которая доступна в первый раз в Microsoft HoloLens. Мы хотим [услышать ваши отзывы](give-us-feedback.md). Используйте центр обратной связи, [форумы для разработчиков](https://forums.hololens.com) и [Twitter с помощью @HoloLens ](https://twitter.com/hololens).
 
-**Версии:** Windows Holographic марта 2016 г. (**10.0.11082.1033**)
+**Версия выпуска:** Выпуск Windows holographic, 2016 марта (**10.0.11082.1033**)
 
 >[!VIDEO https://www.youtube.com/embed/C98qaPAMVQU]
 
-## <a name="whats-in-windows-holographic"></a>Что такое в Windows Holographic
+## <a name="whats-in-windows-holographic"></a>Что есть в Windows holographic
 
-Попробуйте приложения папки "Входящие"
-* **Microsoft Edge.** Современный веб-браузер для Windows 10.
-* **Параметры.** Проверьте сведения о системе [подключения к Wi-Fi](connecting-to-wi-fi-on-hololens.md), и [подключаться к устройствам Bluetooth](hardware-accessories.md).
-* **Голограммы.** Поместите голограммы в ваш мир, присутствия за ними, а затем см. в разделе и прослушивайте их из любой угол.
-* **Калибровки.** Повторите [калибровки](calibration.md) сделать во время ожидания из настройки. Для этого при каждом переключении пользователей.
-* **Узнайте жестов.** Повторите руководстве жестов, сделать во время запуска out-of-box.
-* **Фотографии.** См. в разделе, смешанной реальности записи фотографии и видео, вы с устройством, а затем помещать их в мире, а также голограммы.
+Попробуйте использовать входящие приложения
+* **Microsoft ребро.** Современный веб-браузер для Windows 10.
+* **Параметры.** Проверьте сведения о системе, [подключитесь к Wi-Fi](connecting-to-wi-fi-on-hololens.md)и [подключитесь к устройствам Bluetooth](hardware-accessories.md).
+* **Голограммы.** Размещайте голограммы в своем мире, обходить их, а затем прослушивать и слышать их с любого угла.
+* **Монитора.** Повторите [калибровку](calibration.md) , которая была выполнена при первом запуске. Сделайте это при каждом переключении пользователей.
+* **Знакомство с жестами.** Повторите руководство по жестам, выполненное при первом запуске.
+* **Изображений.** Просмотрите фотографии и видеозаписи смешанной реальности, которые вы передаете на устройство, а затем поместите их в мир, а также голограммы.
 
-Для разблокировки устройства для разработки, откройте *параметры* приложение, перейдите *обновление и безопасность*, переключитесь в *для разработчиков* странице и задайте переключиться в режим разработчика включено. Это то же место, где вы можете включить [портал устройств](using-the-windows-device-portal.md).
+Чтобы разблокировать устройство для разработки, откройте приложение " *Параметры* ", перейдите в раздел " *Обновление & безопасность*", перейдите на страницу " *для разработчиков* " и установите переключатель "режим разработчика" в положение вкл. Это то же место, где можно включить [портал устройств](using-the-windows-device-portal.md).
 
 ## <a name="see-also"></a>См. также
-* [Известные проблемы HoloLens](hololens-known-issues.md)
+* [Известные проблемы с HoloLens](hololens-known-issues.md)
 * [Установка средств](install-the-tools.md)
-* [Перемещение Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
-* [Стандартные оборудования](hardware-accessories.md)
-* [Захват смешанной реальности](mixed-reality-capture.md)
+* [Навигация по дому с технологией Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md)
+* [Аксессуары к оборудованию](hardware-accessories.md)
+* [Съемка смешанной реальности](mixed-reality-capture.md)
 * [Использование эмулятора HoloLens](using-the-hololens-emulator.md)
