@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 3e4be00ddeab6d91dbbc8226bfa3dc543cded095
-ms.sourcegitcommit: 611af6ff7a2412abad80c0c7d4decfc0c3a0e8c8
+ms.openlocfilehash: 529a888dfa00180ca908fbc7f4c62f9a9086c661
+ms.sourcegitcommit: c7c7e3c836373b65e319609b4e8389dea6b081de
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68293675"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460322"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. Совместное использование передвижений объектов несколькими пользователями
 
@@ -50,7 +50,7 @@ ms.locfileid: "68293675"
 
 ![module3chapter4updatestep6](images/module3chapter4updatestep6.png)
 
-7. В представлении проекта перейдите к разделу Assets-> Resources-> Prefabs. Сначала перетащите таблицу prefab в слот Таблепрефаб в классе Фотонрум. Затем перетащите Лунармодуле prefab в гнездо prefab модуля в классе Фотонрум.
+7. В представлении проекта перейдите к разделу Assets-> Resources-> Prefabs. Сначала перетащите таблицу prefab в слот Таблепрефаб в классе Фотонрум. Затем перетащите Роккетлаунчеркомплетевариантпрефаб в гнездо Module prefab в классе Фотонрум.
 
 ![module3chapter4updatestep7](images/module3chapter4updatestep7.png)
 
@@ -67,10 +67,6 @@ ms.locfileid: "68293675"
 10. С помощью нового объекта, выбранного в иерархии, измените имя объекта на Таблеанчор на панели инспектора. Кроме того, нажмите кнопку Добавить компонент и найдите компонент Таблеанчор. Выберите его и добавьте в объект. 
 
 ![Module3Chapter4step6im](images/module3chapter4step7im.PNG)
-
-> Примечание. Установите положение x = 1, y =-0,55 и z = 2. Кроме того, установите для вращения значение y = 90. 
->
-> ![Module3Chapter4step6im](images/module3chapter4noteim.PNG)
 
 11. Теперь на панели проект в папке Prefabs перетащите таблицу prefab в только что созданный дочерний объект Таблеанчор.
 
