@@ -6,14 +6,14 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 0cffb9ac8f61f77b77fc5925264b95ba57d94ece
-ms.sourcegitcommit: c7c7e3c836373b65e319609b4e8389dea6b081de
+ms.openlocfilehash: b434b9c79a702067a9c3db6fb25b0f75cdc6030d
+ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460345"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68485780"
 ---
-# <a name="speech-sdk-learning-module---intent-and-natural-language-understanding"></a>Модуль обучения для речевого пакета SDK — намеренное и естественное Language Understanding
+# <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. Настройка намерения и естественного понимания языка
 
 На этом занятии мы рассмотрим функцию службы "речь" в Azure. Функция с намерением позволяет нам составить свое приложение с помощью голосовых команд на основе искусственного интеллекта, где пользователи могут говорить о неспециальных голосовых командах и по-прежнему иметь смысл, понятный системе. На этом занятии мы создадим портал Azure LUIS Portal, настроили наши намерения, сущности и фразы продолжительностью, публикуем наш ресурс, подключим приложение Unity к нашему намеренному ресурсу и сделаем наш первый вызов API.
 

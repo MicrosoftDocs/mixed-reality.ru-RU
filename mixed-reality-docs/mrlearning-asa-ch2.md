@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 80367ed818168c1d642fadbd7316d3d6481dd2a9
-ms.sourcegitcommit: 611af6ff7a2412abad80c0c7d4decfc0c3a0e8c8
+ms.openlocfilehash: b263d30905c5a1ba81bfb59ba6a49c7710c43869
+ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68293798"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68485744"
 ---
 # <a name="2-saving-retrieving-and-sharing-azure-spatial-anchors"></a>2. Сохранение, извлечение и совместное использование пространственных привязок Azure
 
@@ -81,5 +81,5 @@ ms.locfileid: "68293798"
 
 На следующем занятии будет рассмотрено, как предоставить пользователям отзывы в режиме реального времени. Этот отзыв будет включать сведения о создании привязок, качестве понимания качества среды и состоянии сеанса Azure. Без отзывов пользователи могут не определить, успешно ли отправлена привязка в Azure, имеет ли качество окружения достаточно для создания привязки или текущего состояния.
 
-[Следующий урок. Учебник по ASA 3](mrlearning-asa-ch3.md)
+[Следующий урок. 3. Отображение обратной связи с пространственными привязками Azure](mrlearning-asa-ch3.md)
 

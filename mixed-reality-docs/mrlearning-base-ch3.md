@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 4baee7ba8643f5bb80e0456eb97d915405431654
-ms.sourcegitcommit: b0b1b8e1182cce93929d409706cdaa99ff24fdee
+ms.openlocfilehash: 401c667ef80042da9182b7f4e065dfd6884cf061
+ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387710"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68485688"
 ---
 # <a name="4-placing-dynamic-content-and-using-solvers"></a>4. Размещение динамического содержимого и использование поисковых решений
 
@@ -74,8 +74,8 @@ ms.locfileid: "68387710"
 
 ![Изображение "Урок 3, раздел 3, шаг 5"](images/Lesson3_chapter3_step5im.PNG)
 
-### <a name="congratulations"></a>Поздравляем!
+## <a name="congratulations"></a>Поздравляем!
 В этом учебнике вы узнали, как использовать поисковые решения МРТК, чтобы пользовательский интерфейс был интуитивно понятен пользователю. Вы также узнали, как присоединить решатель к игровому объекту (например, кубу), чтобы объект следовал за отслеживаемыми руками пользователя. Дополнительные сведения об этих и других решателях в составе MRTK см. на [странице документации о решателях MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html).
 
-[Следующий урок. Взаимодействие с трехмерными объектами](mrlearning-base-ch4.md)
+[Следующий урок. 5.    Взаимодействие с трехмерными объектами](mrlearning-base-ch4.md)
 

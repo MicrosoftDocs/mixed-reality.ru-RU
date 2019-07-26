@@ -6,14 +6,14 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: f9da038fe917e9e45b386de54049d6aa312ecfba
-ms.sourcegitcommit: b0b1b8e1182cce93929d409706cdaa99ff24fdee
+ms.openlocfilehash: d7ef68d1a1e64ca85d76b11376d0916b2693e8e1
+ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387775"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68485713"
 ---
-# <a name="6exploring-advanced-input-options"></a>6. Изучение дополнительных параметров ввода
+# <a name="6-exploring-advanced-input-options"></a>6. Просмотр дополнительных параметров ввода
 
 В этом руководстве мы рассмотрим несколько дополнительных параметров ввода для HoloLens 2, включая использование речевых команд, жестов панорамирования и отслеживания глаз. 
 
@@ -198,8 +198,9 @@ ms.locfileid: "68387775"
 6. Убедитесь, что возможности отслеживания взгляда правильно настроены, прежде чем выполнять компиляцию в HoloLens 2. На момент написания этой статьи Unity еще не может установить входные данные взгляда для возможностей отслеживания взгляда. Установка этой возможности необходима для отслеживания взгляда в HoloLens 2. Выполните эти инструкции из документации по набору средств для смешанной реальности, чтобы включить возможность ввода взглядом: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#testing-your-unity-app-on-a-hololens-2 
 
 
-### <a name="congratulations"></a>Поздравляем! 
+## <a name="congratulations"></a>Поздравляем!
+
 Вы успешно добавили базовые возможности отслеживания взгляда в приложение. Эти действия только открывают целый мир новых возможностей, которые предоставляет отслеживание взгляда. Эта глава также завершает занятие 5, где мы узнали о расширенных функциях ввода, таких как речевые команды, жесты панорамирования и отслеживание глаз. 
 
-[Следующий урок. Пример сборки лунного модуля](mrlearning-base-ch6.md)
+[Следующий урок. 7. Создание примера приложения лунного модуля](mrlearning-base-ch6.md)
 

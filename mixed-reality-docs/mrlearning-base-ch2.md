@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 5275e862d2dec78c98510f754162961c80e9e4b8
-ms.sourcegitcommit: b0b1b8e1182cce93929d409706cdaa99ff24fdee
+ms.openlocfilehash: 6257b5a4b42127a7f15b235dbdd6b44967684fcb
+ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387716"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68485748"
 ---
 # <a name="3-creating-user-interface-and-configure-mixed-reality-toolkit"></a>3. Создание пользовательского интерфейса и настройка набора средств для смешанной реальности 
 
@@ -167,8 +167,8 @@ ms.locfileid: "68387716"
 
 ![Урок 2, глава 4, шаг 5](images/Lesson2_Chapter4_Step5.JPG)
 
-### <a name="congratulations"></a>Поздравляем!
+## <a name="congratulations"></a>Поздравляем!
 В рамках этого урока вы научились копировать и настраивать параметр профиля MRTK (видимость сетки отслеживания пространственного положения). Кроме того, вы узнали, как вызывать события для кнопки с помощью функции отслеживания руки в HoloLens 2. Наконец, вы создали простой пользовательский интерфейс с помощью Text Mesh Pro в Unity и компонента коллекции объектов сетки в MRTK.
 
-[Следующий урок. Динамическое размещение содержимого и решатели](mrlearning-base-ch3.md)
+[Следующий урок. 4. Размещение динамического содержимого и использование решателей](mrlearning-base-ch3.md)
 

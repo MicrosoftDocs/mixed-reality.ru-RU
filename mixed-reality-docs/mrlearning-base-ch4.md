@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 05/02/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: d47f2940ad741cb436322a824a67f54bb6376c55
-ms.sourcegitcommit: b0b1b8e1182cce93929d409706cdaa99ff24fdee
+ms.openlocfilehash: 314af3e1e38e1698943f07dc32f5e1e3e2f36d4f
+ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387700"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68485705"
 ---
 # <a name="5-interacting-with-3d-objects"></a>5. Взаимодействие с трехмерными объектами
 
@@ -202,8 +202,8 @@ ms.locfileid: "68387700"
 
 ![Изображение "Урок 4, глава 4, шаг 3, примечание 5"](images/Lesson4_chapter4_step3-5-noteim.PNG)
 
-### <a name="congratulations"></a>Поздравляем! 
+## <a name="congratulations"></a>Поздравляем! 
 В этом учебнике вы узнали, как организовать трехмерные объекты в коллекции Grid и как управлять трехмерными объектами (масштабирование, вращение и перемещение) с помощью ближнего действия (с отслеживанием руки) и намного взаимодействием (с использованием лучей или лучей). Вы также узнали, как разместить ограничивающие рамки вокруг трехмерных объектов и как использовать и настраивать приспособлений в ограничивающих прямоугольниках. И наконец, вы научились инициировать события при касании объекта.
 
-[Следующий урок. Расширенный ввод](mrlearning-base-ch5.md)
+[Следующий урок. 6. Изучение дополнительных входных параметров](mrlearning-base-ch5.md)
 

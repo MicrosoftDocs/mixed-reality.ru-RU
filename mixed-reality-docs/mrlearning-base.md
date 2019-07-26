@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 3c779d731d7cf139ebcbe305c94754970e937b57
-ms.sourcegitcommit: 611af6ff7a2412abad80c0c7d4decfc0c3a0e8c8
+ms.openlocfilehash: baf99fa313e3ab38f138078334fb1388a148d6da
+ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68293614"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68485608"
 ---
 # <a name="1-overview-and-objectives"></a>1. Общие сведения и цели
 
@@ -40,11 +40,11 @@ ms.locfileid: "68293614"
 
 ## <a name="before-you-start"></a>Прежде чем начать
 
-### <a name="prerequisites"></a>предварительные требования
+### <a name="prerequisites"></a>Предварительные требования
 
 * КОМПЬЮТЕР с Windows 10 с установленными правильными [инструментами](install-the-tools.md)
 * Windows 10 SDK 10.0.18362.0 или более поздней версии
 * Некоторые базовые C# возможности программирования.
 * Устройство HoloLens 2, [настроенное для разработки](using-visual-studio.md#enabling-developer-mode).
 
-[Следующий урок. Инициализация проекта и первое приложение](mrlearning-base-ch1.md)
+[Следующее занятие: 2. Инициализация проекта и первое приложение](mrlearning-base-ch1.md)

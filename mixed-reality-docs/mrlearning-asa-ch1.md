@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 690ece3a02aeefd598db18baa66de3ddabfa43eb
-ms.sourcegitcommit: 611af6ff7a2412abad80c0c7d4decfc0c3a0e8c8
+ms.openlocfilehash: 391e797ad9cc8933b057366ab47a3f453c68723e
+ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68293818"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68485775"
 ---
 # <a name="1-getting-started-with-azure-spatial-anchors"></a>1. Приступая к работе с пространственными привязками Azure
 
@@ -199,5 +199,5 @@ ms.locfileid: "68293818"
 ## <a name="congratulations"></a>Поздравляем!
 В этом руководстве вы узнали основы пространственных привязок Azure. Этот ессон предоставляет несколько кнопок, позволяющих изучить различные шаги, необходимые для запуска и завершения сеанса Azure, а также создавать, отправлять и скачивать привязки Azure на одном устройстве. На следующем занятии мы научитесь сохранять идентификаторы привязки Azure в HoloLens 2 для получения, даже после перезапуска приложения. В ходе серии вы также узнаете, как передавать идентификаторы привязки между несколькими устройствами для достижения пространственного выравнивания и изучать многопользовательские общие сеансы в рамках учебника по совместному использованию.
 
-[Следующий урок. ASA, урок 2](mrlearning-asa-ch2.md)
+[Следующий урок. 2. Сохранение, получение и совместное использование пространственных привязок Azure](mrlearning-asa-ch2.md)
 

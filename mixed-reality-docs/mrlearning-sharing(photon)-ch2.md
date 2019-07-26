@@ -1,4 +1,4 @@
-### <a name="getting-unity-ready-for-development"></a>Подготовка Unity к разработке 
+# <a name="2-getting-unity-ready-for-development"></a>2. Подготовка Unity к разработке 
 
 
 В этом руководстве мы научитесь подготавливать и настраивать Unity для разработки приложений, включая импорт набора средств для смешанной реальности, настройку параметров сборки и подготовку сцены.
@@ -11,7 +11,7 @@
 
 - Подготовка сцены проекта
 
-### <a name="instructions"></a>Инструкция
+## <a name="instructions"></a>Инструкция
 
 1. Скачайте и сохраните пакет Unity для набора средств Mixed Reality, щелкнув [здесь.](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.0.0-RC2.1/Microsoft.MixedReality.Toolkit.Unity.Foundation-v2.0.0-RC2.1.unitypackage)
 
@@ -76,5 +76,5 @@
 
 Теперь проект Unity готов для Photon. В следующих учебных курсах мы создадим эту сцену и наш проект Unity в полном объеме для совместной работы.
 
-[Следующий учебник: Подключение нескольких пользователей](mrlearning-sharing(photon)-ch3.md)
+[Следующий учебник: 3. Подключение нескольких пользователей](mrlearning-sharing(photon)-ch3.md)
 

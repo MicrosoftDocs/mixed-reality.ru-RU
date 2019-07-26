@@ -6,18 +6,18 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: e40cd50f75ca509c601d215cb865161ea3596565
-ms.sourcegitcommit: 611af6ff7a2412abad80c0c7d4decfc0c3a0e8c8
+ms.openlocfilehash: 46c32abaf45623b7ccba90f257959e4ef4f8e1b5
+ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68293647"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68485640"
 ---
-#  <a name="setting-up-photon-unity-networking"></a>Настройка сети Unity Photon
+#  <a name="1-setting-up-photon-unity-networking"></a>1. Настройка сети Unity Photon
 
 Из этого руководства вы узнаете, как подготовиться к созданию общего интерфейса, импортировав Photon Unity Networking (шутка) в проект Unity. Photon — это один из нескольких сетевых возможностей, доступных разработчикам смешанной реальности для создания общих возможностей. Мы научитесь создавать учетную запись Photon, импортировать Photon и создавать необязательный локальный сервер.
 
-Служит
+## <a name="objectives"></a>Цели
 
 * Узнайте, как создать учетную запись Photon.
 
@@ -27,7 +27,7 @@ ms.locfileid: "68293647"
 
   
 
-### <a name="setting-up-photon"></a>Настройка Photon
+## <a name="setting-up-photon"></a>Настройка Photon
 
 1. Настройте учетную запись [Photon](https://dashboard.photonengine.com/en-US/Account/SignUp) . Перейдите на страницу регистрации Photon, щелкнув [эту ссылку](https://dashboard.photonengine.com/en-US/Account/SignUp). Чтобы создать учетную запись, следуйте инструкциям на странице регистрации. 
    
@@ -69,5 +69,5 @@ ms.locfileid: "68293647"
 
 Вы успешно создали учетную запись Photon, настроили локальный сервер Photon и импортировали шутка в Unity. Следующим шагом является настройка проекта и последующее разрешение подключения с другими пользователями, чтобы несколько пользователей могли видеть вашу работу. 
 
-[Следующий учебник: Подготовка Unity к работе](mrlearning-sharing(photon)-ch2.md)
+[Следующий учебник: 2. Подготовка Unity к работе](mrlearning-sharing(photon)-ch2.md)
 

@@ -6,16 +6,18 @@ ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: e8dc5da5a089079ba38a26969df6070af8bc6200
-ms.sourcegitcommit: c7c7e3c836373b65e319609b4e8389dea6b081de
+ms.openlocfilehash: b13b22fcdce2e7fa1319d241302b764f457aabba
+ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460306"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68485601"
 ---
 # <a name="2----adding-an-offline-mode-for-local-speech-to-text-translation"></a>2.    Добавление автономного режима для локального перевода речи в текст
 
 В этом руководстве мы добавим автономный режим, который позволяет выполнять локальные преобразования речи в текст, когда не удается подключиться к службе Azure. Кроме того, мы будем *имитировать* отключенное состояние.
+
+## <a name="instructions"></a>Инструкция
 
 1. Выберите объект Lunarcom_Base в иерархии и нажмите кнопку Добавить компонент на панели инспектора. Найдите и выберите автономное распознавание Лунарком.
 
