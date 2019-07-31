@@ -8,18 +8,20 @@ ms.date: 03/21/2018
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, design, Interaction, Style, Color, app patterns, controls, sample apps, Mixed Reality Toolkit, MRTK
-ms.openlocfilehash: 88de9008dbea6cce3b980bbbe3d0f45b7818e7c9
-ms.sourcegitcommit: f20beea6a539d04e1d1fc98116f7601137eebebe
+ms.openlocfilehash: 6601f4c2dd75e6e555dd79bc92abcccc15eb1ab4
+ms.sourcegitcommit: 30246ab9b9be44a3c707061753e53d4bf401eb6b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66039210"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67326191"
 ---
 # <a name="design-for-mixed-reality"></a>Проектирование решений для смешанной реальности
 
 ![Проектирование решений для смешанной реальности](images/Bicycle-Leschi10.gif)
 
-Это руководство составили проектировщики, разработчики, руководители программ и исследователи корпорации Майкрософт, работающие с голографическими (например, HoloLens) и иммерсивными устройствами (например, гарнитуры смешанной реальности Acer и HP для Windows). Результат их работы представляет собой серию статей по проектированию решений для виртуального шлема Windows.
+
+Это руководство составили проектировщики, разработчики, руководители программ и исследователи корпорации Майкрософт, работающие с голографическими (например, HoloLens) и иммерсивными (например, гарнитуры смешанной реальности Acer и HP для Windows) устройствами. Результат их работы представляет собой серию статей по проектированию решений для виртуального шлема Windows.
+
 
 ## <a name="article-categories"></a>Категории статей
 
@@ -166,7 +168,7 @@ ms.locfileid: "66039210"
                             <a href="progress.md">Индикация хода выполнения</a>
                         </p>
                         <p>
-                            <a href="app-bar-and-bounding-box.md">Панель приложения и ограничивающая рамка</a>
+                            <a href="app-bar-and-bounding-box.md">Ограничивающая рамка и панель приложения</a>
                         </p>
                     </div>
                 </div>
@@ -194,7 +196,7 @@ ms.locfileid: "66039210"
                         </div>
                         <div class="cardText">
                             <h3>Периодическая таблица элементов</h3>
-                            <p>Узнайте, как расположить массив объектов в трехмерном пространстве с различными типами поверхности, используя коллекции объектов.</p>
+                            <p>Узнайте, как расположить массив объектов в трехмерном пространстве с различными типами поверхности, используя коллекцию объектов.</p>
                         </div>
                     </div>
                 </div>
@@ -248,7 +250,7 @@ ms.locfileid: "66039210"
 
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
     <li>
-    <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" title="Набор средств для смешанной реальности — Unity" data-linktype="absolute-path">
+    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/README.html#ui-and-interaction-building-blocks" title="Набор средств для смешанной реальности — Unity" data-linktype="absolute-path">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -284,26 +286,7 @@ ms.locfileid: "66039210"
             </div>
         </div>
       </a>  
-    </li>   
-        <li>
-    <a href="case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md" title="HoloSketch" data-linktype="absolute-path">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/HoloSketch.png" alt="HoloSketch">
-                        </div>
-                    </div>                    
-            <div class="cardText">
-                        <h3>HoloSketch</h3>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </a>  
-    </li>   
+    </li>       
             <li>
     <a href="https://www.simplygon.com" title="Simplygon" data-linktype="absolute-path">
         <div class="cardSize">
