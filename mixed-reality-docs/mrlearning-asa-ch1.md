@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 391e797ad9cc8933b057366ab47a3f453c68723e
-ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
+ms.openlocfilehash: 9f830bc4ead35fd308108051617c61c65d98d451
+ms.sourcegitcommit: c0d5c19b756b8e6ff95ea26a4d8d2b3a53878c2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68485775"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671970"
 ---
 # <a name="1-getting-started-with-azure-spatial-anchors"></a>1. Приступая к работе с пространственными привязками Azure
 
@@ -28,13 +28,13 @@ ms.locfileid: "68485775"
 ### <a name="downloading-and-importing-assets"></a>Загрузка и импорт ресурсов
 Прежде чем начать, скачайте и импортируйте следующие ресурсы:
 
-[Пространственные привязки Azure](https://github.com/azure/azure-spatial-anchors-samples/releases)
+[Пространственные привязки Azure v 1.1.0](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v1.1.0/AzureSpatialAnchors.unitypackage)
 
-[Пакет ресурсов основного модуля MR](https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2)
+[Пакет ресурсов для модуля MR версии 1.2](https://github.com/microsoft/MixedRealityLearning/releases/download/1.2/BaseModuleAssets-1.2.unitypackage)
 
-[Пакет ресурсов для модуля ASA](https://github.com/microsoft/MixedRealityLearning/releases/tag/ASA_1.1)
+[Пакет средств ASA Pack версия 1.0](https://github.com/microsoft/MixedRealityLearning/releases/download/v1/ASAModuleAssets_1.unitypackage)
 
-[Набор средств для смешанной реальности](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/)
+[Набор средств для смешанной реальности 2.0.0 RC1](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.0.0-RC1-Refresh/Microsoft.MixedReality.Toolkit.Unity.Foundation-v2.0.0-RC1-Refresh.unitypackage)
 
 > Примечание. Конкретные инструкции по импорту пространственных привязок Azure см. в шаге 6 для получения конкретных инструкций по пакету ресурсов и шаги с 3 по 4 для конкретных инструкций в наборе средств для смешанной реальности (МРКТ).
 
