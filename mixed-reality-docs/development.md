@@ -8,12 +8,12 @@ ms.date: 02/12/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, develop, development, HoloLens, unity, directx
-ms.openlocfilehash: b2bd9c4d81e5c7156ad753859a299209bad70c44
-ms.sourcegitcommit: d8700260f349a09c53948e519bd6d8ed6f9bc4b4
+ms.openlocfilehash: bf80b676d03fce9011f5952af476dcaa5e2b4eb2
+ms.sourcegitcommit: 76a7aa6e64e114b63ace058dd6d6d662b3c9f09e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67414431"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68507919"
 ---
 # <a name="development-launchpad"></a>Панель запуска для разработки
 
@@ -133,7 +133,7 @@ ms.locfileid: "67414431"
                     <div class="cardText">
                         <h3>Руководства по портированию приложений</h3>
                         <p>
-                            <a href="mrtk-porting-guide.md">Обновление приложений, используемых с HoloLens (1-го поколения),<br>до HoloLens 2</a>
+                            <a href="mrtk-porting-guide.md">Обновление приложений, используемых с HoloLens (1-го поколения),<br>для HoloLens 2</a>
                         </p>
                         <p>
                             <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html">Руководство по портированию<br>API набора средств для смешанной реальности (MRTK)</a>
@@ -164,7 +164,7 @@ ms.locfileid: "67414431"
                             <a href="rendering.md">Голографическая отрисовка</a>
                         </p>
                          <p>
-                            <a href="testing-your-app-on-hololens.md">Тестирование</a>
+                            <a href="testing-your-app-on-hololens.md">Тестирование приложения</a>
                         </p>                    
                     </div>
                 </div>
