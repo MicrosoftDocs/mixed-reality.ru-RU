@@ -22,7 +22,6 @@
 #### [Сброс настроек или восстановление HoloLens](reset-or-recover-your-hololens.md)
 #### [Сохранение и поиск файлов](saving-and-finding-your-files.md)
 #### [Просмотр фотографий](see-your-photos.md)
-#### [Настройка датчиков](sensor-tuning.md)
 #### [Обновление HoloLens](updating-hololens.md)
 #### [Общий доступ к устройствам](device-sharing.md)
 #### [Руководство по регулировке и чистке устройства HoloLens](hololens-demo-guide.md)
