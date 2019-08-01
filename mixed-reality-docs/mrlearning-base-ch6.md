@@ -1,17 +1,17 @@
 ---
-title: Базовый модуль обучения работе в смешанной реальности. Пример сборки лунного модуля
+title: Учебники по началу работы — 7. Создание примера приложения Лунный модуль
 description: В этом уроке мы объединим несколько концепций, которые узнали из предыдущих уроков, чтобы выполнить уникальный сценарий.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 79f2d3a4a3224533761ea2e4a7e73dc3d4d5e53e
-ms.sourcegitcommit: b0b1b8e1182cce93929d409706cdaa99ff24fdee
+ms.openlocfilehash: 97dd8fce1ebe53efc37cb48cde7dc9e207be9a42
+ms.sourcegitcommit: af1602710c1ccb7ed870a491923350d387706129
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387684"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701990"
 ---
 # <a name="7-creating-a-lunar-module-sample-application"></a>7. Создание примера приложения Лунный модуль
 

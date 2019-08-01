@@ -1,17 +1,17 @@
 ---
-title: Модуль MR Learning ASA. пространственный якорь Azure в HoloLens 2
+title: Учебники по пространственной привязке Azure — 2. Сохранение, извлечение и совместное использование пространственных привязок Azure
 description: В рамках этого курса вы узнаете, как реализовать функцию распознавания лиц Azure в приложении смешанной реальности.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: b263d30905c5a1ba81bfb59ba6a49c7710c43869
-ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
+ms.openlocfilehash: 4e60ed844e64d736c268dd3ec8453c6c2cb7ad75
+ms.sourcegitcommit: af1602710c1ccb7ed870a491923350d387706129
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68485744"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68702050"
 ---
 # <a name="2-saving-retrieving-and-sharing-azure-spatial-anchors"></a>2. Сохранение, извлечение и совместное использование пространственных привязок Azure
 
@@ -81,5 +81,5 @@ ms.locfileid: "68485744"
 
 На следующем занятии будет рассмотрено, как предоставить пользователям отзывы в режиме реального времени. Этот отзыв будет включать сведения о создании привязок, качестве понимания качества среды и состоянии сеанса Azure. Без отзывов пользователи могут не определить, успешно ли отправлена привязка в Azure, имеет ли качество окружения достаточно для создания привязки или текущего состояния.
 
-[Следующий урок. 3. Отображение обратной связи с пространственными привязками Azure](mrlearning-asa-ch3.md)
+[Следующий урок. 3. Отображение отзывов по пространственным привязкам Azure](mrlearning-asa-ch3.md)
 

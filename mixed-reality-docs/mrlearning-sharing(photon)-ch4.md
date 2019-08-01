@@ -1,17 +1,17 @@
 ---
-title: Модуль совместного использования MR для HoloLens 2
+title: Учебники по возможностям для нескольких пользователей — 4. Совместное использование передвижений объектов несколькими пользователями
 description: Пройдите этот курс, чтобы узнать, как реализовать совместное использование нескольких пользователей в приложении HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 77ae779b4bb32dd66a722c9793d1b83c4a64ae2e
-ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
+ms.openlocfilehash: 2e676d319ba7221cf9549b200b3d748f26025aa7
+ms.sourcegitcommit: af1602710c1ccb7ed870a491923350d387706129
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68485673"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701906"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. Совместное использование передвижений объектов несколькими пользователями
 

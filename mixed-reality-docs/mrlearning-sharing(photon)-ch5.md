@@ -1,19 +1,19 @@
 ---
-title: Модуль совместного использования MR для HoloLens 2
+title: Учебники по возможностям для нескольких пользователей — 5. Интеграция пространственных привязок Azure в общий интерфейс
 description: Пройдите этот курс, чтобы узнать, как реализовать совместное использование нескольких пользователей в приложении HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 1ae880208e79e2e045bd5e7298db260b7f0b2232
-ms.sourcegitcommit: 611af6ff7a2412abad80c0c7d4decfc0c3a0e8c8
+ms.openlocfilehash: cb4645d197238d8712719625bf11eac0650a8246
+ms.sourcegitcommit: af1602710c1ccb7ed870a491923350d387706129
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68293626"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701873"
 ---
-# <a name="azure-spatial-anchors-and-shared-experiences"></a>Пространственные привязки и общие возможности Azure
+# <a name="5-integrating-azure-spatial-anchors-into-a-shared-experience"></a>5. Интеграция пространственных привязок Azure в общий интерфейс
 
 На этом занятии мы Научитесь интегрировать пространственные привязки Azure (ASA) в наши общие возможности. ASA позволяет нескольким совместно размещенным устройствам иметь общую ссылку, если их физическая среда связана с закреплением виртуальных возможностей таким образом, что все участники видят объекты в одном физическом месте.
 

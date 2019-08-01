@@ -1,3 +1,18 @@
+---
+title: Учебники по возможностям для нескольких пользователей — 2. Подготовка Unity к разработке
+description: Пройдите этот курс, чтобы узнать, как реализовать совместное использование нескольких пользователей в приложении HoloLens 2.
+author: jessemcculloch
+ms.author: jemccull
+ms.date: 02/26/2019
+ms.topic: article
+keywords: mixed reality, unity, tutorial, hololens
+ms.openlocfilehash: 9d42811157db108baad51eab3f367a06a11b7f7b
+ms.sourcegitcommit: af1602710c1ccb7ed870a491923350d387706129
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701981"
+---
 # <a name="2-getting-unity-ready-for-development"></a>2. Подготовка Unity к разработке 
 
 

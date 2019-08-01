@@ -1,19 +1,19 @@
 ---
-title: Модуль Спичсдк с MR Learning — распознавание речи и транскрипция
+title: Учебники по службам речи Azure — 2. Добавление автономного режима для локального перевода речи в текст
 description: Пройдите этот курс, чтобы узнать, как реализовать пакет SDK для службы распознавания речи Azure в приложении смешанной реальности.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: b13b22fcdce2e7fa1319d241302b764f457aabba
-ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
+ms.openlocfilehash: 1dd6c01768ddf5dda954f50e0f7507022bd59c3b
+ms.sourcegitcommit: af1602710c1ccb7ed870a491923350d387706129
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68485601"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701861"
 ---
-# <a name="2----adding-an-offline-mode-for-local-speech-to-text-translation"></a>2.    Добавление автономного режима для локального перевода речи в текст
+# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2. Добавление автономного режима для локального перевода речи в текст
 
 В этом руководстве мы добавим автономный режим, который позволяет выполнять локальные преобразования речи в текст, когда не удается подключиться к службе Azure. Кроме того, мы будем *имитировать* отключенное состояние.
 

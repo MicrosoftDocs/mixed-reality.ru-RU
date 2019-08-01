@@ -1,17 +1,17 @@
 ---
-title: Основной модуль обучения работе со смешанной реальностью. Инициализация проекта и первое применение
+title: Учебники по началу работы — 2. Инициализация проекта и первого приложения
 description: В рамках этого курса вы узнаете, как реализовать функцию распознавания лиц Azure в приложении смешанной реальности.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: e79c3ea719a71d6df8ffd9e2be009d14a846a16a
-ms.sourcegitcommit: b086d7a62ee0c7913aa8f66c90e9d2527f270264
+ms.openlocfilehash: f003bebf51859122b679162f41797bff1becd3fb
+ms.sourcegitcommit: af1602710c1ccb7ed870a491923350d387706129
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68485724"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68702061"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2. Инициализация проекта и первого приложения
 
