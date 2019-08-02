@@ -134,8 +134,6 @@
 ## [Панель запуска для разработки](development.md)
 ## Облачные службы смешанной реальности
 ### [Пространственные привязки Azure](https://docs.microsoft.com/azure/spatial-anchors)
-### [Holographic Remoting Player](holographic-remoting-player.md)
-### [Условия лицензии на использование ПО для голографического удаленного взаимодействия](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 ## Unity
 ### [Обзор разработки в Unity](unity-development-overview.md)
 ### Начало работы
@@ -188,7 +186,6 @@
 #### [Ввод с помощью клавиатуры, мыши и контроллера в DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
 ### Более сложные темы
 #### [Использование XAML с голографическими приложениями DirectX](using-xaml-with-holographic-directx-apps.md)
-#### [Добавление голографического удаленного взаимодействия](add-holographic-remoting.md)
 ### [OpenXR](openxr.md)
 ## WebVR
 ### [Использование WebVR в Edge с Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
@@ -289,7 +286,16 @@
 ## Средства для удаленного взаимодействия и исследования
 ### [Использование портала устройств Windows](using-the-windows-device-portal.md)
 ### [Справочник по API портала устройств](device-portal-api-reference.md)
+## Голографическое удаленное взаимодействие
 ### [Holographic Remoting Player](holographic-remoting-player.md)
+### [Создание ведущего приложения с голографическим удаленным взаимодействием](holographic-remoting-create-host.md)
+### [Создание пользовательского проигрывателя для голографического удаленного взаимодействия](holographic-remoting-create-player.md)
+### [Пользовательские каналы данных с голографическим удаленным взаимодействием](holographic-remoting-custom-data-channels.md)
+### [Безопасное подключение с использованием голографического удаленного взаимодействия](holographic-remoting-secure-connection.md)
+### [Устранение неполадок и ограничения](holographic-remoting-troubleshooting.md)
+### [Условия лицензии на использование ПО для голографического удаленного взаимодействия](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+### Голографическое удаленное взаимодействие для HoloLens 1
+#### [Добавление голографического удаленного взаимодействия](add-holographic-remoting.md)
 ## Другое
 ### [Отслеживание QR-кода](qr-code-tracking.md)
 ### [Общий доступ в смешанной реальности](shared-experiences-in-mixed-reality.md)
