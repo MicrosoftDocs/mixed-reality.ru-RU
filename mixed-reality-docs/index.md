@@ -8,12 +8,12 @@ ms.date: 02/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
-ms.openlocfilehash: cf513cebbbf4f05721811cb82d584f9039e378b7
-ms.sourcegitcommit: d8700260f349a09c53948e519bd6d8ed6f9bc4b4
+ms.openlocfilehash: c39a5f2f31dc962758456f743e17aaf37fd4ed64
+ms.sourcegitcommit: 6a3b7d489c2aa3451b1c88c5e9542fbe1472c826
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67415387"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68817356"
 ---
 # <a name="mixed-reality-documentation"></a>Документация по смешанной реальности
 
@@ -104,7 +104,7 @@ ms.locfileid: "67415387"
                                     </a>
                             </li>
                             <li>
-                              <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/" target="_blank" title="Голосовые службы" data-linktype="absolute-path">
+                              <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/" target="_blank" title="Служба "Речь"" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -183,4 +183,4 @@ ms.locfileid: "67415387"
 
 
 >[!IMPORTANT]
->Все материалы по разработке решений смешанной реальности, содержащиеся на этом сайте, предоставляются исключительно для ознакомления. Вы как разработчик приложения несете полную ответственность за приложение, его использование и влияние на конечных пользователей. В частности вы гарантируете, что приложение не станет причиной дискомфорта, травмирования или любого другого вреда для пользователей. Также вы отвечаете за наличие соответствующих предупреждений и заявлений об отказе от ответственности. Вы должны во всех случаях предпринимать соответствующие действия, касающиеся разработки и публикации приложения, чтобы гарантировать его безопасность и выполнение всех обязательств, установленных в [соглашении между разработчиком приложений и корпорацией Майкрософт](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement). 
+>Все материалы по разработке решений смешанной реальности, содержащиеся на этом сайте, предоставляются исключительно для ознакомления. Вы как разработчик приложения несете полную ответственность за приложение, его использование и влияние на конечных пользователей. В частности, вы гарантируете, что приложение не станет причиной дискомфорта, травмирования или любого другого вреда для пользователей. Также вы отвечаете за наличие соответствующих предупреждений и заявлений об отказе от ответственности. Вы должны во всех случаях предпринимать соответствующие действия, касающиеся разработки и публикации приложения, чтобы гарантировать его безопасность и выполнение всех обязательств, установленных в [соглашении между разработчиком приложений и корпорацией Майкрософт](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement). 
