@@ -182,7 +182,6 @@
 #### [Пространственное сопоставление в DirectX](spatial-mapping-in-directx.md)
 ### Другие ключевые особенности
 #### [Общие пространственные привязки в DirectX](shared-spatial-anchors-in-directx.md)
-#### [Камера с определяемым местоположением в DirectX](locatable-camera-in-directx.md)
 #### [Ввод с помощью клавиатуры, мыши и контроллера в DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
 ### Более сложные темы
 #### [Использование XAML с голографическими приложениями DirectX](using-xaml-with-holographic-directx-apps.md)
