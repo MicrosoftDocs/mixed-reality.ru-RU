@@ -36,6 +36,7 @@
 ### [Контроллеры движения](motion-controllers.md)
 ### [Голосовой ввод](voice-input.md)
 ### [Пространственное сопоставление](spatial-mapping.md)
+### [Интерпретация сцены](scene-understanding.md)
 ### [Пространственный звук](spatial-sound.md)
 ### [Системы координат](coordinate-systems.md)
 ### [Пространственные привязки](spatial-anchors.md)
