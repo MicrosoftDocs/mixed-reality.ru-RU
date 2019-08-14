@@ -18,7 +18,6 @@
 #### [Известные проблемы с HoloLens](hololens-known-issues.md)
 #### [Устранение неполадок с HoloLens](troubleshooting.md)
 #### [Съемка смешанной реальности](mixed-reality-capture.md)
-#### [Навигация по дому с технологией Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md)
 #### [Сброс настроек или восстановление HoloLens](reset-or-recover-your-hololens.md)
 #### [Сохранение и поиск файлов](saving-and-finding-your-files.md)
 #### [Просмотр фотографий](see-your-photos.md)
@@ -27,6 +26,7 @@
 #### [Руководство по регулировке и чистке устройства HoloLens](hololens-demo-guide.md)
 ### Иммерсивные гарнитуры
 #### [Сведения об оборудовании иммерсивных гарнитур](immersive-headset-hardware-details.md)
+#### [Навигация по дому с технологией Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md)
 #### [Руководство для энтузиастов](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)
 ### [Аксессуары к оборудованию](hardware-accessories.md)
 ### [Руководство по регулировке и чистке устройства HoloLens](hololens-demo-guide.md)
