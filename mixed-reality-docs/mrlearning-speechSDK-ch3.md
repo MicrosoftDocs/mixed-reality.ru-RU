@@ -6,16 +6,16 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 27742702f7a274b3212cdf12c77d8acfa0a29834
-ms.sourcegitcommit: af1602710c1ccb7ed870a491923350d387706129
+ms.openlocfilehash: c7cbdca3c22253042a9be44a194fca8925f0f446
+ms.sourcegitcommit: 599bbdd861ce6ff11b6cfb345a0a995f8b7bf85b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701828"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68977962"
 ---
 # <a name="3-adding-the-azure-cognitive-services-speech-translation-component"></a>3. Добавление компонента перевода речи Azure Cognitive Services
 
-В этом учебнике мы рассмотрим аабаут в нашем проекте компонент перевода речи Azure Cognitive Services, а также на трех разных языках. 
+В этом учебнике мы рассмотрим компонент перевода речи Azure Cognitive Services в нашем проекте, а также на трех разных языках. 
 
 ## <a name="instructions"></a>Инструкция
 
@@ -45,5 +45,5 @@ ms.locfileid: "68701828"
 
 Теперь ваш проект может переводить слова на несколько разных языков. Вы можете поэкспериментировать с языками и проверить точность перевода. 
 
-[Следующий учебник: 4.  Настройка намерения и распознавание естественного языка](mrlearning-speechSDK-ch4.md)
+[Следующий учебник: 4. Настройка намерения и распознавание естественного языка](mrlearning-speechSDK-ch4.md)
 
