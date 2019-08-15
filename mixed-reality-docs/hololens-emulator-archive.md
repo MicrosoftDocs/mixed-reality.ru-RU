@@ -3,15 +3,15 @@ title: Архив эмулятора HoloLens
 description: Список выпущенных сборок эмулятора Microsoft HoloLens.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 4/25/2019
+ms.date: 8/14/2019
 ms.topic: article
 keywords: HoloLens, Emulator, сборки, версии
-ms.openlocfilehash: b209e444c223c3183d2680976f68c33a3b6ed79b
-ms.sourcegitcommit: 06ac2200d10b50fb5bcc413ce2a839e0ab6d6ed1
+ms.openlocfilehash: 548e8fb72af137e53c10c4507c56f29c8bd6a4ca
+ms.sourcegitcommit: 06c27acdac24c845952f9c1d3611770756f25820
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67694429"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69030158"
 ---
 Эмулятор HoloLens (1-й общий) и эмулятор HoloLens 2 устанавливаются параллельно. Обычно рекомендуется использовать последнюю доступную сборку, но в некоторых случаях требуется или необходимость тестирования приложения в старом эмуляторе. На этой странице содержатся ссылки на выпущенные версии.
 
@@ -21,7 +21,8 @@ ms.locfileid: "67694429"
 
 |  Сборка |  Дата выпуска |  Примечания | 
 |----------|----------|----------|
-|  [10.0.18362.1021 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2098508) | 8 июля 2019 г. | Последняя сборка HoloLens 2.  Устраняет ошибку подписывания с помощью Дискстреам. dll |
+|  [10.0.18362.1028 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2101019) | 14 августа 2019 г. | Сборка HoloLens 2019 в августе 2.  Шаблоны holographic приложений больше не включены, но доступны в Visual Studio Marketplace, начиная с сентября 2019.  Теперь эмулятор будет работать при установке пакетов SDK в пользовательском расположении. |
+|  [10.0.18362.1021 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2098508) | 8 июля 2019 г. | Устраняет ошибку подписывания с помощью Дискстреам. dll |
 |  [10.0.18362.1019 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2095316) | 11 июня 2019 г. | Больше не требуется запускать от имени администратора.  Добавлен ярлык меню "Пуск". |
 |  [10.0.18362.1005 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2087187) | 16 апреля 2019 г. |  |
 
