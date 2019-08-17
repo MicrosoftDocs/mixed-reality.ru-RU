@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 07/08/19
 ms.topic: article
 keywords: Основные сведения о сцене, пространственное сопоставление, Windows Mixed Reality, Unity
-ms.openlocfilehash: 88138622987800ff86a24d05e1308e694e2dd2b1
-ms.sourcegitcommit: c4c293971bb3205a82121bbfb40d1ac52b5cb38e
+ms.openlocfilehash: 152ffdbd84798c164963717a8dc41beb2e1a0902
+ms.sourcegitcommit: e9a55528965048ce34f8247ef6e544f9f432ee37
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "68941241"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69559863"
 ---
 ## <a name="scene-understanding-sdk-overview"></a>Общие сведения о пакете SDK для сцены
 
@@ -109,7 +109,7 @@ ms.locfileid: "68941241"
 <tr>
 <th>сценеобжекткинд</th> <th>Описание</th>
 </tr>
-<tr><td>Фон</td><td>Известно, что Сценеобжект <b>не</b> является одним из других распознаваемых видов объекта сцены. Этот класс не следует путать с неизвестным, где фон может не быть стенным, этажным, потолком и т. д. Хотя эта категория неизвестна, она еще не классифицирована.</b></td></tr>
+<tr><td>Фоновый</td><td>Известно, что Сценеобжект <b>не</b> является одним из других распознаваемых видов объекта сцены. Этот класс не следует путать с неизвестным, где фон может не быть стенным, этажным, потолком и т. д. Хотя эта категория неизвестна, она еще не классифицирована.</b></td></tr>
 <tr><td>Брандмауэр</td><td>Физическая стенка. Предполагается, что стены являются неперемещаемыми структурами окружающей среды.</td></tr>
 <tr><td>Фабрич</td><td>Полs — это любые поверхности, на которых может пройти один проход. Примечание. лестницы не являются этажами. Кроме того, обратите внимание, что в этом этаже предполагается любая неанализируемойная поверхность и, следовательно, нет явного предположений в единственном этаже. Многоуровневые структуры, пандуси и т. д. Все категории должны классифицироваться как пол.</td></tr>
 <tr><td>Толок</td><td>Верхняя поверхность комнаты.</td></tr>
@@ -266,7 +266,11 @@ foreach (var mesh in firstFloor.Meshes)
         return sceneToUnityTransform;
     }
 
-    // Converts from right-handed to left handed coordinates
+    /// <summary>
+    /// Converts a transformation matrix from right handed (+x is right, +y is up, +z is back) to left handed (+x is right, +y is up, +z is front).
+    /// </summary>
+    /// <param name="transformationMatrix">Right-handed transformation matrix to convert.</param>
+    /// <returns>Converted left-handed matrix.</returns>
     public System.Numerics.Matrix4x4 ConvertRightHandedMatrix4x4ToLeftHanded(System.Numerics.Matrix4x4 transformationMatrix)
     {
         transformationMatrix.M13 = -transformationMatrix.M13;
