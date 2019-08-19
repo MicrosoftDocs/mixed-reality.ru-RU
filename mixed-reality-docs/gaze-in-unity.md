@@ -1,11 +1,11 @@
 ---
-title: Помощи в Unity
-description: Взглядом — это основной способ для пользователей для нацеливания голограммы, создаваемые приложения в смешанной реальности.
+title: Взгляните на Unity
+description: Взгляд — это основной способ, с помощью которого пользователи могут ориентироваться на голограммы, создаваемые приложением в смешанной реальности.
 author: thetuvix
 ms.author: yoyoz
 ms.date: 03/21/2018
 ms.topic: article
-keywords: взглядом, unity, голограмма, смешанной реальности
+keywords: взгляд, Unity, голограмма, Смешанная реальность
 ms.openlocfilehash: b2cc86db156a1e97b013e4cd6debe3abe5ffb6dd
 ms.sourcegitcommit: 60060386305eabfac2758a2c861a43c36286b151
 ms.translationtype: MT
@@ -13,18 +13,18 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/31/2019
 ms.locfileid: "66453722"
 ---
-# <a name="head-gaze-in-unity"></a>Взглядом HEAD в Unity
+# <a name="head-gaze-in-unity"></a>Головное взгляд в Unity
 
-[Помощи](gaze.md) является основным способом для пользователей для нацеливания [голограммы](hologram.md) ваше приложение создает в [смешанной реальности](mixed-reality.md).
+[Взгляд](gaze.md) — это основной способ, с помощью которого пользователи могут ориентироваться на [голограммы](hologram.md), создаваемые приложением в [смешанной реальности](mixed-reality.md).
 
 
-## <a name="implementing-head-gaze"></a>Реализации головной взглядом
+## <a name="implementing-head-gaze"></a>Реализация головного взгляда
 
-По существу [помощи](gaze.md) реализуется путем проецирования лучом, проведенным из головы пользователя, где гарнитуры, в прямом направлении их с выходом и определение, Рэй конфликтует с. В Unity пользователя головной положения и направления, предоставляются с помощью Unity Main [камеры](camera-in-unity.md), в частности [UnityEngine.Camera.main](http://docs.unity3d.com/ScriptReference/Camera-main.html).[ Transform.Forward](http://docs.unity3d.com/ScriptReference/Transform-forward.html) и [UnityEngine.Camera.main](http://docs.unity3d.com/ScriptReference/Camera-main.html).[ Transform.Position](http://docs.unity3d.com/ScriptReference/Transform-position.html).
+По сути, [взгляд](gaze.md) реализуется путем проецирования луча из заголовка пользователя, где находится гарнитура, в прямом направлении и определяет, что луч конфликтует с. В Unity расположение и направление головного пользователя предоставляются с помощью основной [камеры](camera-in-unity.md)Unity, в частности [UnityEngine. Camera. Main](http://docs.unity3d.com/ScriptReference/Camera-main.html). [преобразование. Forward](http://docs.unity3d.com/ScriptReference/Transform-forward.html) и [UnityEngine. Camera. Main](http://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Disposition](http://docs.unity3d.com/ScriptReference/Transform-position.html).
 
-Вызов [Physics.RayCast](http://docs.unity3d.com/ScriptReference/Physics.Raycast.html) приводит [RaycastHit](http://docs.unity3d.com/ScriptReference/RaycastHit.html) структуры, который содержит сведения о конфликтов, включая трехмерной точки, где возник конфликт и других GameObject луч взглядом со стенами вдоль.
+Вызов функции [физик. райкаст](http://docs.unity3d.com/ScriptReference/Physics.Raycast.html) приводит к [райкассит](http://docs.unity3d.com/ScriptReference/RaycastHit.html) структуре, содержащей сведения о конфликте, включая трехмерную точку, в которой произошел конфликт, и другую GameObject, с которой был получен объект-Ray.
 
-### <a name="example-implement-head-gaze"></a>Пример. Реализуйте головной взглядом
+### <a name="example-implement-head-gaze"></a>Пример. Реализация головного взгляда
 
 ```cs
 void Update()
@@ -46,17 +46,17 @@ void Update()
 
 ### <a name="best-practices"></a>Советы и рекомендации
 
-Хотя в приведенном выше примере показано, как сделать один raycast, чтобы найти целевой взглядом цикл обновления, рекомендуется для этого в управлении взглядом вместо этого в любой объект, который потенциально заинтересовано в объекте gazed в один объект. Это позволяет сохранить обработки, выполнив только один raycast взглядом каждого кадра приложения.
+Хотя в приведенном выше примере показано, как выполнить одно райкаст в цикле обновления, чтобы найти целевой объект взгляда, рекомендуется сделать это в одном объекте, управляющем взвзглядом, а не делать это в любом объекте, который потенциально заинтересован в объекте, газед в. Это позволяет приложению сохранять обработку, выполняя только один взгляд, райкаст каждый кадр.
 
-## <a name="visualizing-gaze"></a>Визуализация взглядом
+## <a name="visualizing-gaze"></a>Визуализация взгляда
 
-Так же, как на рабочем столе, где использовать указатель мыши выбирать и взаимодействовать с содержимым, следует реализовать [курсор](cursors.md) , представляющий взглядом пользователя. Это дает уверенность пользователей в том, что они сейчас взаимодействовать.
+Как и на рабочем столе, где используется указатель мыши для назначения и взаимодействия с содержимым, следует реализовать [курсор](cursors.md) , который представляет взгляд пользователя. Это дает пользователю уверенность в том, с чем они взаимодействуют.
 
-## <a name="gaze-in-mixed-reality-toolkit-v2"></a>Помощи в смешанной реальности Toolkit v2
-Вы можете получить доступ к взглядом из [ввода Manager](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) в MRTK v2.
+## <a name="gaze-in-mixed-reality-toolkit-v2"></a>Взгляните на набор средств Mixed Reality версии 2
+Доступ к элементу управления "взгляд" можно получить из [диспетчера ввода](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) в мртк v2.
 
 ## <a name="see-also"></a>См. также
 * [Камера](camera-in-unity.md)
-* [Отслеживание взгляда](gaze.md)
+* [Входные данные взгляда](gaze.md)
 * [Курсоры](cursors.md)
 * [Нацеливание взглядом](gaze-targeting.md)

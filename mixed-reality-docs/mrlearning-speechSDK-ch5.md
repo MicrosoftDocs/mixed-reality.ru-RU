@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: fc65dccfcbc181af0c0b321374c721797e120e5d
-ms.sourcegitcommit: c7c7e3c836373b65e319609b4e8389dea6b081de
+ms.openlocfilehash: 43a6f02eaf09fcf43775374fae4fbe2d0bc8c346
+ms.sourcegitcommit: 599bbdd861ce6ff11b6cfb345a0a995f8b7bf85b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460335"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68977977"
 ---
 # <a name="speech-sdk-learning-module---rocket-launcher-control-using-speech-commands"></a>Модуль Learning SDK для распознавания речи — управление средством запуска Rocket с помощью голосовых команд
 
@@ -23,17 +23,17 @@ ms.locfileid: "68460335"
 - Узнайте, как использовать голосовые команды с намерением речи в качестве входных команд для управления Rocket.
 
 ## <a name="instructions"></a>Инструкция
-1. В этом руководстве мы будем использовать ресурс-контейнер "Басемодуле" для интеграции средства запуска Rocket с командами распознавания речи. Для этого необходимо импортировать ресурс в наш проект. Вы можете скачать ресурс Rocket Launcher с помощью этой ссылки (присоедините ссылку). 
+1. В этом руководстве мы будем использовать ресурс-контейнер "Басемодуле" для интеграции средства запуска Rocket с командами распознавания речи. Для этого необходимо импортировать ресурс в наш проект. Вы можете скачать ресурс Rocket Launcher с помощью этой [ссылки](https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2). 
 
 2. Чтобы импортировать ресурс, перейдите в раздел "активы"-> "Импорт пакета" > "пользовательский пакет" > перейдите к скачанному файлу и нажмите кнопку "Импорт".
 
 ![module4chapter5step1](images/module4chapter5step1.PNG)
 
-3. После импорта ресурса "средство запуска Rocket" перейдите в папку "Rocket Launcher" — > Prefabs-> выберите "Rocket Launcher_Complete", а затем перетащите ее в существующую иерархию сцены.
+3. После импорта ресурса "основные ресурсы модуля" перейдите в папку "основные ресурсы модуля"-> Prefabs-> выберите "Rocket Launcher_Complete", а затем перетащите ее в существующую иерархию сцены.
 
 ![module4chapter5step2](images/module4chapter5step2.PNG)
 
-4. Теперь нам нужно интегрировать «Rocket Launcher» с нашим проектом LUIS, который мы работали на предыдущем занятии (ссылка для lesson4). Для этого разверните prefab "Rocket Launcher_Complete" в иерархии и найдите кнопки "Лаунчраундбуттон", "Ресетраундбуттон" и "подсказки размещения".
+4. Теперь нам нужно интегрировать «Rocket Launcher» с нашим проектом LUIS, который мы работали на предыдущем [занятии](mrlearning-speechSDK-ch4.md). Для этого разверните prefab "Rocket Launcher_Complete" в иерархии и найдите кнопки "Лаунчраундбуттон", "Ресетраундбуттон" и "подсказки размещения".
 
 ![module4chapter5step3](images/module4chapter5step3.PNG)
 

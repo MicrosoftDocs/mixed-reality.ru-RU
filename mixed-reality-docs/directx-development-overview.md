@@ -6,17 +6,17 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: DirectX, holographic-визуализация, собственное, собственное приложение, WinRT, приложение WinRT, API платформы, настраиваемое подсистема, по промежуточного слоя
-ms.openlocfilehash: da6beae6e256fef49481b581395e507b3f2acd04
-ms.sourcegitcommit: d8700260f349a09c53948e519bd6d8ed6f9bc4b4
+ms.openlocfilehash: 58b311038633dc325cc2c5425fd09b9a0192b161
+ms.sourcegitcommit: 4ac761fed7a9570977f6d031ba4f870585d6630a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67414386"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861708"
 ---
 # <a name="directx-development-overview"></a>Общие сведения о разработке DirectX
 
 
-Приложения Windows Mixed Reality используют API-интерфейсы с более holographic, с помощью средств [визуализации](rendering.md), [оценки,](gaze.md) [жестов](gestures.md), [контроллера движения](motion-controllers.md), [голоса](voice-input.md)и [пространственных](spatial-mapping.md) сопоставлений для создания [смешанной реальности](mixed-reality.md) для HoloLens и впечатляющие головные телефоны. Вы можете создавать приложения смешанной реальности с помощью 3D-модуля, такого как [Unity](unity-development-overview.md), или напрямую перекодироваться в интерфейсы API Windows Mixed Reality с помощью DirectX 11 или DirectX 12. Если вы используете платформу напрямую, вы, по сути, создаете собственное по промежуточного слоя или платформу. Интерфейсы API Windows поддерживают приложения, написанные C++ как C#в, так и в. Если вы решили использовать C#, приложение может использовать библиотеку программного обеспечения [шарпдкс](http://sharpdx.org/) с открытым исходным кодом.
+Приложения Windows Mixed Reality используют API-интерфейсы с более [holographic](rendering.md), с помощью [средств визуализации](gaze.md), [жестов](gestures.md), [контроллера движения](motion-controllers.md), [голоса](voice-input.md) и [пространственных сопоставлений](spatial-mapping.md) для создания [смешанной реальности](mixed-reality.md) для HoloLens и впечатляющие головные телефоны. Вы можете создавать приложения смешанной реальности с помощью 3D-модуля, такого как [Unity](unity-development-overview.md), или напрямую перекодироваться в интерфейсы API Windows Mixed Reality с помощью DirectX 11 или DirectX 12. Если вы используете платформу напрямую, вы, по сути, создаете собственное по промежуточного слоя или платформу. Интерфейсы API Windows поддерживают приложения, написанные C++ как C#в, так и в. Если вы решили использовать C#, приложение может использовать библиотеку программного обеспечения [шарпдкс](http://sharpdx.org/) с открытым исходным кодом.
 
 
 Windows Mixed Reality поддерживает [два типа приложений](app-views.md):
@@ -56,7 +56,6 @@ Windows Mixed Reality поддерживает [два типа приложен
 Существуют и другие основные функции, которые нужно использовать в приложениях DirectX для многих приложений.
 
 * [Общие пространственные привязки в DirectX](shared-spatial-anchors-in-directx.md)
-* [Камера с определяемым местоположением в DirectX](locatable-camera-in-directx.md)
 * [Ввод с помощью клавиатуры, мыши и контроллера в DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
 
 ## <a name="see-also"></a>См. также
