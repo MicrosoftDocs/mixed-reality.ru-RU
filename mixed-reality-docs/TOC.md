@@ -22,6 +22,7 @@
 #### [Сохранение и поиск файлов](saving-and-finding-your-files.md)
 #### [Просмотр фотографий](see-your-photos.md)
 #### [Обновление HoloLens](updating-hololens.md)
+#### [Использование HoloLens в новых пространствах](use-hololens-in-new-spaces.md)
 #### [Общий доступ к устройствам](device-sharing.md)
 #### [Руководство по регулировке и чистке устройства HoloLens](hololens-demo-guide.md)
 ### Иммерсивные гарнитуры
