@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 925ab825c2716a847726ac763dc6800914d87c6b
-ms.sourcegitcommit: af1602710c1ccb7ed870a491923350d387706129
+ms.openlocfilehash: 45833ba22305acedb45bfdc9752c0b278a693190
+ms.sourcegitcommit: 9636573eabdc78db6875e831a9c894a2ff173a99
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68702039"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69629183"
 ---
 # <a name="3-creating-user-interface-and-configure-mixed-reality-toolkit"></a>3. Создание пользовательского интерфейса и настройка набора средств для смешанной реальности 
 
@@ -34,7 +34,7 @@ ms.locfileid: "68702039"
 
 >Примечание. По умолчанию профили MRTK недоступны для редактирования. Это шаблоны профилей по умолчанию, которые можно копировать и настраивать. Существует несколько уровней настройки и профилей. Поэтому при настройке одного или нескольких параметров рекомендуется копировать и настраивать несколько профилей.
 >
->Дополнительные сведения о профилях МРТК и их архитектуре см. в [документации по мртк](<https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Architecture/SpatialAwareness/SpatialAwarenessSystemArchitecture.html>).
+>Дополнительные сведения о профилях МРТК и их архитектуре см. в [документации по мртк](<https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html>).
 
 2. Создайте копию стандартного профиля, которую мы будем настраивать. Чтобы скопировать профиль по умолчанию, щелкните Копировать & настроить (см. изображение). Будет создана копия профиля MRTK. Скопировав профиль MRTK, можно изменять в нем любые параметры. Кроме того, потребуется повторить шаг копирования и настройки для всех дополнительных профилей, вложенных в этот профиль, как описано в последующих шагах.
 
