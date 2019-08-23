@@ -31,6 +31,7 @@
 #### [Руководство для энтузиастов](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)
 ### [Аксессуары к оборудованию](hardware-accessories.md)
 ### [Руководство по регулировке и чистке устройства HoloLens](hololens-demo-guide.md)
+### [Развлечения в специально оборудованных местах с использованием Windows Mixed Reality](location-based-experiences.md)
 ## Основные компоненты
 ### [Взгляд](gaze.md)
 ### [Жесты](gestures.md)
