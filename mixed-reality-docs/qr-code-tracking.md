@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: VR, лбе, развлечения на основе расположения, VR Аркадные, Аркадные, иммерсивное, QR, QR-код, hololens2
-ms.openlocfilehash: d51da88aa7bff1dc5c6d3068cb31793891c71e61
-ms.sourcegitcommit: 60f73ca23023c17c1da833c83d2a02f4dcc4d17b
+ms.openlocfilehash: 736ab265db2145dd784c435e525059ed3a2fcbbb
+ms.sourcegitcommit: 3b32339c5d5c79eaecd84ed27254a8f4321731f1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "69565997"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70047158"
 ---
 # <a name="qr-code-tracking"></a>Отслеживание QR-кода
 
@@ -248,6 +248,9 @@ QR-коды с логотипами не тестировались и в нас
 Устройства Windows Mixed Reality обнаруживают QR-коды на уровне системы в драйвере. При перезагрузке устройства обнаруженные QR-коды исчезают и будут повторно обнаружены как новые объекты в следующий раз.
 
 Рекомендуется настроить приложение так, чтобы оно игнорировало QR-коды старше определенной метки времени. В настоящее время API не поддерживает очистку журнала QR-кода.
+
+### <a name="qr-code-placement-in-a-space"></a>Размещение QR-кода в пространстве
+Рекомендации по расположению и способу размещения QR-кодов см. в статье [рекомендации по окружению для HoloLens](environment-considerations-for-hololens.md).
 
 ## <a name="qr-api-reference"></a>Справочник по QR-API
 

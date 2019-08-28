@@ -6,12 +6,12 @@ ms.author: chriba
 ms.date: 02/11/2019
 ms.topic: article
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Камера, ARKit, HoloLens, Mixed Reality, Микседреалититулкит, демонстрация, запись
-ms.openlocfilehash: 135a566456f1000669d2033edcf0d0b4649ccdf3
-ms.sourcegitcommit: b0b1b8e1182cce93929d409706cdaa99ff24fdee
+ms.openlocfilehash: 708ed694af3769f16d5dce0595e026f9a348d754
+ms.sourcegitcommit: 3b32339c5d5c79eaecd84ed27254a8f4321731f1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387664"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70047175"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>Spectator представление для HoloLens и HoloLens 2
 
@@ -25,10 +25,8 @@ Spectator View предлагает быстрый и доступный под�
 ## <a name="key-resources"></a>Основные ресурсы
 
 * [**Spectator представление в GitHub**](https://github.com/microsoft/MixedReality-SpectatorView)
-* [**AHA**](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Architecture.md)
-* [**Регистрируют**](https://github.com/microsoft/MixedReality-SpectatorView/tree/master/samples)
-* [**Инструкции по установке мобильных устройств**](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Setup.md)
-* [**Инструкции по настройке видеокамеры**](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Setup.VideoCamera.md)
+* [**Документация по spectator View**](https://microsoft.github.io/MixedReality-SpectatorView/README.html)
+* [**Примеры spectator View**](https://github.com/microsoft/MixedReality-SpectatorView/tree/master/samples)
 
 ## <a name="use-cases"></a>Варианты использования
 * Вы можете записать опыт работы в смешанной реальности с помощью устройства iPhone или Android. Записывайте записи в полную версию HD и применяйте сглаживание к голограммам и даже тени. Это экономичный и быстрый способ записи видео о голограммах.
