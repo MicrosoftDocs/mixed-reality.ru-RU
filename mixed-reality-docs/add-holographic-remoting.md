@@ -6,17 +6,17 @@ ms.author: mriches
 ms.date: 05/24/2019
 ms.topic: article
 keywords: Windows Mixed Reality, голограммы, удаленное взаимодействие, удаленная визуализация, подготовка к просмотру сети, HoloLens, удаленные голограммы
-ms.openlocfilehash: 71a763b0660867bf910c0dcecb5fba921f19d068
-ms.sourcegitcommit: ca949efe0279995a376750d89e23d7123eb44846
+ms.openlocfilehash: 523486c26c03bd4b3d5ed8e8cafd994f12678e3b
+ms.sourcegitcommit: ff330a7e36e5ff7ae0e9a08c0e99eb7f3f81361f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68712430"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122047"
 ---
-# <a name="add-holographic-remoting-hololens-1"></a>Добавление удаленного взаимодействия с holographic (HoloLens 1)
+# <a name="add-holographic-remoting-hololens-1st-gen"></a>Добавление удаленного взаимодействия holographic (HoloLens (1-й общий))
 
 >[!IMPORTANT]
->В этом документе описывается создание ведущего приложения для HoloLens 1. Ведущее приложение для **HoloLens 1** должно использовать пакет NuGet версии **1. x. x**. Это подразумевает, что ведущие приложения, написанные для HoloLens 1, несовместимы с HoloLens 2 и наоборот.
+>В этом документе описывается создание ведущего приложения для HoloLens 1. Ведущее приложение для **HoloLens (1-го поколения)** должно использовать пакет NuGet версии **1. x. x**. Это подразумевает, что ведущие приложения, написанные для HoloLens 1, несовместимы с HoloLens 2 и наоборот.
 
 ## <a name="hololens-2"></a>HoloLens 2
 

@@ -6,17 +6,17 @@ ms.author: jlyons
 ms.date: 08/01/2019
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: fe26092ec8f5895652d17f88bf3be15cb116e482
-ms.sourcegitcommit: ca949efe0279995a376750d89e23d7123eb44846
+ms.openlocfilehash: c3e31cdb5acf35ecc3101d3cf359e40771cc8cbd
+ms.sourcegitcommit: ff330a7e36e5ff7ae0e9a08c0e99eb7f3f81361f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68712689"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122080"
 ---
 # <a name="holographic-remoting-player"></a>Holographic удаленный плеер
 
 >[!IMPORTANT]
->Holographic удаленное взаимодействие для HoloLens 2 является основным изменением версии. [Ведущие приложения для **hololens 1** ](add-holographic-remoting.md) должны использовать пакет NuGet версии **1. x. x** и [ведущие приложения для **hololens 2** ](holographic-remoting-create-host.md) должны использовать **2. x. x**. Это подразумевает, что ведущие приложения, написанные для HoloLens 2, несовместимы с HoloLens 1 и наоборот.
+>Holographic удаленное взаимодействие для HoloLens 2 является основным изменением версии. [Ведущие приложения для **hololens (1-го поколения)** ](add-holographic-remoting.md) должны использовать пакет NuGet версии **1. x. x** и [ведущие приложения для **HoloLens 2** ](holographic-remoting-create-host.md) должны использовать **2. x. x**. Это подразумевает, что ведущие приложения, написанные для HoloLens 2, несовместимы с HoloLens 1 и наоборот.
 
 Удаленный плеер holographic — это сопутствующее приложение, которое подключается к КОМПЬЮТЕРным приложениям и играм, поддерживающим удаленное взаимодействие с Holographic. С помощью подключения Wi-Fi в holographic удаленное взаимодействие посылается с компьютера в Microsoft HoloLens в режиме реального времени.
 
@@ -43,7 +43,7 @@ ms.locfileid: "68712689"
 
 ## <a name="diagnostics"></a>Диагностика
 
-Чтобы оценить качество подключения, скажите **"включить диагностику"** на главном экране плеера holographic удаленного взаимодействия. Когда диагностика включена, в **HoloLens 1** приложение покажет следующее:
+Чтобы оценить качество подключения, скажите **"включить диагностику"** на главном экране плеера holographic удаленного взаимодействия. Если Диагностика включена, в **HoloLens (1-й общий)** приложение покажет вам:
 
 * **Кадров/** с — среднее число визуализированных кадров, получаемых и отображаемых проигрывателем удаленного взаимодействия в секунду. Идеальный вариант — 60 кадров/с.
 * **Задержка** — среднее время, необходимое для перехода кадра с компьютера на HoloLens. Чем ниже, тем лучше. В основном это зависит от сети Wi-Fi.
@@ -76,7 +76,7 @@ ms.locfileid: "68712689"
 * Мы рекомендуем подключить компьютер к сети через Ethernet, чтобы уменьшить число прыжков беспроводной связи.
 
 ## <a name="see-also"></a>См. также
-* [HoloLens 1: Добавление удаленного взаимодействия holographic](add-holographic-remoting.md)
+* [HoloLens (1-й общий): Добавление удаленного взаимодействия holographic](add-holographic-remoting.md)
 * [HoloLens 2: Создание хост-приложения holographic с удаленным взаимодействием](holographic-remoting-create-host.md)
-* [Условия лицензии на программное обеспечение удаленного взаимодействия holographic](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Условия лицензии на использование ПО для голографического удаленного взаимодействия](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Заявление о конфиденциальности Майкрософт](https://go.microsoft.com/fwlink/?LinkId=521839)
