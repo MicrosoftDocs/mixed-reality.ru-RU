@@ -104,8 +104,7 @@
 #### [Голосовые команды](Voice-design.md)
 #### [Направление головы и остановка](Gaze-and-dwell.md)
 ### [Направление головы и фиксация](gaze-and-commit.md)
-### Дополнительные виды взаимодействия
-#### [Направление взгляда](eye-tracking.md)
+### [Направление взгляда](eye-tracking.md)
 ## Стиль
 ### [Цвет, свет и материалы](color,-light-and-materials.md)
 ### [Проектирование пространственного звука](spatial-sound-design.md)
@@ -296,7 +295,7 @@
 ### [Безопасное подключение с использованием голографического удаленного взаимодействия](holographic-remoting-secure-connection.md)
 ### [Устранение неполадок и ограничения](holographic-remoting-troubleshooting.md)
 ### [Условия лицензии на использование ПО для голографического удаленного взаимодействия](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
-### Голографическое удаленное взаимодействие для HoloLens 1
+### Голографическое удаленное взаимодействие для HoloLens (1-го поколения)
 #### [Добавление голографического удаленного взаимодействия](add-holographic-remoting.md)
 ## Другое
 ### [Отслеживание QR-кода](qr-code-tracking.md)
