@@ -6,12 +6,12 @@ ms.author: yabahman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Вебвр, Вебкср, Винмр, Вебар, Web VR, Web XR, Web MR, Web AR, 360, 360 Video, 360 видео, 360 Photo, 360 Фото, 360 Content, иммерсивное веб-, иммерсивевеб, IW
-ms.openlocfilehash: fab17f4dcecc34d8f1ca4836dce6de90522899cd
-ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
+ms.openlocfilehash: 87805d2c40e9e63cdf3e432189b9deb7d575a380
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "63548748"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73437207"
 ---
 # <a name="using-webvr-in-microsoft-edge-with-windows-mixed-reality"></a>Использование Вебвр в Microsoft погранично с Windows Mixed Reality
 
@@ -26,13 +26,13 @@ API Вебвр предоставляет на страницу данные Х�
 Инструкции по доступу к содержимому Вебвр в иммерсивное гарнитуру можно найти в статье [о программе энтузиастов](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/webvr).
 
 ## <a name="see-also"></a>См. также
-* [Сведения о Вебвр](http://webvr.info)
+* [Сведения о Вебвр](https://webvr.info)
 * [Спецификация Вебвр](https://w3c.github.io/webvr/)
 * [API Вебвр](https://msdn.microsoft.com/library/mt806281(v=vs.85).aspx)
 * [API WebGL](https://msdn.microsoft.com/library/bg182648(v=vs.85).aspx)
 * Расширения [API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) и [игровой](https://w3c.github.io/gamepad/extensions.html) планшета
 * [Обработка потерянного контекста в WebGL](https://www.khronos.org/webgl/wiki/HandlingContextLost)
-* [поинтерлокк](http://www.w3.org/TR/pointerlock/)
+* [поинтерлокк](https://www.w3.org/TR/pointerlock/)
 * [глтф](https://www.khronos.org/gltf)
 * [Использование Бабилон. js для включения Вебвр](https://docs.microsoft.com/windows/uwp/get-started/adding-webvr-to-a-babylonjs-game)
 

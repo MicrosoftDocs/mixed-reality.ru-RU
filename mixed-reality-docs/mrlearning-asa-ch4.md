@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: b29f27284c352d27fb1d4d4de701a1ebc2a7cd1c
-ms.sourcegitcommit: 30246ab9b9be44a3c707061753e53d4bf401eb6b
+ms.openlocfilehash: 141aa90f2bf5d90527a0fe1e6a812c1ce56bd0eb
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67326868"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73437801"
 ---
 # <a name="photon-correct-me-if-im-wrong"></a>Photon (исправьте меня, если меня не так)
 
@@ -29,7 +29,7 @@ ms.locfileid: "67326868"
 
 ### <a name="setting-up-photon"></a>Настройка Photon
 
-1. Настройте учетную запись [Photon](https://dashboard.photonengine.com/en-US/Account/SignUp) . Это будет состоять из ввода электронной почты и выполнения некоторых шагов проверки.
+1. Настройте учетную запись [Photon](https://dashboard.photonengine.com//Account/SignUp) . Это будет состоять из ввода электронной почты и выполнения некоторых шагов проверки.
    
 
 ![Module2Chapter4step1im](images/Module2chapter4step1im.png)
@@ -62,7 +62,7 @@ ms.locfileid: "67326868"
 
 ![Module2Chapter4step4im](images/Module2chapter4step5im.png)
 
-> Примечание. Если у вас возникнут вопросы по IP-адресу или на другие похожие вопросы, на панели инструментов можно найти большую часть информации (как показано на рисунке ниже).
+> Примечание. Если у вас есть вопросы по IP-адресу или на другие похожие вопросы, на панели инструментов можно найти большую часть информации (как показано на рисунке ниже).
 >
 > ![Module2Chapter4step4im](images/Module2chapter4noteim.png)
 
@@ -86,7 +86,7 @@ ms.locfileid: "67326868"
 
 9. Создайте новый проект Unity. Откройте центр Unity и щелкните "создать". Назовите его «Хлшарингпрожект». Затем нажмите кнопку Создать. 
 
-   > Метим Загрузка может занять до 2 минут в зависимости от скорости компьютера.
+   > Примечание. Загрузка может занять до 2 минут в зависимости от скорости вашего компьютера.
 
 ![Module2Chapter4step9im](images/Module2chapter4step9im.png)
 
@@ -140,7 +140,7 @@ ms.locfileid: "67326868"
 
 ![Module2Chapter4step19im](images/Module2chapter4step19im.png)
 
-> Метим Кроме того, убедитесь, что флажок "сцены" в поле "сцена/Хлшаредпрожектмаин" установлен.
+> Примечание. также убедитесь в том, что флажок "сцены" («сцена/Хлшаредпрожектмаин») также установлен.
 
 20. В разделе "Параметры публикации" на панели инспектора прокрутите вниз до пункта "возможности" и убедитесь, что отмечены только следующие флажки:
 
@@ -158,7 +158,7 @@ ms.locfileid: "67326868"
 
 ![Module2Chapter4step22im](images/Module2chapter4step21im.PNG)
 
-> Метим Вы можете заметить, что всплывающее окно отображается, когда вы щелкнули prefab, и запрашивается о параметрах TMP Essentials. Щелкните "Импорт основных компонентов TMP", так как они понадобятся.
+> Примечание. Вы можете заметить, что всплывающее окно отображается при щелчке prefab, предлагающем о параметрах TMP Essentials. Щелкните "Импорт основных компонентов TMP", так как они понадобятся.
 >
 > ![Module2Chapter4note3im](images/Module2chapter4note3im.PNG)
 

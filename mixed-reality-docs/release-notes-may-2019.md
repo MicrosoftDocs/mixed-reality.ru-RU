@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: Заметки о выпуске, версия, Windows 10, сборка, 19h1, ОС, Май 2019
-ms.openlocfilehash: fe2532429842a2acd7868349a8df19214e9ae155
-ms.sourcegitcommit: 8f3ff9738397d9b9fdf4703b14b89d416f0186a5
+ms.openlocfilehash: f5163e128c3f1e1b68d827b09078b565a58c5a4d
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67843307"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73438321"
 ---
 # <a name="release-notes---may-2019"></a>Заметки о выпуске — 2019 мая
 
@@ -38,11 +38,11 @@ ms.locfileid: "67843307"
 ![Pin_Panel Win32](images/mr-win32-slates-pinspanel.png)
 
 #### <a name="please-help-us-improve"></a>Помогите нам улучшить!
-Мы постоянно будем искать улучшения совместимости.  Если вы нашли в Windows Mixed Reality избранное приложение Win32, которое работает неправильно, отправьте отзыв через наш [центр обратной связи](https://support.microsoft.com/en-us/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
+Мы постоянно будем искать улучшения совместимости.  Если вы нашли в Windows Mixed Reality избранное приложение Win32, которое работает неправильно, отправьте отзыв через наш [центр обратной связи](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
 
 ## <a name="hololens-1st-gen-long-term-servicing"></a>Долгосрочное обслуживание HoloLens (1-го поколения)
 
-HoloLens (1-й общий) переходит в состояние долгосрочного обслуживания (LTS). В будущих обновлениях основное внимание уделяется устранению проблем и исправлений безопасности, а также обеспечению соответствия функций с выпуском [Windows 10 октября 2018](release-notes-october-2018.md) для HoloLens (известного как RS5). 
+HoloLens (1-й общий) переходит в состояние долгосрочного обслуживания (LTS). В будущих обновлениях основное внимание уделяется устранению проблем и исправлений безопасности, а также обеспечению соответствия функций с [выпуском Windows 10 октября 2018](release-notes-october-2018.md) для HoloLens (известного как RS5). 
 
 ## <a name="provide-feedback-and-report-issues"></a>Предоставление отзывов и отчетов о проблемах
 

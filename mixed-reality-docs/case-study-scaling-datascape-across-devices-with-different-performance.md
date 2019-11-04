@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: иммерсивное головной телефон, оптимизация производительности, VR, пример использования
-ms.openlocfilehash: 990a5ee6de07b6416e3150a7885220409a9c8d93
-ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
+ms.openlocfilehash: 05f97188c81d85685540be998111ecfc47d9ef9c
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "63523392"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73436503"
 ---
 # <a name="case-study---scaling-datascape-across-devices-with-different-performance"></a>Пример использования. масштабирование Датаскапе на разных устройствах с различной производительностью
 
@@ -43,7 +43,7 @@ ms.locfileid: "63523392"
 
 ## <a name="background-on-cloud-data"></a>Общие сведения о облачных данных
 
-Наши облачные данные были скачаны с серверов http://nomads.ncep.noaa.gov/) NOAA (и поступили в нас на трех разных 2D-слоях, каждый с верхней и нижней высотой облака, а также с плотностью облака для каждой ячейки сетки. Данные обрабатывались в текстуру облачных сведений, где каждый компонент хранился в красном, зеленом и синем компоненте текстуры для удобного доступа к GPU.
+Наши облачные данные были скачаны с серверов NOAA (https://nomads.ncep.noaa.gov/) и пришли в нас на трех разных 2D-слоях, каждая из которых имеет верхнюю и нижнюю высоту облака, а также плотность облака для каждой ячейки сетки. Данные обрабатывались в текстуру облачных сведений, где каждый компонент хранился в красном, зеленом и синем компоненте текстуры для удобного доступа к GPU.
 
 ## <a name="geometry-clouds"></a>Геометрические облака
 
@@ -306,11 +306,11 @@ protected void Update()
 <table style="border:0">
 <tr>
 <td style="border:0" width="60px"><img alt="Picture of Robert Ferrese" width="60" height="60" src="images/robert-ferrese-60px.jpg"></td>
-<td style="border:0"><b>Роберт Ферресе</b><br>Инженер по программному обеспечению@Microsoft</td>
+<td style="border:0"><b>Роберт Ферресе</b><br>@Microsoft инженера программного обеспечения</td>
 </tr>
 <tr>
 <td style="border:0" width="60px"><img alt="Picture of Dan Andersson" width="60" height="60" src="images/dan-andersson-60px.jpg"></td>
-<td style="border:0"><b>Андерссон "+ +"</b><br>Инженер по программному обеспечению@Microsoft</td>
+<td style="border:0"><b>Андерссон "+ +"</b><br>@Microsoft инженера программного обеспечения</td>
 </tr>
 </table>
 

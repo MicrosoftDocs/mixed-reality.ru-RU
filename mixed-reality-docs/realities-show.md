@@ -6,19 +6,19 @@ ms.author: daescu
 ms.date: 04/06/2019
 ms.topic: article
 keywords: Реалии, "показывать", "Календарь", Academy, "Расписание", "Сан, Сан, реактора"
-ms.openlocfilehash: 0a568e5d72bb7ed502d783df2f0815f2d9c75364
-ms.sourcegitcommit: e5b677f92ac4b1dff9aad6c329345a5aca4fcef5
+ms.openlocfilehash: ebecfa59d1c1b60ba7f3bf546816ed33b4910ad7
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69020188"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73438330"
 ---
 # <a name="the-realities-show"></a>Реалии
 ![Проектирование решений для смешанной реальности](images/therealitiesshow.jpg)
 
 **Реалии демонстрация составляет 30 минут, облаку о HoloLens 2, службах смешанной реальности и технологиях MR. В каждом эпизоде будут рассмотрены функции, возможности, наши специалисты, как разработать различные устройства, рекомендовать лучшие методики и отвечать на вопросы от нашей аудитории. Потоковая передача для разработчиков по всему миру с нашей реактора этапа хранения в Сан-Франциско в виде среды проживания (и иногда от других сайтов).**
 
-**[Просмотр интерактивных и прошлых серий](http://aka.ms/trs)**
+**[Просмотр интерактивных и прошлых серий](https://aka.ms/trs)**
 ___
 
 ## <a name="hololens-2-and-mixed-reality-services---march-12-2019-8-am-pdt"></a>**Службы HoloLens 2 и Mixed Reality** — 12 марта 2019 г. (PDT)

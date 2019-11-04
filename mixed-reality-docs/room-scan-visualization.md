@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, шаблоны приложений, проектирование, HoloLens, Просмотр комнаты, пространственное сопоставление, реконструкция поверхностей, сеть
-ms.openlocfilehash: 09df4464ea4dac01dfad637886b07b861f468d4d
-ms.sourcegitcommit: 17f86fed532d7a4e91bd95baca05930c4a5c68c5
+keywords: Windows Mixed Reality, шаблоны приложений, проектирование, HoloLens, Просмотр комнаты, пространственное сопоставление, сетка
+ms.openlocfilehash: bdb070407f27d04046bd022894c7a8a01b9658d1
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829911"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73437515"
 ---
 # <a name="room-scan-visualization"></a>Визуализация просмотра комнаты
 
@@ -33,7 +33,7 @@ ms.locfileid: "66829911"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><strong>Возможность</strong></td>
+        <td><strong>Функциями</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
     </tr>
@@ -93,6 +93,6 @@ ms.locfileid: "66829911"
 Хорошим вариантом для этого метода является ситуация, когда самые голограммы должны взаимодействовать с перемещением объектов, например, в г. автомобиль, на котором накопители в этаже могут правильно покрывать дверцу в зависимости от того, открыт или закрыт.
 
 ## <a name="see-also"></a>См. также
-* [Проектирование пространственного сопоставления](spatial-mapping-design.md)
+* [Пространственное сопоставление](spatial-mapping.md)
 * [Системы координат](coordinate-systems.md)
 * [Проектирование пространственного звука](spatial-sound-design.md)

@@ -1,17 +1,17 @@
 ---
 title: Учетные записи в HoloLens
 description: Как настроить учетные записи пользователей в HoloLens и управлять ими.
-author: ''
+author: tmlyon
 ms.author: toddly
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, пользователь, учетная запись, AAD, ADFS, учетная запись Майкрософт, MSA, учетные данные
-ms.openlocfilehash: 14f43b08b6ccb396bcf39c4082c840c65ac78cf9
-ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
+ms.openlocfilehash: 5579cf53948b8bdbd4b41973dde7b8fc70a5aa31
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "63516817"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73437085"
 ---
 # <a name="accounts-on-hololens"></a>Учетные записи в HoloLens
 
@@ -40,7 +40,7 @@ ms.locfileid: "63516817"
 
 ## <a name="using-single-sign-on-within-an-app"></a>Использование единого входа в приложении
 
-Как разработчик приложения вы можете воспользоваться преимуществами подключенного удостоверения в HoloLens с помощью [API диспетчера учетных записей Windows](https://msdn.microsoft.com/library/windows/apps/xaml/windows.security.authentication.web.core.aspx), как и на других устройствах Windows. Некоторые примеры кода для этих API доступны [здесь](http://go.microsoft.com/fwlink/p/?LinkId=620621).
+Как разработчик приложения вы можете воспользоваться преимуществами подключенного удостоверения в HoloLens с помощью [API диспетчера учетных записей Windows](https://msdn.microsoft.com/library/windows/apps/xaml/windows.security.authentication.web.core.aspx), как и на других устройствах Windows. Некоторые примеры кода для этих API доступны [здесь](https://go.microsoft.com/fwlink/p/?LinkId=620621).
 
 Все прерывания учетной записи, которые могут произойти, например запрос согласия пользователя на сведения об учетной записи, двухфакторная проверка подлинности и т. д., должны обрабатываться, когда приложение запрашивает маркер проверки подлинности.
 

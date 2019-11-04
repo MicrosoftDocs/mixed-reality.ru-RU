@@ -6,19 +6,19 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, Эмблема, значок, моделирование, средство запуска, трехмерное средство запуска, плитка, динамический куб, глубокая ссылка, секондаритиле, вспомогательная плитка, UWP
-ms.openlocfilehash: 4a8d4a696ff6ef19d7332b20580f1f5ee67bf045
-ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
+ms.openlocfilehash: be47b590e4fd1a847ac47d9cfbcbe824c544dd59
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "63516744"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73438017"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Реализация запуска 3D-приложений (приложения UWP)
 
 > [!NOTE]
 > Эта функция была добавлена как часть обновления 2017 в RS3 (Creator) для впечатляющих головных телефонов и поддерживается в HoloLens с обновлением Windows 10 от апреля 2018. Убедитесь, что приложение предназначено для версии Windows SDK больше или равно 10.0.16299 на впечатляющих гарнитурах и 10.0.17125 в HoloLens. Последнюю Windows SDK можно найти [здесь](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
-[Главная страница Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md) — это отправная точка, в которой пользователи начинают работу перед запуском приложений. При создании приложения UWP для Windows Mixed Reality приложения по умолчанию запускаются в виде двумерных планшетов с логотипом своего приложения. При разработке функций для Windows Mixed Reality при необходимости можно определить трехмерное средство запуска для переопределения 2D-запуска по умолчанию для приложения. В общем случае трехмерные запуски рекомендуются для запуска впечатляющих приложений, которые принимают пользователей из дома Windows Mixed Reality, в то время как по умолчанию используется 2D-средство запуска, когда приложение активируется на месте. Можно также создать трехмерную [глубину ссылки (секондаритиле)](#3d-deep-links-secondarytiles) в виде трехмерного модуля запуска для содержимого в ДВУХМЕРНОМ приложении UWP.
+[Главная страница Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md) — это отправная точка, в которой пользователи начинают работу перед запуском приложений. При создании приложения UWP для Windows Mixed Reality приложения по умолчанию запускаются в виде двумерных планшетов с логотипом своего приложения. При разработке функций для Windows Mixed Reality при необходимости можно определить трехмерное средство запуска для переопределения 2D-запуска по умолчанию для приложения. В общем случае трехмерные запуски рекомендуются для запуска впечатляющих приложений, которые принимают пользователей из дома Windows Mixed Reality, в то время как по умолчанию используется 2D-средство запуска, когда приложение активируется на месте. Можно также создать [трехмерную глубину ссылки (секондаритиле)](#3d-deep-links-secondarytiles) в виде трехмерного модуля запуска для содержимого в ДВУХМЕРНОМ приложении UWP.
 
 >[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
 
@@ -42,12 +42,12 @@ ms.locfileid: "63516744"
 В верхней части манифеста Добавьте схему uap5 и включите ее как игнорируемое пространство имен:
 
 ```xml
-<Package xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
-         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
-         xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
-         xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
+<Package xmlns:mp="https://schemas.microsoft.com/appx/2014/phone/manifest" 
+         xmlns:uap="https://schemas.microsoft.com/appx/manifest/uap/windows10" 
+         xmlns:uap2="https://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
+         xmlns:uap5="https://schemas.microsoft.com/appx/manifest/uap/windows10/5"
          IgnorableNamespaces="uap uap2 uap5 mp"
-         xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">
+         xmlns="https://schemas.microsoft.com/appx/manifest/foundation/windows10">
 ```
 
 Затем укажите "Микседреалитимодел" в плитке по умолчанию для приложения:
@@ -75,7 +75,7 @@ ms.locfileid: "63516744"
 Элементы Микседреалитимодел принимают путь к файлу, указывающему на трехмерный ресурс, хранящийся в пакете приложения. Сейчас поддерживаются только объемные модели, доставляемые с помощью формата файла GLBA и созданные в соответствии с [инструкциями по созданию трехмерных ресурсов Windows Mixed Reality](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) . Ресурсы должны храниться в пакете приложения, и анимация в настоящее время не поддерживается. Если параметр "Path" оставлен пустым, то вместо 3D-запуска будет отображаться 2D. **Примечание** . ресурс. GLBA должен быть помечен как "Content" в параметрах сборки перед сборкой и запуском приложения.
 
 
-![Выберите GLBA в обозревателе решений и в разделе "Свойства" пометьте его как "содержимое" в параметрах сборки.](images/buildsetting-content-300px.png)<br>
+![выберите GLBA в обозревателе решений и используйте раздел Properties, чтобы пометить его как "содержимое" в параметрах сборки](images/buildsetting-content-300px.png)<br>
 *Выберите GLBA в обозревателе решений и в разделе "Свойства" пометьте его как "содержимое" в параметрах сборки.*
 
 ### <a name="bounding-box"></a>Ограничивающий прямоугольник
@@ -85,13 +85,13 @@ ms.locfileid: "63516744"
 Поддержка атрибута ограничивающего прямоугольника поступает вместе с обновлением Windows RS4 в качестве свойства элемента Микседреалитимодел. Чтобы сначала определить ограничивающий прямоугольник в верхней части манифеста приложения, добавьте схему uap6 и включите ее в качестве игнорируемых пространств имен:
 
 ```xml
-<Package xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
-         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
-         xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
-         xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
-         xmlns:uap6="http://schemas.microsoft.com/appx/manifest/uap/windows10/6"
+<Package xmlns:mp="https://schemas.microsoft.com/appx/2014/phone/manifest" 
+         xmlns:uap="https://schemas.microsoft.com/appx/manifest/uap/windows10" 
+         xmlns:uap2="https://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
+         xmlns:uap5="https://schemas.microsoft.com/appx/manifest/uap/windows10/5"
+         xmlns:uap6="https://schemas.microsoft.com/appx/manifest/uap/windows10/6"
          IgnorableNamespaces="uap uap2 uap5 uap6 mp"
-         xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">
+         xmlns="https://schemas.microsoft.com/appx/manifest/foundation/windows10">
 ```
 Затем на Микседреалитимодел задайте свойство Спатиалбаундингбокс, чтобы определить ограничивающий прямоугольник: 
 
@@ -165,8 +165,8 @@ await tile.RequestCreateAsync();
 > Эта функция будет поддерживаться в рамках обновления Windows RS4. Убедитесь, что приложение предназначено для версии Windows SDK больше или равно 10.0.17125, если вы планируете использовать эту функцию
 
 Вы можете определить поведение при активации трехмерного Секондаритиле, чтобы управлять тем, как оно будет реагировать, когда пользователь выберет его. Это можно использовать для размещения трехмерных объектов на домашней странице Mixed Reality, которые являются пурлэй информативными или декоративными. Поддерживаются следующие типы поведения активации:
-1. По умолчанию: Когда пользователь выбирает 3D-Секондаритиле, приложение активируется
-2. NONE: Когда пользователи выбирают 3D Секондаритиле, ничего не происходит и приложение не активируется.
+1. По умолчанию: когда пользователь выбирает 3D-Секондаритиле, что приложение активируется
+2. Нет: когда пользователи выбирают 3D Секондаритиле, ничего не происходит и приложение не активируется.
 
 ### <a name="obtaining-and-updating-an-existing-secondarytile"></a>Получение и обновление существующего "Секондаритиле"
 

@@ -2,29 +2,29 @@
 title: Взгляните на Unity
 description: Взгляд — это основной способ, с помощью которого пользователи могут ориентироваться на голограммы, создаваемые приложением в смешанной реальности.
 author: thetuvix
-ms.author: yoyoz
+ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: глаз — взгляд, голова, Unity, голограмма, Смешанная реальность
-ms.openlocfilehash: 43e643bac00e3c889b14000331d2ed95014fdcc5
-ms.sourcegitcommit: ff330a7e36e5ff7ae0e9a08c0e99eb7f3f81361f
+ms.openlocfilehash: 8222a5199cc1ea35429f21e7490e1eff49fcd1bc
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122037"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73435292"
 ---
 # <a name="head-gaze-in-unity"></a>Головной взгляд в Unity
 
-[Взгляд](gaze.md) — это основной способ, с помощью которого пользователи могут ориентироваться на [голограммы](hologram.md), создаваемые приложением в [смешанной реальности](mixed-reality.md).
+[Взгляд](gaze-and-commit.md) — это основной способ, с помощью которого пользователи могут ориентироваться на [голограммы](hologram.md) , создаваемые приложением в [смешанной реальности](mixed-reality.md).
 
 
 ## <a name="implementing-head-gaze"></a>Реализация головного взгляда
 
-По сути, [элемент "Head-взгляд](gaze.md) " реализуется путем проецирования луча из заголовка пользователя, где находится гарнитура, в прямом направлении и определяет, что луч конфликтует с. В Unity расположение и направление головного пользователя предоставляются с помощью основной [камеры](camera-in-unity.md)Unity, в частности [UnityEngine. Camera. Main](http://docs.unity3d.com/ScriptReference/Camera-main.html). [преобразование. Forward](http://docs.unity3d.com/ScriptReference/Transform-forward.html) и [UnityEngine. Camera. Main](http://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Disposition](http://docs.unity3d.com/ScriptReference/Transform-position.html).
+По сути, [элемент "Head-взгляд](gaze-and-commit.md) " реализуется путем проецирования луча из заголовка пользователя, где находится гарнитура, в прямом направлении и определяет, что луч конфликтует с. В Unity расположение и направление головного пользователя предоставляются с помощью основной [камеры](camera-in-unity.md)Unity, в частности [UnityEngine. Camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [преобразование. Forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) и [UnityEngine. Camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Disposition](https://docs.unity3d.com/ScriptReference/Transform-position.html).
 
-Вызов функции [физик. райкаст](http://docs.unity3d.com/ScriptReference/Physics.Raycast.html) приводит к [райкассит](http://docs.unity3d.com/ScriptReference/RaycastHit.html) структуре, содержащей сведения о конфликте, включая трехмерную точку, в которой произошел конфликт, а другая GameObjectа, с которой был получен элемент head-взгляда.
+Вызов функции [физик. райкаст](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) приводит к [райкассит](https://docs.unity3d.com/ScriptReference/RaycastHit.html) структуре, содержащей сведения о конфликте, включая трехмерную точку, в которой произошел конфликт, а другая GameObjectа, с которой был получен элемент head-взгляда.
 
-### <a name="example-implement-head-gaze"></a>Пример. Реализация головного взгляда
+### <a name="example-implement-head-gaze"></a>Пример: реализация Heading-взгляда
 
 ```cs
 void Update()
@@ -58,5 +58,4 @@ void Update()
 ## <a name="see-also"></a>См. также
 * [Камера](camera-in-unity.md)
 * [Курсоры](cursors.md)
-* [Входные данные взгляда](gaze.md)
-* [Нацеливание взглядом](gaze-targeting.md)
+* [Направление головы и фиксация](gaze-and-commit.md)

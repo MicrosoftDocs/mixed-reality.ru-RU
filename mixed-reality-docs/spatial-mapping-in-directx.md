@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, пространственное сопоставление, среда, взаимодействие, DirectX, WinRT, API, пример кода, UWP, пакет SDK, пошаговое руководство
-ms.openlocfilehash: db3f1464158c04127e456cadd5fb633336909344
-ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
+ms.openlocfilehash: 456fcf1c00e23a287a741673e94b3f8d2d2d346c
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "63550698"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73437445"
 ---
 # <a name="spatial-mapping-in-directx"></a>Пространственное сопоставление в DirectX
 
@@ -21,6 +21,29 @@ ms.locfileid: "63550698"
 
 >[!NOTE]
 >Фрагменты кода в этой статье в настоящее время демонстрируют использование C++языка/CX вместо C + +17, соответствующего C++/WinRT, как используется в [ C++ шаблоне проекта holographic](creating-a-holographic-directx-project.md).  Понятия эквивалентны для проекта C++/WinRT, хотя код необходимо преобразовать.
+
+## <a name="device-support"></a>Поддержка устройств
+
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Функциями</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1-го поколения)</strong></a></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
+    </tr>
+     <tr>
+        <td>Пространственное сопоставление</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
+</table>
 
 ## <a name="directx-development-overview"></a>Общие сведения о разработке DirectX
 
@@ -51,7 +74,7 @@ ms.locfileid: "63550698"
   - Здесь приложение может при необходимости выполнять анализ или [обработку](spatial-mapping.md#mesh-processing) данных сетки, а также использовать их для [визуализации](spatial-mapping.md#rendering) и создания физических [райкастинг и конфликтов](spatial-mapping.md#raycasting-and-collision).
   - Важно отметить, что необходимо применить шкалу к позициям вершин сетки (например, в шейдере вершин, используемом для отрисовки сеток), чтобы преобразовать их из оптимизированных целых единиц, в которых они хранятся в буфере, на метры. Эту шкалу можно получить, вызвав [вертекспоситионскале](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx).
 
-### <a name="troubleshooting"></a>Устранение неполадок
+### <a name="troubleshooting"></a>"Устранение неполадок"
 * Не забудьте масштабировать позиции вершин сетки в шейдере вершин, используя шкалу, возвращенную [спатиалсурфацемеш. вертекспоситионскале](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx)
 
 ## <a name="spatial-mapping-code-sample-walkthrough"></a>Пример пошагового руководства по коду пространственного сопоставления
@@ -62,7 +85,7 @@ ms.locfileid: "63550698"
 
 ### <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Настройка приложения для использования возможности Спатиалперцептион
 
-Приложение должно иметь возможность использовать функцию пространственного сопоставления. Это необходимо потому, что пространственный сетчатый объект представляет собой представление среды пользователя, которое может считаться частными данными. Объявите эту возможность в файле Package. appxmanifest для приложения. Ниже приведен пример:
+Приложение должно иметь возможность использовать функцию пространственного сопоставления. Это необходимо потому, что пространственный сетчатый объект представляет собой представление среды пользователя, которое может считаться частными данными. Объявите эту возможность в файле Package. appxmanifest для приложения. Вот пример.
 
 ```xml
 <Capabilities>
@@ -70,14 +93,14 @@ ms.locfileid: "63550698"
 </Capabilities>
 ```
 
-Эта возможность поступает из пространства имен **uap2** . Чтобы получить доступ к этому пространству имен в манифесте, включите его  в качестве атрибута кслмнс &lt;в элемент Package >. Ниже приведен пример:
+Эта возможность поступает из пространства имен **uap2** . Чтобы получить доступ к этому пространству имен в манифесте, включите его в качестве атрибута *кслмнс* в элемент &lt;пакета >. Вот пример.
 
 ```xml
 <Package
-    xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
-    xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-    xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2"
+    xmlns="https://schemas.microsoft.com/appx/manifest/foundation/windows10"
+    xmlns:mp="https://schemas.microsoft.com/appx/2014/phone/manifest"
+    xmlns:uap="https://schemas.microsoft.com/appx/manifest/uap/windows10"
+    xmlns:uap2="https://schemas.microsoft.com/appx/manifest/uap/windows10/2"
     IgnorableNamespaces="uap uap2 mp"
     >
 ```
@@ -222,7 +245,7 @@ m_surfaceObserver->ObservedSurfacesChanged += ref new TypedEventHandler<SpatialS
 
 Наш пример кода также настроен для реагирования на эти события. Давайте подробно рассмотрим, как это сделать.
 
-**ПРИМЕЧАНИЕ.** Это может быть не самым эффективным способом для работы приложения с данными сетки. Этот код написан для ясности и не оптимизирован.
+**Примечание.** Это может быть не самым эффективным способом для работы приложения с данными сетки. Этот код написан для ясности и не оптимизирован.
 
 Данные сетки поверхности предоставляются в карте только для чтения, в которой хранятся объекты [спатиалсурфацеинфо](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.aspx) с использованием [Platform:: GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931.aspx) в качестве значений ключа.
 
@@ -367,7 +390,7 @@ CreateDirectXBuffer(device, D3D11_BIND_VERTEX_BUFFER, positions, m_vertexPositio
 }
 ```
 
-**ПРИМЕЧАНИЕ.** Сведения о вспомогательной функции Креатедиректксбуффер, используемой в предыдущем фрагменте, см. в примере кода сопоставления Surface: Сурфацемеш. cpp, Жетдатафромибуффер. h. Теперь создание ресурса устройства завершено, и сетка считается загруженной и готова к обновлению и визуализации.
+**Примечание.** Для вспомогательной функции Креатедиректксбуффер, используемой в предыдущем фрагменте, см. пример кода сопоставления Surface: Сурфацемеш. cpp, Жетдатафромибуффер. h. Теперь создание ресурса устройства завершено, и сетка считается загруженной и готова к обновлению и визуализации.
 
 ### <a name="update-and-render-surface-meshes"></a>Обновление и отрисовка сеток поверхности
 
@@ -474,7 +497,7 @@ else
 }
 ```
 
-По завершении этого цикла мы рассмотрим наши сети и поговорю, что каждый из них будет нарисован. **ПРИМЕЧАНИЕ.** Этот пример кода не оптимизирован для использования какого-либо рода фрустумного отбора, но эту функцию следует включить в приложение.
+По завершении этого цикла мы рассмотрим наши сети и поговорю, что каждый из них будет нарисован. **Примечание.** Этот пример кода не оптимизирован для использования какого-либо рода фрустумного отбора, но эту функцию следует включить в приложение.
 
 ```cpp
 std::lock_guard<std::mutex> guard(m_meshCollectionLock);
@@ -629,7 +652,7 @@ else
 }
 ```
 
-**Примечание.** Сведения о нашей подпрограмме **гасердепслесс** см. в примере кода сопоставления Surface: СпеЦиалеффектпикселшадер. HLSL.
+**Примечание.** Для нашей подпрограммы **гасердепслесс** см. пример кода сопоставления Surface: спеЦиалеффектпикселшадер. HLSL.
 
 **Отображение данных сетки поверхности для отображения**
 
@@ -638,7 +661,7 @@ else
 Здесь наш пример кода указывает, что модуль подготовки сетки рисует коллекцию. На этот раз мы не будем указывать проход только по глубине, поэтому он присоединяет шейдер пикселей и завершает конвейер отрисовки, используя целевые объекты, которые мы указали для текущей виртуальной камеры.
 
 ```cpp
-// SR mesh rendering pass: Draw SR mesh over the world.
+// Spatial Mapping mesh rendering pass: Draw Spatial Mapping mesh over the world.
 context->ClearDepthStencilView(pCameraResources->GetSurfaceOcclusionDepthStencilView(), D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);
 
 // Set the render target to the current holographic camera's back buffer, and set the depth buffer.

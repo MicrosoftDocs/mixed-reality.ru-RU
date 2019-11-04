@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: развертывание, Unity, Visual Studio, HoloLens, HoloLens 2, иммерсивное головной телефон
-ms.openlocfilehash: b2c345a8cc9bddcbc447531eb5f6cdacc62f2e98
-ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
+ms.openlocfilehash: f897c9280505b1e84f8e6342729f1598d4b2f559
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "63522310"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73436962"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Рекомендации по работе с Unity и Visual Studio
 
@@ -35,7 +35,7 @@ ms.locfileid: "63522310"
 
 ## <a name="visual-studio-tools-for-unity"></a>Инструменты Visual Studio для Unity
 
-Скачать [инструменты Visual Studio для Unity](https://docs.microsoft.com/en-us/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity?view=vs-2019)
+Скачать [инструменты Visual Studio для Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity?view=vs-2019)
 
 **Преимущества Инструменты Visual Studio для Unity**
 * Отладка Unity в редакторе в режиме воспроизведения из Visual Studio путем размещения точек останова, оценки переменных и сложных выражений.

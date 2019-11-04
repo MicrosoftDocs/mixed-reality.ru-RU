@@ -6,12 +6,12 @@ ms.author: vladkol
 ms.date: 05/20/2018
 ms.topic: article
 keywords: Unity, Mixed Reality, Native, ксрдевице, спатиалкурдинатесистем, холографикфраме, холографиккамера, испатиалкурдинатесистем, iholographicframe, iholographiccamera, getnativeptr
-ms.openlocfilehash: 76073f5b2adfdf27cfbb153f95bb3a533d02e196
-ms.sourcegitcommit: d565a69a9320e736304372b3f010af1a4d286a62
+ms.openlocfilehash: 975775f64a19fe5fff4bc395a3e954cbf529dfa9
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65942100"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73437334"
 ---
 # <a name="mixed-reality-native-objects-in-unity"></a>Собственные объекты смешанной реальности в Unity
 
@@ -21,8 +21,8 @@ ms.locfileid: "65942100"
 
 ## <a name="xrdevice"></a>ксрдевице 
 
-**Имен** *UnityEngine. XR*<br>
-**Тип** *ксрдевице*
+**Пространство имен:** *UnityEngine. XR*<br>
+**Тип:** *ксрдевице*
 
 Тип *ксрдевице* позволяет получить доступ к базовым машинным объектам с помощью метода <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">жетнативептр</a> . Возвращаемые Жетнативептр различаются между различными платформами. На универсальная платформа Windows при использовании пакета SDK XR для Windows Mixed Reality Ксрдевице. Жетнативептр возвращает указатель (IntPtr) в следующую структуру: 
 
@@ -47,8 +47,51 @@ HolographicFrameNativeData hfd = Marshal.PtrToStructure<HolographicFrameNativeDa
 ```
 ***Ихолографиккамераптр** — это массив IntPtr, упакованный как UnmanagedType. ByValArray с длиной, равной макснумберофкамерас* 
 
+### <a name="unmarshaling-native-pointers"></a>Распаковка собственных указателей
 
-### <a name="using-holographicframenativedata"></a>Использование Холографикфраменативедата
+При использовании [Microsoft. Windows. микседреалити. дотнетвинрт](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT) можно создать управляемый объект из собственного указателя с помощью метода `FromNativePtr()`:
+
+```cs
+var worldOrigin = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(hfd.ISpatialCoordinateSystemPtr);
+```
+
+В противном случае используйте `Marshal.GetObjectForIUnknown()` и приведите к желаемому типу:
+
+```cs
+#if ENABLE_WINMD_SUPPORT
+var worldOrigin = (Windows.Perception.Spatial.SpatialCoordinateSystem)Marshal.GetObjectForIUnknown(hfd.ISpatialCoordinateSystemPtr);
+#endif
+```
+
+### <a name="converting-between-coordinate-systems"></a>Преобразование между системами координат
+
+Unity использует левую систему координат, а API-интерфейсы восприятия Windows — для использования правильных систем координат. Для преобразования между этими двумя соглашениями можно использовать следующие вспомогательные методы:
+
+```cs
+namespace NumericsConversion
+{
+    public static class NumericsConversionExtensions
+    {
+        public static UnityEngine.Vector3 ToUnity(this System.Numerics.Vector3 v) => new UnityEngine.Vector3(v.X, v.Y, -v.Z);
+        public static UnityEngine.Quaternion ToUnity(this System.Numerics.Quaternion q) => new UnityEngine.Quaternion(-q.X, -q.Y, q.Z, q.W);
+        public static UnityEngine.Matrix4x4 ToUnity(this System.Numerics.Matrix4x4 m) => new UnityEngine.Matrix4x4(
+            new Vector4( m.M11,  m.M12, -m.M13,  m.M14),
+            new Vector4( m.M21,  m.M22, -m.M23,  m.M24),
+            new Vector4(-m.M31, -m.M32,  m.M33, -m.M34),
+            new Vector4( m.M41,  m.M42, -m.M43,  m.M44));
+
+        public static System.Numerics.Vector3 ToSystem(this UnityEngine.Vector3 v) => new System.Numerics.Vector3(v.x, v.y, -v.z);
+        public static System.Numerics.Quaternion ToSystem(this UnityEngine.Quaternion q) => new System.Numerics.Quaternion(-q.x, -q.y, q.z, q.w);
+        public static System.Numerics.Matrix4x4 ToSystem(this UnityEngine.Matrix4x4 m) => new System.Numerics.Matrix4x4(
+            m.m00,  m.m10, -m.m20,  m.m30,
+            m.m01,  m.m11, -m.m21,  m.m31,
+           -m.m02, -m.m12,  m.m22, -m.m32,
+            m.m03,  m.m13, -m.m23,  m.m33);
+    }
+}
+```
+
+### <a name="using-holographicframe-native-data"></a>Использование собственных данных Холографикфраме
 
 > [!NOTE]
 > Изменение состояния собственных объектов, полученных через Холографикфраменативедата, может привести к непредсказуемому поведению и артефактам визуализации, особенно если Unity также является причиной того же состояния.  Например, не следует вызывать Холографикфраме. Упдатекуррентпредиктион, или, в противном случае прогнозирование, которое Unity визуализирует с этим кадром, будет не синхронизировано с объектом, который ожидается Windows, что снизит [стабильность](hologram-stability.md).
@@ -86,6 +129,7 @@ public static bool GetCurrentFrameDateTime(out DateTime frameDateTime)
 ```
 
 ## <a name="see-also"></a>См. также
+* [Использование пространства имен Windows с приложениями Unity для HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 * <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">спатиалкурдинатесистем</a>
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">холографикфраме</a>
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a>

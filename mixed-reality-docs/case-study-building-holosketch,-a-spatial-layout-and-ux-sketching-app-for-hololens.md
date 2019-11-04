@@ -6,24 +6,24 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Холоскетч, HoloLens, Windows Mixed Reality, набросок, приложение
-ms.openlocfilehash: d7f94a09bf4a8a16000c2345adf1a046dab4bd15
-ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
+ms.openlocfilehash: d6d22aae7709bcc1a33b142a100d1a0f9645d3cc
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "63524435"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73436942"
 ---
 # <a name="case-study---building-holosketch-a-spatial-layout-and-ux-sketching-app-for-hololens"></a>Пример использования: создание Холоскетч, пространственного макета и приложения для наброска, нарисуйте пользовательский интерфейс для HoloLens
 
 Холоскетч — это пространственный макет на устройстве и средство создания наброска UX для HoloLens, помогающее в создании Holographic. Холоскетч работает с помощью парной клавиатуры и мыши Bluetooth, а также команд жестов и голоса. Цель Холоскетч — предоставить простое средство компоновки UX для быстрой визуализации и итерации.
 
-![Холоскетч: Пространственный макет и приложение наметки UX для HoloLens.](images/holosketch-image-01-640px.png)<br>
+![Холоскетч: пространственный макет и приложение для наброска наметки UX для HoloLens.](images/holosketch-image-01-640px.png)<br>
 *Холоскетч: пространственный макет и приложение для наброска пользовательского интерфейса для HoloLens*
 
-![Простое средство компоновки UX для быстрой визуализации и итерации.](images/holosketch-image-02.png)<br>
+![простое средство компоновки UX для быстрой визуализации и итерации.](images/holosketch-image-02.png)<br>
 *Простое средство компоновки UX для быстрой визуализации и итерации*
 
-## <a name="features"></a>Компоненты
+## <a name="features"></a>Возможности
 
 ### <a name="primitives-for-quick-studies-and-scale-prototyping"></a>Примитивы для быстрых исследований и масштабирования — создание прототипов
 
@@ -63,28 +63,28 @@ ms.locfileid: "63524435"
 
 Так как Смешанная реальность — это новый холст для нас, он включает в себя множество итераций и пробных версий, а также ошибок по своей природе. Для проектировщиков, которые не знакомы с такими инструментами, как Unity и Visual Studio, не очень просто разместить что-то в HoloLens. Как правило, для просмотра 2D-и трехмерной иллюстраций на устройстве необходимо выполнить приведенный ниже процесс. Это было большое препятствие для разработчиков, быстро просматривая идеи и сценарии.
 
-![Сложный процесс развертывания](images/holosketch-image-03-1000px.png)<br>
+![сложный процесс развертывания](images/holosketch-image-03-1000px.png)<br>
 *Процесс развертывания*
 
 ### <a name="simplified-process-with-holosketch"></a>Упрощенный процесс с помощью Холоскетч
 
 С Холоскетч мы хотели упростить этот процесс, не прибегая к средствам разработки и связыванию портала устройств. С помощью OneDrive пользователи могут легко размещать 2D-или трехмерные ресурсы в HoloLens.
 
-![Упрощенный процесс с помощью Холоскетч](images/holosketch-image-04-1000px.png)<br>
+![упрощенный процесс с помощью Холоскетч](images/holosketch-image-04-1000px.png)<br>
 *Упрощенный процесс с помощью Холоскетч*
 
 ### <a name="encouraging-three-dimensional-design-thinking-and-solutions"></a>Поощрение проектирования и решений, основанных на трехмерном проектировании
 
-Мы думали, что это средство предоставит дизайнерам возможность исследовать решения в действительно трехмерном пространстве и не зависнуть в двухмерном виде. Им не нужно думать о создании трехмерного фона для пользовательского интерфейса, так как в случае с Hololens фон является реальным миром. Холоскетч открывает способ, позволяющий дизайнерам легко исследовать трехмерную структуру на Hololens.
+Мы думали, что это средство предоставит дизайнерам возможность исследовать решения в действительно трехмерном пространстве и не зависнуть в двухмерном виде. Им не нужно думать о создании трехмерного фона для пользовательского интерфейса, так как в случае с HoloLens фон является реальным миром. Холоскетч открывает способ, позволяющий дизайнерам легко исследовать трехмерную структуру на HoloLens.
 
-## <a name="get-started"></a>Начало работы
+## <a name="get-started"></a>"Начало работы",
 
 ### <a name="how-to-import-2d-images-jpgpng-into-holosketch"></a>Импорт 2D-изображений (JPG/PNG) в Холоскетч
 
 * Отправка изображений в формате JPG/PNG в папку OneDrive "Documents/Холоскетч".
 * В меню OneDrive в Холоскетч можно будет выбрать и поместить образ в среду.
 
-![Импорт 2D-изображений](images/import-2d-images-1000px.jpg)<br>
+![импорт 2D-изображений](images/import-2d-images-1000px.jpg)<br>
 *Импорт изображений и трехмерных объектов с помощью OneDrive*
 
 ### <a name="how-to-import-3d-objects-into-holosketch"></a>Импорт трехмерных объектов в Холоскетч
@@ -118,17 +118,17 @@ ms.locfileid: "63524435"
    ![В нижней части панели инспектора щелкните раскрывающийся список и назначьте новое уникальное имя.](images/holosketch-14-assetbundles-1000px.png)
 
 10. Подготовка эскиза для объекта модели. 
-   ![Перетащите изображение на панель проекта и назначьте имя, используемое для объекта.](images/holosketch-15-assetbundles-1000px.png)
+   ![перетащите изображение на панель проекта и назначьте имя, используемое для объекта.](images/holosketch-15-assetbundles-1000px.png)
 
 11. Создайте папку с именем "Ассетбундлес" в папке "Asset" проекта Unity.
 
 12. В меню "активы" выберите "Build Ассетбундлес" (создать файл). 
-   ![В меню "активы" выберите "Build Ассетбундлес" (создать файл).](images/holosketch-15a-assetbundles.png)
+   чтобы создать файл, ![из меню "активы" выберите "построить Ассетбундлес".](images/holosketch-15a-assetbundles.png)
 
 
 13. **Отправьте созданный файл в папку/Филес/документс/холоскетч в OneDrive.** Отправьте только файл asset_unique_name. Не нужно отправлять файлы манифеста или файл Ассетбундлес. <br>
-![Добавить файлы в файлы/документы/холоскетч/папку](images/holosketch-onedriveupload-1000px.png)
-![вы увидите добавленный трехмерный объект в меню OneDrive для холоскетч](images/holosketch-14-onedriveexample-1000px.jpg)
+![добавить файлы в файлы/документы/Холоскетч/папку](images/holosketch-onedriveupload-1000px.png)
+![вы увидите добавленный трехмерный объект в меню OneDrive Холоскетч](images/holosketch-14-onedriveexample-1000px.jpg)
 
 ## <a name="how-to-manipulate-the-objects"></a>Как управлять объектами
 
@@ -136,7 +136,7 @@ ms.locfileid: "63524435"
 
 ### <a name="object-manipulation-modes"></a>Режимы обработки объектов
 
-![Как управлять объектами](images/holosketch-image-06-1000px.png)<br>
+![, как управлять объектами](images/holosketch-image-06-1000px.png)<br>
 *Как управлять объектами*
 
 ### <a name="contextual-and-tool-belt-menus"></a>Контекстные меню и служебная лента инструментов
@@ -147,11 +147,11 @@ ms.locfileid: "63524435"
 
 Пункты меню:
 * **Область макета:** Это система трехмерной сетки, в которой можно разработать несколько объектов и управлять ими как группой. Дважды коснитесь области макета, чтобы добавить в нее объекты.
-* **Primitives** Используйте Кубы, шарик, цилиндры и конес для массовых исследований.
-* **Хранилища** Откройте меню OneDrive, чтобы импортировать объекты.
+* **Примитивы:** Используйте Кубы, шарик, цилиндры и конес для массовых исследований.
+* **OneDrive:** Откройте меню OneDrive, чтобы импортировать объекты.
 * **Справка:** Отображает экран справки.
 
-![Контекстное меню](images/holosketch-image-07.png)<br>
+![контекстное меню](images/holosketch-image-07.png)<br>
 *Контекстное меню*
 
 **Использование меню "лента инструментов"**
@@ -160,7 +160,7 @@ ms.locfileid: "63524435"
 
 ## <a name="using-keyboard-gestures-and-voice-commands"></a>Использование клавиатуры, жестов и Voice Command
 
-![Клавиатура, жесты и команды Voice](images/holosketch-image-08-1000px.png)<br>
+![клавиатура, жесты и команды Voice](images/holosketch-image-08-1000px.png)<br>
 *Клавиатура, жесты и команды Voice*
 
 ## <a name="download-the-app"></a>Скачать приложение
@@ -169,7 +169,7 @@ ms.locfileid: "63524435"
 <tr>
 <td style="border-style: none" width="60px"><img alt="HoloSketch app icon" width="60" height="60" src="images/holosketch-app-icon.png">
 </td>
-<td style="border-style: none"><a href="https://www.microsoft.com/store/p/holosketch/9p3br4t5m4tv">Скачайте и установите бесплатное приложение Холоскетч из Microsoft Store</a>
+<td style="border-style: none"><a href="https://www.microsoft.com/store/p/holosketch/9p3br4t5m4tv">Скачайте и установите бесплатное приложение холоскетч из Microsoft Store</a>
 </td>
 </tr>
 </table>
@@ -190,10 +190,10 @@ ms.locfileid: "63524435"
 <table style="border-collapse:collapse">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><b>Донг Йоон</b><br>Конструктор UX@Microsoft</td>
+<td style="border-style: none"><b>Донг Йоон</b><br>@Microsoft конструктора UX</td>
 </tr>
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Patrick Sebring" width="60" height="60" src="images/paseb-60px.jpg"></td>
-<td style="border-style: none"><b>Патрик Себринг</b><br>Developer@Microsoft</td>
+<td style="border-style: none"><b>Патрик Себринг</b><br>@Microsoft разработчика</td>
 </tr>
 </table> 

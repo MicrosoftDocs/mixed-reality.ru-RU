@@ -1,25 +1,24 @@
 ---
-title: Обновление приложения Стеамвр для Windows Mixed Reality
+title: Обновление приложения Стеамвр
 description: Рекомендации по обновлению приложения Стеамвр для оптимизации совместимости с помощью головных телефонов Windows Mixed Reality.
 author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Стеамвр, совместимость
-ms.openlocfilehash: db21651df8e586edf500f0d05def4b1ea5474284
-ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
+ms.openlocfilehash: 6479130b14b8b50828ebecd3a648fd8a425aec15
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "63548676"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73438204"
 ---
-# <a name="updating-your-steamvr-application-for-windows-mixed-reality"></a>Обновление приложения Стеамвр для Windows Mixed Reality
-
+# <a name="updating-your-steamvr-application"></a>Обновление приложения Стеамвр
 Мы советуем разработчикам тестировать и оптимизировать свои Стеамврные возможности для работы на гарнитурах Windows Mixed Reality. В этой документации рассматриваются распространенные улучшения, которые могут быть реализованы разработчиками, чтобы гарантировать, что их работа отлично работает в Windows Mixed Reality.
 
 ## <a name="initial-setup-instructions"></a>Инструкции по начальной настройке
 
-Чтобы начать тестирование игры или приложения в Windows Mixed Reality, обязательно ознакомьтесь с нашим [руководством по началу работы.](http://aka.ms/WindowsMixedRealitySteamVR)
+Чтобы начать тестирование игры или приложения в Windows Mixed Reality, обязательно ознакомьтесь с нашим [руководством по началу работы.](https://aka.ms/WindowsMixedRealitySteamVR)
 
 ## <a name="controller-models"></a>Модели контроллеров
 1. Если приложение подготавливает модели контроллеров:
@@ -43,7 +42,7 @@ ms.locfileid: "63548676"
 
 ## <a name="haptics"></a>хаптикс
 
-Начиная с [обновления Windows 10 от апреля 2018](release-notes-april-2018.md)г., хаптикс теперь поддерживаются для стеамврных возможностей Windows Mixed Reality. Если ваше приложение или игра Стеамвр уже включает поддержку хаптикс, теперь она должна работать (без дополнительной работы) с контроллерами [движения Windows Mixed Reality](motion-controllers.md).
+Начиная с [обновления Windows 10 от апреля 2018](release-notes-april-2018.md)г., хаптикс теперь поддерживаются для стеамврных возможностей Windows Mixed Reality. Если ваше приложение или игра Стеамвр уже включает поддержку хаптикс, теперь она должна работать (без дополнительной работы) с [контроллерами движения Windows Mixed Reality](motion-controllers.md).
 
 Контроллеры движения Windows Mixed Reality используют стандартный мотор хаптикс, в отличие от линейных исполнителей, находящихся в некоторых других Стеамвр контроллерах движения, что может привести к слегка отличающимся впечатлениям от ожидаемого взаимодействия с пользователем. Поэтому мы рекомендуем тестировать и настраивать дизайн хаптикс с помощью контроллеров движения Windows Mixed Reality. Например, иногда короткие хаптик пульса (5-10 мс) менее заметны на контроллерах движения Windows Mixed Reality. Чтобы получить более заметный импульс, поэкспериментируйте с отправкой более длительного "щелчка" (40-70ms), чтобы придать мотору больше времени, прежде чем отключать питание.
 
@@ -59,7 +58,7 @@ ms.locfileid: "63548676"
 
 Ваш отзыв не будет ценным, когда дело доходит до улучшения возможностей Стеамвр Windows Mixed Reality. Отправьте все отзывы и ошибки через [центр обратной связи Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/filing-feedback). Ниже приведены некоторые [советы о том, как сделать отзыв стеамвр как можно более удобным](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality#sharing-feedback-on-steamvr).
 
-Если у вас есть вопросы или комментарии для совместного использования, вы также можете связаться с нами на нашем [форуме Steam](http://steamcommunity.com/app/719950/discussions/).
+Если у вас есть вопросы или комментарии для совместного использования, вы также можете связаться с нами на нашем [форуме Steam](https://steamcommunity.com/app/719950/discussions/).
 
 ## <a name="faqs-and-troubleshooting"></a>Часто задаваемые вопросы и устранение неполадок
 

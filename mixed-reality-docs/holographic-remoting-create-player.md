@@ -3,31 +3,31 @@ title: Написание пользовательского плеера hologr
 description: Создав настраиваемое приложение для удаленного взаимодействия holographic, вы можете создать пользовательское приложение, способное отображать содержимое, отображаемое на удаленном компьютере, в HoloLens 2. В этой статье описывается, как это можно сделать.
 author: NPohl-MSFT
 ms.author: nopohl
-ms.date: 08/01/2019
+ms.date: 10/21/2019
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: fdc3d3bbd72d0812377d6a70c975f2111e1a2224
-ms.sourcegitcommit: ca949efe0279995a376750d89e23d7123eb44846
+ms.openlocfilehash: 982a3f42014d8f5eb9ba181247fee9825fb78371
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68718098"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73434321"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>Написание пользовательского приложения для удаленного взаимодействия holographic
 
 >[!IMPORTANT]
 >В этом документе описывается создание пользовательского приложения проигрывателя для HoloLens 2. Пользовательские проигрыватели, написанные для HoloLens 2, несовместимы с ведущими приложениями, написанными для HoloLens 1. Это означает, что оба приложения должны использовать пакет NuGet версии **2. x. x**.
 
-Создав настраиваемое приложение для удаленного взаимодействия holographic, вы можете создать пользовательское приложение, способное отображать [иммерсивное представление](app-views.md) с удаленного компьютера в HoloLens 2. В этой статье описывается, как это можно сделать. Весь код на этой странице и рабочих проектах можно найти в репозитории [GitHub с примерами удаленного взаимодействия](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+Создав настраиваемое приложение для удаленного взаимодействия holographic, вы можете создать пользовательское приложение, способное отображать [иммерсивное представление](app-views.md) с удаленного компьютера в HoloLens 2. В этой статье описывается, как это можно сделать. Весь код на этой странице и рабочих проектах можно найти в [репозитории GitHub с примерами удаленного взаимодействия](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 С помощью плеера holographic в приложении можно отображать holographic-содержимое, [Отображаемое](rendering.md) на настольном компьютере или на устройстве UWP, например Xbox One, что позволяет получить доступ к дополнительным системным ресурсам. Приложение holographic Remoting, которое выполняет потоковую передачу данных, передает входные данные в хост-приложение holographic с удаленным взаимодействием и получает иммерсивное представление в виде видео-и звукового потока. Подключение устанавливается с использованием стандартного Wi-Fi. Чтобы создать приложение проигрывателя, вы будете использовать пакет NuGet для добавления удаленного взаимодействия holographic в ваше приложение UWP и написать код для управления подключением и отображения иммерсивного представления. 
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Необходимые условия
 
 Хорошей отправной точкой является рабочее приложение UWP на основе DirectX, которое уже предназначено для API Windows Mixed Reality. Дополнительные сведения см. в статье [Общие сведения о разработке DirectX](directx-development-overview.md). Если у вас нет существующего приложения и вы хотите начать с самого начала, [ C++ шаблон проекта holographic](creating-a-holographic-directx-project.md) является хорошей отправной точкой.
 
 >[!IMPORTANT]
->Любое приложение, использующее holographic удаленное взаимодействие, должно быть создано для использования [многопоточного подразделения](https://docs.microsoft.com/en-us/windows/win32/com/multithreaded-apartments). Использование однопотокового [аппартмент](https://docs.microsoft.com/en-us/windows/win32/com/single-threaded-apartments) поддерживается, но может привести к неоптимальной производительности и, возможно, "дергания" во время воспроизведения. При использовании C++/WinRT [WinRT:: init_apartment](https://docs.microsoft.com/en-us/windows/uwp/cpp-and-winrt-apis/get-started) по умолчанию используется многопотоковое подразделение.
+>Любое приложение, использующее holographic удаленное взаимодействие, должно быть создано для использования [многопоточного подразделения](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments). Использование [однопотокового аппартмент](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments) поддерживается, но может привести к неоптимальной производительности и, возможно, "дергания" во время воспроизведения. При использовании C++/WinRT [WinRT:: init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) по умолчанию используется многопотоковое подразделение.
 
 ## <a name="get-the-holographic-remoting-nuget-package"></a>Получение пакета NuGet для удаленного взаимодействия с holographic
 
@@ -40,7 +40,7 @@ ms.locfileid: "68718098"
 6. Следующее появившееся диалоговое окно — это лицензионное соглашение. Нажмите кнопку **я принимаю** , чтобы принять условия лицензионного соглашения.
 
 >[!IMPORTANT]
-><a name="idl"></a>В ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` пакете NuGet содержится подробная документация по API, предоставляемому с помощью holographic Remoting.
+><a name="idl"></a>```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` в пакете NuGet содержит подробную документацию по API, предоставляемому с помощью holographic Remoting.
 
 ## <a name="modify-the-packageappxmanifest-of-the-application"></a>Изменение Package. appxmanifest приложения
 
@@ -94,7 +94,7 @@ m_playerContext = winrt::Microsoft::Holographic::AppRemoting::PlayerContext::Cre
 >[!WARNING]
 >Holographic удаленное взаимодействие выполняется путем замены среды выполнения Windows Mixed Reality, которая является частью Windows, на среду выполнения с удаленным взаимодействием. Это делается во время создания контекста проигрывателя. По этой причине любой вызов любого API Windows Mixed Reality перед созданием контекста проигрывателя может привести к непредвиденному поведению. Рекомендуемый подход состоит в том, чтобы создать контекст проигрывателя как можно раньше перед взаимодействием с любым API смешанной реальности. Никогда не смешивать объекты, созданные или полученные через API Windows Mixed Reality до вызова ```PlayerContext::Create()``` с объектами, созданными или полученными позже.
 
-Далее можно создать Холографикспаце, вызвав [холографикспаце. креатефоркоревиндов](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicspace.createforcorewindow).
+Далее можно создать Холографикспаце, вызвав [холографикспаце. креатефоркоревиндов](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographicspace.createforcorewindow).
 
 ```cpp
 m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::CreateForCoreWindow(window);
@@ -104,11 +104,11 @@ m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::Cr
 
 После того как приложение игрока готово к отрисовке содержимого, можно установить подключение к узлу.
 
-Подключение можно установить одним из входящей способов:
+Соединение может быть установлено одним из следующих способов:
 1) Приложение проигрывателя, работающее в HoloLens 2, подключается к ведущему приложению.
 2) Ведущее приложение подключается к приложению проигрывателя, работающему в HoloLens 2.
 
-Чтобы подключиться из приложения проигрывателя к узлу, вызовите ```Connect``` метод в контексте проигрывателя, указав имя узла и порт. Порт по умолчанию — **8265**.
+Чтобы подключиться из приложения проигрывателя к узлу, вызовите метод ```Connect``` в контексте проигрывателя, указав имя узла и порт. Порт по умолчанию — **8265**.
 
 ```cpp
 try
@@ -122,9 +122,9 @@ catch(winrt::hresult_error& e)
 ```
 
 >[!IMPORTANT]
->Как и в C++случае любого ```Connect``` API/WinRT, может возникнуть исключение WinRT:: hresult_error, который необходимо обработать.
+>Как и любой C++другой ```Connect``` API/WinRT может вызывать исключение WinRT:: hresult_error, которое необходимо обработать.
 
-Прослушивание входящих подключений в приложении проигрывателя можно выполнить, вызвав ```Listen``` метод. Во время этого вызова можно указать как порт подтверждения, так и порт транспорта. Порт подтверждения используется для первоначального подтверждения. Затем данные пересылаются через порт транспорта. По умолчанию используются номер порта **8265** и **8266** .
+Прослушивание входящих подключений в приложении проигрывателя можно выполнить, вызвав метод ```Listen```. Во время этого вызова можно указать как порт подтверждения, так и порт транспорта. Порт подтверждения используется для первоначального подтверждения. Затем данные пересылаются через порт транспорта. По умолчанию используются номер порта **8265** и **8266** .
 
 ```cpp
 try
@@ -140,15 +140,15 @@ catch(winrt::hresult_error& e)
 
 ## <a name="handling-connection-related-events"></a>Обработка событий, связанных с подключением
 
-```PlayerContext``` Предоставляет три события для отслеживания состояния соединения.
-1) Подключено: Активируется при успешном установлении соединения с узлом.
+```PlayerContext``` предоставляет три события для отслеживания состояния соединения.
+1) Подключено: активируется при успешном установлении соединения с узлом.
 ```cpp
 m_onConnectedEventToken = m_playerContext.OnConnected([]() 
 {
     // Handle connection successfully established
 });
 ```
-2) Отключено: Активируется, если установленное соединение прерывается или не удалось установить подключение.
+2) Ondisconnectо: активируется, если установленное соединение прерывается или не удалось установить подключение.
 ```cpp
 m_onDisconnectedEventToken = m_playerContext.OnDisconnected([](ConnectionFailureReason failureReason)
 {
@@ -160,9 +160,9 @@ m_onDisconnectedEventToken = m_playerContext.OnDisconnected([](ConnectionFailure
 }
 ```
 >[!NOTE]
->Возможные ```ConnectionFailureReason``` значения задокументированы ```Microsoft.Holographic.AppRemoting.idl``` в [файле](#idl).
+>Возможные значения ```ConnectionFailureReason``` задокументированы в [файле](#idl)```Microsoft.Holographic.AppRemoting.idl```.
 
-3) Ожидание: При ожидании запуска входящих подключений.
+3) Идет ожидание: при прослушивании входящих подключений начинается.
 ```cpp
 m_onListeningEventToken = m_playerContext.OnListening([]()
 {
@@ -170,18 +170,18 @@ m_onListeningEventToken = m_playerContext.OnListening([]()
 });
 ```
 
-Кроме того, состояние соединения можно запросить с помощью ```ConnectionState``` свойства в контексте проигрывателя.
+Кроме того, состояние соединения можно запросить с помощью свойства ```ConnectionState``` в контексте проигрывателя.
 ```cpp
 winrt::Microsoft::Holographic::AppRemoting::ConnectionState state = m_playerContext.ConnectionState();
 ```
 
 ## <a name="display-the-remotely-rendered-frame"></a>Отобразить удаленно визуализированный кадр
 
-Чтобы отобразить удаленно визуализированное содержимое, ```PlayerContext::BlitRemoteFrame()``` вызовите при подготовке к просмотру [холографикфраме](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicframe). 
+Чтобы отобразить удаленно визуализированное содержимое, вызовите ```PlayerContext::BlitRemoteFrame()``` при подготовке к просмотру [холографикфраме](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographicframe). 
 
-```BlitRemoteFrame()```требует, чтобы задний буфер для текущего Холографикфраме был привязан как целевой объект рендеринга. Задний буфер можно получить из [холографиккамерарендерингпараметерс](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicframe.getrenderingparameters) с помощью свойства [Direct3D11BackBuffer](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.direct3d11backbuffer) .
+```BlitRemoteFrame()``` требует, чтобы задний буфер для текущего Холографикфраме был привязан как целевой объект рендеринга. Задний буфер можно получить из [холографиккамерарендерингпараметерс](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographicframe.getrenderingparameters) с помощью свойства [Direct3D11BackBuffer](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.direct3d11backbuffer) .
 
-При вызове ```BlitRemoteFrame()``` копирует последний полученный кадр из ведущего приложения в буфер обмена холографикфраме. Кроме того, устанавливается набор фокусных точек, если удаленное приложение указало фокус-точку во время отрисовки удаленного кадра.
+При вызове ```BlitRemoteFrame()``` копирует последний полученный кадр из ведущего приложения в буфер обмена Холографикфраме. Кроме того, устанавливается набор фокусных точек, если удаленное приложение указало фокус-точку во время отрисовки удаленного кадра.
 
 ```cpp
 // Blit the remote frame into the backbuffer for the HolographicFrame.
@@ -189,33 +189,51 @@ winrt::Microsoft::Holographic::AppRemoting::BlitResult result = m_playerContext.
 ```
 
 >[!NOTE]
->```PlayerContext::BlitRemoteFrame()```потенциально перезаписывает фокусную точку для текущего кадра. 
->- Чтобы задать резервную точку фокусировки, вызовите метод [холографиккамерарендерингпараметерс:: сетфокуспоинт](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) ```PlayerContext::BlitRemoteFrame()```. 
->- Чтобы оверрврите удаленную точку фокусировки, вызовите [холографиккамерарендерингпараметерс:: сетфокуспоинт](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) после ```PlayerContext::BlitRemoteFrame()```.
+>```PlayerContext::BlitRemoteFrame()``` потенциально перезаписывает фокусную точку для текущего кадра. 
+>- Чтобы задать резервную точку фокусировки, вызовите метод [холографиккамерарендерингпараметерс:: сетфокуспоинт](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) перед ```PlayerContext::BlitRemoteFrame()```. 
+>- Чтобы перезаписать удаленную точку фокусировки, вызовите [холографиккамерарендерингпараметерс:: сетфокуспоинт](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) после ```PlayerContext::BlitRemoteFrame()```.
 
-При успешном ```BlitRemoteFrame()``` выполнении ```BlitResult::Success_Color```возвращает. В противном случае возвращается причина сбоя:
-- ```BlitResult::Failed_NoRemoteFrameAvailable```. Сбой, так как нет доступных удаленных кадров.
-- ```BlitResult::Failed_NoCamera```. Сбой, так как отсутствует камера.
+При успешном выполнении ```BlitRemoteFrame()``` возвращает ```BlitResult::Success_Color```. В противном случае возвращается причина сбоя:
+- ```BlitResult::Failed_NoRemoteFrameAvailable```: сбой, так как нет доступных удаленных кадров.
+- ```BlitResult::Failed_NoCamera```: сбой, так как отсутствует камера.
+- ```BlitResult::Failed_RemoteFrameTooOld```: не выполнено, так как удаленная рамка устарела (см. свойство Плайерконтекст:: Блитремотефраметимеаут).
 
-## <a name="optional-get-statistics-about-the-last-remote-frame"></a>Дополнительно Получение статистики о последней удаленной рамке
+## Необязательно: Set Блитремотефраметимеаут<a name="BlitRemoteFrameTimeout"></a>
+>[!IMPORTANT]
+> ```PlayerContext::BlitRemoteFrameTimout``` поддерживается начиная с версии [2.0.9](holographic-remoting-version-history.md#v2.0.9). 
 
-Чтобы диагностировать проблемы с производительностью или сетью, можно получить статистику о последнем удаленном кадре ```PlayerContext::LastFrameStatistics``` с помощью свойства. Статистика обновляется во время вызова [холографикфраме::P ресентусингкуррентпредиктион](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction).
+Свойство ```PlayerContext::BlitRemoteFrameTimeout``` указывает промежуток времени, в течение которого удаленная рамка повторно используется, если не получена новая Удаленная рамка. 
+
+Типичный вариант использования заключается в том, чтобы включить время ожидания Блитремотефраме для отображения пустого экрана, если новые кадры не будут получены в течение определенного промежутка времени. Если параметр включен, можно также использовать тип возвращаемого значения метода ```BlitRemoteFrame```, чтобы переключиться на локально визуализированное резервное содержимое. 
+
+Чтобы включить время ожидания, задайте для свойства значение длительности, равное или больше 100 мс. Чтобы отключить время ожидания, присвойте свойству нулевую длительность. Если время ожидания включено и в течение заданного периода не получена Удаленная рамка, Блитремотефраме завершается ошибкой и возвращает ```Failed_RemoteFrameTooOld``` до тех пор, пока не будет получена новая Удаленная рамка.
+
+```cpp
+using namespace std::chrono_literals;
+
+// Set the BlitRemoteFrame timeout to 0.5s
+m_playerContext.BlitRemoteFrameTimeout(500ms);
+```
+
+## <a name="optional-get-statistics-about-the-last-remote-frame"></a>Необязательно: получение статистики о последней удаленной рамке
+
+Чтобы диагностировать проблемы с производительностью или сетью, можно получить статистику о последнем удаленном кадре с помощью свойства ```PlayerContext::LastFrameStatistics```. Статистика обновляется во время вызова [холографикфраме::P ресентусингкуррентпредиктион](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction).
 
 ```cpp
 // Get statistics for the last presented frame.
 winrt::Microsoft::Holographic::AppRemoting::PlayerFrameStatistics statistics = m_playerContext.LastFrameStatistics();
 ```
 
-Дополнительные сведения см ```PlayerFrameStatistics``` . в документации ```Microsoft.Holographic.AppRemoting.idl``` в [файле](#idl).
+Дополнительные сведения см. в документации по ```PlayerFrameStatistics``` в [файле](#idl)```Microsoft.Holographic.AppRemoting.idl```.
 
-## <a name="optional-custom-data-channels"></a>Дополнительно Пользовательские каналы данных
+## <a name="optional-custom-data-channels"></a>Необязательно: пользовательские каналы данных
 
 Пользовательские каналы данных можно использовать для отправки пользовательских данных через уже установленное удаленное соединение. Дополнительные сведения см. в разделе [пользовательские каналы данных](holographic-remoting-custom-data-channels.md) .
 
 ## <a name="see-also"></a>См. также
 * [Создание хост-приложения holographic с удаленным взаимодействием](holographic-remoting-create-host.md)
-* [Пользовательские каналы данных с удаленным взаимодействием holographic](holographic-remoting-custom-data-channels.md)
+* [Пользовательские каналы данных с голографическим удаленным взаимодействием](holographic-remoting-custom-data-channels.md)
 * [Установление безопасного подключения с помощью удаленного взаимодействия с holographic](holographic-remoting-secure-connection.md)
 * [Устранение неполадок и ограничения удаленного взаимодействия с holographic](holographic-remoting-troubleshooting.md)
-* [Условия лицензии на программное обеспечение удаленного взаимодействия holographic](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Условия лицензии на использование ПО для голографического удаленного взаимодействия](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Заявление о конфиденциальности Майкрософт](https://go.microsoft.com/fwlink/?LinkId=521839)

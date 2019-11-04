@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: VR, лбе, развлечения на основе расположения, VR Аркадные, Аркадные, иммерсивное, QR, QR-код, hololens2
-ms.openlocfilehash: 736ab265db2145dd784c435e525059ed3a2fcbbb
-ms.sourcegitcommit: 3b32339c5d5c79eaecd84ed27254a8f4321731f1
+ms.openlocfilehash: e14fe14fd76bceaf506dd7b85a57825c3f18d223
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70047158"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73438118"
 ---
 # <a name="qr-code-tracking"></a>Отслеживание QR-кода
 
@@ -21,9 +21,9 @@ HoloLens 2 может обнаруживать QR-коды в окружении
 
 <table>
 <tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивные гарнитуры</a></th>
+<th>Возможность</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивные гарнитуры</a></th>
 </tr><tr>
-<td> Обнаружение QR-кода</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">См. Примечание</td>
+<td> Обнаружение QR-кода</td><td style="text-align: center;">‎</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">См. Примечание</td>
 </tr>
 </table>
 
@@ -31,14 +31,12 @@ HoloLens 2 может обнаруживать QR-коды в окружении
 >Поддержка впечатляющих головных телефонов Windows Mixed Reality на настольных ПК в настоящее время не поддерживается в пакете NuGet ниже.  Следите за дальнейшими обновлениями в службе поддержки настольных систем.
 
 ## <a name="getting-the-qr-package"></a>Получение QR-пакета
-Пакет NuGet для обнаружения QR-кода можно скачать [здесь](https://github.com/dorreneb/mixed-reality/releases).
-
-Будущие версии этого пакета будут доступны в общедоступном репозитории пакетов NuGet.
+Пакет NuGet для обнаружения QR-кода можно скачать [здесь](https://nuget.org/Packages/Microsoft.MixedReality.QR).
 
 ## <a name="detecting-qr-codes"></a>Обнаружение QR-кодов
 
 ### <a name="adding-the-webcam-capability"></a>Добавление возможности веб-камеры
-Для обнаружения QR-кодов необходимо добавить `webcam` в манифест возможность. Эта возможность необходима, так как данные в обнаруженных кодах в пользовательской среде могут содержать конфиденциальные сведения.
+Для обнаружения QR-кодов необходимо добавить `webcam` возможностей в манифест. Эта возможность необходима, так как данные в обнаруженных кодах в пользовательской среде могут содержать конфиденциальные сведения.
 
 Разрешение можно запросить, вызвав `QRCodeWatcher.RequestAccessAsync()`:
 
@@ -54,118 +52,87 @@ co_await QRCodeWatcher.RequestAccessAsync();
 
 Разрешение должно быть запрошено до создания объекта Кркодеватчер.
 
-Хотя для `webcam` обнаружения QR-кодов требуется возможность, обнаружение осуществляется с помощью камер отслеживания устройства. Это обеспечивает более широкое ФОВное обнаружение и повышает время работы аккумулятора по сравнению с обнаружением с помощью камеры устройства и видео (ПС).
+Хотя для обнаружения QR-кодов требуется `webcam` возможность, обнаружение осуществляется с помощью камер отслеживания устройства. Это обеспечивает более широкое ФОВное обнаружение и повышает время работы аккумулятора по сравнению с обнаружением с помощью камеры устройства и видео (ПС).
 
 ### <a name="detecting-qr-codes-in-unity"></a>Обнаружение QR-кодов в Unity
 
-Вы можете использовать API обнаружения QR-кода в Unity, не принимая зависимость от МРТК. Для этого необходимо выполнить следующие действия.
-
-1. Создайте новую папку в папке Assets проекта Unity с подключаемыми модулями имен.
-2. Скопируйте все необходимые файлы из этой папки в локальную папку "Plugins", которая была только что создана.
+Вы можете использовать API обнаружения QR-кода в Unity, не принимая зависимость от МРТК. Для этого необходимо установить пакет NuGet с помощью [NuGet для Unity](https://github.com/GlitchEnzo/NuGetForUnity).
 
 Существует пример приложения Unity, которое отображает holographic-квадрат над QR-кодами вместе со связанными данными, такими как GUID, физический размер, метка времени и декодированные данные. Это приложение можно найти по адресу https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes.
 
 ### <a name="detecting-qr-codes-in-c"></a>Обнаружение QR-кодов вC++
 
->[!NOTE]
->Фрагменты C++ кода в этой статье в настоящее время демонстрируют использование языка C++/CX вместо C + +17, соответствующего C++/WinRT, как используется в шаблоне [ C++ проекта holographic](creating-a-holographic-directx-project.md). Понятия эквивалентны для проекта C++/WinRT, хотя код необходимо преобразовать.
+```cpp
+using namespace winrt::Windows::Foundation;
+using namespace winrt::Microsoft::MixedReality::QR;
 
-```
-using namespace Microsoft.MixedReality.QR;
+class QRListHelper
+{
+public:
+    QRListHelper(MyApplication& app) :
+        m_app(app)
+    {}
 
-    public ref class QRListHelper sealed
+    IAsyncAction SetUpQRCodes()
     {
-    public:
-        QRListHelper()
+        if (QRCodeWatcher::IsSupported())
         {
-
+            QRCodeWatcherAccessStatus status = co_await QRCodeWatcher::RequestAccessAsync();
+            InitializeQR(status);
         }
+    }
 
-        void setApp(SpatialStageManager* pStage)
+private:
+    void OnAddedQRCode(const IInspectable&, const QRCodeAddedEventArgs& args)
+    {
+        m_app.OnAddedQRCode(args);
+    }
+
+    void OnUpdatedQRCode(const IInspectable&, const QRCodeUpdatedEventArgs& args)
+    {
+        m_app.OnUpdatedQRCode(args);
+    }
+
+    void OnEnumerationComplete(const IInspectable&, const IInspectable&)
+    {
+        m_app.OnEnumerationComplete();
+    }
+
+    MyApplication& m_app;
+    QRCodeWatcher m_qrWatcher{ nullptr };
+
+    void InitializeQR(QRCodeWatcherAccessStatus status)
+    {
+        if (status == QRCodeWatcherAccessStatus::Allowed)
         {
-            m_pStage = pStage;
+            m_qrWatcher = QRCodeWatcher();
+            m_qrWatcher.Added({ this, &QRListHelper::OnAddedQRCode });
+            m_qrWatcher.Updated({ this, &QRListHelper::OnUpdatedQRCode });
+            m_qrWatcher.EnumerationCompleted({ this, &QRListHelper::OnEnumerationComplete });
+            m_qrWatcher.Start();
         }
-
-        void SetUpQRCodes()
+        else
         {
-            if (QRCodeWatcher::IsSupported())
-            {
-                auto operation = QRCodeWatcher::RequestAccessAsync();
-
-                WeakReference weakThis(this);
-
-                operation->Completed = ref new AsyncOperationCompletedHandler<QRCodeWatcherAccessStatus>(
-                    [weakThis](IAsyncOperation< QRCodeWatcherAccessStatus>^ operaion, AsyncStatus status)
-                {
-                    QRListHelper^ QRListHelper = weakThis.Resolve<QRListHelper>();
-                    if (status == AsyncStatus::Completed)
-                    {
-                        QRListHelper->InitializeQR( operaion->GetResults());
-                    }
-                }
-                );
-            }
+            // Permission denied by system or user
+            // Handle the failures
         }
-
-    private:
-        void OnAddedQRCode(Object^, QRCodeAddedEventArgs ^args)
-        {
-            m_pStage->OnAddedQRCode(args);
-        }
-        void OnUpdatedQRCode(Object^, QRCodeUpdatedEventArgs ^args)
-        {
-            m_pStage->OnUpdatedQRCode(args);
-        }
-        void OnEnumerationComplete(Object^, Object^)
-        {
-            m_pStage->OnEnumerationComplete();
-        }
-
-        SpatialStageManager* m_pStage;
-        QRCodeWatcher^ m_qrWatcher;
-
-
-
-        void InitializeQR(QRCodeWatcherAccessStatus status)
-        {
-            if (status == QRCodeWatcherAccessStatus::Allowed)
-            {
-                m_qrWatcher = ref new QRCodeWatcher();
-
-                m_qrWatcher->Added += ref new EventHandler<Object^, QRCodeAddedEventArgs^>(this, &QRListHelper::OnAddedQRCode);
-                m_qrWatcher->Updated += ref new EventHandler<Object^, QRCodeUpdatedEventArgs^>(this, &QRListHelper::OnUpdatedQRCode);
-                m_qrWatcher->EnumerationCompleted += ref new EventHandler<Object^, Object^>(this, &QRListHelper::OnEnumerationComplete);
-                try
-                {
-                    m_qrWatcher->Start();
-                }
-                catch (...)
-                {
-
-                }
-            }
-            else
-            {
-                // Permission denied by system or user
-                // Handle the failures
-            }
-        }
-    }; 
+    }
+};
 ```
 
 ## <a name="getting-the-coordinate-system-for-a-qr-code"></a>Получение системы координат для QR-кода
 
 Каждый обнаруженный QR-код предоставляет [систему пространственных координат](coordinate-systems.md) , выравниваемая по левому краю в верхнем левом углу квадрата быстрого обнаружения, как показано ниже.  При непосредственном использовании QR-пакета SDK ось Z указывает на бумагу (не показано) — при преобразовании в координаты Unity точки оси Z находятся за пределами бумаги и остаются в левой части.
 
-Выводятся Спатиалкурдинатесистеми для рассогласований QR-кода. Эта система координат может быть получена из платформы путем вызова <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">спатиалграфинтероппревиев:: креатекурдинатесистемфорноде</a> и передачи спатиалграфнодеид кода.
+Спатиалкурдинатесистем QR-кода выстраивается так, как показано. Эта система координат может быть получена из платформы путем вызова <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">спатиалграфинтероппревиев:: креатекурдинатесистемфорноде</a> и передачи спатиалграфнодеид кода.
 
 ![Система координат QR-кода](images/Qr-coordinatesystem.png) 
 
-Для объекта Кркоде в следующем C++коде/CX показано, как создать прямоугольник и разместить его с помощью системы координат QR-кода:
+Для объекта Кркоде в следующем C++ коде показано, как создать прямоугольник и поместить его с помощью системы координат QR-кода:
 
 ```cpp
 // Creates a 2D rectangle in the x-y plane, with the specified properties.
-std::vector<float3> SpatialStageManager::CreateRectangle(float width, float height)
+std::vector<float3> MyApplication::CreateRectangle(float width, float height)
 {
     std::vector<float3> vertices(4);
 
@@ -181,29 +148,32 @@ std::vector<float3> SpatialStageManager::CreateRectangle(float width, float heig
 Для создания QR-прямоугольника можно использовать физический размер:
 
 ```cpp
-std::vector<float3> qrVertices = CreateRectangle(Code->PhysicalSizeMeters, Code->PhysicalSizeMeters); 
+std::vector<float3> qrVertices = CreateRectangle(code.PhysicalSideLength(), code.PhysicalSideLength()); 
 ```
 
 Систему координат можно использовать для рисования QR-кода или прикрепления голограмм к расположению:
 
 ```cpp
-Windows::Perception::Spatial::SpatialCoordinateSystem^ qrCoordinateSystem = Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode(Code->SpatialGraphNodeId);
+using namespace winrt::Windows::Perception::Spatial;
+using namespace winrt::Windows::Perception::Spatial::Preview;
+SpatialCoordinateSystem qrCoordinateSystem = SpatialGraphInteropPreview::CreateCoordinateSystemForNode(code.SpatialGraphNodeId());
 ```
 
-В целом, *кркодеватчер:: кркодеаддедхандлер* может выглядеть примерно так:
+В целом, ваш *кркодеаддедхандлер* может выглядеть примерно так:
 
 ```cpp
-void MyClass::OnAddedQRCode(Object ^sender, QRCodeWatcher::QRCodeAddedEventArgs ^args)
+void MyApplication::OnAddedQRCode(const QRCodeAddedEventArgs& args)
 {
-    std::vector<float3> qrVertices = CreateRectangle(args->Code->PhysicalSizeMeters, args->Code->PhysicalSizeMeters);
+    QRCode code = args.Code();
+    std::vector<float3> qrVertices = CreateRectangle(code.PhysicalSideLength(), code.PhysicalSideLength());
     std::vector<unsigned short> qrCodeIndices = TriangulatePoints(qrVertices);
     XMFLOAT3 qrAreaColor = XMFLOAT3(DirectX::Colors::Aqua);
 
-    Windows::Perception::Spatial::SpatialCoordinateSystem^ qrCoordinateSystem =  Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode(args->Code->SpatialGraphNodeId);
+    SpatialCoordinateSystem qrCoordinateSystem = SpatialGraphInteropPreview::CreateCoordinateSystemForNode(code.SpatialGraphNodeId());
     std::shared_ptr<SceneObject> m_qrShape =
         std::make_shared<SceneObject>(
             m_deviceResources,
-            reinterpret_cast<std::vector<XMFLOAT3>&>(qrVertices),
+            qrVertices,
             qrCodeIndices,
             qrAreaColor,
             qrCoordinateSystem);
@@ -273,9 +243,9 @@ namespace Microsoft.MixedReality.QR
         public Guid SpatialGraphNodeId { get; }
 
         /// <summary>
-        /// Version of this QR code. Version 1-40 are regular QR codes and 41-44 are Micro QR code formats 1-4.
+        /// Version of this QR code. Version 1-40 are regular QR codes and M1 to M4 are Micro QR code formats 1-4.
         /// </summary>
-        public VersionInfo Version { get; }
+        public QRVersion Version { get; }
 
         /// <summary>
         /// Physical width and height of this QR code in meters.
@@ -436,7 +406,7 @@ namespace Microsoft.MixedReality.QR
     /// <summary>
     /// Version info for QR codes, including Micro QR codes.
     /// </summary>
-    public enum VersionInfo
+    public enum QRVersion
     {
         QR1 = 1,
         QR2 = 2,

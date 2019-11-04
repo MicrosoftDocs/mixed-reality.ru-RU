@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Пошаговое руководство, голосовая команда, фраза, распознавание, речь, DirectX, платформа, Кортана, Windows Mixed Reality
-ms.openlocfilehash: 728457a495616e5f65ec3986dfb6ac60231f9e46
-ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
+ms.openlocfilehash: be8c0e570a0e112e01b580ad571c06fe3482ff9f
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "63548664"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73437201"
 ---
 # <a name="voice-input-in-directx"></a>Ввод голоса в DirectX
 
@@ -22,7 +22,7 @@ ms.locfileid: "63548664"
 
 ## <a name="use-a-speechrecognizer-for-continuous-recognition-of-voice-commands"></a>Использование Спичрекогнизер для непрерывного распознавания голосовых команд
 
-В этом разделе описано, как использовать непрерывное распознавание речи для включения голосовых команд в приложение. В этом пошаговом руководстве используется код из примера [холографиквоицеинпут](http://go.microsoft.com/fwlink/p/?LinkId=844964) . При запуске образца говорите с именем одной из команд зарегистрированного цвета, чтобы изменить цвет вращающегося куба.
+В этом разделе описано, как использовать непрерывное распознавание речи для включения голосовых команд в приложение. В этом пошаговом руководстве используется код из примера [холографиквоицеинпут](https://go.microsoft.com/fwlink/p/?LinkId=844964) . При запуске образца говорите с именем одной из команд зарегистрированного цвета, чтобы изменить цвет вращающегося куба.
 
 Сначала создайте новый экземпляр **Windows:: Media:: спичрекогнитион:: спичрекогнизер** .
 
@@ -252,7 +252,7 @@ catch (Exception^ exception)
    });
 ```
 
-**ПРИМЕЧАНИЕ.** Существует несколько предопределенных [спичрекогнитионсценариос](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) , доступных для оптимизации распознавания речи.
+**Примечание.** Существует несколько предопределенных [спичрекогнитионсценариос](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) , доступных для оптимизации распознавания речи.
 * Если вы хотите оптимизировать для диктовки, используйте сценарий диктовки:
 
 ```

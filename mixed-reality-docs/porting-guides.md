@@ -6,17 +6,14 @@ ms.author: cwhite
 ms.date: 10/02/2018
 ms.topic: article
 keywords: порт, перенос, Unity, по промежуточного слоя, ядро, UWP
-ms.openlocfilehash: ece478f6bc8f43fc75eb8271096cdec37c41dced
-ms.sourcegitcommit: b0b1b8e1182cce93929d409706cdaa99ff24fdee
+ms.openlocfilehash: 19835cd06680e374c92e6e454b11663481bc4a07
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387754"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73438335"
 ---
 # <a name="porting-guides"></a>Руководства по портированию приложений
-
-> [!NOTE]
-> В [ближайшее время ожидается](index.md#news-and-notes)более подробное руководство по HoloLens 2.
 
 Windows 10 включает поддержку для повпечатляющих и holographic головных телефонов напрямую. Если вы создали содержимое для другого устройства, например Окулус Рифт или HTC Naopak, они имеют зависимости от библиотек, которые существуют над API платформы операционной системы. Внедрение существующего содержимого в Windows Mixed Reality предполагает изменение целевой платформы на использование этих пакетов SDK для интерфейсов Windows API. [Интерфейсы API платформы Windows для смешанной реальности](https://docs.microsoft.com/uwp/api/Windows.Perception) работают только в модели приложений универсальная платформа Windows (UWP). Если ваше приложение еще не создано для UWP, перенос в UWP будет частью процесса переноса.
 
@@ -35,71 +32,71 @@ Windows 10 включает поддержку для повпечатляющи
 
 На странице [Установка средств](install-the-tools.md#for-immersive-vr-headset-development) перечислены рекомендуемые средства разработки.
 
-### <a name="common-step-2-upgrade-to-the-latest-flight-of-windows-10"></a>Общий шаг 2. Обновление до последнего рейса Windows 10
+### <a name="common-step-2-upgrade-to-the-latest-flight-of-windows-10"></a>Общий шаг 2. обновление до последнего рейса Windows 10
 
-Платформа Windows Mixed Reality по-прежнему находится в активном состоянии разработки и является наиболее эффективной, мы рекомендуем использовать "Быстрый запуск программы предварительной оценки Windows". Чтобы получить доступ к рейсам Windows, необходимо присоединиться к [программе предварительной оценки Windows](https://insider.windows.com/).
+Платформа Windows Mixed Reality по-прежнему находится в активном состоянии разработки и является наиболее эффективной, мы рекомендуем использовать "Быстрый запуск программы предварительной оценки Windows". Чтобы получить доступ к рейсам Windows, необходимо [присоединиться к программе предварительной оценки Windows](https://insider.windows.com/).
 1. Установка [обновления Windows 10 для дизайнеров](https://www.microsoft.com/software-download/windows10)
 2. [Присоединяйтесь](https://insider.windows.com/) к программе предварительной оценки Windows.
 3. Включить [режим разработчика](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
 4. Перейдите к разделу "быстрые изменения в [программе предварительной оценки Windows](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview) " в разделе "Параметры" — > Обновление & безопасности.
 
-### <a name="common-step-3-upgrade-to-the-most-recent-build-of-visual-studio"></a>Общий шаг 3. Обновление до последней сборки Visual Studio
+### <a name="common-step-3-upgrade-to-the-most-recent-build-of-visual-studio"></a>Общий шаг 3. обновление до последней сборки Visual Studio
 * См. раздел [Установка средств на](install-the-tools.md#installation-checklist) странице Visual Studio 2019.
 
-### <a name="common-step-4-be-ready-for-the-store"></a>Общий шаг 4. Будьте готовы к работе с магазином.
+### <a name="common-step-4-be-ready-for-the-store"></a>Общий шаг 4. готовность к хранению
 * Используйте [Комплект сертификации приложений Windows](https://developer.microsoft.com/windows/develop/app-certification-kit) (WACK) на ранних этапах и часто.
 * Использовать [анализатор переносимости](https://docs.microsoft.com/dotnet/standard/portability-analyzer) ([Загрузка](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer))
 
-### <a name="common-step-5-choose-the-correct-adapter"></a>Общий шаг 5. Выберите правильный адаптер
+### <a name="common-step-5-choose-the-correct-adapter"></a>Общий шаг 5. Выбор подходящего адаптера
 * В таких системах, как записные книжки с двумя графическими процессорами, следует [выбрать правильный адаптер](rendering-in-directx.md#hybrid-graphics-pcs-and-mixed-reality-applications). Это относится к приложениям Unity, а также к собственным приложениям DirectX, где ID3D11Device создается явно или неявно (Media Foundation) для своей функциональности.
 
 ## <a name="unity-porting-guidance"></a>Руководство по переносу Unity
 
-### <a name="unity-step-1-follow-the-common-porting-steps"></a>Unity, шаг 1. Выполните общие действия по переносу
+### <a name="unity-step-1-follow-the-common-porting-steps"></a>Unity шаг 1. Выполните общие действия по переносу
 
 Выполните все общие действия. На шаге #3 выберите рабочую нагрузку **Разработка игр с помощью Unity** . Вы можете отменить выбор дополнительного компонента редактора Unity, так как вы будете устанавливать более новую версию Unity из приведенных ниже инструкций.
 
-### <a name="unity-step-2-upgrade-to-the-latest-public-build-of-unity-with-windows-mr-support"></a>Unity, шаг 2. Обновление до последней общедоступной сборки Unity с поддержкой Windows MR
-1. Скачайте последнюю рекомендуемую общедоступную [сборку Unity](install-the-tools.md) с поддержкой смешанной реальности.
+### <a name="unity-step-2-upgrade-to-the-latest-public-build-of-unity-with-windows-mr-support"></a>Unity шаг 2. обновление до последней общедоступной сборки Unity с поддержкой Windows MR
+1. Скачайте последнюю [рекомендуемую общедоступную сборку Unity](install-the-tools.md) с поддержкой смешанной реальности.
 2. Сохраните копию проекта, прежде чем приступить к работе
 3. Ознакомьтесь с [документацией](https://docs.unity3d.com/Manual/UpgradeGuides.html) , доступной в Unity при переносе.
 4. Следуйте [инструкциям](https://docs.unity3d.com/Manual/APIUpdater.html) на сайте Unity для использования автоматических средств обновления API.
 5. Проверьте, есть ли дополнительные изменения, необходимые для запуска проекта, и выполните все оставшиеся ошибки и предупреждения. Примечание. Если по промежуточного слоя от вас зависит, может потребоваться обновить это по по промежуточного слоя, чтобы начать работу (Дополнительные сведения см. на шаге 3 ниже).
 
-### <a name="unity-step-3-upgrade-your-middleware-to-the-latest-versions"></a>Unity, шаг 3. Обновление по промежуточного слоя до последних версий
+### <a name="unity-step-3-upgrade-your-middleware-to-the-latest-versions"></a>Unity шаг 3. обновление по промежуточного слоя до последних версий
 
 При любом обновлении Unity существует хороший шанс, что необходимо обновить один или несколько пакетов по промежуточного слоя, от которых зависит ваша игра или приложение. Кроме того, в последней версии по промежуточного слоя будет увеличена вероятность успеха в оставшейся части процесса переноса. Многие пакеты по промежуточного слоя недавно добавили поддержку универсальная платформа Windows (UWP), а обновление до последних версий позволит вам использовать эту работу.
 
-### <a name="unity-step-4-target-your-application-to-run-on-universal-windows-platform-uwp"></a>Unity, шаг 4. Настройка приложения для запуска на универсальная платформа Windows (UWP)
+### <a name="unity-step-4-target-your-application-to-run-on-universal-windows-platform-uwp"></a>Unity шаг 4. Настройка приложения для запуска на универсальная платформа Windows (UWP)
 
 После установки средств необходимо запустить приложение в качестве универсального приложения Windows.
-* Выполните подробное пошаговое [руководство](https://unity3d.com/partners/microsoft/porting-guides) , предоставляемое Unity. Обратите внимание, что вы должны остаться в последнем выпуске LTS (любой выпуск 20xx. 4) для Windows MR.
+* Выполните [подробное](https://unity3d.com/partners/microsoft/porting-guides) пошаговое руководство, предоставляемое Unity. Обратите внимание, что вы должны остаться в последнем выпуске LTS (любой выпуск 20xx. 4) для Windows MR.
 * Для получения дополнительных ресурсов по разработке UWP ознакомьтесь с руководством по [разработке игр для Windows 10](https://docs.microsoft.com/windows/uwp/gaming/e2e).
 * Обратите внимание, что Unity продолжит совершенствовать поддержку IL2CPP; IL2CPP делает некоторые порты UWP значительно проще. Если в настоящее время используется серверная часть сценариев .NET, следует рассмотреть возможность преобразования, чтобы использовать серверную часть IL2CPP.
 
-Примечание. Если у вашего приложения есть зависимости от служб для конкретных устройств, например из Steam, необходимо отключить их на этом шаге. Позже можно будет подключить к эквивалентным службам, предоставляемым Windows.
+Примечание. Если в приложении есть зависимости от служб для конкретных устройств, например, в соответствии с Steam, необходимо отключить их на этом шаге. Позже можно будет подключить к эквивалентным службам, предоставляемым Windows.
 
-### <a name="unity-step-5-deprecated"></a>Unity, шаг 5. Не рекомендуется
+### <a name="unity-step-5-deprecated"></a>Unity шаг 5. (не рекомендуется)
 
 Шаг 5 больше не требуется. Мы оставляем его здесь, чтобы индексирование шагов не оставалось прежним.
 
-### <a name="unity-step-6-get-your-windows-mixed-reality-hardware-set-up"></a>Unity, шаг 6. Настройка оборудования Windows Mixed Reality
-1. Ознакомьтесь с [этапами настройки иммерсивного головного телефона](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-start
+### <a name="unity-step-6-get-your-windows-mixed-reality-hardware-set-up"></a>Unity шаг 6. Настройка оборудования Windows Mixed Reality
+1. Ознакомьтесь с этапами [настройки иммерсивного головного телефона](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-start
 )
 2. Узнайте об [использовании симулятора Windows Mixed Reality](using-the-windows-mixed-reality-simulator.md) и [навигации на домашней странице Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md)
 
-### <a name="unity-step-7-target-your-application-to-run-on-windows-mixed-reality"></a>Unity, шаг 7. Настройка приложения для запуска в Windows Mixed Reality
+### <a name="unity-step-7-target-your-application-to-run-on-windows-mixed-reality"></a>Unity шаг 7. Настройка приложения для запуска в Windows Mixed Reality
 1. Во-первых, необходимо удалить или условно откомпилировать любую другую поддержку библиотеки, относящуюся к конкретному пакету SDK для VR. Эти активы часто изменяют параметры и свойства проекта способами, несовместимыми с другими пакетами SDK для VR, такими как Windows Mixed Reality.
     * Например, если проект ссылается на пакет SDK для Стеамвр, необходимо будет обновить проект, чтобы исключить эти вызовы API Prefabs и скриптов при экспорте для целевого объекта сборки магазина Windows.
     * В ближайшее время ожидается процедура, исключающая другие пакеты SDK для VR.
-2. В проекте Unity нацеливание [на пакет SDK для Windows 10](holograms-100.md#target-windows-10-sdk)
+2. В проекте Unity [нацеливание на пакет SDK для Windows 10](holograms-100.md#target-windows-10-sdk)
 3. Для каждой сцены [Настройте камеру](holograms-100.md#chapter-2---setup-the-camera) .
 
-### <a name="unity-step-8-use-the-stage-to-place-content-on-the-floor"></a>Unity, шаг 8. Использование этапа для размещения содержимого в этаже
+### <a name="unity-step-8-use-the-stage-to-place-content-on-the-floor"></a>Unity шаг 8. использование этапа для размещения содержимого в этаже
 
 Вы можете создавать возможности смешанной реальности во множестве различных [возможностей масштабирования](coordinate-systems.md).
 
-Если вы переносите **интерфейсное масштабирование**, необходимо убедиться, что Unity настроен на стационарный тип  пространства отслеживания:
+Если вы переносите **интерфейсное масштабирование**, необходимо убедиться, что Unity настроен на **стационарный** тип пространства отслеживания:
 
 ```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
@@ -139,9 +136,9 @@ else
 
 ![Пример результатов](images/largestrectangle-400px.jpg)
 
-Алгоритм основан на блоге, Даниэль Смилков: [Самый крупный прямоугольник в многоугольнике](https://d3plus.org/blog/behind-the-scenes/2014/07/08/largest-rect/)
+Алгоритм основан на блоге, Даниэль Смилков: [самый крупный прямоугольник в многоугольнике](https://d3plus.org/blog/behind-the-scenes/2014/07/08/largest-rect/)
 
-### <a name="unity-step-9-work-through-your-input-model"></a>Unity, шаг 9. Работа с моделью ввода
+### <a name="unity-step-9-work-through-your-input-model"></a>Unity шаг 9. Работа с входной моделью
 
 Каждая игра или приложение, предназначенное для существующего ХМД, будет иметь набор входных данных, которые он обрабатывает, типы входных данных, необходимые для работы, и конкретные интерфейсы API, которые он вызывает для получения этих входных данных. Мы реализовали попытку сделать это как можно проще и простым, чтобы воспользоваться преимуществами входных данных, доступных в Windows Mixed Reality.
 1. Ознакомьтесь с **[руководством по использованию входных данных для Unity](input-porting-guide-for-unity.md)** , чтобы узнать, как Windows Mixed Reality предоставляет входные данные, и как они сопоставлены с тем, что приложение может сделать сегодня.
@@ -149,7 +146,7 @@ else
     * Доступ к данным контроллера движения в Unity можно получить с помощью общих API-интерфейсов input.-Button/input. UnityEngine или метода MR. input. (ранее в пространстве имен UnityEngine. XR. WSA. input в Unity 5,6)
     * См. [пример в разделе набор средств](https://github.com/Microsoft/HoloToolkit-Unity/pull/572) , объединяющий контроллеры планшета и движения.
 
-### <a name="unity-step-10-performance-testing-and-tuning"></a>Unity, шаг 10. Тестирование и настройка производительности
+### <a name="unity-step-10-performance-testing-and-tuning"></a>Unity шаг 10. Тестирование и настройка производительности
 
 Windows Mixed Reality будет доступна на широком классе устройств, от высокопроизводительных компьютерных ПК до широкого спектра основных ПК на рынке. В зависимости от того, на каком рынке ориентирован целевой объект, существует существенная разница в доступных вычислениях и графиках графики для вашего приложения. Во время этого упражнения по переносу вы, скорее всего, используете ПК уровня "Премиум" и имели значительные бюджетные и графические графики, доступные для вашего приложения. Если вы хотите сделать приложение доступным более широкой аудитории, следует протестировать и профилировать приложение на [целевом оборудовании, которое вы хотите](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)использовать.
 

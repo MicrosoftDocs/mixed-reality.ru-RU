@@ -6,21 +6,21 @@ ms.author: jlyons
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, удаленное взаимодействие, holographic удаленное взаимодействие, удаленный плеер holographic
-ms.openlocfilehash: c118c4af61c6eb2706ef851a6654c18ff7313453
-ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
+ms.openlocfilehash: 6164d7ae1bc2d9ac13135f17132aca089e63ecdf
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "63548728"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73438224"
 ---
 # <a name="unity-play-mode"></a>Режим воспроизведения Unity
 
-Быстрый способ работы с проектом Unity — использование режима воспроизведения. Это запускает приложение локально в редакторе Unity на компьютере. Unity использует holographic удаленное взаимодействие, чтобы обеспечить быстрый способ предварительного просмотра содержимого на реальном устройстве HoloLens.
+Быстрый способ работы с проектом Unity — использование режима воспроизведения. Это запускает приложение локально в редакторе Unity на компьютере. Unity использует holographic удаленное взаимодействие, чтобы обеспечить быстрый способ предварительного просмотра содержимого на реальном устройстве HoloLens. Режим воспроизведения также можно использовать с головным телефоном Windows Mixed Reality, подключенным к компьютеру разработки.
 
 ## <a name="unity-play-mode-with-holographic-remoting"></a>Режим воспроизведения Unity с holographic удаленное взаимодействие
 
 С помощью удаленного взаимодействия с holographic вы можете столкнуться с приложением на HoloLens, пока оно выполняется в редакторе Unity на компьютере. Входные данные с помощью взгляда, жеста, голоса и пространственного сопоставления отправляются из HoloLens на компьютер. Затем отображаемые кадры отправляются обратно в HoloLens. Это отличный способ быстрой отладки приложения без создания и развертывания полного проекта.
-1. На HoloLens перейдите к **Microsoft Store** и установите приложение с удаленным **[взаимодействием holographic](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** .
+1. На HoloLens перейдите к **Microsoft Store** и установите приложение с **[удаленным взаимодействием holographic](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** .
 2. На HoloLens запустите приложение **удаленного проигрывателя holographic** .
 3. В Unity перейдите в меню **окно** и выберите " **holographic Emulator**".
 4. Задайте для **режима эмуляции** значение **удаленно на устройство**.
