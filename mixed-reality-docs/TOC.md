@@ -39,6 +39,7 @@
 ### [Визуализация при сканировании комнаты](room-scan-visualization.md)
 ### [Интерпретация сцены](scene-understanding.md)
 ### [Пространственные привязки](spatial-anchors.md)
+### [Звук](spatial-sound.md)
 ### [Пространственное сопоставление](spatial-mapping.md)
 ### [Системный жест](system-gesture.md)
 ### [Типы приложений смешанной реальности](types-of-mixed-reality-apps.md)
@@ -65,7 +66,6 @@
 ### Стиль
 #### [Цвет, свет и материалы](color,-light-and-materials.md)
 #### [Масштаб](scale.md)
-#### [Пространственный звук](spatial-sound.md)
 #### [Проектирование пространственного звука](spatial-sound-design.md)
 #### [Оформление текста](typography.md)
 ### Элементы управления и режимы поведения
@@ -193,7 +193,6 @@
 #### [Направление головы и взгляда](gaze-in-directx.md)
 #### [Руки и контроллеры движения](hands-and-motion-controllers-in-directx.md)
 #### [Голосовой ввод](voice-input-in-directx.md)
-#### [Пространственный звук](spatial-sound-in-directx.md)
 #### [Пространственное сопоставление](spatial-mapping-in-directx.md)
 #### [Интерпретация сцены](scene-understanding-sdk.md)
 #### [Общие пространственные привязки](shared-spatial-anchors-in-directx.md)
