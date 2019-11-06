@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: DirectX, holographic-визуализация, собственное, собственное приложение, WinRT, приложение WinRT, API платформы, настраиваемое подсистема, по промежуточного слоя
-ms.openlocfilehash: 698ccb57a39189b9c0634c47ad6cbd6325c06caa
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: e77ee5053e69aef502481d18618e604c6bfb5939
+ms.sourcegitcommit: 2e54d0aff91dc31aa0020c865dada3ae57ae0ffc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73435586"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73641094"
 ---
 # <a name="directx-development-overview"></a>Общие сведения о разработке DirectX
 
@@ -49,7 +49,7 @@ Windows Mixed Reality поддерживает [два типа приложен
 * [Направление головы и взгляда в DirectX](gaze-in-directx.md)
 * [Контроллеры движения и жестов в DirectX](hands-and-motion-controllers-in-directx.md)
 * [Голосовой ввод в DirectX](voice-input-in-directx.md)
-* [Пространственный звук в DirectX](spatial-sound-in-directx.md)
+* [Пространственный звук](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound)
 * [Пространственное сопоставление в DirectX](spatial-mapping-in-directx.md)
 
 
