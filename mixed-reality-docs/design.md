@@ -1,372 +1,167 @@
 ---
 layout: LandingPage
-title: Оформление
-description: Это руководство составили проектировщики, разработчики, руководители программ и исследователи корпорации Майкрософт, работающие с голографическими (например, HoloLens) и иммерсивными устройствами (например, гарнитуры смешанной реальности Acer и HP для Windows). Результат их работы представляет собой серию статей по проектированию решений для виртуального шлема Windows.
-author: rwinj
-ms.author: randyw
-ms.date: 03/21/2018
+title: Начните проектировать и создавать прототипы
+description: Если вы готовы создать что-нибудь, изучите основные понятия, необходимые для начала разработки и создания прототипов.
+author: grbury
+ms.author: grbury
+ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Windows Mixed Reality, design, Interaction, Style, Color, app patterns, controls, sample apps, Mixed Reality Toolkit, MRTK
-ms.openlocfilehash: 6601f4c2dd75e6e555dd79bc92abcccc15eb1ab4
-ms.sourcegitcommit: 30246ab9b9be44a3c707061753e53d4bf401eb6b
+keywords: Смешанная реальность, обнаружение, распространение, указательный, целевая страница, проектирование, разработка, руководства, примеры приложений, основы, примеры, ресурсы, практические руководства по HoloLens, проекты с открытым кодом, основные понятия, взаимодействие
+ms.openlocfilehash: 2bd2b3fef713bfe74f91714be100c7a02e46f8ac
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67326191"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73435732"
 ---
-# <a name="design-for-mixed-reality"></a>Проектирование решений для смешанной реальности
-
-![Проектирование решений для смешанной реальности](images/Bicycle-Leschi10.gif)
+# <a name="start-designing-and-prototyping"></a>Начните проектировать и создавать прототипы
 
 
-Это руководство составили проектировщики, разработчики, руководители программ и исследователи корпорации Майкрософт, работающие с голографическими (например, HoloLens) и иммерсивными (например, гарнитуры смешанной реальности Acer и HP для Windows) устройствами. Результат их работы представляет собой серию статей по проектированию решений для виртуального шлема Windows.
+![Основные понятия](images/text_in_unity_viewingangle.jpg)
 
+## <a name="expand-your-design-processcase-study-expanding-the-design-process-for-mixed-realitymd"></a>[Расширение процесса разработки](case-study-expanding-the-design-process-for-mixed-reality.md)
 
-## <a name="article-categories"></a>Категории статей
-
-<ul class="panelContent cardsF">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/GetStartedIcon.png" alt="Getting started icon">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Приступая к проектированию</h3>
-                        <p>
-                            <a href="mixed-reality.md">Что такое смешанная реальность?</a>
-                        </p>
-                        <p>
-                            <a href="about-this-design-guidance.md">Сведения об этом руководстве</a>
-                        </p>
-                        <p>
-                            <a href="case-study-my-first-year-on-the-hololens-design-team.md">Мой первый год в команде проектирования</a>
-                        </p>
-                        <p>
-                            <a href="case-study-expanding-the-design-process-for-mixed-reality.md">Расширение процесса проектирования решений смешанной реальности</a>
-                        </p>
-                        <p>
-                            <a href="case-study-the-pursuit-of-more-personal-computing.md">Цель — персонализация вычислений</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/Interaction_Icon_120x130.png" alt="MR design system and tools icon">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Система и средства для проектирования смешанной реальности</h3>
-                        <p>
-                            <a href="comfort.md">Комфорт</a>
-                        </p>
-            <p>
-                            <a href="interaction-fundamentals.md">Инстинктивное взаимодействие</a>
-                        </p>
-                        <p>
-                            <a href="hands-and-tools.md">Контроллеры движения и жестов</a>
-                        </p>
-                        <p>
-                            <a href="hands-free.md">Режимы без использования рук</a>
-                        </p>
-                         <p>
-                            <a href="gaze-and-commit.md">Направление головы и фиксация</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/Style_Icon_120x130.png" alt="Style icon">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Стиль</h3>
-                        <p>
-                            <a href="color,-light-and-materials.md">Цвет, свет и материалы</a>
-                        </p>
-                         <p>
-                            <a href="spatial-sound-design.md">Проектирование пространственного звука</a>
-                        </p>
-                        <p>
-                            <a href="typography.md">Оформление текста</a>
-                        </p>
-                        <p>
-                            <a href="scale.md">Масштабирование</a>
-                        </p>                      
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/App_patterns_Icon_120x130.png" alt="App patterns icon">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Шаблоны приложений</h3>
-                        <p>
-                            <a href="types-of-mixed-reality-apps.md">Типы приложений смешанной реальности</a>
-                        </p>
-                        <p>
-                            <a href="room-scan-visualization.md">Визуализация при сканировании комнаты</a>
-                        </p>
-                        <p>
-                            <a href="cursors.md">Курсоры</a>
-                        </p>
-                        <p>
-                            <a href="billboarding-and-tag-along.md">Биллбординг и закрепление элемента в пространстве</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/Controls_Icon_120x130.png" alt="Controls icon">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Элементы управления</h3>
-                        <p>
-                            <a href="text-in-unity.md">Текст в Unity</a>
-                        </p>
-                        <p>
-                            <a href="interactable-object.md">Интерактивный объект</a>
-                        </p>
-                        <p>
-                            <a href="object-collection.md">Коллекция объектов</a>
-                        </p>
-                        <p>
-                            <a href="progress.md">Индикация хода выполнения</a>
-                        </p>
-                        <p>
-                            <a href="app-bar-and-bounding-box.md">Ограничивающая рамка и панель приложения</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>    
-</ul>
-
-
-## <a name="sample-apps"></a>Примеры приложений
-
-Создавайте великолепные решения на основе примеров, которые разработала и создала наша команда.
+Когда корпорация Майкрософт представила HoloLens аудитории нетерпеливых разработчиков в 2016 году, наша группа уже сотрудничала со студиями в корпорации Майкрософт и сторонними студиями для разработки средств запуска устройств. Эти команды учились, открывая новые возможности и сталкиваясь с проблемами в новой области проектирования смешанной реальности. [Подробнее](case-study-expanding-the-design-process-for-mixed-reality.md)
 
 <br>
-<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
-    <li>
-        <a href="periodic-table-of-the-elements.md" title="Периодическая таблица элементов" data-linktype="absolute-path">
-            <div class="cardSize">
-                <div class="cardPadding">
-                    <div class="card">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="images/periodictableofelementsapp-tile.jpg" alt="Periodic Table of the Elements< icon">
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Периодическая таблица элементов</h3>
-                            <p>Узнайте, как расположить массив объектов в трехмерном пространстве с различными типами поверхности, используя коллекцию объектов.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>        
-    </li>
-    <li>
-        <a href="lunar-module.md" title="Лунный модуль" data-linktype="absolute-path">
-            <div class="cardSize">
-                <div class="cardPadding">
-                    <div class="card">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="images/lunar-module-tile.png" alt="Lunar Module icon">
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Лунный модуль</h3>
-                            <p>Узнайте, как расширить набор базовых жестов HoloLens, используя отслеживание движений обеих рук и ввод с помощью контроллера Xbox.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="galaxy-explorer.md" title="Исследование галактики" data-linktype="absolute-path">
-            <div class="cardSize">
-                <div class="cardPadding">
-                    <div class="card">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="images/galaxyexplorer-tile.jpg" alt="Galaxy Explorer icon">
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Galaxy Explorer</h3>
-                            <p>Проект "Исследование галактики" готов. Вы поделились с сообществом своими идеями, выбрали приложение, наблюдали за процессом его создания, а теперь можете получить для него исходный код.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+
+---
+
+## <a name="what-are-the-core-concepts-of-an-experience"></a>Каковы основные принципы работы?
+
+### <a name="keep-the-user-comfortable---comfortcomfortmd"></a>[Обеспечение удобства пользователя (комфорт)](comfort.md)
+Чтобы обеспечить максимальное удобство использования виртуальных шлемов, важно, чтобы дизайнеры и разработчики создавали и представляли содержимое так, чтобы правильно имитировать подсказки из материального мира.
+
+<br>
+
+### <a name="consider-how-the-user-sees-the-world---holographic-frameholographic-framemd"></a>[Как пользователь видит мир (голографический экран)](holographic-frame.md)
+Пользователи видят мир смешанной реальности через прямоугольный экран гарнитуры. В HoloLens эта прямоугольная область называется голографическим экраном и позволяет пользователям видеть цифровое содержимое, наложенное на окружающий их мир.
+
+<br>
+
+### <a name="types-of-mixed-reality-appstypes-of-mixed-reality-appsmd"></a>[Типы приложений смешанной реальности](types-of-mixed-reality-apps.md)
+Одним из преимуществ разработки приложений для смешанной реакции является то, что эта платформа может поддерживать различные возможности взаимодействия. Смешанная реальность предоставляет надежный набор инструментов для воплощения любых возможностей: от полностью иммерсивных виртуальных сред до простых информационных сообщений, накладываемых на текущее окружение пользователя.
+
+<br>
+
+### <a name="keeping-holograms-in-place---coordinate-systemscoordinate-systemsmd"></a>[Правильное размещение голограмм (системы координат)](coordinate-systems.md)
+По сути, приложения смешанной реальности размещают голограммы в окружающем мире, чтобы они выглядели и звучали как реальные объекты. Это подразумевает точное позиционирование этих голограмм в местах, которые являются значимыми для пользователя, будь то физическое помещение или виртуальная область, которую вы создали.
+
+<br>
+
+### <a name="making-holographic-objects-feel-real---spatial-mappingspatial-mappingmd"></a>[Создание реальных голографических объектов (пространственное сопоставление)](spatial-mapping.md)
+Пространственное сопоставление позволяет размещать объекты на реальных поверхностях. Это помогает привязать объекты в мире пользователя и использовать преимущества подсказок из реального мира.
+
+<br>
+
+
+---
+
+<br>
+
+![Факторы, влияющие на проектирование взаимодействия](images/MRTK_BoundingBox_Main.png)
+
+## <a name="interaction-design-factors-to-consider"></a>Факторы, которые следует учитывать при проектировании взаимодействия.
+
+
+### <a name="choose-an-interaction-model-for-your-customerinteraction-fundamentalsmd"></a>[Выбор модели взаимодействия для клиента](interaction-fundamentals.md)
+Платформа Mixed Reality построена на принципах простого инстинктивного взаимодействия. Мы сделали три шага, чтобы разработчики и конструкторы приложений могли предоставлять своим клиентам простые и понятные механизмы взаимодействия.
+
+<br>
+
+### <a name="hands-and-motion-controllershands-and-toolsmd"></a>[Руки и контроллеры движения](hands-and-tools.md)
+Пользователи могут касаться голограмм и манипулировать ими с помощью одной или обеих рук, как и с реальными объектами окружающего мира. С помощью контроллеров движений можно расширить физические возможности пользователя, обеспечив точное взаимодействие на больших расстояниях.
+
+<br>
+
+### <a name="directly-commanding-objects-with-voice-inputvoice-inputmd"></a>[Непосредственное управление объектами с помощью голосового ввода](voice-input.md)
+Голос — один из основных типов ввода в HoloLens. Он позволяет напрямую управлять голограммой без использования жестов. Голосовой ввод позволяет естественным способом сообщить о своих намерениях.
+
+<br>
+
+### <a name="leveraging-the-users-eye-gazeeye-trackingmd"></a>[Использование глаз пользователя (взгляд)](eye-tracking.md)
+HoloLens 2 позволяет организовать голографическое взаимодействие на новом уровне понимания контекста и намерений человека, предоставляя разработчикам возможности для использования информации о том, куда смотрят пользователи.
+
+<br>
+
+### <a name="color-light-and-materialscolor-light-and-materialsmd"></a>[Цвет, свет и материалы](color,-light-and-materials.md)
+Разработка содержимого для смешанной реальности требует тщательного рассмотрения цветов, освещения и материалов каждого из визуальных ресурсов, используемых в работе.
+
+<br>
+
+### <a name="suggesting-the-scale-of-an-objectscalemd"></a>[Предположение масштаба объекта](scale.md)
+Ключом к отображению содержимого, которое выглядит реалистично в виде голограммы, является как можно более точная имитация визуальных характеристик реального мира. Это означает обработку как можно большего числа значимых визуальных подсказок (из реального мира), чтобы понять, где находятся объекты, насколько они велики и из его они сделаны.
+
+<br>
+
+### <a name="clear-and-readable-typographytypographymd"></a>[Четкое и удобочитаемое оформление](typography.md)
+Как и в случае с оформлением на двухмерных экранах, ваша цель — предоставить понятную и удобочитаемую информацию. Благодаря трехмерному пространству смешанной реальности существует возможность значительно улучшить текст и общее взаимодействие с пользователем.
+
+<br>
+
+
+---
+
+## <a name="choose-a-prototyping-option"></a>Выбор варианта создания прототипа  
+
+:::row:::   
+    :::column:::    
+       [![Дополнительные сведения о Unity](images/unity_logo.png)](https://learn.unity.com/)<br>
+        **[Дополнительные сведения о Unity](https://learn.unity.com/)**<br>
+        Узнайте, как создавать интерактивные интерфейсы с помощью Unity. Научитесь этому, выполнив процесс с начала и до конца.
+    :::column-end:::    
+    :::column:::    
+        [![Mixed Reality Toolkit (MRTK)](images/MRTK-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+        **[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>  
+        Благодаря пространственному взаимодействию и стандартным блокам пользовательского интерфейса, вы можете быстро начать проектирование и разработку смешанной реальности с помощью Unity.   
+    :::column-end:::
+    :::column:::    
+        [![Лаборатории проектирования смешанной реальности](images/MRDL_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        **[Лаборатории проектирования смешанной реальности](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>  
+        Получите примеры приложений, демонстрирующие использование стандартных блоков МРТК для создания привлекательных интерфейсов смешанной реальности.
+    :::column-end:::        
+    :::column:::    
+        [![Microsoft Maquette](images/Maquette_logo.png)](https://www.maquette.ms/)<br>
+        **[Microsoft Maquette](https://www.maquette.ms/)**<br>  
+        Разработка для виртуальной реальности. Microsoft Maquette делает создание пространственных прототипов более простым, быстрым и иммерсивным. 
+    :::column-end:::    
+:::row-end:::
+
+<br>
+
+---
 
 
 
-## <a name="design-tools"></a>Средства проектирования
+## <a name="what-would-you-like-to-do-next"></a>Что бы вы хотели сделать дальше?
+
+:::row:::
+    :::column:::
+       [![Изучение основ](images/icon-lightbulb.jpg)](index.md#understand-the-basics)<br>
+        **[Изучение основ](index.md#understand-the-basics)**<br>
+        Получите более полное представление о том, что определяет смешанную реальность и как она используется.
+    :::column-end:::
+    :::column:::
+        [![Посетите мероприятие](images/icon-calendar.jpg)](sf-academy-events.md)<br>
+         **[Посетите мероприятие](sf-academy-events.md)**<br>
+        Ознакомьтесь с оборудованием и получите практическое руководство по созданию первого приложения HoloLens 2.
+    :::column-end:::
+    :::column:::
+        [![Установка инструментов](images/icon-design.jpg)](install-the-tools.md)<br>
+         **[Установка инструментов](install-the-tools.md)**<br>
+        Используйте контрольный список установки, чтобы получить инструменты, необходимые для создания приложений для HoloLens и смешанной реальности.
+    :::column-end:::
+    :::column:::
+        [![Приступите к разработке](images/icon-developer.jpg)](development.md)<br>
+        **[Приступите к разработке](development.md)**<br>
+        Выберите путь разработки в зависимости от своего уровня навыков, стиля работы или платформы.
+    :::column-end:::
+:::row-end:::
 
 
-<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
-    <li>
-    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/README.html#ui-and-interaction-building-blocks" title="Набор средств для смешанной реальности — Unity" data-linktype="absolute-path">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/MRTKandUnity.png" alt="Mixed Reality Toolkit - Unity">
-                        </div>
-                    </div>                    
-            <div class="cardText">
-                        <h3>Набор средств для смешанной реальности — Unity</h3>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </a>  
-    </li>
-    <li>
-    <a href="https://github.com/Microsoft/MixedRealityToolkit" title="Набор средств для смешанной реальности" data-linktype="absolute-path">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/MRTK.png" alt="Mixed Reality Toolkit">
-                        </div>
-                    </div>                    
-            <div class="cardText">
-                        <h3>Набор средств для смешанной реальности</h3>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </a>  
-    </li>       
-            <li>
-    <a href="https://www.simplygon.com" title="Simplygon" data-linktype="absolute-path">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/Simplygon.png" alt="Simplygon">
-                        </div>
-                    </div>                    
-            <div class="cardText">
-                        <h3>Simplygon</h3>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </a>  
-    </li>
-</ul>
+<br>
+
+<br>
 
 
-## <a name="general-design-resources"></a>Общие ресурсы для разработки
-
-<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
-    <li>
-    <a href="http://fluent.microsoft.com" title="Система Fluent Design" data-linktype="absolute-path">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/Fluent.png" alt="Fluent Design System">
-                        </div>
-                    </div>                    
-            <div class="cardText">
-                        <h3>Система Fluent Design</h3>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </a>  
-    </li>
-    <li>
-    <a href="https://www.microsoft.com/design/inclusive" title="Разработка инклюзивных приложений в Майкрософт" data-linktype="absolute-path">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/Inclusive.png" alt="Inclusive design at Microsoft">
-                        </div>
-                    </div>                    
-            <div class="cardText">
-                        <h3>Разработка инклюзивных приложений в Майкрософт</h3>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </a>  
-    </li>   
-        <li>
-    <a href="https://developer.microsoft.com/windows/apps/design" title="Проектирование приложений для универсальной платформы Windows (UWP)" data-linktype="absolute-path">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/UWP.png" alt="Universal Windows Platform (UWP) app design">
-                        </div>
-                    </div>                    
-            <div class="cardText">
-                        <h3>Проектирование приложений для универсальной платформы Windows (UWP)</h3>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </a>  
-    </li>   
-</ul>

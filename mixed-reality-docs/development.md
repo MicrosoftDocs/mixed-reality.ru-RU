@@ -1,240 +1,158 @@
 ---
 layout: LandingPage
-title: Разработка
+title: Изучите инструменты и архитектуру.
 description: Документация для разработчиков приложений смешанной реальности для HoloLens и иммерсивных гарнитур.
 author: grbury
 ms.author: grbury
-ms.date: 02/12/2019
-ms.topic: article
+ms.date: 08/27/2019
+ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, develop, development, HoloLens, unity, directx
-ms.openlocfilehash: bf80b676d03fce9011f5952af476dcaa5e2b4eb2
-ms.sourcegitcommit: 76a7aa6e64e114b63ace058dd6d6d662b3c9f09e
+ms.openlocfilehash: b37a9261f56b19edb3dde11cbeedc40a6e503e35
+ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68507919"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73435673"
 ---
-# <a name="development-launchpad"></a>Панель запуска для разработки
-
-## <a name="article-categories"></a>Категории статей
+# <a name="learn-the-tools-and-architecture"></a>Изучите инструменты и архитектуру.
 
 
-<ul class="panelContent cardsF">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/GetStartedIcon.png" alt="Get started icon">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Начало работы</h3>
-                        <p>
-                            <a href="mixed-reality.md">Что такое смешанная реальность?</a>
-                        </p>
-                        <p>
-                            <a href="install-the-tools.md">Установка инструментов</a>
-                        </p>
-                        <p>
-                            <a href="mrlearning-base-ch1.md">Обучение смешанной реальности: HoloLens 2 и MRTK версии 2</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-        <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/HoloLens_Icon_120x130.png" alt="Devices icon">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Устройства</h3>
-                          <p>
-                            <a href="https://www.microsoft.com/hololens/hardware" target="_blank">HoloLens 2</a>
-                        </p>
-                        <p>
-                            <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a>
-                        </p>
-                        <p>
-                            <a href="immersive-headset-hardware-details.md">Иммерсивные гарнитуры</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/AzureSpatialAnchors_Icon_120x130.png" alt="Azure Spatial Anchors icon">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Службы</h3>
-                        <p>
-                            <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Пространственные привязки Azure</a>
-                        </p>
-                        <p>
-                            <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/" target="_blank">Голосовые службы</a>
-                        </p>
-                        <p>
-                            <a href="https://docs.microsoft.com/azure/cognitive-services/computer-vision/" target="_blank">Службы визуального распознавания</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/Unity_Icon_120x130.png" alt="Developer techologies icon">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Технологии для разработчиков</h3>
-                        <p>
-                            <a href="unity-development-overview.md">Unity</a>
-                        </p>
-                        <p>
-                            <a href="directx-development-overview.md">Пользовательский модуль (DirectX)</a>
-                        </p>
-                        <p>
-                            <a href="https://www.unrealengine.com/en-US/blog/unreal-engine-4-support-for-hololens-2-released-in-early-access">Unreal</a>
-                        </p>                
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/PortingGuides-icon_120x130.png" alt="Porting guides icon">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Руководства по портированию приложений</h3>
-                        <p>
-                            <a href="mrtk-porting-guide.md">Обновление приложений, используемых с HoloLens (1-го поколения),<br>для HoloLens 2</a>
-                        </p>
-                        <p>
-                            <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html">Руководство по портированию<br>API набора средств для смешанной реальности (MRTK)</a>
-                        </p>
-                        <p>
-                            <a href="porting-guides.md">Приложения для иммерсивных гарнитур</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/App_patterns_Icon_120x130.png" alt="Development fundamentals icon">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Основы разработки</h3>
-                        <p>
-                            <a href="Interaction-fundamentals.md">Инстинктивное взаимодействие</a>
-                        </p>
-                        <p>
-                            <a href="rendering.md">Голографическая отрисовка</a>
-                        </p>
-                         <p>
-                            <a href="testing-your-app-on-hololens.md">Тестирование приложения</a>
-                        </p>                    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>    
-</ul>
+![Команды, работающие с материалами в Mixed Reality Academy](images/Development_Hero.png)
 
-## <a name="overview"></a>Обзор
+## <a name="expand-your-design-processcase-study-expanding-the-design-process-for-mixed-realitymd"></a>[Расширение процесса разработки](case-study-expanding-the-design-process-for-mixed-reality.md)
 
-Приложения смешанной реальности создаются на базе [универсальной платформы Windows](https://dev.windows.com/getstarted) (UWP). Все приложения смешанной реальности являются приложениями UWP. Все приложения UWP можно запускать на устройствах Windows Mixed Reality. Имея ПК с Windows 10 и навыки работы со средствами ПО промежуточного слоя, такими как Unity, вы можете приступить к разработке приложений смешанной реальности уже сегодня.
+Когда корпорация Майкрософт представила HoloLens аудитории нетерпеливых разработчиков в 2016 году, наша группа уже сотрудничала со студиями в корпорации Майкрософт и сторонними студиями для разработки средств запуска устройств. Эти команды учились, открывая новые возможности и сталкиваясь с проблемами в новой области проектирования смешанной реальности. [Подробнее](case-study-expanding-the-design-process-for-mixed-reality.md)
+
 
 <br>
 
->[!VIDEO https://www.youtube.com/embed/A784OdX8xzI]
-
-## <a name="basics-of-mixed-reality-development"></a>Основы разработки приложений смешанной реальности
-
-Возможности [смешанной реальности](mixed-reality.md) доступны благодаря новым функциям Windows, предназначенным для отображения особенностей окружающей среды. Эти функции позволяют разработчикам размещать [голограммы](hologram.md) в реальном мире, а пользователям — перемещаться по цифровым мирам. 
-
-Ниже приведены основные стандартные блоки развития смешанной реальности:
-
-<table>
-<tr>
-<th style="width:175px">Input</th><th style="width:125px; text-align: center;"><a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:125px; text-align: center;">HoloLens 2</a></th><th style="width:125px; text-align: center;"> <a href="immersive-headset-hardware-details.md">Иммерсивные гарнитуры</a></th>
-</tr><tr>
-<td> <a href="gaze.md">Отслеживание направления головы</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
-</tr><tr>
-<td> <a href="gaze.md">Отслеживание глаз</a></td><td></td><td style="text-align: center;">✔️</td><td></td>
-</tr><tr>
- <td> <a href="gestures.md">Любые движения руками</a></td><td></td><td style="text-align: center;">✔️</td><td></td>
-</tr><tr>
-<td> <a href="gestures.md">Жесты</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td></td>
-</tr><tr>
-<td> <a href="voice-input.md">Голосовые команды</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
-</tr><tr>
-<td> <a href="hardware-accessories.md">Игровой планшет</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
-</tr><tr>
-<td> <a href="motion-controllers.md">Контроллеры движения</a></td><td></td><td></td><td style="text-align: center;">✔️</td>
-</tr><tr>
-<th style="width:175px">Восприятие и пространственные функции</th><th style="width:125px; text-align: center;"><a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:125px; text-align: center;">HoloLens 2</a></th><th style="width:125px; text-align: center;"> <a href="immersive-headset-hardware-details.md">Иммерсивные гарнитуры</a></th>
-</tr><tr>
-<td> <a href="coordinate-systems.md">Координаты мира</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
-</tr><tr>
-<td> <a href="spatial-sound.md">Пространственный звук</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
-</tr><tr>
-<td> <a href="spatial-mapping.md">Пространственное сопоставление</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td></td>
-</tr>
-</table>
+---
 
 
+## <a name="what-technology-path-are-you-interested-in"></a>Какая технология вас интересует? 
 
-Основной моделью взаимодействия для [HoloLens](hololens-hardware-details.md) является [взгляд](gaze.md), [жест](gestures.md) и [голос](voice-input.md) (иногда называется *GGV*). [Иммерсивные гарнитуры Windows Mixed Reality](immersive-headset-hardware-details.md) также используют взгляд и голос, но заменяют [контроллеры движения](motion-controllers.md) на жесты.
 
-Все устройства смешанной реальности поддерживают возможности экосистемы ввода, доступной в Windows, включая мышь, клавиатуру, игровые планшеты и т. д. При использовании HoloLens [аппаратные аксессуары](hardware-accessories.md) подключаются через Bluetooth. При использовании иммерсивных гарнитур аксессуары подключаются к главному компьютеру через Bluetooth, USB и другие поддерживаемые протоколы.
+:::row:::   
+    :::column:::    
+       [![Unity](images/unity_logo.png)](development.md#unity)<br>
+        **[Unity](development.md#unity)**<br>   
+        Самым быстрым средством создания приложения смешанной реальности является Unity. 
+    :::column-end:::    
+    :::column:::    
+        [![Unreal](images/Unreal_logo.png)](development.md#unreal)<br>
+         **[Unreal](development.md#unreal)**<br>    
+        Готовая для применения в рабочей среде поддержка HoloLens 2 также будет включена в Unreal Engine 4.23.    
+    :::column-end:::
+    :::column:::    
+        [![WebVR](images/WebVR_logo.png)](development.md#webvr)<br>
+        **[WebVR](development.md#webvr)**<br>
+        WebVR — это открытая спецификация, которая позволяет использовать возможности виртуальной реальности в браузере. 
+    :::column-end:::        
+    :::column:::    
+        [![Собственные решения](images/VisualStudio-small_logo.png)](development.md#native)<br>
+        **[Собственные решения](development.md#native)**<br> 
+        Создавайте приложения смешанной реальности, непосредственно используя в коде интерфейсы API Windows Mixed Reality. 
+    :::column-end:::    
+:::row-end:::
 
-Функции обнаружения особенностей окружающей среды, такие как [координаты](coordinate-systems.md), [пространственный звук](spatial-sound.md) и [пространственное сопоставление](spatial-mapping.md), предоставляют необходимые возможности для смешивания реальности. Пространственное сопоставление уникально для HoloLens. Оно позволяет голограммам взаимодействовать как с пользователем, так и с окружающим его физическим миром. Системы координат позволяют движению пользователя влиять на движение в цифровом мире.
+<br>
 
-Голограммы сделаны из света и звука, которые зависят от [отрисовки](rendering.md). Ознакомление с основными сведениями о возможностях размещения и сохраняемости, описанных [в этой статье о среде Windows Mixed Reality для дома](navigating-the-windows-mixed-reality-home.md) (иногда называемой оболочкой), — отличный способ освоить взаимодействие с пользователем.
+---
 
-## <a name="tools-for-developing-mixed-reality"></a>Инструменты для разработки приложений смешанной реальности
+## <a name="unity"></a>Unity
 
-Используемые инструменты будут зависеть от [стиля создаваемого приложения](app-views.md).
-* В [приложениях с двухмерным представлением](building-2d-apps.md) используются инструменты для создания приложений UWP, подходящих для таких сред, как Windows Phone, ПК и планшеты. Эти приложения являются двухмерными проекциями, размещенными в среде Windows Mixed Reality. Они могут работать на разных типах устройств (включая телефон и компьютер).
-* Иммерсивным и голографическим приложениям нужны инструменты, предназначенные для использования API-интерфейсов Windows Mixed Reality. Для создания приложений смешанной реальности [рекомендуем использовать Unity](unity-development-overview.md). Разработчики, заинтересованные в создании собственного модуля, могут [использовать DirectX и другие API Windows](directx-development-overview.md).
 
-Независимо от типа создаваемого приложения, приведенные ниже инструменты смогут пригодиться вам в разработке:
-* [Visual Studio и пакет SDK для Windows](using-visual-studio.md);
-* [Портал устройств Windows](using-the-windows-device-portal.md)
-* [эмулятор HoloLens](using-the-hololens-emulator.md);
-* [симулятор Windows Mixed Reality](using-the-windows-mixed-reality-simulator.md);
-* [Критерии качества приложения](app-quality-criteria.md)
+### <a name="unity-development-overviewunity-development-overviewmd"></a>[Обзор разработки в Unity](unity-development-overview.md)
+Рекомендуется потратить некоторое время на изучение руководств по Unity. Если вам нужны ресурсы, в Unity есть исчерпывающий портал Asset Store. 
 
+<br>
+
+### <a name="microsofts-mixed-reality-toolkit-mrtk-for-unitymrtk-getting-startedmd"></a>[Mixed Reality Toolkit (MRTK) для Unity от корпорации Майкрософт](mrtk-getting-started.md)
+MRTK версии 2 для Unity — это кроссплатформенный пакет SDK с открытым кодом, предназначенный для приложений смешанной реальности. MRTK версии 2 используется для ускорения разработки приложений, нацеленных на Microsoft HoloLens, иммерсивные гарнитуры (гарнитур виртуальной реальности) Windows Mixed Reality и платформу OpenVR.
+
+<br>
+
+### <a name="open-source-sample-apps-and-step-by-step-tutorialstutorialsmd"></a>[Примеры приложений с открытым кодом и пошаговые руководства](tutorials.md)
+Руководства по HoloLens 2 призваны помочь разработчикам в изучении методик и рекомендаций по разработке приложений смешанной реальности. Эти руководства основаны на Mixed Reality Toolkit 2.0 (MRTK 2.0).
+
+<br>
+
+### <a name="hand-interaction-examples-scene-mrtk-for-unityhttpsmicrosoftgithubiomixedrealitytoolkit-unitydocumentationgettingstartedwiththemrtkhtmlopen-and-run-the-handinteractionexamples-scene-in-editor"></a>[Пример сцены для взаимодействия с помощью рук (МРТК) для Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor)
+Пример сцены HandInteractionExamples.unity содержит различного вида взаимодействия и элементы управления пользовательского интерфейса, выделяемые при вводе с помощью рук.
+>[!NOTE]
+>Требует установки пакета МРТК Foundation и пакета примеров для Unity.
+
+### <a name="eye-tracking-examples-mrtk-for-unityhttpsmicrosoftgithubiomixedrealitytoolkit-unitydocumentationeyetrackingeyetracking_examplesoverviewhtml"></a>[Примеры с отслеживанием глаз (МРТК) для Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html)
+На этой странице описывается, как быстро приступить к работе с отслеживанием глаз в МРТК, взяв за основу предоставленные примеры с отслеживанием глаз для МРТК.
+>[!NOTE]
+>Требует установки пакета МРТК Foundation и пакета примеров для Unity.
+
+<br>
+
+---
+
+## <a name="unreal"></a>Unreal
+
+### <a name="unreal-development-overviewunreal-development-overviewmd"></a>[Обзор разработки для Unreal](unreal-development-overview.md)
+Узнайте, как создать приложение смешанной реальности на платформе Unreal.
+
+<br>
+
+---
+
+## <a name="webvr"></a>WebVR    
+
+### <a name="babylon-development-overviewhttpsdocbabylonjscom"></a>[Обзор разработки в Babylon](https://doc.babylonjs.com/)  
+Узнайте, как создать приложение смешанной реальности на платформе Babylon. Рекомендуется потратить некоторое время на изучение руководств по Babylon.
+
+<br>
+
+---
+
+## <a name="native"></a>Собственный
+
+
+### <a name="native-development-overviewdirectx-development-overviewmd"></a>[Обзор разработки для собственной платформы](directx-development-overview.md)
+Самый быстрый способ создать собственное приложение смешанной реальности.
+
+<br>
+
+### <a name="directx-uwp-app-templates-for-mixed-realityhttpsmarketplacevisualstudiocomitemsitemnamewindowsmixedrealityteamwindowsmixedrealityapptemplatesvsix"></a>[Шаблоны приложений UWP с использованием DirectX для смешанной реальности](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)
+Все необходимое, чтобы начать создание приложения смешанной реальности с помощью DirectX.
+
+<br>
+
+---
+
+
+## <a name="what-would-you-like-to-do-next"></a>Что бы вы хотели сделать дальше?
+
+
+:::row:::
+    :::column:::
+       [![Изучение основ](images/icon-lightbulb.jpg)](index.md#understand-the-basics)<br>
+        **[Изучение основ](index.md#understand-the-basics)**<br>
+        Получите более полное представление о том, что определяет смешанную реальность и как она используется.
+    :::column-end:::
+    :::column:::
+        [![Станьте автором](images/icon-design.jpg)](design.md)<br>
+         **[Станьте автором](design.md)**<br>
+        Изучите основные понятия, необходимые для начала разработки и создания прототипов.
+    :::column-end:::
+    :::column:::
+        [![Установка инструментов](images/icon-developer.jpg)](install-the-tools.md)<br>
+         **[Установка инструментов](install-the-tools.md)**<br>
+        Используйте контрольный список установки, чтобы получить инструменты, необходимые для создания приложений для HoloLens и смешанной реальности.
+    :::column-end:::
+    :::column:::
+        [![Посетите мероприятие](images/icon-calendar.jpg)](sf-academy-events.md)<br>
+         **[Посетите мероприятие](sf-academy-events.md)**<br>
+        Ознакомьтесь с оборудованием и получите практическое руководство по созданию первого приложения HoloLens 2.
+    :::column-end:::
+:::row-end:::
+
+
+<br>
+
+<br>
