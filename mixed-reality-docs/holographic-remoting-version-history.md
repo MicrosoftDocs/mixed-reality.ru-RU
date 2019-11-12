@@ -6,12 +6,12 @@ ms.author: nopohl
 ms.date: 10/21/2019
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: 75e7c276560b4efbbdcbf2ea7579ed5ad7aadb4d
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 9ff6a5f7594eb67dd4c1c8690812ab724cac9012
+ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73439235"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73926649"
 ---
 # <a name="holographic-remoting-version-history"></a>Журнал версий службы удаленного взаимодействия с holographic
 
@@ -21,7 +21,7 @@ ms.locfileid: "73439235"
 ## Версия 2.0.14 (26 октября, 2019)<a name="v2.0.14"></a>
 * Поддержка новых API Перцептиондевице (обновление Windows 10 за ноябрь 2019).
 * Исправлена проблема, препятствующая срабатыванию событий жестов с помощью Спатиалжестуререкогнизер.
-* Исправлена проблема сеадинг при использовании Спатиалсурфацеобсервер. Сетбаундингволуме.
+* Исправлена проблема с потоками при использовании Спатиалсурфацеобсервер. Сетбаундингволуме.
 
 ## Версия 2.0.12 (18 октября, 2019)<a name="v2.0.12"></a>
 * Исправлена проблема сбоя в Спатиалжестуререкогнизер при использовании Навигатионраил (X/Y/Z).

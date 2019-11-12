@@ -6,12 +6,12 @@ ms.author: nopohl
 ms.date: 10/21/2019
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: 982a3f42014d8f5eb9ba181247fee9825fb78371
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 1f8a0cbe0f6da88c0c5e5a695737d8694020635c
+ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73434321"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73926657"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>Написание пользовательского приложения для удаленного взаимодействия holographic
 
@@ -27,7 +27,7 @@ ms.locfileid: "73434321"
 Хорошей отправной точкой является рабочее приложение UWP на основе DirectX, которое уже предназначено для API Windows Mixed Reality. Дополнительные сведения см. в статье [Общие сведения о разработке DirectX](directx-development-overview.md). Если у вас нет существующего приложения и вы хотите начать с самого начала, [ C++ шаблон проекта holographic](creating-a-holographic-directx-project.md) является хорошей отправной точкой.
 
 >[!IMPORTANT]
->Любое приложение, использующее holographic удаленное взаимодействие, должно быть создано для использования [многопоточного подразделения](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments). Использование [однопотокового аппартмент](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments) поддерживается, но может привести к неоптимальной производительности и, возможно, "дергания" во время воспроизведения. При использовании C++/WinRT [WinRT:: init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) по умолчанию используется многопотоковое подразделение.
+>Любое приложение, использующее holographic удаленное взаимодействие, должно быть создано для использования [многопоточного подразделения](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments). Использование [однопотокового аппартмент](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments) поддерживается, но может привести к неоптимальной производительности и, возможно, "дергания" во время воспроизведения. При использовании C++/WinRT [WinRT:: init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) многопотоковое подразделение является значением по умолчанию.
 
 ## <a name="get-the-holographic-remoting-nuget-package"></a>Получение пакета NuGet для удаленного взаимодействия с holographic
 
@@ -122,7 +122,7 @@ catch(winrt::hresult_error& e)
 ```
 
 >[!IMPORTANT]
->Как и любой C++другой ```Connect``` API/WinRT может вызывать исключение WinRT:: hresult_error, которое необходимо обработать.
+>Как и в C++случае любого API/WinRT, ```Connect``` может вызывать исключение WinRT:: hresult_error, которое необходимо обработать.
 
 Прослушивание входящих подключений в приложении проигрывателя можно выполнить, вызвав метод ```Listen```. Во время этого вызова можно указать как порт подтверждения, так и порт транспорта. Порт подтверждения используется для первоначального подтверждения. Затем данные пересылаются через порт транспорта. По умолчанию используются номер порта **8265** и **8266** .
 
@@ -190,7 +190,7 @@ winrt::Microsoft::Holographic::AppRemoting::BlitResult result = m_playerContext.
 
 >[!NOTE]
 >```PlayerContext::BlitRemoteFrame()``` потенциально перезаписывает фокусную точку для текущего кадра. 
->- Чтобы задать резервную точку фокусировки, вызовите метод [холографиккамерарендерингпараметерс:: сетфокуспоинт](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) перед ```PlayerContext::BlitRemoteFrame()```. 
+>- Чтобы указать резервную точку фокусировки, вызовите метод [холографиккамерарендерингпараметерс:: сетфокуспоинт](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) перед ```PlayerContext::BlitRemoteFrame()```. 
 >- Чтобы перезаписать удаленную точку фокусировки, вызовите [холографиккамерарендерингпараметерс:: сетфокуспоинт](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) после ```PlayerContext::BlitRemoteFrame()```.
 
 При успешном выполнении ```BlitRemoteFrame()``` возвращает ```BlitResult::Success_Color```. В противном случае возвращается причина сбоя:
@@ -200,7 +200,7 @@ winrt::Microsoft::Holographic::AppRemoting::BlitResult result = m_playerContext.
 
 ## Необязательно: Set Блитремотефраметимеаут<a name="BlitRemoteFrameTimeout"></a>
 >[!IMPORTANT]
-> ```PlayerContext::BlitRemoteFrameTimout``` поддерживается начиная с версии [2.0.9](holographic-remoting-version-history.md#v2.0.9). 
+> ```PlayerContext::BlitRemoteFrameTimeout``` поддерживается начиная с версии [2.0.9](holographic-remoting-version-history.md#v2.0.9). 
 
 Свойство ```PlayerContext::BlitRemoteFrameTimeout``` указывает промежуток времени, в течение которого удаленная рамка повторно используется, если не получена новая Удаленная рамка. 
 
