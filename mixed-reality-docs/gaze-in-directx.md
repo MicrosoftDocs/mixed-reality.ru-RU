@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 05/09/2019
 ms.topic: article
 keywords: глаз-взгляд, руководитель-взгляд, отслеживание головок, отслеживание глаз, DirectX, ввод, голограммы
-ms.openlocfilehash: 48188cc8c886b371847357701b42249f486bceac
-ms.sourcegitcommit: 2e54d0aff91dc31aa0020c865dada3ae57ae0ffc
+ms.openlocfilehash: 664657b9ab01530a608e31091823e828cc99d0cd
+ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73641121"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73926558"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Ввод с взгляда на глаза в DirectX
 
@@ -81,7 +81,7 @@ if (pointerPose)
 2. Включите функцию "Ввод взгляда" в манифесте пакета.
 
 ### <a name="requesting-access-to-eye-gaze-input"></a>Запрос доступа к входным данным взгляда
-При запуске приложения вызовите [эйеспосе:: рекуестакцессасинк](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) , чтобы запросить доступ к отслеживанию глаз. Система запросит пользователя при необходимости и возвратит [газеинпутакцессстатус:: Allowed](https://docs.microsoft.com//uwp/api/windows.ui.input.gazeinputaccessstatus) после предоставления доступа. Это асинхронный вызов, поэтому для него требуется некоторое дополнительное управление. В следующем примере выполняется вращение отсоединенного std:: Thread для ожидания результата, который сохраняется в переменную-член с именем *m_isEyeTrackingEnabled*.
+При запуске приложения вызовите [эйеспосе:: рекуестакцессасинк](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) , чтобы запросить доступ к отслеживанию глаз. Система запросит пользователя при необходимости и возвратит [газеинпутакцессстатус:: Allowed](https://docs.microsoft.com//uwp/api/windows.ui.input.gazeinputaccessstatus) после предоставления доступа. Это асинхронный вызов, поэтому для него требуется некоторое дополнительное управление. В следующем примере показано, как отсоединить отсоединенный std:: Thread для ожидания результата, который он сохраняет в переменную-член с именем *m_isEyeTrackingEnabled*.
 
 ```cpp
 using namespace winrt::Windows::Perception::People;
@@ -144,7 +144,7 @@ if (Windows::Perception::People::EyesPose::IsSupported() &&
 
 ### <a name="getting-the-eye-gaze-ray"></a>Получение луча с глазом взгляда
 После получения доступа к ET вы можете бесплатно захватить каждый кадр.
-Как и в случае с Head-взглядом, получите [спатиалпоинтерпосе](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) , вызвав [Спатиалпоинтерпосе:: трижетаттиместамп](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) с нужной меткой времени и системой координат. Спатиалпоинтерпосе содержит объект [эйеспосе](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose) через свойство [глаза](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) . Это значение не равно null, только если включено отслеживание глаз. Здесь можно проверить, имеет ли пользователь устройства калибровку отслеживания взгляда, вызвав [эйеспосе:: искалибратионвалид](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  Затем используйте [свойство "наблюдатель",](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) чтобы получить [спатиалрай](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialray) , контианинг расположение и направление взгляда. Свойство "взгляд" иногда может иметь значение null, поэтому обязательно проверьте это. Это может произойти, если калибровка пользователя временно закрывает свои глаза.
+Как и в случае с Head-взглядом, получите [спатиалпоинтерпосе](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) , вызвав [Спатиалпоинтерпосе:: трижетаттиместамп](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) с нужной меткой времени и системой координат. Спатиалпоинтерпосе содержит объект [эйеспосе](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose) через свойство [глаза](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) . Это значение не равно null, только если включено отслеживание глаз. Здесь можно проверить, имеет ли пользователь устройства калибровку отслеживания взгляда, вызвав [эйеспосе:: искалибратионвалид](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  Затем используйте свойство [взгляда](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) , чтобы получить [спатиалрай](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialray) , содержащий расположение и направление взгляда. Свойство "взгляд" иногда может иметь значение null, поэтому обязательно проверьте это. Это может произойти, если калибровка пользователя временно закрывает свои глаза.
 
 В следующем коде показано, как получить доступ к лучау глаза.
 
@@ -193,7 +193,10 @@ if (pointerPose)
 <br>
 
 ## <a name="calibration"></a>Монитора
-Чтобы отслеживание отслеживания проработало правильно, каждый пользователь должен пройти по [калибровке пользователя с отслеживанием взгляда](calibration.md). Это позволяет устройству настроить систему для более удобного и качественного просмотра для пользователя, а также для обеспечения точного отслеживания в то же время. Разработчикам не нужно ничего делать на своих концах для управления калибровкой пользователей. Система гарантирует, что пользователю будет выводиться запрос на калибровку устройства в следующих случаях: * пользователь использует устройство в первый раз * пользователь, ранее использующий процесс калибровки *. процесс калибровки не был выполнен последним время, когда пользователь использовал устройство
+Чтобы отслеживание отслеживания проработало правильно, каждый пользователь должен пройти по [калибровке пользователя с отслеживанием взгляда](calibration.md). Это позволяет устройству настроить систему для более удобного и качественного просмотра для пользователя, а также для обеспечения точного отслеживания в то же время. Разработчикам не нужно ничего делать на своих концах для управления калибровкой пользователей. Система обеспечит пользователю запрос на калибровку устройства в следующих случаях:
+* Пользователь использует устройство в первый раз
+* Пользователь ранее отказался от процесса калибровки
+* Процесс калибровки не был выполнен в последний раз, когда пользователь использовал устройство.
 
 Разработчикам следует обеспечить необходимую поддержку для пользователей, для которых данные отслеживания взгляда могут быть недоступны. Дополнительные сведения см. в статье рекомендации по [отслеживанию решений на сайте Hololens 2](eye-tracking.md).
 

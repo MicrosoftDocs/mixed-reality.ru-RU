@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 77d639a88d8b4c71dc5fbe1c78565c4c3f91d36c
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 9f57cb9874aade2d6b19d0c061fd83eb04b9ef11
+ms.sourcegitcommit: b6b76275fad90df6d9645dd2bc074b7b2168c7c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73438415"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73914382"
 ---
 # <a name="3-displaying-azure-spatial-anchor-feedback"></a>3. Отображение обратной связи с пространственными привязками Azure
 
@@ -45,28 +45,11 @@ ms.locfileid: "73438415"
 
 ![module2chapter3step4im](images/module2chapter3step4im.PNG)
 
-5. На панели Проект выберите "активы" и щелкните правой кнопкой мыши, а затем выберите "показывать в проводнике".
-   
-
-![module2chapter3step4im](images/module2chapter3step5im.PNG)
-
-Щелкните [здесь](https://onedrive.live.com/?authkey=%21ABXEC8PvyQu8Qd8&id=5B7335C4342BCB0E%21395636&cid=5B7335C4342BCB0E) , чтобы скачать файлы, необходимые в следующих шагах.
-
-6. После открытия проводника выберите папку Assets, затем папку "Асамодулесассетс" и скопируйте сценарий обратной связи и файлы сценариев модуля привязки в папку. 
-
-![module2chapter3step5im](images/module2chapter3step6im.PNG)
-
-> Примечание. при появлении всплывающего сообщения с запросом на подтверждение перезаписи старого или сохранения старого нажмите кнопку перезаписать.
-
-7. Вернитесь в папку Assets. Затем перейдите в папку «Азуреспатиаланчорсплугин», а затем папку «examples», а затем папку Scripts. Затем скопируйте демонстрационную оболочку пространственных привязок Azure в эту папку. 
-
-![module2chapter3step8im](images/module2chapter3step7im.PNG)
-
-8. Теперь, когда файлы загружены, убедитесь, что в иерархии ASA_feedback выбран текст "фидбаккпанел", нажмите кнопку "добавить компонент" и добавьте сценарий обратной связи, выполнив поиск и выбрав его после появления. 
+5. Убедитесь, что в иерархии ASA_feedback выбран текст "фидбаккпанел", нажмите кнопку "добавить компонент" и добавьте сценарий обратной связи, выполнив поиск и выбрав его после появления. 
 
 ![module2chapter3step8im](images/module2chapter3step8im.PNG)
 
-9. Перетащите текстовый объект Фидбаккпанел из иерархии ASA_Feedback в пустой слот под сценарием, как показано на рисунке ниже. 
+6. Перетащите текстовый объект Фидбаккпанел из иерархии ASA_Feedback в пустой слот под сценарием, как показано на рисунке ниже. 
 
 ![module2chapter3step9im](images/module2chapter3step9im.PNG)
 

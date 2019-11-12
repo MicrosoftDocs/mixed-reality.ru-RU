@@ -6,64 +6,64 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 43a6f02eaf09fcf43775374fae4fbe2d0bc8c346
-ms.sourcegitcommit: 599bbdd861ce6ff11b6cfb345a0a995f8b7bf85b
+ms.openlocfilehash: da485f167ef3902dd75adf8da8181504fbc6c6df
+ms.sourcegitcommit: b6b76275fad90df6d9645dd2bc074b7b2168c7c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68977977"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73913162"
 ---
 # <a name="speech-sdk-learning-module---rocket-launcher-control-using-speech-commands"></a>Модуль Learning SDK для распознавания речи — управление средством запуска Rocket с помощью голосовых команд
 
-На этом занятии мы будем использовать функцию службы распознавания речи Azure, чтобы понять назначение речи. Мы будем использовать обнаруженную цель распознавания речи в качестве голосовых команд для управления средством запуска Rocket. На этом занятии будет импортирован ресурс средства запуска Rocket, и мы будем использовать команды, обнаруженные с помощью командного голоса, к стандартным кнопкам управления для управления Rocket. 
+На этом занятии мы будем использовать функцию службы распознавания речи Azure, чтобы понять назначение речи. Мы будем использовать обнаруженную цель распознавания речи в качестве голосовых команд для управления средством запуска Rocket. На этом занятии будет импортирован ресурс средства запуска Rocket, и мы будем использовать команды, обнаруженные с помощью командного голоса, к стандартным кнопкам управления для управления Rocket.
 
-## <a name="objectives"></a>Цели
+## <a name="objectives"></a>Задачи
 
 - Узнайте, как связать голосовые команды с намерением речи.
 - Узнайте, как использовать голосовые команды с намерением речи в качестве входных команд для управления Rocket.
 
 ## <a name="instructions"></a>Инструкция
-1. В этом руководстве мы будем использовать ресурс-контейнер "Басемодуле" для интеграции средства запуска Rocket с командами распознавания речи. Для этого необходимо импортировать ресурс в наш проект. Вы можете скачать ресурс Rocket Launcher с помощью этой [ссылки](https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2). 
+
+1. В этом руководстве мы будем использовать ресурс-контейнер "Басемодуле" для интеграции средства запуска Rocket с командами распознавания речи. Для этого необходимо импортировать ресурс в наш проект. Вы можете скачать ресурс Rocket Launcher с помощью этой [ссылки](https://github.com/Developer-OI/MixedRealityLearning/releases/download/1.2.1/BaseModuleAssets-1.2.1.unitypackage).
 
 2. Чтобы импортировать ресурс, перейдите в раздел "активы"-> "Импорт пакета" > "пользовательский пакет" > перейдите к скачанному файлу и нажмите кнопку "Импорт".
 
-![module4chapter5step1](images/module4chapter5step1.PNG)
+    ![module4chapter5step1](images/module4chapter5step1.PNG)
 
 3. После импорта ресурса "основные ресурсы модуля" перейдите в папку "основные ресурсы модуля"-> Prefabs-> выберите "Rocket Launcher_Complete", а затем перетащите ее в существующую иерархию сцены.
 
-![module4chapter5step2](images/module4chapter5step2.PNG)
+    ![module4chapter5step2](images/module4chapter5step2.PNG)
 
-4. Теперь нам нужно интегрировать «Rocket Launcher» с нашим проектом LUIS, который мы работали на предыдущем [занятии](mrlearning-speechSDK-ch4.md). Для этого разверните prefab "Rocket Launcher_Complete" в иерархии и найдите кнопки "Лаунчраундбуттон", "Ресетраундбуттон" и "подсказки размещения".
+4. Теперь нам нужно интегрировать «Rocket Launcher» с нашим проектом LUIS, который мы работали на [предыдущем занятии.](mrlearning-speechSDK-ch4.md) Для этого разверните prefab "Rocket Launcher_Complete" в иерархии и найдите кнопки "Лаунчраундбуттон", "Ресетраундбуттон" и "подсказки размещения".
 
-![module4chapter5step3](images/module4chapter5step3.PNG)
+    ![module4chapter5step3](images/module4chapter5step3.PNG)
 
 5. Выберите "Лаунчраундбуттон" и на панели инспектора перейдите в раздел "взаимодействие" и в разделе "события" OnClick () "перетащите" Лунармодуле "prefab. Затем выберите раскрывающийся список функций и выберите "Лунармодуле", а затем перейдите к функции "Стартсрустер ()" и выберите ее.
 
-![module4chapter5step 3.0](images/module4chapter5step3.0.PNG)
+    ![module4chapter5step 3.0](images/module4chapter5step3.0.PNG)
 
-![module4chapter5step3a](images/module4chapter5step3a.PNG)
+    ![module4chapter5step3a](images/module4chapter5step3a.PNG)
 
 6. Выберите "Ресетраундбуттон" и на панели инспектора перейдите в раздел "взаимодействие" и в разделе "события" OnClick () "перетащите" Лунармодуле "prefab. Затем выберите раскрывающийся список функций и выберите "Лунармодуле", а затем перейдите к функции "Ресетмодуле ()" и выберите ее.
 
-![module4chapter5step3b](images/module4chapter5step3b.PNG)
+    ![module4chapter5step3b](images/module4chapter5step3b.PNG)
 
 7. Выберите "подсказки размещения" и на панели инспектора перейдите в раздел "взаимодействие" и в разделе "события" OnClick () "перетащите" Лунармодуле "prefab. Затем выберите раскрывающийся список функций и выберите "Лунармодуле", а затем перейдите к функции "Тогглеплацеменсинтс" и выберите Тогглегамеобжектс ().
 
-![module4chapter5step3c](images/module4chapter5step3c.PNG)
+    ![module4chapter5step3c](images/module4chapter5step3c.PNG)
 
-8.  Затем выберите Lunarcom_Completed prefab в иерархии, а затем в инспекторе перейдите к скрипту распознавания намерений Лунарком, а затем перетащите кнопки Лаунчраундбуттон, "Ресетраундбуттон" и "подсказки размещения" в соответствующие места.
+8. Затем выберите Lunarcom_Completed prefab в иерархии и перейдите к сценарию Лунарком намерения распознавателя в инспекторе, а затем перетащите кнопки Лаунчраундбуттон, Ресетраундбуттон и подсказки размещения в соответствующие места.
 
-![module4chapter5step4](images/module4chapter5step4.PNG)
+    ![module4chapter5step4](images/module4chapter5step4.PNG)
 
 9. Нажмите кнопку Воспроизведение в редакторе Unity и нажмите кнопку "Rocket" и полное такие фразы, как "Push Rocket Launch Button", "Показать подсказку о размещении", "нажмите кнопку" Отправить "или любые другие фразы, относящиеся к запуску, сбросу или запросу подсказки для средства запуска Rocket.
 
-![module4chapter5step5a](images/module4chapter5step5a.PNG)
+    ![module4chapter5step5a](images/module4chapter5step5a.PNG)
 
-![module4chapter5step5b](images/module4chapter5step5b.PNG)
+    ![module4chapter5step5b](images/module4chapter5step5b.PNG)
 
-![module4chapter5step5c](images/module4chapter5step5c.PNG)
+    ![module4chapter5step5c](images/module4chapter5step5c.PNG)
 
 ## <a name="congratulations"></a>Поздравляем!
 
 На этом занятии мы узнали, как подключить команды речи на основе AI к голосовым командам, чтобы использовать их в качестве метода ввода. Теперь наша программа может использовать эти динамики в качестве речевых команд для предоставления входных данных для средства запуска Rocket.
-

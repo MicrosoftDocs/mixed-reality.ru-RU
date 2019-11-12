@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/25/2018
 ms.topic: article
 keywords: Unity, Mixed Reality, разработка, начало работы, новый проект, перенос, возможность, Камера, моделирование, Эмуляция, документация
-ms.openlocfilehash: b78afb0cf6557ec9b61a029e2d557debbd0b6b46
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: f9b314bfc7c58e72b11ecfd76fe7293ef2f6c11e
+ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73437373"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73926697"
 ---
 # <a name="unity-development-overview"></a>Общие сведения о разработке Unity
 
@@ -37,7 +37,7 @@ ms.locfileid: "73437373"
 
 Добавление поддержки функций Windows Mixed Reality, таких как [пространственные этапы](coordinate-systems.md#spatial-coordinate-systems), [жесты, контроллеры движения](gestures-and-motion-controllers-in-unity.md) или [Ввод голоса](voice-input-in-unity.md) , достигается с помощью API, встроенных непосредственно в Unity. 
 
-Во первых, ознакомьтесь с [возможностями масштабирования](coordinate-systems.md) , которые может ориентироваться в аппликатиоин:
+Сначала ознакомьтесь с [возможностями масштабирования](coordinate-systems.md) , которые могут ориентироваться в приложении.
 * Если вы хотите создать **интерфейс**, предназначенный **только для ориентации** или установки, необходимо установить тип пространства отслеживания Unity в положение " [стационарный](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience)".
 * Если вы собираетесь создать интерфейс масштабирования в фиксированном **масштабе или на** **уровне комнаты**, необходимо убедиться, что тип пространства отслеживания Unity успешно установлен в [румскале](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience).
 * Если вы хотите создать в HoloLens интерфейс по **всему миру** , который позволит пользователям перемещаться за пределы 5 метров, необходимо использовать компонент [ворлданчор](coordinate-systems-in-unity.md#building-a-world-scale-experience) .

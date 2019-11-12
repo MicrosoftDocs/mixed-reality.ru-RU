@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: DirectX, holographic-визуализация, собственное, собственное приложение, WinRT, приложение WinRT, API платформы, настраиваемое подсистема, по промежуточного слоя
-ms.openlocfilehash: e77ee5053e69aef502481d18618e604c6bfb5939
-ms.sourcegitcommit: 2e54d0aff91dc31aa0020c865dada3ae57ae0ffc
+ms.openlocfilehash: 0af73314c3c93d230ef87ed468f718f5b3e1813c
+ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73641094"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73926632"
 ---
 # <a name="directx-development-overview"></a>Общие сведения о разработке DirectX
 
@@ -44,7 +44,7 @@ Windows Mixed Reality поддерживает [два типа приложен
 
 ## <a name="adding-mixed-reality-capabilities-and-inputs"></a>Добавление возможностей и входных данных смешанной реальности
 
-Чтобы обеспечить максимально возможный опыт для пользователей аппсликатион, вам потребуется поддержка следующих ключевых блоков:
+Чтобы обеспечить максимально возможный опыт для пользователей приложения с иммерсивное приложение, необходимо поддерживать следующие ключевые блоки:
 
 * [Направление головы и взгляда в DirectX](gaze-in-directx.md)
 * [Контроллеры движения и жестов в DirectX](hands-and-motion-controllers-in-directx.md)

@@ -6,12 +6,12 @@ ms.author: branbray
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Смешанная реальность, holographic, AR, VR, MR, XR, дополненная реальность, виртуальная реальность, объяснение
-ms.openlocfilehash: 83beca8b6abad56fc37800ddfc9faad0d21859bf
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 601e42c03e827f0f531f9dcf937a0dd34b008dc3
+ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73437921"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73926774"
 ---
 # <a name="what-is-mixed-reality"></a>Что такое смешанная реальность?
 
@@ -71,7 +71,7 @@ ms.locfileid: "73437921"
 <br>
 
 ![спектра смешанной реальности](images/MixedRealitySpectrum.jpg)<br>
-*Спектурм Mixed Reality*
+*Спектр смешанных реальность*
 
 <br>
 
@@ -120,5 +120,5 @@ ms.locfileid: "73437921"
 * [Что такое голограмма?](hologram.md)
 * [Основные сведения о смешанной реальности](index.md#understand-the-basics)
 * [Приступая к созданию прототипов](design.md)
-* [Изучение средств и архитектуры](development.md)
+* [Изучение инструментов и архитектуры](development.md)
 

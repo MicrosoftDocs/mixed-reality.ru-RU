@@ -6,12 +6,12 @@ ms.author: alreynol
 ms.date: 05/16/2019
 ms.topic: article
 keywords: лбе, Микседреалитиспатиалдатапаккажер. exe, Микседреалитиспатиалдатапаккажер
-ms.openlocfilehash: 52556e4028407086f943c4b765a8bcfad2744eac
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 331fa6dc752c64eeaa5bc2e9d1dd6b2c15049a27
+ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73438474"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73926762"
 ---
 # <a name="mixed-reality-spatial-data-packager-documentation"></a>Документация по диспетчеру пространственных данных в смешанной реальности
 
@@ -66,7 +66,7 @@ ms.locfileid: "73438474"
 4. Сократите пустое число поверхностей, например, поместите диапазон различных плакатов на белые стены.
 5. Сопоставьте пространство без динамических объектов в сцене, например перемещение людей
 6. Блокировать карту при импорте (доступно через предварительную версию Insider)
-7. Разблокируйте карту и повторно просканируйте среды при отслеживании качества и/или изменении в среде (освещение или изменения в макете объекта).
+7. Разблокируйте карту и повторно просканируйте среду при отслеживании качества и/или изменении в среде (освещение или изменения в макете объекта).
 ***
 
 ## <a name="running-mixed-reality-spatial-data-packager-with-companion-script"></a>Запуск упаковщика пространственных данных Mixed Reality с сопутствующим скриптом
@@ -107,7 +107,7 @@ ms.locfileid: "73438474"
 ```
 Package Family Name for holoshell: HoloShell_cw5n1h2txyewy
 User SID for Administrator: S-1-5-21-1279937937-3984375698-1043392598-499
-Lock map value succesfully set to 0
+Lock map value successfully set to 0
 
 Running: C:\bin\MixedRealitySpatialDataPackager.exe export D:\temp\ HoloShell_cw5n1h2txyewy S-1-5-21-1279937937-3984375698-1043392598-499
 
@@ -197,7 +197,7 @@ Failed to find local user for passed in user SID
 3. Unable to create directory at <PATH> for export
 ```
 
-### <a name="if-there-was-an-error-related-to-starting-and-stoping-spectrumsharedrealitysvc"></a>Если произошла ошибка, связанная с запуском и остановкой спектра или Шаредреалитисвк
+### <a name="if-there-was-an-error-related-to-starting-and-stopping-spectrumsharedrealitysvc"></a>Если произошла ошибка, связанная с запуском и остановкой спектра/Шаредреалитисвк
 ```
 1. Unable to open service manager <SERVICE>
 2. Timed out trying to start/stop <SERVICE>

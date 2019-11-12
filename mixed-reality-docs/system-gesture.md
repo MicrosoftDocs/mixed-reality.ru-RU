@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Смешанная реальность, жесты, взаимодействие, проектирование
-ms.openlocfilehash: b46f642babb18387da2e76d5bdbb7631577c85de
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: ba543ffe0802d0b95cc539fb0e73c0b4e51fc186
+ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73439825"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73926729"
 ---
 # <a name="system-gesture"></a>Системный жест
 
@@ -62,7 +62,7 @@ ms.locfileid: "73439825"
     :::column-end:::
     :::column:::
         ![раскрытия Open](images/bloom-open.png)<br>
-        **Шаг 2. воссоздание карманного ПК с помощью прочтения**<br>
+        **Шаг 2. Ручная разворота**<br>
     :::column-end:::
 :::row-end:::
 
