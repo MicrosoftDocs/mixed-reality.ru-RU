@@ -3,15 +3,15 @@ title: Архив эмулятора HoloLens
 description: Список выпущенных сборок эмулятора Microsoft HoloLens.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 9/11/2019
+ms.date: 11/11/2019
 ms.topic: article
 keywords: HoloLens, Emulator, сборки, версии
-ms.openlocfilehash: c2d0c8d9e81bae906c786a32f08d0e701638535e
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: f9ce72febfd07b7dc743b9ee202e8c4353f1de96
+ms.sourcegitcommit: f2b7c6381006fab6d0472fcaa680ff7fb79954d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73434205"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74064223"
 ---
 # <a name="hololens-2-emulator-archive"></a>Архив эмулятора HoloLens 2
 
@@ -19,6 +19,7 @@ ms.locfileid: "73434205"
 
 |  Сборка |  Дата выпуска |  Заметки | 
 |----------|----------|----------|
+|  [10.0.18362.1039 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2110553) | 11 ноября 2019 г. | Ноябрь 2019. сборка HoloLens. |
 |  [10.0.18362.1034 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2106649) | 8 октября 2019 г. | 1 октября 2019. сборка HoloLens.  Эмулятор выводит запрос на обновление до новой версии при запуске версии, которая старше последней доступной.  При использовании эмулятора в Windows 10 может 2019 или более поздней версии, Новая вкладка конфигурации NAT позволяет разработчикам открывать порты для приложений, выполняющихся на разных устройствах, для подключения к эмулятору, а на вкладке обновления отображаются доступные версии эмулятора.  Дополнительные сведения см. в [документации по эмулятору HoloLens](using-the-hololens-emulator.md) . |
 |  [10.0.18362.1031 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2103724) | 11 сентября 2019 г. | Сентябрь 2019. сборка HoloLens.  Вкладка Сеть появится в окне средства эмулятора при запуске эмулятора в Windows 10, возможно, 2019 или более поздней версии. |
 |  [10.0.18362.1028 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2101019) | 14 августа 2019 г. | Сборка HoloLens 2019 в августе 2.  Шаблоны holographic приложений больше не включены, но доступны в Visual Studio Marketplace.  Теперь эмулятор будет работать при установке пакетов SDK в пользовательском расположении. |

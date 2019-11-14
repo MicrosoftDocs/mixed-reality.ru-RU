@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Смешанная реальность, жесты, взаимодействие, проектирование
-ms.openlocfilehash: ba543ffe0802d0b95cc539fb0e73c0b4e51fc186
-ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
+ms.openlocfilehash: 417811fff9d98e459dc0047d46ea065acfced4ef
+ms.sourcegitcommit: f2b7c6381006fab6d0472fcaa680ff7fb79954d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73926729"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74064240"
 ---
 # <a name="system-gesture"></a>Системный жест
 
@@ -98,7 +98,7 @@ ms.locfileid: "73926729"
     :::column-end:::
     :::column:::
         ![](images/wrist-button-pinch.png) сжатия кнопки<br>
-        **Шаг: Просмотр глаз на кнопке, затем сжатие**<br>
+        **Шаг 2. взгляд на кнопку, затем сжатие**<br>
     :::column-end:::
 :::row-end:::
 
