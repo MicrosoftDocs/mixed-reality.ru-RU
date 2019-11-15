@@ -6,14 +6,16 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens (1-й общий), HoloLens 2, Смешанная реальность, курсоры, нацеленность, взгляд, жесты
-ms.openlocfilehash: ef011d8400de1e23db3d6fb4b0f2a853d787ae86
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 719e7a573e8c8bc682ec0f960d9f3c8f8c8e5a4a
+ms.sourcegitcommit: 781e47db2ca2f2c792c95e76ac309b44b3535555
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73435752"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74105754"
 ---
 # <a name="cursors"></a>Курсоры
+
+![Курсоры](images/UX/UX_Hero_Cursor.jpg)
 
 Курсор или индикатор текущего целевого вектора, предоставляет пользователю возможность непрерывной обратной связи, чтобы понять, где в это время на гарнитуре находится текущий фокус. Курсор позволяет пользователю понять текущую целевую точку и действует как отзыв, чтобы указать, какая область, голограмма или точка будет реагировать на входные данные. Это цифровое представление, где устройство понимает внимание пользователя (хотя это может быть не так же, как при определении каких-либо действий).
 
@@ -154,6 +156,15 @@ ms.locfileid: "73435752"
 
 ---
 
+## <a name="cursor-in-mrtkmixed-reality-toolkit-for-unity"></a>Курсор в МРТК (набор средств для смешанной реальности) для Unity
+По умолчанию **[мртк](https://github.com/Microsoft/MixedRealityToolkit-Unity)** предоставляет курсор prefab ([дефаулткурсор. prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)), который имеет то же визуальное состояние, что и системный курсор оболочки. Он назначается входным профилем МРТК в разделе указатели. Вы можете заменить или настроить этот курсор для работы. Для удобства ввода с отслеживанием взгляда МРТК также предоставляет Эйегазекурсор, который имеет тонкий визуальный элемент для снижения числа невыполнений.
+
+* [МРТК — профиль указателя](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
+* [МРТК система ввода](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
+* [МРТК — указатели](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
+
+
+---
 
 ## <a name="see-also"></a>См. также
 * [Жесты](gaze-and-commit.md#composite-gestures)

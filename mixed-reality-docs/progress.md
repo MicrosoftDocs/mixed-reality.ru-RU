@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, проектирование, элементы управления, Пользовательский интерфейс, UX
-ms.openlocfilehash: 43b4802e7c821c98c847509ace950f381da12f95
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: aafcd8eebbabfc5b53d09348d513f62def909da6
+ms.sourcegitcommit: 781e47db2ca2f2c792c95e76ac309b44b3535555
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73437537"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74105980"
 ---
-# <a name="displaying-progress"></a>Отображение хода выполнения
+# <a name="progress-indicator"></a>Индикатор хода выполнения
 
 <br>
 
-<img src="images/HoloLens2_Loader.gif" alt="Progress ring example in HoloLens" width="940px">
+<img src="images/UX/MRTK_ProgressIndicator.gif" alt="Progress ring example in HoloLens" width="940px">
 
 Элемент управления "Ход выполнения" служит для уведомления пользователя о том, что выполняется длительная операция. Это может означать, что пользователь не сможет взаимодействовать с приложением, когда индикатор выполнения отображается. Также в зависимости от того, какой индикатор используется, он может отображать время ожидания.
 
@@ -88,9 +88,32 @@ ms.locfileid: "73437537"
 
 ---
 
+## <a name="progress-indicator-in-mrtkmixed-reality-toolkit-for-unity"></a>Индикатор выполнения в МРТК (набор средств для смешанной реальности) для Unity
+
+* [МРТК — индикатор выполнения Prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/ProgressIndicators)
+* [МРТК — служба перехода на сцену](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Extensions/SceneTransitionService/SceneTransitionServiceOverview.html)
+
+
+<br>
+
+---
+
 ## <a name="see-also"></a>См. также
-* [Сценарии хода выполнения и Prefabs в наборе средств смешанной реальности](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Loader)
-* [Ограничивающий прямоугольник](app-bar-and-bounding-box.md)
+
+* [Курсоры](cursors.md)
+* [Рука](point-and-commit.md)
+* [Button](button.md)
 * [Активный объект](interactable-object.md)
+* [Ограничивающая рамка и панель приложения](app-bar-and-bounding-box.md)
+* [Управлять](direct-manipulation.md)
+* [Меню руки](hand-menu.md)
+* [Ближайшее меню](near-menu.md)
 * [Коллекция объектов](object-collection.md)
+* [Voice, команда](voice-input.md)
+* [Клавиатура](keyboard.md)
+* [Сказок](tooltip.md)
+* [Рекламы](slate.md)
+* [Slider](slider.md)
 * [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
+* [Индикация хода выполнения](progress.md)
+* [Магнит поверхности](surface-magnetism.md)

@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: da485f167ef3902dd75adf8da8181504fbc6c6df
-ms.sourcegitcommit: b6b76275fad90df6d9645dd2bc074b7b2168c7c8
+ms.openlocfilehash: cf51505cab2db765325c2e7b78a52e4b790845c9
+ms.sourcegitcommit: 781e47db2ca2f2c792c95e76ac309b44b3535555
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73913162"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74105952"
 ---
 # <a name="speech-sdk-learning-module---rocket-launcher-control-using-speech-commands"></a>Модуль Learning SDK для распознавания речи — управление средством запуска Rocket с помощью голосовых команд
 
@@ -24,7 +24,7 @@ ms.locfileid: "73913162"
 
 ## <a name="instructions"></a>Инструкция
 
-1. В этом руководстве мы будем использовать ресурс-контейнер "Басемодуле" для интеграции средства запуска Rocket с командами распознавания речи. Для этого необходимо импортировать ресурс в наш проект. Вы можете скачать ресурс Rocket Launcher с помощью этой [ссылки](https://github.com/Developer-OI/MixedRealityLearning/releases/download/1.2.1/BaseModuleAssets-1.2.1.unitypackage).
+1. В этом руководстве мы будем использовать ресурс-контейнер "Басемодуле" для интеграции средства запуска Rocket с командами распознавания речи. Для этого необходимо импортировать ресурс в наш проект. Вы можете скачать ресурс Rocket Launcher с помощью этой [ссылки](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.1.0.0/Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage).
 
 2. Чтобы импортировать ресурс, перейдите в раздел "активы"-> "Импорт пакета" > "пользовательский пакет" > перейдите к скачанному файлу и нажмите кнопку "Импорт".
 

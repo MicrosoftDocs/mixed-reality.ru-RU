@@ -6,16 +6,16 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, элементы управления, проектирование
-ms.openlocfilehash: 8f3629c6d9465383efc901ed784a3719cd6fdfb2
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 98fec76558502658511faf3f18d623bfa5a49dc2
+ms.sourcegitcommit: 781e47db2ca2f2c792c95e76ac309b44b3535555
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73438172"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74106000"
 ---
 # <a name="object-collection"></a>Коллекция объектов
 
-![Коллекция объектов, используемая в периодической таблице приложения Elements](images/640px-objectcollection-hero-640px.jpg)<br>
+![Коллекция объектов, используемая в периодической таблице приложения Elements](images/UX/UX_Hero_ObjectCollection.jpg)<br>
 
 
 Коллекция объектов — это элемент управления макета, который помогает размещать массив объектов в предопределенной трехмерной форме. Он поддерживает различные стили поверхности — **плоскость, цилиндр, шар** и **радиальный**. Вы можете настроить радиус и размер объектов, а также пространство между ними. Коллекция объектов поддерживает любой объект из Unity — как 2D, так и 3D. В **[наборе средств для смешанной реальности](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** мы создали скрипт Unity и примеры, которые помогут создать коллекцию объектов.
@@ -44,7 +44,36 @@ ms.locfileid: "73438172"
 ![Пример двумерных изображений с коллекцией объектов](images/940px-layout-2dimages.jpg)<br>
 *Примеры использования коллекции объектов с 2D-изображениями*
 
+<br>
+
+---
+
+## <a name="object-collection-in-mrtkmixed-reality-toolkit-for-unity"></a>Коллекция объектов в МРТК (набор средств для смешанной реальности) для Unity
+
+* [МРТК — коллекция объектов](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)
+
+
+<br>
+
+---
+
+
 ## <a name="see-also"></a>См. также
-* [Сценарии и Prefabs для коллекции объектов в наборе средств Mixed Reality в GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_ObjectCollection.md)
+
+* [Курсоры](cursors.md)
+* [Рука](point-and-commit.md)
+* [Button](button.md)
 * [Активный объект](interactable-object.md)
-* [Ограничивающий прямоугольник](app-bar-and-bounding-box.md)
+* [Ограничивающая рамка и панель приложения](app-bar-and-bounding-box.md)
+* [Управлять](direct-manipulation.md)
+* [Меню руки](hand-menu.md)
+* [Ближайшее меню](near-menu.md)
+* [Коллекция объектов](object-collection.md)
+* [Voice, команда](voice-input.md)
+* [Клавиатура](keyboard.md)
+* [Сказок](tooltip.md)
+* [Рекламы](slate.md)
+* [Slider](slider.md)
+* [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
+* [Индикация хода выполнения](progress.md)
+* [Магнит поверхности](surface-magnetism.md)

@@ -6,16 +6,16 @@ ms.author: jennyk
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Смешанная реальность, элементы управления, взаимодействие, Пользовательский интерфейс, UX
-ms.openlocfilehash: 36ca1feeba0e3bf028c64fe7b559d263a8088b96
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 5305af97e9811134212fc6c730727962bb9e8353
+ms.sourcegitcommit: 781e47db2ca2f2c792c95e76ac309b44b3535555
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73438629"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74105793"
 ---
 # <a name="interactable-object"></a>Взаимодействующий объект
 
-![Объекты интерактибле](images/InteractableExamples.png)
+![Объекты интерактибле](images/UX/UX_Hero_Interactable.jpg)
 
 Кнопка длиннее метафоры, используемой для активации события в 2D-абстрактном мире. В мире объемной смешанной реальности мы больше не должны беспокоиться об этом мире абстракции. Любой может быть **взаимодействующим объектом** , запускающим событие. Взаимодействующий объект может быть представлен любым из чашк кофе в таблице в виде всплывающей подсказки, плавающей в воздухе. Мы по-прежнему используем традиционные кнопки в определенных ситуациях, например в пользовательском интерфейсе диалогового окна. Визуальное представление кнопки зависит от контекста.
 
@@ -261,9 +261,9 @@ HoloLens 2 поддерживает вводные данные отслежив
 ---
 
 
-## <a name="creating-interactable-object-with-mixed-reality-toolkit-mrtk"></a>Создание взаимодействующего объекта с помощью набора средств для смешанной реальности (МРТК)
+## <a name="interactable-object-in-mrtkmixed-reality-toolkit-for-unit"></a>Взаимодействующий объект в МРТК (набор средств для смешанной реальности) для Unit
 
-В **[наборе средств Mixed Reality](https://github.com/Microsoft/MixedRealityToolkit-Unity)** можно найти ряд скриптов Unity и Prefabs, которые помогут создавать взаимодействующие объекты. Их можно использовать, чтобы объекты отвечали на различные типы состояний взаимодействия ввода.
+В **[мртк](https://github.com/Microsoft/MixedRealityToolkit-Unity)** можно использовать [**взаимодействие**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) с скриптом, чтобы объекты отвечали на различные типы состояний взаимодействия. Он поддерживает различные типы тем, которые позволяют определять визуальные состояния, управляя свойствами объектов, такими как цвет, размер, материал и шейдер.
 
 * [Элементом](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
 * [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
@@ -277,9 +277,23 @@ HoloLens 2 поддерживает вводные данные отслежив
 
 ---
 
+
 ## <a name="see-also"></a>См. также
 
-* [Ограничивающий прямоугольник](app-bar-and-bounding-box.md)
+* [Курсоры](cursors.md)
+* [Рука](point-and-commit.md)
+* [Button](button.md)
+* [Активный объект](interactable-object.md)
+* [Ограничивающая рамка и панель приложения](app-bar-and-bounding-box.md)
+* [Управлять](direct-manipulation.md)
+* [Меню руки](hand-menu.md)
+* [Ближайшее меню](near-menu.md)
 * [Коллекция объектов](object-collection.md)
+* [Voice, команда](voice-input.md)
+* [Клавиатура](keyboard.md)
+* [Сказок](tooltip.md)
+* [Рекламы](slate.md)
+* [Slider](slider.md)
 * [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
-* [Голосовой ввод](voice-input.md)
+* [Индикация хода выполнения](progress.md)
+* [Магнит поверхности](surface-magnetism.md)

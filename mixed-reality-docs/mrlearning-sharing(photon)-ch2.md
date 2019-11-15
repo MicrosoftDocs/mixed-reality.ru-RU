@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 91935cb5b465e51d3948f68b818f93ba52b215f1
-ms.sourcegitcommit: b6b76275fad90df6d9645dd2bc074b7b2168c7c8
+ms.openlocfilehash: 750161ff4c52a7ab71869b3cb0f97197d4ad09f2
+ms.sourcegitcommit: 781e47db2ca2f2c792c95e76ac309b44b3535555
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73914434"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74106051"
 ---
 # <a name="2-getting-unity-ready-for-development"></a>2. Подготовка Unity к разработке 
 
@@ -52,7 +52,7 @@ ms.locfileid: "73914434"
 
 6. После завершения работы появится новый файл конфигурации, в котором можно настроить профиль. 
 
-![Module2Chapter1step4im](images/Module2Chapter1step4im.PNG)
+![Module2Chapter1step4ima](images/Module2Chapter1step4ima.PNG)
 
 7. Выберите набор средств смешанной реальности (МРТК) из иерархии. На панели инспектора Найдите сценарий набора средств Mixed Reality и нажмите кнопку "Копировать & настроить", как показано на рисунке ниже.  После этого появится POP и выбрать параметр клонировать во всплывающем меню.
 
@@ -76,7 +76,14 @@ ms.locfileid: "73914434"
 
 ![Module3Chapter2step9imb](images/module3chapter2step9imb.PNG)
 
-11. Импортируйте пользовательский пакет с именем Шарингассетколлектион, который можно скачать [здесь.](https://github.com/microsoft/MixedRealityLearning/releases/tag/development)
+11. Импортируйте указанные пользовательские пакеты:
+
+    а) [Unity. HoloLens2. GettingStarted. Tutorial. Asset. 2.1.0.0. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.1.0.0/Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage)
+
+    б. [Unity. HoloLens2. Мултиусеркапабилитиес. Tutorial. Asset. 2.1.0.0. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.1.0.0/Unity.HoloLens2.MultiUserCapabilities.Tutorials.Asset.2.1.0.0.unitypackage)
+
+    >[!TIP]
+    >Если вы выполнили [учебники по началу работы](mrlearning-base-ch1.md), у вас по-прежнему может быть пакет Unity с именем _Unity. HoloLens2. GettingStarted. Tutorial. Asset. 2.1.0.0. пакет unitypackage_ , хранящийся на компьютере. Если это так, можно пропустить загрузку ресурса, указанного на шаге a выше.
 
 ![Module3Chapter2step12im](images/module3chapter2step11im.PNG)
 

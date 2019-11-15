@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: ac345ecafee3a09e3b5ad58344310234e60354a1
-ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
+ms.openlocfilehash: fb7074849c5a07a95b370b5bfa75228fac36ba5b
+ms.sourcegitcommit: 781e47db2ca2f2c792c95e76ac309b44b3535555
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73926877"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74105966"
 ---
 # <a name="1-getting-started-with-azure-spatial-anchors"></a>1. Приступая к работе с пространственными привязками Azure
 
@@ -30,9 +30,9 @@ ms.locfileid: "73926877"
 
 [Пространственные привязки Azure v 1.1.0](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v1.1.0/AzureSpatialAnchors.unitypackage)
 
-[Пакет ресурсов для модуля MR версии 1.2](https://github.com/microsoft/MixedRealityLearning/releases/download/1.2/BaseModuleAssets-1.2.unitypackage)
+[Unity. HoloLens2. GettingStarted. Tutorial. Asset. 2.1.0.0. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.1.0.0/Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage)
 
-[Пакет средств ASA Pack 1.3.1 версии v](https://github.com/Developer-OI/MixedRealityLearning/releases/download/ASA_1.3/ASAModuleAssets_1.3.1.unitypackage)
+[Unity. HoloLens2. Азуреспатиаланчор. Tutorial. Asset. 2.1.0.0. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchor-v2.1.0.0/Unity.HoloLens2.AzureSpatialAnchor.Tutorials.Asset.2.1.0.0.unitypackage)
 
 [2.1.0 пакета набора средств Mixed Reality Foundation](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.1.0)
 
@@ -66,7 +66,7 @@ ms.locfileid: "73926877"
 
 > Примечание. Вы сможете выполнить импорт, подождите несколько минут. 
 
-6. Далее следует импортировать [Пакет ресурсов модуля MR](https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2) . Подобно шагу 5, вернитесь к Unity, щелкните активы и наведите указатель на пункт Импорт пакета. Щелкните пользовательский пакет... Файлы компьютера будут отображаться снова. Перейдите к месту, где вы сохранили пакет ресурсов основного модуля. и выберите его. Нажмите кнопку "Открыть".
+6. Импортируйте [Unity. HoloLens2. GettingStarted. Tutorials. Asset. 2.1.0.0. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.1.0.0/Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage) далее. Подобно шагу 5, вернитесь к Unity, щелкните активы и наведите указатель на пункт Импорт пакета. Щелкните пользовательский пакет... Файлы компьютера будут отображаться снова. Перейдите к месту, где вы сохранили пакет ресурсов основного модуля. и выберите его. Нажмите кнопку "Открыть".
 
 ![module2chapter1step5bim](images/module2chapter1step5bim.PNG)
 

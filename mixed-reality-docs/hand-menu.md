@@ -6,16 +6,16 @@ ms.author: nobarr
 ms.date: 08/27/2019
 ms.topic: article
 keywords: рука, меню, кнопка, быстрый доступ, макет
-ms.openlocfilehash: ee958806ac462535b33164bb4faa4bf1aa29e709
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: b4ea7411be22633e82a88d1c91b6b2b1edbea735
+ms.sourcegitcommit: 781e47db2ca2f2c792c95e76ac309b44b3535555
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73439255"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74105628"
 ---
 # <a name="hand-menu"></a>Меню руки
 
-![Расположение с улнар стороны](images/MRTK_UX_HandMenu.png)
+![Расположение с улнар стороны](images/UX/UX_Hero_HandMenu.jpg)
 
 Меню руки позволяют пользователям быстро открыть пользовательский интерфейс, подключенный вручную, для часто используемых функций. 
 
@@ -127,9 +127,33 @@ ms.locfileid: "73439255"
 
 ---
 
+## <a name="hand-menu-in-mrtkmixed-reality-toolkit-for-unity"></a>Меню руки в МРТК (набор средств для смешанной реальности) для Unity
+**[Мртк](https://github.com/Microsoft/MixedRealityToolkit-Unity)** предоставляет сценарии и примеры сцен для меню руки. Сценарий Хандконстраинтпалмуп Solver позволяет легко подключать любые объекты к ним с помощью различных настраиваемых параметров.
+
+* [Меню МРТК с Хандконстраинт и Хандконстраинтпалмуп](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_Solver.md#hand-menu-with-handconstraint-and-handconstraintpalmup)
+
+
+<br>
+
+---
+
 
 ## <a name="see-also"></a>См. также
 
+* [Курсоры](cursors.md)
+* [Рука](point-and-commit.md)
+* [Button](button.md)
 * [Активный объект](interactable-object.md)
-* [Непосредственное манипулирование с использованием рук](direct-manipulation.md)
-* [Руки и контроллеры движения](hands-and-tools.md)
+* [Ограничивающая рамка и панель приложения](app-bar-and-bounding-box.md)
+* [Управлять](direct-manipulation.md)
+* [Меню руки](hand-menu.md)
+* [Ближайшее меню](near-menu.md)
+* [Коллекция объектов](object-collection.md)
+* [Voice, команда](voice-input.md)
+* [Клавиатура](keyboard.md)
+* [Сказок](tooltip.md)
+* [Рекламы](slate.md)
+* [Slider](slider.md)
+* [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
+* [Индикация хода выполнения](progress.md)
+* [Магнит поверхности](surface-magnetism.md)

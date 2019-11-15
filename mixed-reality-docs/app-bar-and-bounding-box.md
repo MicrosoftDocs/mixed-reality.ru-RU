@@ -6,19 +6,16 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Windows Mixed Reality, панель приложений, ограничивающий прямоугольник
-ms.openlocfilehash: f09187bc2a3969a8f844711052e15433f5449d6d
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 97afc0df02fd8460547e955d4fcf3e33a4e9f566
+ms.sourcegitcommit: 781e47db2ca2f2c792c95e76ac309b44b3535555
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73437057"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74105762"
 ---
 # <a name="bounding-box-and-app-bar"></a>Ограничивающий прямоугольник и панель приложений
-![Это стандартный интерфейс для манипуляций с объектами в смешанной реальности.](images/640px-boundingbox-hero.jpg)<br>
-
+![ное ограничение является стандартным интерфейсом для манипулирования объектами в смешанной реальности.](images/640px-boundingbox-hero.jpg)<br>
 <br>
-
----
 
 ## <a name="what-is-the-bounding-box"></a>Что такое ограничивающий прямоугольник?
 
@@ -95,15 +92,33 @@ ms.locfileid: "73437057"
 <br>
 
 
+## <a name="bounding-box-in-mrtkmixed-reality-toolkit-for-unity"></a>Ограничивающий прямоугольник в МРТК (набор средств для смешанной реальности) для Unity
+**[Мртк](https://github.com/Microsoft/MixedRealityToolkit-Unity)** предоставляет скрипты и Prefabs для ограничивающего прямоугольника и панели приложений. Можно добавить ограничивающий прямоугольник, просто назначив сценарий BoundingBox.cs на любой объект.
 
-**Сведения о разработке приложений Unity см [. в разделе Панель приложений в наборе средств для смешанной реальности — Unity.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_AppBar.html)**
+* [МРТК-ограничивающий прямоугольник](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
+
 
 <br>
 
 ---
 
+
 ## <a name="see-also"></a>См. также
+
+* [Курсоры](cursors.md)
+* [Рука](point-and-commit.md)
+* [Button](button.md)
 * [Активный объект](interactable-object.md)
-* [Текст в Unity](text-in-unity.md)
+* [Ограничивающая рамка и панель приложения](app-bar-and-bounding-box.md)
+* [Управлять](direct-manipulation.md)
+* [Меню руки](hand-menu.md)
+* [Ближайшее меню](near-menu.md)
 * [Коллекция объектов](object-collection.md)
+* [Voice, команда](voice-input.md)
+* [Клавиатура](keyboard.md)
+* [Сказок](tooltip.md)
+* [Рекламы](slate.md)
+* [Slider](slider.md)
+* [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
 * [Индикация хода выполнения](progress.md)
+* [Магнит поверхности](surface-magnetism.md)
