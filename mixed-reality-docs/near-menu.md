@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Смешанная реальность, элементы управления, взаимодействие, Пользовательский интерфейс, UX
-ms.openlocfilehash: 696aa516aa51f32ee0d687338c9783d2b4d46afb
-ms.sourcegitcommit: 781e47db2ca2f2c792c95e76ac309b44b3535555
+ms.openlocfilehash: 693516285457885f62fe96e6a20d829b007d80fc
+ms.sourcegitcommit: 17427d4d8c3723d53540f1b7f5bc061bba08c1d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74106233"
+ms.lasthandoff: 11/17/2019
+ms.locfileid: "74143208"
 ---
 # <a name="near-menu"></a>Ближайшее меню
 
@@ -52,6 +52,7 @@ ms.locfileid: "74106233"
 * [Сказок](tooltip.md)
 * [Рекламы](slate.md)
 * [Slider](slider.md)
+* [Шейдера](shader.md)
 * [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
 * [Индикация хода выполнения](progress.md)
 * [Магнит поверхности](surface-magnetism.md)

@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, объявление, пометка — вместе
-ms.openlocfilehash: 06cd1c6f67f8aa2dd94173d4089adbdbd0765211
-ms.sourcegitcommit: 781e47db2ca2f2c792c95e76ac309b44b3535555
+ms.openlocfilehash: ff2b1ce20174b1b9aecbb90b1d1dc3e8896b3761
+ms.sourcegitcommit: 17427d4d8c3723d53540f1b7f5bc061bba08c1d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74105727"
+ms.lasthandoff: 11/17/2019
+ms.locfileid: "74143126"
 ---
 # <a name="billboarding-and-tag-along"></a>Объявления и теги — вместе
 
@@ -73,6 +73,7 @@ Tag — это понятие поведения, которое можно до
 * [Сказок](tooltip.md)
 * [Рекламы](slate.md)
 * [Slider](slider.md)
+* [Шейдера](shader.md)
 * [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
 * [Индикация хода выполнения](progress.md)
 * [Магнит поверхности](surface-magnetism.md)
