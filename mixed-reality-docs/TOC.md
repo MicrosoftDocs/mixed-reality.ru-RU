@@ -84,6 +84,7 @@
 #### [Подсказка](tooltip.md)
 #### [Планшет](slate.md)
 #### [Slider](slider.md)
+#### [Шейдер](shader.md)
 #### [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
 #### [Индикация хода выполнения](progress.md)
 #### [Притяжение к поверхности](surface-magnetism.md)
