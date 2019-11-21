@@ -7,14 +7,16 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Смешанная реальность, взаимодействие, проектирование, HoloLens, руки, вдали, указание и фиксация
-ms.openlocfilehash: e454b7f26b402d5c168323762865d10f7feb8a17
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 77c596f5250240d436529e879434a8f508b06732
+ms.sourcegitcommit: 781e47db2ca2f2c792c95e76ac309b44b3535555
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73437592"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74105996"
 ---
 # <a name="point-and-commit-with-hands"></a>Наведение и фиксация с использованием рук
+
+![Курсоры](images/UX/UX_Hero_HandRay.jpg)
 
 Наведение и фиксация с использованием рук представляет собой модель ввода, которая позволяет пользователям нацеливаться на двухмерное содержимое и трехмерные объекты, а также выделять их и управлять ими на расстоянии. Этот способ удаленного взаимодействия характерен только для смешанной реальности. В реальном мире люди не взаимодействуют так с объектами. Например, в фильме о супергероях *Люди Икс* персонаж [Магнето](https://en.wikipedia.org/wiki/Magneto_(comics)) способен дотягиваться до удаленных объектов и манипулировать ими на расстоянии с использованием рук. Это не то, что люди могут делать в реальности. В HoloLens (AR) и смешанной реальности (MR) мы снабжаем пользователей этой магической силой, преодолевающей физические ограничения реального мира не только для работы с голографическим содержимым, но и для более эффективного взаимодействия.
 
@@ -195,6 +197,17 @@ _Наведение и фиксация_ — одна из появившихс
 :::row-end:::
 
 <br>
+
+
+---
+
+## <a name="hand-ray-in-mrtkmixed-reality-toolkit-for-unity"></a>Телекинез в MRTK (наборе средств для смешанной реальности) для Unity
+По умолчанию в MRTK предоставляется заготовка для телекинеза ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)), которая имеет то же визуальное состояние, что и телекинез в системе оболочки. Она назначается в профиле ввода данных в MRTK в разделе "Указатели". В иммерсивной гарнитуре Windows Mixed Reality для контроллеров движений используются такие же лучи, как и в телекинезе.
+
+* [MRTK — профиль указателя](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
+* [MRTK — система ввода](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
+* [MRTK — указатели](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
+
 
 ---
 
