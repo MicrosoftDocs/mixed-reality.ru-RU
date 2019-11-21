@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 04/30/2019
 ms.topic: article
 keywords: руки, контроллеры движения, DirectX, ввод, голограммы
-ms.openlocfilehash: 7b8222e5e539eb95b07cc24d6b49106bd174b490
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 54eaacc3f0dccf728b5438c020a5efd7e0788251
+ms.sourcegitcommit: 4081dc2356fec0ea3625f1d989689cfbbb3fcf5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73435194"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74203332"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>Руки и контроллеры движения в DirectX
 
@@ -99,7 +99,7 @@ for (auto& sourceState : sourceStates)
 ## <a name="cross-device-input-properties"></a>Свойства ввода для разных устройств
 API Спатиалинтерактионсаурце поддерживает контроллеры и системы отслеживания вручную с широким спектром возможностей. Некоторые из этих возможностей являются общими для разных типов устройств. Например, для отслеживания и контроллеров движения вручную предоставляется действие "Select" и трехмерное расположение. Везде, где это возможно, API сопоставляет эти общие возможности тем же свойствам в Спатиалинтерактионсаурце.  Это позволяет приложениям более легко поддерживать широкий спектр входных типов. В следующей таблице описаны поддерживаемые свойства и их сравнение во входных типах.
 
-| Свойство | Описание | Жесты HoloLens | Контроллеры движения | Руки с формулировкой|
+| Свойство | Описание | Жесты HoloLens (1-го поколения) | Контроллеры движения | Руки с формулировкой|
 |--- |--- |--- |--- |--- |
 | [Спатиалинтерактионсаурце::**правой или левой**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | Правый или левый рукой или Controller. | Не поддерживается | Поддерживается | Поддерживается |
 | [Спатиалинтерактионсаурцестате::**исселектпрессед**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | Текущее состояние основной кнопки. | Касание Air | Необходимость | Небольшое воздушное касание (вертикальное сжатие) |
@@ -122,7 +122,7 @@ Windows Mixed Reality поддерживает контроллеры движе
 * **Прямая ось ориентации захвата**: когда вы частично закрываете руку (как при удержании контроллера), луч, который указывает на "Forward" через лампу, сформированную небегункными пальцами.
 * **Ось Up (вверх) для ориентации захвата**: ось Up, подразумеваемая правым и прямым определением.
 
-Доступ к **указателю** a можно получить через [спатиалинтерактионсаурцестате::P списке:: трижетлокатион (...):: саурцепоинтерпосе](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation#Windows_UI_Input_Spatial_SpatialInteractionSourceLocation_SourcePointerPose) или [спатиалинтерактионсаурцестате:: TryGetPointerPose (...):: TryGetInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerpose#Windows_UI_Input_Spatial_SpatialPointerPose_TryGetInteractionSourcePose_Windows_UI_Input_Spatial_SpatialInteractionSource_) .
+Вы можете получить доступ к **указателю** с помощью [спатиалинтерактионсаурцестате::P списке:: трижетлокатион (...):: саурцепоинтерпосе](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation#Windows_UI_Input_Spatial_SpatialInteractionSourceLocation_SourcePointerPose) или [спатиалинтерактионсаурцестате:: TryGetPointerPose (...):: TryGetInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerpose#Windows_UI_Input_Spatial_SpatialPointerPose_TryGetInteractionSourcePose_Windows_UI_Input_Spatial_SpatialInteractionSource_).
 
 ## <a name="controller-specific-input-properties"></a>Входные свойства, зависящие от контроллера
 Для контроллеров Спатиалинтерактионсаурце имеет свойство Controller с дополнительными возможностями.
@@ -149,7 +149,7 @@ API Windows Mixed Reality обеспечивает полную поддержк
 | Имя | Описание |
 |--- |--- |
 |Положение | Трехмерное положение соединения, доступное в любой запрошенной системе координат. |
-|Orientation | Трехмерная ориентация кости, доступная в любой запрошенной системе координат. |
+|Ориентация | Трехмерная ориентация кости, доступная в любой запрошенной системе координат. |
 |Радиус | Расстояние до поверхности обложки в связной позиции. Полезно для настройки прямых взаимодействий или визуализаций, использующих ширину пальца. |
 |Точность | Предоставляет указание о том, насколько надежна система относительно данных этого соединения. |
 

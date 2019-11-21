@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: жесты, контроллеры движения, Unity, взгляд, входные данные
-ms.openlocfilehash: 49f4181f62b1b2ac73c65c6cbdcdc57ba1b57aaa
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: b60c5567714893f2d1f2cc929e832bb851dd9e34
+ms.sourcegitcommit: 4081dc2356fec0ea3625f1d989689cfbbb3fcf5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73435235"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74203324"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Взгляд на руки и отслеживание глаз в Unity
 
@@ -19,7 +19,7 @@ ms.locfileid: "73435235"
 
 Самый простой способ использовать новую возможность в Unity — МРТК v2. Также есть несколько примеров сцен, которые помогут вам приступить к работе. 
 
-* [Приступая к работе с наладонными руками в МРТК v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/InputSystem/HandTracking.html)
+* [Приступая к работе с наладонными руками в МРТК v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html)
 * [Приступая к работе с отслеживанием взгляда в МРТК v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)
 
 
@@ -48,12 +48,12 @@ ms.locfileid: "73435235"
 
 ## <a name="see-also"></a>См. также
 
-* [Взаимодействие на основе глаз] (eye-gaze-interaction.md)
-* [Отслеживание взглядов на HoloLens 2] (eye-tracking.md)
-* [Взгляните и зафиксируйте](gaze-and-commit.md)
-* [Руки — прямое управление](direct-manipulation.md)
-* [Жесты руки](gaze-and-commit.md#composite-gestures)
-* [Практические указания и фиксация](point-and-commit.md)
+* [Взаимодействие на основе взгляда] (eye-gaze-interaction.md)
+* [Отслеживание глаз в HoloLens 2] (eye-tracking.md)
+* [Взгляд и фиксация](gaze-and-commit.md)
+* [Руки: непосредственное манипулирование](direct-manipulation.md)
+* [Руки: жесты](gaze-and-commit.md#composite-gestures)
+* [Руки: наведение и фиксация](point-and-commit.md)
 * [Инстинктивное взаимодействие](interaction-fundamentals.md)
 * [Контроллеры движения](motion-controllers.md)
 * [UnityEngine. XR. WSA. input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
