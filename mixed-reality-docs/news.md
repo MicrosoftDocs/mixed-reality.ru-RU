@@ -47,7 +47,7 @@ ms.locfileid: "73439905"
 <td>Руководство по проектированию и разработке для HoloLens 2</td><td>Октябрь 2019 г.</td><td> <ul><li>Обзор <a href=https://docs.microsoft.com/windows/mixed-reality/>Mixed Reality</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/design>Проектирование и создание прототипов</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/development>Средства и архитектура разработчика</a></td>
 </tr>
 <tr>
-  <td>Новые сведения о нереальном</td><td>Октябрь 2019 г.</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview>Общие сведения о нереальном разработке</a></td>
+  <td>Новые сведения о нереальном</td><td>Октябрь 2019 г.</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview>Обзор разработки для Unreal</a></td>
 </tr>
 <tr>
   <td>Проектирование Microsoft Fluent</td><td>Октябрь 2019 г.</td><td> <ul><li><a href=https://www.microsoft.com/design/fluent/>страницы проектирования смешанной реальности</a></td>
