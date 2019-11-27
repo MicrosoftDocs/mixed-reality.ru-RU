@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: приложение, UWP, отправка, отправка, фильтры, метаданные, требования к системе, ключевые слова, wack, сертификация, пакет, appx, товары
-ms.openlocfilehash: 63377239498319e84666ba0dbdbe36ce626901c5
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: f2eb4093a2bea51d8c39b94d23777e426810981e
+ms.sourcegitcommit: 83698638b93c5ba77b3ffc399f1706482539f27b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73437434"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74539612"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Отправка приложения в Microsoft Store
 
@@ -76,6 +76,14 @@ ms.locfileid: "73437434"
 </Dependencies>
 ```
 
+Если приложению требуются функции **HoloLens 2** , например отслеживание взгляда или отслеживание вручную, то можно убедиться, что оно предназначено для windows версии 18362 или более поздней, указав целевое семейство устройств "Windows. holographic" и MinVersion 10.0.18362.0. 
+
+```
+<Dependencies>
+   <TargetDeviceFamily Name="Windows.Holographic" MinVersion="10.0.18362.0" MaxVersionTested="10.0.18362.0" />
+</Dependencies>
+```
+
 Если ваше приложение создано для **впечатляющих головных телефонов Windows Mixed Reality**, то вы можете убедиться, что он установлен только на компьютерах с Windows 10 с обновлением Windows 10 Creators (требуется для Windows Mixed Reality), указав целевое семейство устройств " Windows. Desktop "и MinVersion для" 10.0.16299.0 ".
 
 ```
@@ -119,6 +127,11 @@ ms.locfileid: "73437434"
 Если имеется пакет Windows. Universal и пакет Windows. holographic, а пакет Windows. Universal имеет более высокий номер версии, пользователь HoloLens загрузит номер версии Windows. универсальный пакет, а не Windows. Holographic. пакеты. Существует несколько решений этой проблемы.
 1. Убедитесь, что пакеты конкретных платформ, например Windows. holographic, всегда имеют более высокий номер версии, чем независимые от платформы пакеты, такие как Windows. Universal.
 2. Не упаковывайте приложения как Windows. Universal, если у вас также есть пакеты для конкретных платформ. вместо этого упакуйте пакет Windows. Universal для конкретных платформ, на которых вы хотите получить доступ.
+
+>[!NOTE]
+> Чтобы обеспечить поддержку приложения на HoloLens (1-го поколения) и Хололен 2, необходимо отправить два пакета приложений. один содержит x86 для HoloLens (1-го поколения) и один, содержащий ARM или ARM64 для HoloLens 2. 
+> 
+> Если в пакете включить ARM и ARM64, то в HoloLens 2 будет использоваться версия ARM64. 
 
 >[!NOTE]
 > Можно объявить один пакет, который должен быть применим к нескольким семействам целевых устройств.
