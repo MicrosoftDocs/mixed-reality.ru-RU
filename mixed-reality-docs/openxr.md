@@ -1,11 +1,11 @@
 ---
-title: OpenXR
-description: Build an engine using the portable OpenXR API standard and deploy it to Windows Mixed Reality and HoloLens 2 headsets.
+title: опенкср
+description: Создайте подсистему с помощью переносимого стандарта API Опенкср и разверните его на гарнитурах Windows Mixed Reality и HoloLens 2.
 author: thetuvix
 ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
-keywords: OpenXR, Khronos, BasicXRApp, Mixed Reality OpenXR Developer Portal, DirectX, native, native app, custom engine, middleware
+keywords: Портал разработчика Опенкср, Кхронос, Басикксрапп, Смешанная реальность Опенкср, DirectX, Native, собственное приложение, настраиваемое подсистема, по промежуточного слоя
 ms.openlocfilehash: aa91918e20b4276b7453bae1a05ad18df9d8ab0e
 ms.sourcegitcommit: 4d43a8f40e3132605cee9ece9229e67d985db645
 ms.translationtype: MT
@@ -13,217 +13,217 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/26/2019
 ms.locfileid: "74491133"
 ---
-# <a name="openxr"></a>OpenXR
+# <a name="openxr"></a>опенкср
 
-OpenXR is an open royalty-free API standard from <a href="https://www.khronos.org/" target="_blank">Khronos</a> that provides engines native access to a wide range of devices from many vendors that span across the [mixed reality spectrum](mixed-reality.md).
+Опенкср — это открытый стандарт API из <a href="https://www.khronos.org/" target="_blank">кхронос</a> , который предоставляет механизмам собственный доступ к широкому спектру устройств от многих поставщиков, охватывающих спектр различных [типов](mixed-reality.md).
 
-You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop.  If you don't have access to a headset, you can use the HoloLens 2 Emulator or the Windows Mixed Reality Simulator instead.
+Вы можете разрабатывать приложения с помощью Опенкср на виртуальной головной гарнитуре HoloLens 2 или Windows Mixed Reality на рабочем столе.  Если у вас нет доступа к гарнитуре, можно использовать эмулятор HoloLens 2 или симулятор Windows Mixed Reality.
 
-## <a name="why-openxr"></a>Why OpenXR?
+## <a name="why-openxr"></a>Зачем Опенкср?
 
-With OpenXR, you can build engines that target both holographic devices (like HoloLens 2) that place digital content in the real world as if it were really there, as well as immersive devices (like Windows Mixed Reality headsets for desktop PCs) that hide the physical world and replace it with a digital experience.  OpenXR lets you write code once that's then portable across a wide range of hardware platforms.
+С помощью Опенкср вы можете создавать обработчики, предназначенные как для holographic устройств (например, HoloLens 2), которые размещают цифровое содержимое в реальном мире, как если бы оно было на самом деле, а также как впечатляющие устройства (например, гарнитуры Windows Mixed Reality для настольных ПК), которые скрывают физические мир и замените его цифровой опытом.  Опенкср позволяет написать код, который затем будет переносимым на широком диапазоне аппаратных платформ.
 
-The OpenXR API uses a loader that connects your application directly to your headset's native platform support.  This offers your end users maximum performance and minimum latency, whether they're using a Windows Mixed Reality headset or any other headset.
+API Опенкср использует загрузчик, который подключает ваше приложение непосредственно к поддержке собственной платформы вашей гарнитуры.  Это обеспечивает максимальную производительность и минимальную задержку конечных пользователей независимо от того, используете ли они гарнитуру Windows Mixed Reality или любую другую гарнитуру.
 
-## <a name="what-is-openxr"></a>What is OpenXR?
+## <a name="what-is-openxr"></a>Что такое Опенкср?
 
-The core OpenXR 1.0 API provides the base functionality you'll need to build an engine that can target both holographic devices like HoloLens 2 and immersive devices like Windows Mixed Reality headsets:
-* Systems + sessions
-* Reference spaces (view, local, stage)
-* View configurations (mono, stereo)
-* Swapchains + frame timing
-* Composition layers
-* Input and haptics
-* Graphics API + platform integration
+Основной API-интерфейс Опенкср 1,0 предоставляет базовые функциональные возможности, необходимые для создания подсистемы, которая может нацелить как holographic-устройства, такие как HoloLens 2, так и иммерсивное устройство, например гарнитуры Windows Mixed Reality:
+* Системы + сеансы
+* Справочные пространства (Просмотр, локальный, этап)
+* Просмотр конфигураций (моно, стерео)
+* Цепочек переключений + время кадров
+* Слои композиции
+* Входные и хаптикс
+* API графики и интеграция платформы
 
-To learn about the OpenXR API, check out the OpenXR 1.0 <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">specification</a>, <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html" target="_blank">API reference</a> and <a href="https://www.khronos.org/files/openxr-10-reference-guide.pdf" target="_blank">quick reference guide</a>.  For more information, see the <a href="https://www.khronos.org/openxr/" target="_blank">Khronos OpenXR page</a>.
+Чтобы узнать об API Опенкср, ознакомьтесь со <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">спецификацией</a>опенкср 1,0, <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html" target="_blank">справочником по API</a> и <a href="https://www.khronos.org/files/openxr-10-reference-guide.pdf" target="_blank">кратким справочником</a>.  Дополнительные сведения см. на <a href="https://www.khronos.org/openxr/" target="_blank">странице Кхронос опенкср</a>.
 
-To target the full feature set of HoloLens 2, you'll also use cross-vendor and vendor-specific OpenXR extensions that enable additional features beyond the OpenXR 1.0 core, such as articulated hand tracking, eye tracking, spatial mapping and spatial anchors.  See the [Roadmap section](openxr.md#roadmap) section below for more information on the extensions coming later this year.
+Чтобы ориентироваться на полный набор функций HoloLens 2, вы также будете использовать расширения Опенкср, относящиеся к поставщику и поставщику, которые предоставляют дополнительные функции за пределами ядра Опенкср 1,0, такие как отслеживание, отслеживание глаз, пространственное сопоставление и пространственные привязки.  Дополнительные сведения о расширениях, которые появятся позже в этом году, см. в разделе о [планах](openxr.md#roadmap) ниже.
 
-Note that OpenXR is not itself a mixed reality engine.  Instead, OpenXR enables engines like Unity and Unreal to write portable code once that can then access the native platform features of the user's holographic or immersive device, regardless of which vendor built that platform.
+Обратите внимание, что Опенкср не является механизмом смешанной реальности.  Вместо этого Опенкср позволяет использовать такие модули, как Unity и Нереал, для написания переносимого кода, который затем может получить доступ к функциям собственной платформы в holographic или иммерсивное устройство пользователя независимо от того, какой поставщик создал эту платформу.
 
-## <a name="getting-started-with-openxr-for-hololens-2"></a>Getting started with OpenXR for HoloLens 2
+## <a name="getting-started-with-openxr-for-hololens-2"></a>Начало работы с Опенкср для HoloLens 2
 
-To start developing OpenXR applications for HoloLens 2:
+Чтобы приступить к разработке приложений Опенкср для HoloLens 2:
 
-1. Set up a HoloLens 2 or follow the instructions to [install the HoloLens 2 emulator](using-the-hololens-emulator.md).
-1. Launch the Store app from within the device or emulator and ensure all apps are updated.  This will ensure that the OpenXR runtime on your HoloLens is updated to OpenXR 1.0.  If using the emulator, you'll want to consult the [emulator input instructions](using-the-hololens-emulator.md#basic-emulator-input) to help you use the Store app within the emulator.
+1. Настройте HoloLens 2 или следуйте инструкциям по [установке эмулятора hololens 2](using-the-hololens-emulator.md).
+1. Запустите приложение магазина на устройстве или в эмуляторе и убедитесь, что все приложения обновлены.  Это обеспечит обновление среды выполнения Опенкср на HoloLens до Опенкср 1,0.  При использовании эмулятора необходимо изучить [входные инструкции эмулятора](using-the-hololens-emulator.md#basic-emulator-input) , которые помогут вам использовать приложение магазина в эмуляторе.
 
-## <a name="getting-started-with-openxr-for-windows-mixed-reality-headsets"></a>Getting started with OpenXR for Windows Mixed Reality headsets
+## <a name="getting-started-with-openxr-for-windows-mixed-reality-headsets"></a>Начало работы с Опенкср для головных телефонов Windows Mixed Reality
 
-To start developing OpenXR applications for immersive Windows Mixed Reality headsets:
+Чтобы приступить к разработке приложений Опенкср для впечатляющих головных телефонов Windows Mixed Reality:
 
-1. Be sure you are running the Windows 10 May 2019 Update (1903), which is the minimum requirement for Windows Mixed Reality end users to run OpenXR applications.  If you're on an earlier version of Windows 10, you can upgrade to the May 2019 Update using the <a href="https://www.microsoft.com//software-download/windows10" target="_blank">Windows 10 Update Assistant</a>.  If you're not able to update your PC, it is also possible to [develop your OpenXR app using Windows 10 October 2018 Update (1809)](openxr.md#developing-on-windows-10-october-2018-update), although you may experience lower performance or other issues.
-2. Set up a Windows Mixed Reality headset or follow the instructions to [enable the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md).  After setting up Windows Mixed Reality, Mixed Reality Portal will automatically install the Windows Mixed Reality OpenXR Runtime.  The Microsoft Store will then keep the runtime up to date.
-3. Make the Windows Mixed Reality OpenXR Runtime active by launching Mixed Reality Portal from the Start menu, clicking the ... menu in the lower-left and selecting "Set up OpenXR".<br>
-![Setting up OpenXR in the Mixed Reality Portal](images/mixed-reality-portal-set-up-openxr.png)
+1. Убедитесь, что вы используете Windows 10 с обновлением 2019 (1903), что является минимальным требованием для конечных пользователей Windows Mixed Reality запускать приложения Опенкср.  Если вы используете более раннюю версию Windows 10, вы можете выполнить обновление до 2019 с помощью <a href="https://www.microsoft.com//software-download/windows10" target="_blank">помощника по обновлению Windows 10</a>.  Если вы не можете обновить свой компьютер, можно также [разработать приложение опенкср с помощью Windows 10 октября 2018 с обновлением (1809)](openxr.md#developing-on-windows-10-october-2018-update), хотя производительность и другие проблемы могут быть снижены.
+2. Настройте гарнитуру Windows Mixed Reality или следуйте инструкциям по [включению симулятора Windows Mixed Reality](using-the-windows-mixed-reality-simulator.md).  После настройки Windows Mixed Reality портал смешанной реальности автоматически установит среду выполнения Опенкср Windows Mixed Reality.  Microsoft Store будет синхронизировать среду выполнения в актуальном состоянии.
+3. Чтобы активировать среду выполнения Опенкср в Windows Mixed Reality, запустите портал Mixed Reality из меню "Пуск", щелкнув... в левом нижнем углу и выбрав "настроить Опенкср".<br>
+![настройке Опенкср на портале Mixed Reality](images/mixed-reality-portal-set-up-openxr.png)
 
-If you ever need to make the Windows Mixed Reality OpenXR Runtime active again, repeat step 3.
+Если вам когда-либо потребуется снова активировать среду выполнения Опенкср в Windows Mixed Reality, повторите шаг 3.
 
 > [!NOTE]
-> The Windows Mixed Reality OpenXR Runtime will soon be set up automatically for all Windows Mixed Reality end users.
+> В ближайшее время среда выполнения Опенкср Windows Mixed Reality будет настроена автоматически для всех конечных пользователей Windows Mixed Reality.
 
-## <a name="getting-the-mixed-reality-openxr-developer-portal"></a>Getting the Mixed Reality OpenXR Developer Portal
+## <a name="getting-the-mixed-reality-openxr-developer-portal"></a>Получение портала для разработчиков смешанной реальности Опенкср
 
-To try out the Windows Mixed Reality OpenXR Runtime, you can install the <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">[Mixed Reality OpenXR Developer Portal app</a>.  This app provides a demo scene that exercises various features of OpenXR, along with a System Status page that provides key information about the active runtime and the current headset.
+Чтобы испытать среду выполнения Опенкср в Windows Mixed Reality, можно установить <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">приложение портала разработчика для смешанной реальности опенкср</a>.  Это приложение содержит демонстрационную сцену, в которой реализованы различные функции Опенкср, а также страница состояния системы, которая содержит основные сведения об активной среде выполнения и текущей гарнитуре.
 
-![Mixed Reality OpenXR Developer Portal app](images/mixed-reality-openxr-developer-portal.png)
+![Приложение портала для разработчиков смешанной реальности Опенкср](images/mixed-reality-openxr-developer-portal.png)
 
-## <a name="building-a-sample-openxr-app"></a>Building a sample OpenXR app
+## <a name="building-a-sample-openxr-app"></a>Создание примера приложения Опенкср
 
-The <a href="https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.  Because the solution contains a HoloLens UWP project, you'll need the [Universal Windows Platform development workload](install-the-tools.md#installation-checklist) installed in Visual Studio to fully open it.
+Проект <a href="https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp" target="_blank">басикксрапп</a> демонстрирует простой пример опенкср с двумя файлами проекта Visual Studio: один для классического приложения Win32 и один для приложения UWP HoloLens 2.  Так как решение содержит проект HoloLens UWP, для его полного открытия вам потребуется [Рабочая нагрузка "разработка универсальная платформа Windows](install-the-tools.md#installation-checklist) ", установленная в Visual Studio.
 
-Note that while the Win32 and UWP project files are separate due to differences in packaging and deployment, the app code inside each project is 100% the same!
+Обратите внимание, что хотя файлы проекта Win32 и UWP являются отдельными из-за различий в упаковке и развертывании, код приложения внутри каждого проекта составляет 100%.
 
-After building an OpenXR Win32 desktop .EXE, you can use it with a VR headset on any desktop VR platform that supports OpenXR, whether it's a Windows Mixed Reality headset or any other headset.
+После создания рабочего стола Win32 Опенкср. EXE, вы можете использовать его с головной гарнитурой VR на любой платформе Desktop VR, которая поддерживает Опенкср, будь то гарнитура Windows Mixed Reality или любая другая гарнитура.
 
-After building an OpenXR UWP app package, you can [deploy that package](using-visual-studio.md) to either a HoloLens 2 device or the HoloLens 2 Emulator.
+После создания пакета приложения UWP Опенкср можно [развернуть этот пакет](using-visual-studio.md) на устройстве hololens 2 или в эмуляторе hololens 2.
 
-## <a name="openxr-app-best-practices-for-hololens-2"></a>OpenXR app best practices for HoloLens 2
+## <a name="openxr-app-best-practices-for-hololens-2"></a>Рекомендации по приложениям Опенкср для HoloLens 2
 
-You can see an example of the best practices below in BasicXrApp's [OpenXRProgram.cpp](https://github.com/microsoft/OpenXR-SDK-VisualStudio/blob/master/samples/BasicXrApp/OpenXrProgram.cpp) file. The Run() function at the beginning captures a typical OpenXR app code flow from initialization to the event and rendering loop.
+Ниже приведены примеры лучших методов в файле [опенксрпрограм. cpp](https://github.com/microsoft/OpenXR-SDK-VisualStudio/blob/master/samples/BasicXrApp/OpenXrProgram.cpp) для басикксрапп. Функция Run () в начале фиксирует типичный поток кода приложения Опенкср из инициализации в цикле событий и отрисовки.
 
-### <a name="select-a-pixel-format"></a>Select a pixel format
+### <a name="select-a-pixel-format"></a>Выберите формат пикселей
 
-Always enumerate supported pixel formats using `xrEnumerateSwapchainFormats`, and choose the first color and depth pixel format from the runtime that the app supports, because that's what the runtime prefers. Note, on HoloLens 2, `DXGI_FORMAT_B8G8R8A8_UNORM_SRGB` and `DXGI_FORMAT_D16_UNORM` is typically the first choice to achieve better rendering performance. This preference can be different on VR headsets running on a Desktop PC.  
+Всегда перечислите Поддерживаемые форматы пикселей с помощью `xrEnumerateSwapchainFormats`и выберите первый цвет и формат пикселей глубины из среды выполнения, которую поддерживает приложение, поскольку это предпочтительно для среды выполнения. Обратите внимание, что в HoloLens 2 `DXGI_FORMAT_B8G8R8A8_UNORM_SRGB` и `DXGI_FORMAT_D16_UNORM`, как правило, являются первым выбором для достижения лучшей производительности отрисовки. Этот параметр может отличаться на гарнитурах VR, работающих на настольном ПК.  
   
-**Performance Warning:** Using a format other than the primary swapchain color format will result in runtime post-processing which comes at a significant performance penalty.
+**Предупреждение о производительности:** Использование формата, отличного от основного цвета имеющуюся цепочку буферов, приведет к последующей обработке во время выполнения, что приводит к значительному снижению производительности.
 
-### <a name="gamma-correct-rendering"></a>Gamma-correct rendering
+### <a name="gamma-correct-rendering"></a>Гамма-Правильная отрисовка
 
-Although this applies to all OpenXR runtimes, care must be taken to ensure the rendering pipeline is gamma-correct. When rendering to a swapchain, the render-target view format should match the swapchain format (e.g. DXGI_FORMAT_B8G8R8A8_UNORM_SRGB for both the swapchain format and the render-target view).
-The exception is if the app's rendering pipeline does a manual sRGB conversion in shader code, in which case the app should request an sRGB swapchain format but use the linear format for the render-target view (e.g. request DXGI_FORMAT_B8G8R8A8_UNORM_SRGB as the swapchain format but use DXGI_FORMAT_B8G8R8A8_UNORM as the render-target view) to prevent content from being double-gamma corrected.
+Хотя это применимо ко всем средам выполнения Опенкср, необходимо соблюдать осторожность, чтобы убедиться, что конвейер отрисовки является гамма-верным. При подготовке к просмотру в имеющуюся цепочку буферов формат представления "Визуализация-целевой объект" должен соответствовать формату имеющуюся цепочку буферов (например, DXGI_FORMAT_B8G8R8A8_UNORM_SRGB как для формата имеющуюся цепочку буферов, так и для представления целевого объекта визуализации).
+Исключением является ситуация, когда конвейер отрисовки приложения выполняет ручное преобразование sRGB в коде шейдера. в этом случае приложение должно запрашивать формат имеющуюся цепочку буферов sRGB, но использовать линейный формат для представления целевого объекта визуализации (например, запрос DXGI_FORMAT_B8G8R8A8_UNORM_SRGB как имеющуюся цепочку буферов Format, но используйте DXGI_FORMAT_B8G8R8A8_UNORM в качестве представления целевого объекта, чтобы избежать повторной гаммы содержимого.
 
-### <a name="use-a-single-projection-layer"></a>Use a single projection layer
+### <a name="use-a-single-projection-layer"></a>Использование одного слоя проекции
 
-HoloLens 2 has limited GPU power for applications to render content and a hardware compositor optimized for a single projection layer.
-Always using a single projection layer can help the application's framerate, hologram stability and visual quality.  
+HoloLens 2 имеет ограниченную мощность GPU для приложений для отрисовки содержимого и аппаратного компоновщика, оптимизированного для одного уровня проекции.
+Всегда использование одного уровня проекции может помочь снизить частоту работы приложения, голограмму и качество визуального элемента.  
   
-**Performance Warning:** Submitting anything but a single protection layer will result in runtime post-processing which comes at a significant performance penalty.
+**Предупреждение о производительности:** Передача любого, но одного уровня защиты приведет к последующей обработке во время выполнения, что значительно снижает производительность.
 
-### <a name="render-with-texture-array-and-vprt"></a>Render with texture array and VPRT
+### <a name="render-with-texture-array-and-vprt"></a>Отрисовка с помощью массива текстур и ВПРТ
 
-Create one `xrSwapchain` for both left and right eye using `arraySize=2` for color swapchain, and one for depth.
-Render the left eye into slice 0 and the right eye into slice 1.
-Use a shader with VPRT and instanced draw calls for stereoscopic rendering to minimize GPU load.
-This also enables the runtime's optimization to achieve the best performance on HoloLens 2.
-Alternatives to using a texture array, such as double-wide rendering or a separate swapchain per eye, will result in runtime post-processing which comes at a significant performance penalty.
+Создайте один `xrSwapchain` для левого и правого глаз, используя `arraySize=2` для цвета имеющуюся цепочку буферов и один для глубины.
+Просматривайте левый глаз в срезе 0 и вправо на срез 1.
+Используйте шейдер с ВПРТ и экземплярными вызовами Draw для отрисовки стереоскопик, чтобы избежать загрузки GPU.
+Это также позволяет оптимизировать среду выполнения для достижения наилучшей производительности в HoloLens 2.
+Альтернативы использованию массива текстур, такого как отрисовка на уровне Double или отдельная имеющуюся цепочку буферов на глаз, приводят к последующей обработке во время выполнения, что значительно снижает производительность.
 
-### <a name="render-with-recommended-rendering-parameters-and-frame-timing"></a>Render with recommended rendering parameters and frame timing
+### <a name="render-with-recommended-rendering-parameters-and-frame-timing"></a>Подготовка к просмотру с рекомендуемыми параметрами отрисовки и временем кадров
 
-Always render with the recommended view configuration width/height (`recommendedImageRectWidth` and `recommendedImageRectHeight` from `XrViewConfigurationView`), and always use `xrLocateViews` API to query for the recommended view pose, fov, and other rendering parameters before rendering.
-Always use the `XrFrameEndInfo.predictedDisplayTime` from the latest `xrWaitFrame` call when querying for poses and views.
-This allows HoloLens to adjust rendering and optimize visual quality for the person who is wearing the HoloLens.
+Всегда выводится с рекомендуемой шириной или высотой конфигурации представления (`recommendedImageRectWidth` и `recommendedImageRectHeight` из `XrViewConfigurationView`) и всегда используйте API `xrLocateViews`, чтобы запросить Рекомендуемые параметры представления, фов и другие для подготовки к просмотру.
+Всегда используйте `XrFrameEndInfo.predictedDisplayTime` из последнего вызова `xrWaitFrame` при запросе представлений и объектов.
+Это позволит HoloLens настроить визуализацию и оптимизировать визуальное качество для пользователя, людьми HoloLens.
 
-### <a name="submit-depth-buffer-for-projection-layers"></a>Submit depth buffer for projection layers
+### <a name="submit-depth-buffer-for-projection-layers"></a>Отправка буфера глубины для слоев проекции
 
-Always use `XR_KHR_composition_layer_depth` extension and submit the depth buffer together with the projection layer when submitting a frame to `xrEndFrame`.
-This improves hologram stability by enabling hardware depth reprojection on HoloLens 2.
+Всегда используйте расширение `XR_KHR_composition_layer_depth` и отправьте буфер глубины вместе с слоем проекции при отправке кадра в `xrEndFrame`.
+Это повышает устойчивость к голограммам за счет повышения глубины оборудования в HoloLens 2.
 
-### <a name="choose-a-reasonable-depth-range"></a>Choose a reasonable depth range
+### <a name="choose-a-reasonable-depth-range"></a>Выберите приемлемый диапазон глубины
 
-Prefer a narrower depth range to scope the virtual content to help hologram stability on HoloLens.
-For example, the OpenXrProgram.cpp sample is using 0.1 to 20 meters.
-Use [reversed-Z](https://developer.nvidia.com/content/depth-precision-visualized) for a more uniform depth resolution.
-Note that, on HoloLens 2, using the preferred `DXGI_FORMAT_D16_UNORM` depth format will help achieve better frame rate and performance, although 16-bit depth buffers provide less depth resolution than 24-bit depth buffers.
-Therefore, following these best practices to make best use of the depth resolution becomes more important.
+Предпочтительнее использовать более узкий диапазон глубины виртуального содержимого, чтобы повысить стабильность работы HoloLens.
+Например, в примере Опенксрпрограм. cpp используется 0,1 – 20 метров.
+Используйте [Обратный-Z](https://developer.nvidia.com/content/depth-precision-visualized) для более однородного разрешения глубины.
+Обратите внимание, что в HoloLens 2 использование предпочтительного формата глубины `DXGI_FORMAT_D16_UNORM` поможет достичь лучшей частоты кадров и производительности, хотя буферы 16-разрядной глубины обеспечивают меньшее разрешение глубины по сравнению с 24-разрядными буферами глубины.
+Поэтому следует выполнить эти рекомендации, чтобы лучше использовать разрешение глубины.
 
-### <a name="prepare-for-different-environment-blend-modes"></a>Prepare for different environment blend modes
+### <a name="prepare-for-different-environment-blend-modes"></a>Подготовка к различным режимам смешения среды
 
-If your application will also run on immersive headsets that completely block out the world, be sure to enumerate supported environment blend modes using `xrEnumerateEnvironmentBlendModes` API, and prepare your rendering content accordingly.
-For example, for a system with `XR_ENVIRONMENT_BLEND_MODE_ADDITIVE` such as the HoloLens, the app should use transparent as the clear color, while for a system with `XR_ENVIRONMENT_BLEND_MODE_OPAQUE`, the app should render some opaque color or some virtual room in the background.
+Если приложение также будет работать на впечатляющих наушниках, которые полностью блокируют мир, обязательно перечислите поддерживаемые режимы наложения среды с помощью `xrEnumerateEnvironmentBlendModes` API и подготовьте содержимое для подготовки к просмотру соответствующим образом.
+Например, для системы с `XR_ENVIRONMENT_BLEND_MODE_ADDITIVE`, например HoloLens, приложение должно использовать прозрачный цвет в качестве четкого цвета, а для системы с `XR_ENVIRONMENT_BLEND_MODE_OPAQUE`приложение должно визуализировать некоторый непрозрачный цвет или некоторую виртуальную комнату в фоновом режиме.
 
-### <a name="choose-unbounded-reference-space-as-applications-root-space"></a>Choose unbounded reference space as application's root space
+### <a name="choose-unbounded-reference-space-as-applications-root-space"></a>Выбрать неограниченное пространство ссылок в качестве корневого пространства приложения
 
-Applications typically establish some root world coordinate space to connect views, actions and holograms together.
-Use `XR_REFERENCE_SPACE_TYPE_UNBOUNDED_MSFT` when the extension is supported to establish a [world-scale coordinate system](coordinate-systems.md#building-a-world-scale-experience), enabling your app to avoid undesired hologram drift when the user moves far (e.g. 5 meters away) from where the app starts.
-Use `XR_REFERENCE_SPACE_TYPE_LOCAL` as a fallback if the unbounded space extension doesn't exist.
+Приложения обычно устанавливают некоторое корневое пространство координат для подключения представлений, действий и голограмм.
+Используйте `XR_REFERENCE_SPACE_TYPE_UNBOUNDED_MSFT`, если расширение поддерживается для установления [геометрической системы координат](coordinate-systems.md#building-a-world-scale-experience), что позволяет приложению избежать нежелательного уменьшения голограммы, когда пользователь перемещается (например, 5 метров) с места запуска приложения.
+Используйте `XR_REFERENCE_SPACE_TYPE_LOCAL` в качестве резервной, если не существует расширения неограниченного пространства.
 
-### <a name="associate-hologram-with-spatial-anchor"></a>Associate hologram with spatial anchor
+### <a name="associate-hologram-with-spatial-anchor"></a>Связать голограмму с пространственной привязкой
 
-When using an unbounded reference space, holograms you place directly in that reference space [may drift as the user walks to distant rooms and then comes back](coordinate-systems.md#building-a-world-scale-experience).
-For hologram users place at a discrete location in the world, [create a spatial anchor](spatial-anchors.md#best-practices) using the `xrCreateSpatialAnchorSpaceMSFT` extension function and position the hologram at its origin.
-That will keep that hologram independently stable over time.
+При использовании неограниченного пространства ссылок голограммы, размещенные непосредственно в этом справочном пространстве, [могут быть смещены по мере того, как пользователь переходит к удаленным комнатам, а затем](coordinate-systems.md#building-a-world-scale-experience)возвращается.
+Для пользователей с голограммами, которые помещаются в дискретное место в мире, [Создайте пространственное привязку](spatial-anchors.md#best-practices) с помощью функции расширения `xrCreateSpatialAnchorSpaceMSFT` и поместите голограмму в ее начало.
+Это обеспечит нестабильную голограмму в зависимости от времени.
 
-### <a name="support-mixed-reality-capture"></a>Support mixed reality capture
+### <a name="support-mixed-reality-capture"></a>Поддержка записи смешанной реальности
 
-Although HoloLens 2's primary display uses additive environment blending, when the user initiates [mixed reality capture](mixed-reality-capture-for-developers.md), the app's rendering content will be alpha-blended with the environment video stream.
-To achieve the best visual quality in mixed reality capture videos, it's best to set the `XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT` in your projection layer's `layerFlags`.  
+Несмотря на то, что основной дисплей HoloLens 2 использует Аддитивное смешение среды, когда пользователь инициирует [запись смешанной реальности](mixed-reality-capture-for-developers.md), содержимое отрисовки приложения будет иметь альфа-смешение с потоком видео среды.
+Для достижения наилучшего визуального качества в видеороликах смешанной реальности лучше установить `XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT` на `layerFlags`слоя проекции.  
 
-**Performance Warning:** Omitting the `XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT` flag on the single projection layer will result in runtime post-processing which comes at a significant performance penalty.
+**Предупреждение о производительности:** Пропуск флага `XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT` на одном слое проекции приведет к последующей обработке во время выполнения, что приводит к значительному снижению производительности.
 
-### <a name="avoid-quad-layers"></a>Avoid quad layers
+### <a name="avoid-quad-layers"></a>Избегайте использования четырех уровней
 
-Rather than submitting quad layers as composition layers with `XrCompositionLayerQuad`, render the quad content directly into the projection swapchain.
+Вместо того чтобы отправлять четыре слоя в виде слоев композиции с `XrCompositionLayerQuad`, выводите это содержимое непосредственно в имеющуюся цепочку буферов проекции.
 
-**Performance Warning:** Providing additional layers beyond a single projection layer, such as quad layers, will result in runtime post-processing which comes at a significant performance penalty.
+**Предупреждение о производительности:** Предоставление дополнительных слоев за пределами одного слоя проекции, например четырех слоев, приведет к последующей обработке во время выполнения, что значительно снижает производительность.
 
-## <a name="openxr-app-performance-on-hololens-2"></a>OpenXR app performance on HoloLens 2
+## <a name="openxr-app-performance-on-hololens-2"></a>Производительность приложений Опенкср в HoloLens 2
 
-On HoloLens 2, there are a number of ways to submit composition data through `xrEndFrame` which will result in post-processing that will have a noticeable performance penalty.
-To avoid performance penalities, [submit a single `XrCompositionProjectionLayer`](#use-a-single-projection-layer) with the following characteristics:
-* [Use a texture array swapchain](#render-with-texture-array-and-vprt)
-* [Use the primary color swapchain format](#select-a-pixel-format)
-* [Set the texture-source-alpha blending flag](#support-mixed-reality-capture)
-* [Use the recommended view dimensions](#render-with-recommended-rendering-parameters-and-frame-timing)
-* Do not set the `XR_COMPOSITION_LAYER_UNPREMULTIPLIED_ALPHA_BIT` flag
-* Set the `XrCompositionLayerDepthInfoKHR` `minDepth` to 0.0f and `maxDepth` to 1.0f
+В HoloLens 2 существует несколько способов отправки данных композиции с помощью `xrEndFrame`, что приведет к заметному снижению производительности.
+Чтобы избежать штрафов в производительности, [отправьте единое `XrCompositionProjectionLayer`](#use-a-single-projection-layer) со следующими характеристиками:
+* [Использование имеющуюся цепочку буферов массива текстуры](#render-with-texture-array-and-vprt)
+* [Использовать формат имеющуюся цепочку буферов основного цвета](#select-a-pixel-format)
+* [Установка флага "текстура-источник-Альфа" Blend](#support-mixed-reality-capture)
+* [Использование рекомендуемых измерений представления](#render-with-recommended-rendering-parameters-and-frame-timing)
+* Не устанавливайте флаг `XR_COMPOSITION_LAYER_UNPREMULTIPLIED_ALPHA_BIT`
+* Задайте для `XrCompositionLayerDepthInfoKHR` `minDepth` значение 0,0 f, а `maxDepth` — 1,0 f.
 
-Additional considerations will result in better performance:
-* [Use the 16-bit depth format](#choose-a-reasonable-depth-range)
-* [Make instanced draw calls](#render-with-texture-array-and-vprt)
+Дополнительные соображения приводят к лучшей производительности:
+* [Использовать 16-разрядный формат глубины](#choose-a-reasonable-depth-range)
+* [Сделать экземпляры вызовов Draw](#render-with-texture-array-and-vprt)
 
 ## <a name="roadmap"></a>Стратегия
 
-The OpenXR specification defines an extension mechanism that enables runtime implementers to expose additional functionality beyond the [core features](openxr.md#what-is-openxr) defined in the <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">base OpenXR 1.0 specification</a>.
+Спецификация Опенкср определяет механизм расширения, позволяющий разработчикам среды выполнения предоставлять дополнительные функциональные возможности за пределами [основных функций](openxr.md#what-is-openxr) , определенных в <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">базовой спецификации опенкср 1,0</a>.
 
-There are three kinds of OpenXR extensions:
-* **Vendor extensions (e.g. MSFT):** Enables per-vendor innovation in hardware or software features.  Any runtime vendor can introduce and ship a vendor extension at any time.
-* **EXT extensions:** Cross-vendor extensions that multiple companies define and implement.  Groups of interested companies can introduce EXT extensions at any time.
-* **KHR extensions:** Official Khronos extensions ratified as part of a core spec release.  KHR extensions are covered by the same license as the core spec itself.
+Существует три вида расширений Опенкср:
+* **Расширения поставщика (например, MSFT):** Включает инновации каждого поставщика в функции оборудования или программного обеспечения.  Любой поставщик среды выполнения может в любое время внедрить и поставлять расширение поставщика.
+* **Расширения Ext:** Расширения кросс-поставщика, которые определяются и реализуются несколькими компаниями.  Группы заинтересованных компаний могут в любое время внедрять расширения EXT.
+* **Расширения КХР:** Официальные расширения Кхронос ратифицирован в рамках основной версии спецификации.  Расширения КХР охватываются той же лицензией, что и Основная спецификация.
 
-By the end of the year, the Windows Mixed Reality OpenXR Runtime will support a set of MSFT and EXT extensions that bring the full set of HoloLens 2 features to OpenXR applications:
-* [Unbounded reference space (world-scale experiences)](coordinate-systems.md#building-a-world-scale-experience)
-* [Spatial anchors + storage](spatial-anchors.md)
-* [Hand articulation + hand mesh](hands-and-tools.md)
+К концу года среда выполнения Опенкср в Windows Mixed Reality будет поддерживать множество расширений MSFT и EXT, которые предоставляют полный набор функций HoloLens 2 для Опенкср приложений:
+* [Несвязанное пространство ссылок (возможности мирового масштаба)](coordinate-systems.md#building-a-world-scale-experience)
+* [Пространственные привязки + хранилище](spatial-anchors.md)
+* [Сетка руки артикулатион +](hands-and-tools.md)
 * [Отслеживание глаз](eye-tracking.md)
-* [Secondary view configurations (Mixed Reality Capture)](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in)
+* [Конфигурации вторичного представления (запись смешанной реальности)](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in)
 * [Интерпретация сцены](scene-understanding.md)
-* Interop with Windows SDK APIs
+* Взаимодействие с интерфейсами API Windows SDK
 
-While some of these extensions may start out as vendor-specific MSFT extensions, Microsoft and other OpenXR runtime vendors are working together to design cross-vendor EXT or KHR extensions for many of these feature areas.  This will enable the code you write for those features to be portable across runtime vendors, just as with the core specification.
+Хотя некоторые из этих расширений могут начаться как расширения MSFT, зависящие от поставщика, корпорация Майкрософт и другие поставщики среды выполнения Опенкср работают вместе для проектирования расширений EXT или КХР для различных функциональных областей.  Это обеспечит переносимость кода, который вы пишете для этих функций, между поставщиками среды выполнения, как и в случае с основной спецификацией.
 
-## <a name="troubleshooting"></a>"Устранение неполадок"
+## <a name="troubleshooting"></a>Поиск и устранение неисправностей
 
-Here are some troubleshooting tips for the Windows Mixed Reality OpenXR Runtime.  If you have any other questions about the <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">OpenXR 1.0 specification</a>, please visit the <a href="https://community.khronos.org/c/openxr" target="_blank">Khronos OpenXR Forums</a> or <a href="https://khr.io/slack" target="_blank">Slack #openxr channel</a>.
+Ниже приведены некоторые советы по устранению неполадок среды выполнения Опенкср в Windows Mixed Reality.  Если у вас есть другие вопросы о <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">спецификации опенкср 1,0</a>, посетите <a href="https://community.khronos.org/c/openxr" target="_blank">форумы Кхронос опенкср</a> или <a href="https://khr.io/slack" target="_blank">резервный #openxr канал</a>.
 
-### <a name="developing-on-windows-10-october-2018-update"></a>Developing on Windows 10 October 2018 Update
+### <a name="developing-on-windows-10-october-2018-update"></a>Разработка на Windows 10 октября с обновлением 2018
 
-If you're not able to [upgrade your development PC to the May 2019 Update](https://www.microsoft.com//software-download/windows10), you can set up your Windows 10 October 2018 Update (1809) PC for development by following one more step:
+Если вы не можете обновить [компьютер разработки до обновления 2019](https://www.microsoft.com//software-download/windows10), можно настроить компьютер с Windows 10 октября 2018 (1809) для разработки, выполнив еще один шаг:
 
-1. Follow the steps above to get started with OpenXR on your desktop PC.
-1. To set the Windows Mixed Reality OpenXR Runtime as your system's active OpenXR runtime, install the [Windows Mixed Reality OpenXR Developer Compatibility Pack](https://aka.ms/openxr-compat).
+1. Выполните описанные выше действия, чтобы приступить к работе с Опенкср на настольном ПК.
+1. Чтобы установить среду выполнения Опенкср Windows Mixed Reality в качестве активной среды выполнения Опенкср в системе, установите [пакет обеспечения совместимости для Windows Mixed Reality опенкср](https://aka.ms/openxr-compat).
 
 > [!NOTE]
-> Although Windows 10 October 2018 Update (1809) can be used when developing your OpenXR applications, the Windows 10 May 2019 Update (1903) is the minimum requirement for end users to use OpenXR with Windows Mixed Reality.  You may experience lower performance or other issues when running your OpenXR app on the October 2018 Update.  It is strongly recommended that you upgrade your development PC to the Windows 10 May 2019 Update (1903).
+> Хотя обновление Windows 10 октября 2018 (1809) можно использовать при разработке приложений Опенкср, в Windows 10 может 2019 обновление (1903) — это минимальное требование для конечных пользователей использовать Опенкср с Windows Mixed Reality.  Вы можете столкнуться с более низкой производительностью или другими проблемами при запуске приложения Опенкср в обновлении за Октябрь 2018 октября.  Настоятельно рекомендуется обновить компьютер разработчика до версии Windows 10 2019 (1903).
 
-### <a name="openxr-app-not-starting-windows-mixed-reality"></a>OpenXR app not starting Windows Mixed Reality
+### <a name="openxr-app-not-starting-windows-mixed-reality"></a>Приложение Опенкср не запускает Windows Mixed Reality
 
-If your OpenXR app is not starting Windows Mixed Reality when you run it, the Windows Mixed Reality OpenXR Runtime may not be set as the active runtime.  Be sure to follow the instructions above for [getting started with OpenXR for Windows Mixed Reality headsets](#getting-started-with-openxr-for-windows-mixed-reality-headsets) to make the runtime active.
+Если приложение Опенкср не запускает Windows Mixed Reality при запуске, то среда выполнения Windows Mixed Reality Опенкср может быть не установлена в качестве активной среды выполнения.  Следуйте приведенным выше инструкциям по [началу работы с опенкср для головных телефонов Windows Mixed Reality](#getting-started-with-openxr-for-windows-mixed-reality-headsets) , чтобы активировать среду выполнения.
 
-You can also run the [Mixed Reality OpenXR Developer Portal](#getting-the-mixed-reality-openxr-developer-portal) for additional troubleshooting help around the state of the Windows Mixed Reality OpenXR Runtime on your system.
+Вы также можете запустить [портал разработчика Mixed Reality опенкср](#getting-the-mixed-reality-openxr-developer-portal) для получения дополнительных сведений об устранении неполадок, связанных с состоянием среды выполнения Windows Mixed Reality опенкср в вашей системе.
 
-### <a name="mixed-reality-portal-not-showing-set-up-openxr-menu-item"></a>Mixed Reality Portal not showing "Set up OpenXR" menu item
+### <a name="mixed-reality-portal-not-showing-set-up-openxr-menu-item"></a>На портале Mixed Reality не отображается пункт меню "Настройка Опенкср"
 
-Be sure you are running at least the Windows 10 October 2018 Update (1809).  If you're on an earlier version of Windows 10, you can upgrade to the May 2019 Update (1903) using the [Windows 10 Update Assistant](https://www.microsoft.com//software-download/windows10).
+Убедитесь, что вы используете по крайней мере обновление Windows 10 октября 2018 (1809).  Если вы используете более раннюю версию Windows 10, можно выполнить обновление до 2019 обновления (1903) с помощью [помощника по обновлению Windows 10](https://www.microsoft.com//software-download/windows10).
 
-The "Set up OpenXR" menu item may not be available if you have an older version of the Mixed Reality Portal app.  Check for a [Mixed Reality Portal app update](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m) to ensure you have the latest version.
+Пункт меню "настроить Опенкср" может быть недоступен, если у вас более старая версия приложения портала смешанной реальности.  Проверьте наличие [обновления для приложения портала смешанной реальности](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m) , чтобы убедиться, что у вас установлена последняя версия.
 
-Note that the "Set up OpenXR" menu item will not show up if the Windows Mixed Reality OpenXR Runtime is already installed and active.  You can install the [Mixed Reality OpenXR Developer Portal](#getting-the-mixed-reality-openxr-developer-portal) to determine the current status of the OpenXR runtime on your system.
+Обратите внимание, что пункт меню "настроить Опенкср" не отображается, если среда выполнения Windows Mixed Reality Опенкср уже установлена и активна.  Вы можете установить [портал разработчика Mixed Reality опенкср](#getting-the-mixed-reality-openxr-developer-portal) , чтобы определить текущее состояние среды выполнения опенкср в системе.
 
 ## <a name="see-also"></a>См. также
 
-* <a href="https://www.khronos.org/openxr/" target="_blank">More information on OpenXR</a>
-* <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">OpenXR 1.0 specification</a>
-* <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html" target="_blank">OpenXR 1.0 API reference</a>
-* <a href="https://www.khronos.org/files/openxr-10-reference-guide.pdf" target="_blank">OpenXR 1.0 quick reference guide</a>
+* <a href="https://www.khronos.org/openxr/" target="_blank">Дополнительные сведения о Опенкср</a>
+* <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">Спецификация Опенкср 1,0</a>
+* <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html" target="_blank">Справочник по API Опенкср 1,0</a>
+* <a href="https://www.khronos.org/files/openxr-10-reference-guide.pdf" target="_blank">Краткое справочное руководство по Опенкср 1,0</a>
