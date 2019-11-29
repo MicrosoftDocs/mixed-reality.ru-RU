@@ -7,16 +7,18 @@ ms.author: grbury
 ms.date: 11/15/2019
 ms.topic: overview
 keywords: Windows Mixed Reality, проектирование, шаблоны приложений, элементы управления, стиль, HoloLens, взаимодействие, элементы UX, поведения, стандартные блоки
-ms.openlocfilehash: c454190cf376f39974efec1ea416afbdb9db1a10
-ms.sourcegitcommit: 17427d4d8c3723d53540f1b7f5bc061bba08c1d6
+ms.openlocfilehash: 8dd90a555faea62f69750847ddd6e6df4d9d0314
+ms.sourcegitcommit: 83698638b93c5ba77b3ffc399f1706482539f27b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2019
-ms.locfileid: "74143197"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74539667"
 ---
 # <a name="ux-elements-overview"></a>Общие сведения об элементах UX
 
-## <a name="style"></a>Стиль
+![Пользователь HoloLens 2 взаимодействует с holographic кнопками](images/06_AppPatterns.png)
+
+## <a name="style"></a>"Стиль",
 
 :::row:::
     :::column:::

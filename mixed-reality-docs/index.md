@@ -8,12 +8,12 @@ ms.date: 08/24/2019
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
-ms.openlocfilehash: 1a5e4fcbb7704db6df59db9d01bb72a5b153b576
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: f6f72df63628bba590ac7af098d0b405e6721cc2
+ms.sourcegitcommit: 83698638b93c5ba77b3ffc399f1706482539f27b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73438077"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74539618"
 ---
 # <a name="get-started-with-mixed-reality"></a>Приступая к работе со смешанной реальностью
 
@@ -55,7 +55,7 @@ ms.locfileid: "73438077"
 Если вы еще не работали со смешанной реальностью, то сможете узнать, что это такое, и понять ее возможности.
 
 
-![Разнообразие смешанной реальности](images/RWtpZ1.jpeg)
+![Виртуальная колибри и рука человека](images/01_MixedReality.png)
 
 ## <a name="what-is-mixed-reality"></a>Что такое смешанная реальность?
 
