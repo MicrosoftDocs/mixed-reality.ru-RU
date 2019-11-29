@@ -7,14 +7,17 @@ ms.author: grbury
 ms.date: 10/02/2019
 ms.topic: overview
 keywords: Windows Mixed Reality, проектирование, шаблоны приложений, элементы управления, стиль, HoloLens, взаимодействие, элементы UX, поведения, стандартные блоки
-ms.openlocfilehash: 5f5f97d3f4a34e0d88c781df494a4afc2ee0b992
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: d8f904183e51943246613e99a805bee1518523c8
+ms.sourcegitcommit: 83698638b93c5ba77b3ffc399f1706482539f27b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73439435"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74539544"
 ---
 # <a name="core-concepts-overview"></a>Обзор основных принципов
+
+![Непосредственное манипулирование руками](images/05_CoreConcepts.png)
+
 
 Прежде чем углубляться в разработку, полезно понять несколько основных концепций. В каждом разделе ниже приводится базовый фактор, который фундаментально влияет на качество работы в смешанной реальности, которую вы создаете для пользователя. 
 
