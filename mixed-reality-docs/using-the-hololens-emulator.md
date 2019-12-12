@@ -3,16 +3,16 @@ title: Использование эмулятора HoloLens
 description: С помощью эмулятора HoloLens можно тестировать приложения смешанной реальности на обычном компьютере без физического устройства HoloLens.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 11/11/2019
+ms.date: 12/5/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulator
-ms.openlocfilehash: 2e96c4262d2006f6a971004c5c0a5a9b3b65d4f1
-ms.sourcegitcommit: f2b7c6381006fab6d0472fcaa680ff7fb79954d6
+ms.openlocfilehash: 49b67530d46edda3c38efd74f03f730c2b2247bd
+ms.sourcegitcommit: f4812e1312c4751a22a2de56771c475b22a4ba24
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74064272"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74940892"
 ---
 # <a name="using-the-hololens-emulator"></a>Использование эмулятора HoloLens
 
@@ -25,10 +25,10 @@ ms.locfileid: "74064272"
 Скачайте эмулятор HoloLens.
 
 Доступные версии: 
-* [Эмулятор HoloLens 2 (обновление за ноябрь 2019 г.)](https://go.microsoft.com/fwlink/?linkid=2110553).
+* [эмулятор HoloLens 2 (обновление за декабрь 2019 г.)](https://go.microsoft.com/fwlink/?linkid=2112589);
 * [эмулятор HoloLens (1-го поколения) и шаблоны голографических проектов](https://go.microsoft.com/fwlink/?linkid=2065980).
 
-Другие сборки эмулятора HoloLens можно найти на странице [архива эмулятора HoloLens](hololens-emulator-archive.md).
+Более ранние сборки эмулятора HoloLens и заметки о выпусках можно найти на странице [архива эмулятора HoloLens](hololens-emulator-archive.md).
 
 ### <a name="hololens-emulator-system-requirements"></a>Системные требования для эмулятора HoloLens
 
