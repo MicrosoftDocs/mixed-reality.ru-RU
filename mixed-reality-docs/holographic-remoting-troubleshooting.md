@@ -3,15 +3,15 @@ title: Устранение неполадок и ограничения уда�
 description: Действия по устранению неполадок для удаленного взаимодействия holographic в HoloLens 2.
 author: FlorianBagarMicrosoft
 ms.author: flbagar
-ms.date: 10/28/2019
+ms.date: 12/17/2019
 ms.topic: article
 keywords: Windows Mixed Reality, голограммы, holographic удаленное взаимодействие, удаленная визуализация, Сетевая визуализация, HoloLens, удаленные голограммы, устранение неполадок, помощь
-ms.openlocfilehash: 7b438d9169c9306e0056655e561c04b62b1662cf
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 05333c8911010945a543cf603b9925eb30c841db
+ms.sourcegitcommit: 8bf7f315ba17726c61fb2fa5a079b1b7fb0dd73f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73434235"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "75181974"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Устранение неполадок удаленного взаимодействия с holographic
 
@@ -31,13 +31,23 @@ ms.locfileid: "73434235"
 [Windows.Graphics.Holographic](https://docs.microsoft.com/uwp/api/windows.graphics.holographic)
 
 * [Холографиккамера. Виевконфигуратион](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration)
+  - Поддерживается начиная с версии [2.0.18](holographic-remoting-version-history.md#v2.0.18)
+  - В предыдущих версиях всегда вызывает ошибку.
+* [Холографиквиевконфигуратион. Рекуестрендертаржетсизе](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration.requestrendertargetsize#Windows_Graphics_Holographic_HolographicViewConfiguration_RequestRenderTargetSize_Windows_Foundation_Size_)
+  - Не завершается ошибкой, но размер целевого объекта прорисовки не изменится.
 * [Холографиккамерапосе. Оверридепрожектионтрансформ](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideprojectiontransform)
 * [Холографиккамерапосе. Оверридевиевпорт](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewport)
 * [Холографиккамерапосе. Оверридевиевтрансформ](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewtransform)
 * [Холографиккамерарендерингпараметерс. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)
   - Не завершается ошибкой, но буфер глубины не будет удален.
 * [Холографикдисплай. Трижетвиевконфигуратион](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay.trygetviewconfiguration)
+  - Запрос Холографиквиевконфигуратионкинд. Фотовидеокамера всегда будет возвращать ```nullptr```.
+  - Поддерживается начиная с версии [2.0.18](holographic-remoting-version-history.md#v2.0.18)
+  - В предыдущих версиях всегда вызывает ошибку.
 * [Холографикспаце. Креатефрамепресентатионмонитор](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createframepresentationmonitor)
+* [Холографикдисплай. по умолчанию](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay.getdefault#Windows_Graphics_Holographic_HolographicDisplay_GetDefault)
+  - Сообщает об ошибке, если она вызвана до установления соединения.
+
 
 [Windows.Perception.Spatial](https://docs.microsoft.com/uwp/api/windows.perception.spatial)
 
@@ -48,7 +58,7 @@ ms.locfileid: "73434235"
 * [SpatialLocation. Абсолутелинеаракцелератион](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absolutelinearacceleration)
 * [SpatialLocation. АбсолутелинеарвелоЦити](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absolutelinearvelocity)
 * [Спатиалстажефрамеофреференце. Current](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)
-  - Всегда возвращает ```nullptr```.
+  - Всегда возвращает значение ```nullptr```.
 * [Спатиалстажефрамеофреференце. Рекуестневстажеасинк](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)
 * [Спатиаланчор. Ремоведбюсер](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor.removedbyuser)
 * [Спатиаланчорекспортер. по умолчанию](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter.getdefault
@@ -83,4 +93,4 @@ ms.locfileid: "73434235"
 * [Создание хост-приложения holographic с удаленным взаимодействием](holographic-remoting-create-host.md)
 * [Написание пользовательского приложения для удаленного взаимодействия holographic](holographic-remoting-create-player.md)
 * [Условия лицензии на использование ПО для голографического удаленного взаимодействия](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
-* [Заявление о конфиденциальности Майкрософт](https://go.microsoft.com/fwlink/?LinkId=521839)
+* [Заявление Майкрософт о конфиденциальности](https://go.microsoft.com/fwlink/?LinkId=521839)

@@ -6,12 +6,12 @@ ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Портал устройств Windows, HoloLens
-ms.openlocfilehash: 972fe2e828a0a054925a45b4f6965c668f6da078
-ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
+ms.openlocfilehash: 9bb8116330d88c532b955ef497d29fe98c86fddb
+ms.sourcegitcommit: 8bf7f315ba17726c61fb2fa5a079b1b7fb0dd73f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73926746"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "75182024"
 ---
 # <a name="using-the-windows-device-portal"></a>Использование портала устройств Windows
 
@@ -30,8 +30,8 @@ ms.locfileid: "73926746"
 ## <a name="setting-up-hololens-to-use-windows-device-portal"></a>Настройка HoloLens для использования портала устройств Windows
 
 1. Включите устройство HoloLens и наденьте его.
-2. Выполните жест [цветение](system-gesture.md#bloom), чтобы запустить главное меню.
-3. Взгляните на плитку **Параметры** и выполните жест [касания](gaze-and-commit.md#composite-gestures) . Выполните второе касание, чтобы разместить приложение в своей среде. Приложение «Параметры» запустится после его размещения.
+2. Выполните [жест запуска](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) для HoloLens2 или [раскрытия](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom) в HoloLens (1-й общий), чтобы запустить главное меню. 
+3. Взгляните на плитку **Параметры** и выполните жест [касания](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) в hololens (1-й общий) или выберите его в hololens 2, [касаясь его или используя руки](https://docs.microsoft.com/hololens/hololens2-basic-usage). 
 4. Выберите пункт меню **Обновить**.
 5. Выберите пункт меню **Для разработчиков**.
 6. Включите **Режим разработчика**.

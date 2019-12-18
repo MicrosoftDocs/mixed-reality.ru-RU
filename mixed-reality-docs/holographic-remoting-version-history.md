@@ -6,17 +6,26 @@ ms.author: nopohl
 ms.date: 10/21/2019
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: 9ff6a5f7594eb67dd4c1c8690812ab724cac9012
-ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
+ms.openlocfilehash: f051dbf24cab550470a312933ffb99e1ba595257
+ms.sourcegitcommit: 8bf7f315ba17726c61fb2fa5a079b1b7fb0dd73f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73926649"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "75181964"
 ---
 # <a name="holographic-remoting-version-history"></a>Журнал версий службы удаленного взаимодействия с holographic
 
 > [!IMPORTANT]
 > Это руководство относится к удаленному взаимодействию с HoloLens 2.
+
+## Версия 2.0.18.0 (17 декабря, 2019)<a name="v2.0.18"></a>
+* Добавлена поддержка Холографиквиевконфигуратион: https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration
+* Исправлены различные ошибки, приводящие к сбоям.
+* Исправлена ошибка обратного вызова Холографикспаце. Камерааддед, чтобы Холографиккамера был принят и показана как добавленная Камера в Холорафикфраме.
+
+## Версия 2.0.16 (11 ноября, 2019)<a name="2.0.16"></a>
+* Исправлена взаимоблокировка при отслеживании QR-кода.
+* Исправлено исключение унханделед из-за блокировки ожидания в основном потоке.
 
 ## Версия 2.0.14 (26 октября, 2019)<a name="v2.0.14"></a>
 * Поддержка новых API Перцептиондевице (обновление Windows 10 за ноябрь 2019).
@@ -50,4 +59,4 @@ ms.locfileid: "73926649"
 * [Создание хост-приложения holographic с удаленным взаимодействием](holographic-remoting-create-host.md)
 * [Устранение неполадок и ограничения удаленного взаимодействия с holographic](holographic-remoting-troubleshooting.md)
 * [Условия лицензии на использование ПО для голографического удаленного взаимодействия](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
-* [Заявление о конфиденциальности Майкрософт](https://go.microsoft.com/fwlink/?LinkId=521839)
+* [Заявление Майкрософт о конфиденциальности](https://go.microsoft.com/fwlink/?LinkId=521839)
