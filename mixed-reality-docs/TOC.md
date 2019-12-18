@@ -13,7 +13,7 @@
 ## [Заметки о текущем выпуске Смешанной реальности](release-notes-may-2019.md)
 ## [Участие в разработке этой документации](CONTRIBUTING.md)
 # Обнаружение
-## [Приступая к работе со Смешанной реальностью](index.md)
+## [Начало работы со смешанной реальностью](index.md)
 ## [Расширение процесса разработки](case-study-expanding-the-design-process-for-mixed-reality.md)
 ## [Коллекция примеров использования](case-studies-overview.md)
 ## Оборудование HoloLens
@@ -64,10 +64,13 @@
 ## Элементы пользовательского интерфейса
 ### [Обзор](app-patterns-landingpage.md)
 ### Стиль
-#### [Цвет, свет и материалы](color,-light-and-materials.md)
+#### [Цвет, свет и материалы](color-light-and-materials.md)
 #### [Масштаб](scale.md)
-#### [Проектирование пространственного звука](spatial-sound-design.md)
 #### [Оформление текста](typography.md)
+### пространственный звук
+#### [Проектирование пространственного звука](spatial-sound-design.md)
+#### [Пример. HoloTour](case-study-spatial-sound-design-for-holotour.md)
+#### [Пример. Roboraid](case-study-using-spatial-sound-in-roboraid.md)
 
 ### Элементы управления и режимы поведения
 #### [Курсоры](cursors.md)
@@ -126,6 +129,12 @@
 ###### [3. Подключение нескольких пользователей](mrlearning-sharing(photon)-ch3.md)
 ###### [4. Предоставление общего доступа к сведениям о перемещении объекта нескольким пользователям](mrlearning-sharing(photon)-ch4.md)
 ###### [5. Интеграция Пространственных привязок Azure в общий интерфейс](mrlearning-sharing(photon)-ch5.md)
+##### Учебники по пространственному звуку
+###### [1. Добавление пространственного звука в проект](unity-spatial-audio-ch1.md)
+###### [2. Придание пространственной формы звуку при взаимодействии с кнопками](unity-spatial-audio-ch2.md)
+###### [3. Придание пространственной формы звуку из видео](unity-spatial-audio-ch3.md)
+###### [4. Включение и отключение пространственного звука во время выполнения](unity-spatial-audio-ch4.md)
+###### [5. Использование реверберации для добавления эффекта расстояния пространственному звуку](unity-spatial-audio-ch5.md)
 #### Примеры приложений с открытым кодом для HoloLens (1-го поколения)
 ##### [Периодическая таблица элементов](periodic-table-of-the-elements.md)
 ##### [Лунный модуль](lunar-module.md)
@@ -208,7 +217,7 @@
 #### [Пространственное сопоставление](spatial-mapping-in-directx.md)
 #### [Интерпретация сцены](scene-understanding-sdk.md)
 #### [Общие пространственные привязки](shared-spatial-anchors-in-directx.md)
-#### [Ввод с помощью клавиатуры, мыши и контроллеров](keyboard,-mouse,-and-controller-input-in-directx.md)
+#### [Ввод с помощью клавиатуры, мыши и контроллеров](keyboard-mouse-and-controller-input-in-directx.md)
 #### [Использование XAML с голографическими приложениями](using-xaml-with-holographic-directx-apps.md)
 #### [Отслеживание QR-кода](qr-code-tracking.md)
 ### [Общий доступ в смешанной реальности](shared-experiences-in-mixed-reality.md)
