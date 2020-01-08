@@ -8,17 +8,17 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Смешанная реальность, обнаружение, распространение, указательный, целевая страница, проектирование, разработка, руководства, примеры приложений, основы, примеры, ресурсы, практические руководства по HoloLens, проекты с открытым кодом, основные понятия, взаимодействие
-ms.openlocfilehash: 92af4ddba96f659f0af812672599d4a90bf00224
-ms.sourcegitcommit: 83698638b93c5ba77b3ffc399f1706482539f27b
+ms.openlocfilehash: 9ef408e1551e9f6c52a6c5fcf7df3123cc099c8c
+ms.sourcegitcommit: 23b130d03fea46a50a712b8301fe4e5deed6cf9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74539604"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75334076"
 ---
 # <a name="start-designing-and-prototyping"></a>Начните проектировать и создавать прототипы
 
 
-![Трехмерное изображение сетки](images/03_Design.png)
+![фрагмент проекта смешанной реальности](images/03_Design.png)
 
 ## <a name="expand-your-design-processcase-study-expanding-the-design-process-for-mixed-realitymd"></a>[Расширение процесса разработки](case-study-expanding-the-design-process-for-mixed-reality.md)
 
@@ -111,22 +111,22 @@ HoloLens 2 позволяет организовать голографичес�
 
 :::row:::   
     :::column:::    
-       [![Дополнительные сведения о Unity](images/unity_logo.png)](https://learn.unity.com/)<br>
+       [![Дополнительные сведения о Unity](images/Final_unity_logo.png)](https://learn.unity.com/)<br>
         **[Дополнительные сведения о Unity](https://learn.unity.com/)**<br>
         Узнайте, как создавать интерактивные интерфейсы с помощью Unity. Научитесь этому, выполнив процесс с начала и до конца.
     :::column-end:::    
     :::column:::    
-        [![Mixed Reality Toolkit (MRTK)](images/MRTK-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+        [![Mixed Reality Toolkit (MRTK)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
         **[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>  
         Благодаря пространственному взаимодействию и стандартным блокам пользовательского интерфейса, вы можете быстро начать проектирование и разработку смешанной реальности с помощью Unity.   
     :::column-end:::
     :::column:::    
-        [![Лаборатории проектирования смешанной реальности](images/MRDL_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        [![Лаборатории проектирования смешанной реальности](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
         **[Лаборатории проектирования смешанной реальности](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>  
         Получите примеры приложений, демонстрирующие использование стандартных блоков МРТК для создания привлекательных интерфейсов смешанной реальности.
     :::column-end:::        
     :::column:::    
-        [![Microsoft Maquette](images/Maquette_logo.png)](https://www.maquette.ms/)<br>
+        [![Microsoft Maquette](images/Final_maquette_logo.png)](https://www.maquette.ms/)<br>
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>  
         Разработка для виртуальной реальности. Microsoft Maquette делает создание пространственных прототипов более простым, быстрым и иммерсивным. 
     :::column-end:::    
@@ -142,7 +142,7 @@ HoloLens 2 позволяет организовать голографичес�
 
 :::row:::
     :::column:::
-       [![Изучение основ](images/icon-lightbulb.jpg)](index.md#understand-the-basics)<br>
+       [![Изучение основ](images/icon-lightbulb.png)](index.md#understand-the-basics)<br>
         **[Изучение основ](index.md#understand-the-basics)**<br>
         Получите более полное представление о том, что определяет смешанную реальность и как она используется.
     :::column-end:::
