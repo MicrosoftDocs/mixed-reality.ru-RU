@@ -1,18 +1,14 @@
-# Что нового? 
+# Новые возможности 
 ## [Последние новости](news.md)
 ## [Подготовка приложения для HL2](mrtk-porting-guide.md)
 ## [Дополнительные сведения о службах Azure](azure-services.md)
 ## Программы и мероприятия
-### [Mixed Reality Dev Days](mr-dev-days.md)
-#### [Семинары на Mixed Reality Dev Days](mr-dev-days-sessions.md)
-#### [Вопросы и ответы по Mixed Reality Dev Days](mr-dev-days-faq.md)
 ### [Календарь мероприятий Reactor Academy в Сан-Франциско](sf-academy-events.md)
-### [CVPR 2018: семинар по режиму исследования в HoloLens](cvpr-2018.md)
-### [ECCV 2018: HoloLens как инструмент для исследования компьютерного зрения](eccv-2018.md)
 ### [CVPR 2019: семинар по смешанной реальности](cvpr-2019.md)
 ## [Заметки о текущем выпуске Смешанной реальности](release-notes-may-2019.md)
+## [Ресурсы сообщества](community.md)
 ## [Участие в разработке этой документации](CONTRIBUTING.md)
-# Обнаружение
+# Обнаружить
 ## [Начало работы со смешанной реальностью](index.md)
 ## [Расширение процесса разработки](case-study-expanding-the-design-process-for-mixed-reality.md)
 ## [Коллекция примеров использования](case-studies-overview.md)
@@ -24,7 +20,8 @@
 ### [Навигация по дому с технологией Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md)
 ### [Руководство для энтузиастов](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)
 ### [Развлечения на основе местоположения](location-based-experiences.md)
-# Оформление
+## [Ресурсы сообщества](community.md)
+# Проектирование
 ## [Начало проектирования и создания прототипов](design.md)
 ## [Сведения о руководстве по проектированию](about-this-design-guidance.md)
 
@@ -75,7 +72,7 @@
 ### Элементы управления и режимы поведения
 #### [Курсоры](cursors.md)
 #### [Телекинез](point-and-commit.md)
-#### [Button](button.md)
+#### [Кнопка](button.md)
 #### [Активный объект](interactable-object.md)
 #### [Ограничивающая рамка и панель приложения](app-bar-and-bounding-box.md)
 #### [Оперирование](direct-manipulation.md)
@@ -86,7 +83,7 @@
 #### [Клавиатура](keyboard.md)
 #### [Подсказка](tooltip.md)
 #### [Планшет](slate.md)
-#### [Slider](slider.md)
+#### [Ползунок](slider.md)
 #### [Шейдер](shader.md)
 #### [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
 #### [Индикация хода выполнения](progress.md)
