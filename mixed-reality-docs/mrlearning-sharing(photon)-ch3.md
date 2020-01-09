@@ -6,71 +6,70 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: a6d1a269f45b4aaf7cbd8fea948ddcbdf0bf18e2
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 9441cf7a9685b8a197bab1116202db4a9b026f2e
+ms.sourcegitcommit: 23b130d03fea46a50a712b8301fe4e5deed6cf9c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73437732"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75334303"
 ---
 # <a name="3-connecting-multiple-users"></a>3. Подключение нескольких пользователей
 
-На этом занятии мы научитесь подключать нескольких пользователей в рамках совместного использования. К концу этого занятия вы сможете открыть приложение на нескольких устройствах и увидеть аватар, представленный сферой для каждого пользователя, который присоединяется. 
+На этом занятии мы научитесь подключать нескольких пользователей в рамках совместного использования. К концу этого занятия вы сможете открыть приложение на нескольких устройствах и увидеть аватар, представленный сферой для каждого пользователя, который присоединяется.
 
-Служит
+## <a name="objectives"></a>Задачи
 
-- Настройка шутка в приложении
-- Настройка игроков
-- Узнайте, как подключить нескольких пользователей в общем интерфейсе
+* Настройка шутка в приложении
+* Настройка игроков
+* Узнайте, как подключить нескольких пользователей в общем интерфейсе
 
 ## <a name="instructions"></a>Инструкция
 
 1. В папке Assets-> Resources-> Prefabs на панели проекта перетащите Нетворклобби prefab в иерархию, как показано на рисунке ниже.
 
-![Module3Chapter3step1im](images/module3chapter3step1im.PNG)
+    ![Module3Chapter3step1im](images/module3chapter3step1im.PNG)
 
 2. При развертывании Нетворклобби вы увидите дочерний объект с именем Нетворкрум. Выбрав Нетворкрум, перейдите на панель инспектора и нажмите кнопку Добавить компонент. Выполните поиск Фотонвиев и добавьте компонент.
 
-![Module3Chapter3tep2im](images/module3chapter3step2im.PNG)
+    ![Module3Chapter3tep2im](images/module3chapter3step2im.PNG)
 
 3. Создание нового пустого игрового объекта в иерархии. Щелкните правой кнопкой мыши иерархию и выберите в контекстном меню пункт Очистить. Убедитесь, что для положения задано значение x = 0, y = 0, z = 0 и имя объекта Фотонусер.
 
-![Module3Chapter3step3im](images/module3chapter3step3im.PNG)
+    ![Module3Chapter3step3im](images/module3chapter3step3im.PNG)
 
-4. Щелкните Добавить компонент и введите Общая NET Sync. Выберите универсальный класс NET Sync. Когда появится класс, установите флажок Пользователь, чтобы включить его. 
+4. Щелкните Добавить компонент и введите Общая NET Sync. Выберите универсальный класс NET Sync. Когда появится класс, установите флажок Пользователь, чтобы включить его.
 
-![module3chapter3updateStep4im](images/module3chapter3updateStep4im.png)
+    ![module3chapter3updateStep4im](images/module3chapter3updateStep4im.png)
 
 5. Снова нажмите кнопку Добавить компонент и введите Photon View. Выберите класс представления Photon, который появится в раскрывающемся списке.
 
-![module3chapter3updateStep5im](images/module3chapter3updateStep5im.png)
+    ![module3chapter3updateStep5im](images/module3chapter3updateStep5im.png)
 
-6. Щелкните значок файла для универсального класса NET Sync. Перетащите его в поле наблюдаемые компоненты представления Photon. 
+6. Щелкните значок файла для универсального класса NET Sync. Перетащите его в поле наблюдаемые компоненты представления Photon.
 
-![module3chapter3updateStep6im. png](images/module3chapter3updateStep6im.png) 
+    ![module3chapter3updateStep6im. png](images/module3chapter3updateStep6im.png)
 
 7. Далее мы создадим шарик для представления каждого человека, который присоединяется к общему интерфейсу. Щелкните правой кнопкой мыши объект Фотонусер, который вы только что создали, прокрутите вниз до пункта "трехмерный объект и щелкните" шар ". В результате будет создан объект игры сферы в качестве дочернего объекта для объекта Фотонусер.
 
-![Module3Chapter3step4im](images/module3chapter3step4im.PNG)
+    ![Module3Chapter3step4im](images/module3chapter3step4im.PNG)
 
 8. Масштабировать сферу до x = 0.06, y = 0.06, AD z = 0.06.
 
-![Module3hapter3step5im](images/module3chapter3step5im.PNG)
+    ![Module3hapter3step5im](images/module3chapter3step5im.PNG)
 
 9. Перетащите объект Game Фотонусер в папку Prefabs на панели проекта, а затем удалите ее из сцены. Теперь вы создали prefab, который можно использовать при создании новых игроков, а также для создания экземпляров в общем интерфейсе.
 
-![Module3Chapter3step6im](images/module3chapter3step6im.PNG)
+    ![Module3Chapter3step6im](images/module3chapter3step6im.PNG)
 
-> Примечание. Убедитесь, что объект Game успешно скопирован в папку Prefabs перед удалением из иерархии.
+    >[!NOTE]
+    >Убедитесь, что объект Game успешно скопирован в папку Prefabs, прежде чем удалять его из иерархии.
 
 10. Создайте новый объект в иерархии, следуя инструкциям, приведенным в шаге 3, и назовите его Шаредплайграунд. Затем нажмите кнопку Добавить компонент и найдите общий диспетчер сети.  Щелкните его еще раз, чтобы добавить общий компонент диспетчера сети. Измените расположение объекта на x = 0, y = 0 и z = 0.
 
-![Module3Chapter3step7im](images/module3chapter3step7im.PNG)
-
+    ![Module3Chapter3step7im](images/module3chapter3step7im.PNG)
 
 ## <a name="congratulations"></a>Поздравляем!
 
 После выполнения всех описанных выше действий, а также завершения процесса сборки нажмите кнопку Воспроизвести и подключите HoloLens 2. При перемещении головного подразделения вы должны увидеть сферу движения. Это будет показано для любого пользователя, который присоединяется к проекту Unity!
 
 [Следующее занятие: 4. Совместное использование передвижений объектов несколькими пользователями](mrlearning-sharing(photon)-ch4.md)
-

@@ -3,15 +3,15 @@ title: Использование Вуфориа с Unity
 description: Используйте Вуфориа для создания приложений Windows Mixed Reality в Unity.
 author: thetuvix
 ms.author: alexturn
-ms.date: 01/28/2019
+ms.date: 12/20/2019
 ms.topic: article
 keywords: Вуфориа, маркеры, координаты, кадр ссылки, отслеживание
-ms.openlocfilehash: bae5d0eb04ab9434dd3e72674686743779a8f70c
-ms.sourcegitcommit: 9005b3fdfa87ac8fdc18a594a681e25c00ac5ce1
+ms.openlocfilehash: 2d7cc27cd9a5fe9bb6502edaa6df0b7a80755049
+ms.sourcegitcommit: 23b130d03fea46a50a712b8301fe4e5deed6cf9c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75003193"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75334471"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>Использование подсистемы Вуфориа с Unity
 
@@ -80,7 +80,7 @@ ms.locfileid: "75003193"
 Поскольку процесс обрабатывается автоматически, разработчик не требует программирования.
 
 
-**Вот что происходит...**
+**Ниже приведено обобщенное описание процесса.**
 1. Целевой объект вуфориа Tracker распознает целевой объект
 2. Целевое отслеживание инициализируется
 3. Расположение и поворот целевого объекта анализируются, чтобы обеспечить надежную оценку типа для HoloLens.
@@ -104,7 +104,7 @@ ms.locfileid: "75003193"
 *   Откройте раскрывающееся меню для режима устройства камеры и выберите один из трех параметров.
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 * [Установка средств](install-the-tools.md)
 * [Системы координат](coordinate-systems.md)
 * [Пространственное сопоставление](spatial-mapping.md)

@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: жесты, контроллеры движения, Unity, взгляд, входные данные
-ms.openlocfilehash: b83c4904031338fd6f3e8457238bb76f1c7e7eff
-ms.sourcegitcommit: 8bf7f315ba17726c61fb2fa5a079b1b7fb0dd73f
+ms.openlocfilehash: fc56436cbe71f958b91fec56c5f0f7d93926b2ac
+ms.sourcegitcommit: 317653cd8500563c514464f0337c1f230a6f3653
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "75181954"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75503892"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Взгляд на руки и отслеживание глаз в Unity
 
-В HoloLens 2 появились новые интересные возможности: «руки» и «отслеживание глаз».
+В HoloLens 2 появились новые и интересные возможности, такие как отслеживание с учетом особенностей и глаз.
 
 Самый простой способ использовать новую возможность в Unity — МРТК v2. Также есть несколько примеров сцен, которые помогут вам приступить к работе.
 
@@ -32,7 +32,7 @@ ms.locfileid: "75181954"
 |  [![](images/MRTK_Slate_Main.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Slate.html) [планшета](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Slate.html) | [![Системная клавиатура](images/MRTK_SystemKeyboard_Main.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_SystemKeyboard.html) [Системная клавиатура](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_SystemKeyboard.html) | [![Взаимодействие](images/InteractableExamples.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) [Взаимодействие](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) |
 | плоскость двумерных стилей, которая поддерживает прокрутку с помощью клавиатуры с вытеканием руки | Пример сценария использования системной клавиатуры в Unity  | Скрипт, обеспечивающий взаимодействие объектов с визуальными состояниями и поддержкой тем |
 |  [![Поиск решения](images/MRTK_Solver_Main.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) [Поиск решения](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) | [Коллекция объектов](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html) [коллекции![](images/MRTK_ObjectCollection_Main.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html) | [![Подсказка](images/MRTK_Tooltip_Main.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Tooltip.html) [Подсказка](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Tooltip.html) |
-| Различные поведения позиционирования объектов, такие как тег, блокировка тела, размер представления константы и магнит поверхностей поверхности | Скрипт для размещения массива объектов в трехмерной фигуре | Пользовательский интерфейс заметки с гибкой системой привязки и сведениями, который можно использовать для пометки контроллеров и объектов движения. |
+| Различные поведения позиционирования объектов, такие как тег, блокировка тела, размер представления константы и магнит поверхностей поверхности | Скрипт для размещения массива объектов в трехмерной фигуре | Пользовательский интерфейс заметки с гибкой системой привязки и сведениями, который можно использовать для пометки контроллеров движения и объекта. |
 |  [панель приложения](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_AppBar.html) [![панели](images/MRTK_AppBar_Main.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_AppBar.html) приложений | [![Указатели](images/MRTK_Pointer_Main.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html) [Указатели](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html) | [высоко![ная](images/MRTK_FingertipVisualization_Main.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_FingertipVisualization.html) [визуализация](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_FingertipVisualization.html) с удобное для визуализации |
 | Пользовательский интерфейс для активации ограничивающего прямоугольника вручную | Дополнительные сведения о различных типах указателей | Визуальное взаимодействие с учетом того, что повышает уверенность в прямом взаимодействии |
 |  [отслеживание![глаз. Выбор целевого объекта](images/mrtk_et_targetselect.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) [Отслеживание глаз: Выбор целевого объекта](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) | [отслеживание![глаз:](images/mrtk_et_navigation.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html) [Отслеживание взгляда](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html) на навигацию: Навигация | [отслеживание![глаз: отслеживание глаз на тепловой карте](images/mrtk_et_heatmaps.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Visualization.html) [: тепловая схема](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Visualization.html) |
@@ -46,7 +46,7 @@ ms.locfileid: "75181954"
 
 [Пример сцены ![](images/MRTK_Examples.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 * [Взаимодействие на основе взгляда] (eye-gaze-interaction.md)
 * [Отслеживание глаз в HoloLens 2] (eye-tracking.md)

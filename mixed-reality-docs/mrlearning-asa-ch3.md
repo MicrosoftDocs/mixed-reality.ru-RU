@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 9f57cb9874aade2d6b19d0c061fd83eb04b9ef11
-ms.sourcegitcommit: b6b76275fad90df6d9645dd2bc074b7b2168c7c8
+ms.openlocfilehash: 19529cbfebd74938395545c329097d42b5af9ff9
+ms.sourcegitcommit: 23b130d03fea46a50a712b8301fe4e5deed6cf9c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73914382"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75334403"
 ---
 # <a name="3-displaying-azure-spatial-anchor-feedback"></a>3. Отображение обратной связи с пространственными привязками Azure
 
@@ -23,38 +23,32 @@ ms.locfileid: "73914382"
 
 * Знакомство и изучение элементов отзывов, доступных пользователям с помощью пакета SDK для ASA
 
-## <a name="instructions"></a>Инструкция
-
-### <a name="set-up-asa-feedback-ui-panel"></a>Настройка панели пользовательского интерфейса для обратной связи ASA
+## <a name="set-up-asa-feedback-ui-panel"></a>Настройка панели пользовательского интерфейса для обратной связи ASA
 
 1. На этом занятии мы не используем кнопки "Савеанчортодиск" и "Шареанчор", поэтому установите обе кнопки и снимите флажок на панели инспектора (как показано ниже), чтобы скрыть эти кнопки.
-   
 
-![module2chapter3step1im](images/module2chapter3step1im.PNG)
+    ![module2chapter3step1im](images/module2chapter3step1im.PNG)
 
 2. Создайте панель инструкций. Для начала щелкните правой кнопкой мыши кнопку "инструкции", наведите указатель на пункт "трехмерный объект" и выберите "текстмешпро-Text".
 
-![module2chapter3step2im](images/module2chapter3step2im.PNG)
+    ![module2chapter3step2im](images/module2chapter3step2im.PNG)
 
 3. Измените масштаб и расположение текста, чтобы он совпадал с инструкциями в сцене. Кроме того, убедитесь, что выравнивание для всего текста осуществляется по центру. Затем удалите образец текста из текстового редактора, как показано на рисунке ниже.
 
-![module2chapter3step3im](images/module2chapter3step3im.PNG)
+    ![module2chapter3step3im](images/module2chapter3step3im.PNG)
 
 4. Измените имя объекта Текстмешпро на "Фидбаккпанел".
-   
 
-![module2chapter3step4im](images/module2chapter3step4im.PNG)
+    ![module2chapter3step4im](images/module2chapter3step4im.PNG)
 
-5. Убедитесь, что в иерархии ASA_feedback выбран текст "фидбаккпанел", нажмите кнопку "добавить компонент" и добавьте сценарий обратной связи, выполнив поиск и выбрав его после появления. 
+5. Убедитесь, что в иерархии ASA_feedback выбран текст "фидбаккпанел", нажмите кнопку "добавить компонент" и добавьте сценарий обратной связи, выполнив поиск и выбрав его после появления.
 
-![module2chapter3step8im](images/module2chapter3step8im.PNG)
+    ![module2chapter3step8im](images/module2chapter3step8im.PNG)
 
-6. Перетащите текстовый объект Фидбаккпанел из иерархии ASA_Feedback в пустой слот под сценарием, как показано на рисунке ниже. 
+6. Перетащите текстовый объект Фидбаккпанел из иерархии ASA_Feedback в пустой слот под сценарием, как показано на рисунке ниже.
 
-![module2chapter3step9im](images/module2chapter3step9im.PNG)
+    ![module2chapter3step9im](images/module2chapter3step9im.PNG)
 
 ## <a name="congratulations"></a>Поздравляем!
 
 На этом занятии мы узнали, как создать панель пользовательского интерфейса для отображения текущего состояния работы с пространственными привязками Azure для предоставления пользователям обратной связи в режиме реального времени.
-
-

@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 861c42f9449fcb3cf038258af91088fc927941e5
-ms.sourcegitcommit: f4812e1312c4751a22a2de56771c475b22a4ba24
+ms.openlocfilehash: e62d3626ec6f2dbf8b66378212afab7db2f56422
+ms.sourcegitcommit: 23b130d03fea46a50a712b8301fe4e5deed6cf9c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74940982"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75334450"
 ---
 # <a name="1-getting-started-with-azure-spatial-anchors"></a>1. Приступая к работе с пространственными привязками Azure
 
@@ -32,9 +32,17 @@ ms.locfileid: "74940982"
 
 ## <a name="prerequisites"></a>Необходимые условия
 
-* Выполните требования, перечисленные в разделе " [Предварительные требования](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#prerequisites) " [краткого руководства по созданию приложения Unity HoloLens, в котором используется учебник по пространственным привязок Azure](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) .
+>[!TIP]
+>Если вы еще не выполнили серию [учебников по началу работы](mrlearning-base.md) , рекомендуется сначала выполнить эти учебники.
+
+* КОМПЬЮТЕР с Windows 10 с [установленными](install-the-tools.md) правильными инструментами
+* Windows 10 SDK 10.0.18362.0 или более поздней версии
+* Некоторые базовые C# возможности программирования
+* Устройство HoloLens 2, [настроенное для разработки](using-visual-studio.md#enabling-developer-mode)
 * Выполните инструкции из раздела [Создание ресурса пространственных привязок](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) в разделе [Краткое руководство. Создание приложения Unity HoloLens, использующего учебник по пространственным привязок Azure](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) .
-* Если вы еще не выполнили серию [учебников по началу работы](mrlearning-base.md) , рекомендуется сначала выполнить эти учебники.
+
+>[!IMPORTANT]
+>Для этой серии руководств требуется <a href="https://unity3d.com/get-unity/download/archive" target="_blank">unity 2019,1</a> , а рекомендуемая версия — Unity 2019.1.14. Это заменяет все требования к версии Unity или рекомендации, указанные в связанных выше условиях.
 
 ## <a name="creating-the-unity-project"></a>Создание проекта Unity
 
