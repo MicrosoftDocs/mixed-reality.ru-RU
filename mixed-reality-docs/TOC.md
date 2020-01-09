@@ -2,6 +2,7 @@
 ## [Последние новости](news.md)
 ## [Подготовка приложения для HL2](mrtk-porting-guide.md)
 ## [Дополнительные сведения о службах Azure](azure-services.md)
+## [Приготовьтесь к выпуску нового решения Microsoft Edge](new-microsoft-edge.md)
 ## Программы и мероприятия
 ### [Календарь мероприятий Reactor Academy в Сан-Франциско](sf-academy-events.md)
 ### [CVPR 2019: семинар по смешанной реальности](cvpr-2019.md)
