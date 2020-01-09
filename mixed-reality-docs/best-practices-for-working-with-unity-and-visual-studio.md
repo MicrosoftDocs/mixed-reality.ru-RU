@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: развертывание, Unity, Visual Studio, HoloLens, HoloLens 2, иммерсивное головной телефон
-ms.openlocfilehash: 88eaa69f1349e3303a93d9d634479d8265eb417c
-ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
+ms.openlocfilehash: 4d145568190ea43cf2ec43442a1c3d5ca4d92251
+ms.sourcegitcommit: 7e8b9de561cbc8483e84511f3e9cbd779f3a999f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73926548"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "75502635"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Рекомендации по работе с Unity и Visual Studio
 
@@ -29,11 +29,11 @@ ms.locfileid: "73926548"
    - Щелкните **Добавить исключение** и выберите папку, содержащую код проекта Unity и выходные данные сборки.
 3) Использование SSD для создания
 
-Дополнительные сведения см. в статье [Оптимизация времени сборки для IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html) . Также ознакомьтесь [с отладкой на серверном сервере скриптов IL2CPP](https://docs.unity3d.com/Manual/windowsstore-debugging-il2cpp.html).
+Дополнительные сведения см. в обзоре [оптимизации времени сборки для IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html) . Кроме того, ознакомьтесь [с разделом Отладка в серверной части сценариев IL2CPP](https://docs.unity3d.com/Manual/windowsstore-debugging-il2cpp.html).
 
 Кроме того, рекомендуется установить [расширение Visual Studio *унитискриптанализер* ](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer). Это средство анализирует скрипты Unity C# для кода, который может быть написан более оптимизированным образом.
 
-## <a name="visual-studio-tools-for-unity"></a>Инструменты Visual Studio для Unity
+## <a name="visual-studio-tools-for-unity"></a>Набор средств Visual Studio для Unity
 
 Скачать [инструменты Visual Studio для Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity?view=vs-2019)
 
@@ -45,7 +45,7 @@ ms.locfileid: "73926548"
 
 ## <a name="expose-c-class-variables-for-easy-tuning"></a>Предоставление C# переменных класса для простоты настройки
 
-Существует два способа предоставления переменных класса. Для этого рекомендуется добавить атрибут [Сериализефиелд] в закрытые переменные. Это позволяет получить доступ к ним из редактора, но не предоставлять программным способом.  Другой вариант — сделать C# переменные класса открытыми, чтобы предоставить их в пользовательском интерфейсе редактора. 
+Существует два способа предоставления переменных класса. Рекомендуемый способ — добавить атрибут [Сериализефиелд] к частным переменным. Это позволяет получить доступ к ним из редактора, но не предоставлять программным способом.  Другой вариант — сделать C# переменные класса открытыми, чтобы предоставить их в пользовательском интерфейсе редактора. 
 
 Оба подхода позволяют легко настраивать переменные при воспроизведении в редакторе. Это особенно полезно для настройки свойств механику взаимодействия.
 
@@ -57,7 +57,7 @@ ms.locfileid: "73926548"
 
 Хранение ресурсов в текстовом формате упрощает проверку различий изменений содержимого в Visual Studio. Это можно сделать в окне "изменение параметров проекта > редакторе >", изменив режим **сериализации активов** на **принудительный текст**. Однако слияние изменений в файлах с текстовыми ресурсами является подверженным ошибкам и не рекомендуется, поэтому рекомендуется включить монопольное двоичное извлечение в системе управления версиями.
 
-## <a name="see-also"></a>См. также
-- [Инструменты Visual Studio для Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
+## <a name="see-also"></a>См. также статью
+- [Набор средств Visual Studio для Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
 - [Оптимизация времени сборки для IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)
 - [*Унитискриптанализер* Расширение Visual Studio](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer)

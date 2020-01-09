@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Фото, видео, hololens, Камера, Unity, размещаемые
-ms.openlocfilehash: f0183400f55b1c6663a9a20ab4992befe5ad0718
-ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
+ms.openlocfilehash: b4a1a7e11a7606dab76b954c8d58a335d6bae0ab
+ms.sourcegitcommit: d0da0214fdd2bbac5a91a5d895bf0e87413b29b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "63515432"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597617"
 ---
 # <a name="locatable-camera-in-unity"></a>Камера размещаемые в Unity
 
@@ -26,10 +26,10 @@ ms.locfileid: "63515432"
 
 ## <a name="photo-capture"></a>Запись фотографий
 
-**Имен** *UnityEngine. XR. WSA. веб-камера*<br>
-**Тип** *Фотозапись*
+**Пространство имен:** *UnityEngine. XR. WSA. веб-камера*<br>
+**Тип:** *фотозапись*
 
-Тип *фотосъемки* позволяет вам по-прежнему иметь фотографии фотокамеры. Общий шаблон использования фотосъемки  для получения фотографий выглядит следующим образом:
+Тип *фотосъемки* позволяет вам по-прежнему иметь фотографии фотокамеры. Общий шаблон использования *фотосъемки* для получения фотографий выглядит следующим образом:
 1. Создание объекта *Фотозаписи*
 2. Создание объекта *камерапараметерс* с нужными параметрами
 3. Запуск фоторежима через *стартфотомодеасинк*
@@ -39,9 +39,9 @@ ms.locfileid: "63515432"
 
 ### <a name="common-set-up-for-photocapture"></a>Стандартная настройка для фотозахвата
 
-Для всех трех вариантов использования мы начнем с тех же самых первых 3 шагов.
+Для всех трех вариантов использования Начните с тех же самых первых 3 шагов.
 
-Начнем с создания объекта *фотосъемки* .
+Начните с создания объекта *фотосъемки*
 
 ```cs
 PhotoCapture photoCaptureObject = null;
@@ -51,7 +51,7 @@ PhotoCapture photoCaptureObject = null;
    }
 ```
 
-Далее мы сохраняем наш объект, настроили наши параметры и запускаем Фоторежим.
+Затем сохраните объект, задайте параметры и запустите режим фото.
 
 ```cs
 void OnPhotoCaptureCreated(PhotoCapture captureObject)
@@ -70,7 +70,7 @@ void OnPhotoCaptureCreated(PhotoCapture captureObject)
    }
 ```
 
-В итоге мы также будем использовать тот же код очистки, представленный здесь.
+В итоге вы также будете использовать тот же код очистки, представленный здесь.
 
 ```cs
 void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
@@ -86,7 +86,7 @@ void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
 
 Самой простой операцией является запись фотографии непосредственно в файл. Фотографию можно сохранить в формате JPG или PNG.
 
-Если вы успешно начали работу с фото-режимом, теперь мы будем делать фотографию и хранить ее на диске.
+Если вы успешно начали фото-режим, возьмите фотографию и сохраните ее на диске.
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -105,7 +105,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-После записи фотографии на диск мы будем выходить из фоторежимов, а затем очищать наши объекты.
+После записи фотографии на диск выйдите из режима Photo, а затем очистите объекты
 
 ```cs
 void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
@@ -126,9 +126,9 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
 
 При записи данных в Texture2D процесс очень похож на запись на диск.
 
-Мы будем следовать процессу настройки выше.
+Выполните описанный выше процесс настройки.
 
-В *онфотомодестартед*мы будем записывать кадр в память.
+В *онфотомодестартед*запишите кадр в память.
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -144,7 +144,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-Затем мы будем применять наш результат к текстуре и используем наиболее распространенный код очистки.
+Затем вы примените результат к текстуре и используйте общий код очистки, приведенный выше.
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -165,9 +165,9 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 ### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a>Запись фотографии и взаимодействие с необработанными байтами
 
-Чтобы взаимодействовать с необработанными байтами в кадре памяти, мы будем выполнять те же действия по настройке, что и в примере выше, и *онфотомодестартед* , как при записи фотографии в Texture2D. Разница заключается в *онкаптуредфототомемори* , где можно получить необработанные байты и взаимодействовать с ними.
+Чтобы взаимодействовать с необработанными байтами в кадре памяти, выполните те же действия по настройке, что и в предыдущем разделе, и *онфотомодестартед* , как при записи фотографии в Texture2D. Разница заключается в *онкаптуредфототомемори* , где можно получить необработанные байты и взаимодействовать с ними.
 
-В этом примере мы создадим *список<Color>*  , который можно обработать или применить к текстуре с помощью *сетпикселс ()* .
+В этом примере вы создадите *список<Color>* который можно обработать или применить к текстуре с помощью *сетпикселс ()* .
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -202,10 +202,10 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 ## <a name="video-capture"></a>Видеозапись
 
-**Имен** *UnityEngine. XR. WSA. веб-камера*<br>
-**Тип** *видеокаптуре*
+**Пространство имен:** *UnityEngine. XR. WSA. веб-камера*<br>
+**Тип:** *видеокаптуре*
 
-Функция *видеокаптуре* очень похожа на функцию фотозахвата. Единственное отличие заключается в том, что необходимо указать значение кадров в секунду, которое можно сохранить непосредственно на диск в виде MP4-файла. Ниже приведены действия по использованию *видеокаптуре* .
+Функция *видеокаптуре* очень похожа на функцию *фотозахвата*. Единственное отличие заключается в том, что необходимо указать значение кадров в секунду, которое можно сохранить непосредственно на диск в виде MP4-файла. Ниже приведены действия по использованию *видеокаптуре* .
 1. Создание объекта *видеокаптуре*
 2. Создание объекта *камерапараметерс* с нужными параметрами
 3. Запуск видеорежима через *стартвидеомодеасинк*
@@ -213,7 +213,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 5. Закончить запись видео
 6. Воспроизведение видеорежима и очистка ресурсов
 
-Начнем с создания нашего объекта *Видеокаптуре* *видеокаптуре m_VideoCapture = NULL;*
+Начните с создания нашего объекта видеокаптуре *видеокаптуре m_VideoCapture = NULL;*
 
 ```cs
 void Start ()
@@ -222,7 +222,7 @@ void Start ()
    }
 ```
 
-Затем будут настроены параметры, которые будут нужны для записи и запуска.
+Затем настройте необходимые параметры для записи и запуска.
 
 ```cs
 void OnVideoCaptureCreated (VideoCapture videoCapture)
@@ -252,7 +252,7 @@ void OnVideoCaptureCreated (VideoCapture videoCapture)
    }
 ```
 
-После запуска запись начнется
+После запуска Запустите запись.
 
 ```cs
 void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
@@ -267,7 +267,7 @@ void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-После начала записи можно обновить пользовательский интерфейс или поведение, чтобы включить остановку. Вот только журнал
+После начала записи можно обновить пользовательский интерфейс или поведение, чтобы включить остановку. Здесь вы только зарегистрируетесь.
 
 ```cs
 void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
@@ -277,7 +277,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-На более позднем этапе нам нужно будет отключить запись. Например, это может произойти из таймера или ввода пользователя.
+Позже вы захотите отключить запись. Например, это может произойти из таймера или ввода пользователя.
 
 ```cs
 // The user has indicated to stop recording
@@ -287,7 +287,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-После остановки записи будет остановлен видеорежим и очищены ресурсы.
+После остановки записи остановите видеорежим и очистите ресурсы.
 
 ```cs
 void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
@@ -303,7 +303,7 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="troubleshooting"></a>"Устранение неполадок"
 * Нет доступных разрешений
     * Убедитесь, что в проекте указана возможность использования **веб-камеры** .
 
