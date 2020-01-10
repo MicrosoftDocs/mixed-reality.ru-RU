@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens (1-й общий), HoloLens 2, Смешанная реальность, курсоры, нацеленность, взгляд, жесты
-ms.openlocfilehash: 719e7a573e8c8bc682ec0f960d9f3c8f8c8e5a4a
-ms.sourcegitcommit: 781e47db2ca2f2c792c95e76ac309b44b3535555
+ms.openlocfilehash: 969906cb09e100dbdd289d78baba722a4bd32537
+ms.sourcegitcommit: 6844930427b658ae31f642c395cd8a3b3cdbf857
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74105754"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75723243"
 ---
 # <a name="cursors"></a>Курсоры
 
@@ -34,7 +34,7 @@ ms.locfileid: "74105754"
     <col width="25%" />
     </colgroup>
     <tr>
-        <td><strong>Функциями</strong></td>
+        <td><strong>Возможность</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1-го поколения)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
@@ -156,16 +156,16 @@ ms.locfileid: "74105754"
 
 ---
 
-## <a name="cursor-in-mrtkmixed-reality-toolkit-for-unity"></a>Курсор в МРТК (набор средств для смешанной реальности) для Unity
-По умолчанию **[мртк](https://github.com/Microsoft/MixedRealityToolkit-Unity)** предоставляет курсор prefab ([дефаулткурсор. prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)), который имеет то же визуальное состояние, что и системный курсор оболочки. Он назначается входным профилем МРТК в разделе указатели. Вы можете заменить или настроить этот курсор для работы. Для удобства ввода с отслеживанием взгляда МРТК также предоставляет Эйегазекурсор, который имеет тонкий визуальный элемент для снижения числа невыполнений.
+## <a name="cursor-in-mrtk-mixed-reality-toolkit-for-unity"></a>Курсор в МРТК (набор средств для смешанной реальности) для Unity
+По умолчанию [мртк](https://github.com/Microsoft/MixedRealityToolkit-Unity) предоставляет курсор prefab ([дефаулткурсор. prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)), который имеет то же визуальное состояние, что и системный курсор оболочки. Она назначается в профиле ввода данных в MRTK в разделе "Указатели". Вы можете заменить или настроить этот курсор для работы. Для удобства ввода с отслеживанием взгляда МРТК также предоставляет Эйегазекурсор, который имеет тонкий визуальный элемент для снижения числа невыполнений.
 
-* [МРТК — профиль указателя](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
-* [МРТК система ввода](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
-* [МРТК — указатели](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
+* [MRTK — профиль указателя](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
+* [MRTK — система ввода](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
+* [MRTK — указатели](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
 
 
 ---
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 * [Жесты](gaze-and-commit.md#composite-gestures)
 * [Направление головы и фиксация](gaze-and-commit.md)

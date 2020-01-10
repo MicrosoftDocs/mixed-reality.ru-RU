@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, проектирование, элементы управления, Пользовательский интерфейс, UX
-ms.openlocfilehash: 4befaa6f55bff6a820c976db969fdad7b64a2214
-ms.sourcegitcommit: 17427d4d8c3723d53540f1b7f5bc061bba08c1d6
+ms.openlocfilehash: d028b8717dae0e04a9a1104a8a4b7803023334ef
+ms.sourcegitcommit: 6844930427b658ae31f642c395cd8a3b3cdbf857
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2019
-ms.locfileid: "74143248"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75723213"
 ---
 # <a name="progress-indicator"></a>Индикатор хода выполнения
 
@@ -37,7 +37,7 @@ ms.locfileid: "74143248"
         *Изображение: пример индикатора выполнения в HoloLens*
     :::column-end:::
         :::column:::
-        ![пространство](images/spacer-20x582.png)<br>
+        ![space](images/spacer-20x582.png)<br>
        ![пример индикатора выполнения в HoloLens](images/640px-progressbar.jpg)<br>
     :::column-end:::
 :::row-end:::
@@ -54,7 +54,7 @@ ms.locfileid: "74143248"
         *Изображение: пример круга хода выполнения в HoloLens*
     :::column-end:::
         :::column:::
-        ![пространство](images/spacer-20x582.png)<br>
+        ![space](images/spacer-20x582.png)<br>
        Пример круга хода выполнения ![в HoloLens](images/640px-progressring.jpg)<br>
     :::column-end:::
 :::row-end:::
@@ -71,7 +71,7 @@ ms.locfileid: "74143248"
         *Изображение: ход выполнения с примером настраиваемой сетки в HoloLens*
     :::column-end:::
         :::column:::
-        ![пространство](images/spacer-20x582.png)<br>
+        ![space](images/spacer-20x582.png)<br>
        ![хода выполнения с помощью пользовательского примера сетки в HoloLens](images/640px-progresscustom.jpg)<br>
     :::column-end:::
 :::row-end:::
@@ -88,7 +88,7 @@ ms.locfileid: "74143248"
 
 ---
 
-## <a name="progress-indicator-in-mrtkmixed-reality-toolkit-for-unity"></a>Индикатор выполнения в МРТК (набор средств для смешанной реальности) для Unity
+## <a name="progress-indicator-in-mrtk-mixed-reality-toolkit-for-unity"></a>Индикатор выполнения в МРТК (набор средств для смешанной реальности) для Unity
 
 * [МРТК — индикатор выполнения Prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/ProgressIndicators)
 * [МРТК — служба перехода на сцену](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Extensions/SceneTransitionService/SceneTransitionServiceOverview.html)
@@ -98,23 +98,23 @@ ms.locfileid: "74143248"
 
 ---
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 * [Курсоры](cursors.md)
-* [Рука](point-and-commit.md)
+* [Телекинез](point-and-commit.md)
 * [Button](button.md)
 * [Активный объект](interactable-object.md)
 * [Ограничивающая рамка и панель приложения](app-bar-and-bounding-box.md)
-* [Управлять](direct-manipulation.md)
+* [Оперирование](direct-manipulation.md)
 * [Меню руки](hand-menu.md)
-* [Ближайшее меню](near-menu.md)
+* [Быстрое меню](near-menu.md)
 * [Коллекция объектов](object-collection.md)
-* [Voice, команда](voice-input.md)
+* [Голосовая команда](voice-input.md)
 * [Клавиатура](keyboard.md)
-* [Сказок](tooltip.md)
-* [Рекламы](slate.md)
-* [Slider](slider.md)
-* [Шейдера](shader.md)
+* [Подсказка](tooltip.md)
+* [Планшет](slate.md)
+* [Ползунок](slider.md)
+* [Шейдер](shader.md)
 * [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
 * [Индикация хода выполнения](progress.md)
-* [Магнит поверхности](surface-magnetism.md)
+* [Притяжение к поверхности](surface-magnetism.md)

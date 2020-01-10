@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, элементы управления, проектирование
-ms.openlocfilehash: 9a111fcbe4c49972cc5ef22fb647f89544188af5
-ms.sourcegitcommit: 17427d4d8c3723d53540f1b7f5bc061bba08c1d6
+ms.openlocfilehash: ec41cfad77617a90d02e7b23a2334249aa430190
+ms.sourcegitcommit: 6844930427b658ae31f642c395cd8a3b3cdbf857
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2019
-ms.locfileid: "74143155"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75723223"
 ---
 # <a name="object-collection"></a>Коллекция объектов
 
@@ -48,7 +48,7 @@ ms.locfileid: "74143155"
 
 ---
 
-## <a name="object-collection-in-mrtkmixed-reality-toolkit-for-unity"></a>Коллекция объектов в МРТК (набор средств для смешанной реальности) для Unity
+## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>Коллекция объектов в МРТК (набор средств для смешанной реальности) для Unity
 
 * [МРТК — коллекция объектов](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)
 
@@ -58,23 +58,23 @@ ms.locfileid: "74143155"
 ---
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 * [Курсоры](cursors.md)
-* [Рука](point-and-commit.md)
+* [Телекинез](point-and-commit.md)
 * [Button](button.md)
 * [Активный объект](interactable-object.md)
 * [Ограничивающая рамка и панель приложения](app-bar-and-bounding-box.md)
-* [Управлять](direct-manipulation.md)
+* [Оперирование](direct-manipulation.md)
 * [Меню руки](hand-menu.md)
-* [Ближайшее меню](near-menu.md)
+* [Быстрое меню](near-menu.md)
 * [Коллекция объектов](object-collection.md)
-* [Voice, команда](voice-input.md)
+* [Голосовая команда](voice-input.md)
 * [Клавиатура](keyboard.md)
-* [Сказок](tooltip.md)
-* [Рекламы](slate.md)
-* [Slider](slider.md)
-* [Шейдера](shader.md)
+* [Подсказка](tooltip.md)
+* [Планшет](slate.md)
+* [Ползунок](slider.md)
+* [Шейдер](shader.md)
 * [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
 * [Индикация хода выполнения](progress.md)
-* [Магнит поверхности](surface-magnetism.md)
+* [Притяжение к поверхности](surface-magnetism.md)

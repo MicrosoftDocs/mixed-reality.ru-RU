@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, объявление, пометка — вместе
-ms.openlocfilehash: ff2b1ce20174b1b9aecbb90b1d1dc3e8896b3761
-ms.sourcegitcommit: 17427d4d8c3723d53540f1b7f5bc061bba08c1d6
+ms.openlocfilehash: 24c4ca8bdc3c6ea1081311102204d4a7f5a95425
+ms.sourcegitcommit: 6844930427b658ae31f642c395cd8a3b3cdbf857
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2019
-ms.locfileid: "74143126"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75723183"
 ---
 # <a name="billboarding-and-tag-along"></a>Объявления и теги — вместе
 
@@ -46,8 +46,8 @@ Tag — это понятие поведения, которое можно до
 
 ---
 
-## <a name="billboarding-and-tag-along-in-mrtkmixed-reality-toolkit-for-unity"></a>Реклама и теги — вместе с МРТК (набор средств для смешанной реальности) для Unity
-**[Мртк](https://github.com/Microsoft/MixedRealityToolkit-Unity)** предоставляет скрипты для поведения на основе объявлений и тегов. Просто назначьте скрипт Billboard.cs для любого объекта, чтобы добавить поведение объявления и сделать объект всегда лицом к вам. Чтобы добавить поведение тегов, используйте сценарий RadialView.cs. Можно настроить различные параметры, например время лерпинг, расстояние и степень.
+## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Реклама и теги — вместе с МРТК (набор средств для смешанной реальности) для Unity
+**[Мртк](https://github.com/Microsoft/MixedRealityToolkit-Unity)** предоставляет скрипты для поведения на основе объявлений и тегов. Просто назначьте сценарий Billboard.cs любому объекту, чтобы добавить поведение для объявления и сделать объект всегда лицом к вам. Чтобы добавить поведение тегов, используйте сценарий RadialView.cs. Можно настроить различные параметры, например время лерпинг, расстояние и степень.
 
 * [МРТК-радиальный просмотр решения](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html#radialview)
 * [МРТК-сценарий для рекламы](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
@@ -57,23 +57,23 @@ Tag — это понятие поведения, которое можно до
 
 ---
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 * [Курсоры](cursors.md)
-* [Рука](point-and-commit.md)
+* [Телекинез](point-and-commit.md)
 * [Button](button.md)
 * [Активный объект](interactable-object.md)
 * [Ограничивающая рамка и панель приложения](app-bar-and-bounding-box.md)
-* [Управлять](direct-manipulation.md)
+* [Оперирование](direct-manipulation.md)
 * [Меню руки](hand-menu.md)
-* [Ближайшее меню](near-menu.md)
+* [Быстрое меню](near-menu.md)
 * [Коллекция объектов](object-collection.md)
-* [Voice, команда](voice-input.md)
+* [Голосовая команда](voice-input.md)
 * [Клавиатура](keyboard.md)
-* [Сказок](tooltip.md)
-* [Рекламы](slate.md)
-* [Slider](slider.md)
-* [Шейдера](shader.md)
+* [Подсказка](tooltip.md)
+* [Планшет](slate.md)
+* [Ползунок](slider.md)
+* [Шейдер](shader.md)
 * [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
 * [Индикация хода выполнения](progress.md)
-* [Магнит поверхности](surface-magnetism.md)
+* [Притяжение к поверхности](surface-magnetism.md)

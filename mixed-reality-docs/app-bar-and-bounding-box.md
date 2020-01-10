@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Windows Mixed Reality, панель приложений, ограничивающий прямоугольник
-ms.openlocfilehash: e4f519cba459efac25f6c1370b07fcda4def30a1
-ms.sourcegitcommit: 17427d4d8c3723d53540f1b7f5bc061bba08c1d6
+ms.openlocfilehash: dab41207c2558fe8bb3fe07fca666cb2668f4e45
+ms.sourcegitcommit: 6844930427b658ae31f642c395cd8a3b3cdbf857
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2019
-ms.locfileid: "74143171"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75723203"
 ---
 # <a name="bounding-box-and-app-bar"></a>Ограничивающий прямоугольник и панель приложений
 ![ное ограничение является стандартным интерфейсом для манипулирования объектами в смешанной реальности.](images/UX/UX_Hero_BoundingBox.jpg)<br>
@@ -29,7 +29,7 @@ ms.locfileid: "74143171"
         *Цикл видео: масштабирование объекта через ограничивающий прямоугольник*
     :::column-end:::
         :::column:::
-        ![пространство](images/spacer-20x582.png)<br>
+        ![space](images/spacer-20x582.png)<br>
        ![точки HoloLens — представление масштабирования объекта с помощью ограничивающего прямоугольника](images/HoloLens2_BoundingBox.gif)<br>
     :::column-end:::
 :::row-end:::
@@ -44,7 +44,7 @@ ms.locfileid: "74143171"
         *Цикл видео: поворот объекта через ограничивающий прямоугольник*
     :::column-end:::
         :::column:::
-        ![пространство](images/spacer-20x582.png)<br>
+        ![space](images/spacer-20x582.png)<br>
        ![точку HoloLens для поворота объекта с помощью ограничивающего прямоугольника](images/HoloLens2_BoundingBox_Rotate.gif)<br>
     :::column-end:::
 :::row-end:::
@@ -59,7 +59,7 @@ ms.locfileid: "74143171"
         *Цикл видео. пример визуальной обратной связи на основе сходства с ограничивающим прямоугольником*
     :::column-end:::
         :::column:::
-        ![пространство](images/spacer-20x582.png)<br>
+        ![space](images/spacer-20x582.png)<br>
        ![визуальной обратной связи](images/HoloLens2_Proximity.gif)<br>
     :::column-end:::
 :::row-end:::
@@ -84,7 +84,7 @@ ms.locfileid: "74143171"
         *Цикл видео. обходится голограмма, следующая панель приложения*
     :::column-end:::
         :::column:::
-        ![пространство](images/spacer-20x582.png)<br>
+        ![space](images/spacer-20x582.png)<br>
        ![обходится голограмма. Ниже приведена панель приложений.](images/HoloLens2_AppBarFollowing.gif)<br>
     :::column-end:::
 :::row-end:::
@@ -92,7 +92,7 @@ ms.locfileid: "74143171"
 <br>
 
 
-## <a name="bounding-box-in-mrtkmixed-reality-toolkit-for-unity"></a>Ограничивающий прямоугольник в МРТК (набор средств для смешанной реальности) для Unity
+## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Ограничивающий прямоугольник в МРТК (набор средств для смешанной реальности) для Unity
 **[Мртк](https://github.com/Microsoft/MixedRealityToolkit-Unity)** предоставляет скрипты и Prefabs для ограничивающего прямоугольника и панели приложений. Можно добавить ограничивающий прямоугольник, просто назначив сценарий BoundingBox.cs на любой объект.
 
 * [МРТК-ограничивающий прямоугольник](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
@@ -103,23 +103,23 @@ ms.locfileid: "74143171"
 ---
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 * [Курсоры](cursors.md)
-* [Рука](point-and-commit.md)
+* [Телекинез](point-and-commit.md)
 * [Button](button.md)
 * [Активный объект](interactable-object.md)
 * [Ограничивающая рамка и панель приложения](app-bar-and-bounding-box.md)
-* [Управлять](direct-manipulation.md)
+* [Оперирование](direct-manipulation.md)
 * [Меню руки](hand-menu.md)
-* [Ближайшее меню](near-menu.md)
+* [Быстрое меню](near-menu.md)
 * [Коллекция объектов](object-collection.md)
-* [Voice, команда](voice-input.md)
+* [Голосовая команда](voice-input.md)
 * [Клавиатура](keyboard.md)
-* [Сказок](tooltip.md)
-* [Рекламы](slate.md)
-* [Slider](slider.md)
-* [Шейдера](shader.md)
+* [Подсказка](tooltip.md)
+* [Планшет](slate.md)
+* [Ползунок](slider.md)
+* [Шейдер](shader.md)
 * [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
 * [Индикация хода выполнения](progress.md)
-* [Магнит поверхности](surface-magnetism.md)
+* [Притяжение к поверхности](surface-magnetism.md)

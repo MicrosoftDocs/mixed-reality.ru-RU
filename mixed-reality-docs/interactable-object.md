@@ -6,12 +6,12 @@ ms.author: jennyk
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Смешанная реальность, элементы управления, взаимодействие, Пользовательский интерфейс, UX
-ms.openlocfilehash: 73c8a3ce9e01f580ecbae23f2178871642c4540e
-ms.sourcegitcommit: 17427d4d8c3723d53540f1b7f5bc061bba08c1d6
+ms.openlocfilehash: 87979d2d7b7de4a384b42b5059239e9b830a92e8
+ms.sourcegitcommit: 6844930427b658ae31f642c395cd8a3b3cdbf857
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2019
-ms.locfileid: "74143256"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75723233"
 ---
 # <a name="interactable-object"></a>Взаимодействующий объект
 
@@ -140,8 +140,8 @@ HoloLens 2 поддерживает вводные данные отслежив
 
 :::row:::
     :::column:::
-        ![по умолчанию](images/640px-interactibleobject-pressablebutton-default.jpg)<br>
-        **Параметры**<br>
+        ![Default](images/640px-interactibleobject-pressablebutton-default.jpg)<br>
+        **Default**<br>
     :::column-end:::
     :::column:::
         ![](images/640px-interactibleobject-pressablebutton-hover.jpg) с наведением<br>
@@ -157,8 +157,8 @@ HoloLens 2 поддерживает вводные данные отслежив
         Отображать эффекты Ripple.
     :::column-end:::
     :::column:::
-        ![нажмите](images/640px-interactibleobject-pressablebutton-press.jpg)<br>
-        **Нажать**<br>
+        ![Сочетание клавиш](images/640px-interactibleobject-pressablebutton-press.jpg)<br>
+        **Сочетание клавиш**<br>
         Переместите переднюю форму.
     :::column-end:::
 :::row-end:::
@@ -175,7 +175,7 @@ HoloLens 2 поддерживает вводные данные отслежив
         *Цикл видео. пример визуальной обратной связи на основе сходства с ограничивающим прямоугольником*
     :::column-end:::
         :::column:::
-        ![пространство](images/spacer-20x582.png)<br>
+        ![space](images/spacer-20x582.png)<br>
        ![визуальной обратной связи](images/HoloLens2_Proximity.gif)<br>
     :::column-end:::
 :::row-end:::
@@ -216,7 +216,7 @@ HoloLens 2 поддерживает вводные данные отслежив
 ---
 
 
-## <a name="sizing-recommendations"></a>Рекомендации по выбору размера 
+## <a name="sizing-recommendations"></a>Рекомендации относительно размеров 
 
 Чтобы пользователи могли легко затронуть все взаимодействующие объекты, рекомендуется убедиться, что они соответствуют минимальному размеру (визуальный угол, часто измеряемый в градусах визуальной дуги) в зависимости от расстояния, которое он помещает от пользователя. Визуальный угол основан на расстоянии между глазами пользователя и объектом и остается постоянным, а физический размер целевого объекта может измениться по мере изменения расстояния от пользователя. Чтобы определить необходимый физический размер объекта на основе расстояния от пользователя, попробуйте использовать визуальный калькулятор [угла, такой как.](https://elvers.us/perception/visualAngle/)
 
@@ -225,7 +225,7 @@ HoloLens 2 поддерживает вводные данные отслежив
 
 ### <a name="target-size-for-direct-hand-interaction"></a>Целевой размер для взаимодействия непосредственно с рукой
 
-| Друг | Угол просмотра | Size (Размер) |
+| Расстояние | Угол просмотра | Size (Размер) |
 |---------|---------|---------|
 | 45cm  | не меньше 2 ° | 1,6 x 1,6 cm |
 
@@ -238,7 +238,7 @@ HoloLens 2 поддерживает вводные данные отслежив
 
 При создании кнопок для прямого взаимодействия рекомендуется увеличить минимальный размер 3,2 x 3,2 cm, чтобы убедиться в наличии достаточного пространства для размещения значка и потенциального текста.
 
-| Друг | Минимальный размер |
+| Расстояние | Минимальный размер |
 |---------|---------|
 | 45cm  | 3,2 x 3,2 cm |
 
@@ -248,7 +248,7 @@ HoloLens 2 поддерживает вводные данные отслежив
 <br>
 
 ### <a name="target-size-for-hand-ray-or-gaze-interaction"></a>Целевой размер для взаимодействия "рука" или "взгляд"
-| Друг | Угол просмотра | Size (Размер) |
+| Расстояние | Угол просмотра | Size (Размер) |
 |---------|---------|---------|
 | 2  | не меньше 1 ° | 3,5 x 3,5 cm |
 
@@ -261,7 +261,7 @@ HoloLens 2 поддерживает вводные данные отслежив
 ---
 
 
-## <a name="interactable-object-in-mrtkmixed-reality-toolkit-for-unit"></a>Взаимодействующий объект в МРТК (набор средств для смешанной реальности) для Unit
+## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>Взаимодействующий объект в МРТК (набор средств для смешанной реальности) для Unity
 
 В **[мртк](https://github.com/Microsoft/MixedRealityToolkit-Unity)** можно использовать [**взаимодействие**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) с скриптом, чтобы объекты отвечали на различные типы состояний взаимодействия. Он поддерживает различные типы тем, которые позволяют определять визуальные состояния, управляя свойствами объектов, такими как цвет, размер, материал и шейдер.
 
@@ -278,23 +278,23 @@ HoloLens 2 поддерживает вводные данные отслежив
 ---
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 * [Курсоры](cursors.md)
-* [Рука](point-and-commit.md)
+* [Телекинез](point-and-commit.md)
 * [Button](button.md)
 * [Активный объект](interactable-object.md)
 * [Ограничивающая рамка и панель приложения](app-bar-and-bounding-box.md)
-* [Управлять](direct-manipulation.md)
+* [Оперирование](direct-manipulation.md)
 * [Меню руки](hand-menu.md)
-* [Ближайшее меню](near-menu.md)
+* [Быстрое меню](near-menu.md)
 * [Коллекция объектов](object-collection.md)
-* [Voice, команда](voice-input.md)
+* [Голосовая команда](voice-input.md)
 * [Клавиатура](keyboard.md)
-* [Сказок](tooltip.md)
-* [Рекламы](slate.md)
-* [Slider](slider.md)
-* [Шейдера](shader.md)
+* [Подсказка](tooltip.md)
+* [Планшет](slate.md)
+* [Ползунок](slider.md)
+* [Шейдер](shader.md)
 * [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
 * [Индикация хода выполнения](progress.md)
-* [Магнит поверхности](surface-magnetism.md)
+* [Притяжение к поверхности](surface-magnetism.md)

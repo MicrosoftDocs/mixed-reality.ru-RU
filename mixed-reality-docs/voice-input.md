@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: ГГВ, Voice, Кортана, речь, вход
-ms.openlocfilehash: 7264b0b8882928f64860bc5a30b97683306cb19c
-ms.sourcegitcommit: 781e47db2ca2f2c792c95e76ac309b44b3535555
+ms.openlocfilehash: f2ae18d4063c7c4a63346a1202cacaa7fbbdf959
+ms.sourcegitcommit: 6844930427b658ae31f642c395cd8a3b3cdbf857
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74105787"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75723193"
 ---
 # <a name="voice-input"></a>Голосовой ввод
 
@@ -42,7 +42,7 @@ ms.locfileid: "74105787"
     <col width="25%" />
     </colgroup>
     <tr>
-        <td><strong>Функциями</strong></td>
+        <td><strong>Возможность</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1-го поколения)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
@@ -121,7 +121,7 @@ ms.locfileid: "74105787"
         *Изображение: пользователь может сказать команду "настроить", которая отображается на панели приложений, чтобы настроить расположение приложения.*
     :::column-end:::
         :::column:::
-        ![пространство](images/spacer-20x582.png)<br>
+        ![space](images/spacer-20x582.png)<br>
         ![при просмотре окна приложения или голограммы пользователь может сказать команду "настроить", которая отображается на панели приложений, чтобы скорректировать расположение приложения в мире](images/microphone-600px.png)<br>
     :::column-end:::
 :::row-end:::
@@ -195,7 +195,7 @@ ms.locfileid: "74105787"
 * **Обеспечьте согласованность голосовых команд.** Если команда "Назад" переводит на предыдущую страницу, поддерживайте это поведение в своих приложениях.
 * **Избегайте использования системных команд.** Приведенные ниже голосовые команды зарезервированы для системы. Они не должны использоваться приложениями.
    * "Привет, Кортана!".
-   * "Выбрать".
+   * "Выбрать"
    * "Перейти к запуску"
 
 ### <a name="advantages-of-voice-input"></a>Преимущества речевого ввода
@@ -296,7 +296,7 @@ HoloLens 2 также поддерживает дополнительные яз
 
 ---
 
-## <a name="voice-input-in-mrtkmixed-reality-toolkit-for-unity"></a>Ввод голоса в МРТК (набор средств для смешанной реальности) для Unity
+## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Ввод голоса в МРТК (набор средств для смешанной реальности) для Unity
 С помощью **[мртк](https://github.com/Microsoft/MixedRealityToolkit-Unity)** можно легко назначить голосовые команды для любых объектов. Используйте **профиль ввода речи** мртк для определения ключевых слов. Назначая сценарий **спичинпусандлер** , можно сделать так, чтобы любой объект отвечал на ключевые слова, определенные в профиле речевого ввода. Спичинпусандлер также предоставляет метку подтверждения речи для улучшения достоверности пользователя.
 
 * [Команда МРТК-Voice](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
@@ -304,7 +304,7 @@ HoloLens 2 также поддерживает дополнительные яз
 
 ---
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 * [Взгляд и фиксация](gaze-and-commit.md)
 * [Инстинктивное взаимодействие](interaction-fundamentals.md)
 * [Ввод MR 212: Voice](holograms-212.md)
