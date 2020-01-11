@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 57a23e34404e4bff653d74b7f6afc65adff8b19c
-ms.sourcegitcommit: 23b130d03fea46a50a712b8301fe4e5deed6cf9c
+ms.openlocfilehash: efa03c49a9a083d2b8e591e03bccbeb776bb57b2
+ms.sourcegitcommit: 2bfe9b1af4ee2cc0d668caeccb8ebc3137cbc20b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "75334331"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75901474"
 ---
 # <a name="1-setting-up-photon-unity-networking"></a>1. Настройка сети Unity Photon
 
@@ -28,7 +28,7 @@ ms.locfileid: "75334331"
 ## <a name="prerequisites"></a>Необходимые условия
 
 >[!TIP]
->Если вы еще не выполнили серию [учебников по началу работы](mrlearning-base.md) , рекомендуется сначала выполнить эти учебники.
+>Если вы еще не выполнили учебники [Приступая к работе](mrlearning-base.md) и службы [пространственных привязок Azure](mrlearning-asa-ch1.md) , мы рекомендуем сначала выполнить эти учебники.
 
 * КОМПЬЮТЕР с Windows 10 с [установленными](install-the-tools.md) правильными инструментами
 * Windows 10 SDK 10.0.18362.0 или более поздней версии
