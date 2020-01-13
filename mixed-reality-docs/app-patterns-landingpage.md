@@ -7,12 +7,12 @@ ms.author: grbury
 ms.date: 11/15/2019
 ms.topic: overview
 keywords: Windows Mixed Reality, проектирование, шаблоны приложений, элементы управления, стиль, HoloLens, взаимодействие, элементы UX, поведения, стандартные блоки
-ms.openlocfilehash: 8dd90a555faea62f69750847ddd6e6df4d9d0314
-ms.sourcegitcommit: 83698638b93c5ba77b3ffc399f1706482539f27b
+ms.openlocfilehash: 16a6c08230dbe16ebb04c39751cce306bbc57c2d
+ms.sourcegitcommit: 23b130d03fea46a50a712b8301fe4e5deed6cf9c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74539667"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75334197"
 ---
 # <a name="ux-elements-overview"></a>Общие сведения об элементах UX
 
@@ -22,23 +22,19 @@ ms.locfileid: "74539667"
 
 :::row:::
     :::column:::
-       цвет [, освещение![](images/640px-fragments.jpg)](color,-light-and-materials.md) цвета, освещение и  **[материалы](color,-light-and-materials.md)**
+       цвет [, освещение![](images/640px-fragments.png)](color,-light-and-materials.md) цвета, освещение и  **[материалы](color,-light-and-materials.md)**
     :::column-end:::
     :::column:::
-       [](images/volvo-cars-microsoft-hololens-experience01-640px.jpg)](scale.md)  **[масштабирование](scale.md)![**
-    :::column-end:::
-    :::column:::
-       пространственный звуковой [![пространственный](images/SpatialAudio.gif)](spatial-sound.md)  **[](spatial-sound.md) звук**
+       [](images/volvo-cars-microsoft-hololens-experience01-640px.png)](scale.md)  **[масштабирование](scale.md)![**
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [![](images/text_in_unity_viewingangle.jpg)](typography.md) типографского  **[оформления](typography.md)**
+       [![](images/text_in_unity_viewingangle.png)](typography.md) типографского  **[оформления](typography.md)**
     :::column-end:::
     :::column:::
-    :::column-end:::
-    :::column:::
+       [![звукового](images/spatialaudio.png)](spatial-sound.md)  **[звука](spatial-sound.md)**
     :::column-end:::
 :::row-end:::
 
