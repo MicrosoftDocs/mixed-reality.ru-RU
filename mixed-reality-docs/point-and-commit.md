@@ -7,12 +7,12 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Смешанная реальность, взаимодействие, проектирование, HoloLens, руки, вдали, указание и фиксация
-ms.openlocfilehash: c7952338c6937e42889a08ee37f6ce8bc1bb9ad3
-ms.sourcegitcommit: 23b130d03fea46a50a712b8301fe4e5deed6cf9c
+ms.openlocfilehash: d3f886fd8e892fe34116c3a1d601ae3a87d87a9b
+ms.sourcegitcommit: 2bfe9b1af4ee2cc0d668caeccb8ebc3137cbc20b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "75334060"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75901532"
 ---
 # <a name="point-and-commit-with-hands"></a>Наведение и фиксация с использованием рук
 
@@ -201,8 +201,8 @@ _Наведение и фиксация_ — одна из появившихс
 
 ---
 
-## <a name="hand-ray-in-mrtkmixed-reality-toolkit-for-unity"></a>Телекинез в MRTK (наборе средств для смешанной реальности) для Unity
-По умолчанию в MRTK предоставляется заготовка для телекинеза ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)), которая имеет то же визуальное состояние, что и телекинез в системе оболочки. Она назначается в профиле ввода данных в MRTK в разделе "Указатели". В иммерсивной гарнитуре Windows Mixed Reality для контроллеров движений используются такие же лучи.
+## <a name="hand-ray-in-mrtk-mixed-reality-toolkit-for-unity"></a>Телекинез в MRTK (наборе средств для смешанной реальности) для Unity
+По умолчанию в MRTK предоставляется заготовка для телекинеза ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)), которая имеет то же визуальное состояние, что и телекинез в системе оболочки. Она назначается в профиле ввода данных в MRTK в разделе "Указатели". В иммерсивной гарнитуре для контроллеров движений используются такие же лучи.
 
 * [MRTK — профиль указателя](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
 * [MRTK — система ввода](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)

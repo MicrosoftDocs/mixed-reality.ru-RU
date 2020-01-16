@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, HoloLens
-ms.openlocfilehash: d263c84d306a2ece3783c2e7fb0e3f599dec49eb
-ms.sourcegitcommit: 270ca09ec61e1153a83cf44942d7ba3783ef1805
+ms.openlocfilehash: 6811fe0b09ecff1ddc76d9df9ddc440f9c934ce3
+ms.sourcegitcommit: 6844930427b658ae31f642c395cd8a3b3cdbf857
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "75694178"
+ms.locfileid: "75723253"
 ---
 # <a name="direct-manipulation-with-hands"></a>Непосредственное манипулирование руками
 
@@ -326,7 +326,7 @@ HoloLens 2 позволяет пользователям с помощью ру
 
 ---
 
-## <a name="manipulation-in-mrtkmixed-reality-toolkit-for-unity"></a>Манипуляции в MRTK (наборе средств для смешанной реальности) для Unity
+## <a name="manipulation-in-mrtk-mixed-reality-toolkit-for-unity"></a>Манипуляции в MRTK (наборе средств для смешанной реальности) для Unity
 В **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** можно легко настроить типичное поведение при манипуляции, используя скрипт **ManipulationHandler**. Благодаря ManipulationHandler можно захватывать и перемещать объекты непосредственно руками или с помощью телекинеза. Этот скрипт также поддерживает манипуляции двумя руками для масштабирования и поворота объекта.
 
 * [MRTK — манипуляции](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html)
