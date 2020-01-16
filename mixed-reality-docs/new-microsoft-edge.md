@@ -1,25 +1,30 @@
 ---
 title: Windows Mixed Reality и новая Microsoft ребро
-description: Как участвовать в документации по Windows Mixed Reality.
+description: Приготовьтесь к новому Microsoft ребру в Windows Mixed Reality. Сюда входят изменения, которые необходимо выполнить, обновления для поиска и известные проблемы.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 01/07/2020
+ms.date: 01/15/2020
 ms.topic: article
 keywords: ребро, новое, иммерсивное веб-приложение, Microsoft ребро, браузер, VR
-ms.openlocfilehash: cb0f96069ffaa8f7d40b64bae55ab2749f5f02c6
-ms.sourcegitcommit: 6844930427b658ae31f642c395cd8a3b3cdbf857
+ms.openlocfilehash: e38cd83cef274281f0d36ae8714ea82aac5f0c65
+ms.sourcegitcommit: e9e4e722f4b607888ce69185f8bda9549ad526ad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75727051"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76041001"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Windows Mixed Reality и новая Microsoft ребро
 
-Как вы, возможно, слышали, [Новая граница Microsoft поступает в ближайшее](https://blogs.windows.com/windowsexperience/2019/11/04/introducing-the-new-microsoft-edge-and-bing/)время! В общедоступной версии, ориентированной на 15 января 2020 года, мы хотели позволить пользователям головного компьютера Windows Mixed Reality узнать, что должно происходить от новых Microsoft ребра, и сообщить о некоторых ожидающих обновлениях, которые улучшат работу веб-обозревателя в Windows Mixed. Реальности.
+[Новый Microsoft ребр теперь доступен для загрузки](https://blogs.windows.com/windowsexperience/?p=173496), но клиенты также могут [дождаться, пока она будет установлена в будущем обновлении Windows 10](https://blogs.windows.com/msedgedev/2020/01/15/upgrading-new-microsoft-edge-79-chromium/), следуя измеренному подходу на протяжении следующих нескольких месяцев. 
+
+С этой новостью **мы хотели позволить клиентам с наушниками Windows Mixed Reality узнать, что должно происходить от нового Microsoft ребро, и сообщить о некоторых ожидающих обновлениях, которые улучшат работу веб-обозревателя в Windows Mixed Reality**.
 
 ## <a name="introducing-the-new-microsoft-edge"></a>Знакомство с новым Microsoft ребром
 
 Новая версия Microsoft посвящена [внедрению проекта Chromium с открытым исходным кодом](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) на рабочем столе для создания лучшей веб-совместимости для клиентов и менее фрагментации веб-приложений для всех веб-разработчиков. Он также будет поддерживать Вебкср при запуске, новый стандарт для создания впечатляющих веб-интерфейсов для головных телефонов VR вместо Вебвр.
+
+>[!IMPORTANT]
+>При установке Microsoft ребр на мобильное устройство с Windows 10 оно заменит предыдущую (старую) версию на компьютере.
 
 ## <a name="getting-ready-for-the-new-microsoft-edge"></a>Подготовка к использованию нового Microsoft ребра
 
@@ -45,7 +50,7 @@ ms.locfileid: "75727051"
 
 -   Веб-сайты, открытые в Windows Mixed Reality, будут потеряны, когда портал смешанной реальности закроется, хотя окна Microsoft ребра останутся там, где они были помещены в домашнюю реальность.
 -   Звук из Microsoft пограничных окон не является пространственным.
--   Открытие видео 360 из YouTube в Windows Mixed Reality может привести к искажению видео на гарнитуре. Обновление страницы видео YouTube и перезапуск видео 360 должны устранить проблему.
+-   Открытие видео 360 из YouTube в Windows Mixed Reality может привести к искажению видео на гарнитуре. Обновление страницы видео YouTube и повторный запуск видео 360 *может* устранить проблему, но мы слышали отзыв о том, что проблема может быть сохранена.
 -   Во время сеансов Windows Mixed Reality Виртуальные мониторы будут отображаться как универсальные физические мониторы в параметрах > системное > отображения.
 
 

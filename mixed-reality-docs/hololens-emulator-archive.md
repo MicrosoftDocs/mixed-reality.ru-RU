@@ -3,15 +3,15 @@ title: Архив эмулятора HoloLens
 description: Список выпущенных сборок эмулятора Microsoft HoloLens.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 12/5/2019
+ms.date: 1/13/2020
 ms.topic: article
 keywords: HoloLens, Emulator, сборки, версии
-ms.openlocfilehash: 3061c97e0e945bf9d829e2259533c7d32683d581
-ms.sourcegitcommit: f4812e1312c4751a22a2de56771c475b22a4ba24
+ms.openlocfilehash: 11fd763ec0832558a7a981dce34e0c6700d12a37
+ms.sourcegitcommit: 542a481b00b36d92633c64a6189ea989551bab3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74940802"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036325"
 ---
 # <a name="hololens-2-emulator-archive"></a>Архив эмулятора HoloLens 2
 
@@ -19,12 +19,13 @@ ms.locfileid: "74940802"
 
 |  Сборка |  Дата выпуска |  Заметки | 
 |----------|----------|----------|
+|  [10.0.18362.1044 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2114824) | 13 января 2020 г. | Сборка HoloLens 2020 в январе 2.  Общие заметки о выпуске HoloLens 2 см. на https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [10.0.18362.1042 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2112589) | 6 декабря 2019 г. | Декабрь 2019. сборка HoloLens.  Устраняет ошибку, из-за которой при отображении панели закрепления приложение holographic работает в эмуляторе.  Включает подключение к удаленному эмулятору при использовании API имитации восприятия или приложения управления имитацией восприятия.  Общие заметки о выпуске HoloLens 2 см. на https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [10.0.18362.1034 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2106649) | 8 октября 8, 2019 г. | 1 октября 2019. сборка HoloLens.  Эмулятор выводит запрос на обновление до новой версии при запуске версии, которая старше последней доступной.  При использовании эмулятора в Windows 10 может 2019 или более поздней версии, Новая вкладка конфигурации NAT позволяет разработчикам открывать порты для приложений, выполняющихся на разных устройствах, для подключения к эмулятору, а на вкладке обновления отображаются доступные версии эмулятора.  Дополнительные сведения см. в [документации по эмулятору HoloLens](using-the-hololens-emulator.md) . |
 |  [10.0.18362.1031 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2103724) | 11 сентября 2019 г. | Сентябрь 2019. сборка HoloLens.  Вкладка Сеть появится в окне средства эмулятора при запуске эмулятора в Windows 10, возможно, 2019 или более поздней версии. |
 |  [10.0.18362.1028 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2101019) | 14 августа 2019 г. | Сборка HoloLens 2019 в августе 2.  Шаблоны holographic приложений больше не включены, но доступны в Visual Studio Marketplace.  Теперь эмулятор будет работать при установке пакетов SDK в пользовательском расположении. |
 |  [10.0.18362.1021 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2098508) | 8 июля 2019 г. | Устраняет ошибку подписывания с помощью Дискстреам. dll |
-|  [10.0.18362.1019 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2095316) | 11 июня 2019 г. | Больше не требуется запускать от имени администратора.  Добавлен ярлык меню "Пуск". |
+|  [10.0.18362.1019 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2095316) | 11 июня 2019 г. | Больше не требуется запускать от имени администратора.  Добавлен ярлык меню "Пуск". |
 |  [10.0.18362.1005 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2087187) | 16 апреля 2019 г. |  |
 
 ## <a name="hololens-emulator-1st-gen-archive"></a>Архив эмулятора HoloLens (1 общий)
@@ -38,7 +39,7 @@ ms.locfileid: "74940802"
 |  [10.0.14342.1018 сборки эмулятора HoloLens](https://go.microsoft.com/fwlink/?LinkID=823018) |  31 мая 2016 г. |
 |  [10.0.11082.1033 сборки эмулятора HoloLens](https://go.microsoft.com/fwlink/?LinkID=724053) |  30 марта 2016 г. |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 * [Установка средств](install-the-tools.md)
 * [Использование эмулятора HoloLens](using-the-hololens-emulator.md)
 * [Дополнительный эмулятор HoloLens и входные данные симулятора смешанной реальности](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)

@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Смешанная реальность, элементы управления, взаимодействие, Пользовательский интерфейс, UX
-ms.openlocfilehash: bc9c8a36f110010270ca7dadbd8655f29af25f32
-ms.sourcegitcommit: 2bfe9b1af4ee2cc0d668caeccb8ebc3137cbc20b
+ms.openlocfilehash: 9de4cc1a7a015f85be54b4b9ff6188a7e9d02e85
+ms.sourcegitcommit: 542a481b00b36d92633c64a6189ea989551bab3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75901438"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036368"
 ---
 # <a name="surface-magnetism"></a>Магнит поверхности
 
 ![Магнит поверхности](images/UX/MRTK_SurfaceMagnetism.gif)
 
-С помощью методики использования магнитной плоскости можно поместить объект holographic в реальную физическую поверхность. Путем согласования ориентации объекта с реальной поверхностью можно создавать более впечатляющие и естественные возможности.
+С помощью методики использования магнитной плоскости можно поместить объект holographic в реальную физическую поверхность. Путем согласования ориентации объекта с реальной поверхностью можно создать более впечатляющие и естественные возможности для пользователя.
 
 <br>
 
