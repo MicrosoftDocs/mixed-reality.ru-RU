@@ -6,12 +6,12 @@ ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Портал устройств Windows, HoloLens
-ms.openlocfilehash: 17ed27653c8e3ec19c8c42b625fbd12cde2c5d84
-ms.sourcegitcommit: 5054f5c23965ce56599cb29ac9d9c6e48812dabd
+ms.openlocfilehash: b22c70305076e3b2c18f880878b48c3142efdbfe
+ms.sourcegitcommit: cf3b662cfcf3fb05a554c302e595eb018f01abf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75623319"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76521695"
 ---
 # <a name="using-the-windows-device-portal"></a>Использование портала устройств Windows
 
@@ -51,7 +51,7 @@ ms.locfileid: "75623319"
 ## <a name="connecting-over-usb"></a>Подключение по USB
 
 1. [Установите средства](install-the-tools.md) , чтобы убедиться в наличии обновления 1 для Visual Studio с помощью средств разработчика Windows 10, установленных на компьютере. Это обеспечит подключение по USB.
-2. Подключите HoloLens к вашему ПК с помощью кабеля micro-USB.
+2. Подключите HoloLens к компьютеру с помощью кабеля Micro-USB для HoloLens (1-го поколения) или USB-C для HoloLens 2.
 3. В веб-браузере на компьютере перейдите по адресу [https://127.0.0.1:10080](https://127.0.0.1:10080).
 
 ## <a name="connecting-to-an-emulator"></a>Подключение к эмулятору
