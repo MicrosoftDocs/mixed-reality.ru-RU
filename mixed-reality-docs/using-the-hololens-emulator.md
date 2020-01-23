@@ -3,16 +3,16 @@ title: Использование эмулятора HoloLens
 description: С помощью эмулятора HoloLens можно тестировать приложения смешанной реальности на обычном компьютере без физического устройства HoloLens.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 12/5/2019
+ms.date: 1/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulator
-ms.openlocfilehash: 49b67530d46edda3c38efd74f03f730c2b2247bd
-ms.sourcegitcommit: f4812e1312c4751a22a2de56771c475b22a4ba24
+ms.openlocfilehash: 7cbddae7cc5088bc8be7187e8b2dff3249e9d265
+ms.sourcegitcommit: 542a481b00b36d92633c64a6189ea989551bab3d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74940892"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036463"
 ---
 # <a name="using-the-hololens-emulator"></a>Использование эмулятора HoloLens
 
@@ -25,7 +25,7 @@ ms.locfileid: "74940892"
 Скачайте эмулятор HoloLens.
 
 Доступные версии: 
-* [эмулятор HoloLens 2 (обновление за декабрь 2019 г.)](https://go.microsoft.com/fwlink/?linkid=2112589);
+* [эмулятор HoloLens 2 (обновление за январь 2020 г.)](https://go.microsoft.com/fwlink/?linkid=2114824);
 * [эмулятор HoloLens (1-го поколения) и шаблоны голографических проектов](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 Более ранние сборки эмулятора HoloLens и заметки о выпусках можно найти на странице [архива эмулятора HoloLens](hololens-emulator-archive.md).
@@ -41,9 +41,9 @@ ms.locfileid: "74940892"
 * ЦП с 4 ядрами (или несколько процессоров с 4 ядрами в сумме).
 * ОЗУ не менее 8 ГБ.
 * Следующие компоненты должны быть [доступными и включенными](https://blogs.technet.com/b/iftekhar/archive/2010/08/09/enable-hardware-settings-in-bios-to-run-hyper-v.aspx) в BIOS:
-   * Аппаратная виртуализация
-   * Преобразование адресов второго уровня (SLAT)
-   * Аппаратное предотвращение выполнения данных (DEP)
+   * Аппаратные средства виртуализации
+   * преобразование адресов второго уровня (SLAT);
+   * аппаратное предотвращение выполнения данных (DEP).
 * Требования к графическому процессору:
    * DirectX 11.0 или более поздней версии.
    * графический драйвер WDDM 1.2 или более поздней версии (для 1-го поколения);
@@ -82,7 +82,7 @@ ms.locfileid: "74940892"
 
 ![Главное окно эмулятора HoloLens 2](images/emulator2-900px.png)
 
-### <a name="toolbar"></a>панель инструментов;
+### <a name="toolbar"></a>Панель инструментов
 
 Справа от главного окна размещена панель инструментов эмулятора. На панели инструментов расположены следующие кнопки:
 * ![Значок закрытия](images/emulator-close.png) **Закрыть**. Закрывает эмулятор.
@@ -170,7 +170,7 @@ ms.locfileid: "74940892"
 
 ![Главное окно эмулятора HoloLens](images/emulator-890px.png)
 
-### <a name="toolbar"></a>панель инструментов;
+### <a name="toolbar"></a>Панель инструментов
 
 Справа от главного окна размещена панель инструментов эмулятора. На панели инструментов расположены следующие кнопки:
 * ![Значок закрытия](images/emulator-close.png) **Закрыть**. Закрывает эмулятор.
@@ -216,7 +216,7 @@ ms.locfileid: "74940892"
 
 В эмуляторе можно просмотреть только отрисовываемые вами голограммы. Имитированная комната на их фоне не отображается. Это важное отличие от настоящего устройства HoloLens, на котором эти элементы объединены. Если вы хотите, чтобы имитируемая комната отображалась в эмуляторе HoloLens, включите в приложении отображение сетки пространственного сопоставления для нужной сцены.
 
-## <a name="troubleshooting"></a>Поиск и устранение неисправностей
+## <a name="troubleshooting"></a>Диагностика
 
 Вы можете увидеть при установке эмулятора сообщение об ошибке, информирующее о том, что требуются *Visual Studio 2015 с обновлением 1 и средства UWP версии 1.2*. Эта ошибка может быть вызвана одной из трех причин:
 * У вас нет поддерживаемой версии Visual Studio (Visual Studio 2019, Visual Studio 2017 или Visual Studio 2015 с обновлением 1 или более поздней версии). Чтобы исправить эту проблему, установите последний выпуск Visual Studio.
@@ -243,7 +243,7 @@ ms.locfileid: "74940892"
 Если система зависает при запуске эмулятора, отключите аппаратное ускорение для графики эмулятора.
 * Создайте значение реестра с типом DWORD и именем DisableGPU в разделе HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\XDE\10.0 и присвойте ему значение 1.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 * [Сложный ввод с помощью эмулятора HoloLens и симулятора Windows Mixed Reality](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
 * [Журнал программного обеспечения в эмуляторе HoloLens](hololens-emulator-archive.md)
 * [Пространственное сопоставление в Unity](spatial-mapping-in-unity.md)
