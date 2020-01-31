@@ -7,12 +7,12 @@ ms.date: 1/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulator
-ms.openlocfilehash: 7cbddae7cc5088bc8be7187e8b2dff3249e9d265
-ms.sourcegitcommit: 542a481b00b36d92633c64a6189ea989551bab3d
+ms.openlocfilehash: 3d358cf72e8481d27ca41784bbc059c45e0da7ff
+ms.sourcegitcommit: cf3b662cfcf3fb05a554c302e595eb018f01abf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036463"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76521685"
 ---
 # <a name="using-the-hololens-emulator"></a>Использование эмулятора HoloLens
 
@@ -220,7 +220,7 @@ ms.locfileid: "76036463"
 
 Вы можете увидеть при установке эмулятора сообщение об ошибке, информирующее о том, что требуются *Visual Studio 2015 с обновлением 1 и средства UWP версии 1.2*. Эта ошибка может быть вызвана одной из трех причин:
 * У вас нет поддерживаемой версии Visual Studio (Visual Studio 2019, Visual Studio 2017 или Visual Studio 2015 с обновлением 1 или более поздней версии). Чтобы исправить эту проблему, установите последний выпуск Visual Studio.
-* У вас есть поддерживаемая версия Visual Studio, но не установлены средства универсальной платформы Windows (UWP). Это необязательный компонент Visual Studio.
+* У вас есть поддерживаемая версия Visual Studio, но не установлены средства универсальной платформы Windows (UWP). Это необязательный компонент Visual Studio. Для HoloLens (1-го поколения) вам потребуются средства UWP для Visual Studio 2015 или Visual Studio 2017.
 
 Также вы можете увидеть сообщение об ошибке при установке эмулятора на ОС Windows, если версия отличается от Pro, Корпоративная или для образовательных учреждений либо если в системе не включен компонент Hyper-V.
 * См. [полный список требований к системе](#hololens-emulator-system-requirements), приведенный выше в этой статье.

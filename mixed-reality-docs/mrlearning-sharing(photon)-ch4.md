@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: f1bcbbd368635c25207127142f21ff50f26a7b58
-ms.sourcegitcommit: 2bfe9b1af4ee2cc0d668caeccb8ebc3137cbc20b
+ms.openlocfilehash: 56f7c767323285453cbeea9034f97a7c14e92359
+ms.sourcegitcommit: d73d9012941fa1b13eb7d2f45ccc481d6365827a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75901481"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76885634"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. Совместное использование передвижений объектов несколькими пользователями
 
@@ -74,6 +74,12 @@ ms.locfileid: "75901481"
 11. На панели проект в папке Prefabs перетащите таблицу prefab в только что созданный дочерний объект "Таблеанчор".
 
     ![Module3Chapter4step8im](images/module3chapter4step8im.PNG)
+   
+12. Откройте prefab Resources-> Rocket Launcher_Complete Variant > ресурсов.
+
+13. Выберите GameObject "Лунармодуле" и добавьте следующие два компонента: "Photon преобразование View" и "Photon View".
+
+14. Выбрав GameObject "Лунармодуле", перетащите компонент "представление преобразования Photon" в гнездо "наблюдаемые компоненты" в компоненте "представление" Photon ".
 
 ## <a name="congratulations"></a>Поздравляем!
 
