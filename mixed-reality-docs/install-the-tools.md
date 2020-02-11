@@ -7,12 +7,12 @@ ms.date: 2/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit
-ms.openlocfilehash: beed8b79ec5f157b7dfa7d55a5965daae8a83f03
-ms.sourcegitcommit: 542a481b00b36d92633c64a6189ea989551bab3d
+ms.openlocfilehash: d2b9a3718845e755a5cd8d9866ec9716ee0c0609
+ms.sourcegitcommit: 40b37104b0aec4554502dcc7dc430e340a6fa46a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036384"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77092048"
 ---
 # <a name="install-the-tools"></a>Установка инструментов
 
@@ -45,7 +45,8 @@ ms.locfileid: "76036384"
     :::column:::
        [![Unity](images/unity_logo.png)](https://unity3d.com/unity/qa/lts-releases?version=2018.4)<br>
         **[Unity](https://unity3d.com/unity/qa/lts-releases?version=2018.4)**<br>
-        Обычно в качестве лучшей версии для запуска новых проектов мы рекомендуем Unity LTS (долгосрочная поддержка). Затем ее можно обновить до последней версии, чтобы получить новые стабильные исправления.<br> <br>Сейчас рекомендуем использовать **Unity 2018.4.x** — сборку LTS, необходимую для MRTK версии 2 (см. ниже).<br> <br>Некоторые разработчики по определенным причинам могут использовать другую версию Unity. В этих случаях Unity поддерживает параллельную установку различных версий.<br><br>[![MRTK](images/MRTKIcon.jpg)](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)<br>**[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)**<br>Mixed Reality Toolkit (MRTK) версии 2 для Unity — это кроссплатформенный пакет SDK с открытым кодом для приложений смешанной реальности.<br><br> MRTK версии 2 используется для ускорения разработки приложений, предназначенных для Microsoft HoloLens, иммерсивных гарнитур (гарнитур виртуальной реальности) Windows Mixed Reality и платформы OpenVR. Целью проекта является снижение барьеров для создания приложений смешанной реальности и внесение вклада в развитие сообщества по мере расширения личного опыта.
+        Обычно в качестве лучшей версии для запуска новых проектов мы рекомендуем Unity LTS (долгосрочная поддержка). Затем ее можно обновить до последней версии, чтобы получить новые стабильные исправления.<br> <br>Сейчас рекомендуем использовать **Unity 2018.4.x** — сборку LTS, необходимую для MRTK версии 2 (см. ниже).<br> <br>Некоторые разработчики по определенным причинам могут использовать другую версию Unity. В этих случаях Unity поддерживает параллельную установку различных версий.<br><br>
+        [![MRTK](images/final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)<br>**[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)**<br>Mixed Reality Toolkit (MRTK) версии 2 для Unity — это кроссплатформенный пакет SDK с открытым кодом для приложений смешанной реальности.<br><br> MRTK версии 2 используется для ускорения разработки приложений, предназначенных для Microsoft HoloLens, иммерсивных гарнитур (гарнитур виртуальной реальности) Windows Mixed Reality и платформы OpenVR. Целью проекта является снижение барьеров для создания приложений смешанной реальности и внесение вклада в развитие сообщества по мере расширения личного опыта.
     :::column-end:::
     :::column:::
         [![Unreal](images/Unreal_logo.png)](https://docs.unrealengine.com//GettingStarted/Installation/index.html)<br>
@@ -53,7 +54,7 @@ ms.locfileid: "76036384"
         Unreal Engine 4 — это мощная подсистема разработки с открытым кодом, обладающая полной поддержкой смешанной реальности в C++ и Blueprints.<br> <br>Поддержка HoloLens для Unreal Engine 4.23 в настоящее время находится на этапе бета-версии.
     :::column-end:::
     :::column:::
-        [![Шаблоны приложений DirectX](images/DirectX_logo.png)](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)<br>
+        [![Шаблоны приложений DirectX](images/visualstudio-small_logo.png)](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)<br>
         **[DirectX](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)**<br>
         Шаблоны приложений Windows Mixed Reality содержат все необходимое, чтобы приступить к написанию приложения смешанной реальности с помощью DirectX и собственных API. Включают в себя цикл отрисовки (или "игровой цикл"), вспомогательный класс DeviceResources для управления устройством и контекстом Direct3D, а также простой пример отрисовщика голограмм. Доступны для Direct3D 11 и Direct3D 12.
     :::column-end:::
