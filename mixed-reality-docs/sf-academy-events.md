@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 02/24/2019
 ms.topic: article
 keywords: событие, календарь, Academy, расписание, SF, Сан Франциско, реактора
-ms.openlocfilehash: b7a410e40fa74cd76ed6c8dafd2519d6498d7af6
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 06abc916d6fc31d858aff2a32758ebf29c324466
+ms.sourcegitcommit: f5d6dd420aa347acf1de4798f4e3e0f6a11d19cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73438087"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77155501"
 ---
 # <a name="microsoft-mixed-reality-events"></a>События Microsoft Mixed Reality
 
@@ -24,60 +24,228 @@ ms.locfileid: "73438087"
 <br>
 
 ---
+###  <a name="feb-24-2020"></a>24 февраля 2020 г.
+## <a name="mixed-reality-workgroup"></a>Рабочая группа "смешанная реальность"
+Рабочая группа "смешанная реальность" — это возможность, с которой разработчики стали вместе, обмениваться идеями и выполнять работу в удобной и поддерживающей среде.
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/events/)
+<br>
 
-## <a name="mixed-reality-workgroup-san-francisco-reactorhttpsemea01safelinksprotectionoutlookcomurlhttps3a2f2fwwwmeetupcom2fhololens-mr2fdata027c017cdaescu40microsoftcom7ca8ddee063b7949a9992308d6903e62b07c72f988bf86f141af91ab2d7cd011db477c17c07c636854994961124360sdataymnaaiwvxij700mo9gj2boz4w82bgkdjdhijhytfczcfu3dreserved0"></a>[Рабочая группа Mixed Reality, Сан — реактора](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-### <a name="october-21-2019"></a>21 октября 2019 г.
+---
+###  <a name="march-9-2020"></a>9 марта 2020 г.
+## <a name="mixed-reality-workgroup"></a>Рабочая группа "смешанная реальность"
+Рабочая группа "смешанная реальность" — это возможность, с которой разработчики стали вместе, обмениваться идеями и выполнять работу в удобной и поддерживающей среде.
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/events/)
+<br>
 
-В качестве рабочей группы мы хотим, чтобы они были довольно незаметны, просто Продемонстрируйте около 6:00, прервать и работать в течение определенного момента! Это отличная возможность получать отзывы от других разработчиков, искать справку и советы от кого-то, кто пробовал, или подогрева на некоторое время после работы и кода! Итак, перенесите ноутбук, Принесите проект и запомните! Microsoft реактора — это место, и мы постоянно работаем в области присутствия, поэтому она не является занятой публика. Мы надеемся, что вы видите!
+---
+### <a name="march-23-2020"></a>23 марта 2020 г.
+## <a name="mixed-reality-workgroup"></a>Рабочая группа "смешанная реальность"
+Рабочая группа "смешанная реальность" — это возможность, с которой разработчики стали вместе, обмениваться идеями и выполнять работу в удобной и поддерживающей среде.
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/events/)
+<br>
 
-[Регистрация для этого события рабочей группы](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
+---
+### <a name="march-31-2020"></a>31 марта 2020 г.
+## <a name="hololens--mixed-reality-meetup"></a>HoloLens & Mixed Reality Meetup
+Давайте обсудим, как говорить и изучать HoloLens и Mixed Reality. Разработчики могут обращаться к тысячам предприятий и миллионам клиентов, создавая опыт, чтобы помочь пользователям в повседневной жизни!
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/)
+<br>
 
+---
+###  <a name="april-2-3-2020"></a>2-3 апреля, 2020
+## <a name="mixed-reality-accelerator"></a>Ускоритель смешанной реальности
+MR Accelerator — это Hackathon семинар, предназначенный для ускорения разработки приложений смешанной реальности и переноса данных из HoloLens Gen 1 в HoloLens 2 (уровень "средний" или "Расширенный").
+<br>
+
+---
+###  <a name="april-27-2020"></a>27 апреля, 2020
+## <a name="hololens--mixed-reality-meetup"></a>HoloLens & Mixed Reality Meetup
+Давайте обсудим, как говорить и изучать HoloLens и Mixed Reality. Разработчики могут обращаться к тысячам предприятий и миллионам клиентов, создавая опыт, чтобы помочь пользователям в повседневной жизни!
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/)
+<br>
+
+---
+###  <a name="may-11-12-2020"></a>11-12 мая 2020 г.
+## <a name="mixed-reality-mentor-days"></a>Дни обучения "смешанная реальность"
+Практический семинар по проектированию и разработке HoloLens 2. Только приглашение.
+<br>
+
+---
+###  <a name="may-26-2020"></a>26 мая, 2020
+## <a name="hololens--mixed-reality-meetup"></a>HoloLens & Mixed Reality Meetup
+Давайте обсудим, как говорить и изучать HoloLens и Mixed Reality. Разработчики могут обращаться к тысячам предприятий и миллионам клиентов, создавая опыт, чтобы помочь пользователям в повседневной жизни!
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/)
+<br>
+
+---
+###  <a name="june-8-9-2020"></a>8-9 июня, 2020
+## <a name="mixed-reality-accelerator"></a>Ускоритель смешанной реальности
+MR Accelerator — это Hackathon семинар, предназначенный для ускорения разработки приложений смешанной реальности и переноса данных из HoloLens Gen 1 в HoloLens 2 (уровень "средний" или "Расширенный").
 <br>
 
 ---
 
-## <a name="mixed-reality-workgroup-san-francisco-reactorhttpsemea01safelinksprotectionoutlookcomurlhttps3a2f2fwwwmeetupcom2fhololens-mr2fdata027c017cdaescu40microsoftcom7ca8ddee063b7949a9992308d6903e62b07c72f988bf86f141af91ab2d7cd011db477c17c07c636854994961124360sdataymnaaiwvxij700mo9gj2boz4w82bgkdjdhijhytfczcfu3dreserved0"></a>[Рабочая группа Mixed Reality, Сан — реактора](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-### <a name="november-4-2019"></a>4 ноября 2019 г.
-
-В качестве рабочей группы мы хотим, чтобы они были довольно незаметны, просто Продемонстрируйте около 6:00, прервать и работать в течение определенного момента! Это отличная возможность получать отзывы от других разработчиков, искать справку и советы от кого-то, кто пробовал, или подогрева на некоторое время после работы и кода! Итак, перенесите ноутбук, Принесите проект и запомните! Microsoft реактора — это место, и мы постоянно работаем в области присутствия, поэтому она не является занятой публика. Мы надеемся, что вы видите!
-
-[Регистрация для этого события рабочей группы](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-
+###  <a name="june-8-2020"></a>8 июня 2020 г.
+## <a name="mixed-reality-workgroup"></a>Рабочая группа "смешанная реальность"
+Рабочая группа "смешанная реальность" — это возможность, с которой разработчики стали вместе, обмениваться идеями и выполнять работу в удобной и поддерживающей среде.
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/events/)
 <br>
 
 ---
-
-## <a name="hololens-mixed-reality-design-and-development-meetuphttpswwwmeetupcomhololens-mr"></a>[HoloLens, проектирование и разработка в смешанной реальности Meetup](https://www.meetup.com/hololens-mr/)
-### <a name="november-18-2019"></a>18 ноября 2019 г.
-
-Дополнительные сведения скоро появятся!
-
-[Зарегистрируйтесь для Meetup](https://www.meetup.com/hololens-mr/)
-
+###  <a name="june-22-2020"></a>22 июня 2020 г.
+## <a name="hololens--mixed-reality-meetup"></a>HoloLens & Mixed Reality Meetup
+Давайте обсудим, как говорить и изучать HoloLens и Mixed Reality. Разработчики могут обращаться к тысячам предприятий и миллионам клиентов, создавая опыт, чтобы помочь пользователям в повседневной жизни!
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/)
 <br>
 
 ---
-
-## <a name="mixed-reality-workgroup-san-francisco-reactorhttpsemea01safelinksprotectionoutlookcomurlhttps3a2f2fwwwmeetupcom2fhololens-mr2fdata027c017cdaescu40microsoftcom7ca8ddee063b7949a9992308d6903e62b07c72f988bf86f141af91ab2d7cd011db477c17c07c636854994961124360sdataymnaaiwvxij700mo9gj2boz4w82bgkdjdhijhytfczcfu3dreserved0"></a>[Рабочая группа Mixed Reality, Сан — реактора](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-### <a name="december-9-2019"></a>9 декабря 2019 г.
-
-В качестве рабочей группы мы хотим, чтобы они были довольно незаметны, просто Продемонстрируйте около 6:00, прервать и работать в течение определенного момента! Это отличная возможность получать отзывы от других разработчиков, искать справку и советы от кого-то, кто пробовал, или подогрева на некоторое время после работы и кода! Итак, перенесите ноутбук, Принесите проект и запомните! Microsoft реактора — это место, и мы постоянно работаем в области присутствия, поэтому она не является занятой публика. Мы надеемся, что вы видите!
-
-[Регистрация для этого события рабочей группы](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-
+###  <a name="july-9-10-2020"></a>9-10 июля 2020 г.
+## <a name="mixed-reality-mentor-days"></a>Дни обучения "смешанная реальность"
+Практический семинар по проектированию и разработке HoloLens 2. Только приглашение.
 <br>
 
 ---
-
-## <a name="hololens-mixed-reality-design-and-development-meetuphttpswwwmeetupcomhololens-mr"></a>[HoloLens, проектирование и разработка в смешанной реальности Meetup](https://www.meetup.com/hololens-mr/)
-### <a name="december-16-2019"></a>16 декабря 2019 г.
-
-Дополнительные сведения скоро появятся!
-
-[Зарегистрируйтесь для Meetup](https://www.meetup.com/hololens-mr/)
-
+###  <a name="july-13-2020"></a>13 июля 2020 г.
+## <a name="mixed-reality-workgroup"></a>Рабочая группа "смешанная реальность"
+Рабочая группа "смешанная реальность" — это возможность, с которой разработчики стали вместе, обмениваться идеями и выполнять работу в удобной и поддерживающей среде.
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/events/)
 <br>
 
 ---
+###  <a name="july-21-2020"></a>21 июля 2020 г.
+## <a name="hololens--mixed-reality-meetup"></a>HoloLens & Mixed Reality Meetup
+Давайте обсудим, как говорить и изучать HoloLens и Mixed Reality. Разработчики могут обращаться к тысячам предприятий и миллионам клиентов, создавая опыт, чтобы помочь пользователям в повседневной жизни!
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/)
+<br>
 
-## <a name="more-mixed-reality-events-coming-soon"></a>Больше событий смешанной реальности ожидается в ближайшее время...
+---
+###  <a name="july-27-2020"></a>27 июля 2020 г.
+## <a name="mixed-reality-workgroup"></a>Рабочая группа "смешанная реальность"
+Рабочая группа "смешанная реальность" — это возможность, с которой разработчики стали вместе, обмениваться идеями и выполнять работу в удобной и поддерживающей среде.
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/events/)
+<br>
+
+---
+###  <a name="july-27-28-2020"></a>27-28 июля 2020 г.
+## <a name="mixed-reality-accelerator"></a>Ускоритель смешанной реальности
+MR Accelerator — это Hackathon семинар, предназначенный для ускорения разработки приложений смешанной реальности и переноса данных из HoloLens Gen 1 в HoloLens 2 (уровень "средний" или "Расширенный").
+<br>
+
+---
+###  <a name="august-3-2020"></a>3 августа 2020 г.
+## <a name="mixed-reality-workgroup"></a>Рабочая группа "смешанная реальность"
+Рабочая группа "смешанная реальность" — это возможность, с которой разработчики стали вместе, обмениваться идеями и выполнять работу в удобной и поддерживающей среде.
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/events/)
+<br>
+
+---
+###  <a name="august-13-14-2020"></a>13-14 августа, 2020
+## <a name="mixed-reality-mentor-days"></a>Дни обучения "смешанная реальность"
+[Зарегистрируйтесь здесь.] (Практический семинар по проектированию и разработке HoloLens 2. Только приглашение.
+<br>
+
+---
+###  <a name="august-17-2020"></a>17 августа 2020 г.
+## <a name="mixed-reality-workgroup"></a>Рабочая группа "смешанная реальность"
+Рабочая группа "смешанная реальность" — это возможность, с которой разработчики стали вместе, обмениваться идеями и выполнять работу в удобной и поддерживающей среде.
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/events/)
+<br>
+
+---
+###  <a name="august-24-2020"></a>24 августа 2020 г.
+## <a name="hololens--mixed-reality-meetup"></a>HoloLens & Mixed Reality Meetup
+Давайте обсудим, как говорить и изучать HoloLens и Mixed Reality. Разработчики могут обращаться к тысячам предприятий и миллионам клиентов, создавая опыт, чтобы помочь пользователям в повседневной жизни!
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/)
+<br>
+
+---
+###  <a name="august-27-28-2020"></a>27-28 августа, 2020
+## <a name="mixed-reality-accelerator"></a>Ускоритель смешанной реальности
+MR Accelerator — это Hackathon семинар, предназначенный для ускорения разработки приложений смешанной реальности и переноса данных из HoloLens Gen 1 в HoloLens 2 (уровень "средний" или "Расширенный").
+<br>
+
+---
+###  <a name="september-17-18-2020"></a>17-18 сентября 2020 г.
+## <a name="mixed-reality-accelerator"></a>Ускоритель смешанной реальности
+MR Accelerator — это Hackathon семинар, предназначенный для ускорения разработки приложений смешанной реальности и переноса данных из HoloLens Gen 1 в HoloLens 2 (уровень "средний" или "Расширенный").
+<br>
+
+---
+###  <a name="september-21-2020"></a>21 сентября 2020 г.
+## <a name="mixed-reality-workgroup"></a>Рабочая группа "смешанная реальность"
+Рабочая группа "смешанная реальность" — это возможность, с которой разработчики стали вместе, обмениваться идеями и выполнять работу в удобной и поддерживающей среде.
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/events/)
+<br>
+
+---
+###  <a name="september-22-2020"></a>22 сентября 2020 г.
+## <a name="hololens--mixed-reality-meetup"></a>HoloLens & Mixed Reality Meetup
+Давайте обсудим, как говорить и изучать HoloLens и Mixed Reality. Разработчики могут обращаться к тысячам предприятий и миллионам клиентов, создавая опыт, чтобы помочь пользователям в повседневной жизни!
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/)
+<br>
+
+---
+###  <a name="october-5-6-2020"></a>5-6 октября, 2020
+## <a name="mixed-reality-mentor-days"></a>Дни обучения "смешанная реальность"
+Практический семинар по проектированию и разработке HoloLens 2. Только приглашение.
+<br>
+
+---
+###  <a name="october-5-2020"></a>5 октября 2020 г.
+## <a name="mixed-reality-workgroup"></a>Рабочая группа "смешанная реальность"
+Рабочая группа "смешанная реальность" — это возможность, с которой разработчики стали вместе, обмениваться идеями и выполнять работу в удобной и поддерживающей среде.
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/events/)
+<br>
+
+---
+###  <a name="october-19-2020"></a>19 октября 2020 г.
+## <a name="hololens--mixed-reality-meetup"></a>HoloLens & Mixed Reality Meetup
+Давайте обсудим, как говорить и изучать HoloLens и Mixed Reality. Разработчики могут обращаться к тысячам предприятий и миллионам клиентов, создавая опыт, чтобы помочь пользователям в повседневной жизни!
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/)
+<br>
+
+---
+###  <a name="october-26-2020"></a>26 октября 2020 г.
+## <a name="mixed-reality-workgroup"></a>Рабочая группа "смешанная реальность"
+Рабочая группа "смешанная реальность" — это возможность, с которой разработчики стали вместе, обмениваться идеями и выполнять работу в удобной и поддерживающей среде.
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/events/)
+<br>
+
+---
+###  <a name="october-26-27-2020"></a>26-27 октября, 2020
+## <a name="mixed-reality-mentor-days"></a>Дни обучения "смешанная реальность"
+Практический семинар по проектированию и разработке HoloLens 2. Только приглашение.
+<br>
+
+---
+###  <a name="november-9-10-2020"></a>9-10 ноября, 2020
+## <a name="mixed-reality-mentor-days"></a>Дни обучения "смешанная реальность"
+ Практический семинар по проектированию и разработке HoloLens 2. Только приглашение.
+<br>
+
+---
+###  <a name="november-9-2020"></a>9 ноября 2020 г.
+## <a name="mixed-reality-workgroup"></a>Рабочая группа "смешанная реальность"
+Рабочая группа "смешанная реальность" — это возможность, с которой разработчики стали вместе, обмениваться идеями и выполнять работу в удобной и поддерживающей среде.
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/events/)
+<br>
+
+---
+###  <a name="november-16-2020"></a>16 ноября 2020 г.
+## <a name="hololens--mixed-reality-meetup"></a>HoloLens & Mixed Reality Meetup
+Давайте обсудим, как говорить и изучать HoloLens и Mixed Reality. Разработчики могут обращаться к тысячам предприятий и миллионам клиентов, создавая опыт, чтобы помочь пользователям в повседневной жизни!
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/)
+<br>
+
+---
+###  <a name="november-23-2020"></a>23 ноября 2020 г.
+## <a name="mixed-reality-workgroup"></a>Рабочая группа "смешанная реальность"
+Рабочая группа "смешанная реальность" — это возможность, с которой разработчики стали вместе, обмениваться идеями и выполнять работу в удобной и поддерживающей среде.
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/events/)
+<br>
+
+---
+###  <a name="december-7-2020"></a>7 декабря 2020 г.
+## <a name="mixed-reality-workgroup"></a>Рабочая группа "смешанная реальность"
+Рабочая группа "смешанная реальность" — это возможность, с которой разработчики стали вместе, обмениваться идеями и выполнять работу в удобной и поддерживающей среде.
+[Зарегистрируйтесь здесь.](https://www.meetup.com/hololens-mr/events/)
