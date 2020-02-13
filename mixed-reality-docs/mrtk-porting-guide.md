@@ -7,12 +7,12 @@ ms.date: 10/14/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
-ms.openlocfilehash: 41e6f8b3632a53663f237deb54a3144fb8ad79e8
-ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
+ms.openlocfilehash: 8e0c66a1c3d8ebd5422d19a02f313147ecf76653
+ms.sourcegitcommit: 40b37104b0aec4554502dcc7dc430e340a6fa46a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73926204"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77092038"
 ---
 # <a name="get-your-existing-app-ready-for-hololens-2"></a>Подготовка существующего приложения для использования в HoloLens 2
 
@@ -22,7 +22,7 @@ ms.locfileid: "73926204"
 
 | Шаг 1 | Шаг 2 | Шаг 3 | Шаг 4 |
 |----------|-------------------|-------------------|-------------------|
-| ![Логотип Visual Studio](images/visualstudio_logo.png) | ![Логотип Unity](images/unity_logo.png)| ![Значок Unity](images/hololens2_icon.jpg) | ![Логотип МРТК](images/MRTKIcon.jpg) |
+| ![Логотип Visual Studio](images/visualstudio_logo.png) | ![Логотип Unity](images/final_unity_logo.png)| ![Значок Unity](images/hololens2_icon.jpg) | ![Логотип МРТК](images/final_mrtk-small_logo.png) |
 | Скачивание новейших средств | Обновление проекта Unity | Компиляция для ARM | Миграция в MRTK версии 2
 
 Предварительные требования
@@ -141,7 +141,7 @@ ms.locfileid: "73926204"
 
 - Компилятор построителя текстуры запускается в ARM во время первого вызова метода рисования после загрузки построителя текстуры или при изменении объекта, от которого зависит построитель, не во время его загрузки. Частота кадров будет существенно зависеть от количества компилируемых построителей текстуры. Таким образом, способы обработки, упаковки и обновления построителей текстуры для HoloLens 2 и HoloLens (1-го поколения) будут разными.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 * [Установка средств](install-the-tools.md)
 * [Getting started with MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) (Начало работы с MRTK версии 2)
 * [Переход с API-интерфейсов HTK на API-интерфейсы MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
