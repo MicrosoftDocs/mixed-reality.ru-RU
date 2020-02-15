@@ -6,49 +6,53 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 19529cbfebd74938395545c329097d42b5af9ff9
-ms.sourcegitcommit: 23b130d03fea46a50a712b8301fe4e5deed6cf9c
+ms.openlocfilehash: f4f609a71b05a52e8761e282763a540b42e9f7f5
+ms.sourcegitcommit: a580166a19294f835b8e09c780f663f228dd5de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "75334403"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77250711"
 ---
-# <a name="3-displaying-azure-spatial-anchor-feedback"></a><span data-ttu-id="985fd-105">3. Отображение обратной связи с пространственными привязками Azure</span><span class="sxs-lookup"><span data-stu-id="985fd-105">3. Displaying Azure Spatial Anchor feedback</span></span>
+# <a name="3-displaying-azure-spatial-anchor-feedback"></a><span data-ttu-id="5b828-105">3. Отображение обратной связи с пространственными привязками Azure</span><span class="sxs-lookup"><span data-stu-id="5b828-105">3. Displaying Azure Spatial Anchor feedback</span></span>
 
-<span data-ttu-id="985fd-106">На этом занятии вы узнаете, как предоставить пользователям Отзывы об обнаружении привязок, событиях и состоянии при использовании пространственных привязок Azure.</span><span class="sxs-lookup"><span data-stu-id="985fd-106">In this lesson, you'll learn how to provide users with feedback about anchor discovery, events and status when using Azure Spatial Anchors.</span></span>
+<span data-ttu-id="5b828-106">В этом руководстве вы узнаете, как предоставить пользователям Отзывы о процессе обнаружения привязки, событиях и состоянии при использовании пространственных привязок Azure (ASA).</span><span class="sxs-lookup"><span data-stu-id="5b828-106">In this tutorial, you will learn how to provide users with feedback about anchor discovery, events, and status when using Azure Spatial Anchors (ASA).</span></span>
 
-## <a name="objectives"></a><span data-ttu-id="985fd-107">Задачи</span><span class="sxs-lookup"><span data-stu-id="985fd-107">Objectives</span></span>
+## <a name="objectives"></a><span data-ttu-id="5b828-107">Задачи</span><span class="sxs-lookup"><span data-stu-id="5b828-107">Objectives</span></span>
 
-* <span data-ttu-id="985fd-108">Узнайте, как настроить панель пользовательского интерфейса, отображающую важные сведения о текущем сеансе ASA.</span><span class="sxs-lookup"><span data-stu-id="985fd-108">Learn how to set up a UI panel that displays important information about the current ASA session</span></span>
+* <span data-ttu-id="5b828-108">Узнайте, как настроить панель пользовательского интерфейса, отображающую важные сведения о текущем сеансе ASA.</span><span class="sxs-lookup"><span data-stu-id="5b828-108">Learn how to set up a UI panel that displays important information about the current ASA session</span></span>
+* <span data-ttu-id="5b828-109">Знакомство и изучение элементов отзывов, доступных пользователям с помощью пакета SDK для ASA</span><span class="sxs-lookup"><span data-stu-id="5b828-109">Understand and explore feedback elements that the ASA SDK makes available to users</span></span>
 
-* <span data-ttu-id="985fd-109">Знакомство и изучение элементов отзывов, доступных пользователям с помощью пакета SDK для ASA</span><span class="sxs-lookup"><span data-stu-id="985fd-109">Understand and explore feedback elements that the ASA SDK makes available to users</span></span>
+## <a name="set-up-asa-feedback-ui-panel"></a><span data-ttu-id="5b828-110">Настройка панели пользовательского интерфейса для обратной связи ASA</span><span class="sxs-lookup"><span data-stu-id="5b828-110">Set up ASA feedback UI panel</span></span>
 
-## <a name="set-up-asa-feedback-ui-panel"></a><span data-ttu-id="985fd-110">Настройка панели пользовательского интерфейса для обратной связи ASA</span><span class="sxs-lookup"><span data-stu-id="985fd-110">Set Up ASA Feedback UI Panel</span></span>
+<span data-ttu-id="5b828-111">В окне Иерархия щелкните правой кнопкой мыши **инструкции** > объект **TextContent** и выберите **трехмерный объект** > **Text-текстмешпро** , чтобы создать текстовый объект Текстмешпро в качестве дочернего элемента для инструкций > TextContent и присвоить ему подходящее имя, например, **обратная связь**:</span><span class="sxs-lookup"><span data-stu-id="5b828-111">In the Hierarchy window, right-click on the **Instructions** > **TextContent** object and select **3D Object** > **Text - TextMeshPro** to create a TextMeshPro text object as a child of the Instructions > TextContent object and give it a suitable name, for example, **Feedback**:</span></span>
 
-1. <span data-ttu-id="985fd-111">На этом занятии мы не используем кнопки "Савеанчортодиск" и "Шареанчор", поэтому установите обе кнопки и снимите флажок на панели инспектора (как показано ниже), чтобы скрыть эти кнопки.</span><span class="sxs-lookup"><span data-stu-id="985fd-111">In this lesson, we are not using the "SaveAnchorToDisk" and "ShareAnchor" buttons, so select both buttons and uncheck the checkbox in the inspector panel (as shown below) to hide these buttons.</span></span>
+![мрлеарнинг — базовый](images/mrlearning-asa/tutorial3-section1-step1-1.png)
 
-    ![module2chapter3step1im](images/module2chapter3step1im.PNG)
+> [!TIP]
+> <span data-ttu-id="5b828-113">Чтобы упростить работу с сценой, установите <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">видимость сцены</a> для объекта парентанчор, щелкнув значок глаза слева от объекта.</span><span class="sxs-lookup"><span data-stu-id="5b828-113">To make it easier to work with your scene, set the  <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> for the ParentAnchor object to off by clicking the eye icon to the left of the object.</span></span> <span data-ttu-id="5b828-114">Это скрывает объект в окне сцены, не изменяя видимую для игры видимость.</span><span class="sxs-lookup"><span data-stu-id="5b828-114">This hides the object in the Scene window without changing their in-game visibility.</span></span>
 
-2. <span data-ttu-id="985fd-113">Создайте панель инструкций.</span><span class="sxs-lookup"><span data-stu-id="985fd-113">Create the instruction panel.</span></span> <span data-ttu-id="985fd-114">Для начала щелкните правой кнопкой мыши кнопку "инструкции", наведите указатель на пункт "трехмерный объект" и выберите "текстмешпро-Text".</span><span class="sxs-lookup"><span data-stu-id="985fd-114">Start by right-clicking the "instructions" button, hover over "3D Object" and select "textmeshpro-text."</span></span>
+<span data-ttu-id="5b828-115">Если объект **обратной связи** все еще выбран, в окне инспектора измените его расположение и размер так, чтобы он размещался под текстом инструкции, например:</span><span class="sxs-lookup"><span data-stu-id="5b828-115">With the **Feedback** object still selected, in the Inspector window change its position and size so it is placed neatly underneath the instruction text, for example:</span></span>
 
-    ![module2chapter3step2im](images/module2chapter3step2im.PNG)
+* <span data-ttu-id="5b828-116">Изменение преобразования Rect **POS Y** на-0,24</span><span class="sxs-lookup"><span data-stu-id="5b828-116">Change the Rect Transform **Pos Y** to -0.24</span></span>
+* <span data-ttu-id="5b828-117">Изменение **ширины** преобразования Rect на 0,555</span><span class="sxs-lookup"><span data-stu-id="5b828-117">Change the Rect Transform **Width** to 0.555</span></span>
+* <span data-ttu-id="5b828-118">Изменение **высоты** преобразования Rect на 0,1</span><span class="sxs-lookup"><span data-stu-id="5b828-118">Change the Rect Transform **Height** to 0.1</span></span>
 
-3. <span data-ttu-id="985fd-116">Измените масштаб и расположение текста, чтобы он совпадал с инструкциями в сцене.</span><span class="sxs-lookup"><span data-stu-id="985fd-116">Adjust the scale and positioning of the text, so that it matches with the instructions in your scene.</span></span> <span data-ttu-id="985fd-117">Кроме того, убедитесь, что выравнивание для всего текста осуществляется по центру.</span><span class="sxs-lookup"><span data-stu-id="985fd-117">Also, ensure the alignment for all of the text is centered.</span></span> <span data-ttu-id="985fd-118">Затем удалите образец текста из текстового редактора, как показано на рисунке ниже.</span><span class="sxs-lookup"><span data-stu-id="985fd-118">Then delete the sample text from the text editor, as shown in in the image below.</span></span>
+<span data-ttu-id="5b828-119">Затем выберите свойства шрифта, чтобы текст соответствовал тексту в области, например:</span><span class="sxs-lookup"><span data-stu-id="5b828-119">Then choose font properties so the text fits nicely within the text area, for example:</span></span>
 
-    ![module2chapter3step3im](images/module2chapter3step3im.PNG)
+* <span data-ttu-id="5b828-120">Изменение **стиля шрифта** (скрипт) для текстового сетки на полужирный</span><span class="sxs-lookup"><span data-stu-id="5b828-120">Change the Text Mesh Pro (Script) **Font Style** to Bold</span></span>
+* <span data-ttu-id="5b828-121">Измените **Размер шрифта** Pro (скрипт) для сетки текста на 0,17</span><span class="sxs-lookup"><span data-stu-id="5b828-121">Change the Text Mesh Pro (Script) **Font Size** to 0.17</span></span>
+* <span data-ttu-id="5b828-122">Изменение **выравнивания** (сценария) сетки текста по центру и по середине</span><span class="sxs-lookup"><span data-stu-id="5b828-122">Change the Text Mesh Pro (Script) **Alignment** to Center and Middle</span></span>
 
-4. <span data-ttu-id="985fd-120">Измените имя объекта Текстмешпро на "Фидбаккпанел".</span><span class="sxs-lookup"><span data-stu-id="985fd-120">Change the name of the TextMeshPro object to "FeedbackPanel."</span></span>
+![мрлеарнинг — базовый](images/mrlearning-asa/tutorial3-section1-step1-2.png)
 
-    ![module2chapter3step4im](images/module2chapter3step4im.PNG)
+<span data-ttu-id="5b828-124">Выбрав объект **Feedback** , в окне инспектора нажмите кнопку **Добавить компонент** , чтобы добавить компонент " **Скрипт обратной связи" (скрипт)** в объект обратной связи:</span><span class="sxs-lookup"><span data-stu-id="5b828-124">With the **Feedback** object still selected, in the Inspector window, use the **Add Component** button to add the **Anchor Feedback Script (Script)** component to the Feedback object:</span></span>
 
-5. <span data-ttu-id="985fd-122">Убедитесь, что в иерархии ASA_feedback выбран текст "фидбаккпанел", нажмите кнопку "добавить компонент" и добавьте сценарий обратной связи, выполнив поиск и выбрав его после появления.</span><span class="sxs-lookup"><span data-stu-id="985fd-122">Ensure that the "feedbackpanel" text is selected in the ASA_feedback hierarchy, click "add component" and add the anchor feedback script by searching for it and selecting it once it appears.</span></span>
+![мрлеарнинг — базовый](images/mrlearning-asa/tutorial3-section1-step1-3.png)
 
-    ![module2chapter3step8im](images/module2chapter3step8im.PNG)
+<span data-ttu-id="5b828-126">Назначьте объект **обратной связи** в **текстовое поле Feedback** **(сценарий)** для компонента обратной связи:</span><span class="sxs-lookup"><span data-stu-id="5b828-126">Assign the **Feedback** object to the **Anchor Feedback Script (Script)** component's **Feedback Text** field:</span></span>
 
-6. <span data-ttu-id="985fd-124">Перетащите текстовый объект Фидбаккпанел из иерархии ASA_Feedback в пустой слот под сценарием, как показано на рисунке ниже.</span><span class="sxs-lookup"><span data-stu-id="985fd-124">Drag the "feedbackPanel" text object from the ASA_Feedback hierarchy into the empty slot beneath the script as seen in the picture below.</span></span>
+![мрлеарнинг — базовый](images/mrlearning-asa/tutorial3-section1-step1-4.png)
 
-    ![module2chapter3step9im](images/module2chapter3step9im.PNG)
+## <a name="congratulations"></a><span data-ttu-id="5b828-128">Поздравляем!</span><span class="sxs-lookup"><span data-stu-id="5b828-128">Congratulations</span></span>
 
-## <a name="congratulations"></a><span data-ttu-id="985fd-126">Поздравляем!</span><span class="sxs-lookup"><span data-stu-id="985fd-126">Congratulations</span></span>
-
-<span data-ttu-id="985fd-127">На этом занятии мы узнали, как создать панель пользовательского интерфейса для отображения текущего состояния работы с пространственными привязками Azure для предоставления пользователям обратной связи в режиме реального времени.</span><span class="sxs-lookup"><span data-stu-id="985fd-127">In this lesson, we learned how to create a UI panel to display the current status of the Azure Spatial Anchor experience for providing users with real-time feedback.</span></span>
+<span data-ttu-id="5b828-129">В этом учебнике вы узнали, как создать панель пользовательского интерфейса для отображения текущего состояния работы с пространственными привязками Azure для предоставления пользователям обратной связи в режиме реального времени.</span><span class="sxs-lookup"><span data-stu-id="5b828-129">In this tutorial, you learned how to create a UI panel to display the current status of the Azure Spatial Anchor experience for providing users with real-time feedback.</span></span>
