@@ -6,158 +6,254 @@ ms.author: jemccull
 ms.date: 11/01/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: смешанная реальность, unity, руководство, hololens
-ms.openlocfilehash: d0c166f760884efab9719ecba1ff83285872e2ef
-ms.sourcegitcommit: 23b130d03fea46a50a712b8301fe4e5deed6cf9c
+keywords: mixed reality, unity, tutorial, hololens
+ms.openlocfilehash: d3392df9bfad5938d71d3a01999be51834a98a5d
+ms.sourcegitcommit: 87aca9c2b73b0e83cb70a46443dcdb08c3621005
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "75334418"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77373449"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2. Инициализация проекта и первое приложение
 
 ## <a name="overview"></a>Обзор
 
-На этом первом уроке вы узнаете о некоторых возможностях <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">набора средств для смешанной реальности (MRTK)</a>, запустите свое первое приложение для HoloLens 2 и развернете его на устройстве.
+<!-- TODO: Consider expanding to include summary of each tutorial in this tutorial series -->
+B этом первом руководстве описаны некоторые возможности <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">набора средств для Смешанной реальности (MRTK)</a>. Также вы узнаете, как запустить свое первое приложение для HoloLens 2 и развернуть его на устройстве.
 
 ## <a name="objectives"></a>Задачи
 
 * Настройка Unity для разработки решений для HoloLens.
 * Импорт ресурсов и настройка сцены.
-* Визуализация пространственной сетки сопоставления, виртуальных рук и счетчика частоты кадров.
+* Визуализация сетки пространственного сканирования, виртуальных рук и счетчика частоты кадров.
+
+## <a name="prerequisites"></a>Предварительные условия
+
+* Компьютер с Windows 10, настроенный с требуемыми [установленными инструментами](install-the-tools.md).
+* Пакет SDK для Windows 10 версии 10.0.18362.0 и выше.
+* Базовые навыки программирования на C#.
+* Устройство HoloLens 2, [настроенное для разработки](using-visual-studio.md#enabling-developer-mode).
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> с Unity 2019.2.X и модулем поддержки сборки универсальной платформы Windows.
+
+> [!IMPORTANT]
+> Рекомендуемая версия Unity для этой серии руководств — Unity 2019.2.X. Это заменяет все требования к версии Unity и рекомендации, указанные выше.
 
 ## <a name="create-new-unity-project"></a>Создание проекта Unity
 
-1. Запустите Unity.
+Запустите **Unity Hub**, откройте вкладку **Projects** (Проекты) и щелкните **стрелку вниз** рядом с кнопкой **New** (Создать):
 
-2. Выберите **New** (Создать).
+![mrlearning-base](images/mrlearning-base/tutorial1-section1-step1-1.png)
 
-    ![Урок 1, раздел 1, шаг 2](images/mrlearning-base-ch1-1-step2.JPG)
+Выберите версию Unity, указанную в разделе с [предварительными требованиями](#prerequisites) выше.
 
-3. Введите название проекта (например, MixedRealityBase).
+![mrlearning-base](images/mrlearning-base/tutorial1-section1-step1-2.png)
 
-    ![Урок 1, раздел 1, шаг 3](images/mrlearning-base-ch1-1-step3.JPG)
+В окне Create a new project (Создание нового проекта) сделайте следующее:
 
-4. Укажите расположение, где будет сохранен проект.
+* Убедитесь, что для параметра **Templates** (Шаблоны) задано значение **3D**.
+* Укажите понятное **имя проекта**, например _MRTK Tutorials_.
+* Выберите подходящее **расположение** для хранения проекта, например _D:\MixedRealityLearning_.
+* Нажмите кнопку **Create** (Создать), чтобы создать и запустить новый проект Unity.
 
-    ![Урок 1, раздел 1, шаг 4](images/mrlearning-base-ch1-1-step4.JPG)
+![mrlearning-base](images/mrlearning-base/tutorial1-section1-step1-3.png)
 
-5. Задайте для проекта значение **3D**.
+> [!CAUTION]
+> В Windows для переменной MAX_PATH есть ограничение в 255 символов. Так как эти ограничения распространяются и на Unity, может произойти сбой компиляции, если длина пути к файлу превысит 255 символов. Поэтому настоятельно рекомендуется хранить проект Unity как можно ближе к корневому каталогу диска.
 
-    ![Урок 1, раздел 1, шаг 5](images/mrlearning-base-ch1-1-step5.JPG)
+Подождите, пока Unity создаст проект:
 
-6. Щелкните **Create Project** (Создать проект).
-
-    ![Урок 1, раздел 1, шаг 6](images/mrlearning-base-ch1-1-step6.JPG)
+![mrlearning-base](images/mrlearning-base/tutorial1-section1-step1-4.png)
 
 ## <a name="configure-the-unity-project-for-windows-mixed-reality"></a>Настройка проекта Unity для Windows Mixed Reality
 
-1. Откройте окно *Build Settings* (Параметры сборки), выбрав **File (Файл)**   >  **Build Settings (Параметры сборки)** .
+<!-- TODO: Consider adding info about configuring Unity for WMR vs MRTK, or removing WMR section -->
 
-    ![Урок 1, раздел 2, шаг 1](images/mrlearning-base-ch1-2-step1.JPG)
+В этом разделе описано, как переключить платформу сборки, включить виртуальную реальность и настроить возможность пространственного восприятия.
 
-2. Выберите *Universal Windows Platform* (Универсальная платформа Windows) и нажмите кнопку **Switch Platform** (Переключить платформу), чтобы переключить платформу. С HoloLens 2 должны использоваться приложения, совместимые с универсальной платформой Windows (UWP).
+### <a name="1-switch-build-platform"></a>1. Переключение платформы сборки
 
-    ![Урок 1, раздел 2, шаг 2](images/mrlearning-base-ch1-2-step2.JPG)
+В меню Unity щелкните **File** > **Build Settings...** (Файл > Параметры сборки...), чтобы открыть окно параметров сборки:
 
-3. Включите виртуальную реальность, щелкнув **Player Settings** (Параметры проигрывателя) в окне сборки, а затем на панели инспектора установите флажок *Virtual Reality Supported* (Поддержка виртуальной реальности) в разделе "XR Settings" (Параметры XR), как показано на приведенном ниже рисунке. Обратите внимание на то, что может потребоваться перетащить окно *Build Settings* (Параметры сборки) в сторону, чтобы увидеть панель инспектора. Флажок *Virtual Reality Supported* (Поддержка виртуальной реальности) также применяется к гарнитурам дополненной и смешанной реальности, так как он включает стереоскопическое изображение (отрисовка разных изображений для каждого глаза).
+![mrlearning-base](images/mrlearning-base/tutorial1-section2-step1-1.png)
 
-    ![Урок 1, раздел 2, шаг 3](images/mrlearning-base-ch1-2-step3.JPG)
+В окне параметров сборки щелкните **Universal Windows Platform** (Универсальная платформа Windows) и нажмите кнопку **Switch Platform** (Переключить платформу):
 
-4. Кроме того, в разделе "XR Settings" (Параметры XR) измените режим *Stereo Rendering Mode* (Режим стереоскопической отрисовки) на *Single Pass Instanced* (Однопроходная отрисовка экземпляра). Этот [стиль конвейера отрисовки](https://docs.unity3d.com/Manual/SinglePassStereoRenderingHoloLens.html) обычно является наиболее производительным для HoloLens 2. Если вас интересуют другие производительные конфигурации для среды Unity, следуйте [этим инструкциям](recommended-settings-for-unity.md).
+![mrlearning-base](images/mrlearning-base/tutorial1-section2-step1-2.png)
 
-    ![Урок 1, раздел 2, шаг 4](images/mrlearning-base-ch1-2-step4.jpg)
+Подождите, пока Unity переключит платформу:
 
-5. На той же панели инспектора в области возможностей раздела *Publishing Settings* (Параметры публикации) убедитесь, что установлен флажок *Spatial Perception* (Пространственное восприятие). Пространственное восприятие позволяет визуализировать сетку пространственного сопоставления на устройстве смешанной реальности, таком как HoloLens 2. Раздел параметров публикации находится на панели инспектора над областью "XR Settings" (Параметры XR) в разделе "Other Settings" (Другие параметры).
+![mrlearning-base](images/mrlearning-base/tutorial1-section2-step1-3.png)
 
-    ![Урок 1, раздел 2, шаг 5](images/mrlearning-base-ch1-2-step5.JPG)
+Когда Unity переключит платформу, щелкните красный значок **x**, чтобы закрыть окно параметров сборки:
 
-    >[!NOTE]
-    >Вы можете включить и другие распространенные функции (хотя в этом разделе они не используются), например *Microphone* (для голосовых команд) и *InternetClient* (для подключения к службам, для которых требуется сетевое подключение).
+![mrlearning-base](images/mrlearning-base/tutorial1-section2-step1-4.png)
+
+### <a name="2-enable-virtual-reality"></a>2. Включение виртуальной реальности
+
+> [!NOTE]
+> Включение виртуальной реальности также распространяется на гарнитуры дополненной и смешанной реальности, так как при этом включается стереоскопическое изображение (отрисовка разных изображений для каждого глаза).
+
+В меню Unity щелкните **Edit** > **Project Settings...** (Правка > Параметры проекта...), чтобы открыть окно параметров проекта:
+
+![mrlearning-base](images/mrlearning-base/tutorial1-section2-step2-1.png)
+
+В окне параметров проекта щелкните **Player** > **XR Settings** (Проигрыватель >Параметры XR), чтобы развернуть окно параметров XR:
+
+![mrlearning-base](images/mrlearning-base/tutorial1-section2-step2-2.png)
+
+В окне параметров XR установите флажок **Virtual Reality Supported** (Поддерживаемая виртуальная реальность), чтобы включить виртуальную реальность, а затем щелкните значок **+** и выберите **Windows Mixed Reality**, чтобы добавить пакет SDK для Windows Mixed Reality:
+
+![mrlearning-base](images/mrlearning-base/tutorial1-section2-step2-3.png)
+
+Подождите, пока Unity добавит пакет SDK:
+
+![mrlearning-base](images/mrlearning-base/tutorial1-section2-step2-4.png)
+
+Когда Unity добавит пакет SDK, оптимизируйте параметры XR следующим образом:
+
+* В Windows Mixed Reality задайте для параметра **Depth Format** (Формат глубины) значение **16-bit depth** (16-разрядная глубина).
+* В Windows Mixed Reality установите флажок **Enable Depth Sharing** (Совместное использование глубины).
+* Для параметра **Stereo Rendering Mode\*** (Режим стереоскопической отрисовки) задайте значение **Single Pass Instanced** (Однопроходная отрисовка экземпляра).
+
+![mrlearning-base](images/mrlearning-base/tutorial1-section2-step2-5.png)
+
+> [!TIP]
+> См. сведения об оптимизации Unity для Windows Mixed Reality в документации по [рекомендуемым параметрам для Unity](recommended-settings-for-unity.md).
+
+### <a name="3-enable-spatial-perception"></a>3. Включение пространственного восприятия
+
+> [!NOTE]
+> Пространственное восприятие позволяет визуализировать сетку пространственного сканирования на устройствах Windows Mixed Reality.
+
+В окне параметров проекта щелкните **Player** > **Publishing Settings** (Проигрыватель >Параметры публикации), чтобы развернуть окно параметров публикации:
+
+![mrlearning-base](images/mrlearning-base/tutorial1-section2-step3-1.png)
+
+В окне параметров публикации прокрутите вниз до раздела **Capabilities** (Возможности) и установите флажок **Spatial Perception** (Пространственное восприятие).
+
+![mrlearning-base](images/mrlearning-base/tutorial1-section2-step3-2.png)
+
+<!-- TODO: Consider adding info about audio spatializer plugin setting -->
+
+Закройте окно параметров проекта.
+
+## <a name="import-textmesh-pro-essential-resources"></a>Импорт требуемых ресурсов TextMesh Pro
+
+> [!NOTE]
+> Мы импортируем этот пакет, так как он требуется для работы элементов пользовательского интерфейса набора средств Смешанной реальности.
+
+В меню Unity щелкните **Window** > **TextMeshPro** > **Import TMP Essential Resources** (Окно > TextMeshPro > Импорт требуемых ресурсов TMP):
+
+![mrlearning-base](images/mrlearning-base/tutorial1-section3-step1-1.png)
+
+В окне импорта пакета Unity нажмите кнопку **All** (Все), чтобы выбрать все ресурсы, а затем нажмите кнопку **Import** (Импорт), чтобы импортировать их.
+
+![mrlearning-base](images/mrlearning-base/tutorial1-section3-step1-2.png)
 
 ## <a name="import-the-mixed-reality-toolkit"></a>Импорт набора средств для смешанной реальности
 
-1. Скачайте [пакет платформы Unity версии 2.1.0](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.1.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.1.0.unitypackage) для [набора средств для смешанной реальности](https://github.com/microsoft/MixedRealityToolkit-Unity/releases) (Mixed Reality Toolkit) и сохраните его в папке на своем компьютере.
+Скачайте пользовательский пакет Unity:
 
-2. Импортируйте пакет *набора средств для смешанной реальности*, скачанный на предыдущем шаге. Щелкните **Assets** (Ресурсы)  > **Import** (Импортировать)  > **Custom Package** (Пользовательский пакет), выберите *Microsoft.MixedReality.Toolkit.Unity.Foundation.2.1.0.unitypackage* и откройте его, чтобы начать процесс импорта. Процесс импорта может занять несколько минут.
+* [Microsoft.MixedReality.Toolkit.Unity.Foundation.2.2.0.unitypackage](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.2.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.2.0.unitypackage)
 
-    ![Урок 1, раздел 3, шаг 2a](images/mrlearning-base-ch1-3-step2a.JPG)
+В меню Unity щелкните **Assets** > **Import Package** > **Custom Package** (Ресурсы > Импорт пакетов > Пользовательский пакет), чтобы открыть окно импорта пакетов:
 
-    ![Урок 1, раздел 3, шаг 2b](images/mrlearning-base-ch1-3-step2b.JPG)
+![mrlearning-base](images/mrlearning-base/tutorial1-section4-step1-1.png)
 
-3. В следующем всплывающем окне щелкните **Import** (Импортировать), чтобы начать импорт выбранного пакета в проект Unity. Убедитесь, что все параметры выбраны, как показано на приведенном ниже рисунке.
+В окне импорта пакетов выберите скачанный пакет **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.2.0.unitypackage** и нажмите кнопку **Open** (Открыть):
 
-    ![Урок 1, раздел 3, шаг 3](images/mrlearning-base-ch1-3-step3.JPG)
+![mrlearning-base](images/mrlearning-base/tutorial1-section4-step1-2.png)
 
-    > [!NOTE]
-    > Если появится всплывающее диалоговое окно с запросом на применение параметров по умолчанию для набора средств для смешанной реальности, щелкните **Apply** (Применить). При импорте MRTK анализирует ваш проект, выявляя пропущенные рекомендуемые параметры, чтобы обеспечить автоматическую настройку. В зависимости от выбранных параметров всплывающее окно может выглядеть иначе, чем на рисунке ниже.
+В окне импорта пакета Unity нажмите кнопку **All** (Все), чтобы выбрать все ресурсы, а затем нажмите кнопку **Import** (Импорт), чтобы импортировать их.
 
-    ![Урок 1, раздел 3, шаг 4, примечание 1](images/mrlearning-base-ch1-3-step4-note1.JPG)
+![mrlearning-base](images/mrlearning-base/tutorial1-section4-step1-3.png)
+
+## <a name="configure-the-unity-project-for-the-mixed-reality-toolkit"></a>Настройка проекта Unity для набора средств для Смешанной реальности
+
+<!-- TODO: Consider adding info about configuring Unity for WMR vs MRTK, or removing WMR section -->
+
+После импорта пакета должно отобразиться окно конфигуратора проекта МРТК. В противном случае откройте это окно, щелкнув **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** (Набор средств для Смешанной реальности > Служебные программы > Настроить проект Unity) в меню Unity.
+
+![mrlearning-base](images/mrlearning-base/tutorial1-section5-step1-1.png)
+
+В окне конфигуратора проектов МРТК разверните раздел **Modify Configurations** (Изменение конфигураций), <u>снимите флажок</u> **Enable MSBuild for Unity** (Включить MSBuild для Unity), убедитесь, что настроены остальные параметры, и нажмите кнопку **Apply** (Применить), чтобы применить эти параметры:
+
+![mrlearning-base](images/mrlearning-base/tutorial1-section5-step1-2.png)
+
+> [!CAUTION]
+> Так как MSBuild для Unity может поддерживать не все пакеты SDK, которые будут использоваться, с отключением могут быть проблемы. Поэтому настоятельно рекомендуется не включать MSBuild для Unity.
 
 ## <a name="configure-the-mixed-reality-toolkit"></a>Настройка набора средств для смешанной реальности
+<!-- TODO: Consider renaming to 'Add the Mixed Reality Toolkit to the Unity scene' -->
 
-1. Добавьте *набор средств для смешанной реальности* в текущую сцену, выбрав **Mixed Reality Toolkit** (Набор средств для смешанной реальности)  > **Add to Scene and Configure** (Добавить в сцену и настроить) в строке меню. Если после импорта набора средств для смешанной реальности этот пункт меню не отображается, перезапустите Unity.
+В меню Unity щелкните **Mixed Reality Toolkit** > **Add to Scene and Configure** (Набор средств для Смешанной реальности > Добавить в сцену и настроить), чтобы добавить набор средств для Смешанной реальности в текущую сцену:
 
-    ![Урок 1, раздел 4, шаг 1](images/mrlearning-base-ch1-4-step1.JPG)
+![mrlearning-base](images/mrlearning-base/tutorial1-section6-step1-1.png)
 
-    > [!NOTE]
-    > Может появиться всплывающее диалоговое окно для выбора [профиля для набора средств для смешанной реальности](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html). Выберите профиль *DefaultHoloLens2ConfigurationProfile*, дважды щелкнув его.
+Выбрав объект MixedRealityToolkit в окне иерархии, измените профиль конфигурации набора средств для Смешанной реальности на **DefaultHoloLens2ConfigurationProfile**:
 
-2. В сцене появится несколько новых элементов и изменений. Сохраните сцену под другим именем, щелкнув **File** (Файл)  > **Save As** (Сохранить как) и укажите имя для сцены, например *BaseScene*. Сохраните сцену в папке *Scenes* в папке *Assets* проекта, чтобы все сцены хранились в одном месте.
+![mrlearning-base](images/mrlearning-base/tutorial1-section6-step1-2.png)
 
-    ![Урок 1, раздел 4, шаг 2a](images/mrlearning-base-ch1-4-step2a.JPG)
+В меню Unity щелкните **File** > **Save As...** (Файл > Сохранить как), чтобы открыть окно сохранения сцены:
 
-    ![Урок 1, раздел 4, шаг 2b](images/mrlearning-base-ch1-4-step2b.JPG)
+![mrlearning-base](images/mrlearning-base/tutorial1-section6-step1-3.png)
+
+В окне сохранения сцены перейдите к папке **Scenes** проекта, присвойте сцене понятное имя, например _GettingStarted_, и нажмите кнопку **Save** (Сохранить), чтобы сохранить сцену:
+
+![mrlearning-base](images/mrlearning-base/tutorial1-section6-step1-4.png)
 
 ## <a name="build-your-application-to-your-device"></a>Разработка приложения для устройства
 
-1. Если вы закрыли окно *Build Settings* (Параметры сборки), открытое в предыдущих разделах, снова откройте его, выбрав **File** (Файл)  > **Build Settings** (Параметры сборки).
+### <a name="1-build-the-unity-project"></a>1. Создание проекта Unity
 
-    ![Урок 1, раздел 5, шаг 1](images/mrlearning-base-ch1-5-step1.JPG)
+В меню Unity щелкните **File** > **Build Settings** (Файл > Параметры сборки), чтобы открыть окно параметров сборки.
 
-2. Убедитесь, что созданная сцена указана в списке *Scenes in Build* (Сцены в сборке), нажав кнопку **Add Open Scenes** (Добавить открытые сцены). Эта сцена должна быть открыта в Unity.
+В окне параметров сборки нажмите кнопку **Add Open Scenes** (Добавить открытые сцены), чтобы добавить текущую сцену в список **Scenes In Build** (Сцены в сборке), а затем нажмите кнопку **Build** (Сборка), чтобы открыть окно сборки универсальной платформы Windows:
 
-3. Нажмите кнопку **Build** (Сборка), чтобы начать процесс сборки.
+![mrlearning-base](images/mrlearning-base/tutorial1-section7-step1-1.png)
 
-    ![Урок 1, раздел 5, шаг 3](images/mrlearning-base-ch1-5-step3.JPG)
+В окне сборки универсальной платформы Windows выберите подходящее расположение для хранения сборки, например _D:\MixedRealityLearning\Builds_, создайте папку и присвойте ей понятное имя, например _GettingStarted_, а затем нажмите кнопку **Select Folder** (Выбрать папку), чтобы запустить процесс сборки:
 
-4. Создайте папку для приложения и укажите для нее название. На приведенном ниже изображении для хранения приложения была создана папка App. Щелкните **Select Folder** (Выбор папки), чтобы начать создание приложения в новой папке. После завершения создания вы можете закрыть окно *Build Settings* (Параметры сборки) в Unity.
+![mrlearning-base](images/mrlearning-base/tutorial1-section7-step1-2.png)
 
-    ![Урок 1, раздел 5, шаг 4](images/mrlearning-base-ch1-5-step4.JPG)
+Подождите, пока Unity завершит сборку:
 
-    >[!IMPORTANT]
-    >Если сборка завершилась сбоем, попробуйте выполнить ее заново или перезапустите Unity и повторите попытку. Может отобразиться ошибка, например "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?) (Ошибка: CS0246 = не удалось найти тип или имя пространства имен XX (возможно, отсутствует директива using или ссылка на сборку)). В этом случае может потребоваться установить [пакет SDK Windows 10 (10.0.18362.0)](https://developer.microsoft.com//windows/downloads/windows-10-sdk).
+![mrlearning-base](images/mrlearning-base/tutorial1-section7-step1-3.png)
 
-5. После завершения сборки откройте созданную папку, содержащую файлы только что созданного приложения. Дважды щелкните решение *MixedRealityBase.sln* (или соответствующее имя, если вы использовали альтернативное имя для своего проекта), чтобы открыть файл решения в Visual Studio.
+### <a name="2-build-and-deploy-the-application"></a>2. Сборка и развертывание приложения
 
-    >[!NOTE]
-    >Обязательно откройте созданную папку (т. е. папку *App*, если вы следовали соглашениям об именовании из предыдущих шагов), так как за пределами этой папки будет находиться SLN-файл с аналогичным именем. Не перепутайте его с SLN-файлом, содержащимся в папке сборки. Структура папок должна выглядеть примерно так, как показано на рисунке ниже.
-    >
-    >Если в Visual Studio появится запрос на установку новых компонентов, проверьте, установлены ли все обязательные компоненты, как описано на [этой странице](install-the-tools.md).
+По завершении процесса сборки Unity запросит проводник Windows открыть расположение с сохраненной сборкой. Перейдите в папку и дважды щелкните файл решения, чтобы открыть его в Visual Studio:
 
-    ![Урок 1, раздел 5, шаг 5](images/mrlearning-base-ch1-5-step5.JPG)
+![mrlearning-base](images/mrlearning-base/tutorial1-section7-step2-1.png)
 
-6. Подключите HoloLens 2 к компьютеру. Хотя в данных инструкциях предполагается, что вы будете развертывать приложение на устройстве HoloLens 2, вы можете также развернуть его на [эмуляторе HoloLens 2](using-the-hololens-emulator.md) или создать [пакет приложения для передачи данных на другое локальное устройство](<https://docs.microsoft.com//windows/uwp/packaging/packaging-uwp-apps>).
+> [!NOTE]
+> Если в Visual Studio появится запрос на установку новых компонентов, проверьте, установлены ли все обязательные компоненты, как описано в документации по [установке средств](install-the-tools.md).
 
-    >[!IMPORTANT]
-    >Перед выполнением сборки на устройстве его нужно перевести в *режим разработчика* и связать с компьютером разработки. Большинство этих действий можно выполнить, следуя [данным инструкциям](using-visual-studio.md).
+Настройте Visual Studio для устройства HoloLens 2, выбрав конфигурацию **Ведущий** или **Выпуск**, архитектуру **ARM** и целевой объект **Устройство**:
 
-7. Настройте Visual Studio для сборки на устройство HoloLens 2, выбрав конфигурацию *Выпуск* или *Ведущий*, архитектуру *ARM* и цель *Устройство*.
+![mrlearning-base](images/mrlearning-base/tutorial1-section7-step2-2.png)
 
-    ![Урок 1, раздел 5, шаг 8](images/mrlearning-base-ch1-5-step7.JPG)
+Подключите HoloLens 2 к компьютеру.
 
-8. Завершающий шаг — это сборка и развертывание на вашем устройстве. Выберите **Отладка** > **Запуск без отладки**. Выбор *Запуск без отладки* приведет к немедленному запуску приложения на вашем устройстве после успешной сборки, но без подключения отладчика и отображения сведений об отладке в Visual Studio. Это также означает, что вы можете отсоединить USB-кабель во время выполнения приложения на устройстве HoloLens 2, не прерывая его работу.
+> [!IMPORTANT]
+> Перед выполнением сборки устройство нужно перевести в режим разработчика и связать с компьютером разработки. Оба эти действия можно выполнить, следуя [этим инструкциям](using-visual-studio.md).
 
-    > [!NOTE]
-    > Кроме того, вы можете выбрать **Сборка** > **Развернуть решение**, чтобы развернуть решение на устройстве без автоматического запуска приложения.
+Завершающий шаг — это сборка и развертывание на вашем устройстве. Для этого щелкните **Отладка** > **Запуск без отладки**:
 
-    ![Урок 1, раздел 5, шаг 9](images/mrlearning-base-ch1-5-step8.JPG)
+![mrlearning-base](images/mrlearning-base/tutorial1-section7-step2-3.png)
+
+Хотя в этих инструкциях предполагается, что вы будете развертывать приложение на устройстве HoloLens 2, вы можете также развернуть его на [эмуляторе HoloLens 2](using-the-hololens-emulator.md) или создать [пакет приложения для передачи данных на другое локальное устройство](<https://docs.microsoft.com//windows/uwp/packaging/packaging-uwp-apps>).
+
+Выбор параметра "Запуск без отладки" приведет к немедленному запуску приложения на вашем устройстве после успешной сборки, но без подключения отладчика и отображения сведений об отладке в Visual Studio. Это также означает, что вы можете отсоединить USB-кабель во время выполнения приложения на устройстве HoloLens 2, не прерывая его работу.
+
+Кроме того, вы можете выбрать "Сборка" > "Развернуть решение", чтобы развернуть решение на устройстве без автоматического запуска приложения.
 
 ## <a name="congratulations"></a>Поздравляем!
 
-Вы развернули свое первое приложение HoloLens 2. Перемещаясь, вы увидите, как пространственная сетка сопоставления покрывает все поверхности, воспринятые HoloLens 2. Кроме того, вы увидите на руках и пальцах индикаторы для отслеживания рук и счетчик частоты кадров для отслеживания производительности приложения. Это лишь некоторые из основополагающих компонентов, входящих в комплект поставки набора средств для смешанной реальности. На следующих уроках вы начнете добавлять больше содержимого и интерактивных средств в сцену, чтобы в полной мере изучить возможности HoloLens 2 и набора средств для смешанной реальности.
+<!-- TODO: Consider cleanup and adding in app screenshots -->
+Вы развернули свое первое приложение HoloLens 2. Перемещаясь, вы увидите, как пространственная сетка сопоставления покрывает все поверхности, воспринятые HoloLens 2. Кроме того, вы увидите на руках и пальцах индикаторы для отслеживания рук и счетчик частоты кадров для отслеживания производительности приложения. Это лишь некоторые из основополагающих компонентов, входящих в комплект поставки набора средств для смешанной реальности. В следующих руководствах описано, как добавлять содержимое и интерактивные средства в сцену, чтобы в полной мере изучить возможности HoloLens 2 и набора средств для Смешанной реальности.
 
 > [!NOTE]
-> В приложении вы можете заметить визуальный профилировщик. Переключение счетчика частоты кадров с помощью голосовой команды описывается в [уроке 5](mrlearning-base-ch5.md). Обычно рекомендуется постоянно отображать визуальный профилировщик во время разработки. Это позволит определить, если изменения кода повлияют на производительность. Приложение HoloLens 2 должно [непрерывно выполняться в режиме 60 кадров/с](understanding-performance-for-mixed-reality.md).
+> При работе приложения можно заметить, что профилировщик диагностики позволяет переключать видимость с помощью команды **Toggle Diagnostics** (Переключить диагностику). Но обычно рекомендуется не закрывать профилировщик во время разработки. Так вы сможете определить, влияют ли изменения приложения на производительность (например, приложение HoloLens 2 должно [непрерывно выполняться с частотой 60 кадров в секунду](understanding-performance-for-mixed-reality.md)).
 
-[Следующий урок. 3. Создание пользовательского интерфейса и настройка набора средств для Смешанной реальности](mrlearning-base-ch2.md)
+[Следующее руководство: 3. Создание пользовательского интерфейса и настройка набора средств для Смешанной реальности](mrlearning-base-ch2.md)
