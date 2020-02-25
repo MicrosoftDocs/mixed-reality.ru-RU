@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 8275d5a97d7827d34ed3926cabe4032cc7f4cfac
-ms.sourcegitcommit: cc61f7ac08f9ac2f2f04e8525c3260ea073e04a7
+ms.openlocfilehash: 5463f363291790fd5e5d76ffa322a61ca7bf8e31
+ms.sourcegitcommit: bd536f4f99c71418b55c121b7ba19ecbaf6336bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77129345"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77553902"
 ---
 # <a name="4-placing-dynamic-content-and-using-solvers"></a>4. размещение динамического содержимого и использование поисковых решений
 <!-- Consider renaming to 'Placing dynamic content using Solvers' -->
@@ -28,7 +28,7 @@ ms.locfileid: "77129345"
 
  Поисковые решения МРТК находятся в папке пакета SDK МРТК. Чтобы просмотреть доступные решения в проекте, в окне проекта перейдите к разделу **активы** > **микседреалититулкит. SDK** > **функции** > **Служебные программы** > **поиска решения**:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial3-section1-step1-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial3-section1-step1-1.png)
 
 В этом учебнике мы рассмотрим реализацию решения Орбитал и решения радиального представления. Дополнительные сведения о полном наборе решений, доступных в МРТК, можно найти в руководстве по [поиску решений](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) на [портале документации мртк](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
@@ -58,11 +58,11 @@ ms.locfileid: "77129345"
 
 Настройте компонент **Орбитал (script)** :
 
-* Изменить **тип ориентации** на **следовый объект**
+* Убедитесь, что для **типа ориентации** задано значение **следовать за объектом Tracked** .
 * Сбросить **локальное смещение** до X = 0, Y = 0, Z = 0
 * Изменить **мировое смещение** на X = 0, Y =-0,4, Z = 0,3
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial3-section2-step2-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial3-section2-step2-1.png)
 
 ### <a name="3-test-the-orbital-solver-using-the-in-editor-simulation"></a>3. тестирование решения Орбитал с помощью имитации в редакторе
 
@@ -71,7 +71,7 @@ ms.locfileid: "77129345"
 * Теперь расположение преобразования Буттонколлектион определяется параметрами поиска решения.
 * На куб, который не влияет на поиск решения, остается в той же должности
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial3-section2-step3-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial3-section2-step3-1.png)
 
 > [!TIP]
 > Если в окне сцены не отображается луч камеры, убедитесь, что меню приспособлений включено. Чтобы узнать больше о меню приспособлений и его использовании для оптимизации представления сцены, можно посетить документацию по <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">меню приспособлений</a> Unity.
@@ -104,13 +104,13 @@ ms.locfileid: "77129345"
 * Изменить **направление ссылки** на **объектно ориентированный**, установите флажок **ориентации на направление ссылки**
 * Изменить **минимальное расстояние** и **Максимальное расстояние** до 0
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial3-section3-step2-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial3-section3-step2-1.png)
 
 ### <a name="3-test-the-radial-view-solver-using-the-in-editor-simulation"></a>3. тестирование решения радиального представления с помощью имитации в редакторе
 
 Нажмите кнопку Воспроизведение, чтобы перейти в режим игры, а затем нажмите и удерживайте клавишу пробел, чтобы отобразить руку. Наведите курсор мыши, чтобы переместить руку, и нажмите и удерживайте левую кнопку мыши, чтобы повернуть руку:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial3-section3-step3-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial3-section3-step3-1.png)
 
 ## <a name="congratulations"></a>Поздравляем!
 

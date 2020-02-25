@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: efa03c49a9a083d2b8e591e03bccbeb776bb57b2
-ms.sourcegitcommit: 2bfe9b1af4ee2cc0d668caeccb8ebc3137cbc20b
+ms.openlocfilehash: d879144c7097d8b3873618f986b9f169e8553fa8
+ms.sourcegitcommit: bd536f4f99c71418b55c121b7ba19ecbaf6336bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75901474"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77553822"
 ---
 # <a name="1-setting-up-photon-unity-networking"></a>1. Настройка сети Unity Photon
 
@@ -25,18 +25,18 @@ ms.locfileid: "75901474"
 * Узнайте, как найти и импортировать сеть Unity Photon
 * Настройка локального сервера Photon
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные требования
 
 >[!TIP]
 >Если вы еще не выполнили учебники [Приступая к работе](mrlearning-base.md) и службы [пространственных привязок Azure](mrlearning-asa-ch1.md) , мы рекомендуем сначала выполнить эти учебники.
 
-* КОМПЬЮТЕР с Windows 10 с [установленными](install-the-tools.md) правильными инструментами
-* Windows 10 SDK 10.0.18362.0 или более поздней версии
-* Некоторые базовые C# возможности программирования
-* Устройство HoloLens 2, [настроенное для разработки](using-visual-studio.md#enabling-developer-mode)
+* Компьютер с Windows 10, настроенный с требуемыми [установленными инструментами](install-the-tools.md).
+* Пакет SDK для Windows 10 версии 10.0.18362.0 и выше.
+* Базовые навыки программирования на C#.
+* Устройство HoloLens 2, [настроенное для разработки](using-visual-studio.md#enabling-developer-mode).
 
 >[!IMPORTANT]
->Для этой серии руководств требуется <a href="https://unity3d.com/get-unity/download/archive" target="_blank">unity 2019,1</a> , а рекомендуемая версия — Unity 2019.1.14. Это заменяет все требования к версии Unity или рекомендации, указанные в связанных выше условиях.
+> Рекомендуемая версия Unity для этой серии руководств — Unity 2019.2.X. Это заменяет все требования к версии Unity и рекомендации, указанные выше.
 
 ## <a name="setting-up-photon"></a>Настройка Photon
 

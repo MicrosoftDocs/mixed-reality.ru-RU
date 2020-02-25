@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 6abf4fa8fc87afc7007d6f7c76becfbd88ed7a12
-ms.sourcegitcommit: 2bfe9b1af4ee2cc0d668caeccb8ebc3137cbc20b
+ms.openlocfilehash: 2bcec7e70949186c6e711120c36ee8649c006ec7
+ms.sourcegitcommit: bd536f4f99c71418b55c121b7ba19ecbaf6336bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75901519"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77553848"
 ---
 # <a name="2-getting-unity-ready-for-development"></a>2. Подготовка Unity к разработке
 
@@ -25,31 +25,37 @@ ms.locfileid: "75901519"
 
 ## <a name="instructions"></a>Инструкция
 
-1. Скачайте и сохраните пакет Unity для набора средств Mixed Reality, щелкнув [здесь.](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.1.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.1.0.unitypackage)
+1. Скачайте и сохраните пакет Unity для набора средств Mixed Reality, щелкнув [здесь.](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.3.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.3.0.unitypackage)
 
 2. В Unity откройте меню активы и выберите Импорт пакета, а затем щелкните пользовательский пакет.
 
     ![Module3Chapter2step2im](images/module3chapter2step2im.PNG)
 
-3. Выберите пакет Unity, который вы только что скачали, по ссылке, предоставленной на шаге 1. После появления всплывающего окна Импорт в Unity нажмите кнопку Импорт, чтобы начать импорт МРТК. Это может занять несколько секунд.
+3. Выберите пакет Unity, который вы только что скачали, по ссылке, предоставленной на шаге 1. После появления всплывающего окна Импорт в Unity нажмите кнопку Импорт, чтобы начать импорт МРТК. Это может занять несколько минут.
 
     ![Module3Chapter2step3im](images/module3chapter2step3im.PNG)
 
     >[!NOTE]
     >Загруженный пакет находится в локальной папке, в которой сохранен файл. На приведенном выше рисунке не отображать, где находится пакет.
 
-4. Создайте новую сцену. Это можно сделать, щелкнув файл и выбрав создать сцену. Сохраните его как Хлшаредпрожектмаин.
+    После импорта пакета должно отобразиться окно конфигуратора проекта МРТК. Если это не так, откройте его, выбрав набор средств для смешанной реальности > Служебные программы > настроить проект Unity в меню Unity.
 
-    Вы можете получить всплывающее окно, похожее на изображение ниже. Пока нажмите кнопку нет.
-    ![Module3Chapter2note1im](images/module3chapter2note1im.PNG)
+    В окне конфигуратора проектов МРТК разверните раздел Modify Configurations (изменение конфигураций), снимите флажок Включить MSBuild для Unity, убедитесь, что установлены все остальные параметры, и нажмите кнопку Применить, чтобы применить эти параметры.
+
+    ![Module3Chapter2note1im](images/module3chapter2note1im-missing01.png)
+
+    > [!CAUTION]
+    > Так как MSBuild для Unity может поддерживать не все пакеты SDK, которые будут использоваться, с отключением могут быть проблемы. Поэтому настоятельно рекомендуется не включать MSBuild для Unity.
+    
+4. Создайте новую сцену. Это можно сделать, щелкнув файл и выбрав создать сцену. Сохраните его как Хлшаредпрожектмаин.
 
 5. В разделе набор средств для смешанной реальности щелкните Добавить в сцену и настроить.
 
     ![Module3Chapter2step5im](images/module3chapter2step5im.PNG)
 
-6. После завершения работы появится новый файл конфигурации, в котором можно настроить профиль.
+6. По завершении выберите набор средств смешанной реальности (МРТК) из иерархии. На панели инспектора измените профиль конфигурации МРТК на DefaultHoloLens2ConfigurationProfile.
 
-    ![Module2Chapter1step4ima](images/Module2Chapter1step4ima.PNG)
+    ![Module2Chapter1step4ima](images/Module2Chapter1step4ima-missing01.png)
 
 7. Выберите набор средств смешанной реальности (МРТК) из иерархии. На панели инспектора Найдите сценарий набора средств Mixed Reality и нажмите кнопку "Копировать & настроить", как показано на рисунке ниже.  После этого появится POP и выбрать параметр клонировать во всплывающем меню.
 
@@ -75,18 +81,14 @@ ms.locfileid: "75901519"
 
 12. Импортируйте указанные пользовательские пакеты:
 
-    А. [Азуреспатиаланчорс. пакет unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.0.0/AzureSpatialAnchors.unitypackage) (версия 2.0.0)
-
-    Б. [МРТК. HoloLens2. Unity. Tutorials. Assets. GettingStarted. 2.1.0.1. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.1.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.1.0.1.unitypackage)
-
-    в. [МРТК. HoloLens2. Unity. Tutorials. Assets. Азуреспатиаланчорс. 2.1.0.1. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.1.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.1.0.1.unitypackage)
-
-    г. [МРТК. HoloLens2. Unity. Tutorials. Assets. Мултиусеркапабилитиес. 2.1.0.1. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.1.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.1.0.1.unitypackage)
+    * [Азуреспатиаланчорс. пакет unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage) (версия:/с)
+    * [МРТК. HoloLens2. Unity. Tutorials. Assets. GettingStarted. 2.3.0.2. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.2/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.2.unitypackage)
+    * [МРТК. HoloLens2. Unity. Tutorials. Assets. Азуреспатиаланчорс. 2.3.0.0. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.0.unitypackage)
+    * [МРТК. HoloLens2. Unity. Tutorials. Assets. Мултиусеркапабилитиес. 2.1.0.1. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.1.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.1.0.1.unitypackage)
 
     >[!TIP]
     >Напоминание о том, как настроить проект Unity для пространственных привязок Azure, см. в учебнике [Приступая к работе с пространственными привязками](https://docs.microsoft.com/windows/mixed-reality/mrlearning-asa-ch1) Azure, который является частью серии руководств по [пространственной привязке Azure](https://docs.microsoft.com/windows/mixed-reality/mrlearning-asa-ch1) .
 
-    ![Module3Chapter2step12im](images/module3chapter2step11im.PNG)
 
 13. На панели проект перейдите в папку Prefabs. В следующих шагах в сцену будет реализовано несколько Prefabs. В папке Prefabs щелкните и перетащите окно prefab, отладку в иерархию. По завершении сохраните проект, щелкнув файл, а затем сохранить или нажмите клавиши CTRL + S.
 

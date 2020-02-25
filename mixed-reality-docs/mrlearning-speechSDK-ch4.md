@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: e712fc2fd66b1add5b16b7dd8e6c37551aefe43a
-ms.sourcegitcommit: 9005b3fdfa87ac8fdc18a594a681e25c00ac5ce1
+ms.openlocfilehash: 8805fa6410e882bce2f0fe8da780dfd5f794cc74
+ms.sourcegitcommit: bd536f4f99c71418b55c121b7ba19ecbaf6336bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75003213"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77554008"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. Настройка намерения и естественного понимания языка
 
@@ -147,14 +147,22 @@ ms.locfileid: "75003213"
 
     ![Module4Chapter4step23im](images/module4chapter4step23im.PNG)
 
-23. В поле Конечная точка Luis в "Лунаркоминтентрекогнизер" на панели инспектора введите URL-адрес конечной точки, сохраненной на шаге 22.
+23. В поле Конечная точка Luis в "Лунаркоминтентрекогнизер" на панели инспектора введите URL-адрес конечной точки, сохраненной на шаге 21.
 
     ![Module4Chapter4step24im](images/module4chapter4step24im.PNG)
 
     >[!NOTE]
     >В компоненте "Лунаркомоффлинерекогнизер" на панели инспектора убедитесь, что для "Симулатеоффлинемоде" выбрано значение "отключить", а проверка программы не будет работать.
 
-24. Нажмите кнопку Воспроизведение в редакторе Unity и нажмите кнопку Rocket, чтобы начать распознавание намерения. Полное фразу "нажмите кнопку запуска Rocket".
+24. В окне проекта перейдите к ресурсам > МРТК. Учебник. GettingStarted > Prefabs > Роккетлаунчер папку, перетащите RocketLauncher_Complete prefab в окно иерархии и поместите его перед объектом Lunarcom_Base.
+
+    ![Module4Chapter4step24im](images/module4chapter4step24im-missing01.png)
+
+25. В окне Иерархия выберите объект Lunarcom_Base и найдите компонент распознавателя Лунарком намерение (script), а затем разверните объект кнопки RocketLauncher_Complete > и назначьте каждому объекту кнопки соответствующие кнопки запуска в лунном подокне. полями.
+
+    ![Module4Chapter4step24im](images/module4chapter4step24im-missing02.png)
+
+26. Нажмите кнопку Воспроизведение в редакторе Unity и нажмите кнопку Rocket, чтобы начать распознавание намерения. Полное фразу "нажмите кнопку запуска Rocket".
 
     >[!NOTE]
     >Приложение распознал нужную функцию и активировало кнопку Rocket.

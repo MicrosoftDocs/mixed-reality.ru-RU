@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: a3b136023b0beea7cf6eecd52a9a21447576d482
-ms.sourcegitcommit: 2bfe9b1af4ee2cc0d668caeccb8ebc3137cbc20b
+ms.openlocfilehash: c1b64b9d32409d61284f21ca216417ece4767d1b
+ms.sourcegitcommit: bd536f4f99c71418b55c121b7ba19ecbaf6336bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75901470"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77553812"
 ---
 # <a name="5-integrating-azure-spatial-anchors-into-a-shared-experience"></a>5. Интеграция пространственных привязок Azure в общий интерфейс
 
@@ -42,11 +42,17 @@ ms.locfileid: "75901470"
 
     ![Module3hapter5step7im](images/module3chapter5step7im.PNG)
 
-6. Чтобы протестировать модуль общего доступа, нажмите кнопку "запустить сеанс Azure ASA", которая запустит сеанс пространственных привязок Azure, а затем создайте привязку Azure, нажав кнопку "создать привязку Azure". Дождитесь создания привязки Azure. После создания привязки Azure нажмите кнопку "поделиться с Azure Anchor", чтобы поделиться созданной привязкой Azure от HoloLens.
+6. Повторите шаг 4, чтобы подключить функцию Стартазуресессион () к Стартазуресессионбуттон.
 
-7. Чтобы получить общую привязку Azure в другом HoloLens, щелкните "запустить сеанс Azure ASA", чтобы начать и перейти к текущему сеансу ASA.
+7. Повторите шаг 4 для подключения функции Креатеазуреанчор () к Креатеазуреанчорбуттон и убедитесь, что объект Таблеанчор назначен в поле "Game Object" для параметра функции.
 
-8. Нажмите кнопку "получить привязку Azure", чтобы получить общую привязку Azure от другого HoloLens.
+8. Чтобы добавить учетные данные службы пространственных привязок Azure, следуйте инструкциям в статье [Подключение сцены к Azure Resource](mrlearning-asa-ch1.md#4-connect-the-scene-to-the-azure-resource) .
+
+9. Чтобы протестировать модуль общего доступа, нажмите кнопку "запустить сеанс Azure ASA", которая запустит сеанс пространственных привязок Azure, а затем создайте привязку Azure, нажав кнопку "создать привязку Azure". Дождитесь создания привязки Azure. После создания привязки Azure нажмите кнопку "поделиться с Azure Anchor", чтобы поделиться созданной привязкой Azure от HoloLens.
+
+10. Чтобы получить общую привязку Azure в другом HoloLens, щелкните "запустить сеанс Azure ASA", чтобы начать и перейти к текущему сеансу ASA.
+
+11. Нажмите кнопку "получить привязку Azure", чтобы получить общую привязку Azure от другого HoloLens.
 
 ## <a name="congratulations"></a>Поздравляем!
 

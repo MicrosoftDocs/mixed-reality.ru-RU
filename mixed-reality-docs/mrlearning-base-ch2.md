@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 067832a130f130ffbaa8d455007b8e77e1b13671
-ms.sourcegitcommit: cc61f7ac08f9ac2f2f04e8525c3260ea073e04a7
+ms.openlocfilehash: f1d042150d1c81940e672b174c6c02ac71e05883
+ms.sourcegitcommit: bd536f4f99c71418b55c121b7ba19ecbaf6336bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77130719"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77555053"
 ---
 # <a name="3-creating-user-interface-and-configure-mixed-reality-toolkit"></a>3. Создание пользовательского интерфейса и настройка набора средств для смешанной реальности
 <!-- TODO: Consider renaming to 'Configuring Mixed Reality Toolkit profiles and creating user interfaces' -->
@@ -47,17 +47,21 @@ ms.locfileid: "77130719"
 > [!NOTE]
 > Профиль конфигурации является профилем верхнего уровня. Следовательно, чтобы иметь возможность изменять любые другие профили, сначала необходимо клонировать профиль конфигурации.
 
-Выбрав объект **микседреалититулкит** в окне Иерархия, в окне инспектора нажмите кнопку **Копировать & настроить** , чтобы открыть окно Профиль клона:
+Выбрав объект **микседреалититулкит** в окне Иерархия, в окне инспектора измените **профиль конфигурации** набора средств Mixed Reality на **DefaultHoloLens2ConfigurationProfile**:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section1-step1-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step1-1.png)
+
+Выбрав объект **микседреалититулкит** , в окне инспектора нажмите кнопку **Копировать & настроить** , чтобы открыть окно Профиль клона:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step1-2.png)
 
 В окне Профиль клона нажмите кнопку **клонировать** , чтобы создать редактируемую копию **DefaultHololens2ConfigurationProfile**:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section1-step1-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step1-3.png)
 
 Созданный профиль конфигурации теперь назначается в качестве профиля конфигурации для сцены:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section1-step1-3.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step1-4.png)
 
 В меню Unity выберите **файл** > **сохранить** , чтобы сохранить сцену.
 
@@ -68,41 +72,41 @@ ms.locfileid: "77130719"
 
 Если объект **микседреалититулкит** все еще выбран в окне "иерархия", в окне инспектора перейдите на вкладку **пространственное распознавание** и установите флажок **включить систему пространственной осведомленности** :
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section1-step2-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step2-1.png)
 
 ### <a name="3-clone-the-default-spatial-awareness-system-profile"></a>3. Клонирование системного профиля сведений о пространственном распознавании по умолчанию
 
 На вкладке **пространственное распознавание** нажмите кнопку **клонировать** , чтобы открыть окно Профиль клона:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section1-step3-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step3-1.png)
 
 В окне Профиль клона нажмите кнопку **клонировать** , чтобы создать редактируемую копию **дефаултмикседреалитиспатиалаваренесссистемпрофиле**:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section1-step3-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step3-2.png)
 
 Вновь созданный профиль системы пространственного отслеживания автоматически назначается профилю конфигурации:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section1-step3-3.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step3-3.png)
 
 ### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4. клонирование профиля наблюдателя сетки по умолчанию для пространственного отслеживания
 
 Если вкладка " **пространственное распознавание** " все еще выбрана, разверните раздел **наблюдатель пространственной сетки Windows Mixed Reality** , а затем нажмите кнопку **клонировать** , чтобы открыть окно Профиль клона:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section1-step4-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step4-1.png)
 
 В окне Профиль клона нажмите кнопку **клонировать** , чтобы создать редактируемую копию **дефаултмикседреалитиспатиалаваренессмешобсерверпрофиле**:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section1-step4-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step4-2.png)
 
 Вновь созданный профиль наблюдателя сетки для пространственного отслеживания автоматически назначается системному профилю пространственного отслеживания:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section1-step4-3.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step4-3.png)
 
 ### <a name="5-change-the-visibility-of-the-spatial-awareness-mesh"></a>5. изменение видимости сетки пространственного отслеживания
 
 В **параметрах наблюдателя пространственной сетки**измените **параметр отображения** на **перекрытия** , чтобы сетка пространственных сопоставлений стала невидимой, пока все еще функционирует:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section1-step5-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step5-1.png)
 
 > [!NOTE]
 > Хотя сетка пространственных сопоставлений не видна, она по-прежнему существует и работает. Например, все голограммы в сетке пространственного сопоставления, такие как голограмма за физической стеной, не будут видны.
@@ -133,20 +137,20 @@ ms.locfileid: "77130719"
 
 В **окне проекта**найдите **PressableButtonHoloLens2** , чтобы найти prefab, который будет использоваться в этом примере:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step1-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step1-1.png)
 
 В результатах **поиска** выберите **PressableButtonHoloLens2** prefab и **перетащите** его в окно **Иерархия** , чтобы добавить его в сцену:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step1-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step1-2.png)
 
 > [!TIP]
 > Чтобы отобразить сцену, как показано на рисунке ниже, дважды щелкните объект PressableButtonHoloLens2 в окне "иерархия", чтобы перевести его в фокус, а затем используйте <a href="https://docs.unity3d.com/Manual/SceneViewNavigation.html" target="_blank">сцену гизмо</a>, расположенную в правом верхнем углу окна сцены, чтобы настроить угол обзора на прямую ось Z.
 
-Если объект PressableButtonHoloLens2 все еще выбран, в окне **инспектора** :
+Если объект **PressableButtonHoloLens2** все еще выбран, в окне **инспектора** :
 
 * Измените **положение** преобразования, чтобы оно расположиться перед камерой, которое позиционируется в начале, например x = 0, y = 0, и z = 0,5
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step1-3.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step1-3.png)
 
 > [!NOTE]
 > Как правило, 1 единица позиций в Unity примерно эквивалентна одному измерению в физическом мире. Однако существуют исключения, например, если объекты являются дочерними объектами масштабируемых объектов.
@@ -155,61 +159,65 @@ ms.locfileid: "77130719"
 
 Щелкните правой кнопкой мыши пустое место в окне иерархии и выберите пункт **3D Object** > **куб** , чтобы добавить куб в сцену:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step2-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step2-1.png)
 
-Выбрав объект Куба, в окне **инспектора** :
+Выбрав объект **куба** , в окне **инспектора** :
 
 * Измените свое **Расположение** преобразования, чтобы оно находилось рядом с нажатой кнопкой, но не пересекается с ней, например x = 0, y = 0,04 и z = 0,5
 * Измените **масштаб** преобразования на подходящий размер, например x = 0,02, y = 0,02, и z = 0,02.
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step2-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step2-2.png)
 
 ### <a name="3-configure-the-interactableonpressreceiver-event-type"></a>3. Настройка типа событий Интерактаблеонпрессрецеивер
 
-Выбрав объект PressableButtonHoloLens2 в окне Иерархия, в **меню "гамбургер**" окна **инспектора** выберите **Свернуть все компоненты** , чтобы получить обзор всех компонентов в этом объекте:
+В окне Иерархия выберите объект **PressableButtonHoloLens2** , а затем в **меню "гамбургер**" окна **инспектора** выберите **Свернуть все компоненты** , чтобы получить общие сведения о всех компонентах этого объекта:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step3-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step3-1.png)
 
 Разверните компонент " **взаимодействие (скрипт)** ", а затем найдите и разверните раздел **события** > **получателей** :
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step3-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step3-2.png)
 
-Для типа приемника событий **интерактаблеонпрессрецеивер**измените **Фильтр взаимодействия** на **NEAR и Far**:
+Нажмите кнопку **Добавить событие** , чтобы создать приемник событий для приемника событий типа **интерактаблеонпрессрецеивер**:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step3-3.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step3-3.png)
 
 > [!NOTE]
 > Тип приемника событий с именем Интерактаблеонпрессрецеивер позволяет кнопке реагировать на событие нажатия, когда прослеживание руки нажимает кнопку.
+
+Для вновь созданного приемника событий измените **Фильтр взаимодействия** на **NEAR и Far**:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step3-4.png)
 
 ### <a name="4-configure-the-cube-to-receive-the-on-press-event"></a>4. Настройка куба для получения события "при нажатии"
 
 В окне Иерархия **щелкните и перетащите** **куб** в поле объект **Свойства события** для события **при нажатии ()** , чтобы назначить куб в качестве получателя события On Press ():
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step4-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step4-1.png)
 
 ### <a name="5-define-the-action-to-be-triggered-by-the-on-press-event"></a>5. Определение действия, запускаемого событием при нажатии кнопки
 
 Щелкните раскрывающийся список действий, в данный момент не имеющий **функции**, а затем выберите **мешрендерер** > **материальный материал** , чтобы изменить свойство материала Куба при срабатывании события On Press ():
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step5-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step5-1.png)
 
 Щелкните маленький значок **круга** рядом с полем "материал" (в данный момент заполняется " **нет")** , чтобы открыть окно "Выбор материала":
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step5-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step5-2.png)
 
 В окне Выбор материала **найдите** **MRTK_Standard** и выберите подходящий материал, например **MRTK_Standard_Cyan** так, чтобы цвет Куба был изменен на голубой при нажатии кнопки:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step5-3.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step5-3.png)
 
 ### <a name="6-configure-the-cube-to-receive-the-on-release-event"></a>6. Настройка куба для получения события "при выпуске"
 
-**Повторить** Шаг 4 для события On Release для назначения Куба в качестве получателя события On Release ().
+**Повторить** Шаг 4 для события On Release для назначения **куба** в качестве получателя события **On Release ()** .
 
 ### <a name="7-define-the-action-to-be-triggered-by-the-on-release-event"></a>7. Определение действия, запускаемого событием выпуска
 
 **Повторить** Шаг 5 для события On Release, но выберите **MRTK_Standard_LightGray** материал, чтобы цвет Куба возвращался к исходному светло-серому цвету при отпускании кнопки:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step7-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step7-1.png)
 
 ### <a name="8-test-the-button-using-the-in-editor-simulation"></a>8. Тестирование кнопки с помощью имитации в редакторе
 
@@ -217,11 +225,11 @@ ms.locfileid: "77130719"
 
 Кнопка не нажата (пробел + колесо прокрутки мыши назад):
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step8-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step8-1.png)
 
 Нажата кнопка (пробел + колесо прокрутки мыши вперед):
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section2-step8-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step8-2.png)
 
 > [!TIP]
 > Чтобы узнать, как использовать имитацию входных данных в редакторе, можно обратиться к разделу [Использование имитации входных данных в редакторе, чтобы протестировать руководство по монтажному кадру](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) на [портале документации мртк](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
@@ -242,19 +250,19 @@ ms.locfileid: "77130719"
 
 Щелкните правой кнопкой мыши пустое место в окне иерархии и выберите **создать пустое**:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section3-step1-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step1-1.png)
 
 Щелкните правой кнопкой мыши созданный объект, выберите **Переименовать**и присвойте ему подходящее имя, например **буттонколлектион**:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section3-step1-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step1-2.png)
 
 Выберите объект **PressableButtonHoloLens2** и **перетащите** его поверх объекта **буттонколлектион** , чтобы сделать его дочерним по отношению к объекту буттонколлектион:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section3-step1-3.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step1-3.png)
 
 Щелкните правой кнопкой мыши объект **PressableButtonHoloLens2** и выберите пункт **дублировать** , чтобы создать его копию:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section3-step1-4.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step1-4.png)
 
 **Повторите** этот шаг четыре раза, пока не получите пять объектов PressableButtonHoloLens2.
 
@@ -262,7 +270,7 @@ ms.locfileid: "77130719"
 
 Выбрав объект Буттонколлектион в окне Иерархия, в окне инспектора нажмите кнопку **Добавить компонент** , затем найдите и выберите **Коллекция объектов сетки** , чтобы добавить компонент коллекции объектов Grid (скрипт) в объект буттонколлектион:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section3-step2-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step2-1.png)
 
 Настройте коллекцию объектов Grid (скрипт) следующим образом:
 
@@ -271,14 +279,14 @@ ms.locfileid: "77130719"
 
 Затем нажмите кнопку **Update Collection (обновить коллекцию** ), чтобы применить новую конфигурацию:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section3-step2-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step2-2.png)
 
 > [!NOTE]
 > Изменения конфигурации, которые вы только что заменили, представляют минимальные изменения, необходимые для достижения цели размещения кнопок в одной строке. Однако в будущих проектах в зависимости от таких факторов, как, например, ориентация родительского и дочернего объектов, может потребоваться настроить другие параметры, такие как, например, тип ориентации. Дополнительные сведения о коллекции объектов Grid МРТК см. в руководстве по созданию [сценариев коллекции объектов](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html#object-collection-scripts) на [портале документации мртк](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 Если объект Буттонколлектион все еще выбран в окне "иерархия", в окне инспектора измените **положение** преобразования объекта буттонколлектион так, чтобы его дочерние объекты кнопок были расположены перед камерой, расположенной в источнике, например x = 0, y = 0, и z = 0,5:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section3-step2-3.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step2-3.png)
 
 > [!NOTE]
 > Когда вы впервые добавили prefab PressableButtonHoloLens2 в сцену в [жестах отслеживания руки и в разделе "взаимодействующие кнопки](mrlearning-base-ch2.md#hand-tracking-gestures-and-interactable-buttons) " выше, вы размещаете его перед камерой. Однако, поскольку коллекция объектов сетки управляет положением непосредственных дочерних объектов, значение координаты Z для дочерних объектов PressableButtonHoloLens2 сбрасывается в 0 в соответствии с расстоянием по умолчанию для коллекции объектов сетки от родительского значения 0. Таким образом, и для того, чтобы упорядочить иерархические отношения «родители-потомки», именно поэтому мы перенесли положение родительского объекта Буттонколлектион вперед вместо настройки расстояния от родительского значения, чтобы переместить дочерние объекты PressableButtonHoloLens2 вперед.
@@ -287,7 +295,7 @@ ms.locfileid: "77130719"
 
 Нажмите кнопку "Воспроизведение", чтобы перейти в режим игры и использовать модель входа в редакторе, чтобы проверить каждую из кнопок в созданной панели кнопок.
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section3-step3-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step3-1.png)
 
 > [!TIP]
 > В настоящее время при нажатии любой из пяти кнопок Цвет Куба меняется на голубой. Чтобы сделать интерес более интересным, используйте то, что вы только научитесь настраивать для каждой кнопки, чтобы изменить цвет куба на другой.
@@ -300,7 +308,7 @@ ms.locfileid: "77130719"
 
 Щелкните правой кнопкой мыши объект Буттонколлектион и выберите пункт **3D object** > **Text-текстмешпро** , чтобы создать объект текстмешпро в качестве дочернего элемента объекта буттонколлектион:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section4-step1-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section4-step1-1.png)
 
 При наличии вновь созданного объекта Текстмешпро с именем text (TMP), который по-прежнему выбран, в окне инспектора измените его расположение и размер таким образом, чтобы метка располагалась под коллекцией кнопок, например:
 
@@ -315,7 +323,7 @@ ms.locfileid: "77130719"
 * Измените **Размер шрифта** Pro (скрипт) для сетки текста на 0,2
 * Изменение **выравнивания** (сценария) сетки текста по центру и по середине
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial2-section4-step1-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial2-section4-step1-2.png)
 
 ## <a name="congratulations"></a>Поздравляем!
 

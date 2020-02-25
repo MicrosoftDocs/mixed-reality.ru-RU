@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: f4f609a71b05a52e8761e282763a540b42e9f7f5
-ms.sourcegitcommit: a580166a19294f835b8e09c780f663f228dd5de0
+ms.openlocfilehash: 3d762950ea8e211fd5a8e4cf8af717674d3fe7e1
+ms.sourcegitcommit: bd536f4f99c71418b55c121b7ba19ecbaf6336bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77250711"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77553954"
 ---
 # <a name="3-displaying-azure-spatial-anchor-feedback"></a>3. Отображение обратной связи с пространственными привязками Azure
 
@@ -26,7 +26,7 @@ ms.locfileid: "77250711"
 
 В окне Иерархия щелкните правой кнопкой мыши **инструкции** > объект **TextContent** и выберите **трехмерный объект** > **Text-текстмешпро** , чтобы создать текстовый объект Текстмешпро в качестве дочернего элемента для инструкций > TextContent и присвоить ему подходящее имя, например, **обратная связь**:
 
-![мрлеарнинг — базовый](images/mrlearning-asa/tutorial3-section1-step1-1.png)
+![mrlearning-base](images/mrlearning-asa/tutorial3-section1-step1-1.png)
 
 > [!TIP]
 > Чтобы упростить работу с сценой, установите <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">видимость сцены</a> для объекта парентанчор, щелкнув значок глаза слева от объекта. Это скрывает объект в окне сцены, не изменяя видимую для игры видимость.
@@ -43,15 +43,15 @@ ms.locfileid: "77250711"
 * Измените **Размер шрифта** Pro (скрипт) для сетки текста на 0,17
 * Изменение **выравнивания** (сценария) сетки текста по центру и по середине
 
-![мрлеарнинг — базовый](images/mrlearning-asa/tutorial3-section1-step1-2.png)
+![mrlearning-base](images/mrlearning-asa/tutorial3-section1-step1-2.png)
 
 Выбрав объект **Feedback** , в окне инспектора нажмите кнопку **Добавить компонент** , чтобы добавить компонент " **Скрипт обратной связи" (скрипт)** в объект обратной связи:
 
-![мрлеарнинг — базовый](images/mrlearning-asa/tutorial3-section1-step1-3.png)
+![mrlearning-base](images/mrlearning-asa/tutorial3-section1-step1-3.png)
 
 Назначьте объект **обратной связи** в **текстовое поле Feedback** **(сценарий)** для компонента обратной связи:
 
-![мрлеарнинг — базовый](images/mrlearning-asa/tutorial3-section1-step1-4.png)
+![mrlearning-base](images/mrlearning-asa/tutorial3-section1-step1-4.png)
 
 ## <a name="congratulations"></a>Поздравляем!
 

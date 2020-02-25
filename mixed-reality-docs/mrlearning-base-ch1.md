@@ -7,12 +7,12 @@ ms.date: 11/01/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: d3392df9bfad5938d71d3a01999be51834a98a5d
-ms.sourcegitcommit: 87aca9c2b73b0e83cb70a46443dcdb08c3621005
+ms.openlocfilehash: 9c219313ad6e73cde78efd8e5e718a466ebd6137
+ms.sourcegitcommit: bd536f4f99c71418b55c121b7ba19ecbaf6336bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77373449"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77554404"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2. Инициализация проекта и первое приложение
 
@@ -154,13 +154,13 @@ B этом первом руководстве описаны некоторые
 
 Скачайте пользовательский пакет Unity:
 
-* [Microsoft.MixedReality.Toolkit.Unity.Foundation.2.2.0.unitypackage](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.2.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.2.0.unitypackage)
+* [Microsoft.MixedReality.Toolkit.Unity.Foundation.2.3.0.unitypackage](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.3.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.3.0.unitypackage)
 
 В меню Unity щелкните **Assets** > **Import Package** > **Custom Package** (Ресурсы > Импорт пакетов > Пользовательский пакет), чтобы открыть окно импорта пакетов:
 
 ![mrlearning-base](images/mrlearning-base/tutorial1-section4-step1-1.png)
 
-В окне импорта пакетов выберите скачанный пакет **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.2.0.unitypackage** и нажмите кнопку **Open** (Открыть):
+В окне импорта пакетов выберите скачанный пакет **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.3.0.unitypackage** и нажмите кнопку **Open** (Открыть):
 
 ![mrlearning-base](images/mrlearning-base/tutorial1-section4-step1-2.png)
 
@@ -190,9 +190,12 @@ B этом первом руководстве описаны некоторые
 
 ![mrlearning-base](images/mrlearning-base/tutorial1-section6-step1-1.png)
 
-Выбрав объект MixedRealityToolkit в окне иерархии, измените профиль конфигурации набора средств для Смешанной реальности на **DefaultHoloLens2ConfigurationProfile**:
+Выбрав объект MixedRealityToolkit в окне иерархии, измените профиль конфигурации набора средств для Смешанной реальности на **DefaultMixedRealityToolkitConfigurationProfile**:
 
 ![mrlearning-base](images/mrlearning-base/tutorial1-section6-step1-2.png)
+
+> [!IMPORTANT]
+> Как правило, при разработке для HoloLens 2 используется DefaultHoloLens2ConfigurationProfile. Но при работе с этим руководством вы будете использовать DefaultMixedRealityToolkitConfigurationProfile, а затем при работе со следующим руководством по [созданию пользовательского интерфейса и настройке набора Средств смешанной реальности](mrlearning-base-ch2.md) — DefaultHoloLens2ConfigurationProfile.
 
 В меню Unity щелкните **File** > **Save As...** (Файл > Сохранить как), чтобы открыть окно сохранения сцены:
 

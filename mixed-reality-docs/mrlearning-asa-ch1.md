@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 21883e95e92f8808bcf270e6d8091f31933ab6fa
-ms.sourcegitcommit: a580166a19294f835b8e09c780f663f228dd5de0
+ms.openlocfilehash: 0163b61bfbf8bd583532092581d94f63e1c2a624
+ms.sourcegitcommit: bd536f4f99c71418b55c121b7ba19ecbaf6336bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77250869"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77554683"
 ---
 # <a name="1-getting-started-with-azure-spatial-anchors"></a>1. Приступая к работе с пространственными привязками Azure
 
@@ -35,20 +35,22 @@ ms.locfileid: "77250869"
 >[!TIP]
 >Если вы еще не выполнили серию [учебников по началу работы](mrlearning-base.md) , рекомендуется сначала выполнить эти учебники.
 
-* КОМПЬЮТЕР с Windows 10 с [установленными](install-the-tools.md) правильными инструментами
-* Windows 10 SDK 10.0.18362.0 или более поздней версии
-* Некоторые базовые C# возможности программирования
-* Устройство HoloLens 2, [настроенное для разработки](using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Центр Unity</a> с установленным Unity 2019.2. X и добавлен модуль поддержки универсальная платформа Windows сборки
+* Компьютер с Windows 10, настроенный с требуемыми [установленными инструментами](install-the-tools.md).
+* Пакет SDK для Windows 10 версии 10.0.18362.0 и выше.
+* Базовые навыки программирования на C#.
+* Устройство HoloLens 2, [настроенное для разработки](using-visual-studio.md#enabling-developer-mode).
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> с Unity 2019.2.X и модулем поддержки сборки универсальной платформы Windows.
 * Выполните инструкции из раздела [Создание ресурса пространственных привязок](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) в разделе [Краткое руководство. Создание приложения Unity HoloLens, использующего учебник по пространственным привязок Azure](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) .
 
 > [!IMPORTANT]
-> Рекомендуемая версия Unity для этой серии руководств — Unity 2019.2. X. Это заменяет все требования к версии Unity или рекомендации, указанные в связанных выше условиях.
+> Рекомендуемая версия Unity для этой серии руководств — Unity 2019.2.X. Это заменяет все требования к версии Unity и рекомендации, указанные выше.
 
 ## <a name="creating-the-unity-project"></a>Создание проекта Unity
 <!-- TODO: Consider renaming to 'Creating and preparing the Unity scene and project'-->
 
-В этом разделе вы создадите новый проект Unity и готовы подготовить его к разработке МРТК. Для этого выполните [инициализацию проекта и первого приложения](mrlearning-base-ch1.md), за исключением [сборки приложения в инструкции устройства](mrlearning-base-ch1.md#build-your-application-to-your-device) , которые включают следующие шаги:
+В этом разделе вы создадите новый проект Unity и готовы подготовить его к разработке МРТК.
+
+Для этого сначала выполните [инициализацию проекта и первого приложения](mrlearning-base-ch1.md), за исключением [сборки приложения в инструкции устройства](mrlearning-base-ch1.md#build-your-application-to-your-device) , которые включают следующие шаги:
 
 1. [Создайте новый проект Unity](mrlearning-base-ch1.md#create-new-unity-project) и присвойте ему подходящее имя, например *учебники мртк*.
 
@@ -62,8 +64,10 @@ ms.locfileid: "77250869"
 
 6. [Добавьте набор средств Mixed Reality к сцене Unity](mrlearning-base-ch1.md#configure-the-mixed-reality-toolkit) и присвойте сцене подходящее имя, например *азуреспатиаланчорс* .
 
+Затем следуйте инструкциям в статье [Настройка профилей набора средств для смешанной реальности (изменение режима отображения пространственных сведений)](mrlearning-base-ch2.md#how-to-configure-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option) , чтобы изменить профиль конфигурации мртк для сцены на **DefaultHoloLens2ConfigurationProfile** и изменить параметры отображения для сетки пространственной информации на **перекрытия**.
+
 > [!CAUTION]
-> Как упоминалось в разделе [Настройка проекта Unity для инструкций для набора средств Mixed Reality](mrlearning-base-ch1.md#configure-the-unity-project-for-the-mixed-reality-toolkit) , связанных выше, MSBuild для Unity может не поддерживать все пакеты SDK, которые будут использоваться, и может быть непростой для отключения после включения. Поэтому настоятельно рекомендуется не включать MSBuild для Unity.
+> Как упоминалось в разделе [Настройка проекта Unity для инструкций по набору средств Mixed Reality](mrlearning-base-ch1.md#configure-the-unity-project-for-the-mixed-reality-toolkit) , связанных выше, настоятельно рекомендуется не включать MSBuild для Unity.
 
 ## <a name="adding-inbuilt-unity-packages"></a>Добавление встроенных пакетов Unity
 <!-- TODO: Consider renaming to 'Installing AR Foundation' -->
@@ -86,8 +90,8 @@ ms.locfileid: "77250869"
 Скачайте и **импортируйте** следующие пользовательские пакеты Unity **в том порядке, в котором они перечислены**:
 
 * [Азуреспатиаланчорс. пакет unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage) (версия:/с)
-* [МРТК. HoloLens2. Unity. Tutorials. Assets. GettingStarted. 2.2.0.1. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.2.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.2.0.1.unitypackage)
-* [МРТК. HoloLens2. Unity. Tutorials. Assets. Азуреспатиаланчорс. 2.2.0.0. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.2.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.2.0.0.unitypackage)
+* [МРТК. HoloLens2. Unity. Tutorials. Assets. GettingStarted. 2.3.0.2. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.2/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.2.unitypackage)
+* [МРТК. HoloLens2. Unity. Tutorials. Assets. Азуреспатиаланчорс. 2.3.0.0. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.0.unitypackage)
 
 > [!TIP]
 > Напоминание о том, как импортировать пользовательский пакет Unity, можно найти в разделе Импорт инструкций по [набору средств для смешанной реальности](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) .
@@ -178,7 +182,7 @@ ms.locfileid: "77250869"
 
 ![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section6-step1-2.png)
 
-В разделе " **Параметры публикации**" прокрутите вниз до раздела " **возможности** " и дважды убедитесь, что возможности **InternetClient**, **Microphone**и **спатиалперцептион** , включенные при создании проекта в начале этого руководства, включены. Затем включены возможности **интернетклиентсервер**, **приватенетворкклиентсервер**, **ремоваблестораже**и веб- **камеры** :
+В разделе " **Параметры публикации**" прокрутите вниз до раздела " **возможности** " и дважды убедитесь, что возможности **InternetClient**, **Microphone**и **спатиалперцептион** , включенные при создании проекта в начале этого руководства, включены. Затем включите возможности **интернетклиентсервер**, **приватенетворкклиентсервер**, **ремоваблестораже**и веб- **камеры** :
 
 ![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section6-step1-3.png)
 
@@ -216,7 +220,7 @@ ms.locfileid: "77250869"
 
 Размещение, поворот и масштабирование объекта **RocketLauncher_Complete** с учетом подходящего масштаба и ориентации, а также обеспечение того, что объект **парентанчор** по-прежнему предоставляется, например:
 
-* **Координата Transform X** = 1, Y = 0, Z = 3,75
+* **Координата Transform X** = 0, Y = 0, Z = 3,75
 * **Поворот** преобразования X = 0, Y = 90, Z = 0
 * Преобразование **масштаба** X = 10, Y = 10, Z = 10
 

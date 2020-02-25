@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 05/02/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: a1b26d56b4693ef23f2d77ba53e0961693489a3a
-ms.sourcegitcommit: cc61f7ac08f9ac2f2f04e8525c3260ea073e04a7
+ms.openlocfilehash: 7eb38e205237257e400550299fdeebb73ba746f1
+ms.sourcegitcommit: bd536f4f99c71418b55c121b7ba19ecbaf6336bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77130285"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77555497"
 ---
 # <a name="5-interacting-with-3d-objects"></a>5. взаимодействие с трехмерными объектами
 
@@ -29,20 +29,20 @@ ms.locfileid: "77130285"
 
 Скачайте и импортируйте пользовательский пакет Unity:
 
-* [МРТК. HoloLens2. Unity. Tutorials. Assets. GettingStarted. 2.2.0.0. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.2.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.2.0.0.unitypackage)
+* [МРТК. HoloLens2. Unity. Tutorials. Assets. GettingStarted. 2.3.0.2. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.2/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.2.unitypackage)
 
 После импорта ресурсов учебника окно проекта должно выглядеть следующим образом:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section1-step1-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section1-step1-1.png)
 
 > [!TIP]
 > Напоминание о том, как импортировать пользовательский пакет Unity, можно найти в разделе Импорт инструкций по [набору средств для смешанной реальности](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) .
 
 ## <a name="decluttering-the-scene-view"></a>Раззагромождения представления сцены
 
-Чтобы упростить работу с сценой, установите **видимость сцены** для объектов Cube и буттонколлектион, щелкнув значок **глаза** слева от объектов. Это скрывает объект в окне сцены, не изменяя его видимость в игре:
+Чтобы упростить работу с сценой, установите **видимость сцены** для объектов **Cube** и **буттонколлектион** , щелкнув значок **глаза** слева от объектов. Это скрывает объект в окне сцены, не изменяя его видимость в игре:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section2-step1-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section2-step1-1.png)
 
 > [!TIP]
 > Дополнительные сведения об элементах управления видимостью сцены и их использовании для оптимизации представления сцены и рабочего процесса см. в документации по <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">видимости сцены</a> Unity.
@@ -69,19 +69,18 @@ ms.locfileid: "77130285"
 * Платоновыми
 * семодуле
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section3-step1-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section3-step1-1.png)
 
 В окне Иерархия **Создайте три Куба** в качестве дочерних объектов **3DObjectCollection** и задайте для их **шкалы** преобразования значение X = 0,15, Y = 0,15, Z = 0,15:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section3-step1-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section3-step1-2.png)
 
-<!-- TODO: Finish -->
 > [!TIP]
 > Напоминание о том, как выполнить перечисленные выше действия, можно найти в руководстве [Создание пользовательского интерфейса и настройка набора средств смешанной реальности](mrlearning-base-ch2.md) .
 
 Перемещайте Кубы, чтобы можно было увидеть каждый куб:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section3-step1-3.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section3-step1-3.png)
 
 В окне проекта перейдите к разделу **активы** > **микседреалититулкит. SDK** > **стандардассетс** > **материалы** , чтобы просмотреть материалы, предоставленные в мртк.
 
@@ -89,19 +88,19 @@ ms.locfileid: "77130285"
 
 * MRTK_Standard_GlowingCyan
 * MRTK_Standard_GlowingOrange
-* MRTK_Standard_Green:
+* MRTK_Standard_Green
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section3-step1-4.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section3-step1-4.png)
 
 ### <a name="2-add-and-configure-the-grid-object-collection-script-component"></a>2. Добавление и настройка компонента "Коллекция объектов сетки" (скрипт)
 
-Добавьте компонент **коллекции объектов Grid (скрипт)** в объект 3DObjectCollection и настройте его следующим образом:
+Добавьте компонент **коллекции объектов Grid (скрипт)** в объект **3DObjectCollection** и настройте его следующим образом:
 
-* Измените **Тип сортировки** на дочерний порядок, чтобы обеспечить сортировку дочерних объектов в том порядке, в котором они были помещены в родительский объект.
+* Измените **Тип сортировки** на **дочерний порядок** , чтобы обеспечить сортировку дочерних объектов в том порядке, в котором они были помещены в родительский объект.
 
 Затем нажмите кнопку **Update Collection (обновить коллекцию** ), чтобы применить новую конфигурацию:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section3-step2-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section3-step2-1.png)
 
 ## <a name="manipulating-3d-objects"></a>Обработка трехмерных объектов
 
@@ -127,9 +126,9 @@ ms.locfileid: "77130285"
 
 ### <a name="1-add-the-manipulation-handler-script-component-to-all-the-objects"></a>1. Добавьте компонент обработчика манипуляций (скрипт) для всех объектов.
 
-В окне Иерархия выберите объект **Мак** , нажмите и удерживайте клавишу **SHIFT** , а затем выберите объект **Cube ()** и добавьте компонент **обработчика манипуляций (скрипт)** для всех объектов:
+В окне Иерархия выберите объект **Мак** , нажмите и удерживайте клавишу **SHIFT** , а затем выберите объект **Cube () 2** и добавьте компонент **обработчика манипуляций (script)** для всех объектов:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section4-step1-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section4-step1-1.png)
 
 > [!NOTE]
 > В рамках этого руководства в Prefabs уже добавлены конфликты. Для примитивов Unity, таких как объекты куба, автоматически добавляется компонент "конфликты" при создании объекта. На приведенном выше рисунке конфликты представлены зелеными контурами. Дополнительные сведения о конфликтах см. <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">в документации по средству для Unity</a> .
@@ -138,7 +137,7 @@ ms.locfileid: "77130285"
 
 В окне Иерархия выберите объект **Мак** , нажмите и удерживайте клавишу **SHIFT** , а затем выберите объект **Семодуле** и добавьте компонент " **ближайший к взаимодействию" (скрипт)** для всех объектов:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section4-step2-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section4-step2-1.png)
 
 ### <a name="3-configure-the-manipulation-handler-script-component"></a>3. Настройка компонента обработчика манипуляции (скрипт)
 
@@ -146,46 +145,50 @@ ms.locfileid: "77130285"
 
 Для объекта **куба** оставьте все свойства по умолчанию, чтобы работать с поведением по умолчанию:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section4-step3-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-1.png)
 
 > [!TIP]
 > Чтобы сбросить компонент до значений по умолчанию, можно выбрать значок параметров компонента и нажать кнопку Сбросить.
 
 #### <a name="restrict-manipulation-to-scale-only"></a>Ограничить манипуляцию только масштабированием
 
-Для объекта **Cube (1)** измените значение **двух типов манипуляции** на масштабирование, чтобы разрешить пользователю изменять размер объекта:
+Для объекта **Cube (1)** измените значение **двух типов манипуляции** на **масштабирование** , чтобы разрешить пользователю изменять размер объекта:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section4-step3-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-2.png)
 
 #### <a name="constrain-the-movement-to-a-fixed-distance-from-the-user"></a>Ограничение перемещения до фиксированного расстояния от пользователя
 
-Для объекта **Cube (2)** измените **Ограничение перемещения** , чтобы исправить расстояние от заголовка, чтобы при перемещении объекта оно оставалось на том же расстоянии от пользователя:
+Для объекта **Cube (2)** измените **Ограничение перемещения** , чтобы **исправить расстояние от заголовка** , чтобы при перемещении объекта оно оставалось на том же расстоянии от пользователя:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section4-step3-3.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-3.png)
 
 #### <a name="default-grabbable-manipulation"></a>Манипуляция, используемая по умолчанию
 
 Для объектов **Мак**, **коффекуп**и **еарскоре** оставьте все свойства по умолчанию, чтобы можно было задействовать поведение манипуляции по умолчанию.
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section4-step3-4.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-4.png)
 
 #### <a name="remove-the-ability-of-far-manipulation"></a>Удаление возможности выполнения манипуляций
 
-Для объекта **восьмиядерными** снимите флажок **Разрешить далекое манипуляции** , чтобы сделать его возможным, чтобы пользователь мог взаимодействовать только с объектом непосредственно с помощью отслеживания руки:
+Для объекта **восьмиядерными** снимите флажок **Разрешить манипуляцию** , чтобы сделать его возможным, чтобы пользователь мог взаимодействовать с объектом напрямую, используя записанные руки:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section4-step3-5.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-5.png)
 
 #### <a name="make-an-object-rotate-around-its-center"></a>Вращение объекта вокруг его центра
 
-Для объекта **Платоновыми** измените **режим поворота руки рядом** с **одним режимом поворота** , который можно повернуть на «центр объектов», чтобы сделать так, что когда пользователь поворачивает объект с одной стороны, он поворачивается вокруг центра объекта:
+Для объекта **Платоновыми** измените **режим поворота руки рядом** с **одним режимом поворота** , который можно повернуть на « **центр объектов** », чтобы сделать так, что когда пользователь поворачивает объект с одной стороны, он поворачивается вокруг центра объекта:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section4-step3-6.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-6.png)
 
-#### <a name="prevent-movement-after-object-is-released"></a>Запретить перемещение после освобождения объекта
+#### <a name="keep-movement-after-object-is-released"></a>Удерживать перемещение после освобождения объекта
 
-Для объекта **семодуле** измените **поведение выпуска** на Nothing, чтобы после того, как объект был освобожден от руки пользователя, он не будет перемещаться:
+Для объекта **семодуле** добавьте компонент **RigidBody** , чтобы включить функцию "физика", а затем снимите флажок " **использовать** задолженность", чтобы на объект не влияла сила притяжения:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section4-step3-7.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-7.png)
+
+Вернитесь к компоненту обработчика манипуляции (скрипт), убедитесь, что для **поведения выпуска** задано значение " **поддерживать скорость** " и " **удерживать угловую скорость** ", чтобы после того, как объект был освобожден от руки пользователя, он продолжает перемещаться:
+
+![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-8.png)
 
 Дополнительные сведения о компоненте обработчика манипуляции и связанных с ним свойствах см. в руководстве по [обработчику манипуляции](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html) на [портале документации мртк](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
@@ -205,7 +208,7 @@ ms.locfileid: "77130285"
 
 В окне инспектора выберите объект **еарскоре** и добавьте компонент **ограничивающего прямоугольника (script)** в объект еарскоре:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section5-step1-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section5-step1-1.png)
 
 > [!NOTE]
 > Визуализация ограничивающего прямоугольника создается во время выполнения и, следовательно, не отображается перед переходом в режим игры.
@@ -214,7 +217,7 @@ ms.locfileid: "77130285"
 
 Нажмите кнопку "Воспроизведение", чтобы перейти в режим игры. Затем нажмите и удерживайте клавишу пробел, чтобы открыть руку и использовать мышь для взаимодействия с ограничивающим прямоугольником:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section5-step2-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section5-step2-1.png)
 
 Дополнительные сведения о компоненте ограничивающего прямоугольника и связанных с ним свойствах см. в руководстве по использованию [ограничивающего прямоугольника](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) на [портале документации мртк](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
@@ -244,29 +247,29 @@ ms.locfileid: "77130285"
 
 В окне Иерархия выберите объект **восьмиядерными** , добавьте компонент " **источник звука** " в объект восьмиядерными, а затем измените **пространственный Blend** на 1, чтобы включить Пространственный звук:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section6-step1-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section6-step1-1.png)
 
 ### <a name="2-add-the-near-interaction-touchable-script-component-to-the-object"></a>2. Добавьте в объект компонент с сенсорным взаимодействием (script).
 
 Выбрав объект **восьмиядерными** , добавьте в объект восьмиядерными элемент с **сенсорным взаимодействием (script)** , а затем щелкните кнопки **исправить границы** и **центр исправлений** , чтобы обновить локальные свойства центра и границ близкого взаимодействия (скрипт), чтобы они соответствовали боксколлидер:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section6-step2-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section6-step2-1.png)
 
 ### <a name="3-add-the-hand-interaction-touch-script-component-to-the-object"></a>3. Добавление компонента взаимодействия руки (script) в объект
 
 Если объект **восьмиядерными** все еще выбран, добавьте компонент **взаимодействия с руки (script)** в объект восьмиядерными:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section6-step3-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section6-step3-1.png)
 
 ### <a name="4-implement-the-on-touch-started-event"></a>4. Реализуйте событие on Touch Started
 
-В компоненте взаимодействия руки (скрипт) щелкните маленький значок **+** , чтобы создать событие **при запуске касания ()** . Затем настройте объект **восьмиядерными** для получения события и определите **аудиосаурце. плайонешот** в качестве запускаемого действия:
+В компоненте **взаимодействия руки (скрипт)** щелкните маленький значок **+** , чтобы создать событие **при запуске касания ()** . Затем настройте объект **восьмиядерными** для получения события и определите **аудиосаурце. плайонешот** в качестве запускаемого действия:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section6-step4-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section6-step4-1.png)
 
 Перейдите к разделу **активы** > **микседреалититулкит. SDK** > **стандардассетс** > материалы, чтобы просмотреть аудиоклипы, предоставленные мртк, а затем назначьте подходящий звуковой клип полю **аудиоклипа** , например, MRTK_Gem аудиоклип:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section6-step4-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section6-step4-2.png)
 
 > [!TIP]
 > Напоминание о том, как реализовать события, можно найти в разделе [жесты отслеживания руки и инструкции по взаимодействию с управляемыми кнопками](mrlearning-base-ch2.md#hand-tracking-gestures-and-interactable-buttons) .
@@ -275,7 +278,7 @@ ms.locfileid: "77130285"
 
 Нажмите кнопку "Воспроизведение", чтобы перейти в режим игры. Затем нажмите и удерживайте клавишу пробел, чтобы вывести руку и использовать мышь для касания объекта восьмиядерными и запуска звукового эффекта:
 
-![мрлеарнинг — базовый](images/mrlearning-base/tutorial4-section6-step5-1.png)
+![mrlearning-base](images/mrlearning-base/tutorial4-section6-step5-1.png)
 
 > [!NOTE]
 > Как вы видели при тестировании сенсорного взаимодействия, как показано на рисунке выше, объект восьмиядерными Color пулсатед, когда он был затронут. Этот результат жестко закодирован в компоненте взаимодействия руки (script), а не в результате настройки события, выполненной в предыдущих шагах.
