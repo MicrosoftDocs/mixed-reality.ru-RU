@@ -1,19 +1,19 @@
 ---
-title: Руководство по проектированию МРТК
+title: Обучение вручную
 description: Трехмерные руки, активируемые, когда система не обнаруживает руки пользователя, которые помогут им помочь.
 author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality, проектирование, рука, увлекательная гарнитура, МРТК, руки, помощь
-ms.openlocfilehash: dc04f8f77548b226a822576befd60be107f4d3fb
-ms.sourcegitcommit: 87aca9c2b73b0e83cb70a46443dcdb08c3621005
+ms.openlocfilehash: c5f0a0c241ff71dc93f370a5a8caa627128bfb1a
+ms.sourcegitcommit: 1ec628a9107194c0a9d4073b5ca09ee816030e85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77373525"
+ms.lasthandoff: 03/01/2020
+ms.locfileid: "78202743"
 ---
-# <a name="hand-coach-design-guidance"></a>Руководство по проектированию
+# <a name="hand-coach"></a>Обучение вручную
 
 Руки — это трехмерные модели, которые запускаются, когда система не обнаруживает руки пользователя. Это реализовано как компонент обучения, который помогает пользователю, когда жест не научился. Если пользователь не выполнил указанный жест в течение периода, руки будут циклически заканчиваться с задержкой. Для представления нажатия кнопки или выбора голограммы можно использовать руку.  
 
