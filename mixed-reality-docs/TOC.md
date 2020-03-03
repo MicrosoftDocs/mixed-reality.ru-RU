@@ -86,6 +86,7 @@
 #### [Планшет](slate.md)
 #### [Ползунок](slider.md)
 #### [Шейдер](shader.md)
+#### [Обучающая рука](hand-coach.md)
 #### [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
 #### [Индикация хода выполнения](progress.md)
 #### [Притяжение к поверхности](surface-magnetism.md)
@@ -198,7 +199,7 @@
 ## Unreal
 ### [Обзор разработки для Unreal](unreal-development-overview.md)
 ## WebVR
-### [Использование WebVR в Microsoft Edge с Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
+### [Использование WebVR в Edge с Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
 ## Собственный
 ### [Обзор разработки для собственной платформы](directx-development-overview.md)
 ### Начало работы
