@@ -1,5 +1,4 @@
 # Новые возможности 
-## [Последние новости](news.md)
 ## [Подготовка приложения для HL2](mrtk-porting-guide.md)
 ## [Дополнительные сведения о службах Azure](azure-services.md)
 ## [Приготовьтесь к выпуску нового решения Microsoft Edge](new-microsoft-edge.md)
