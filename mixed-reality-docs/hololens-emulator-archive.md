@@ -3,15 +3,15 @@ title: Архив эмулятора HoloLens
 description: Список выпущенных сборок эмулятора Microsoft HoloLens.
 author: hamalawi
 ms.author: moelhama
-ms.date: 2/12/2020
+ms.date: 3/10/2020
 ms.topic: article
 keywords: HoloLens, Emulator, сборки, версии
-ms.openlocfilehash: 4696330e62d2b7b5d58c73e13713e0731f5ec3bc
-ms.sourcegitcommit: a580166a19294f835b8e09c780f663f228dd5de0
+ms.openlocfilehash: 7aed01ecc155e4ea93bbbf9c347f117b319d2bc7
+ms.sourcegitcommit: 5b2ba01aa2e4a80a3333bfdc850ab213a1b523b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77250669"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79031775"
 ---
 # <a name="hololens-2-emulator-archive"></a>Архив эмулятора HoloLens 2
 
@@ -19,6 +19,7 @@ ms.locfileid: "77250669"
 
 |  Сборка |  Дата выпуска |  Примечания | 
 |----------|----------|----------|
+|  [10.0.18362.1056 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2121323) | 10 марта 2020 г. | Сборка HoloLens 2020 в марте 2.  Общие заметки о выпуске HoloLens 2 см. на https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [10.0.18362.1053 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2118321) | 11 февраля, 2020 | Февраль 2020. сборка HoloLens.  Общие заметки о выпуске HoloLens 2 см. на https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [10.0.18362.1044 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2114824) | 13 января 2020 г. | Сборка HoloLens 2020 в январе 2.  Общие заметки о выпуске HoloLens 2 см. на https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [10.0.18362.1042 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2112589) | 6 декабря 2019 г. | Декабрь 2019. сборка HoloLens.  Устраняет ошибку, из-за которой при отображении панели закрепления приложение holographic работает в эмуляторе.  Включает подключение к удаленному эмулятору при использовании API имитации восприятия или приложения управления имитацией восприятия.  Общие заметки о выпуске HoloLens 2 см. на https://docs.microsoft.com/hololens/hololens-release-notes |

@@ -1,35 +1,35 @@
 ---
-title: Создание хост-приложения holographic с удаленным взаимодействием
-description: Создание удаленного содержимого узла с удаленным удаленным доступом для удаленного взаимодействия, которое отображается на удаленном компьютере, можно передать в HoloLens 2. В этой статье описывается, как это можно сделать.
-author: bethau
-ms.author: bethau
-ms.date: 10/21/2019
+title: Создание удаленного приложения holographic с удаленным взаимодействием
+description: Создав удаленное содержимое удаленного приложения с удаленным удаленным доступом, которое будет отображаться на удаленном компьютере, можно передать потоковую передачу в HoloLens 2. В этой статье описывается, как это можно сделать.
+author: FlorianBagarMicrosoft
+ms.author: flbagar
+ms.date: 03/11/2020
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: e296e5847849bb87f76a7187c3f8ea36a1d681e1
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 76e37499fd32a82e6846c6c7cac1a292ef6b553a
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73434310"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092309"
 ---
-# <a name="writing-a-holographic-remoting-host-app"></a>Создание хост-приложения holographic с удаленным взаимодействием
+# <a name="writing-a-holographic-remoting-remote-app"></a>Создание удаленного приложения holographic с удаленным взаимодействием
 
 >[!IMPORTANT]
->В этом документе описывается создание ведущего приложения для HoloLens 2. Ведущее приложение для **HoloLens (1-го поколения)** должно использовать пакет NuGet версии **1. x. x**. Это подразумевает, что ведущие приложения, написанные для HoloLens 2, несовместимы с HoloLens 1 и наоборот. Документацию по HoloLens 1 можно найти [здесь](add-holographic-remoting.md).
+>В этом документе описывается создание удаленного приложения для HoloLens 2. Удаленные приложения для **HoloLens (1-го поколения)** должны использовать пакет NuGet версии **1. x. x**. Это означает, что удаленные приложения, написанные для HoloLens 2, несовместимы с HoloLens 1 и наоборот. Документацию по HoloLens 1 можно найти [здесь](add-holographic-remoting.md).
 
-Создав удаленное содержимое удаленного приложения с удаленным удаленным доступом, которое будет передаваться на удаленный компьютер, можно передать в HoloLens 2. В этой статье описывается, как это можно сделать. Весь код на этой странице и рабочих проектах можно найти в [репозитории GitHub с примерами удаленного взаимодействия](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+При создании удаленного приложения с удаленным удаленным доступом удаленное содержимое, отображаемое на удаленном компьютере, можно передать в HoloLens 2. В этой статье описывается, как это можно сделать. Весь код на этой странице и рабочих проектах можно найти в [репозитории GitHub с примерами удаленного взаимодействия](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
-Holographic удаленное взаимодействие позволяет приложению ориентироваться на HoloLens 2 с holographic-содержимым, размещенным на настольном компьютере или на устройстве UWP, например на Xbox One, что обеспечивает доступ к дополнительным системным ресурсам и делает возможным интеграцию удаленных [иммерсивное представлений](app-views.md) в существующие программное обеспечение для настольных ПК. Удаленное приложение узла удаленного взаимодействия получает поток входных данных от HoloLens 2, визуализирует содержимое в виртуальном иммерсивное представление и передает потоки содержимого обратно в HoloLens 2. Подключение устанавливается с использованием стандартного Wi-Fi. Holographic удаленное взаимодействие добавляется в приложение для настольных систем или UWP через пакет NuGet. Требуется дополнительный код, который обрабатывает соединение и готовится к просмотру в режиме погружения.
+Holographic удаленное взаимодействие позволяет приложению ориентироваться на HoloLens 2 с holographic-содержимым, отображаемым на настольном компьютере или на устройстве UWP, например Xbox One, что обеспечивает доступ к дополнительным системным ресурсам и делает возможным интеграцию удаленных [иммерсивного представлений](app-views.md) в существующее программное обеспечение для настольного ПК. Удаленное приложение получает поток входных данных из HoloLens 2, отображает содержимое в виртуальном иммерсивное представление и передает потоки содержимого обратно в HoloLens 2. Подключение устанавливается с использованием стандартного Wi-Fi. Holographic удаленное взаимодействие добавляется в приложение для настольных систем или UWP через пакет NuGet. Требуется дополнительный код, который обрабатывает соединение и готовится к просмотру в режиме погружения.
 
 Типичное подключение удаленного взаимодействия будет иметь как минимум 50 мс задержки. Приложение проигрывателя может сообщать о задержке в режиме реального времени.
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Хорошей отправной точкой является работа рабочего стола на основе DirectX или приложения UWP, предназначенного для API Windows Mixed Reality. Дополнительные сведения см. в статье [Общие сведения о разработке DirectX](directx-development-overview.md). [ C++ Шаблон "holographic проект](creating-a-holographic-directx-project.md) " является хорошей отправной точкой.
 
 >[!IMPORTANT]
->Любое приложение, использующее holographic удаленное взаимодействие, должно быть создано для использования [многопоточного подразделения](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments). Использование [однопотокового подразделения](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments) поддерживается, но может привести к неоптимальной производительности и, возможно, "дергания" во время воспроизведения. При использовании C++/WinRT [WinRT:: init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) по умолчанию используется многопотоковое подразделение.
+>Любое приложение, использующее holographic удаленное взаимодействие, должно быть создано для использования [многопоточного подразделения](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments). Использование [однопотокового подразделения](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments) поддерживается, но может привести к неоптимальной производительности и, возможно, "дергания" во время воспроизведения. При использовании C++/WinRT [WinRT:: init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) многопотоковое подразделение является значением по умолчанию.
 
 
 
@@ -83,13 +83,13 @@ m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::Cr
 
 ## <a name="connect-to-the-device"></a>Подключение к устройству
 
-После того как ведущее приложение готово к отрисовке содержимого, можно установить подключение к устройству.
+Когда удаленное приложение будет готово к отрисовке содержимого, можно установить подключение к устройству.
 
 Соединение может быть выполнено одним из двух способов.
-1) Ведущее приложение подключается к проигрывателю, работающему на устройстве.
-2) Проигрыватель, выполняющийся на устройстве, подключается к ведущему приложению.
+1) Удаленное приложение подключается к проигрывателю, работающему на устройстве.
+2) Проигрыватель, выполняющийся на устройстве, подключается к удаленному приложению.
 
-Чтобы установить подключение из ведущего приложения к HoloLens 2, вызовите метод ```Connect``` в удаленном контексте, указав имя узла и порт. Порт, используемый проигрывателем удаленного взаимодействия (holographic), — **8265**.
+Чтобы установить соединение между удаленным приложением и HoloLens 2, вызовите метод ```Connect``` в удаленном контексте, указав имя узла и порт. Порт, используемый проигрывателем удаленного взаимодействия (holographic), — **8265**.
 
 ```cpp
 try
@@ -103,12 +103,12 @@ catch(winrt::hresult_error& e)
 ```
 
 >[!IMPORTANT]
->Как и любой C++другой ```Connect``` API/WinRT может вызывать исключение WinRT:: hresult_error, которое необходимо обработать.
+>Как и в C++случае любого API/WinRT, ```Connect``` может вызывать исключение WinRT:: hresult_error, которое необходимо обработать.
 
 >[!TIP]
 >Чтобы избежать использования [ C++](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/) проекции языка/WinRT, можно добавить файл ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h```, расположенный в пакете NuGet удаленного взаимодействия с удаленным доступом. Он содержит объявления базовых COM-интерфейсов. Однако рекомендуется использовать C++/WinRT.
 
-Прослушивание входящих подключений в ведущем приложении можно выполнить, вызвав метод ```Listen```. Во время этого вызова можно указать как порт подтверждения, так и порт транспорта. Порт подтверждения используется для первоначального подтверждения. Затем данные пересылаются через порт транспорта. По умолчанию используются **8265** и **8266** .
+Прослушивание входящих подключений в удаленном приложении можно выполнить, вызвав метод ```Listen```. Во время этого вызова можно указать как порт подтверждения, так и порт транспорта. Порт подтверждения используется для первоначального подтверждения. Затем данные пересылаются через порт транспорта. По умолчанию используются **8265** и **8266** .
 
 ```cpp
 try
@@ -181,7 +181,7 @@ auto connectionState = m_remoteContext.ConnectionState();
 
 ## <a name="handling-speech-events"></a>Обработка событий речи
 
-С помощью удаленного речевого интерфейса можно зарегистрировать речевые триггеры в HoloLens 2 и удаленно выполнять их в ведущем приложении.
+С помощью удаленного речевого интерфейса можно зарегистрировать речевые триггеры в HoloLens 2 и удаленно взаимодействовать с удаленным приложением.
 
 Этот дополнительный элемент необходим для отслеживания состояния удаленного распознавания речи.
 
@@ -212,13 +212,13 @@ winrt::Windows::Foundation::IAsyncOperation<winrt::Windows::Storage::StorageFile
 winrt::fire_and_forget InitializeSpeechAsync(
     winrt::Microsoft::Holographic::AppRemoting::IRemoteSpeech remoteSpeech,
     winrt::Microsoft::Holographic::AppRemoting::IRemoteSpeech::OnRecognizedSpeech_revoker& onRecognizedSpeechRevoker,
-    std::weak_ptr<SampleHostMain> sampleHostMainWeak)
+    std::weak_ptr<SampleRemoteMain> sampleRemoteMainWeak)
 {
     onRecognizedSpeechRevoker = remoteSpeech.OnRecognizedSpeech(
-        winrt::auto_revoke, [sampleHostMainWeak](const winrt::Microsoft::Holographic::AppRemoting::RecognizedSpeech& recognizedSpeech) {
-            if (auto sampleHostMain = sampleHostMainWeak.lock())
+        winrt::auto_revoke, [sampleRemoteMainWeak](const winrt::Microsoft::Holographic::AppRemoting::RecognizedSpeech& recognizedSpeech) {
+            if (auto sampleRemoteMain = sampleRemoteMainWeak.lock())
             {
-                sampleHostMain->OnRecognizedSpeech(recognizedSpeech.RecognizedText);
+                sampleRemoteMain->OnRecognizedSpeech(recognizedSpeech.RecognizedText);
             }
         });
 
@@ -242,7 +242,7 @@ winrt::fire_and_forget InitializeSpeechAsync(
 Внутри обратного вызова Онрекогнизедспич можно обработать события речи:
 
 ```cpp
-void SampleHostMain::OnRecognizedSpeech(const winrt::hstring& recognizedText)
+void SampleRemoteMain::OnRecognizedSpeech(const winrt::hstring& recognizedText)
 {
     bool changedColor = false;
     DirectX::XMFLOAT4 color = {1, 1, 1, 1};
@@ -268,7 +268,7 @@ void SampleHostMain::OnRecognizedSpeech(const winrt::hstring& recognizedText)
 
 ## <a name="preview-streamed-content-locally"></a>Предварительный просмотр потокового содержимого на локальном компьютере
 
-Чтобы отобразить то же содержимое в ведущем приложении, которое отправляется на устройство, можно использовать ```OnSendFrame```ное событие удаленного контекста. Событие ```OnSendFrame``` активируется каждый раз, когда библиотека holographic Remote Remoting отправляет текущий кадр на удаленное устройство. Это идеальное время для получения содержимого, а также Блит его в окно рабочего стола или UWP.
+Чтобы отобразить то же содержимое в удаленном приложении, которое отправляется на устройство, можно использовать ```OnSendFrame```ное событие удаленного контекста. Событие ```OnSendFrame``` активируется каждый раз, когда библиотека holographic Remote Remoting отправляет текущий кадр на удаленное устройство. Это идеальное время для получения содержимого, а также Блит его в окно рабочего стола или UWP.
 
 ```cpp
 #include <windows.graphics.directx.direct3d11.interop.h>
@@ -290,6 +290,63 @@ m_onSendFrameEventRevoker = m_remoteContext.OnSendFrame(
         // Copy / blit texturePtr into the back buffer here.
     });
 ```
+
+## <a name="depth-reprojection"></a>Репроектная глубина
+
+Начиная с версии [2.1.0](holographic-remoting-version-history.md#v2.1.0), holographic удаленное взаимодействие поддерживает [репроекцию с глубиной](hologram-stability.md#reprojection). Для этого в дополнение к буферу цвета также требуется потоковая передача буфера глубины из удаленного приложения в HoloLens 2. По умолчанию буфер глубины передается по потоку в половину разрешения буфера цвета. Это можно изменить следующим образом:
+
+```cpp
+// class implementation
+#include <HolographicAppRemoting\Streamer.h>
+
+...
+
+CreateRemoteContext(m_remoteContext, 20000, false, PreferredVideoCodec::Default);
+
+// Configure for half-resolution depth.
+m_remoteContext.ConfigureDepthVideoStream(DepthBufferStreamResolution::Half_Resolution);
+
+```
+
+Обратите внимание, что перед установкой соединения с HoloLens 2 необходимо вызвать ```ConfigureDepthVideoStream```. Лучшее место будет сразу после создания удаленного контекста. Возможные значения: Full, половина и Quarter. Значение по умолчанию — половина разрешения. Помните, что использование буфера глубины полного разрешения также влияет на требования к пропускной способности и должно учитывать максимальное значение пропускной способности, предоставленное для ```CreateRemoteContext```.
+
+При настройке разрешения необходимо также зафиксировать буфер глубины с помощью [холографиккамерарендерингпараметерс. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_).
+
+```cpp
+
+void SampleRemoteMain::Render(HolographicFrame holographicFrame)
+{
+    ...
+
+    m_deviceResources->UseHolographicCameraResources([this, holographicFrame](auto& cameraResourceMap) {
+        
+        ...
+
+        for (auto cameraPose : prediction.CameraPoses())
+        {
+            DXHelper::CameraResources* pCameraResources = cameraResourceMap[cameraPose.HolographicCamera().Id()].get();
+
+            ...
+
+            m_deviceResources->UseD3DDeviceContext([&](ID3D11DeviceContext3* context) {
+                
+                ...
+
+                // Commit depth buffer if available and enabled.
+                if (m_canCommitDirect3D11DepthBuffer && m_commitDirect3D11DepthBuffer)
+                {
+                    auto interopSurface = pCameraResources->GetDepthStencilTextureInteropObject();
+                    HolographicCameraRenderingParameters renderingParameters = holographicFrame.GetRenderingParameters(cameraPose);
+                    renderingParameters.CommitDirect3D11DepthBuffer(interopSurface);
+                }
+            });
+        }
+    });
+}
+
+```
+
+Чтобы проверить, распределялись ли в HoloLens 2 более глубокое переработка, вы можете включить визуализатор глубины с помощью портала устройств. Дополнительные сведения см. в разделе [Проверка глубины правильно настроена](hologram-stability.md#verifying-depth-is-set-correctly) .
 
 ## <a name="optional-custom-data-channels"></a>Необязательно: пользовательские каналы данных
 

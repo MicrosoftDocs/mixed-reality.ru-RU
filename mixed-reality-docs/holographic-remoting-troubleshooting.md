@@ -3,15 +3,15 @@ title: Устранение неполадок и ограничения уда�
 description: Действия по устранению неполадок для удаленного взаимодействия holographic в HoloLens 2.
 author: FlorianBagarMicrosoft
 ms.author: flbagar
-ms.date: 12/17/2019
+ms.date: 03/11/2020
 ms.topic: article
 keywords: Windows Mixed Reality, голограммы, holographic удаленное взаимодействие, удаленная визуализация, Сетевая визуализация, HoloLens, удаленные голограммы, устранение неполадок, помощь
-ms.openlocfilehash: 05333c8911010945a543cf603b9925eb30c841db
-ms.sourcegitcommit: 8bf7f315ba17726c61fb2fa5a079b1b7fb0dd73f
+ms.openlocfilehash: 79258832d29741c56a1e7e89baeb7d728c806dd1
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "75181974"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092364"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Устранение неполадок удаленного взаимодействия с holographic
 
@@ -40,6 +40,7 @@ ms.locfileid: "75181974"
 * [Холографиккамерапосе. Оверридевиевтрансформ](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewtransform)
 * [Холографиккамерарендерингпараметерс. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)
   - Не завершается ошибкой, но буфер глубины не будет удален.
+  - Поддерживается начиная с версии [2.1.0](holographic-remoting-version-history.md#v2.1.0)
 * [Холографикдисплай. Трижетвиевконфигуратион](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay.trygetviewconfiguration)
   - Запрос Холографиквиевконфигуратионкинд. Фотовидеокамера всегда будет возвращать ```nullptr```.
   - Поддерживается начиная с версии [2.0.18](holographic-remoting-version-history.md#v2.0.18)
@@ -58,7 +59,7 @@ ms.locfileid: "75181974"
 * [SpatialLocation. Абсолутелинеаракцелератион](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absolutelinearacceleration)
 * [SpatialLocation. АбсолутелинеарвелоЦити](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absolutelinearvelocity)
 * [Спатиалстажефрамеофреференце. Current](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)
-  - Всегда возвращает значение ```nullptr```.
+  - Всегда возвращает ```nullptr```.
 * [Спатиалстажефрамеофреференце. Рекуестневстажеасинк](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)
 * [Спатиаланчор. Ремоведбюсер](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor.removedbyuser)
 * [Спатиаланчорекспортер. по умолчанию](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter.getdefault
@@ -90,7 +91,7 @@ ms.locfileid: "75181974"
 
 ## <a name="see-also"></a>См. также
 * [Журнал версий службы удаленного взаимодействия с holographic](holographic-remoting-version-history.md)
-* [Создание хост-приложения holographic с удаленным взаимодействием](holographic-remoting-create-host.md)
+* [Создание удаленного приложения holographic с удаленным взаимодействием](holographic-remoting-create-host.md)
 * [Написание пользовательского приложения для удаленного взаимодействия holographic](holographic-remoting-create-player.md)
 * [Условия лицензии на использование ПО для голографического удаленного взаимодействия](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
-* [Заявление Майкрософт о конфиденциальности](https://go.microsoft.com/fwlink/?LinkId=521839)
+* [Заявление о конфиденциальности Майкрософт](https://go.microsoft.com/fwlink/?LinkId=521839)

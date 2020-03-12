@@ -1,25 +1,32 @@
 ---
 title: Журнал версий службы удаленного взаимодействия с holographic
 description: Журнал версий для удаленного взаимодействия holographic в HoloLens 2.
-author: NPohl-MSFT
-ms.author: nopohl
-ms.date: 10/21/2019
+author: FlorianBagarMicrosoft
+ms.author: flbagar
+ms.date: 03/11/2020
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: f051dbf24cab550470a312933ffb99e1ba595257
-ms.sourcegitcommit: 8bf7f315ba17726c61fb2fa5a079b1b7fb0dd73f
+ms.openlocfilehash: 62f54dbcf5327cdd5f13622704684a2cb0606d7d
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "75181964"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092308"
 ---
 # <a name="holographic-remoting-version-history"></a>Журнал версий службы удаленного взаимодействия с holographic
 
 > [!IMPORTANT]
 > Это руководство относится к удаленному взаимодействию с HoloLens 2.
 
-## Версия 2.0.18.0 (17 декабря, 2019)<a name="v2.0.18"></a>
-* Добавлена поддержка Холографиквиевконфигуратион: https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration
+## Версия 2.1.0 (11 марта, 2020)<a name="v2.1.0"></a>
+* Сетевой транспорт переключился на использование [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) через UDP. Безопасные подключения используют [SRTP](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) сейчас. Обратите внимание, что [проигрыватель holographic Remoting](holographic-remoting-player.md) по-прежнему совместим со всеми ранее выпущенными версиями с удаленным взаимодействием. Чтобы воспользоваться преимуществами нового сетевого транспорта и, по вашему мнению, проигрыватель holographic Remoting и удаленное приложение должны использовать версию 2.1.0.
+* Добавлена поддержка [холографиккамерарендерингпараметерс. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_). 
+
+## Версия 2.0.20 (2 февраля 2020 г.)<a name="v2.0.20"></a>
+* Исправлены различные ошибки, приводящие к сбоям.
+
+## Версия 2.0.18 (17 декабря, 2019)<a name="v2.0.18"></a>
+* Добавлена поддержка [холографиквиевконфигуратион](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration) .
 * Исправлены различные ошибки, приводящие к сбоям.
 * Исправлена ошибка обратного вызова Холографикспаце. Камерааддед, чтобы Холографиккамера был принят и показана как добавленная Камера в Холорафикфраме.
 
@@ -59,4 +66,4 @@ ms.locfileid: "75181964"
 * [Создание хост-приложения holographic с удаленным взаимодействием](holographic-remoting-create-host.md)
 * [Устранение неполадок и ограничения удаленного взаимодействия с holographic](holographic-remoting-troubleshooting.md)
 * [Условия лицензии на использование ПО для голографического удаленного взаимодействия](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
-* [Заявление Майкрософт о конфиденциальности](https://go.microsoft.com/fwlink/?LinkId=521839)
+* [Заявление о конфиденциальности Майкрософт](https://go.microsoft.com/fwlink/?LinkId=521839)

@@ -1,17 +1,17 @@
 ---
 title: Установление безопасного подключения с помощью удаленного взаимодействия с holographic
 description: На этой странице объясняется, как установить безопасное зашифрованное соединение при использовании удаленного взаимодействия с Holographic.
-author: bethau
-ms.author: bethau
-ms.date: 10/21/2019
+author: FlorianBagarMicrosoft
+ms.author: flbagar
+ms.date: 03/11/2020
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: 1142ba3bd8b0d05202ccd04885de5d70165872d1
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: ac1170cb3e6d681fc164c3f4cee14da6ab6eb90b
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73434195"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092477"
 ---
 # <a name="establishing-a-secure-connection-with-holographic-remoting"></a>Установление безопасного подключения с помощью удаленного взаимодействия с holographic
 
@@ -25,7 +25,7 @@ ms.locfileid: "73434195"
 >[!IMPORTANT]
 >Даже при использовании доверенного локального WiFi, использующего зашифрованное соединение, следует учитывать.
 
-Чтобы иметь возможность использовать зашифрованное соединение, необходимо реализовать [пользовательский проигрыватель](holographic-remoting-create-player.md) и [Пользовательское ведущее приложение](holographic-remoting-create-host.md).
+Чтобы иметь возможность использовать зашифрованное соединение, необходимо реализовать [пользовательский проигрыватель](holographic-remoting-create-player.md) и [настраиваемое удаленное приложение](holographic-remoting-create-host.md).
 
 Шифрование достигается с помощью реализации TLS базовых платформ.
 
@@ -61,7 +61,7 @@ ms.locfileid: "73434195"
 После реализации этих объектов ```ListenSecure``` необходимо вызывать вместо ```Listen``` и ```ConnectSecure```, а не ```Connect``` в контексте удаленного контекста и проигрывателя соответственно. для ```ListenSecure``` требуется дополнительный поставщик сертификатов и получатель проверки подлинности при ```Listen```. для ```ConnectSecure``` требуется дополнительный поставщик проверки подлинности и средство проверки сертификатов для ```Connect```.
 
 ## <a name="see-also"></a>См. также
-* [Создание хост-приложения holographic с удаленным взаимодействием](holographic-remoting-create-host.md)
+* [Создание удаленного приложения holographic с удаленным взаимодействием](holographic-remoting-create-host.md)
 * [Написание пользовательского приложения для удаленного взаимодействия holographic](holographic-remoting-create-player.md)
 * [Устранение неполадок и ограничения удаленного взаимодействия с holographic](holographic-remoting-troubleshooting.md)
 * [Условия лицензии на использование ПО для голографического удаленного взаимодействия](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
