@@ -7,11 +7,11 @@ ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, голограммы, отрисовка, трехмерная графика, Холографикфраме, цикл отрисовки, цикл обновления, пошаговое руководство, пример кода, Direct3D
 ms.openlocfilehash: 6b2e2dca9115d7093e94019d5ed91201f6ee3424
-ms.sourcegitcommit: f4812e1312c4751a22a2de56771c475b22a4ba24
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74940872"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79375981"
 ---
 # <a name="rendering-in-directx"></a>Подготовка к просмотру в DirectX
 
@@ -91,7 +91,7 @@ auto viewTransformContainer = cameraPose.TryGetViewTransform(coordinateSystem);
 
 ### <a name="process-gaze-and-gesture-input"></a>Обработка взгляда и ввод с жестом
 
-Ввод с помощью [взгляда](gaze-in-directx.md) и [руки](hands-and-motion-controllers-in-directx.md) не основан на времени, поэтому их не нужно обновлять в функции **StepTimer** . Однако эти входные данные — это то, что приложению нужно взглянуть на каждый кадр.
+Ввод с помощью [взгляда](gaze-in-directx.md) и [руки](hands-and-motion-controllers-in-directx.md) не основан на времени, поэтому их не нужно обновлять в функции **стептимер** . Однако эти входные данные — это то, что приложению нужно взглянуть на каждый кадр.
 
 ### <a name="process-time-based-updates"></a>Обработка обновлений на основе времени
 
@@ -593,7 +593,7 @@ void main(triangle GeometryShaderInput input[3], inout TriangleStream<GeometrySh
 }
 ```
 
-## <a name="present"></a>Представление
+## <a name="present"></a>Present
 
 ### <a name="enable-the-holographic-frame-to-present-the-swap-chain"></a>Включение в holographic фрейма цепочки буферов
 
@@ -743,6 +743,6 @@ if (FAILED(hr))
     return hr;
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 * [Системы координат в DirectX](coordinate-systems-in-directx.md)
 * [Использование эмулятора HoloLens](using-the-hololens-emulator.md)

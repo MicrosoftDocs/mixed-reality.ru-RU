@@ -7,11 +7,11 @@ ms.date: 10/22/2019
 ms.topic: article
 keywords: Смешанная реальность, жесты, взаимодействие, проектирование
 ms.openlocfilehash: 9cfee1104cb9b8135dae51bea73850062fadd25c
-ms.sourcegitcommit: 8bf7f315ba17726c61fb2fa5a079b1b7fb0dd73f
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "75182004"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79375911"
 ---
 # <a name="system-gesture"></a>Системный жест
 
@@ -27,13 +27,13 @@ ms.locfileid: "75182004"
     <col width="25%" />
     </colgroup>
     <tr>
-        <td><strong>Возможность</strong></td>
+        <td><strong>Функциями</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1-го поколения)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
     </tr>
      <tr>
-        <td>Цветение</td>
+        <td>Раскрытия</td>
         <td>✔️</td>
         <td>❌</td>
         <td>❌</td>
@@ -52,7 +52,7 @@ ms.locfileid: "75182004"
     </tr>
 </table>
 
-## <a name="bloom"></a>Цветение
+## <a name="bloom"></a>Раскрытия
 Чтобы открыть меню "Пуск" в HoloLens (1-й общий), мы разработали "раскрытия", который представляет собой символическое действие, копируя цветок цветок. Это отличительная необходимость в взаимодействии с сурефутед, простоте выполнения и быстром отзыве. Чтобы выполнить жест раскрытия на HoloLens (1-й общий), проведите руку с помощью карманного ПК, а затем откройте руку, добавив пальцы.
 
 :::row:::
@@ -113,7 +113,7 @@ ms.locfileid: "75182004"
 
 ---
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 * [Инстинктивное взаимодействие](interaction-fundamentals.md)
 * [Направление взгляда](eye-tracking.md)

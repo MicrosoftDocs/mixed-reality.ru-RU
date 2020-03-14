@@ -7,11 +7,11 @@ ms.date: 03/21/2018
 ms.topic: article
 keywords: Смешанная реальность, holographic, AR, VR, MR, XR, дополненная реальность, виртуальная реальность, объяснение
 ms.openlocfilehash: e3205590ce46e0fc9113421e0dbaeb87fe6bc0c2
-ms.sourcegitcommit: 23b130d03fea46a50a712b8301fe4e5deed6cf9c
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "75334053"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376041"
 ---
 # <a name="what-is-mixed-reality"></a>Что такое смешанная реальность?
 
@@ -89,7 +89,7 @@ ms.locfileid: "75334053"
 </tr><tr>
 <td><strong>Пример устройства</strong></td><td> Microsoft HoloLens<br><br> <img alt="Microsoft HoloLens 2 image" width="300" height="169" src="images/HoloLens2.jpg" /></td><td> Samsung ХМД Одиссэй +<br><br> <img alt="Samsung HMD Odyssey+ image" width="300" height="169" src="images/Samsung-HMD-Odyssey.jpg" /></td>
 </tr><tr>
-<td><strong>Дисплей</strong></td><td> Показать (см. раздел). Позволяет пользователю видеть физическую среду, людьми гарнитуру.</td><td> Непрозрачное отображение. Блокирует физическую среду, одновременно людьми гарнитуру.</td>
+<td><strong>Монитор</strong></td><td> Показать (см. раздел). Позволяет пользователю видеть физическую среду, людьми гарнитуру.</td><td> Непрозрачное отображение. Блокирует физическую среду, одновременно людьми гарнитуру.</td>
 </tr><tr>
 <td><strong>Перемещать</strong></td><td> Полное перемещение с шестью степенями, сдвиг и перевод.</td><td> Полное перемещение с шестью степенями, сдвиг и перевод.</td>
 </tr>
@@ -113,7 +113,7 @@ ms.locfileid: "75334053"
 * **По правому краю (около Digital Reality).** Пользователи могут столкнуться с совершенно цифровой средой и не знают, что происходит в физической среде по отношению к ним.
 
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также:
 
 * [Что такое голограмма?](hologram.md)
 * [Основные сведения о смешанной реальности](index.md#understand-the-basics)

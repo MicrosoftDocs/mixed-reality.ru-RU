@@ -7,17 +7,17 @@ ms.date: 02/24/2019
 ms.topic: article
 keywords: Портал устройств Windows, HoloLens
 ms.openlocfilehash: 43ecfead7d2882d3624809bc05184f74131b8594
-ms.sourcegitcommit: 1ec628a9107194c0a9d4073b5ca09ee816030e85
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78202724"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79375791"
 ---
 # <a name="using-the-windows-device-portal"></a>Использование портала устройств Windows
 
 <table>
 <tr>
-<th>Компонент</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"><a href="immersive-headset-hardware-details.md">Иммерсивные гарнитуры</a></th>
+<th>Функция</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"><a href="immersive-headset-hardware-details.md">Иммерсивные гарнитуры</a></th>
 </tr><tr>
 <td> Портал устройств Windows</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>

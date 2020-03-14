@@ -1,5 +1,5 @@
 ---
-title: Оформление текста
+title: Шрифтовое оформление
 description: Текст — важный элемент для доставки информации в приложении.
 author: cre8ivepark
 ms.author: dongpark
@@ -7,13 +7,13 @@ ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, проектирование, стиль, шрифт, типография, Пользовательский интерфейс, UX
 ms.openlocfilehash: 9664d355e941d800ac1ac862860fc5889b6b7686
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73437419"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79375801"
 ---
-# <a name="typography"></a>Оформление текста
+# <a name="typography"></a>Шрифтовое оформление
 
 ![Пример оформления в HoloLens](images/typography-cover.png)<br>
 
@@ -83,14 +83,14 @@ ms.locfileid: "73437419"
 *содержимого в ближайшем и дальнем диапазоне взаимодействия*
 
 ### <a name="the-minimum-legible-font-size"></a>Минимальный размер неудобочитаемого шрифта
-| Друг | Угол просмотра | Высота текста | Размер шрифта * * |
+| Расстояние | Угол просмотра | Высота текста | Размер шрифта * * |
 |---------|---------|---------|---------|
 | 45cm (расстояние прямого манипулирования) | 0,4 ° — 0,5 ° | 3,14 — 3,9 мм | 8.9 — 11.13 PT |
 | 2 | 0,35 °-0,4 ° | 12.21 – 13.97 мм | 34.63-39.58 PT |
 
 
 ### <a name="the-comfortably-legible-font-size"></a>Удобно, чтобы размер шрифта разборчиво
-| Друг | Угол просмотра | Высота текста | Размер шрифта * * |
+| Расстояние | Угол просмотра | Высота текста | Размер шрифта * * |
 |---------|---------|---------|---------|
 | 45cm (расстояние прямого манипулирования) | 0.65 °-0,8 ° | 5.1 – 6.3 мм | 14.47-17.8 PT |
 | 2 | 0,6 °-0,75 ° | 20,9-26,2 мм | 59.4-74.2 pt |
@@ -111,9 +111,9 @@ Segoe UI (шрифт по умолчанию для Windows) хорошо раб
 
 :::row:::
     :::column:::
-    ### <a name="segoe-fontshttpsdownloadmicrosoftcomdownload1bc1bcf071a-78ee-4968-acbe-15461c274b61segoe20fonts20v1705zipbr"></a>[Шрифты Segoe](https://download.microsoft.com/download/1/B/C/1BCF071A-78EE-4968-ACBE-15461C274B61/Segoe%20fonts%20v1705.zip)<br>
+    ### <a name="segoe-fontsbr"></a>[Шрифты Segoe](https://download.microsoft.com/download/1/B/C/1BCF071A-78EE-4968-ACBE-15461C274B61/Segoe%20fonts%20v1705.zip)<br>
     (ZIP-файл)<br>
-    ### <a name="hololens-fonthttpsdownloadmicrosoftcomdownload38d38d659e2-4b9c-413a-b2e7-1956181dc427hololens20fontzipbr"></a>[Шрифт HoloLens](https://download.microsoft.com/download/3/8/D/38D659E2-4B9C-413A-B2E7-1956181DC427/Hololens%20font.zip)<br>
+    ### <a name="hololens-fontbr"></a>[Шрифт HoloLens](https://download.microsoft.com/download/3/8/D/38D659E2-4B9C-413A-B2E7-1956181DC427/Hololens%20font.zip)<br>
     (ZIP-файл)<br>
     <br>
     *Изображение. шрифт HoloLens дает вам глифы символов, используемые в Windows Mixed Reality.*
@@ -129,6 +129,6 @@ Segoe UI (шрифт по умолчанию для Windows) хорошо раб
 ---
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 * [Текст в Unity](text-in-unity.md)
 * [Цвет, свет и материалы](color,-light-and-materials.md)

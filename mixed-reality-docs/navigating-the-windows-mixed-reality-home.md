@@ -7,11 +7,11 @@ ms.date: 03/21/2018
 ms.topic: article
 keywords: оболочка, ОС, платформа, Клифф House, дом, Главная, среда, запуск, меню "Пуск", главное меню, ПИН-коды, приложение, запуск приложений, размещение приложений, телепортируйтесь, перемещение, Навигация
 ms.openlocfilehash: 9de4cb44505d6cf4d0d3e4bd0fd9c5ee681063a5
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73438158"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79375901"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Навигация на домашней странице Windows Mixed Reality
 
@@ -85,7 +85,7 @@ ms.locfileid: "73438158"
 
 [Впечатляющие гарнитуры Windows Mixed Reality](immersive-headset-hardware-details.md) поддерживают несколько типов входных данных для перехода на домашнюю страницу Windows Mixed Reality. HoloLens не поддерживает входные данные для аксессуаров, так как вы физически обходите и видите свою среду. Однако HoloLens [поддерживает входные данные](hardware-accessories.md) для взаимодействия с приложениями.
 
-### <a name="motion-controllers"></a>Контроллеры движения
+### <a name="motion-controllers"></a>контроллеры движений
 
 Лучший опыт Windows Mixed Reality будет работать с [контроллерами движения](motion-controllers.md) Windows Mixed Reality, которые поддерживают 6-степенную трассировку с помощью датчиков на гарнитуре — не требуются внешние камеры или маркеры.
 
@@ -134,7 +134,7 @@ ms.locfileid: "73438158"
 * **Настольные** (иммерсивное гарнитуры) для просмотра настольного монитора во время работы в иммерсивное головной телефон
 * **Обозреватель файлов** Доступ к файлам и папкам, расположенным на устройстве
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 * [Представления приложений](app-views.md)
 * [Контроллеры движения](motion-controllers.md)
 * [Аксессуары к оборудованию](hardware-accessories.md)

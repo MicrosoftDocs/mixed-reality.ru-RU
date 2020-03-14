@@ -7,11 +7,11 @@ ms.date: 03/21/2018
 ms.topic: article
 keywords: жесты, контроллеры движения, Unity, взгляд, входные данные
 ms.openlocfilehash: a85797bfb443f33147c116e90a02c88abda63c67
-ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73926563"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79375651"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Жесты и контроллеры движения в Unity
 
@@ -31,7 +31,7 @@ Unity предоставляет два основных способа дост
 
 <table>
 <tr>
-<th rowspan="2">Input </th><th colspan="2"><a href="gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">Общие интерфейсы API Unity</a><br />(Входные данные. Кнопка/ось) </th><th rowspan="2"><a href="gestures-and-motion-controllers-in-unity.md#">Входной API Windows MR</a><br />XR. Головк. Входной</th>
+<th rowspan="2">Ввод </th><th colspan="2"><a href="gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">Общие интерфейсы API Unity</a><br />(Входные данные. Кнопка/ось) </th><th rowspan="2"><a href="gestures-and-motion-controllers-in-unity.md#">Входной API Windows MR</a><br />XR. Головк. Входной</th>
 </tr><tr>
 <th> Левая рука </th><th> Правая рука</th>
 </tr><tr>
@@ -525,7 +525,7 @@ void OnDestroy()
 [![MR input 213 — контроллер движения](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
 *MR-вход 213 — контроллер движения*
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 * [Направление головы и фиксация](gaze-and-commit.md)
 * [Контроллеры движения](motion-controllers.md)

@@ -7,11 +7,11 @@ ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, пространственное сопоставление, среда, взаимодействие, DirectX, WinRT, API, пример кода, UWP, пакет SDK, пошаговое руководство
 ms.openlocfilehash: 456fcf1c00e23a287a741673e94b3f8d2d2d346c
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73437445"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79375821"
 ---
 # <a name="spatial-mapping-in-directx"></a>Пространственное сопоставление в DirectX
 
@@ -38,7 +38,7 @@ ms.locfileid: "73437445"
         <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
     </tr>
      <tr>
-        <td>Пространственное сопоставление</td>
+        <td>пространственное сопоставление</td>
         <td>✔️</td>
         <td>✔️</td>
         <td>❌</td>
@@ -74,7 +74,7 @@ ms.locfileid: "73437445"
   - Здесь приложение может при необходимости выполнять анализ или [обработку](spatial-mapping.md#mesh-processing) данных сетки, а также использовать их для [визуализации](spatial-mapping.md#rendering) и создания физических [райкастинг и конфликтов](spatial-mapping.md#raycasting-and-collision).
   - Важно отметить, что необходимо применить шкалу к позициям вершин сетки (например, в шейдере вершин, используемом для отрисовки сеток), чтобы преобразовать их из оптимизированных целых единиц, в которых они хранятся в буфере, на метры. Эту шкалу можно получить, вызвав [вертекспоситионскале](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx).
 
-### <a name="troubleshooting"></a>"Устранение неполадок"
+### <a name="troubleshooting"></a>Диагностика
 * Не забудьте масштабировать позиции вершин сетки в шейдере вершин, используя шкалу, возвращенную [спатиалсурфацемеш. вертекспоситионскале](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx)
 
 ## <a name="spatial-mapping-code-sample-walkthrough"></a>Пример пошагового руководства по коду пространственного сопоставления
@@ -85,7 +85,7 @@ ms.locfileid: "73437445"
 
 ### <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Настройка приложения для использования возможности Спатиалперцептион
 
-Приложение должно иметь возможность использовать функцию пространственного сопоставления. Это необходимо потому, что пространственный сетчатый объект представляет собой представление среды пользователя, которое может считаться частными данными. Объявите эту возможность в файле Package. appxmanifest для приложения. Вот пример.
+Приложение должно иметь возможность использовать функцию пространственного сопоставления. Это необходимо потому, что пространственный сетчатый объект представляет собой представление среды пользователя, которое может считаться частными данными. Объявите эту возможность в файле Package. appxmanifest для приложения. Пример:
 
 ```xml
 <Capabilities>
@@ -93,7 +93,7 @@ ms.locfileid: "73437445"
 </Capabilities>
 ```
 
-Эта возможность поступает из пространства имен **uap2** . Чтобы получить доступ к этому пространству имен в манифесте, включите его в качестве атрибута *кслмнс* в элемент &lt;пакета >. Вот пример.
+Эта возможность поступает из пространства имен **uap2** . Чтобы получить доступ к этому пространству имен в манифесте, включите его в качестве атрибута *кслмнс* в элемент &lt;пакета >. Пример:
 
 ```xml
 <Package
@@ -216,7 +216,7 @@ m_surfaceObserver->SetBoundingVolume(
             );
 ```
 
-Если приложение должно выполнять какие-либо действия, если данные сопоставления поверхности недоступны, можно написать код для реагирования на случай, когда [спатиалперцептионакцессстатус](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialperceptionaccessstatus.aspx) не **разрешен** — например, он не будет разрешен на компьютерах с иммерсивное устройства подключены, так как эти устройства не имеют оборудования для пространственного сопоставления. Для этих устройств следует использовать пространственный этап для получения сведений о среде пользователя и конфигурации устройства.
+Если приложение должно выполнять какие-либо действия, если данные сопоставления поверхности недоступны, можно написать код для реагирования на случай, когда [спатиалперцептионакцессстатус](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialperceptionaccessstatus.aspx) не **разрешен** (например, он не будет разрешен) на компьютерах с подключенными устройствами, так как эти устройства не имеют оборудования для пространственного сопоставления. Для этих устройств следует использовать пространственный этап для получения сведений о среде пользователя и конфигурации устройства.
 
 ### <a name="initialize-and-update-the-surface-mesh-collection"></a>Инициализация и обновление коллекции сеток поверхности
 
@@ -673,6 +673,6 @@ context->OMSetRenderTargets(1, targets, pCameraResources->GetSurfaceDepthStencil
 m_meshCollection->Render(pCameraResources->IsRenderingStereoscopic(), false);
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 * [Создание голографического проекта в DirectX](creating-a-holographic-directx-project.md)
 * [API Windows. восприятие. пространственный](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx)
