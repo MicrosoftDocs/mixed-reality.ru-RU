@@ -9,11 +9,11 @@ ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
 ms.openlocfilehash: f6f72df63628bba590ac7af098d0b405e6721cc2
-ms.sourcegitcommit: 83698638b93c5ba77b3ffc399f1706482539f27b
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74539618"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79375571"
 ---
 # <a name="get-started-with-mixed-reality"></a>Приступая к работе со смешанной реальностью
 
@@ -60,13 +60,13 @@ ms.locfileid: "74539618"
 ## <a name="what-is-mixed-reality"></a>Что такое смешанная реальность?
 
 
-### <a name="mixed-reality-is-a-spectrummixed-realitymd"></a>[Смешанная реальность — это разнообразие](mixed-reality.md)
+### <a name="mixed-reality-is-a-spectrum"></a>[Смешанная реальность — это разнообразие](mixed-reality.md)
 Смешанная реальность является результатом смешения физического и цифрового мира. Это следующий этап развития в области взаимодействия между человеком, компьютером и средой. Смешанная реальность дает возможности, о которых можно было только мечтать.
 
 <br>
 
 
-### <a name="what-is-a-hologramhologrammd"></a>[Что такое голограмма?](hologram.md)
+### <a name="what-is-a-hologram"></a>[Что такое голограмма?](hologram.md)
 HoloLens позволяет создавать голограммы — объекты из света и звука, которые отображаются рядом с вами, как будто они являются реальными объектами. Голограммы реагируют на взгляд, жесты и голосовые команды, а также могут взаимодействовать с реальными поверхностями рядом с вами. Благодаря голограммам вы можете создавать цифровые объекты, которые являются частью окружающего мира.
 
 <br>
@@ -80,12 +80,12 @@ HoloLens позволяет создавать голограммы — объе
 
 ## <a name="what-can-you-do-with-mixed-reality"></a>Что можно сделать с помощью смешанной реальности?
 
-### <a name="a-new-vision-for-workhttpsdynamicsmicrosoftcommixed-realityoverview"></a>[Новая концепция работы](https://dynamics.microsoft.com//mixed-reality/overview/)
+### <a name="a-new-vision-for-work"></a>[Новая концепция работы](https://dynamics.microsoft.com//mixed-reality/overview/)
 В корпорации Майкрософт создают приложения смешанной реальности для расширения возможностей сотрудников и оптимизации операций. Команда Dynamics 365 работала над рядом проектов, демонстрирующих эти возможности: Remote Assist, Layout и Guides.
 
 <br>
 
-### <a name="the-pursuit-of-more-personal-computingcase-study-the-pursuit-of-more-personal-computingmd"></a>[Цель — персонализация вычислений](case-study-the-pursuit-of-more-personal-computing.md)
+### <a name="the-pursuit-of-more-personal-computing"></a>[Цель — персонализация вычислений](case-study-the-pursuit-of-more-personal-computing.md)
 Будущие возможности можно открыть, создавая продукты уже сегодня. Решения на основе этих продуктов показывают, что необходимо для приближения будущего. Это особенно верно в отношении смешанной реальности: Полноценное понимание приходит вместе с практическим опытом работы с реальными устройствами, реальными клиентами и реальными проблемами.
 
 
@@ -101,7 +101,7 @@ HoloLens позволяет создавать голограммы — объе
        [![Bentley](images/Bentley-Synchro1.jpg)](https://binged.it/31AR3kP)
     :::column-end:::
     :::column span="2":::
-        ### <a name="view-complex-construction-projects-with-bentleys-digital-construction-softwarehttpsbingedit31ar3kp"></a>[Изучение сложных строительных проектов с помощью программного обеспечения для цифрового строительства от Bentley](https://binged.it/31AR3kP)
+        ### <a name="view-complex-construction-projects-with-bentleys-digital-construction-software"></a>[Изучение сложных строительных проектов с помощью программного обеспечения для цифрового строительства от Bentley](https://binged.it/31AR3kP)
         Synchro — это программное обеспечение для цифрового строительства, позволяющее изучать сложные строительные проекты в смешанной реальности. Их четырехмерная платформа для цифрового строительства сочетает традиционное планирование методом критического пути с помощью диаграмм Ганта и интегрированные возможностями четырехмерной визуализации в режиме реального времени.
     :::column-end:::
 :::row-end:::
@@ -113,7 +113,7 @@ HoloLens позволяет создавать голограммы — объе
        [![Vuforia Studio от PTC](images/PTC-Vuforia-Studio1.jpg)](https://binged.it/31ARrjh)
     :::column-end:::
     :::column span="2":::
-        ### <a name="ptcs-vuforia-studio-authoring-solution-promotes-workforce-productivity-and-safetyhttpsbingedit31arrjh"></a>[Решение для разработки Vuforia Studio от PTC повышает производительность и безопасность сотрудников](https://binged.it/31ARrjh)
+        ### <a name="ptcs-vuforia-studio-authoring-solution-promotes-workforce-productivity-and-safety"></a>[Решение для разработки Vuforia Studio от PTC повышает производительность и безопасность сотрудников](https://binged.it/31ARrjh)
         Эффективное решение для создания смешанной среды Vuforia Studio способствует повышению производительности труда сотрудников и их безопасности, предоставляя им информацию, когда она нужнее всего: в реальном контексте повседневной рабочей обстановки.
     :::column-end:::
 :::row-end:::
@@ -125,7 +125,7 @@ HoloLens позволяет создавать голограммы — объе
        [![Philips-Azurion](images/Philips-Azurion1.jpg)](https://binged.it/31B1RiR)
     :::column-end:::
     :::column span="2":::
-        ### <a name="philips-is-piloting-hololens-in-the-domain-of-image-guided-minimally-invasive-procedureshttpsbingedit31b1rir"></a>[Philips работает над пилотным проектом HoloLens в области малоинвазивных процедур с визуальным контролем](https://binged.it/31B1RiR)
+        ### <a name="philips-is-piloting-hololens-in-the-domain-of-image-guided-minimally-invasive-procedures"></a>[Philips работает над пилотным проектом HoloLens в области малоинвазивных процедур с визуальным контролем](https://binged.it/31B1RiR)
         Philips работает над пилотным проектом HoloLens в области малоинвазивных процедур с визуальным контролем, во время которых врачи полагаются на интерактивные данные рентгеновских, ультразвуковых и других датчиков, чтобы "смотреть" внутрь пациента и корректировать свои действия.
     :::column-end:::
 :::row-end:::
@@ -142,7 +142,7 @@ HoloLens позволяет создавать голограммы — объе
 
 ## <a name="what-are-the-capabilities-of-hololens"></a>Каковы возможности HoloLens?
 
-### <a name="immersive-ergonomic-instinctual-and-untetheredhttpswwwmicrosoftcomhololenshardware"></a>[Иммерсивное, эргономичное, инстинктивное решение с неисчерпаемыми возможностями](https://www.microsoft.com//hololens/hardware)
+### <a name="immersive-ergonomic-instinctual-and-untethered"></a>[Иммерсивное, эргономичное, инстинктивное решение с неисчерпаемыми возможностями](https://www.microsoft.com//hololens/hardware)
 
 HoloLens 2 предлагает наиболее комфортную и иммерсивную среду смешанной реальности из всех существующих на сегодняшний день. Это стало возможным благодаря ведущим в отрасли решениям, ценность которых подтвердилась практически сразу же после выпуска, а также надежности, безопасности и масштабируемости облачных служб и служб искусственного интеллекта от корпорации Майкрософт.
 
@@ -156,22 +156,22 @@ HoloLens 2 предлагает наиболее комфортную и имм
 
 ## <a name="what-are-the-core-concepts-of-an-experience"></a>Каковы основные принципы работы?
 
-### <a name="keep-the-user-comfortable---comfortcomfortmd"></a>[Обеспечение удобства пользователя (комфорт)](comfort.md)
+### <a name="keep-the-user-comfortable---comfort"></a>[Обеспечение удобства пользователя (комфорт)](comfort.md)
 Чтобы обеспечить максимальное удобство использования виртуальных шлемов, важно, чтобы дизайнеры и разработчики создавали и представляли содержимое так, чтобы правильно имитировать подсказки из материального мира.
 
 <br>
 
-### <a name="how-the-user-sees-the-world---holographic-frameholographic-framemd"></a>[Как пользователь видит мир (голографический экран)](holographic-frame.md)
+### <a name="how-the-user-sees-the-world---holographic-frame"></a>[Как пользователь видит мир (голографический экран)](holographic-frame.md)
 Пользователи видят мир смешанной реальности через прямоугольное окно просмотра гарнитуры. В HoloLens эта прямоугольная область называется голографическим экраном и позволяет пользователям видеть цифровое содержимое, наложенное на окружающий их мир.
 
 <br>
 
-### <a name="making-holographic-objects-feel-real---spatial-mappingspatial-mappingmd"></a>[Создание реальных голографических объектов (пространственное сопоставление)](spatial-mapping.md)
+### <a name="making-holographic-objects-feel-real---spatial-mapping"></a>[Создание реальных голографических объектов (пространственное сопоставление)](spatial-mapping.md)
 Пространственное сопоставление позволяет размещать объекты на реальных поверхностях. Это помогает привязать объекты в мире пользователя и использовать преимущества подсказок из реального мира.
 
 <br>
 
-### <a name="suggesting-the-scale-of-an-object---scalescalemd"></a>[Предположение масштаба объекта (масштабирование)](scale.md)
+### <a name="suggesting-the-scale-of-an-object---scale"></a>[Предположение масштаба объекта (масштабирование)](scale.md)
 Ключом к отображению содержимого, которое выглядит реалистично в виде голограммы, является как можно более точная имитация визуальных статистических данных реального мира. Это означает обработку как можно большего числа значимых визуальных подсказок (из реального мира), чтобы понять, где находятся объекты, насколько они велики и из его они сделаны.
 
 
