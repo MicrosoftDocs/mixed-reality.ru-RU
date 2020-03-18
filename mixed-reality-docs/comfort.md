@@ -8,11 +8,11 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Смешанная реальность, проектирование, комфорт, HoloLens 2, HoloLens (1-го поколения)
 ms.openlocfilehash: 178044ce8c76de75b7cce5e10664ce65d108f0f8
-ms.sourcegitcommit: 4d43a8f40e3132605cee9ece9229e67d985db645
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491157"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376071"
 ---
 # <a name="comfort"></a>Комфорт
 
@@ -173,7 +173,7 @@ ms.locfileid: "74491157"
 
 Мышечная усталость может накапливаться, если пользователи должны держать руку навесу во время работы. Усталость также может возникнуть, если пользователю приходится часто повторять жесты касания. Поэтому рекомендуется, чтобы пользователю не приходилось постоянно применять ввод жестами. Для этого можно добавить короткие перерывы или предложить сочетание жестов и речевого ввода для взаимодействия с приложением.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 * [Взгляд](gaze-and-commit.md)
 * [Стабильность голограммы](hologram-stability.md)
 * [Инстинктивное взаимодействие](interaction-fundamentals.md)
