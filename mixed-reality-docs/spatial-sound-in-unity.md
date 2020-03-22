@@ -6,12 +6,12 @@ ms.author: kegodin
 ms.date: 11/07/2019
 ms.topic: article
 keywords: Unity, Пространственный звук, ХРТФ, размер комнаты
-ms.openlocfilehash: 6720eac30c69ebfcd0f003cf131f60295818d676
-ms.sourcegitcommit: bd536f4f99c71418b55c121b7ba19ecbaf6336bb
+ms.openlocfilehash: af3f1486c3e931ad93d7b8960d822653ec740c12
+ms.sourcegitcommit: ee8c7e821cb337cbccd8af64b13ee5f50109a776
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77553702"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80082041"
 ---
 # <a name="spatial-sound-in-unity"></a>Пространственный звук в Unity
 
@@ -35,6 +35,9 @@ ms.locfileid: "77553702"
 * Установите флажок " **включить пространственность** "
 * Переместить ползунок **пространственного смешения** в "1"
 * Убедитесь, что на рабочей станции разработчика включен Пространственный звук. Включите его, щелкнув значок тома на панели задач правой кнопкой мыши и убедившись, что для пространственного звука задано значение, отличное от "Выкл.". Чтобы получить лучшее представление о том, что вы услышите в HoloLens 2, выберите **Windows Sonic для наушников**.
+
+>[!NOTE]
+>Если в Unity возникает ошибка о том, что не удается загрузить подключаемый модуль Microsoft. Спатиалаудио. Спатиализер. Unity, поскольку отсутствует одна из его зависимостей, убедитесь, что на компьютере установлена последняя версия [распространяемого C++ пакета Microsoft Visual](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) .
 
 Дополнительные сведения см. в статье о
 * [Репозиторий Microsoft спатиализер GitHub](https://github.com/microsoft/spatialaudio-unity)
