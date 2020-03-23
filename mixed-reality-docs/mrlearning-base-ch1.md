@@ -7,12 +7,12 @@ ms.date: 11/01/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 9c219313ad6e73cde78efd8e5e718a466ebd6137
-ms.sourcegitcommit: bd536f4f99c71418b55c121b7ba19ecbaf6336bb
+ms.openlocfilehash: 56adb4bfc66768684c8269c0f0cafd70c486ea8a
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77554404"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376211"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2. Инициализация проекта и первое приложение
 
@@ -235,6 +235,9 @@ B этом первом руководстве описаны некоторые
 Настройте Visual Studio для устройства HoloLens 2, выбрав конфигурацию **Ведущий** или **Выпуск**, архитектуру **ARM** и целевой объект **Устройство**:
 
 ![mrlearning-base](images/mrlearning-base/tutorial1-section7-step2-2.png)
+
+> [!NOTE]
+> Если устройство не отображается как вариант, возможно, придется изменить проект запуска по умолчанию, указав вместо проекта IC2Lpp проект UWP. В **обозревателе решений** щелкните правой кнопкой мыши **имя_проекта (Universal Windows)** и выберите **Set as StartUp Project** (Назначить запускаемым проектом). 
 
 Подключите HoloLens 2 к компьютеру.
 

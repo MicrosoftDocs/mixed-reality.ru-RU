@@ -1,46 +1,47 @@
 ---
-title: Учебники по пространственной привязке Azure — 1. Приступая к работе с пространственными привязками Azure
+title: Руководства по Пространственным привязкам Azure, часть 1 Начало работы с Пространственными привязками Azure
 description: В рамках этого курса вы узнаете, как реализовать функцию распознавания лиц Azure в приложении смешанной реальности.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 0163b61bfbf8bd583532092581d94f63e1c2a624
-ms.sourcegitcommit: bd536f4f99c71418b55c121b7ba19ecbaf6336bb
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: fa0ebc409fa38f664bdd0966906c6fd77f7a6081
+ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77554683"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376151"
 ---
-# <a name="1-getting-started-with-azure-spatial-anchors"></a>1. Приступая к работе с пространственными привязками Azure
+# <a name="1-getting-started-with-azure-spatial-anchors"></a>1. Начало работы с Пространственными привязками Azure
 
 ## <a name="overview"></a>Обзор
 
-Добро пожаловать на второй ряд учебников по HoloLens. В этой серии руководств из трех частей вы узнаете об основах использования пространственных привязок Azure.
+Вас приветствует вторая серия руководств по HoloLens 2. В трех частях этой серии руководств вы получите основные сведения о Пространственных привязках Azure.
 
-В этом первом учебнике [Приступая к работе с пространственными привязками Azure](mrlearning-asa-ch1.md)вы узнаете о различных шагах, необходимых для запуска и завершения сеанса Azure, а также создания, отправки и скачивания привязок Azure на одном устройстве.
+Первое руководство [Начало работы с Пространственными привязками Azure](mrlearning-asa-ch1.md) поможет изучить процессы, необходимые для запуска и завершения сеанса Azure, а также для создания, отправки и скачивания привязок Azure на одном устройстве.
 
-Во втором учебном курсе, [сохранении, извлечении и совместном использовании пространственных привязок Azure](mrlearning-asa-ch2.md)вы узнаете, как сохранять пространственные привязки Azure в нескольких сеансах приложения, сохраняя сведения о привязке в хранилище HoloLens 2 и совместное использование этих данных привязки с другими устройствами для выравнивания привязок на нескольких устройствах.
+Из второго руководства [Сохранение, извлечение и совместное использование Пространственных привязок Azure](mrlearning-asa-ch2.md) вы узнаете, как сохранять Пространственные привязки Azure в нескольких сеансах приложения, сохраняя сведения о привязке в хранилище HoloLens 2, и как передать эти сведения о привязке на другие устройства для согласования привязок между несколькими устройствами.
 
-В третьем руководстве, в [котором отображается отзыв о пространственной привязке Azure](mrlearning-asa-ch3.md), вы узнаете, как предоставить пользователям Отзывы о событиях и состояниях привязки при использовании пространственных привязок Azure.
+Из третьего руководства [Отображение отзывов от Пространственной привязки Azure](mrlearning-asa-ch3.md) вы узнаете, как предоставить пользователям информацию о событиях и состояниях привязки при использовании Пространственных привязок Azure.
 
 ## <a name="objectives"></a>Задачи
 
-* Изучите основы разработки с помощью пространственных привязок Azure для HoloLens 2
+* Изучите основы разработки Пространственных привязок Azure для HoloLens 2
 * Создание, передача и скачивание пространственных привязок
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 >[!TIP]
->Если вы еще не выполнили серию [учебников по началу работы](mrlearning-base.md) , рекомендуется сначала выполнить эти учебники.
+>Если вы еще не прошли руководства из серии, посвященной [началу работы](mrlearning-base.md), мы рекомендуем начать знакомство именно с этой серии.
 
-* Компьютер с Windows 10, настроенный с требуемыми [установленными инструментами](install-the-tools.md).
+* Компьютер с Windows 10, настроенный с помощью требуемых [установленных инструментов](install-the-tools.md).
 * Пакет SDK для Windows 10 версии 10.0.18362.0 и выше.
 * Базовые навыки программирования на C#.
 * Устройство HoloLens 2, [настроенное для разработки](using-visual-studio.md#enabling-developer-mode).
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> с Unity 2019.2.X и модулем поддержки сборки универсальной платформы Windows.
-* Выполните инструкции из раздела [Создание ресурса пространственных привязок](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) в разделе [Краткое руководство. Создание приложения Unity HoloLens, использующего учебник по пространственным привязок Azure](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) .
+* Выполните инструкции из раздела [Создание ресурса Пространственных привязок](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) в статье [Краткое руководство. Создание приложения Unity HoloLens, которое использует Пространственные привязки Azure](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens).
 
 > [!IMPORTANT]
 > Рекомендуемая версия Unity для этой серии руководств — Unity 2019.2.X. Это заменяет все требования к версии Unity и рекомендации, указанные выше.
@@ -48,193 +49,193 @@ ms.locfileid: "77554683"
 ## <a name="creating-the-unity-project"></a>Создание проекта Unity
 <!-- TODO: Consider renaming to 'Creating and preparing the Unity scene and project'-->
 
-В этом разделе вы создадите новый проект Unity и готовы подготовить его к разработке МРТК.
+В рамках этого раздела вы создадите новый проект Unity и подготовите его к разработке MRTK.
 
-Для этого сначала выполните [инициализацию проекта и первого приложения](mrlearning-base-ch1.md), за исключением [сборки приложения в инструкции устройства](mrlearning-base-ch1.md#build-your-application-to-your-device) , которые включают следующие шаги:
+Для этого сначала выполните инструкции из руководства [Инициализация проекта и первое приложение](mrlearning-base-ch1.md), за исключением раздела [Разработка приложения для устройства](mrlearning-base-ch1.md#build-your-application-to-your-device), то есть следующие действия:
 
-1. [Создайте новый проект Unity](mrlearning-base-ch1.md#create-new-unity-project) и присвойте ему подходящее имя, например *учебники мртк*.
+1. [Создайте новый проект Unity](mrlearning-base-ch1.md#create-new-unity-project) и присвойте ему понятное имя, например *MRTK Tutorials*.
 
-2. [Настройка проекта Unity для Windows Mixed Reality](mrlearning-base-ch1.md#configure-the-unity-project-for-windows-mixed-reality)
+2. [Настройте проект Unity для Windows Mixed Reality](mrlearning-base-ch1.md#configure-the-unity-project-for-windows-mixed-reality).
 
-3. [Импорт необходимых ресурсов Текстмеш Pro](mrlearning-base-ch1.md#import-textmesh-pro-essential-resources)
+3. [Импортируйте требуемые ресурсы TextMesh Pro](mrlearning-base-ch1.md#import-textmesh-pro-essential-resources).
 
-4. [Импорт набора средств Mixed Reality](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit)
+4. [Импортируйте Набор средств для смешанной реальности (MRTK)](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit).
 
-5. [Настройка проекта Unity для набора средств Mixed Reality](mrlearning-base-ch1.md#configure-the-unity-project-for-the-mixed-reality-toolkit)
+5. [Настройте проект Unity для Набора средств для смешанной реальности](mrlearning-base-ch1.md#configure-the-unity-project-for-the-mixed-reality-toolkit).
 
-6. [Добавьте набор средств Mixed Reality к сцене Unity](mrlearning-base-ch1.md#configure-the-mixed-reality-toolkit) и присвойте сцене подходящее имя, например *азуреспатиаланчорс* .
+6. [Добавьте Набор средств для смешанной реальности к сцене Unity](mrlearning-base-ch1.md#configure-the-mixed-reality-toolkit) и присвойте этой сцене понятное имя, например *AzureSpatialAnchors*.
 
-Затем следуйте инструкциям в статье [Настройка профилей набора средств для смешанной реальности (изменение режима отображения пространственных сведений)](mrlearning-base-ch2.md#how-to-configure-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option) , чтобы изменить профиль конфигурации мртк для сцены на **DefaultHoloLens2ConfigurationProfile** и изменить параметры отображения для сетки пространственной информации на **перекрытия**.
+Затем следуйте инструкциям [по настройке профилей Набора средств для смешанной реальности (изменение параметра отображения сведений о пространственном состоянии)](mrlearning-base-ch2.md#how-to-configure-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option), чтобы указать для сцены профиль конфигурации MRTK **DefaultHoloLens2ConfigurationProfile** и значение **Перекрытие** для метода отображения сетки отслеживания пространственного положения.
 
 > [!CAUTION]
-> Как упоминалось в разделе [Настройка проекта Unity для инструкций по набору средств Mixed Reality](mrlearning-base-ch1.md#configure-the-unity-project-for-the-mixed-reality-toolkit) , связанных выше, настоятельно рекомендуется не включать MSBuild для Unity.
+> Как описано в инструкции по [настройке проекта Unity для Набора средств для смешанной реальности](mrlearning-base-ch1.md#configure-the-unity-project-for-the-mixed-reality-toolkit), ссылка на которую предложена выше, мы настоятельно рекомендуем не включать MSBuild для Unity.
 
 ## <a name="adding-inbuilt-unity-packages"></a>Добавление встроенных пакетов Unity
 <!-- TODO: Consider renaming to 'Installing AR Foundation' -->
 
-В этом разделе будет выполнена установка встроенного пакета AR Foundation для Unity, так как он необходим для пакета SDK для пространственных привязок Azure, который будет импортирован в следующем разделе.
+В рамках этого раздела вы установите встроенный пакет AR Foundation для Unity, который необходим для пакета SDK Пространственных привязок Azure, который вы будете импортировать в рамках следующей части руководства.
 
-В меню Unity выберите пункт **окно** > **Диспетчер пакетов**:
+В меню Unity последовательно выберите **Window** > **Диспетчер пакетов**:
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section2-step1-1.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section2-step1-1.png)
 
 > [!NOTE]
-> В списке появится пакет AR Foundation, который может занять несколько секунд.
+> Может пройти несколько секунд, прежде чем пакет AR Foundation появится в списке.
 
-В окне Диспетчер пакетов выберите **AR Foundation** и установите пакет, нажав кнопку **установить** .
+В окне диспетчера пакетов выберите **AR Foundation** и установите этот пакет, щелкнув кнопку **Установить**:
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section2-step1-2.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section2-step1-2.png)
 
-## <a name="importing-the-tutorial-assets"></a>Импорт ресурсов учебника
+## <a name="importing-the-tutorial-assets"></a>Импорт активов для руководства
 
-Скачайте и **импортируйте** следующие пользовательские пакеты Unity **в том порядке, в котором они перечислены**:
+Скачайте и **импортируйте** следующие пользовательские пакеты Unity **в указанном здесь порядке**:
 
-* [Азуреспатиаланчорс. пакет unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage) (версия:/с)
-* [МРТК. HoloLens2. Unity. Tutorials. Assets. GettingStarted. 2.3.0.2. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.2/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.2.unitypackage)
-* [МРТК. HoloLens2. Unity. Tutorials. Assets. Азуреспатиаланчорс. 2.3.0.0. пакет unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.0.unitypackage)
+* [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage) (версия 2.1.1);
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.2/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.2.unitypackage);
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.0.unitypackage).
 
 > [!TIP]
-> Напоминание о том, как импортировать пользовательский пакет Unity, можно найти в разделе Импорт инструкций по [набору средств для смешанной реальности](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) .
+> Чтобы вспомнить, как правильно импортировать пользовательский пакет Unity, воспользуйтесь инструкциями из статьи об [импорте Набора средств Смешанной реальности (MRTK)](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit).
 
-После импорта ресурсов учебника окно проекта должно выглядеть следующим образом:
+Когда вы завершите импорт активов для руководства, окно проекта должно выглядеть примерно так:
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section3-step1-1.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section3-step1-1.png)
 
 ## <a name="creating-and-preparing-the-scene"></a>Создание и подготовка сцены
 <!-- TODO: Consider renaming to 'Preparing the scene' -->
 
-В этом разделе вы будете подготавливаем сцену, добавив некоторые из учебника Prefabs.
+В рамках этого раздела вы подготовите сцену, добавив в нее несколько заготовок для руководства.
 
-В окне проекта перейдите к разделу **активы** > **мртк. Учебник. Азуреспатиаланчорс** > **Prefabs** папку. Удерживая нажатой клавишу CTRL, щелкните **буттонпарент**, **DebugWindow**, **инструкции**и **парентанчор** , чтобы выбрать четыре Prefabs:
+В окне проекта перейдите к папке **Assets** (Активы) > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** (Заготовки). Удерживая нажатой клавишу CTRL, последовательно щелкните заготовки **ButtonParent**, **DebugWindow**, **Instructions** и **ParentAnchor**, чтобы выбрать их:
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section4-step1-1.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section4-step1-1.png)
 
-Выбрав четыре Prefabs, перетащите их в окно Иерархия, чтобы добавить их в сцену:
+Когда все четыре заготовки будут выбраны, перетащите их вместе в окно "Иерархия", чтобы добавить в сцену:
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section4-step1-2.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section4-step1-2.png)
 
-Чтобы сосредоточиться на объектах в сцене, можно дважды щелкнуть объект Парентанчор, а затем немного увеличить его:
+Чтобы перенести фокус на объекты сцены, дважды щелкните объект ParentAnchor и немного уменьшите масштаб представления:
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section4-step1-3.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section4-step1-3.png)
 
 > [!TIP]
-> Если вы найдете крупные значки в сцене, например, большие значки «'T» отвлекается от значков, их можно скрыть, переключив <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">приспособлений</a> в положение OFF.
+> Если вы считаете, что большие значки в сцене (как большие "Т" в рамках в нашем примере) отвлекают внимание, их можно спрятать. Для этого <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">переведите манипуляторы</a> в отключенное положение.
 
-## <a name="configuring-the-buttons-to-operate-the-scene"></a>Настройка кнопок для функционирования сцены
+## <a name="configuring-the-buttons-to-operate-the-scene"></a>Настройка кнопок для управления сценой
 
-В этом разделе вы добавите скрипты в сцену, чтобы создать ряд событий кнопок, демонстрирующих принципы поведения локальных и пространственных привязок Azure в приложении.
+В рамках этого раздела вы добавите в сцену скрипты, чтобы создать серию событий кнопок для демонстрации базовых приемов работы и поведения локальных привязок, а также Пространственных привязок Azure в приложении.
 
-### <a name="1-configure-the-pressable-button-holo-lens-2-script-component"></a>1. Настройка нажатой кнопки Холо линза 2 (скрипт)
+### <a name="1-configure-the-pressable-button-holo-lens-2-script-component"></a>1. Настройка компонента Pressable Button Holo Lens 2 (Script)
 
-В окне Иерархия разверните объект **буттонпарент** и выберите первый дочерний объект с именем **стартазуресессион**:
+В окне "Иерархия" разверните объект **ButtonParent**. Выберите в нем первый дочерний объект с именем **StartAzureSession**:
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section5-step1-1.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step1-1.png)
 
-В окне инспектора выберите компонент **Холо линз 2 (скрипт)** , который можно нажать, и добавьте новый прослушиватель событий **нажатием кнопки ()** , щелкнув значок **+** :
+В окне "Инспектор" найдите компонент **Pressable Button Holo Lens 2 (Script)** (Нажимаемая кнопка Holo Lens 2 — скрипт). Добавьте новый прослушиватель событий к событию **Button Pressed ()** (Нажатие кнопки), щелкнув значок **+** :
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section5-step1-2.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step1-2.png)
 
-Когда объект Стартазуресессион все еще выбран в окне Иерархия, щелкните и перетащите объект **парентанчор** из окна Иерархия в пустое поле **None (Object) (пустой объект)** только что добавленного прослушивателя событий, чтобы объект парентанчор прослушивает события нажатия кнопки.
+Сохраняя объект StartAzureSession выделенным в окне "Иерархия", щелкните и перетащите объект **ParentAnchor** из окна "Иерархия" в пустое поле **None (Object)** только что созданного прослушивателя событий, чтобы объект ParentAnchor ожидал передачи данных о событии нажатия для этой кнопки:
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section5-step1-3.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step1-3.png)
 
-Щелкните раскрывающийся список **без функций** того же прослушивателя событий, а затем выберите **анчормодулескрипт** > **стартазуресессион ()** , чтобы задать функцию стартазуресессион () в качестве действия, запускаемого при срабатывании события нажатия кнопки.
+Щелкните раскрывающийся список **No Function** (Нет функции) для того же прослушивателя событий. Затем выберите **AnchorModuleScript** > **StartAzureSession ()** , чтобы назначить функции StartAzureSession () роль действия, которое вызывается при получении от этой кнопки событий нажатия кнопки:
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section5-step1-4.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step1-4.png)
 
-### <a name="2-configure-the-interactable-script-component"></a>2. Настройка компонента, поддерживающего взаимодействие (скрипт)
+### <a name="2-configure-the-interactable-script-component"></a>2. Настройка компонента Interactable (Script)
 
-Если объект Стартазуресессион все еще выбран в окне "иерархия", в окне инспектора выберите компонент " **взаимодействие (скрипт)** " и повторите тот же процесс, что и в шаге 1 выше для события **OnClick ()** :
+Сохраняя объект StartAzureSession выделенным в окне "Иерархия", найдите в окне "Инспектор" компонент **Interactable (Script)** (Взаимодействие — скрипт). Повторно выполните описанный выше в шаге 1 процесс для события **OnClick ()** (Щелчок):
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section5-step2-1.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step2-1.png)
 
-### <a name="3-configure-the-remaining-buttons"></a>3. Настройка оставшихся кнопок
+### <a name="3-configure-the-remaining-buttons"></a>3. Настройка остальных кнопок
 
-Для каждой из оставшихся кнопок выполните процедуру, описанную в шагах 1 и 2, чтобы назначить функции для событий **нажатия кнопки ()** и **OnClick ()** .
+Для всех остальных кнопок повторно выполните процессы, которые описаны выше в шагах 1 и 2, чтобы назначить функции событиям **Button Pressed ()** (Нажатие кнопки) и **OnClick ()** (Щелчок) следующим образом:
 
-* Для объекта **стопазуресессион** назначьте функцию Анчормодулескрипт > **стопазуресессион ()** .
-* Для объекта **креатеазуреанчор** назначьте функцию Анчормодулескрипт > **креатеазуреанчор ()** ,
-  * затем перетащите **парентанчор** в пустое поле **None (Game Object)** .
-* Для объекта **ремовелокаланчор** назначьте функцию Анчормодулескрипт > **ремовелокаланчор ()** ,
-  * затем перетащите **парентанчор** в пустое поле **None (Game Object)** .
-* Для объекта **финдазуреанчор** назначьте функцию Анчормодулескрипт > **финдазуреанчор ()** .
-* Для объекта **делетеазуреанчор** назначьте функцию Анчормодулескрипт > **делетеазуреанчор ()** .
+* Для объекта **StopAzureSession** назначьте функцию AnchorModuleScript > **StopAzureSession ()** .
+* Для объекта **CreateAzureAnchor** назначьте функцию AnchorModuleScript > **CreateAzureAnchor ()** .
+  * Затем снова перетащите **ParentAnchor** в пустое поле **None (Game Object)** .
+* Для объекта **RemoveLocalAnchor** назначьте функцию AnchorModuleScript > **RemoveLocalAnchor ()** .
+  * Затем снова перетащите **ParentAnchor** в пустое поле **None (Game Object)** .
+* Для объекта **FindAzureAnchor** назначьте функцию AnchorModuleScript > **FindAzureAnchor ()** .
+* Для объекта **DeleteAzureAnchor** назначьте функцию AnchorModuleScript > **DeleteAzureAnchor ()** .
 
 ### <a name="4-connect-the-scene-to-the-azure-resource"></a>4. Подключение сцены к ресурсу Azure
 
-В окне «Иерархия» выберите объект **парентанчор** и в окне инспектора прокрутите вниз до компонента « **Диспетчер пространственных привязок» (script)** .
+В окне "Иерархия" выберите объект **ParentAnchor**. Затем в окне "Инспектор" прокрутите содержимое вниз до компонента **Spatial Anchor Manager (Script)** (Диспетчер пространственных привязок — скрипт).
 
-Затем в разделе **учетные данные** вставьте идентификатор и ключ учетной записи пространственной привязки, созданный в рамках [предварительных требований](mrlearning-asa-ch1.md#prerequisites)этого учебника, в соответствующие поля **идентификатор учетной записи пространственных** привязок и **ключ учетной записи пространственных привязок** .
+Теперь в разделе **Учетные данные** вставьте значения идентификатора и ключа учетной записи Пространственных привязок, которую вы создали при подготовке [предварительных условий](mrlearning-asa-ch1.md#prerequisites) для этого руководства, в соответствующие поля **Spatial Anchors Account Id** (Идентификатор учетной записи пространственных привязок) и **Spatial Anchors Account Key** (Ключ учетной записи пространственных привязок):
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section5-step4-1.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step4-1.png)
 
-## <a name="trying-the-basic-behaviors-of-azure-spatial-anchors"></a>Попытка базового поведения пространственных привязок Azure
+## <a name="trying-the-basic-behaviors-of-azure-spatial-anchors"></a>Изучение базового поведения Пространственных привязок Azure
 
-Теперь, когда сцена настроена на демонстрацию основ пространственных привязок Azure, пора развернуть приложение, чтобы вы могли работать с пространственными привязками Azure.
+Теперь, когда в сцене все готово для работы с основными функциями Пространственных привязок Azure, можно развернуть приложение и познакомиться с Пространственными привязками Azure.
 
-### <a name="1-add-additional-required-capabilities"></a>1. Добавьте дополнительные необходимые возможности
+### <a name="1-add-additional-required-capabilities"></a>1. Добавление дополнительных требуемых возможностей
 
-В меню Unity выберите **изменить** > **Параметры проекта...** , чтобы открыть окно Параметры проигрывателя:
+В меню Unity последовательно щелкните элементы **Edit (Правка)**  > **Project Settings... (Параметры проекта...)** , чтобы открыть окно параметров проигрывателя:
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section6-step1-1.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section6-step1-1.png)
 
-В окне Параметры проигрывателя выберите **проигрыватель** , а затем **Параметры публикации**.
+В окне "Параметры проигрывателя" выберите элемент **Проигрыватель**, а затем — элемент **Параметры публикации**:
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section6-step1-2.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section6-step1-2.png)
 
-В разделе " **Параметры публикации**" прокрутите вниз до раздела " **возможности** " и дважды убедитесь, что возможности **InternetClient**, **Microphone**и **спатиалперцептион** , включенные при создании проекта в начале этого руководства, включены. Затем включите возможности **интернетклиентсервер**, **приватенетворкклиентсервер**, **ремоваблестораже**и веб- **камеры** :
+В окне **Publishing Settings** (Параметры публикации) прокрутите содержимое вниз до раздела **Capabilities** (Возможности) и убедитесь, что здесь включены возможности **InternetClient** (Интернет-клиент), **Microphone** (Микрофон) и **SpatialPerception** (Пространственное восприятие), которые вы включили при создании проекта в начале работы с этим руководством. Теперь включите возможности **InternetClientServer** (Сервер интернет-клиента), **PrivateNetworkClientServer** (Сервер клиента частной сети), **RemovableStorage** (Съемный носитель) и **Webcam** (Веб-камера):
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section6-step1-3.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section6-step1-3.png)
 
-### <a name="2-deploy-the-app-to-your-hololens-2"></a>2. Развертывание приложения в HoloLens 2
+### <a name="2-deploy-the-app-to-your-hololens-2"></a>2. Разверните приложение на устройстве HoloLens 2
 
-Пространственные привязки Azure не могут выполняться в Unity, поэтому для тестирования функциональности пространственных привязок Azure необходимо развернуть проект на устройстве.
+Пространственные привязки Azure не могут работать в Unity. Поэтому для проверки функциональных возможностей этой службы вам придется развернуть проект на устройстве.
 
 > [!TIP]
-> Напоминание о том, как создать и развернуть проект Unity в HoloLens 2, можно найти в руководстве по [сборке приложения на устройстве](mrlearning-base-ch1.md#build-your-application-to-your-device) .
+> Чтобы вспомнить, как правильно скомпилировать проект Unity и развернуть его на HoloLens 2, воспользуйтесь инструкциями из раздела о [разработке приложения для устройства](mrlearning-base-ch1.md#build-your-application-to-your-device).
 
-### <a name="3-run-the-app-on-your-hololens-2-and-follow-the-in-app-instructions"></a>3. Запустите приложение в HoloLens 2 и следуйте инструкциям в приложении.
+### <a name="3-run-the-app-on-your-hololens-2-and-follow-the-in-app-instructions"></a>3. Запустите приложение на HoloLens 2 и следуйте предоставленным инструкциям
 
 > [!CAUTION]
-> Пространственные привязки Azure используют Интернет для сохранения и загрузки данных привязки, чтобы убедиться, что устройство подключено к Интернету.
+> Пространственные привязки Azure используют Интернет для сохранения и загрузки данных привязки. Поэтому обеспечьте подключение устройства к Интернету.
 
-Когда приложение запускается на устройстве, следуйте инструкциям на экране на панели инструкции учебника по пространственной точке управления Azure:
+Запустив на устройстве приложение, выполните инструкции, представленные на экране панели со сведениями для руководства по Пространственным привязкам Azure.
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section6-step3-1.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section6-step3-1.png)
 
-## <a name="anchoring-an-experience"></a>Привязка интерфейса
+## <a name="anchoring-an-experience"></a>Привязка к взаимодействию
 
-В предыдущих разделах вы узнали основы пространственных привязок Azure. Мы использовали куб для представления и визуализации родительского объекта Game с присоединенной привязкой. В этом разделе вы узнаете, как закрепить весь интерфейс, поместив его в качестве дочернего элемента объекта Парентанчор.
+В предыдущих разделах вы изучили базовые принципы Пространственных привязок Azure. С помощью куба мы представили и визуализировали родительский объект игры с прикрепленной привязкой. Из этого раздела вы узнаете, как привязать взаимодействие целиком, разместив его в дочернем элементе объекта ParentAnchor.
 
-### <a name="1-add-the-rocket-launcher-experience"></a>1. Добавьте интерфейс запуска Rocket
+### <a name="1-add-the-rocket-launcher-experience"></a>1. Добавление взаимодействия Rocket Launcher
 
-В окне проекта перейдите к **ресурсам** > **мртк. Учебник. GettingStarted** > **Prefabs** > **роккетлаунчер** папка и выберите **RocketLauncher_Complete** Prefab:
+В окне проекта перейдите к папке **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **RocketLauncher** и выберите заготовку **RocketLauncher_Complete**:
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section7-step1-1.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section7-step1-1.png)
 
-Выбрав RocketLauncher_Complete prefab, перетащите его поверх объекта **парентанчор** в окне иерархии, чтобы сделать его дочерним элементом объекта парентанчор:
+Сохраняя выбранной заготовку RocketLauncher_Complete, перетащите ее поверх объекта **ParentAnchor** в окне "Иерархия", чтобы сделать дочерним элементом объекта ParentAnchor:
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section7-step1-2.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section7-step1-2.png)
 
-### <a name="2-reposition-the-rocket-launcher-experience"></a>2. изменение расположения процесса запуска Rocket
+### <a name="2-reposition-the-rocket-launcher-experience"></a>2. Перемещение взаимодействия Rocket Launcher
 
-Размещение, поворот и масштабирование объекта **RocketLauncher_Complete** с учетом подходящего масштаба и ориентации, а также обеспечение того, что объект **парентанчор** по-прежнему предоставляется, например:
+Вы можете изменять положение, угол наклона и масштаб объекта **RocketLauncher_Complete** произвольным образом, сохраняя объект **ParentAnchor** открытым, например:
 
-* **Координата Transform X** = 0, Y = 0, Z = 3,75
-* **Поворот** преобразования X = 0, Y = 90, Z = 0
-* Преобразование **масштаба** X = 10, Y = 10, Z = 10
+* для параметра преобразования **Position** (Положение) укажите значения X = 0, Y = 0, Z = 3.75;
+* для параметра преобразования **Rotation** (Поворот) укажите значения X = 0, Y = 90, Z = 0;
+* для параметра преобразования **Scale** (Масштаб) укажите значения X = 10, Y = 10, Z = 10.
 
-![мрлеарнинг-ASA](images/mrlearning-asa/tutorial1-section7-step2-1.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial1-section7-step2-1.png)
 
-В приложении пользователи теперь могут перемещать весь процесс запуска Rocket, перемещая куб.
+В этом приложении пользователи могут перемещать взаимодействие Rocket Launcher целиком, передвигая соответствующий куб.
 
 > [!TIP]
-> Существует множество потоков взаимодействия с пользователем для изменения положения, включая использование объекта изменения положения (например, Куба, используемого в этом руководстве), использование кнопки для переключения ограничивающего прямоугольника, окружающего интерфейс, использование положения и вращения. приспособлений и многое другое.
+> Есть много потоков взаимодействия с пользователем для изменения положения, в том числе: перемещение объекта (например, куба в этом руководстве), включение ограничивающего прямоугольника вокруг взаимодействия нажатием кнопки, применение манипуляторов положения и вращения и другие.
 
 ## <a name="congratulations"></a>Поздравляем!
 
-В этом руководстве вы узнали основы пространственных привязок Azure. В руководстве предоставлено несколько кнопок, позволяющих изучить различные шаги, необходимые для запуска и завершения сеанса пространственных привязок Azure, а также для создания, отправки и скачивания пространственных привязок Azure на одном устройстве.
+В рамках этого руководства вы изучили базовые принципы Пространственных привязок Azure. Этого руководство предоставило вам несколько кнопок, которые помогли изучить процессы, необходимые для запуска и завершения сеанса Пространственных привязок Azure, а также создания, отправки и скачивания привязок Azure на одном устройстве.
 
-На следующем занятии вы узнаете, как сохранять идентификаторы привязки Azure в HoloLens 2 для получения, даже после перезапуска приложения, а также как передавать идентификаторы привязки между несколькими устройствами для достижения пространственного выравнивания.
+Из следующего урока вы узнаете, как сохранить идентификаторы привязок Azure на устройстве HoloLens 2 таким образом, чтобы их можно было извлечь даже после перезапуска, и как передавать идентификаторы привязок между несколькими устройствами для достижения пространственного выравнивания.
 
-[Следующее занятие: 2. сохранение, получение и совместное использование пространственных привязок Azure](mrlearning-asa-ch2.md)
+[Следующий урок. 2. Сохранение, получение и совместное использование пространственных привязок Azure](mrlearning-asa-ch2.md)
