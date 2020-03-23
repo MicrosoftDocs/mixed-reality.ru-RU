@@ -1,45 +1,57 @@
 ---
-title: Учебники по службам речи Azure — 2. Добавление автономного режима для локального перевода речи в текст
-description: Пройдите этот курс, чтобы узнать, как реализовать пакет SDK для службы распознавания речи Azure в приложении смешанной реальности.
+title: Руководства по использованию службы "Речь" в Azure, часть 2. Добавление автономного режима для преобразования речи в текст в локальной среде
+description: В рамках этого курса вы узнаете, как реализовать пакет SDK "Речь" в приложении смешанной реальности.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
-ms.openlocfilehash: 962d7d4750cf59fe56de4af9088c90e8ecd0aa16
-ms.sourcegitcommit: b6b76275fad90df6d9645dd2bc074b7b2168c7c8
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 75ddce9063bb9d33f5fe2343fe30178222a5f8ac
+ms.sourcegitcommit: 5b2ba01aa2e4a80a3333bfdc850ab213a1b523b9
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73913212"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79031624"
 ---
-# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a><span data-ttu-id="a4c61-105">2. Добавление автономного режима для локального перевода речи в текст</span><span class="sxs-lookup"><span data-stu-id="a4c61-105">2. Adding an offline mode for local speech-to-text translation</span></span>
+# <a name="2-using-speech-recognition-to-execute-commands"></a><span data-ttu-id="ad7a3-105">2. Использование функции распознавания речи для выполнения команд</span><span class="sxs-lookup"><span data-stu-id="ad7a3-105">2. Using speech recognition to execute commands</span></span>
 
-<span data-ttu-id="a4c61-106">В этом руководстве мы добавим автономный режим, который позволяет выполнять локальные преобразования речи в текст, когда не удается подключиться к службе Azure.</span><span class="sxs-lookup"><span data-stu-id="a4c61-106">In this tutorial, we'll add an offline mode that lets you perform local speech-to-text translation when we are unable to connect to the Azure service.</span></span> <span data-ttu-id="a4c61-107">Кроме того, мы будем *имитировать* отключенное состояние.</span><span class="sxs-lookup"><span data-stu-id="a4c61-107">We will also *simulate* a disconnected state.</span></span>
+<span data-ttu-id="ad7a3-106">В этом руководстве вы добавите возможность выполнения команд с помощью распознавания речи Azure, что позволит выполнять действия по определенным в приложении словам или фразам.</span><span class="sxs-lookup"><span data-stu-id="ad7a3-106">In this tutorial, you will add the ability to execute commands using Azure speech recognition which will allow you to make something happen based on the word or phrase you define.</span></span>
 
-## <a name="instructions"></a><span data-ttu-id="a4c61-108">Инструкция</span><span class="sxs-lookup"><span data-stu-id="a4c61-108">Instructions</span></span>
+## <a name="objectives"></a><span data-ttu-id="ad7a3-107">Задачи</span><span class="sxs-lookup"><span data-stu-id="ad7a3-107">Objectives</span></span>
 
-1. <span data-ttu-id="a4c61-109">Выберите объект Lunarcom_Base в иерархии.</span><span class="sxs-lookup"><span data-stu-id="a4c61-109">Select the Lunarcom_Base object in the hierarchy.</span></span>
+* <span data-ttu-id="ad7a3-108">Изучение возможностей по применению распознавания речи Azure для выполнения команд</span><span class="sxs-lookup"><span data-stu-id="ad7a3-108">Learn how Azure speech recognition can be used to execute commands</span></span>
 
-2. <span data-ttu-id="a4c61-110">Нажмите кнопку Добавить компонент на панели инспектора.</span><span class="sxs-lookup"><span data-stu-id="a4c61-110">Click Add Component in the Inspector panel.</span></span> <span data-ttu-id="a4c61-111">Найдите и выберите автономное распознавание Лунарком.</span><span class="sxs-lookup"><span data-stu-id="a4c61-111">Search for and select the Lunarcom Offline Recognition.</span></span>
+## <a name="instructions"></a><span data-ttu-id="ad7a3-109">Инструкции</span><span class="sxs-lookup"><span data-stu-id="ad7a3-109">Instructions</span></span>
 
-    ![Module4Chapter2step1im](images/module4chapter2step1im.PNG)
+<span data-ttu-id="ad7a3-110">В окне Hierarchy (Иерархия) выберите объект **Lunarcom**, а затем в окне Inspector (Инспектор) с помощью кнопки **Add Component** (Добавить компонент) добавьте компонент **Lunarcom Wake Word Recognizer (Script)** (Распознаватель слова для пробуждения Lunarcom — скрипт) к объекту Lunarcom и настройте его, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="ad7a3-110">In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Wake Word Recognizer (Script)** component to the Lunarcom object and configure it as follows:</span></span>
 
-3. <span data-ttu-id="a4c61-113">Щелкните раскрывающийся список в Лунаркомоффлинерекогнизер и выберите включено.</span><span class="sxs-lookup"><span data-stu-id="a4c61-113">Click the drop-down in the LunarcomOfflineRecognizer and select Enabled.</span></span> <span data-ttu-id="a4c61-114">Этот проект будет работать так же, как у пользователя нет подключения.</span><span class="sxs-lookup"><span data-stu-id="a4c61-114">This programs the project to act like the user doesn't have a connection.</span></span>
+* <span data-ttu-id="ad7a3-111">В поле **Wake Word** (Слово для пробуждения) введите подходящую фразу, например _Activate terminal_ (Активировать терминал).</span><span class="sxs-lookup"><span data-stu-id="ad7a3-111">In the **Wake Word** field, enter a suitable phrase, for example, _Activate terminal_.</span></span>
+* <span data-ttu-id="ad7a3-112">В поле **Dismiss Word** (Слово для отключения) введите подходящую фразу, например _Dismiss terminal_ (Отключить терминал).</span><span class="sxs-lookup"><span data-stu-id="ad7a3-112">In the **Dismiss Word** field, enter a suitable phrase, for example, _Dismiss terminal_.</span></span>
 
-    ![Module4Chapter2step1im](images/module4chapter2step2im.PNG)
+![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-1.png)
 
-4. <span data-ttu-id="a4c61-116">Нажмите кнопку Воспроизведение в редакторе Unity и проверьте его.</span><span class="sxs-lookup"><span data-stu-id="a4c61-116">Press Play in Unity Editor, and test it.</span></span> <span data-ttu-id="a4c61-117">Нажмите микрофон в левом нижнем углу сцены и начните говорить.</span><span class="sxs-lookup"><span data-stu-id="a4c61-117">Press the microphone in the bottom-left corner in the scene and begin speaking.</span></span>
+> [!NOTE]
+> <span data-ttu-id="ad7a3-114">Компонент Lunarcom Wake Word Recognizer (Script) (Распознаватель слова для пробуждения Lunarcom — скрипт) не входит в состав MRTK.</span><span class="sxs-lookup"><span data-stu-id="ad7a3-114">The Lunarcom Wake Word Recognizer (Script) component is not part of MRTK.</span></span> <span data-ttu-id="ad7a3-115">Он был предоставлен с активами для этого руководства.</span><span class="sxs-lookup"><span data-stu-id="ad7a3-115">It was provided with this tutorial's assets.</span></span>
 
-    >[!NOTE]
-    ><span data-ttu-id="a4c61-118">Так как мы отключены от сети, функции пробуждения слова недоступны.</span><span class="sxs-lookup"><span data-stu-id="a4c61-118">Because we’re offline, wake word functionality has been disabled.</span></span> <span data-ttu-id="a4c61-119">Вам нужно будет физически щелкать микрофон каждый раз, когда вы хотите, чтобы распознавание речи было признано в автономном режиме.</span><span class="sxs-lookup"><span data-stu-id="a4c61-119">You'll need to physically click the microphone every time you wish to have your speech recognized when offline.</span></span>
+<span data-ttu-id="ad7a3-116">Если теперь вы входите в игровой режим, как описано в предыдущем руководстве, панель терминала будет по умолчанию включена, но вы сможете ее отключить, произнеся настроенное слово для отключения **Dismiss terminal**:</span><span class="sxs-lookup"><span data-stu-id="ad7a3-116">If you now enter Game mode, as in the previous tutorial, the terminal panel is enabled by default, but you can now disable it by saying the Dismiss Word, **Dismiss terminal**:</span></span>
 
-    <span data-ttu-id="a4c61-120">Ниже приведен пример того, как может выглядеть сцена.</span><span class="sxs-lookup"><span data-stu-id="a4c61-120">Below is an example of what your scene could look like.</span></span>
+![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-2.png)
 
-    ![Module4Chapter2exampleim](images/module4chapter2exampleim.PNG)
+<span data-ttu-id="ad7a3-118">Чтобы снова включить терминал, произнесите слово для пробуждения **Activate terminal**:</span><span class="sxs-lookup"><span data-stu-id="ad7a3-118">And enable it again by saying the Wake Word, **Activate terminal**:</span></span>
 
-## <a name="congratulations"></a><span data-ttu-id="a4c61-122">Поздравляем!</span><span class="sxs-lookup"><span data-stu-id="a4c61-122">Congratulations</span></span>
+![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-3.png)
 
-<span data-ttu-id="a4c61-123">Автономный режим включен.</span><span class="sxs-lookup"><span data-stu-id="a4c61-123">The offline mode has been enabled.</span></span> <span data-ttu-id="a4c61-124">Теперь, когда вы работаете в автономном режиме, вы по-прежнему можете работать над проектом с помощью Speech-SDK!</span><span class="sxs-lookup"><span data-stu-id="a4c61-124">Now, when you're offline, you can still work on your project with the speech-SDK!</span></span>
+> [!CAUTION]
+> <span data-ttu-id="ad7a3-120">Этому приложению требуется подключение к Azure, поэтому не забудьте проверить связь компьютера или устройства с Интернетом.</span><span class="sxs-lookup"><span data-stu-id="ad7a3-120">The application needs to connect to Azure, so make sure your computer/device is connected to the internet.</span></span>
 
-[<span data-ttu-id="a4c61-125">Следующее руководство: 3. Добавление компонента перевода речи Azure Cognitive Services</span><span class="sxs-lookup"><span data-stu-id="a4c61-125">Next Tutorial: 3. Adding the Azure Cognitive Services speech translation component</span></span>](mrlearning-speechSDK-ch3.md)
+> [!TIP]
+> <span data-ttu-id="ad7a3-121">Если вы ожидаете, что подключение к Azure часто будет невозможным, речевые команды можно реализовать с помощью МRТК по инструкциям из раздела [Enabling Voice Commands](mrlearning-base-ch5.md#enabling-voice-commands) (Включение голосовых команд).</span><span class="sxs-lookup"><span data-stu-id="ad7a3-121">If you anticipate frequently not being able to connect to Azure, you can also implement speech commands using MRTK by following the [Enabling Voice Commands](mrlearning-base-ch5.md#enabling-voice-commands) instructions.</span></span>
+
+## <a name="congratulations"></a><span data-ttu-id="ad7a3-122">Поздравляем!</span><span class="sxs-lookup"><span data-stu-id="ad7a3-122">Congratulations</span></span>
+
+<span data-ttu-id="ad7a3-123">Вы успешно реализовали функцию речевых команд на платформе Azure.</span><span class="sxs-lookup"><span data-stu-id="ad7a3-123">You have implemented speech commands powered by Azure.</span></span> <span data-ttu-id="ad7a3-124">Запустите приложение на устройстве и убедитесь, что все работает правильно.</span><span class="sxs-lookup"><span data-stu-id="ad7a3-124">Run the application on your device to ensure the feature is working properly.</span></span>
+
+<span data-ttu-id="ad7a3-125">В следующем учебнике вы узнаете, как переводить текст с помощью распознавания речи Azure.</span><span class="sxs-lookup"><span data-stu-id="ad7a3-125">In the next tutorial, you will learn how to translate speech using Azure speech translation.</span></span>
+
+[<span data-ttu-id="ad7a3-126">Следующее руководство: 3. Добавление компонента перевода речи Azure Cognitive Services</span><span class="sxs-lookup"><span data-stu-id="ad7a3-126">Next Tutorial: 3. Adding the Azure Cognitive Services speech translation component</span></span>](mrlearning-speechSDK-ch3.md)
