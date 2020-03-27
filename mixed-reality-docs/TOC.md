@@ -198,14 +198,19 @@
 ## Unreal
 ### [Обзор разработки для Unreal](unreal-development-overview.md)
 ## WebVR
-### [Использование WebVR в Edge с Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
+### [Использование WebVR в Microsoft Edge с Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
 ## Собственный
 ### [Обзор разработки для собственной платформы](directx-development-overview.md)
-### Начало работы
+### OpenXR
+#### [Обзор OpenXR](openxr.md)
+#### [Начало работы с OpenXR](openxr-getting-started.md)
+#### [Рекомендации по работе с OpenXR](openxr-best-practices.md)
+#### [Производительность OpenXR](openxr-performance.md)
+#### [Устранение неполадок с OpenXR](openxr-troubleshooting.md)
+### WinRT
 #### [Создание собственного голографического проекта](creating-a-holographic-directx-project.md)
 #### [Получение HolographicSpace](getting-a-holographicspace.md)
 #### [Собственная отрисовка](rendering-in-directx.md)
-### [OpenXR](openxr.md)
 ## Возможности и интерфейсы API платформы
 ### Основные компоненты
 #### [Системы координат](coordinate-systems-in-directx.md)
