@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: Опенкср, Кхронос, Басикксрапп, DirectX, Native, собственное приложение, настраиваемое ядро, по промежуточного слоя, рекомендации, производительность, качество, стабильность
-ms.openlocfilehash: 01ce2ac0a69ffdf5dd1f00b92f37f54964f4c30c
-ms.sourcegitcommit: 9de2cb11321e6517db69e8c93459a205900a2174
+ms.openlocfilehash: c0ddbd0604760ccae34d347e93b918be4aead269
+ms.sourcegitcommit: 536fd45b48a70bbeca1454cef517ae007225e533
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80163358"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80362020"
 ---
 # <a name="openxr-app-best-practices"></a>Рекомендации по приложениям Опенкср
 
-Ниже приведены примеры лучших методов в файле [опенксрпрограм. cpp](https://github.com/microsoft/OpenXR-SDK-VisualStudio/blob/master/samples/BasicXrApp/OpenXrProgram.cpp) для басикксрапп. Функция Run () в начале фиксирует типичный поток кода приложения Опенкср из инициализации в цикле событий и отрисовки.
+Ниже приведены примеры лучших методов в файле Опенксрпрограм. cpp для <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">басикксрапп</a>. Функция Run () в начале фиксирует типичный поток кода приложения Опенкср из инициализации в цикле событий и отрисовки.
 
 ## <a name="best-practices-for-visual-quality-and-stability"></a>Рекомендации по качеству и стабильности визуального элемента
 

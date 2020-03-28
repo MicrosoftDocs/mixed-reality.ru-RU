@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: Опенкср, Кхронос, Басикксрапп, портал разработчика Windows Mixed Reality Опенкср, DirectX, Native, собственное приложение, настраиваемый механизм, по промежуточного слоя, начало работы, 101, расширения для предварительного просмотра
-ms.openlocfilehash: 7a210ce25d1e7c22710f1029aca2ca7f55a8b71c
-ms.sourcegitcommit: 9de2cb11321e6517db69e8c93459a205900a2174
+ms.openlocfilehash: db45308834f920413420f080a35b378f6a55fa49
+ms.sourcegitcommit: 536fd45b48a70bbeca1454cef517ae007225e533
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80163338"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80362030"
 ---
 # <a name="getting-started-with-openxr"></a>Начало работы с Опенкср
 
@@ -50,7 +50,7 @@ ms.locfileid: "80163338"
 
 Не забудьте [установить средства](install-the-tools.md) , необходимые для разработки опенкср, если это еще не сделано.
 
-Проект <a href="https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp" target="_blank">басикксрапп</a> демонстрирует простой пример опенкср с двумя файлами проекта Visual Studio: один для классического приложения Win32 и один для приложения UWP HoloLens 2.  Так как решение содержит проект HoloLens UWP, для его полного открытия вам потребуется [Рабочая нагрузка "разработка универсальная платформа Windows](install-the-tools.md#installation-checklist) ", установленная в Visual Studio.
+Проект <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">басикксрапп</a> демонстрирует простой пример опенкср с двумя файлами проекта Visual Studio: один для классического приложения Win32 и один для приложения UWP HoloLens 2.  Так как решение содержит проект HoloLens UWP, для его полного открытия вам потребуется [Рабочая нагрузка "разработка универсальная платформа Windows](install-the-tools.md#installation-checklist) ", установленная в Visual Studio.
 
 Обратите внимание, что хотя файлы проекта Win32 и UWP являются отдельными из-за различий в упаковке и развертывании, код приложения внутри каждого проекта составляет 100%.
 
@@ -77,7 +77,7 @@ ms.locfileid: "80163338"
 1. Нажмите кнопку ОК, чтобы принять изменения в проекте.
 1. Добавьте `#include <openxr/openxr.h>` в исходный файл, чтобы начать использовать API Опенкср.
 
-Чтобы увидеть пример API Опенкср в действии, ознакомьтесь с примером приложения <a href="https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp" target="_blank">басикксрапп</a> .
+Чтобы увидеть пример API Опенкср в действии, ознакомьтесь с примером приложения <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">басикксрапп</a> .
 
 ### <a name="include-official-openxr-loader-source"></a>Включить официальный источник загрузчика Опенкср
 
@@ -99,7 +99,7 @@ ms.locfileid: "80163338"
      * Если целевое устройство является настольным компьютером с подключенным головным периферийным устройством, <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop#set-up-device-portal-on-windows-desktop" target="_blank">следуйте этим инструкциям</a> на целевом настольном компьютере.
   1. Перейдите на вкладку **опенкср** в левой области и включите **последнюю версию среды выполнения предварительной версии опенкср**.  Это позволит среде выполнения предварительной версии на устройстве с активированными расширениями предварительного просмотра.
 
-Документацию по этим расширениям и примеры использования этих расширений см. в <a href="https://github.com/Microsoft/OpenXR-MixedReality#openxr-preview-extensions" target="_blank">репозитории Опенкср смешанной реальности</a> .
+Документацию по этим расширениям и примеры использования этих расширений см. в <a href="https://github.com/microsoft/OpenXR-MixedReality#openxr-preview-extensions" target="_blank">репозитории Опенкср смешанной реальности</a> .
 
 ## <a name="troubleshooting"></a>Диагностика
 
