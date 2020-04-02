@@ -7,18 +7,20 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: графика, ЦП, GPU, преобразование для просмотра, сборка мусора, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: f889d899ba55f4b3040080f6632cd27db86d6fc3
-ms.sourcegitcommit: ee8c7e821cb337cbccd8af64b13ee5f50109a776
+ms.openlocfilehash: 18691ab7993b2802268d3c4ce05532dfa5bd1723
+ms.sourcegitcommit: 9de2cb11321e6517db69e8c93459a205900a2174
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80082070"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80160020"
 ---
 # <a name="performance-recommendations-for-unity"></a>Рекомендации по производительности для Unity
 
 Эта статья основана на обсуждении, начатом в [рекомендациях по производительности для смешанной реальности](understanding-performance-for-mixed-reality.md), но посвящена более узким вопросам, имеющим отношение к среде подсистемы Unity.
 
-Мы настоятельно рекомендуем каждому разработчику изучить статью с [рекомендациями по настройкам среды для Unity](Recommended-settings-for-unity.md). В этой статье содержится информация о самых важных конфигурациях сцены для создания производительных приложений смешанной реальности. Некоторые из этих рекомендаций отдельно выделены ниже.
+## <a name="use-recommended-unity-project-settings"></a>Использование рекомендуемых параметров проекта Unity
+
+Самый важный шаг при оптимизации производительности приложений смешанной реальности в Unity — использовать [рекомендуемые параметры среды для Unity](recommended-settings-for-unity.md). В этой статье содержится информация о самых важных конфигурациях сцены для создания производительных приложений смешанной реальности. Некоторые из этих рекомендаций отдельно выделены ниже.
 
 ## <a name="how-to-profile-with-unity"></a>Профилирование с помощью Unity
 

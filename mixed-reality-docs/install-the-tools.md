@@ -7,12 +7,12 @@ ms.date: 3/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit
-ms.openlocfilehash: 447260d9115ba58c9ed5ea286732e3406bb07154
-ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
+ms.openlocfilehash: a2f62ecad1d6f1bbe90b3684391e6a1825de9d00
+ms.sourcegitcommit: 536fd45b48a70bbeca1454cef517ae007225e533
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79376131"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80362053"
 ---
 # <a name="install-the-tools"></a>Установка инструментов
 
@@ -35,7 +35,7 @@ ms.locfileid: "79376131"
 | Средство | Описание | Примечания |
 |---------|---------|---------|
 | ![Логотип Windows](images/Windows10_logo.png)<br><br><a href="https://www.microsoft.com/software-download/windows10" target="_blank">**Windows 10** (ссылка для установки вручную)</a> | Установите самую последнюю версию Windows 10, чтобы операционная система вашего компьютера соответствовала платформе, для которой вы создаете приложения смешанной реальности. | **Установка Windows 10** <br> <ul><li>Вы можете установить последнюю версию Windows 10 с помощью клиентского компонента Центра обновления Windows, к которому можно перейти в разделе параметров, или путем создания установочного носителя (открыв ссылку, указанную в левом столбце).<li>Сведения о новых функциях смешанной реальности, доступных в каждом выпуске Windows 10, см. в [заметках о текущем выпуске](release-notes-october-2018.md).</ul> **Включите режим разработчика на компьютере** в разделе "Параметры > Обновление и безопасность > Для разработчиков". <br><br> **Примечание, касающееся корпоративных компьютеров.** Если вашим компьютером управляет ИТ-отдел вашей организации, возможно, вам потребуется связаться с его сотрудниками для обновления. <br><br> **N-версии Windows.** Иммерсивные гарнитуры (виртуальная реальность) Windows Mixed Reality не поддерживаются в N-версиях Windows. |
-| ![Логотип Visual Studio](images/visualstudio_logo.png)<br><br><a href="https://visualstudio.microsoft.com/downloads/" target="_blank">**Visual Studio 2019 (версии 16.2 или более поздней)** (ссылка для установки)</a> | Полнофункциональная интегрированная среда разработки (IDE) для Windows и многое другое. Вы будете использовать Visual Studio для написания кода, отладки, тестирования и развертывания. | **Рабочие нагрузки, которые нужно установить:** <ul><li>"Разработка классических приложений на C++";</li><li>Разработка приложений универсальной платформы Windows (UWP)</li></ul>**Примечание касательно Unity.** Если вам не нужно устанавливать более новую (не с долгосрочной поддержкой (LTS)) версию Unity для конкретной цели, советуем *не* устанавливать рабочую нагрузку Unity в составе установки Visual Studio, а вместо этого установить версию Unity 2018.4 LTS, как отмечено ниже.<br> <br>**Примечание**. Сейчас в Visual Studio 2019 (версия 16.0) существует ряд известных проблем с отладкой приложений смешанной реальности.  Обновите Visual Studio 2019 до версии 16.2 или более поздней. |
+| ![Логотип Visual Studio](images/visualstudio_logo.png)<br><br><a href="https://visualstudio.microsoft.com/downloads/" target="_blank">**Visual Studio 2019 (версии 16.2 или более поздней)** (ссылка для установки)</a> | Полнофункциональная интегрированная среда разработки (IDE) для Windows и многое другое. Вы будете использовать Visual Studio для написания кода, отладки, тестирования и развертывания. | Установите следующие рабочие нагрузки: <ul><li>**Разработка классических приложений на C++**</li><li>**Разработка приложений универсальной платформы Windows (UWP)**</li></ul>В рабочей нагрузке UWP обязательно проверьте следующий дополнительный компонент, если вы выполняете разработку для HoloLens:<ul><li>**Подключение USB-устройств**</li></ul>**Примечание касательно Unity.** Если вам не нужно устанавливать более новую (не LTS) версию Unity для своих задач, советуем *не* устанавливать рабочую нагрузку Unity в составе установки Visual Studio, а вместо этого установить версию **Unity 2018.4 LTS**, как показано ниже.<br> <br>**Примечание**. Сейчас в Visual Studio 2019 (версия 16.0) существует ряд известных проблем с отладкой приложений смешанной реальности.  Обновите **Visual Studio 2019 до версии не ниже 16.2**. |
 | ![Логотип Windows](images/Windows10_logo.png)<br><br><a href="https://developer.microsoft.com//windows/downloads/windows-10-sdk" target="_blank">**Пакет SDK для Windows 10 (10.0.18362.0)** (ссылка для установки вручную)</a> | Содержит новейшие заголовки, библиотеки, метаданные и средства для создания приложений для Windows 10 в HoloLens 2. | Для создания приложений HoloLens 2 потребуется установить пакет SDK для Windows сборки 18362 или новее.<br> <br> Если вы разрабатываете приложения только для настольных гарнитур Windows Mixed Reality или HoloLens (1-го поколения), можно использовать пакет SDK для Windows, установленный в Visual Studio 2017. |
 | ![Логотип Visual Studio](images/HoloLensIcon.jpg)<br><br><a href="https://go.microsoft.com/fwlink/?linkid=2121323" target="_blank">**Эмулятор HoloLens 2 (обновление за март 2020 г.)** (ссылка для установки: 10.0.18362.1056)</a><br> <br><a href="https://go.microsoft.com/fwlink/?linkid=2065980" target="_blank">**Эмулятор HoloLens (1-го поколения)** (ссылка для установки: 10.0.17763.134)</a> | Эмулятор позволяет запускать приложения с помощью образа виртуальной машины HoloLens без физического устройства HoloLens.<br> <br> | Дополнительные сведения об использовании эмулятора HoloLens см. в [этой статье](using-the-hololens-emulator.md).<br> <br> Для успешной установки эмулятора **ваша система должна поддерживать Hyper-V**. Подробные сведения см. в разделе о системных требованиях. <br>|
 
@@ -43,20 +43,40 @@ ms.locfileid: "79376131"
 
 :::row:::
     :::column:::
-       [![Unity](images/unity_logo.png)](https://unity3d.com/unity/qa/lts-releases?version=2018.4)<br>
-        **[Unity](https://unity3d.com/unity/qa/lts-releases?version=2018.4)**<br>
-        Обычно в качестве лучшей версии для запуска новых проектов мы рекомендуем Unity LTS (долгосрочная поддержка). Затем ее можно обновить до последней версии, чтобы получить новые стабильные исправления.<br> <br>Сейчас рекомендуем использовать **Unity 2018.4.x** — сборку LTS, необходимую для MRTK версии 2 (см. ниже).<br> <br>Некоторые разработчики по определенным причинам могут использовать другую версию Unity. В этих случаях Unity поддерживает параллельную установку различных версий.<br><br>
-        [![MRTK](images/final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)<br>**[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)**<br>Mixed Reality Toolkit (MRTK) версии 2 для Unity — это кроссплатформенный пакет SDK с открытым кодом для приложений смешанной реальности.<br><br> MRTK версии 2 используется для ускорения разработки приложений, предназначенных для Microsoft HoloLens, иммерсивных гарнитур (гарнитур виртуальной реальности) Windows Mixed Reality и платформы OpenVR. Целью проекта является снижение барьеров для создания приложений смешанной реальности и внесение вклада в развитие сообщества по мере расширения личного опыта.
+        <a href="https://unity3d.com/unity/qa/lts-releases?version=2018.4" target="_blank">![Unity](images/unity_logo.png)<br>
+        **Unity**</a><br>
+        Обычно в качестве лучшей версии для запуска новых проектов мы рекомендуем Unity LTS (долгосрочная поддержка). Затем ее можно обновить до последней версии, чтобы получить новые стабильные исправления.<br>
+        <br>
+        Сейчас рекомендуем использовать **Unity 2018.4.x** — сборку LTS, необходимую для MRTK версии 2 (см. ниже).<br>
+        <br>
+        Некоторые разработчики по определенным причинам могут использовать другую версию Unity. В этих случаях Unity поддерживает параллельную установку различных версий.<br>
+        <br>
+        См. сведения о [разработке приложений Unity для иммерсивных гарнитур Windows Mixed Reality или HoloLens 2](unity-development-overview.md).<br>
+        <br>
+        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/releases" target="_blank">![MRTK](images/final_mrtk-small_logo.png)<br>
+        **Набор средств для смешанной реальности (MRTK)** </a><br>
+        Mixed Reality Toolkit (MRTK) версии 2 для Unity — это кроссплатформенный пакет SDK с открытым кодом для приложений смешанной реальности.<br>
+        <br>
+        MRTK версии 2 используется для ускорения разработки приложений, предназначенных для Microsoft HoloLens, иммерсивных гарнитур (гарнитур виртуальной реальности) Windows Mixed Reality и платформы OpenVR. Целью проекта является снижение барьеров для создания приложений смешанной реальности и внесение вклада в развитие сообщества по мере расширения личного опыта.
     :::column-end:::
     :::column:::
-        [![Unreal](images/Unreal_logo.png)](https://docs.unrealengine.com//GettingStarted/Installation/index.html)<br>
-        **[Unreal](https://docs.unrealengine.com//GettingStarted/Installation/index.html)**<br>
-        Unreal Engine 4 — это мощная подсистема разработки с открытым кодом, обладающая полной поддержкой смешанной реальности в C++ и Blueprints.<br> <br>Поддержка HoloLens для Unreal Engine 4.23 в настоящее время находится на этапе бета-версии.
+        <a href="https://docs.unrealengine.com//GettingStarted/Installation/index.html" target="_blank">![Unreal](images/Unreal_logo.png)<br>
+        **Unreal**</a><br>
+        Unreal Engine 4 — это мощная подсистема разработки с открытым кодом, обладающая полной поддержкой смешанной реальности в C++ и Blueprints.<br>
+        <br>
+        Поддержка HoloLens в Unreal Engine 4.24 сейчас предоставляется в режиме бета-версии.<br>
+        <br>
+        См. сведения о [разработке Unreal для HoloLens 2](unreal-development-overview.md).
     :::column-end:::
     :::column:::
-        [![Шаблоны приложений DirectX](images/visualstudio-small_logo.png)](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)<br>
-        **[DirectX](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)**<br>
-        Шаблоны приложений Windows Mixed Reality содержат все необходимое, чтобы приступить к написанию приложения смешанной реальности с помощью DirectX и собственных API. Включают в себя цикл отрисовки (или "игровой цикл"), вспомогательный класс DeviceResources для управления устройством и контекстом Direct3D, а также простой пример отрисовщика голограмм. Доступны для Direct3D 11 и Direct3D 12.
+        ![Разработка собственных приложений](images/visualstudio-small_logo.png)<br>
+        [**Собственные решения (OpenXR)** ](openxr-getting-started.md)<br>
+        OpenXR — это открытый бесплатный стандарт API из Khronos, который предоставляет возможности собственного доступа к широкому спектру устройств от многих поставщиков решений смешанной реальности.  Проект <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> демонстрирует простой пример OpenXR с двумя файлами проекта Visual Studio — один для классического приложения Win32, а другой для приложения UWP HoloLens 2.<br>
+        <br>
+        <a href="https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX" target="_blank">**Собственные решения (WinRT)** </a><br>
+        <a href="https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX" target="_blank">Шаблоны приложений Windows Mixed Reality</a> содержат все необходимое, чтобы приступить к созданию приложений смешанной реальности с помощью DirectX и собственных API. Включают в себя цикл отрисовки (или "игровой цикл"), вспомогательный класс DeviceResources для управления устройством и контекстом Direct3D, а также простой пример отрисовщика голограмм. Доступны для Direct3D 11 и Direct3D 12.<br>
+        <br>
+        См. сведения о [собственной разработке](directx-development-overview.md), чтобы приступить к разработке собственных приложений с помощью WinRT или OpenXR для иммерсивных гарнитур Windows Mixed Reality или HoloLens 2.
     :::column-end:::
 :::row-end:::
 
@@ -75,7 +95,7 @@ ms.locfileid: "79376131"
 
 ### <a name="for-hololens-development"></a>Для разработки решений для HoloLens
 
-При настройке компьютера для разработки решений для HoloLens убедитесь, что он соответствует системным требованиям для <a href="https://unity3d.com/unity/system-requirements" target="_blank">Unity</a> и <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. Если вы планируете использовать эмулятор HoloLens (1-го поколения), нужно чтобы ваш компьютер также отвечал системным требованиям [этого эмулятора](using-the-hololens-emulator.md#hololens-emulator-system-requirements).
+При настройке компьютера для разработки решений для HoloLens убедитесь, что он соответствует системным требованиям для <a href="https://unity3d.com/unity/system-requirements" target="_blank">Unity</a> и <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. Если вы планируете использовать эмулятор HoloLens, ваш компьютер должен отвечать системным требованиям [этого эмулятора](using-the-hololens-emulator.md#hololens-emulator-system-requirements).
 
 Сведения о начале работы с эмулятором HoloLens см. в [этой статье](using-the-hololens-emulator.md).
 

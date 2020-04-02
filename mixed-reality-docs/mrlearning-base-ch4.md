@@ -7,12 +7,12 @@ ms.date: 05/02/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 419b381c1240b2cc10708eab03245ed3aabfa859
-ms.sourcegitcommit: 61291e83536c8cb2e8401a8e66060128ede35922
+ms.openlocfilehash: 65bcef6a7c10450816d7a928302b0b266b132f0f
+ms.sourcegitcommit: 536fd45b48a70bbeca1454cef517ae007225e533
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79416136"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80362070"
 ---
 # <a name="5-interacting-with-3d-objects"></a>5. Взаимодействие с трехмерными объектами
 
@@ -268,7 +268,7 @@ ms.locfileid: "79416136"
 
 ![mrlearning-base](images/mrlearning-base/tutorial4-section6-step4-1.png)
 
-Перейдите к разделу **Assets** (Активы) > **MixedRealityToolkit.SDK** > **StandardAssets** (Стандартные активы) > Materials (Материалы), чтобы просмотреть звуковые клипы, предоставленные в комплекте с MRTK. Подберите подходящий клип для поля **Audio Clip** (Звуковой клип), например MRTK_Gem:
+Перейдите в раздел **Ресурсы** > **MixedRealityToolkit.SDK** > **StandardAssets** > **Audio**, чтобы просмотреть звуковые клипы, предоставленные в комплекте с MRTK. Затем подберите подходящий клип для поля **Звуковой клип**, например MRTK_Gem:
 
 ![mrlearning-base](images/mrlearning-base/tutorial4-section6-step4-2.png)
 
