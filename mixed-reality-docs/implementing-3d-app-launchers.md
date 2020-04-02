@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, Эмблема, значок, моделирование, средство запуска, трехмерное средство запуска, плитка, динамический куб, глубокая ссылка, секондаритиле, вспомогательная плитка, UWP
-ms.openlocfilehash: 5d18f699792760c39df4f814bde470fb9f889db7
-ms.sourcegitcommit: 2cf3f19146d6a7ba71bbc4697a59064b4822b539
+ms.openlocfilehash: 0a2e2177ffa7e381c461a58f373c818c9c5e72c4
+ms.sourcegitcommit: 46bd1a56d272a5880f410751fa8429d65d816431
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73926771"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80549382"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Реализация запуска 3D-приложений (приложения UWP)
 
@@ -42,12 +42,12 @@ ms.locfileid: "73926771"
 В верхней части манифеста Добавьте схему uap5 и включите ее как игнорируемое пространство имен:
 
 ```xml
-<Package xmlns:mp="https://schemas.microsoft.com/appx/2014/phone/manifest" 
-         xmlns:uap="https://schemas.microsoft.com/appx/manifest/uap/windows10" 
-         xmlns:uap2="https://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
-         xmlns:uap5="https://schemas.microsoft.com/appx/manifest/uap/windows10/5"
+<Package xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
+         xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
+         xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
          IgnorableNamespaces="uap uap2 uap5 mp"
-         xmlns="https://schemas.microsoft.com/appx/manifest/foundation/windows10">
+         xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">
 ```
 
 Затем укажите "Микседреалитимодел" в плитке по умолчанию для приложения:
@@ -85,13 +85,13 @@ ms.locfileid: "73926771"
 Поддержка атрибута ограничивающего прямоугольника поступает вместе с обновлением Windows RS4 в качестве свойства элемента Микседреалитимодел. Чтобы сначала определить ограничивающий прямоугольник в верхней части манифеста приложения, добавьте схему uap6 и включите ее в качестве игнорируемых пространств имен:
 
 ```xml
-<Package xmlns:mp="https://schemas.microsoft.com/appx/2014/phone/manifest" 
-         xmlns:uap="https://schemas.microsoft.com/appx/manifest/uap/windows10" 
-         xmlns:uap2="https://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
-         xmlns:uap5="https://schemas.microsoft.com/appx/manifest/uap/windows10/5"
-         xmlns:uap6="https://schemas.microsoft.com/appx/manifest/uap/windows10/6"
+<Package xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
+         xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
+         xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
+         xmlns:uap6="http://schemas.microsoft.com/appx/manifest/uap/windows10/6"
          IgnorableNamespaces="uap uap2 uap5 uap6 mp"
-         xmlns="https://schemas.microsoft.com/appx/manifest/foundation/windows10">
+         xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">
 ```
 Затем на Микседреалитимодел задайте свойство Спатиалбаундингбокс, чтобы определить ограничивающий прямоугольник: 
 
@@ -118,7 +118,7 @@ ms.locfileid: "73926771"
 >[!IMPORTANT]
 >Трехмерные глубокие ссылки (secondaryTiles) работают только с 2D-приложениями UWP. Однако можно создать [средство запуска для 3D-приложения](implementing-3d-app-launchers.md) , чтобы запустить эксклюзивное приложение из домашней страницы Windows Mixed Reality.
 
-Вы можете улучшить приложения для Windows Mixed Reality, добавив возможность размещения трехмерных моделей из приложения на [домашней странице Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md) в качестве глубоких ссылок на содержимое в двухмерном приложении, так же, как [2D-вторичные плитки](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) на начальном экране Windows. меню. Например, можно создать 360 °, которые непосредственно связываются с приложением 360 ° Photo Viewer, или позволить пользователям размещать трехмерное содержимое из коллекции ресурсов, открывающей страницу сведений об авторе. Это всего лишь два способа расширить функциональные возможности 2D-приложения с помощью трехмерного содержимого.
+Вы можете улучшить приложения для Windows Mixed Reality, добавив возможность размещения трехмерных моделей из приложения на [домашней странице Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md) в качестве глубоких ссылок на содержимое в двухмерном приложении, так же, как [2D-вторичные плитки](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) в меню "Пуск" Windows. Например, можно создать 360 °, которые непосредственно связываются с приложением 360 ° Photo Viewer, или позволить пользователям размещать трехмерное содержимое из коллекции ресурсов, открывающей страницу сведений об авторе. Это всего лишь два способа расширить функциональные возможности 2D-приложения с помощью трехмерного содержимого.
 
 ### <a name="creating-a-3d-secondarytile"></a>Создание трехмерного "Секондаритиле"
 
@@ -202,7 +202,7 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 Дополнительные сведения о функциях и атрибутах других плиток, а также о том, как они используются для 2D-плиток, см. в [документации по ПРИЛОЖЕНИЯМ UWP](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 * [Образец модели Mixed Reality](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) , содержащий средство запуска 3D-приложения.
 * [Руководство по проектированию средств запуска трехмерных приложений](3d-app-launcher-design-guidance.md)

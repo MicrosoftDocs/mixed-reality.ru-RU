@@ -1,19 +1,19 @@
 ---
-title: опенкср
+title: OpenXR
 description: Создайте подсистему с помощью переносимого стандарта API Опенкср и разверните его на гарнитурах Windows Mixed Reality и HoloLens 2.
 author: thetuvix
 ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
 keywords: Опенкср, Кхронос, Басикксрапп, DirectX, Native, собственное приложение, настраиваемое ядро, по промежуточного слоя
-ms.openlocfilehash: 8a3cfef506f47a7cc49bff2851b9fc14c8a830b4
-ms.sourcegitcommit: 9de2cb11321e6517db69e8c93459a205900a2174
+ms.openlocfilehash: 04b2404889dc74f191543466beb7ae1e516d0d42
+ms.sourcegitcommit: 46bd1a56d272a5880f410751fa8429d65d816431
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160010"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80549376"
 ---
-# <a name="openxr"></a>опенкср
+# <a name="openxr"></a>OpenXR
 
 Опенкср — это открытый стандарт API из <a href="https://www.khronos.org/" target="_blank">кхронос</a> , который предоставляет механизмам собственный доступ к широкому спектру устройств от многих поставщиков, охватывающих спектр различных [типов](mixed-reality.md).
 
@@ -62,7 +62,7 @@ API Опенкср предоставляет основные функции п
 | [<br />взаимодействие вручную (захват/AIM, воздушный, с проводами)](hands-and-tools.md) | **доступно расширение `MSFT_preview`:**<br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_interaction_preview">XR_MSFT_hand_interaction_preview</a></code><p>**выпуск`MSFT`** : Апрель 2020 *(запланированная)*</p> |
 | [Сетка руки артикулатион +](hands-and-tools.md) | **доступно расширение `MSFT_preview`:**<br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_tracking_preview">XR_MSFT_hand_tracking_preview</a></code><br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_tracking_mesh_preview">XR_MSFT_hand_tracking_mesh_preview</a></code><p>**выпуск`MSFT`** : Май 2020 *(запланированная)*</p> |
 | Взаимодействие с другими пакетами SDK для HoloLens (например, [QR](qr-code-tracking.md)) | **доступно расширение `MSFT_preview`:**<br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_spatial_graph_bridge_preview">XR_MSFT_spatial_graph_bridge_preview</a></code><p>**выпуск`MSFT`** : Май 2020 *(запланированная)*</p> |
-| [Отслеживание глаз](eye-tracking.md) | <p>**`MSFT_preview`** : Апрель 2020 *(запланированный)*</p><p>**выпуск`MSFT` или `EXT`** : Май 2020 *(запланированная)*</p> |
+| [Отслеживание глаз](eye-tracking.md) | <p>**определено расширение`EXT`** : *(пока не поддерживается)*<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_EXT_eye_gaze_interaction" target="_blank">XR_EXT_eye_gaze_interaction</a></code><p>**Поддержка предварительной версии**: Апрель 2020 *(запланированная)*</p><p>**Полная поддержка**: Май 2020 *(запланированная)*</p> |
 | [<br />записи смешанной реальности (третья Визуализация с камеры PV)](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) | **доступно расширение `MSFT_preview`:**<br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_secondary_view_configuration_preview">XR_MSFT_secondary_view_configuration_preview</a></code><br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_first_person_observer_preview">XR_MSFT_first_person_observer_preview</a></code><br /><p>**выпуск`MSFT`** : Июнь 2020 *(запланированный)*</p> |
 | [Модели отрисовки контроллера движения](motion-controllers.md#rendering-the-motion-controller-model) | <p>**`MSFT_preview`** : Апрель 2020 *(запланированный)*</p><p>**выпуск`MSFT`** : Июль 2020 *(запланированный)*</p> |
 | [Основные сведения о сцене (плоскости, сетки)](scene-understanding.md) | <p>**`MSFT_preview`** : Май 2020 *(запланированная)*</p><p>**выпуск`MSFT`** : Июль 2020 *(запланированный)*</p> |
