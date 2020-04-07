@@ -7,12 +7,12 @@ ms.date: 10/14/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
-ms.openlocfilehash: 8e0c66a1c3d8ebd5422d19a02f313147ecf76653
-ms.sourcegitcommit: 40b37104b0aec4554502dcc7dc430e340a6fa46a
+ms.openlocfilehash: ced33a082152822779ae23a854800072bc8dfb5f
+ms.sourcegitcommit: d451b2055593ba8d0e4e05132ce889d60c71ee81
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77092038"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80613991"
 ---
 # <a name="get-your-existing-app-ready-for-hololens-2"></a>Подготовка существующего приложения для использования в HoloLens 2
 
@@ -77,7 +77,7 @@ ms.locfileid: "77092038"
 Дополнительные сведения об использовании MRTK версии 2 см. в следующих документах:
 - [Целевая страница MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 - [Getting started with MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) (Начало работы с MRTK)
-- [Отслеживание рук в MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/InputSystem/HandTracking.html)
+- [Отслеживание рук в MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html)
 - [Отслеживание движения глаз в MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)
 
 ### <a name="prepare-for-the-migration"></a>Подготовка к миграции
