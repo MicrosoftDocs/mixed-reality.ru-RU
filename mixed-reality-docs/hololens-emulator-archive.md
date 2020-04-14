@@ -1,17 +1,17 @@
 ---
 title: Архив эмулятора HoloLens
 description: Список выпущенных сборок эмулятора Microsoft HoloLens.
-author: hamalawi
-ms.author: moelhama
-ms.date: 3/10/2020
+author: pbarnettms
+ms.author: pbarnett
+ms.date: 4/13/2020
 ms.topic: article
 keywords: HoloLens, Emulator, сборки, версии
-ms.openlocfilehash: 7aed01ecc155e4ea93bbbf9c347f117b319d2bc7
-ms.sourcegitcommit: 5b2ba01aa2e4a80a3333bfdc850ab213a1b523b9
+ms.openlocfilehash: a50be8c83607882996e5981c4be502a0a617a797
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79031775"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81278162"
 ---
 # <a name="hololens-2-emulator-archive"></a>Архив эмулятора HoloLens 2
 
@@ -19,6 +19,7 @@ ms.locfileid: "79031775"
 
 |  Сборка |  Дата выпуска |  Примечания | 
 |----------|----------|----------|
+|  [10.0.18362.1059 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2126826) | 13 апреля 2020 г. | Сборка HoloLens 1 апреля 2020.  Общие заметки о выпуске HoloLens 2 см. на https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [10.0.18362.1056 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2121323) | 10 марта 2020 г. | Сборка HoloLens 2020 в марте 2.  Общие заметки о выпуске HoloLens 2 см. на https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [10.0.18362.1053 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2118321) | 11 февраля, 2020 | Февраль 2020. сборка HoloLens.  Общие заметки о выпуске HoloLens 2 см. на https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [10.0.18362.1044 сборки эмулятора HoloLens 2](https://go.microsoft.com/fwlink/?linkid=2114824) | 13 января 2020 г. | Сборка HoloLens 2020 в январе 2.  Общие заметки о выпуске HoloLens 2 см. на https://docs.microsoft.com/hololens/hololens-release-notes |

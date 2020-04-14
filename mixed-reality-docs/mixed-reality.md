@@ -1,18 +1,18 @@
 ---
 title: Что такое смешанная реальность?
 description: 'В этой статье приводится определение смешанной реальности и показано положение в иерархии смешанной реальности для разных устройств: простые устройства смешанной и виртуальной реальности, устройства Windows Mixed Reality (например, Microsoft HoloLens и иммерсивные гарнитуры).'
-author: BrandonBray
+author: brandonbray
 ms.author: branbray
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Смешанная реальность, голографический, AR, VR, MR, XR, дополненная реальность, виртуальная реальность, объяснение
 ms.localizationpriority: high
-ms.openlocfilehash: f170fe7a3353ac0cce1bd7532802eaff7a357494
-ms.sourcegitcommit: ee8c7e821cb337cbccd8af64b13ee5f50109a776
+ms.openlocfilehash: 7b0dcbdb88f880d4c1632fae874ba6a610f023fb
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80082083"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81278052"
 ---
 # <a name="what-is-mixed-reality"></a>Что такое смешанная реальность?
 

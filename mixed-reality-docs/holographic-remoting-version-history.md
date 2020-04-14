@@ -1,63 +1,63 @@
 ---
 title: Журнал версий службы удаленного взаимодействия с holographic
 description: Журнал версий для удаленного взаимодействия holographic в HoloLens 2.
-author: FlorianBagarMicrosoft
+author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: 62f54dbcf5327cdd5f13622704684a2cb0606d7d
-ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
+ms.openlocfilehash: 5ba3aaa8874dea4418114b331d3d99fc977e982c
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79375661"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81278202"
 ---
 # <a name="holographic-remoting-version-history"></a>Журнал версий службы удаленного взаимодействия с holographic
 
 > [!IMPORTANT]
 > Это руководство относится к удаленному взаимодействию с HoloLens 2.
 
-## Версия 2.1.0 (11 марта, 2020)<a name="v2.1.0"></a>
+## <a name="version-210-march-11-2020"></a>Версия 2.1.0 (11 марта, 2020)<a name="v2.1.0"></a>
 * Сетевой транспорт переключился на использование [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) через UDP. Безопасные подключения используют [SRTP](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) сейчас. Обратите внимание, что [проигрыватель holographic Remoting](holographic-remoting-player.md) по-прежнему совместим со всеми ранее выпущенными версиями с удаленным взаимодействием. Чтобы воспользоваться преимуществами нового сетевого транспорта и, по вашему мнению, проигрыватель holographic Remoting и удаленное приложение должны использовать версию 2.1.0.
 * Добавлена поддержка [холографиккамерарендерингпараметерс. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_). 
 
-## Версия 2.0.20 (2 февраля 2020 г.)<a name="v2.0.20"></a>
+## <a name="version-2020-february-2-2020"></a>Версия 2.0.20 (2 февраля 2020 г.)<a name="v2.0.20"></a>
 * Исправлены различные ошибки, приводящие к сбоям.
 
-## Версия 2.0.18 (17 декабря, 2019)<a name="v2.0.18"></a>
+## <a name="version-2018-december-17-2019"></a>Версия 2.0.18 (17 декабря, 2019)<a name="v2.0.18"></a>
 * Добавлена поддержка [холографиквиевконфигуратион](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration) .
 * Исправлены различные ошибки, приводящие к сбоям.
 * Исправлена ошибка обратного вызова Холографикспаце. Камерааддед, чтобы Холографиккамера был принят и показана как добавленная Камера в Холорафикфраме.
 
-## Версия 2.0.16 (11 ноября, 2019)<a name="2.0.16"></a>
+## <a name="version-2016-november-11-2019"></a>Версия 2.0.16 (11 ноября, 2019)<a name="2.0.16"></a>
 * Исправлена взаимоблокировка при отслеживании QR-кода.
 * Исправлено исключение унханделед из-за блокировки ожидания в основном потоке.
 
-## Версия 2.0.14 (26 октября, 2019)<a name="v2.0.14"></a>
+## <a name="version-2014-october-26-2019"></a>Версия 2.0.14 (26 октября, 2019)<a name="v2.0.14"></a>
 * Поддержка новых API Перцептиондевице (обновление Windows 10 за ноябрь 2019).
 * Исправлена проблема, препятствующая срабатыванию событий жестов с помощью Спатиалжестуререкогнизер.
 * Исправлена проблема с потоками при использовании Спатиалсурфацеобсервер. Сетбаундингволуме.
 
-## Версия 2.0.12 (18 октября, 2019)<a name="v2.0.12"></a>
+## <a name="version-2012-october-18-2019"></a>Версия 2.0.12 (18 октября, 2019)<a name="v2.0.12"></a>
 * Исправлена проблема сбоя в Спатиалжестуререкогнизер при использовании Навигатионраил (X/Y/Z).
 
-## Версия 2.0.10 (10 октября, 2019)<a name="v2.0.10"></a>
+## <a name="version-2010-october-10-2019"></a>Версия 2.0.10 (10 октября, 2019)<a name="v2.0.10"></a>
 * Исправлена аварийное завершение работы при использовании кнопки триггера контроллеров VR. Holographic удаленное взаимодействие не полностью поддерживает контроллеры, только кнопка "триггер" и кнопка Windows работают, если они связаны с HoloLens 2.
 
-## Версия 2.0.9 (19 сентября 2019 г.)<a name="v2.0.9"></a>
+## <a name="version-209-september-19-2019"></a>Версия 2.0.9 (19 сентября 2019 г.)<a name="v2.0.9"></a>
 * Добавлена поддержка [спатиаланчорекспортер](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter) .
 * Добавлен новый интерфейс ```IPlayerContext2``` (реализованный ```PlayerContext```), предоставляющий следующие члены:
   - Свойство [блитремотефраметимеаут](holographic-remoting-create-player.md#BlitRemoteFrameTimeout) .
 * Для ```BlitResult``` Добавлено ```Failed_RemoteFrameTooOld``` значение
 * Улучшения стабильности и надежности
 
-## Версия 2.0.8 (20 августа 2019 г.)<a name="v2.0.8"></a>
+## <a name="version-208-august-20-2019"></a>Версия 2.0.8 (20 августа 2019 г.)<a name="v2.0.8"></a>
 
 * Исправлена сбой при вызове [холографиккамерарендерингпараметерс. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) с параметром [IDXGISurface2](https://docs.microsoft.com/windows/win32/api/dxgi1_2/nn-dxgi1_2-idxgisurface2) в качестве параметра.
 * Улучшения стабильности и надежности
 
-## Версия 2.0.7 (26 июля, 2019)<a name="v2.0.7"></a>
+## <a name="version-207-july-26-2019"></a>Версия 2.0.7 (26 июля, 2019)<a name="v2.0.7"></a>
 
 * Первый общедоступный выпуск holographic Remoting для HoloLens 2.
 

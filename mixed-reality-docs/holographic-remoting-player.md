@@ -1,17 +1,17 @@
 ---
 title: Holographic удаленный плеер
 description: Удаленный плеер holographic — это сопутствующее приложение, которое подключается к КОМПЬЮТЕРным приложениям и играм, поддерживающим удаленное взаимодействие с Holographic. С помощью подключения Wi-Fi в holographic удаленное взаимодействие посылается с компьютера в Microsoft HoloLens в режиме реального времени.
-author: FlorianBagarMicrosoft
+author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: 88a9aa0bb058776a32016e51fc22bcb73f08ab85
-ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
+ms.openlocfilehash: e5255fb5537201058c491f5e4c682bb1c22d0edb
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092370"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81278212"
 ---
 # <a name="holographic-remoting-player"></a>Holographic удаленный плеер
 

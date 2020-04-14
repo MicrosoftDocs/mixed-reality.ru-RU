@@ -1,17 +1,17 @@
 ---
 title: Получение Холографикспаце
 description: Описание API Холографикспаце, основной концепции для holographic-отрисовки и пространственного ввода.
-author: MikeRiches
+author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Холографикспаце, CoreWindow, пространственный ввод, отрисовка, цепочка буферов, holographic кадров, цикл обновления, цикл игры, кадр ссылки, локатабилити, пример кода, пошаговое руководство
-ms.openlocfilehash: 828352203b20ec38275796b3f172e7ecc5df3f00
-ms.sourcegitcommit: 915d3cc63a5571ba22ac4608589f3eca8da1bc81
+ms.openlocfilehash: 76211c8a5394e2e296748253df4eac063841746c
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "63525446"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81277832"
 ---
 # <a name="getting-a-holographicspace"></a>Получение Холографикспаце
 
@@ -27,7 +27,7 @@ ms.locfileid: "63525446"
 m_holographicSpace = HolographicSpace::CreateForCoreWindow(window);
 ```
 
-Для **приложения Win32** , [начиная с примера Win32 *басичолограм* ](creating-a-holographic-directx-project.md#creating-a-win32-project), рассмотрим **Приложение:: креатевиндовандхолографикспаце** , в котором приведен пример того, как создать HWND и преобразовать его в иммерсивное окно HWND, создав связанный <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">элемент Холографикспаце</a>:
+Для **приложения Win32** [, начиная с примера Win32 *басичолограм* ](creating-a-holographic-directx-project.md#creating-a-win32-project), рассмотрим **Приложение:: КРЕАТЕВИНДОВАНДХОЛОГРАФИКСПАЦЕ** , в котором представлен пример создания HWND и его преобразования в иммерсивное окно HWND путем создания связанного <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">холографикспаце</a>:
 ```cpp
 void App::CreateWindowAndHolographicSpace(HINSTANCE hInstance, int nCmdShow)
 {
@@ -118,7 +118,7 @@ m_cameraRemovedToken = m_holographicSpace.CameraRemoved(
     std::bind(&AppMain::OnCameraRemoved, this, _1, _2));
 ```
 
-Обработчики событий должны выполнить некоторую работу, чтобы обеспечить плавное перетекание с помощью, чтобы приложение могло работать вообще. Ознакомьтесь с кодом и комментариями для получения сведений: вы можете найти **онкамерааддед** и **онкамераремовед** в основном классе, чтобы понять, как в **DeviceResources**обрабатывается схема **m_cameraResources** .
+Обработчики событий должны выполнить некоторую работу, чтобы обеспечить плавное перетекание с помощью, чтобы приложение могло работать вообще. Ознакомьтесь с кодом и комментариями для получения подробных сведений: в основном классе можно найти **онкамерааддед** и **онкамераремовед** , чтобы понять, как обрабатывается **m_cameraResourcesная** схема с помощью **DeviceResources**.
 
 Сейчас мы сосредоточены на Аппмаин и настройке, которые он делает для того, чтобы ваше приложение знало о holographic фотокамер. Учитывая это, важно отметить следующие два требования:
 
@@ -131,7 +131,7 @@ m_cameraRemovedToken = m_holographicSpace.CameraRemoved(
 
 ## <a name="create-a-frame-of-reference-for-your-holographic-content"></a>Создание рамки ссылки для вашего holographic-содержимого
 
-Содержимое вашего приложения должно быть размещено в пространственной [системе координат](coordinate-systems-in-directx.md) для подготовки к просмотру в холографикспаце. Система предоставляет два основных кадра ссылок, которые можно использовать для создания системы координат для голограмм.
+Содержимое вашего приложения должно быть размещено в [пространственной системе координат](coordinate-systems-in-directx.md) для подготовки к просмотру в холографикспаце. Система предоставляет два основных кадра ссылок, которые можно использовать для создания системы координат для голограмм.
 
 В Windows holographic есть два вида опорных кадра: справочные фреймы, присоединенные к устройству, и ссылки на кадры, которые остаются стационарными при перемещении устройства через среду пользователя. Шаблон holographic App по умолчанию использует стационарный ссылочный фрейм. Это один из самых простых способов визуализации голограмм с блокировкой мира.
 
@@ -172,6 +172,6 @@ m_locatabilityChangedToken = m_spatialLocator.LocatabilityChanged(
 
 Затем используйте это событие, чтобы определить, когда голограммы не могут быть отображены в нестационарном мире.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 * [Отрисовка в DirectX](rendering-in-directx.md)
 * [Системы координат в DirectX](coordinate-systems-in-directx.md)

@@ -7,12 +7,12 @@ ms.author: grbury
 ms.date: 08/21/2019
 ms.topic: overview
 keywords: Смешанная реальность, разработка, разработка, HoloLens, службы Azure, пространственные привязки, речь, концепция, удаленная визуализация
-ms.openlocfilehash: 692c99bfa21fab8e01d38bebb34f656114d9fee3
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: a79495fd9bc82622d0ded14b7b4048584aed1da3
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73439505"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81277752"
 ---
 # <a name="azure-mixed-reality-services"></a>Службы Azure Mixed Reality
 Разблокируйте, что каждый человек является экспертом — трехмерный, физический мир — с помощью служб Azure Mixed Reality. Помогите людям создавать, изучать и сотрудничать более эффективно, записывая и отображая цифровые данные в контексте своей работы и мира. Перенос трехмерных устройств на мобильные устройства, гарнитуры и другие несвязанные устройства. С помощью Azure можно обеспечить защиту наиболее важных данных.
@@ -46,7 +46,7 @@ ms.locfileid: "73439505"
        [![Голосовые функции](images/speech.jpg)](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
     :::column-end:::
     :::column span="2":::
-        ### <a name="speechhttpsdocsmicrosoftcomazurecognitive-servicesspeech-service"></a>[Речь](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+        ### <a name="speech"></a>[Речь](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
         Узнайте, как речевое взаимодействие позволяет интегрировать возможности обработки речи в любое приложение или службу. Преобразование речевого языка в текст или создание естественного речевого звука из текста с помощью стандартных (или настраиваемых) голосовых шрифтов. Опробуйте любую службу бесплатно — и быстро создавайте приложения и службы, поддерживающие речь, с помощью следующих возможностей.
     :::column-end:::
 :::row-end:::
@@ -58,15 +58,13 @@ ms.locfileid: "73439505"
        [Концепция ![](images/vision.jpg)](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
     :::column-end:::
     :::column span="2":::
-        ### <a name="visionhttpsdocsmicrosoftcomazurecognitive-servicescomputer-vision"></a>[Предоставлении](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+        ### <a name="vision"></a>[Предоставлении](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
         Распознают, выявлять, записывать, индексировать и умеренные изображения, видео и цифровые рукописные данные. Узнайте, как концепция позволяет приложениям и службам точно находить и анализировать содержимое в изображениях, видеороликах и цифровых рукописных данных.
     :::column-end:::
 :::row-end:::
 
 
-
-
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 * Учебники по пространственной привязке Azure для HoloLens 2 – [1 из 3 Приступая к работе с пространственными привязками Azure](mrlearning-asa-ch1.md)
 * Учебники по службам речи Azure для HoloLens 2 – [1 из 4 интеграция и использование распознавания речи и транскрипции](mrlearning-speechSDK-ch1.md)

@@ -1,17 +1,17 @@
 ---
 title: Пример использования. анализ брешей в реальности
 description: В этом практическом примере объясняется, как реализовать воздействие "волшебное окно" на HoloLens, что позволяет пользователю видеть позади стен, в пол и в виртуальных вакансиях в реальной среде.
-author: EricRehmeyer
+author: ericrehmeyer
 ms.author: bestruku
 ms.date: 10/18/2019
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, магическое окно, фокусировки
-ms.openlocfilehash: a1b9f0b2e576379846a867f3d3bffef7d8ec277e
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: c829656c98b7c87f8b969dbbd16115f6a0bbaf27
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73436666"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81278152"
 ---
 # <a name="case-study---looking-through-holes-in-your-reality"></a>Пример использования. анализ брешей в реальности
 
@@ -108,7 +108,7 @@ ColorMask 0
 </tr>
 </table>
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 * [Основные сведения о MR 101: завершение проекта с помощью устройства](holograms-101.md)
 * [Системы координат](coordinate-systems.md)
 * [Пространственные привязки](spatial-anchors.md)

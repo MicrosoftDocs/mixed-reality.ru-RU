@@ -1,17 +1,17 @@
 ---
 title: Ввод голоса в DirectX
 description: В этой статье объясняется, как реализовать голосовые команды и небольшие фразы и распознавание предложений в приложении DirectX для Windows Mixed Reality.
-author: MikeRiches
+author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Пошаговое руководство, голосовая команда, фраза, распознавание, речь, DirectX, платформа, Кортана, Windows Mixed Reality
-ms.openlocfilehash: c0a7ca85c24147e607603e733c9d191c64cbd927
-ms.sourcegitcommit: 8bf7f315ba17726c61fb2fa5a079b1b7fb0dd73f
+ms.openlocfilehash: 2837a0fc42e8fdebb2e1facee118d20b5668cd43
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "75181824"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81277972"
 ---
 # <a name="voice-input-in-directx"></a>Ввод голоса в DirectX
 
@@ -427,6 +427,6 @@ catch (Exception^ exception)
    });
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 * [Разработка речевых приложений](https://msdn.microsoft.com/library/dn596121.aspx)
 * [Пример Спичрекогнитионандсинсесис](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)

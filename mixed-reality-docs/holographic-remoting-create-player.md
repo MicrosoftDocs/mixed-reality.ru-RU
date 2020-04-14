@@ -1,17 +1,17 @@
 ---
 title: Написание пользовательского плеера holographic
 description: Создав настраиваемое приложение для удаленного взаимодействия holographic, вы можете создать пользовательское приложение, способное отображать содержимое, отображаемое на удаленном компьютере, в HoloLens 2. В этой статье описывается, как это можно сделать.
-author: FlorianBagarMicrosoft
+author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: eaa6549eb34d3a37c21b3decb348bf43594a110f
-ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
+ms.openlocfilehash: b276558e43fc545be9e5c0be6feded229904ee97
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092413"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81278222"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>Написание пользовательского приложения для удаленного взаимодействия holographic
 
@@ -218,7 +218,7 @@ winrt::Microsoft::Holographic::AppRemoting::BlitResult result = m_playerContext.
 - ```Remote```-преобразование — это расстояния близкого и дальнего плоскостей, заданные удаленным приложением.
 - ```Merged``` — расстояния на расстоянии от удаленного приложения до ближайшего или далекого, а пользовательское приложение проигрывателя объединяется. По умолчанию это достигается за счет минимального расстояния между близкими плоскостями и максимальным расстоянием на расстоянии плоскости. Если удаленная или локальная сторона перевернута, скажем, далеко < вблизи, то на удаленных расстояниях вблизи и дальней плоскости происходит зеркальное отображение.
 
-## Необязательно: Set Блитремотефраметимеаут<a name="BlitRemoteFrameTimeout"></a>
+## <a name="optional-set-blitremoteframetimeout"></a>Необязательно: Set Блитремотефраметимеаут<a name="BlitRemoteFrameTimeout"></a>
 >[!IMPORTANT]
 > ```PlayerContext::BlitRemoteFrameTimeout``` поддерживается начиная с версии [2.0.9](holographic-remoting-version-history.md#v2.0.9). 
 

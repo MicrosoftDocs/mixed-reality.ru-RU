@@ -1,17 +1,17 @@
 ---
 title: Ввод с клавиатуры, мыши и контроллера в DirectX
 description: В этой статье объясняется, как создать приложение для Windows Mixed Reality, которое использует клавиатуру, мышь и игровые контроллеры.
-author: MikeRiches
+author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, клавиатура, мышь, игровой контроллер, контроллер Xbox, HoloLens, Настольный компьютер, пошаговое руководство, пример кода
-ms.openlocfilehash: 1e61cb50a561492fdc6849b5b231e97fab1bb6cf
-ms.sourcegitcommit: 05fa75193059a2dac4b580a9eef7b6c4bb64d8d7
+ms.openlocfilehash: 27f1bf72435ce6889ba3f7b83664367a4440b162
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74835100"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81278092"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>Ввод с клавиатуры, мыши и контроллера в DirectX
 
@@ -265,5 +265,5 @@ if (m_gamepadAddedEventToken.Value != 0)
 * Ввод с клавиатуры может быть отличным способом управления аспектами отладки приложения или игрового модуля, особенно потому, что пользователю не потребуется использовать клавиатуру. Подключение выполняется так же, как и при использовании API-интерфейсов событий CoreWindow. В этом сценарии вы можете реализовать способ настройки приложения для маршрутизации событий клавиатуры в режим "только входные данные" во время сеансов отладки.
 * Контроллеры Bluetooth также работают.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 * [Аксессуары к оборудованию](hardware-accessories.md)

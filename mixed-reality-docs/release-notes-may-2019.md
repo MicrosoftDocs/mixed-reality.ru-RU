@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: Заметки о выпуске, версия, Windows 10, сборка, 19h1, ОС, Май 2019
-ms.openlocfilehash: f5163e128c3f1e1b68d827b09078b565a58c5a4d
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 97bf4c3b5c24fc6f0c763b8dd9f146bbaa01187a
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73438321"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81277632"
 ---
 # <a name="release-notes---may-2019"></a>Заметки о выпуске — 2019 мая
 
@@ -44,6 +44,10 @@ ms.locfileid: "73438321"
 
 HoloLens (1-й общий) переходит в состояние долгосрочного обслуживания (LTS). В будущих обновлениях основное внимание уделяется устранению проблем и исправлений безопасности, а также обеспечению соответствия функций с [выпуском Windows 10 октября 2018](release-notes-october-2018.md) для HoloLens (известного как RS5). 
 
+## <a name="known-issues"></a>Известные проблемы
+
+Мы отслеживаем проблемы, требующие подключения монитора к компьютеру, чтобы обеспечить правильную работу головного телефона. Пользователи ПК ранец могут использовать активный видеоадаптер (или эмулятор EDID), чтобы гарантировать, что их иммерсивное устройство продолжит отображаться, когда монитор ПК не используется. 
+
 ## <a name="provide-feedback-and-report-issues"></a>Предоставление отзывов и отчетов о проблемах
 
 Используйте [приложение центра обратной связи на компьютере с Windows 10](give-us-feedback.md) или на устройстве HoloLens для предоставления отзывов и отчетов о проблемах. Использование центра обратной связи гарантирует, что все необходимые диагностические сведения были добавлены, чтобы помочь нашим специалистам быстро отладить и устранить проблему.
@@ -61,7 +65,7 @@ HoloLens (1-й общий) переходит в состояние долгос
 * [Заметки о выпуске — май 2016 г.](release-notes-may-2016.md)
 * [Заметки о выпуске — март 2016 г.](release-notes-march-2016.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 * [Поддержка иммерсивного режима гарнитуры (внешняя ссылка)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [Поддержка HoloLens (внешняя ссылка)](https://support.microsoft.com/products/hololens)
 * [Установка средств](install-the-tools.md)

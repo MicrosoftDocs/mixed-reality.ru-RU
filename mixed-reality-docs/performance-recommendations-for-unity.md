@@ -1,18 +1,18 @@
 ---
 title: Рекомендации по производительности для Unity
 description: Советы для платформы Unity по повышению производительности приложений смешанной реальности.
-author: Troy-Ferrell
+author: troy-ferrell
 ms.author: trferrel
 ms.date: 03/26/2019
 ms.topic: article
 keywords: графика, ЦП, GPU, преобразование для просмотра, сборка мусора, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 18691ab7993b2802268d3c4ce05532dfa5bd1723
-ms.sourcegitcommit: 9de2cb11321e6517db69e8c93459a205900a2174
+ms.openlocfilehash: 28f09986cdb8c562aedfc9deae7b0369214ebc05
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160020"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81277572"
 ---
 # <a name="performance-recommendations-for-unity"></a>Рекомендации по производительности для Unity
 

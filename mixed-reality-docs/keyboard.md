@@ -1,17 +1,16 @@
 ---
 title: Клавиатура
-description: ''
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Смешанная реальность, элементы управления, взаимодействие, Пользовательский интерфейс, UX
-ms.openlocfilehash: a16d0a2a8dddf1d9a338cdaff3247e8955c47029
-ms.sourcegitcommit: 6844930427b658ae31f642c395cd8a3b3cdbf857
+ms.openlocfilehash: 90f20d96fca9bebfcbce8283bedd3cb8422d9ea8
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75723173"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81278082"
 ---
 # <a name="keyboard"></a>Клавиатура
 
@@ -32,7 +31,7 @@ ms.locfileid: "75723173"
 
 ---
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также:
 
 * [Курсоры](cursors.md)
 * [Телекинез](point-and-commit.md)
@@ -47,7 +46,7 @@ ms.locfileid: "75723173"
 * [Клавиатура](keyboard.md)
 * [Подсказка](tooltip.md)
 * [Планшет](slate.md)
-* [Ползунок](slider.md)
+* [Slider](slider.md)
 * [Шейдер](shader.md)
 * [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
 * [Индикация хода выполнения](progress.md)

@@ -1,17 +1,17 @@
 ---
 title: Создание удаленного приложения holographic с удаленным взаимодействием
 description: Создав удаленное содержимое удаленного приложения с удаленным удаленным доступом, которое будет отображаться на удаленном компьютере, можно передать потоковую передачу в HoloLens 2. В этой статье описывается, как это можно сделать.
-author: FlorianBagarMicrosoft
+author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: 76e37499fd32a82e6846c6c7cac1a292ef6b553a
-ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
+ms.openlocfilehash: 6c6da16d83f593d9987bf7e534f9f663f11abd01
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092309"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81278122"
 ---
 # <a name="writing-a-holographic-remoting-remote-app"></a>Создание удаленного приложения holographic с удаленным взаимодействием
 

@@ -1,17 +1,17 @@
 ---
 title: Руководства по портированию приложений
 description: Пошаговое валсраугх объясняет, как перенести существующее иммерсивное приложение на Windows Mixed Reality.
-author: ChimeraScorn
+author: chimerascorn
 ms.author: alexturn
 ms.date: 10/02/2018
 ms.topic: article
 keywords: порт, перенос, Unity, по промежуточного слоя, ядро, UWP
-ms.openlocfilehash: 5d3debc9a810873f21a9f55a32061565d4ce75ae
-ms.sourcegitcommit: 83698638b93c5ba77b3ffc399f1706482539f27b
+ms.openlocfilehash: 06501742d4b5c30036982deef2ec2a88171912bf
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74539510"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81278042"
 ---
 # <a name="porting-guides"></a>Руководства по портированию приложений
 
@@ -152,7 +152,7 @@ Windows Mixed Reality будет доступна на широком класс
 
 [Unity](https://docs.unity3d.com/Manual/Profiler.html) и [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) включают в себя Профилировщики производительности, а как [Корпорация Майкрософт](understanding-performance-for-mixed-reality.md) , так и [Корпорация Intel](https://software.intel.com/articles/vr-content-developer-guide) публикуют рекомендации по профилированию и оптимизации производительности. Существует подробное обсуждение производительности, доступное [для понимания производительности смешанной реальности](understanding-performance-for-mixed-reality.md). Дополнительные сведения о Unity см. в разделе [рекомендации по повышению производительности для Unity](performance-recommendations-for-unity.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 * [Руководство по переносу логики ввода для Unity](input-porting-guide-for-unity.md)
 * [Минимальные рекомендации по совместимости Windows Mixed Reality с оборудованием ПК](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Основные сведения о производительности смешанной реальности](understanding-performance-for-mixed-reality.md)

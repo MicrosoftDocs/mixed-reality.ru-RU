@@ -1,17 +1,17 @@
 ---
 title: Режим воспроизведения Unity
 description: Использование режима воспроизведения в редакторе Unity для предварительного просмотра изменений на устройстве без развертывания приложения.
-author: JonMLyons
+author: jonmlyons
 ms.author: jlyons
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, удаленное взаимодействие, holographic удаленное взаимодействие, удаленный плеер holographic
-ms.openlocfilehash: 6164d7ae1bc2d9ac13135f17132aca089e63ecdf
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: dca7ffba1270802fcabed8a88fe7428ef2981553
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73438224"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81277562"
 ---
 # <a name="unity-play-mode"></a>Режим воспроизведения Unity
 
@@ -25,7 +25,7 @@ ms.locfileid: "73438224"
 3. В Unity перейдите в меню **окно** и выберите " **holographic Emulator**".
 4. Задайте для **режима эмуляции** значение **удаленно на устройство**.
 5. Для параметра **Удаленный компьютер**введите IP-адрес HoloLens.
-6. Нажмите кнопку **Подключить**. Вы должны увидеть, что **состояние подключения** изменится на **подключено** , и в HoloLens появится пустое окно.
+6. Нажмите кнопку **Соединить**. Вы должны увидеть, что **состояние подключения** изменится на **подключено** , и в HoloLens появится пустое окно.
 7. Нажмите кнопку **Воспроизведение** , чтобы запустить режим воспроизведения и начать работу с приложением на HoloLens.
 
 Для удаленного взаимодействия с holographic требуется быстрый ПК и подключение Wi-Fi. Подробные сведения см. в статье об [удаленном проигрывателе holographic](holographic-remoting-player.md) .
