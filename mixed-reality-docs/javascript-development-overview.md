@@ -1,0 +1,70 @@
+---
+title: Общие сведения о разработке JavaScript в смешанной реальности
+description: Общие сведения о разработке смешанной реальности с использованием JavaScript для веб-, мобильных и высококачественных головных телефонов Windows.
+author: yonet
+ms.author: ayyonet
+ms.date: 04/10/2020
+ms.topic: article
+keywords: Вебкср, Винмр, Вебар, Вебвр, Виндовсмикседреалити, HoloLens, Windows Mixed Reality, веб-VR, Web XR, Web MR, Web AR, 360, 360 Video, 360 видео, 360 Photo, 360 фотографии, 360 Content, иммерсивное веб-узел, иммерсивное веб-сайт, IW, иммерсивевеб
+ms.openlocfilehash: 5756af9f48f4bb25477e75fb1f7c09e7239bdab9
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81278485"
+---
+# <a name="mixed-reality-development-with-javascript-overview"></a><span data-ttu-id="0bbda-104">Обзор разработки смешанной реальности с использованием JavaScript</span><span class="sxs-lookup"><span data-stu-id="0bbda-104">Mixed Reality Development with JavaScript Overview</span></span>
+
+## <a name="mixed-reality-applications-on-the-web"></a><span data-ttu-id="0bbda-105">Приложения смешанной реальности в Интернете</span><span class="sxs-lookup"><span data-stu-id="0bbda-105">Mixed Reality applications on the web</span></span>
+
+<span data-ttu-id="0bbda-106">Функции смешанной реальности доступны в Интернете с помощью [API устройства вебкср](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) и [устаревшие API вебвр] ([Обзор вебкср](webxr-overview.md)).</span><span class="sxs-lookup"><span data-stu-id="0bbda-106">Mixed Reality features are available on the web by the use of [WebXR Device APIs](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) and [deprecated WebVR APIs]([WebXR Overview](webxr-overview.md).</span></span> <span data-ttu-id="0bbda-107">Для браузеров, которые не поддерживают полные функции Вебкср, можно добавить [вебксрные заливки](https://github.com/immersive-web/webxr-polyfill) на веб-сайт.</span><span class="sxs-lookup"><span data-stu-id="0bbda-107">For browsers that do not support full WebXR features, you can add [WebXR Polyfills](https://github.com/immersive-web/webxr-polyfill) to your website.</span></span>
+
+## <a name="what-is-webxr-polyfill"></a><span data-ttu-id="0bbda-108">Что такое Вебксрная Заливка</span><span class="sxs-lookup"><span data-stu-id="0bbda-108">What is WebXR Polyfill</span></span>
+
+<span data-ttu-id="0bbda-109">Реализация API устройства Вебкср на JavaScript, а также модуль игровой планшет Вебкср.</span><span class="sxs-lookup"><span data-stu-id="0bbda-109">A JavaScript implementation of the WebXR Device API, as well as the WebXR Gamepad Module.</span></span> <span data-ttu-id="0bbda-110">Эта Заливка позволяет разработчикам писать в соответствии с последней спецификацией, предоставляя поддержку при запуске в браузерах, которые реализуют спецификацию Вебвр 1,1, или на мобильных устройствах без поддержки Вебвр/Вебкср.</span><span class="sxs-lookup"><span data-stu-id="0bbda-110">This polyfill allows developers to write against the latest specification, providing support when run on browsers that implement the WebVR 1.1 spec, or on mobile devices with no WebVR/WebXR support at all.</span></span>
+
+## <a name="javascript-libraries-to-build-mixed-reality-applications-on-the-web"></a><span data-ttu-id="0bbda-111">Библиотеки JavaScript для создания приложений смешанной реальности в Интернете</span><span class="sxs-lookup"><span data-stu-id="0bbda-111">JavaScript libraries to build Mixed Reality applications on the web</span></span>
+
+## <a name="babylonjs"></a><span data-ttu-id="0bbda-112">Бабилон. js</span><span class="sxs-lookup"><span data-stu-id="0bbda-112">Babylon.js</span></span>
+
+<span data-ttu-id="0bbda-113">Бабилон — это трехмерный модуль JavaScript, который упрощает разработку трехмерного содержимого и впечатляющих приложений.</span><span class="sxs-lookup"><span data-stu-id="0bbda-113">Babylon is a JavaScript 3D engine that makes developing 3D content and immersive applications easy.</span></span> <span data-ttu-id="0bbda-114">Прежде чем приступить к работе с иммерсивное приложение, рекомендуется изучить основы разработки Бабилон. js.</span><span class="sxs-lookup"><span data-stu-id="0bbda-114">Before getting started with immersive applications, we recommend to learn the basics of Babylon.js development.</span></span>
+
+<span data-ttu-id="0bbda-115">Узнайте, как создать приложение смешанной реальности с помощью Бабилон в [разделе Приступая к работе](https://doc.babylonjs.com/).</span><span class="sxs-lookup"><span data-stu-id="0bbda-115">Learn how to build a mixed reality application with Babylon in the [getting started section](https://doc.babylonjs.com/).</span></span> <span data-ttu-id="0bbda-116">Воспроизводите трехмерные примеры и их исходный код с помощью [Бабилон Playground](https://doc.babylonjs.com/examples/).</span><span class="sxs-lookup"><span data-stu-id="0bbda-116">Play with 3D examples and their source code using [Babylon Playground](https://doc.babylonjs.com/examples/).</span></span> <span data-ttu-id="0bbda-117">Познакомьтесь с разработкой смешанной реальности в [разделе вебкср](https://doc.babylonjs.com/how_to/introduction_to_webxr) документации.</span><span class="sxs-lookup"><span data-stu-id="0bbda-117">Dive into mixed reality development on the [WebXR section](https://doc.babylonjs.com/how_to/introduction_to_webxr) of the documentation.</span></span> 
+
+## <a name="a-frame"></a><span data-ttu-id="0bbda-118">A-кадр</span><span class="sxs-lookup"><span data-stu-id="0bbda-118">A-Frame</span></span>
+
+<span data-ttu-id="0bbda-119">A-Frame — это декларативная платформа JavaScript, позволяющая начать работу с Virtual Reality в Интернете.</span><span class="sxs-lookup"><span data-stu-id="0bbda-119">A-frame is a declarative JavaScript framework to get started with Virtual Reality in the web.</span></span> <span data-ttu-id="0bbda-120">Ознакомьтесь с [документацией по кадрам,](https://aframe.io/) чтобы узнать больше.</span><span class="sxs-lookup"><span data-stu-id="0bbda-120">Check out the [A-Frame documentation](https://aframe.io/) to learn more.</span></span>
+
+## <a name="threejs"></a><span data-ttu-id="0bbda-121">Три JS</span><span class="sxs-lookup"><span data-stu-id="0bbda-121">Three.js</span></span>
+
+<span data-ttu-id="0bbda-122">Три. js — популярная трехмерная библиотека для создания впечатляющих возможностей.</span><span class="sxs-lookup"><span data-stu-id="0bbda-122">Three.js is a popular 3D library for creating immersive experiences.</span></span> <span data-ttu-id="0bbda-123">Дополнительные сведения о [трех. js](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene) на странице документации и [примеры](https://threejs.org/examples/#webgl_animation_cloth)см. здесь.</span><span class="sxs-lookup"><span data-stu-id="0bbda-123">Learn more about [three.js](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene) in documentation page and by exploring [examples](https://threejs.org/examples/#webgl_animation_cloth).</span></span>
+
+## <a name="webgl"></a><span data-ttu-id="0bbda-124">WebGL</span><span class="sxs-lookup"><span data-stu-id="0bbda-124">WebGL</span></span>
+
+<span data-ttu-id="0bbda-125">Доступ к API устройства Вебкср можно получить непосредственно с помощью API-интерфейсов WebGL.</span><span class="sxs-lookup"><span data-stu-id="0bbda-125">You can access the WebXR Device APIs directly by using WebGL APIs.</span></span> <span data-ttu-id="0bbda-126">WebGL (Библиотека веб-графики) — это API JavaScript для визуализации высокопроизводительной интерактивной трехмерной и двухмерной графики в любом совместимом веб-браузере без использования подключаемых модулей. Дополнительные сведения об [интерфейсах API WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API).</span><span class="sxs-lookup"><span data-stu-id="0bbda-126">WebGL (Web Graphics Library) is a JavaScript API for rendering high-performance interactive 3D and 2D graphics within any compatible web browser without the use of plug-ins. Learn more about the [WebGL APIs](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API).</span></span>
+
+## <a name="mixed-reality-native-mobile-applications-using-javascript"></a><span data-ttu-id="0bbda-127">Собственные мобильные приложения смешанной реальности с использованием JavaScript</span><span class="sxs-lookup"><span data-stu-id="0bbda-127">Mixed Reality native mobile applications using JavaScript</span></span>
+
+<span data-ttu-id="0bbda-128">С помощью нескольких библиотек JavaScript вы можете писать свои возможности смешанной реальности и развертывать их в Интернете и на собственных платформах, таких как гарнитуры Windows Mixed Reality, устройства Android и iOS.</span><span class="sxs-lookup"><span data-stu-id="0bbda-128">With the help of few JavaScript libraries you can write your mixed reality experiences once and deploy it to web and to native platforms like Windows Mixed Reality headsets, Android and iOS devices.</span></span>
+
+## <a name="babylon-native"></a><span data-ttu-id="0bbda-129">Бабилон Native</span><span class="sxs-lookup"><span data-stu-id="0bbda-129">Babylon Native</span></span>
+
+<span data-ttu-id="0bbda-130">[Бабилон собственная](https://www.babylonjs.com/native/) платформа позволяет любому пользователю взять свой код Бабилон. js и создать собственное приложение с ним, разблокируя возможности собственных технологий.</span><span class="sxs-lookup"><span data-stu-id="0bbda-130">[Babylon Native](https://www.babylonjs.com/native/) platform allows anyone to take their Babylon.js code and build a native application with it, unlocking the power of native technologies.</span></span> <span data-ttu-id="0bbda-131">Вы можете скачать [Бабилон Native на сайте GitHub](https://github.com/BabylonJS/BabylonNative) и прочесть дополнительные сведения о нем в [блоге Бабилон. js](https://medium.com/@babylonjs/babylon-native-821f1694fffc).</span><span class="sxs-lookup"><span data-stu-id="0bbda-131">You can download [Babylon native on github](https://github.com/BabylonJS/BabylonNative) and read more about it on [Babylon.js blog](https://medium.com/@babylonjs/babylon-native-821f1694fffc).</span></span>
+
+## <a name="react-native"></a><span data-ttu-id="0bbda-132">React Native</span><span class="sxs-lookup"><span data-stu-id="0bbda-132">React Native</span></span>
+
+<span data-ttu-id="0bbda-133">[Реакция на машинный код](https://reactnative.dev/) — это еще одна библиотека с открытым исходным кодом, которая позволяет разработчикам создавать с помощью JavaScript и развертывать на нескольких платформах</span><span class="sxs-lookup"><span data-stu-id="0bbda-133">[React Native](https://reactnative.dev/) is another open source library that allows developers to build using JavaScript and deploy to multiple platforms.</span></span> <span data-ttu-id="0bbda-134">Вы можете скачать [собственное реагирование на GitHub](https://github.com/facebook/react-native) и узнать больше о нем в блоге, посвященном [собственному реагированию](https://reactnative.dev/blog/).</span><span class="sxs-lookup"><span data-stu-id="0bbda-134">You can download [React Native on Github](https://github.com/facebook/react-native) and learn more about it in [React Native Blog](https://reactnative.dev/blog/).</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="0bbda-135">См. также</span><span class="sxs-lookup"><span data-stu-id="0bbda-135">See Also</span></span>
+
+* [<span data-ttu-id="0bbda-136">Обзор Вебкср</span><span class="sxs-lookup"><span data-stu-id="0bbda-136">WebXR Overview</span></span>](webxr-overview.md)
+* [<span data-ttu-id="0bbda-137">Спецификация API устройства Вебкср</span><span class="sxs-lookup"><span data-stu-id="0bbda-137">WebXR Device API specification</span></span>](https://immersive-web.github.io/webxr/)
+* [<span data-ttu-id="0bbda-138">Документация по API устройства Вебкср</span><span class="sxs-lookup"><span data-stu-id="0bbda-138">WebXR Device API documentation</span></span>](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
+* [<span data-ttu-id="0bbda-139">Иммерсивевеб. dev</span><span class="sxs-lookup"><span data-stu-id="0bbda-139">Immersiveweb.dev</span></span>](https://immersiveweb.dev/)
+* [<span data-ttu-id="0bbda-140">Примеры Вебкср</span><span class="sxs-lookup"><span data-stu-id="0bbda-140">WebXR Samples</span></span>](https://immersive-web.github.io/webxr-samples/)
+* [<span data-ttu-id="0bbda-141">Использование Бабилон. js для создания Вебксрных возможностей</span><span class="sxs-lookup"><span data-stu-id="0bbda-141">Using Babylon.js to create WebXR experiences</span></span>](https://doc.babylonjs.com/how_to/introduction_to_webxr)
+* [<span data-ttu-id="0bbda-142">Windows Mixed Reality и новая Microsoft ребро</span><span class="sxs-lookup"><span data-stu-id="0bbda-142">Windows Mixed Reality and the new Microsoft Edge</span></span>](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
+* [<span data-ttu-id="0bbda-143">Иммерсивное веб-сайт W3C GitHub</span><span class="sxs-lookup"><span data-stu-id="0bbda-143">Immersive Web W3C Github</span></span>](https://github.com/immersive-web)
+* <span data-ttu-id="0bbda-144">[API WebGL](https://msdn.microsoft.com/library/bg182648(v=vs.85).aspx)</span><span class="sxs-lookup"><span data-stu-id="0bbda-144">[WebGL API](https://msdn.microsoft.com/library/bg182648(v=vs.85).aspx)</span></span>
+* <span data-ttu-id="0bbda-145">Расширения [API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) и [игровой](https://w3c.github.io/gamepad/extensions.html) планшета</span><span class="sxs-lookup"><span data-stu-id="0bbda-145">[Gamepad API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) and [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)</span></span>
+* [<span data-ttu-id="0bbda-146">Обзор Вебвр</span><span class="sxs-lookup"><span data-stu-id="0bbda-146">WebVR Overview</span></span>](webvr-overview.md)

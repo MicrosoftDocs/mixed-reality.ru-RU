@@ -1,38 +1,38 @@
 ---
 title: Подготовка тома
 description: Изображения объемные содержат обширную информацию с непрозрачностью и цветом в рамках всего тома, которые не могут быть легко выражены в качестве поверхностей. Узнайте, как эффективно визуализировать объемные образы в Windows Mixed Reality.
-author: KevinKennedy
+author: kevinkennedy
 ms.author: kkennedy
 ms.date: 03/21/2018
 ms.topic: article
 keywords: образ объемные, подготовка тома, производительность, Смешанная реальность
-ms.openlocfilehash: 04931df5e4225225e4c11c3f6d72801e2d58f646
-ms.sourcegitcommit: 317653cd8500563c514464f0337c1f230a6f3653
+ms.openlocfilehash: 6dbb49c31761d4b7b9da5060d15763c3925be754
+ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75503835"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81277952"
 ---
-# <a name="volume-rendering"></a><span data-ttu-id="c8d84-105">Подготовка тома</span><span class="sxs-lookup"><span data-stu-id="c8d84-105">Volume rendering</span></span>
+# <a name="volume-rendering"></a><span data-ttu-id="1134b-105">Подготовка тома</span><span class="sxs-lookup"><span data-stu-id="1134b-105">Volume rendering</span></span>
 
-<span data-ttu-id="c8d84-106">Сведения о медицинских MRI или технологических томах см. [в статье Подготовка тома в Википедии](https://en.wikipedia.org/wiki/Volume_rendering).</span><span class="sxs-lookup"><span data-stu-id="c8d84-106">For medical MRI or engineering volumes, see [Volume Rendering on Wikipedia](https://en.wikipedia.org/wiki/Volume_rendering).</span></span> <span data-ttu-id="c8d84-107">Эти "объемные изображения" содержат обширные сведения с непрозрачностью и цветом в рамках всего тома, которые не могут быть легко выражены в виде таких поверхностей, как [многоугольные сетки](https://en.wikipedia.org/wiki/Polygon_mesh).</span><span class="sxs-lookup"><span data-stu-id="c8d84-107">These 'volumetric images' contain rich information with opacity and color throughout the volume that cannot be easily expressed as surfaces such as [polygonal meshes](https://en.wikipedia.org/wiki/Polygon_mesh).</span></span>
+<span data-ttu-id="1134b-106">Сведения о медицинских MRI или технологических томах см. [в статье Подготовка тома в Википедии](https://en.wikipedia.org/wiki/Volume_rendering).</span><span class="sxs-lookup"><span data-stu-id="1134b-106">For medical MRI or engineering volumes, see [Volume Rendering on Wikipedia](https://en.wikipedia.org/wiki/Volume_rendering).</span></span> <span data-ttu-id="1134b-107">Эти "объемные изображения" содержат обширные сведения с непрозрачностью и цветом в рамках всего тома, которые не могут быть легко выражены в виде таких поверхностей, как [многоугольные сетки](https://en.wikipedia.org/wiki/Polygon_mesh).</span><span class="sxs-lookup"><span data-stu-id="1134b-107">These 'volumetric images' contain rich information with opacity and color throughout the volume that cannot be easily expressed as surfaces such as [polygonal meshes](https://en.wikipedia.org/wiki/Polygon_mesh).</span></span>
 
-<span data-ttu-id="c8d84-108">Основные решения для повышения производительности</span><span class="sxs-lookup"><span data-stu-id="c8d84-108">Key solutions to improve performance</span></span>
-1. <span data-ttu-id="c8d84-109">ПЛОХОЙ: упрощенный подход: отображение всего тома, обычно выполняется слишком медленно</span><span class="sxs-lookup"><span data-stu-id="c8d84-109">BAD: Naïve Approach: Show Whole Volume, generally runs too slowly</span></span>
-2. <span data-ttu-id="c8d84-110">ХОРОШЕЕ: вырезание плоскости: отображение только одного среза тома</span><span class="sxs-lookup"><span data-stu-id="c8d84-110">GOOD: Cutting Plane: Show only a single slice of the volume</span></span>
-3. <span data-ttu-id="c8d84-111">ХОРОШЕЕ: вырезание подраздела: отображение всего нескольких слоев тома</span><span class="sxs-lookup"><span data-stu-id="c8d84-111">GOOD: Cutting Sub-Volume: Show only a few layers of the volume</span></span>
-4. <span data-ttu-id="c8d84-112">ХОРОШЕЕ: Уменьшите разрешение отрисовки тома (см. раздел "Визуализация в режиме смешанного разрешения")</span><span class="sxs-lookup"><span data-stu-id="c8d84-112">GOOD: Lower the resolution of the volume rendering (see 'Mixed Resolution Scene Rendering')</span></span>
+<span data-ttu-id="1134b-108">Основные решения для повышения производительности</span><span class="sxs-lookup"><span data-stu-id="1134b-108">Key solutions to improve performance</span></span>
+1. <span data-ttu-id="1134b-109">ПЛОХОЙ: упрощенный подход: отображение всего тома, обычно выполняется слишком медленно</span><span class="sxs-lookup"><span data-stu-id="1134b-109">BAD: Naïve Approach: Show Whole Volume, generally runs too slowly</span></span>
+2. <span data-ttu-id="1134b-110">ХОРОШЕЕ: вырезание плоскости: отображение только одного среза тома</span><span class="sxs-lookup"><span data-stu-id="1134b-110">GOOD: Cutting Plane: Show only a single slice of the volume</span></span>
+3. <span data-ttu-id="1134b-111">ХОРОШЕЕ: вырезание подраздела: отображение всего нескольких слоев тома</span><span class="sxs-lookup"><span data-stu-id="1134b-111">GOOD: Cutting Sub-Volume: Show only a few layers of the volume</span></span>
+4. <span data-ttu-id="1134b-112">ХОРОШЕЕ: Уменьшите разрешение отрисовки тома (см. раздел "Визуализация в режиме смешанного разрешения")</span><span class="sxs-lookup"><span data-stu-id="1134b-112">GOOD: Lower the resolution of the volume rendering (see 'Mixed Resolution Scene Rendering')</span></span>
 
-<span data-ttu-id="c8d84-113">Существует только определенный объем информации, которую можно передать из приложения на экран в каком-либо конкретном кадре, что является общей пропускной способностью памяти.</span><span class="sxs-lookup"><span data-stu-id="c8d84-113">There is only a certain amount of information that can be transferred from the application to the screen in any particular frame, which is the total memory bandwidth.</span></span> <span data-ttu-id="c8d84-114">Кроме того, для преобразования данных в представление требуется время обработки (или заливки).</span><span class="sxs-lookup"><span data-stu-id="c8d84-114">Also, any processing (or 'shading') required to transform that data for presentation requires time.</span></span> <span data-ttu-id="c8d84-115">Ниже приведены основные моменты, которые следует учитывать при выполнении подготовки тома.</span><span class="sxs-lookup"><span data-stu-id="c8d84-115">The primary considerations when doing volume rendering are as such:</span></span>
-* <span data-ttu-id="c8d84-116">Ширина экрана \* высота экрана \* — количество \* том-слои-вкл.-пиксель = всего-Volume-Samples-on-Frame</span><span class="sxs-lookup"><span data-stu-id="c8d84-116">Screen-Width \* Screen-Height \* Screen-Count \* Volume-Layers-On-That-Pixel = Total-Volume-Samples-Per-Frame</span></span>
-* <span data-ttu-id="c8d84-117">1028 \* 720 \* 2 \* 256 = 378961920 (100%) (полный объем ресурсов: слишком много выборок)</span><span class="sxs-lookup"><span data-stu-id="c8d84-117">1028 \* 720 \* 2 \* 256 = 378961920 (100%) (full res volume: too many samples)</span></span>
-* <span data-ttu-id="c8d84-118">1028 \* 720 \* 2 \* 1 = 1480320 (0,3% от полной) (тонкий срез: 1 выборка на пиксель, работает плавно)</span><span class="sxs-lookup"><span data-stu-id="c8d84-118">1028 \* 720 \* 2 \* 1 = 1480320 (0.3% of full) (thin slice: 1 sample per pixel, runs smoothly)</span></span>
-* <span data-ttu-id="c8d84-119">1028 \* 720 \* 2 \* 10 = 14803200 (3,9% от полной) (срез вспомогательного тома: 10 выборок на пиксель, выполняется довольно гладко, отображается трехмерная)</span><span class="sxs-lookup"><span data-stu-id="c8d84-119">1028 \* 720 \* 2 \* 10 = 14803200 (3.9% of full) (sub-volume slice: 10 samples per pixel, runs fairly smoothly, looks 3d)</span></span>
-* <span data-ttu-id="c8d84-120">200 \* 200 \* 2 \* 256 = 20480000 (5% от полной) (меньший объем ресурсов: меньше пикселей, полный том, объемный, но немного размытый)</span><span class="sxs-lookup"><span data-stu-id="c8d84-120">200 \* 200 \* 2 \* 256 = 20480000 (5% of full) (lower res volume: fewer pixels, full volume, looks 3d but a bit blurry)</span></span>
+<span data-ttu-id="1134b-113">Существует только определенный объем информации, которую можно передать из приложения на экран в каком-либо конкретном кадре, что является общей пропускной способностью памяти.</span><span class="sxs-lookup"><span data-stu-id="1134b-113">There is only a certain amount of information that can be transferred from the application to the screen in any particular frame, which is the total memory bandwidth.</span></span> <span data-ttu-id="1134b-114">Кроме того, для преобразования данных в представление требуется время обработки (или заливки).</span><span class="sxs-lookup"><span data-stu-id="1134b-114">Also, any processing (or 'shading') required to transform that data for presentation requires time.</span></span> <span data-ttu-id="1134b-115">Ниже приведены основные моменты, которые следует учитывать при выполнении подготовки тома.</span><span class="sxs-lookup"><span data-stu-id="1134b-115">The primary considerations when doing volume rendering are as such:</span></span>
+* <span data-ttu-id="1134b-116">Ширина экрана \* высота экрана \* — количество \* том-слои-вкл.-пиксель = всего-Volume-Samples-on-Frame</span><span class="sxs-lookup"><span data-stu-id="1134b-116">Screen-Width \* Screen-Height \* Screen-Count \* Volume-Layers-On-That-Pixel = Total-Volume-Samples-Per-Frame</span></span>
+* <span data-ttu-id="1134b-117">1028 \* 720 \* 2 \* 256 = 378961920 (100%) (полный объем ресурсов: слишком много выборок)</span><span class="sxs-lookup"><span data-stu-id="1134b-117">1028 \* 720 \* 2 \* 256 = 378961920 (100%) (full res volume: too many samples)</span></span>
+* <span data-ttu-id="1134b-118">1028 \* 720 \* 2 \* 1 = 1480320 (0,3% от полной) (тонкий срез: 1 выборка на пиксель, работает плавно)</span><span class="sxs-lookup"><span data-stu-id="1134b-118">1028 \* 720 \* 2 \* 1 = 1480320 (0.3% of full) (thin slice: 1 sample per pixel, runs smoothly)</span></span>
+* <span data-ttu-id="1134b-119">1028 \* 720 \* 2 \* 10 = 14803200 (3,9% от полной) (срез вспомогательного тома: 10 выборок на пиксель, выполняется довольно гладко, отображается трехмерная)</span><span class="sxs-lookup"><span data-stu-id="1134b-119">1028 \* 720 \* 2 \* 10 = 14803200 (3.9% of full) (sub-volume slice: 10 samples per pixel, runs fairly smoothly, looks 3d)</span></span>
+* <span data-ttu-id="1134b-120">200 \* 200 \* 2 \* 256 = 20480000 (5% от полной) (меньший объем ресурсов: меньше пикселей, полный том, объемный, но немного размытый)</span><span class="sxs-lookup"><span data-stu-id="1134b-120">200 \* 200 \* 2 \* 256 = 20480000 (5% of full) (lower res volume: fewer pixels, full volume, looks 3d but a bit blurry)</span></span>
 
-## <a name="representing-3d-textures"></a><span data-ttu-id="c8d84-121">Представление трехмерных текстур</span><span class="sxs-lookup"><span data-stu-id="c8d84-121">Representing 3D Textures</span></span>
+## <a name="representing-3d-textures"></a><span data-ttu-id="1134b-121">Представление трехмерных текстур</span><span class="sxs-lookup"><span data-stu-id="1134b-121">Representing 3D Textures</span></span>
 
-<span data-ttu-id="c8d84-122">На ЦП:</span><span class="sxs-lookup"><span data-stu-id="c8d84-122">On the CPU:</span></span>
+<span data-ttu-id="1134b-122">На ЦП:</span><span class="sxs-lookup"><span data-stu-id="1134b-122">On the CPU:</span></span>
 
 ```
 public struct Int3 { public int X, Y, Z; /* ... */ }
@@ -67,7 +67,7 @@ public struct Int3 { public int X, Y, Z; /* ... */ }
  }
 ```
 
-<span data-ttu-id="c8d84-123">На GPU:</span><span class="sxs-lookup"><span data-stu-id="c8d84-123">On the GPU:</span></span>
+<span data-ttu-id="1134b-123">На GPU:</span><span class="sxs-lookup"><span data-stu-id="1134b-123">On the GPU:</span></span>
 
 ```
 float3 _VolBufferSize;
@@ -85,9 +85,9 @@ float3 _VolBufferSize;
  }
 ```
 
-## <a name="shading-and-gradients"></a><span data-ttu-id="c8d84-124">Заливка и градиенты</span><span class="sxs-lookup"><span data-stu-id="c8d84-124">Shading and Gradients</span></span>
+## <a name="shading-and-gradients"></a><span data-ttu-id="1134b-124">Заливка и градиенты</span><span class="sxs-lookup"><span data-stu-id="1134b-124">Shading and Gradients</span></span>
 
-<span data-ttu-id="c8d84-125">Как затенить том, например MRI, для полезной визуализации.</span><span class="sxs-lookup"><span data-stu-id="c8d84-125">How to shade a volume, such as MRI, for useful visualization.</span></span> <span data-ttu-id="c8d84-126">Основным методом является «окно интенсивности» (минимальное и максимальное), интенситиес в рамках, и просто масштабируется в это пространство, чтобы увидеть интенсивность черной и белой шкалы.</span><span class="sxs-lookup"><span data-stu-id="c8d84-126">The primary method is to have an 'intensity window' (a min and max) that you want to see intensities within, and simply scale into that space to see the black and white intensity.</span></span> <span data-ttu-id="c8d84-127">Цветовая шкала может быть применена к значениям в пределах этого диапазона и сохранена в виде текстуры, чтобы различные части спектра интенсивности можно было затенить разными цветами:</span><span class="sxs-lookup"><span data-stu-id="c8d84-127">A 'color ramp' can then be applied to the values within that range, and stored as a texture, so that different parts of the intensity spectrum can be shaded different colors:</span></span>
+<span data-ttu-id="1134b-125">Как затенить том, например MRI, для полезной визуализации.</span><span class="sxs-lookup"><span data-stu-id="1134b-125">How to shade a volume, such as MRI, for useful visualization.</span></span> <span data-ttu-id="1134b-126">Основным методом является «окно интенсивности» (минимальное и максимальное), интенситиес в рамках, и просто масштабируется в это пространство, чтобы увидеть интенсивность черной и белой шкалы.</span><span class="sxs-lookup"><span data-stu-id="1134b-126">The primary method is to have an 'intensity window' (a min and max) that you want to see intensities within, and simply scale into that space to see the black and white intensity.</span></span> <span data-ttu-id="1134b-127">Цветовая шкала может быть применена к значениям в пределах этого диапазона и сохранена в виде текстуры, чтобы различные части спектра интенсивности можно было затенить разными цветами:</span><span class="sxs-lookup"><span data-stu-id="1134b-127">A 'color ramp' can then be applied to the values within that range, and stored as a texture, so that different parts of the intensity spectrum can be shaded different colors:</span></span>
 
 ```
 float4 ShadeVol( float intensity ) {
@@ -98,16 +98,16 @@ float4 ShadeVol( float intensity ) {
    color.rgba = tex2d( ColorRampTexture, float2( unitIntensity, 0 ) );
 ```
 
-<span data-ttu-id="c8d84-128">Во многих наших приложениях мы сохраняем на нашем томе значение интенсивности необработанных данных и "индекс сегментации" (для сегментирования различных частей, таких как Обложка и кость; эти сегменты обычно создаются экспертами в выделенных инструментах).</span><span class="sxs-lookup"><span data-stu-id="c8d84-128">In many of our applications, we store in our volume both a raw intensity value and a 'segmentation index' (to segment different parts such as skin and bone; these segments are generally created by experts in dedicated tools).</span></span> <span data-ttu-id="c8d84-129">Это можно сочетать с описанным выше способом, чтобы задать другой цвет или даже разную цветовую шкалу для каждого индекса сегмента:</span><span class="sxs-lookup"><span data-stu-id="c8d84-129">This can be combined with the approach above to put a different color, or even different color ramp for each segment index:</span></span>
+<span data-ttu-id="1134b-128">Во многих наших приложениях мы сохраняем на нашем томе значение интенсивности необработанных данных и "индекс сегментации" (для сегментирования различных частей, таких как Обложка и кость; эти сегменты обычно создаются экспертами в выделенных инструментах).</span><span class="sxs-lookup"><span data-stu-id="1134b-128">In many of our applications, we store in our volume both a raw intensity value and a 'segmentation index' (to segment different parts such as skin and bone; these segments are generally created by experts in dedicated tools).</span></span> <span data-ttu-id="1134b-129">Это можно сочетать с описанным выше способом, чтобы задать другой цвет или даже разную цветовую шкалу для каждого индекса сегмента:</span><span class="sxs-lookup"><span data-stu-id="1134b-129">This can be combined with the approach above to put a different color, or even different color ramp for each segment index:</span></span>
 
 ```
 // Change color to match segment index (fade each segment towards black):
  color.rgb = SegmentColors[ segment_index ] * color.a; // brighter alpha gives brighter color
 ```
 
-## <a name="volume-slicing-in-a-shader"></a><span data-ttu-id="c8d84-130">Срез томов в шейдере</span><span class="sxs-lookup"><span data-stu-id="c8d84-130">Volume Slicing in a Shader</span></span>
+## <a name="volume-slicing-in-a-shader"></a><span data-ttu-id="1134b-130">Срез томов в шейдере</span><span class="sxs-lookup"><span data-stu-id="1134b-130">Volume Slicing in a Shader</span></span>
 
-<span data-ttu-id="c8d84-131">Отличным первым шагом является создание "плоскости среза", которая может перемещаться по тому, "размещая ее" и проверять значения в каждой точке.</span><span class="sxs-lookup"><span data-stu-id="c8d84-131">A great first step is to create a "slicing plane" that can move through the volume, 'slicing it', and how the scan values at each point.</span></span> <span data-ttu-id="c8d84-132">Предполагается, что существует куб «Волумеспаце», который представляет место, где находится том в мировом пространстве, который можно использовать в качестве ссылки для размещения точек:</span><span class="sxs-lookup"><span data-stu-id="c8d84-132">This assumes that there is a 'VolumeSpace' cube, which represents where the volume is in world space, that can be used as a reference for placing the points:</span></span>
+<span data-ttu-id="1134b-131">Отличным первым шагом является создание "плоскости среза", которая может перемещаться по тому, "размещая ее" и проверять значения в каждой точке.</span><span class="sxs-lookup"><span data-stu-id="1134b-131">A great first step is to create a "slicing plane" that can move through the volume, 'slicing it', and how the scan values at each point.</span></span> <span data-ttu-id="1134b-132">Предполагается, что существует куб «Волумеспаце», который представляет место, где находится том в мировом пространстве, который можно использовать в качестве ссылки для размещения точек:</span><span class="sxs-lookup"><span data-stu-id="1134b-132">This assumes that there is a 'VolumeSpace' cube, which represents where the volume is in world space, that can be used as a reference for placing the points:</span></span>
 
 ```
 // In the vertex shader:
@@ -120,9 +120,9 @@ float4 ShadeVol( float intensity ) {
  float4 color = ShadeVol( SampleVol( volSpace ) );
 ```
 
-## <a name="volume-tracing-in-shaders"></a><span data-ttu-id="c8d84-133">Трассировка тома в шейдере</span><span class="sxs-lookup"><span data-stu-id="c8d84-133">Volume Tracing in Shaders</span></span>
+## <a name="volume-tracing-in-shaders"></a><span data-ttu-id="1134b-133">Трассировка тома в шейдере</span><span class="sxs-lookup"><span data-stu-id="1134b-133">Volume Tracing in Shaders</span></span>
 
-<span data-ttu-id="c8d84-134">Как использовать графический процессор для трассировки вложенного тома (проходит несколько вокселс, а затем слои данных с обратно на передний план):</span><span class="sxs-lookup"><span data-stu-id="c8d84-134">How to use the GPU to do sub-volume tracing (walks a few voxels deep, then layers on the data from back to front):</span></span>
+<span data-ttu-id="1134b-134">Как использовать графический процессор для трассировки вложенного тома (проходит несколько вокселс, а затем слои данных с обратно на передний план):</span><span class="sxs-lookup"><span data-stu-id="1134b-134">How to use the GPU to do sub-volume tracing (walks a few voxels deep, then layers on the data from back to front):</span></span>
 
 ```
 float4 AlphaBlend(float4 dst, float4 src) {
@@ -164,9 +164,9 @@ float4 AlphaBlend(float4 dst, float4 src) {
  float4 color = volTraceSubVolume( volSpace, cameraInVolSpace );
 ```
 
-## <a name="whole-volume-rendering"></a><span data-ttu-id="c8d84-135">Отрисовка всего тома</span><span class="sxs-lookup"><span data-stu-id="c8d84-135">Whole Volume Rendering</span></span>
+## <a name="whole-volume-rendering"></a><span data-ttu-id="1134b-135">Отрисовка всего тома</span><span class="sxs-lookup"><span data-stu-id="1134b-135">Whole Volume Rendering</span></span>
 
-<span data-ttu-id="c8d84-136">Изменив код подраздела выше, мы получаем:</span><span class="sxs-lookup"><span data-stu-id="c8d84-136">Modifying the sub-volume code above, we get:</span></span>
+<span data-ttu-id="1134b-136">Изменив код подраздела выше, мы получаем:</span><span class="sxs-lookup"><span data-stu-id="1134b-136">Modifying the sub-volume code above, we get:</span></span>
 
 ```
 float4 volTraceSubVolume(float3 objPosStart, float3 cameraPosVolSpace) {
@@ -177,15 +177,15 @@ float4 volTraceSubVolume(float3 objPosStart, float3 cameraPosVolSpace) {
    int numLoops = min( distanceInVoxels, maxSamples ); // put a min on the voxels to sample
 ```
 
-## <a name="mixed-resolution-scene-rendering"></a><span data-ttu-id="c8d84-137">Отображение сцены смешанного разрешения</span><span class="sxs-lookup"><span data-stu-id="c8d84-137">Mixed Resolution Scene Rendering</span></span>
+## <a name="mixed-resolution-scene-rendering"></a><span data-ttu-id="1134b-137">Отображение сцены смешанного разрешения</span><span class="sxs-lookup"><span data-stu-id="1134b-137">Mixed Resolution Scene Rendering</span></span>
 
-<span data-ttu-id="c8d84-138">Как отобразить часть сцены с низким разрешением и вернуть ее на месте:</span><span class="sxs-lookup"><span data-stu-id="c8d84-138">How to render a part of the scene with a low resolution and put it back in place:</span></span>
-1. <span data-ttu-id="c8d84-139">Установка двух экранных камер: один для отслеживания каждого глаза, который обновляет каждый кадр</span><span class="sxs-lookup"><span data-stu-id="c8d84-139">Setup two off-screen cameras, one to follow each eye that update each frame</span></span>
-2. <span data-ttu-id="c8d84-140">Настройка двух целевых объектов отрисовки с низким разрешением (т. е. 200x200 каждый), которые визуализируются камерами</span><span class="sxs-lookup"><span data-stu-id="c8d84-140">Setup two low-resolution render targets (i.e. 200x200 each) that the cameras render into</span></span>
-3. <span data-ttu-id="c8d84-141">Настроили четыре, которые переходят перед пользователем</span><span class="sxs-lookup"><span data-stu-id="c8d84-141">Setup a quad that moves in front of the user</span></span>
+<span data-ttu-id="1134b-138">Как отобразить часть сцены с низким разрешением и вернуть ее на месте:</span><span class="sxs-lookup"><span data-stu-id="1134b-138">How to render a part of the scene with a low resolution and put it back in place:</span></span>
+1. <span data-ttu-id="1134b-139">Установка двух экранных камер: один для отслеживания каждого глаза, который обновляет каждый кадр</span><span class="sxs-lookup"><span data-stu-id="1134b-139">Setup two off-screen cameras, one to follow each eye that update each frame</span></span>
+2. <span data-ttu-id="1134b-140">Настройка двух целевых объектов отрисовки с низким разрешением (т. е. 200x200 каждый), которые визуализируются камерами</span><span class="sxs-lookup"><span data-stu-id="1134b-140">Setup two low-resolution render targets (i.e. 200x200 each) that the cameras render into</span></span>
+3. <span data-ttu-id="1134b-141">Настроили четыре, которые переходят перед пользователем</span><span class="sxs-lookup"><span data-stu-id="1134b-141">Setup a quad that moves in front of the user</span></span>
 
-<span data-ttu-id="c8d84-142">Каждый кадр:</span><span class="sxs-lookup"><span data-stu-id="c8d84-142">Each Frame:</span></span>
-1. <span data-ttu-id="c8d84-143">Нарисуйте цели рендеринга для каждого взгляда с низким разрешением (данные тома, дорогостоящие шейдеры и т. д.).</span><span class="sxs-lookup"><span data-stu-id="c8d84-143">Draw the render targets for each eye at low-resolution (volume data, expensive shaders, etc.)</span></span>
-2. <span data-ttu-id="c8d84-144">Отрисовка сцены в обычном режиме с полным разрешением (сетки, Пользовательский интерфейс и т. д.)</span><span class="sxs-lookup"><span data-stu-id="c8d84-144">Draw the scene normally as full resolution (meshes, UI, etc.)</span></span>
-3. <span data-ttu-id="c8d84-145">Нарисуйте «четыре» перед пользователем, на сцене и проецирование низкого уровня просмотра на этот</span><span class="sxs-lookup"><span data-stu-id="c8d84-145">Draw a quad in front of the user, over the scene, and project the low-res renders onto that</span></span>
-4. <span data-ttu-id="c8d84-146">Результат: визуальное сочетание элементов с полным разрешением с низким разрешением, но с данными с высокой плотностью</span><span class="sxs-lookup"><span data-stu-id="c8d84-146">Result: visual combination of full-resolution elements with low-resolution but high-density volume data</span></span>
+<span data-ttu-id="1134b-142">Каждый кадр:</span><span class="sxs-lookup"><span data-stu-id="1134b-142">Each Frame:</span></span>
+1. <span data-ttu-id="1134b-143">Нарисуйте цели рендеринга для каждого взгляда с низким разрешением (данные тома, дорогостоящие шейдеры и т. д.).</span><span class="sxs-lookup"><span data-stu-id="1134b-143">Draw the render targets for each eye at low-resolution (volume data, expensive shaders, etc.)</span></span>
+2. <span data-ttu-id="1134b-144">Отрисовка сцены в обычном режиме с полным разрешением (сетки, Пользовательский интерфейс и т. д.)</span><span class="sxs-lookup"><span data-stu-id="1134b-144">Draw the scene normally as full resolution (meshes, UI, etc.)</span></span>
+3. <span data-ttu-id="1134b-145">Нарисуйте «четыре» перед пользователем, на сцене и проецирование низкого уровня просмотра на этот</span><span class="sxs-lookup"><span data-stu-id="1134b-145">Draw a quad in front of the user, over the scene, and project the low-res renders onto that</span></span>
+4. <span data-ttu-id="1134b-146">Результат: визуальное сочетание элементов с полным разрешением с низким разрешением, но с данными с высокой плотностью</span><span class="sxs-lookup"><span data-stu-id="1134b-146">Result: visual combination of full-resolution elements with low-resolution but high-density volume data</span></span>
