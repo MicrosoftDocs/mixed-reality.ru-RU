@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
 keywords: Windows Mixed Reality, голограммы, holographic удаленное взаимодействие, удаленная визуализация, Сетевая визуализация, HoloLens, удаленные голограммы, устранение неполадок, помощь
-ms.openlocfilehash: c6d8333bf22c3abb254a9f1b6e30a785effa9999
-ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
+ms.openlocfilehash: fc379eb4ad849fb5b236b82719711b37fead8a68
+ms.sourcegitcommit: 48456c607a2d0dcf035a77e8ba67615396b0a211
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81277352"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81484314"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Устранение неполадок удаленного взаимодействия с holographic
 
@@ -33,6 +33,7 @@ ms.locfileid: "81277352"
 * [Холографиккамера. Виевконфигуратион](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration)
   - Поддерживается начиная с версии [2.0.18](holographic-remoting-version-history.md#v2.0.18)
   - В предыдущих версиях всегда вызывает ошибку.
+* [Холографиккамера. Ишардвареконтентпротектионенаблед](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled#Windows_Graphics_Holographic_HolographicCamera_IsHardwareContentProtectionEnabled)
 * [Холографиквиевконфигуратион. Рекуестрендертаржетсизе](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration.requestrendertargetsize#Windows_Graphics_Holographic_HolographicViewConfiguration_RequestRenderTargetSize_Windows_Foundation_Size_)
   - Не завершается ошибкой, но размер целевого объекта прорисовки не изменится.
 * [Холографиккамерапосе. Оверридепрожектионтрансформ](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideprojectiontransform)
@@ -82,14 +83,14 @@ ms.locfileid: "81277352"
 
 * [Спатиалинтерактионсаурце. Трикреатехандмешобсервер](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserver#Windows_UI_Input_Spatial_SpatialInteractionSource_TryCreateHandMeshObserver)
 * [Спатиалинтерактионсаурце. Трикреатехандмешобсерверасинк](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserverasync)
+* [Спатиалинтерактионсаурце. Controller](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller)
 
 [Windows.Perception.Spatial.Preview](https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview)
 
 * [Спатиалграфинтероппревиев. Креателокаторфорноде](https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createlocatorfornode)
 * [Спатиалграфинтероппревиев. Трикреатефрамеофреференце](https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.trycreateframeofreference)
-* [Спатиалинтерактионсаурце. Controller](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 * [Журнал версий службы удаленного взаимодействия с holographic](holographic-remoting-version-history.md)
 * [Создание удаленного приложения holographic с удаленным взаимодействием](holographic-remoting-create-host.md)
 * [Написание пользовательского приложения для удаленного взаимодействия holographic](holographic-remoting-create-player.md)

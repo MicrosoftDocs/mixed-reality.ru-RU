@@ -6,17 +6,25 @@ ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: 5ba3aaa8874dea4418114b331d3d99fc977e982c
-ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
+ms.openlocfilehash: cd6d076c00fd21ca6fa60cafb94eb9d89796825a
+ms.sourcegitcommit: 48456c607a2d0dcf035a77e8ba67615396b0a211
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81278202"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81484304"
 ---
 # <a name="holographic-remoting-version-history"></a>Журнал версий службы удаленного взаимодействия с holographic
 
 > [!IMPORTANT]
 > Это руководство относится к удаленному взаимодействию с HoloLens 2.
+
+## <a name="version-212-april-5-2020"></a>Версия 2.1.2 (5 апреля, 2020)<a name="v2.1.2"></a>
+* Исправлена проблема совместимости аудио обратной связи между последним удаленным проигрывателем удаленного взаимодействия и удаленных приложений с использованием версии меньше 2.1.0.
+* Исправлена проблема с пространственной привязкой, которая неожиданно закрыла удаленный плеер Holographic. Эта проблема также затрагивает пользовательские проигрыватели.
+
+## <a name="version-211-march-20-2020"></a>Версия: (20 марта, 2020)<a name="v2.1.1"></a>
+* Исправлена проблема кодирования видео с удаленными приложениями при использовании GPU AMD.
+* Улучшена производительность удаленного проигрывателя Holographic.
 
 ## <a name="version-210-march-11-2020"></a>Версия 2.1.0 (11 марта, 2020)<a name="v2.1.0"></a>
 * Сетевой транспорт переключился на использование [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) через UDP. Безопасные подключения используют [SRTP](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) сейчас. Обратите внимание, что [проигрыватель holographic Remoting](holographic-remoting-player.md) по-прежнему совместим со всеми ранее выпущенными версиями с удаленным взаимодействием. Чтобы воспользоваться преимуществами нового сетевого транспорта и, по вашему мнению, проигрыватель holographic Remoting и удаленное приложение должны использовать версию 2.1.0.
@@ -28,7 +36,7 @@ ms.locfileid: "81278202"
 ## <a name="version-2018-december-17-2019"></a>Версия 2.0.18 (17 декабря, 2019)<a name="v2.0.18"></a>
 * Добавлена поддержка [холографиквиевконфигуратион](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration) .
 * Исправлены различные ошибки, приводящие к сбоям.
-* Исправлена ошибка обратного вызова Холографикспаце. Камерааддед, чтобы Холографиккамера был принят и показана как добавленная Камера в Холорафикфраме.
+* Исправлена ошибка обратного вызова Холографикспаце. Камерааддед, чтобы Холографиккамера был принят и показана как добавленная Камера в Холографикфраме.
 
 ## <a name="version-2016-november-11-2019"></a>Версия 2.0.16 (11 ноября, 2019)<a name="2.0.16"></a>
 * Исправлена взаимоблокировка при отслеживании QR-кода.
@@ -61,7 +69,7 @@ ms.locfileid: "81278202"
 
 * Первый общедоступный выпуск holographic Remoting для HoloLens 2.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 * [Написание пользовательского приложения для удаленного взаимодействия holographic](holographic-remoting-create-player.md)
 * [Создание хост-приложения holographic с удаленным взаимодействием](holographic-remoting-create-host.md)
 * [Устранение неполадок и ограничения удаленного взаимодействия с holographic](holographic-remoting-troubleshooting.md)
