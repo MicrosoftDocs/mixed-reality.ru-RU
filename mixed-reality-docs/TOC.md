@@ -235,7 +235,7 @@
 #### [Студия съемки смешанной реальности: принцип работы](how-it-works-mixed-reality-capture-studios.md)
 ### Голографическое удаленное взаимодействие
 #### [Holographic Remoting Player](holographic-remoting-player.md)
-#### [Создание ведущего приложения с голографическим удаленным взаимодействием](holographic-remoting-create-host.md)
+#### [Создание приложения с голографическим удаленным взаимодействием](holographic-remoting-create-host.md)
 #### [Создание пользовательского проигрывателя для голографического удаленного взаимодействия](holographic-remoting-create-player.md)
 #### [Пользовательские каналы данных с голографическим удаленным взаимодействием](holographic-remoting-custom-data-channels.md)
 #### [Безопасное подключение с использованием голографического удаленного взаимодействия](holographic-remoting-secure-connection.md)
