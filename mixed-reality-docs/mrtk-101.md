@@ -8,10 +8,10 @@ ms.topic: article
 keywords: HoloLens, МRТК, Набор средств для смешанной реальности, Windows Mixed Reality, проектирование, пример приложения, элементы управления
 ms.localizationpriority: high
 ms.openlocfilehash: 4564e7a0c6a717452effacae2587461fe283cf0b
-ms.sourcegitcommit: 5b2ba01aa2e4a80a3333bfdc850ab213a1b523b9
+ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/29/2020
 ms.locfileid: "79028310"
 ---
 # <a name="mrtk-101-how-to-use-mixed-reality-toolkit-unity-for-basic-interactions-hololens-2-hololens-windows-mixed-reality-openvr"></a>Общие сведения об MRTK. Как с помощью Набора средств Unity для смешанной реальности выполнять базовые операции взаимодействия (HoloLens 2, HoloLens, Windows Mixed Reality, Open VR)

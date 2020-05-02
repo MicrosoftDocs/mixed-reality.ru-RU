@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Смешанная реальность, взгляд, нацеливание взглядом, взаимодействие, конструктор, HoloLens, MMR, мультимодальный
 ms.openlocfilehash: 6b54d6e844c1b501a0835fc3a48deb4932ba551d
-ms.sourcegitcommit: 83698638b93c5ba77b3ffc399f1706482539f27b
+ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 04/29/2020
 ms.locfileid: "74539719"
 ---
 # <a name="introducing-instinctual-interactions"></a>Знакомство с инстинктивным взаимодействием
@@ -176,7 +176,7 @@ ms.locfileid: "74539719"
 > Мы постоянно предоставляем разработчикам и дизайнерам дополнительные рекомендации относительно способов, сценариев и целей использования нескольких моделей взаимодействия MR.
  
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 * [Комфорт](comfort.md)
 * [Взаимодействие на основе глаз](eye-gaze-interaction.md)
 * [Отслеживание глаз в HoloLens 2](eye-tracking.md)

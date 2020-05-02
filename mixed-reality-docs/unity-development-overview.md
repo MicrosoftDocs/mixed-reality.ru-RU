@@ -7,18 +7,20 @@ ms.date: 10/25/2018
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, смешанная реальность, разработка, приступая к работе, новый проект, перенос, возможность, камера, имитация, эмуляция, документация
-ms.openlocfilehash: 23b3d9a3fe419911e774722a7d2db6809c2955cf
-ms.sourcegitcommit: 4d43a8f40e3132605cee9ece9229e67d985db645
+ms.openlocfilehash: e0fe775f5fe891416145d91e52a5a801e049c568
+ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491097"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "81433420"
 ---
 # <a name="unity-development-overview"></a>Обзор разработки в Unity
 
 Самым быстрым средством создания [приложения смешанной реальности](app-views.md) является [Unity](https://unity.com). Рекомендуется потратить некоторое время на изучение [руководств по Unity](https://unity3d.com/learn/tutorials). Если вам нужны ресурсы, в Unity есть исчерпывающий портал [Asset Store](https://www.assetstore.unity3d.com/). Изучив основы Unity, вы можете перейти к [руководствам](tutorials.md), чтобы изучить особенности разработки смешанной реальности с помощью Unity. Обязательно посетите [форумы по смешанной реальности Unity](https://forum.unity3d.com/forums/hololens.102/), чтобы присоединиться к остальным участникам сообщества разработчиков приложений смешанной реальности в Unity и находить решения проблем, с которыми вы можете столкнуться.
 
 Чтобы приступить к созданию приложений смешанной реальности с помощью Unity, сначала [установите инструменты](install-the-tools.md). 
+
+>[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Setting-up-your-HoloLens-2-development-environment/player?format=ny]
 
 ## <a name="new-unity-project-with-mixed-reality-toolkit"></a>Создание проекта Unity с помощью набора средств для смешанной реальности (MRTK) 
 
@@ -79,7 +81,7 @@ ms.locfileid: "74491097"
     * Это руководство призвано помочь вам научиться использовать Unity — от простых до усложненных методик.
     * Чтобы перейти к нему, следует открыть редактор Unity и выбрать **Help (Справка) > Manual (Руководство)** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 * [Набор средств для смешанной реальности версии 2](mrtk-getting-started.md)
 * [100. Основы смешанной реальности: начало работы с Unity](holograms-100.md)
 * [Рекомендуемые параметры для Unity](recommended-settings-for-unity.md)

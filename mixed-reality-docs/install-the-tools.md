@@ -7,12 +7,12 @@ ms.date: 3/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit
-ms.openlocfilehash: 79f0e529f2c1c8331b14dcdbdd69d4fbfe11db79
-ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
+ms.openlocfilehash: 131d2a91c882fbcd31c4deb76a5ab5c3f97d7d42
+ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81278112"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82137879"
 ---
 # <a name="install-the-tools"></a>Установка инструментов
 
@@ -43,8 +43,7 @@ ms.locfileid: "81278112"
 
 :::row:::
     :::column:::
-        <a href="https://unity3d.com/unity/qa/lts-releases?version=2018.4" target="_blank">![Unity](images/unity_logo.png)<br>
-        **Unity**</a><br>
+        <a href="https://unity3d.com/unity/qa/lts-releases?version=2018.4" target="_blank">![Unity](images/unity_logo.png)<br>**Unity**</a><br>
         Обычно в качестве лучшей версии для запуска новых проектов мы рекомендуем Unity LTS (долгосрочная поддержка). Затем ее можно обновить до последней версии, чтобы получить новые стабильные исправления.<br>
         <br>
         Сейчас рекомендуем использовать **Unity 2018.4.x** — сборку LTS, необходимую для MRTK версии 2 (см. ниже).<br>
@@ -53,15 +52,13 @@ ms.locfileid: "81278112"
         <br>
         См. сведения о [разработке приложений Unity для иммерсивных гарнитур Windows Mixed Reality или HoloLens 2](unity-development-overview.md).<br>
         <br>
-        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/releases" target="_blank">![MRTK](images/final_mrtk-small_logo.png)<br>
-        **Набор средств для смешанной реальности (MRTK)** </a><br>
+        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/releases" target="_blank">![MRTK](images/final_mrtk-small_logo.png)<br>**Набор средств для смешанной реальности (MRTK)** </a><br>
         Mixed Reality Toolkit (MRTK) версии 2 для Unity — это кроссплатформенный пакет SDK с открытым кодом для приложений смешанной реальности.<br>
         <br>
         MRTK версии 2 используется для ускорения разработки приложений, предназначенных для Microsoft HoloLens, иммерсивных гарнитур (гарнитур виртуальной реальности) Windows Mixed Reality и платформы OpenVR. Целью проекта является снижение барьеров для создания приложений смешанной реальности и внесение вклада в развитие сообщества по мере расширения личного опыта.
     :::column-end:::
     :::column:::
-        <a href="https://docs.unrealengine.com//GettingStarted/Installation/index.html" target="_blank">![Unreal](images/Unreal_logo.png)<br>
-        **Unreal**</a><br>
+        <a href="https://docs.unrealengine.com//GettingStarted/Installation/index.html" target="_blank">![Unreal](images/Unreal_logo.png)<br>**Unreal**</a><br>
         Unreal Engine 4 — это мощная подсистема разработки с открытым кодом, обладающая полной поддержкой смешанной реальности в C++ и Blueprints.<br>
         <br>
         Поддержка HoloLens в Unreal Engine 4.24 сейчас предоставляется в режиме бета-версии.<br>
