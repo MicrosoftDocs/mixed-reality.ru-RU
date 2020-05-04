@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, бета-версия, потоковая передача, удаленное взаимодействие, смешанная реальность, разработка, начало работы, новый проект, эмулятор, документация
 ms.openlocfilehash: 96b0259e4ac567389f999d3a453fb68bb848b266
-ms.sourcegitcommit: 4d43a8f40e3132605cee9ece9229e67d985db645
+ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 04/29/2020
 ms.locfileid: "74491171"
 ---
 # <a name="unreal-development-overview"></a>Обзор разработки для Unreal
@@ -38,5 +38,5 @@ ms.locfileid: "74491171"
 
 Чтобы приступить к потоковой передаче, ознакомьтесь с разделом <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/QuickStartStreaming/index.html" target="_blank">HoloLens 2 Streaming Quick Start</a>[]() (Краткое руководство по потоковой передаче HoloLens 2).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 * <a href="https://docs.unrealengine.com//Platforms/Mobile/Performance/index.html" target="_blank">Рекомендации по производительности Unreal для мобильных устройств</a>
