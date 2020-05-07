@@ -7,12 +7,12 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, смешанная реальность, отладка, развертывание
-ms.openlocfilehash: 718635922196b9c044c6904ebab994e9e2a2ff1a
-ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
+ms.openlocfilehash: 8708ca39460fbd381bd41f5887e1276291f48b07
+ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81278002"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "81484324"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Развертывание и отладка с помощью Visual Studio
 
@@ -31,8 +31,8 @@ ms.locfileid: "81278002"
 
 ### <a name="hololens"></a>HoloLens
 1. Включите устройство HoloLens и наденьте его.
-2. Выполните жест [цветение](system-gesture.md#bloom), чтобы запустить главное меню.
-3. Посмотрите на плитку **Параметры** и выполните жест [касания](gaze-and-commit.md#composite-gestures). Выполните второе воздушное касание, чтобы разместить приложение в вашей среде. Приложение «Параметры» запустится после его размещения.
+2. Выполните [жест "Пуск"](system-gesture.md), чтобы запустить главное меню.
+3. Щелкните плитку **Параметры**, чтобы запустить приложение в среде.
 4. Выберите пункт меню **Обновить**.
 5. Выберите пункт меню **Для разработчиков**.
 6. Включите **Режим разработчика**. Это позволит [развертывать приложения из Visual Studio](using-visual-studio.md) в HoloLens.
@@ -84,6 +84,9 @@ ms.locfileid: "81278002"
 4. При первом развертывании приложения с компьютера на HoloLens будет предложено ввести ПИН-код. Выполните приведенные ниже инструкции по **связыванию устройства**.
 
 ## <a name="deploying-an-app-over-usb---hololens-2"></a>Развертывание приложения по USB на HoloLens 2
+
+>[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Deploying-your-HoloLens-2-application/player?format=ny]
+
 1. Выберите для приложения конфигурацию сборки **ARM** или **ARM64**.</br>
 ![Конфигурация сборки ARM64 в Visual Studio](images/arm64setting.png)</br>
 2. Выберите **Устройство** в раскрывающемся меню цели развертывания.</br>

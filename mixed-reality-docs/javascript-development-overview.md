@@ -6,18 +6,18 @@ ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: Вебкср, Винмр, Вебар, Вебвр, Виндовсмикседреалити, HoloLens, Windows Mixed Reality, веб-VR, Web XR, Web MR, Web AR, 360, 360 Video, 360 видео, 360 Photo, 360 фотографии, 360 Content, иммерсивное веб-узел, иммерсивное веб-сайт, IW, иммерсивевеб
-ms.openlocfilehash: 5756af9f48f4bb25477e75fb1f7c09e7239bdab9
-ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
+ms.openlocfilehash: a1288e8f477f42b0937e797623fb83fe8f63685c
+ms.sourcegitcommit: ba4c8c2a19bd6a9a181b2cec3cb8e0402f8cac62
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81278485"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82835613"
 ---
 # <a name="mixed-reality-development-with-javascript-overview"></a>Обзор разработки смешанной реальности с использованием JavaScript
 
 ## <a name="mixed-reality-applications-on-the-web"></a>Приложения смешанной реальности в Интернете
 
-Функции смешанной реальности доступны в Интернете с помощью [API устройства вебкср](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) и [устаревшие API вебвр] ([Обзор вебкср](webxr-overview.md)). Для браузеров, которые не поддерживают полные функции Вебкср, можно добавить [вебксрные заливки](https://github.com/immersive-web/webxr-polyfill) на веб-сайт.
+Функции смешанной реальности доступны в Интернете с помощью [API-интерфейсов устройств вебкср](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) и [устаревших API вебвр](webxr-overview.md). Для браузеров, которые не поддерживают полные функции Вебкср, можно добавить [вебксрные заливки](https://github.com/immersive-web/webxr-polyfill) на веб-сайт.
 
 ## <a name="what-is-webxr-polyfill"></a>Что такое Вебксрная Заливка
 

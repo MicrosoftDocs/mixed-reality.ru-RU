@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Смешанная реальность, взаимодействие, проектирование, HoloLens, руки, вдали, указание и фиксация
 ms.openlocfilehash: d3f886fd8e892fe34116c3a1d601ae3a87d87a9b
-ms.sourcegitcommit: 2bfe9b1af4ee2cc0d668caeccb8ebc3137cbc20b
+ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
+ms.lasthandoff: 04/29/2020
 ms.locfileid: "75901532"
 ---
 # <a name="point-and-commit-with-hands"></a>Наведение и фиксация с использованием рук
@@ -38,8 +38,8 @@ ms.locfileid: "75901532"
 <tr>
      <td>Наведение и фиксация с использованием рук</td>
      <td>❌ Не поддерживается.</td>
-     <td>✔️ Рекомендуется</td>
-     <td>✔️ Рекомендуется</td>
+     <td>✔ Рекомендуется</td>
+     <td>✔ Рекомендуется</td>
 </tr>
 </table>
 
@@ -147,7 +147,7 @@ _Наведение и фиксация_ — одна из появившихс
     :::column-end:::
     :::column:::
        ![Манипулирование трехмерным объектом: масштабирование издалека](images/3d-object-manipulation-far-scale.jpg)<br>
-       **Масштабирование**<br>
+       **Масштаб**<br>
     :::column-end:::
 :::row-end:::
 
@@ -211,7 +211,7 @@ _Наведение и фиксация_ — одна из появившихс
 
 ---
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 * [Непосредственное манипулирование с использованием рук](direct-manipulation.md)
 * [Взгляд и фиксация](gaze-and-commit.md)
 * [Руки: непосредственное манипулирование](direct-manipulation.md)
