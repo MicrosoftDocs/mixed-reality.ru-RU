@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: Опенкср, Кхронос, Басикксрапп, DirectX, Native, собственное приложение, настраиваемое ядро, по промежуточного слоя, устранение неполадок
-ms.openlocfilehash: 08ca671ded7230a4ba3cfcdc640233082af51040
-ms.sourcegitcommit: 9de2cb11321e6517db69e8c93459a205900a2174
+ms.openlocfilehash: 269982596ed6162d9c2f1ec999a446bcecd6ba2a
+ms.sourcegitcommit: 6d9d01d53137435c787f247f095d5255581695fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80163368"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83228009"
 ---
 # <a name="openxr-troubleshooting"></a>Устранение неполадок Опенкср
 
@@ -24,7 +24,7 @@ ms.locfileid: "80163368"
 
 Если приложение Опенкср не запускает Windows Mixed Reality при запуске, то среда выполнения Windows Mixed Reality Опенкср может быть не установлена в качестве активной среды выполнения.  Следуйте приведенным выше инструкциям по [началу работы с опенкср для головных телефонов Windows Mixed Reality](openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) , чтобы активировать среду выполнения.
 
-Вы также можете запустить [портал разработчика Опенкср Windows Mixed Reality](openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-portal) для получения дополнительных сведений об устранении неполадок, связанных с состоянием среды выполнения Windows Mixed Reality опенкср в вашей системе.
+Вы также можете запустить [средства для разработчиков Опенкср Windows Mixed Reality](openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) для получения дополнительных сведений об устранении неполадок, связанных с состоянием среды выполнения Windows Mixed Reality опенкср в системе.
 
 ### <a name="mixed-reality-portal-not-showing-set-up-openxr-menu-item"></a>На портале Mixed Reality не отображается пункт меню "Настройка Опенкср"
 
@@ -32,4 +32,4 @@ ms.locfileid: "80163368"
 
 Пункт меню "настроить Опенкср" может быть недоступен, если у вас более старая версия приложения портала смешанной реальности.  Проверьте наличие [обновления для приложения портала смешанной реальности](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m) , чтобы убедиться, что у вас установлена последняя версия.
 
-Обратите внимание, что пункт меню "настроить Опенкср" не отображается, если среда выполнения Windows Mixed Reality Опенкср уже установлена и активна.  Вы можете установить [портал разработчика опенкср для Windows Mixed Reality](openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-portal) , чтобы определить текущее состояние среды выполнения опенкср в системе.
+Обратите внимание, что пункт меню "настроить Опенкср" не отображается, если среда выполнения Windows Mixed Reality Опенкср уже установлена и активна.  Вы можете установить [средства для разработчиков Windows Mixed Reality опенкср](openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) , чтобы определить текущее состояние среды выполнения опенкср в системе.
