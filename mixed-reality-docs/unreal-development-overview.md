@@ -1,42 +1,73 @@
 ---
 title: Обзор разработки для Unreal
-description: Приступите к созданию приложений смешанной реальности на платформе Unreal.
+description: Общие сведения о разработке для смешанной реальности в Unreal Engine 4
 author: sw5813
 ms.author: suwu
-ms.date: 10/24/2019
+ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, бета-версия, потоковая передача, удаленное взаимодействие, смешанная реальность, разработка, начало работы, новый проект, эмулятор, документация
-ms.openlocfilehash: 96b0259e4ac567389f999d3a453fb68bb848b266
-ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, потоковая передача, удаленное взаимодействие, смешанная реальность, разработка, начало работы, функции, новый проект, эмулятор, документация, руководства, функции, голограммы
+ms.openlocfilehash: 08ba760acc1a35d8f47de6a7bf6cbc020c8aca3f
+ms.sourcegitcommit: 189a47b8712dd5b620e19815f5cf6d1ac0f29880
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "74491171"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82851568"
 ---
 # <a name="unreal-development-overview"></a>Обзор разработки для Unreal
 
-Поддержка смешанной реальности для Unreal Engine 4 теперь доступна в бета-версии! Если вы не знакомы с разработкой для Unreal, то страница <a href="https://docs.unrealengine.com//GettingStarted/index.html" target="_blank">Get Started with UE4</a> (Приступая к работе с UE4) отлично подойдет для изучения. Если вам нужны ресурсы, для Unreal доступен исчерпывающий портал <a href="https://www.unrealengine.com/marketplace//store" target="_blank">marketplace</a>. 
+Unreal Engine 4 теперь полностью поддерживает разработку для устройств Windows Mixed Reality (виртуальная реальность) и HoloLens 2 (дополненная реальность). Если вы не знакомы с разработкой для Unreal, то страница <a href="https://docs.unrealengine.com//GettingStarted/index.html" target="_blank">Get Started with UE4</a> (Приступая к работе с UE4) отлично подойдет для изучения. Если вам нужны ресурсы, для Unreal доступен исчерпывающий портал <a href="https://www.unrealengine.com/marketplace//store" target="_blank">marketplace</a>. 
 
-Изучив основы Unreal Engine 4, вы можете посетить страницу <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/index.html" target="_blank">Microsoft HoloLens Development</a> (Разработка для Microsoft HoloLens) на сайте документации по Unreal Engine, чтобы узнать, как создавать и запускать приложения в HoloLens. Не забудьте посетить <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">форумы по смешанной реальности Unreal</a>, чтобы присоединиться к сообществу, создающему приложения смешанной реальности в Unreal. Там вы сможете находить решения для проблем, с которыми столкнулись.
+Когда вы получите общее представление о разработке в Unreal, переходите к учебникам в следующем разделе, в которых описано создание и запуск приложений для HoloLens. Не забудьте посетить <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">форумы по смешанной реальности Unreal</a>, чтобы присоединиться к сообществу разработчиков приложений для смешанной реальности в Unreal. Там вы сможете находить решения для проблем, с которыми столкнетесь.
 
-## <a name="installing-the-prerequisites"></a>Установка необходимых компонентов
+## <a name="tutorial"></a>Руководство
 
-Чтобы приступить к созданию приложения HoloLens 2 в Unreal, потребуется [эмулятор HoloLens 2](using-the-hololens-emulator.md) или гарнитура HoloLens. Вам также потребуется установить последнюю версию Visual Studio с рабочими нагрузками и компонентами, указанными в разделе <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/Prerequisites/index.html" target="_blank">предварительных требований HoloLens 2 для Unreal</a>.
+Узнайте, как [создать и развернуть простое приложение для игры в шахматы](unreal-uxt-ch1.md) для HoloLens 2 с помощью нашего подробного руководства. В этом руководстве используется подключаемый модуль средств разработки пользовательского интерфейса (UX), который позволяет ускорить разработку приложений благодаря интерактивным компонентам взаимодействия с пользователем, таким как кнопка и манипулятор. Дополнительные сведения о подключаемом модуле средств UX см. в следующем разделе по набору средств для смешанной реальности. 
 
-## <a name="building-and-running-your-unreal-app"></a>Сборка и запуск приложения Unreal
+## <a name="mixed-reality-toolkit-for-unreal"></a>Набор средств для смешанной реальности для Unreal
 
-Сначала <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/HowTo/PackageApp/index.html" target="_blank">упакуйте приложение для HoloLens 2</a>. Затем выберите, где требуется развернуть пакет:
-* <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/QuickStartEmulator/index.html" target="_blank">развертывание в эмуляторе HoloLens 2</a>;
-* <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/QuickStartDevice/index.html" target="_blank">развертывание на гарнитуре HoloLens 2</a>.
+[Набор средств смешанной реальности для Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) представляет собой набор таких компонентов, как подключаемые модули, примеры и документы, созданных для ускорения разработки приложений смешанной реальности с использованием Unreal Engine. Первый компонент, выпущенный в составе этого набора средств, — это подключаемый модуль [средств UX для Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal), который вы можете добавить в проект HoloLens 2 для поддержки функций взаимодействия с пользователем в приложениях HoloLens 2. Документация по набору средств для смешанной реальности и средствам UX для Unreal размещена в соответствующих репозиториях на GitHub. 
 
-## <a name="streaming-your-app-to-a-headset-via-the-holographic-remoting-player"></a>Потоковая передача приложения на гарнитуру с помощью Holographic Remoting Player
+## <a name="performance"></a>Производительность
 
-Потоковая передача приложения с компьютера в приложение Holographic Remoting Player на гарнитуре HoloLens имеет два основных преимущества: 
-* это ускоряет разработку, так как нет необходимости переупаковывать и передавать приложение после каждого внесения изменений;
-* используются возможности компьютера, так что вы можете отображать столько многоугольников, сколько позволяет графический процессор вашего компьютера, а не только компьютер в гарнитуре.
+Приложение HoloLens 2 должно обрабатывать 60 кадров в секунду, чтобы голограммы работали стабильно и с приемлемым временем отклика. Чтобы добиться этого в приложении, мы настоятельно рекомендуем соблюдать [наши рекомендации по повышению производительности в Unreal](performance-recommendations-for-unreal.md). 
 
-Чтобы приступить к потоковой передаче, ознакомьтесь с разделом <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/QuickStartStreaming/index.html" target="_blank">HoloLens 2 Streaming Quick Start</a>[]() (Краткое руководство по потоковой передаче HoloLens 2).
+## <a name="guides-to-specific-features"></a>Руководства по отдельным функциям
+
+Сведения о работе с отдельными функциями в Unreal представлены в перечисленных ниже руководствах. 
+* [Отслеживание рук](unreal-hand-tracking.md)
+* [Отслеживание взгляда](unreal-gaze-input.md)
+* [Пространственное сопоставление](unreal-spatial-mapping.md)
+* [Пространственные привязки](unreal-spatial-anchors.md)
+* [Голосовой ввод](unreal-voice-input.md)
+* [Камера HoloLens](unreal-hololens-camera.md)
+* [QR-коды](unreal-qr-codes.md)
+
+## <a name="supported-features"></a>Поддерживаемые компоненты
+
+| Функция HoloLens 2 | Самая ранняя поддерживаемая версия Unreal Engine |
+| ----------- | ----------- |
+| Поддержка ARM64 | 4.23 |
+| Потоковая передача с компьютера | 4.23 |
+| пространственное сопоставление | 4.23 |
+| Отслеживание рук и суставов | 4.23 |
+| Отслеживание взгляда | 4.23 |
+| Голосовой ввод | 4.23 |
+| Пространственные привязки | 4.23 |
+| Доступ к камере | 4.23 |
+| QR-коды | 4.23 |
+| Пространственный звук | 4.23 |
+| Поддержка потоковой передачи на экран для зрителей | 4.24 |
+| Планарные координаты LSR при потоковой передаче | 4.24 |
+| Примеры приложений ([HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples) и [Mission AR](https://docs.unrealengine.com/en-US/Resources/Showcases/MissionAR/index.html)) | 4.24 |
+| Просмотр на нескольких мобильных устройствах: Производительность до 60 кадров/с | 4.25 |
+| Отрисовка для третьей камеры | 4.25 |
+| Потоковая передача из упакованного классического приложения | 4.25 |
+| Пространственные привязки Azure для HoloLens 2 (бета-версия) | 4.25 |
+| Поддержка OpenXR (бета-версия) | 4.25 |
+| Поддержка средств UX (0.8) | 4.25 |
+| Документация и руководства для разработчиков | 4.25 |
 
 ## <a name="see-also"></a>См. также статью
+* <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/index.html" target="_blank">Документация Unreal по потоковой передаче, развертыванию в эмуляторе и на устройстве</a>
 * <a href="https://docs.unrealengine.com//Platforms/Mobile/Performance/index.html" target="_blank">Рекомендации по производительности Unreal для мобильных устройств</a>
