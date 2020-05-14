@@ -4,16 +4,16 @@ title: Изучите инструменты и архитектуру.
 description: Документация для разработчиков приложений смешанной реальности для HoloLens и иммерсивных гарнитур.
 author: grbury
 ms.author: grbury
-ms.date: 08/27/2019
+ms.date: 04/27/2020
 ms.topic: overview
 ms.localizationpriority: high
-keywords: Mixed Reality, develop, development, HoloLens, unity, directx
-ms.openlocfilehash: 3bd5fea55a8dad2982a1a14680169eb51764c1df
-ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
+keywords: Смешанная реальность, создание, разработка, HoloLens, Unity, Unreal, DirectX
+ms.openlocfilehash: 97a6e130af45a9444ead5e6ed40168351c4dbbf6
+ms.sourcegitcommit: ba4c8c2a19bd6a9a181b2cec3cb8e0402f8cac62
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "81277730"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82835293"
 ---
 # <a name="learn-the-tools-and-architecture"></a>Изучите инструменты и архитектуру.
 
@@ -36,12 +36,12 @@ ms.locfileid: "81277730"
     :::column:::    
        [![Unity](images/unity_logo.png)](development.md#unity)<br>
         **[Unity](development.md#unity)**<br>   
-        Самым быстрым средством создания приложения смешанной реальности является Unity. 
+        Unity позволяет создать кроссплатформенное полнофункциональное приложение смешанной реальности.
     :::column-end:::    
     :::column:::    
         [![Unreal](images/Unreal_logo.png)](development.md#unreal)<br>
-         **[Unreal](development.md#unreal)**<br>    
-        Готовая для применения в рабочей среде поддержка HoloLens 2 также будет включена в Unreal Engine 4.23.    
+        **[Unreal](development.md#unreal)**<br> 
+        В Unreal Engine привлекательные возможности смешанной реальности сочетаются с поддержкой рабочей среды. 
     :::column-end:::
     :::column:::    
         [![JavaScript](images/web-logo.png)](development.md#javascript)<br>
@@ -95,6 +95,16 @@ MRTK версии 2 для Unity — это кроссплатформенны
 
 ### <a name="unreal-development-overview"></a>[Обзор разработки для Unreal](unreal-development-overview.md)
 Узнайте, как создать приложение смешанной реальности на платформе Unreal.
+
+<br>
+
+### <a name="microsofts-mixed-reality-toolkit-mrtk-for-unreal"></a>[Набор средств для смешанной реальности для Unreal, созданный корпорацией Майкрософт](https://github.com/microsoft/MixedRealityToolkit-Unreal)
+Набор средств смешанной реальности для Unreal (MRTK-Unreal) представляет собой набор таких компонентов, как подключаемые модули, примеры и документы, созданных для ускорения разработки приложений смешанной реальности с использованием Unreal Engine.
+
+<br>
+
+### <a name="open-source-sample-apps-and-a-step-by-step-tutorial"></a>[Примеры приложений с открытым кодом и пошаговые руководства](unreal-uxt-ch1.md)
+В руководстве по началу разработки систем смешанной реальности в Unreal описан полный процесс создания приложения HoloLens 2 с использованием [средств разработки пользовательского интерфейса (UX) для Unreal версии 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 
 <br>
 

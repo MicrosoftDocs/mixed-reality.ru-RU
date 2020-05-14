@@ -8,24 +8,26 @@ ms.date: 10/22/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, академия, руководство
-ms.openlocfilehash: ebb40c6ae877ac167c7c16a67e08ef2501f6290d
-ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
+ms.openlocfilehash: db60ff35156ea20aadd1ba04f9304aa27a2488cb
+ms.sourcegitcommit: ba4c8c2a19bd6a9a181b2cec3cb8e0402f8cac62
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "75334462"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82835653"
 ---
 # <a name="tutorials-and-sample-apps"></a>Руководства и примеры приложений
 
 ![Пользователь HoloLens 2](images/08_Tutorials.png)
 
-Сейчас все наши руководства и примеры приложений основаны на Unity. По мере разработки содержимого для других подсистем и платформ вы сможете находить соответствующие руководства по заголовку в содержании.
+Сейчас все наши руководства и примеры приложений основаны на Unity или Unreal. По мере разработки содержимого для других подсистем и платформ вы сможете находить соответствующие руководства по заголовку в содержании.
 
 ## <a name="hololens-2-tutorials"></a>Руководства по HoloLens 2
 
-Руководства по HoloLens 2 призваны помочь разработчикам в изучении методик и рекомендаций по разработке приложений смешанной реальности. Эти руководства основаны на [наборе средств для смешанной реальности 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity).
+Руководства по HoloLens 2 призваны помочь разработчикам в изучении методик и рекомендаций по разработке приложений смешанной реальности. Учебники по Unity основаны на [наборе средств для смешанной реальности (MRTK) версии 2.0](https://github.com/microsoft/MixedRealityToolkit-Unity), а в учебниках по Unreal используются [средства разработки пользовательского интерфейса (UX) для Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 
-* Руководства по началу работы — [1 из 7, "Общие сведения и цели"](mrlearning-base.md)
+* Руководства по началу работы
+    * Unity — [1 из 7. Общие сведения и цели](mrlearning-base.md)
+    * Unreal — [1 из 6. Начало работы](unreal-uxt-ch1.md)
 * Руководства по пространственной привязке Azure — [1 из 3, "Начало работы с пространственными привязками Azure"](mrlearning-asa-ch1.md)
 * Руководства по использованию службы "Речь" в Azure— [1 из 4, "Интеграция и использование средств распознавания и транскрибирования речи"](mrlearning-speechSDK-ch1.md)
 * Руководства по многопользовательским возможностям — [1 из 5, "Настройка Photon Unity Networking"](mrlearning-sharing(photon)-ch1.md)
