@@ -7,12 +7,12 @@ ms.date: 3/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit
-ms.openlocfilehash: 131d2a91c882fbcd31c4deb76a5ab5c3f97d7d42
-ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
+ms.openlocfilehash: 763843b08946623861004154125669d84fe878ab
+ms.sourcegitcommit: 6d9d01d53137435c787f247f095d5255581695fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82137879"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83228079"
 ---
 # <a name="install-the-tools"></a>Установка инструментов
 
@@ -37,7 +37,7 @@ ms.locfileid: "82137879"
 | ![Логотип Windows](images/Windows10_logo.png)<br><br><a href="https://www.microsoft.com/software-download/windows10" target="_blank">**Windows 10** (ссылка для установки вручную)</a> | Установите самую последнюю версию Windows 10, чтобы операционная система вашего компьютера соответствовала платформе, для которой вы создаете приложения смешанной реальности. | **Установка Windows 10** <br> <ul><li>Вы можете установить последнюю версию Windows 10 с помощью клиентского компонента Центра обновления Windows, к которому можно перейти в разделе параметров, или путем создания установочного носителя (открыв ссылку, указанную в левом столбце).<li>Сведения о новых функциях смешанной реальности, доступных в каждом выпуске Windows 10, см. в [заметках о текущем выпуске](release-notes-october-2018.md).</ul> **Включите режим разработчика на компьютере** в разделе "Параметры > Обновление и безопасность > Для разработчиков". <br><br> **Примечание, касающееся корпоративных компьютеров.** Если вашим компьютером управляет ИТ-отдел вашей организации, возможно, вам потребуется связаться с его сотрудниками для обновления. <br><br> **N-версии Windows.** Иммерсивные гарнитуры (виртуальная реальность) Windows Mixed Reality не поддерживаются в N-версиях Windows. |
 | ![Логотип Visual Studio](images/visualstudio_logo.png)<br><br><a href="https://visualstudio.microsoft.com/downloads/" target="_blank">**Visual Studio 2019 (версии 16.2 или более поздней)** (ссылка для установки)</a> | Полнофункциональная интегрированная среда разработки (IDE) для Windows и многое другое. Вы будете использовать Visual Studio для написания кода, отладки, тестирования и развертывания. | Установите следующие рабочие нагрузки: <ul><li>**Разработка классических приложений на C++**</li><li>**Разработка приложений универсальной платформы Windows (UWP)**</li></ul>В рабочей нагрузке UWP обязательно проверьте следующий дополнительный компонент, если вы выполняете разработку для HoloLens:<ul><li>**Подключение USB-устройств**</li></ul>**Примечание касательно Unity.** Если вам не нужно устанавливать более новую (не LTS) версию Unity для своих задач, советуем *не* устанавливать рабочую нагрузку Unity в составе установки Visual Studio, а вместо этого установить версию **Unity 2018.4 LTS**, как показано ниже.<br> <br>**Примечание**. Сейчас в Visual Studio 2019 (версия 16.0) существует ряд известных проблем с отладкой приложений смешанной реальности.  Обновите **Visual Studio 2019 до версии не ниже 16.2**. |
 | ![Логотип Windows](images/Windows10_logo.png)<br><br><a href="https://developer.microsoft.com//windows/downloads/windows-10-sdk" target="_blank">**Пакет SDK для Windows 10 (10.0.18362.0)** (ссылка для установки вручную)</a> | Содержит новейшие заголовки, библиотеки, метаданные и средства для создания приложений для Windows 10 в HoloLens 2. | Для создания приложений HoloLens 2 потребуется установить пакет SDK для Windows сборки 18362 или новее.<br> <br> Если вы разрабатываете приложения только для настольных гарнитур Windows Mixed Reality или HoloLens (1-го поколения), можно использовать пакет SDK для Windows, установленный в Visual Studio 2017. |
-| ![Логотип Visual Studio](images/HoloLensIcon.jpg)<br><br><a href="https://go.microsoft.com/fwlink/?linkid=2126826" target="_blank">**Эмулятор HoloLens 2 (обновление за апрель 2020 г.)** (ссылка для установки: 10.0.18362.1059)</a><br> <br><a href="https://go.microsoft.com/fwlink/?linkid=2065980" target="_blank">**Эмулятор HoloLens (1-го поколения)** (ссылка для установки: 10.0.17763.134)</a> | Эмулятор позволяет запускать приложения с помощью образа виртуальной машины HoloLens без физического устройства HoloLens.<br> <br> | Дополнительные сведения об использовании эмулятора HoloLens см. в [этой статье](using-the-hololens-emulator.md).<br> <br> Для успешной установки эмулятора **ваша система должна поддерживать Hyper-V**. Подробные сведения см. в разделе о системных требованиях. <br>|
+| ![Логотип Visual Studio](images/HoloLensIcon.jpg)<br><br><a href="https://go.microsoft.com/fwlink/?linkid=2129088" target="_blank">**Эмулятор HoloLens 2 (Windows Holographic, версия 2004)** (ссылка для установки: 10.0.19041.1103)</a><br> <br><a href="https://go.microsoft.com/fwlink/?linkid=2065980" target="_blank">**Эмулятор HoloLens (1-го поколения)** (ссылка для установки: 10.0.17763.134)</a> | Эмулятор позволяет запускать приложения с помощью образа виртуальной машины HoloLens без физического устройства HoloLens.<br> <br> | Дополнительные сведения об использовании эмулятора HoloLens см. в [этой статье](using-the-hololens-emulator.md).<br> <br> Для успешной установки эмулятора **ваша система должна поддерживать Hyper-V**. Подробные сведения см. в разделе о системных требованиях. <br>|
 
 ## <a name="choose-your-engine"></a>Выберите подсистему
 
@@ -61,7 +61,7 @@ ms.locfileid: "82137879"
         <a href="https://docs.unrealengine.com//GettingStarted/Installation/index.html" target="_blank">![Unreal](images/Unreal_logo.png)<br>**Unreal**</a><br>
         Unreal Engine 4 — это мощная подсистема разработки с открытым кодом, обладающая полной поддержкой смешанной реальности в C++ и Blueprints.<br>
         <br>
-        Поддержка HoloLens в Unreal Engine 4.24 сейчас предоставляется в режиме бета-версии.<br>
+        Начиная с версии Unreal Engine 4.25, поддержка HoloLens считается полной и пригодной для рабочей среды.<br>
         <br>
         См. сведения о [разработке Unreal для HoloLens 2](unreal-development-overview.md).
     :::column-end:::
@@ -84,6 +84,7 @@ ms.locfileid: "82137879"
 Набор средств для смешанной реальности предоставляет компоненты и функции, позволяющие ускорить разработку приложений, предназначенных для Microsoft HoloLens, гарнитур Windows Mixed Reality и платформы OpenVR. Целью проекта является снижение барьеров для создания приложений смешанной реальности и внесение вклада в развитие сообщества по мере расширения личного опыта.
 * <a href="https://github.com/Microsoft/MixedRealityToolkit" target="_blank">Mixed Reality Toolkit</a> — это набор сценариев и компонентов, предназначенных для ускорения разработки приложений смешанной реальности.
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">Mixed Reality Toolkit Unity</a> использует код из базового набора средств и упрощает его применение в Unity.
+* <a href="https://github.com/Microsoft/MixedRealityToolkit-Unreal" target="_blank">Набор средств смешанной реальности для Unreal</a> представляет собой набор таких компонентов, как подключаемые модули, примеры и документы, созданных для ускорения разработки приложений смешанной реальности с использованием Unreal Engine.
 * <a href="https://github.com/Microsoft/MixedRealityCompanionKit" target="_blank">Mixed Reality Companion Kit</a> — фрагменты кода и компоненты, которые не могут работать непосредственно в HoloLens или иммерсивных гарнитурах (гарнитурах виртуальной реальности), но могут соединяться с ними для взаимодействия с Windows Mixed Reality.
 
 ## <a name="setting-up-your-pc-for-mixed-reality-development"></a>Настройка компьютера для разработки приложений смешанной реальности

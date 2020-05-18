@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, HoloLens
-ms.openlocfilehash: 6811fe0b09ecff1ddc76d9df9ddc440f9c934ce3
-ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
+ms.openlocfilehash: 40a8441177582a55b58acbfbd15c7b506853e4da
+ms.sourcegitcommit: 6d9d01d53137435c787f247f095d5255581695fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "75723253"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83227999"
 ---
 # <a name="direct-manipulation-with-hands"></a>Непосредственное манипулирование руками
 
@@ -41,7 +41,7 @@ ms.locfileid: "75723253"
      <td>Непосредственное манипулирование руками</td>
      <td>❌ Не поддерживается.</td>
      <td>✔️ Рекомендуется</td>
-     <td>➕ Другой вариант. Рекомендуется <a href="point-and-commit.md">наведение и выполнение действия руками</a>.</td>
+     <td>➕ Поддерживается.  Для пользовательского интерфейса рекомендуем использовать <a href="point-and-commit.md">наведение и фиксацию с помощью рук</a>.</td>
     
 </tr>
 </table>
