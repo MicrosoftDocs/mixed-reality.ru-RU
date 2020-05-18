@@ -100,6 +100,7 @@
 ## [Изучение инструментов и архитектуры](development.md)
 ## [Установка средств](install-the-tools.md)
 ## Облачные службы смешанной реальности
+### [Удаленная отрисовка Azure](https://docs.microsoft.com/azure/remote-rendering)
 ### [Пространственные привязки Azure](https://docs.microsoft.com/azure/spatial-anchors)
 ## [Руководства и примеры приложений](tutorials.md)
 ### Unity
@@ -163,6 +164,13 @@
 ##### [311. Смешанная реальность и Azure: Microsoft Graph](mr-azure-311.md)
 ##### [312. Смешанная реальность и Azure: интеграция ботов](mr-azure-312.md)
 ##### [313. Смешанная реальность и Azure: служба "Центр Интернета вещей"](mr-azure-313.md)
+### Unreal
+#### [1. Начало работы](unreal-uxt-ch1.md)
+#### [2. Инициализация проекта и первое приложение](unreal-uxt-ch2.md)
+#### [3. Настройка проекта для смешанной реальности](unreal-uxt-ch3.md)
+#### [4. Настройка интерактивной сцены](unreal-uxt-ch4.md)
+#### [5. Добавление кнопки и сброс расположений фрагментов](unreal-uxt-ch5.md)
+#### [6. Упаковка и развертывание на устройстве или в эмуляторе](unreal-uxt-ch6.md)
 ## Unity
 ### [Обзор разработки в Unity](unity-development-overview.md)
 ### Начало работы
@@ -196,6 +204,14 @@
 #### [Использование Vuforia с Unity](vuforia-development-overview.md)
 ## Unreal
 ### [Обзор разработки для Unreal](unreal-development-overview.md)
+### [Отслеживание рук в Unreal](unreal-hand-tracking.md)
+### [Ввод взглядом в Unreal](unreal-gaze-input.md)
+### [Пространственное сопоставление в Unreal](unreal-spatial-mapping.md)
+### [Пространственные привязки в Unreal](unreal-spatial-anchors.md)
+### [Голосовой ввод в Unreal](unreal-voice-input.md)
+### [Камера HoloLens в Unreal](unreal-hololens-camera.md)
+### [QR-коды в Unreal](unreal-qr-codes.md)
+### [Рекомендации по производительности для Unreal](performance-recommendations-for-unreal.md)
 ## JavaScript
 ### [Обзор разработки в JavaScript](javascript-development-overview.md)
 ### [WebXR](webxr-overview.md)
