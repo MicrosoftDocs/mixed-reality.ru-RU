@@ -1,19 +1,19 @@
 ---
-title: Камера размещаемые
+title: Камера с определяемым местоположением
 description: Общие сведения о передней камере HoloLens, принципах ее работы, а также о профилях и разрешениях, доступных разработчикам.
 author: cdedmonds
 ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: Камера, hololens, цветовая камера, лицевая сторона, hololens 2, ОПС, компьютерное зрение, фидуЦиал, маркеры, QR-код, QR-, Фото, видео
-ms.openlocfilehash: f4c62a1c2ad7cf4de569e815ffc405fbcb06744a
-ms.sourcegitcommit: d0da0214fdd2bbac5a91a5d895bf0e87413b29b2
+ms.openlocfilehash: b8e9d926db09d277b3fde7572dd68257599c8d5e
+ms.sourcegitcommit: 09d9fa153cd9072f60e33a5f83ced8167496fcd7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597627"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83520019"
 ---
-# <a name="locatable-camera"></a>Камера размещаемые
+# <a name="locatable-camera"></a>Камера с определяемым местоположением
 
 HoloLens включает в себя камеру, подключенную к передней части устройства, что позволяет приложениям видеть, что видит пользователь. У разработчиков есть доступ к камере и управление ей, точно так же, как и для цветных камер на смартфонах, портативных компьютерах или настольных ПК. Те же универсальные функции [захвата мультимедиа Windows Media](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) и Windows Media Foundation, которые работают с мобильными и рабочим столами в HoloLens. Unity [также упаковывает эти API Windows](locatable-camera-in-unity.md) в абстрактное простое использование камеры в HoloLens для таких задач, как обычные фотографии и видеоролики (с голограммами или без них), а также нахождение расположения камеры в и перспективы на сцене.
 
@@ -25,10 +25,10 @@ HoloLens включает в себя камеру, подключенную к 
 * Белый индикатор конфиденциальности, направленный на мир, будет загораться каждый раз, когда камера активна
 * Камера поддерживает следующие режимы (все режимы — 16:9 пропорций) в 30, 24, 20, 15 и 5 кадров/с.
 
-  |  Видео  |  Preview  |  Могут  |  Горизонтальное поле представления (H-фов) |  Предлагаемое использование | 
+  |  Видео  |  Предварительный просмотр  |  Могут  |  Горизонтальное поле представления (H-фов) |  Предлагаемое использование | 
   |----------|----------|----------|----------|----------|
-  |  1280 x 720. |  1280 x 720. |  1280 x 720. |  45deg  |  (режим по умолчанию с видео стабилизации) | 
-  |  Нет данных |  Нет данных |  2048x1152 |  67deg |  Изображение с наивысшим разрешением по-прежнему | 
+  |  1280 x 720 |  1280 x 720 |  1280 x 720 |  45deg  |  (режим по умолчанию с видео стабилизации) | 
+  |  Недоступно |  Недоступно |  2048x1152 |  67deg |  Изображение с наивысшим разрешением по-прежнему | 
   |  1408x792 |  1408x792 |  1408x792 |  48deg |  Разрешение перепроверки (заполнения) перед видео стабилизации | 
   |  1344x756 |  1344x756 |  1344x756 |  67deg |  Крупный фов видеорежим с пересканированием | 
   |  896x504 |  896x504 |  896x504 |  48deg |  Режим низкого разрешения/отключения для задач обработки изображений | 
@@ -40,7 +40,7 @@ HoloLens включает в себя камеру, подключенную к 
 * HoloLens 2 поддерживает различные профили камеры. Узнайте, как [обнаруживать и выбирать возможности камеры](https://docs.microsoft.com//windows/uwp/audio-video-camera/camera-profiles).
 * Камера поддерживает следующие профили и разрешения (все видеорежимы имеют соотношение пропорций 16:9):
   
-  | Профиль                                         | Видео     | Preview   | Могут     | Частота кадров | Горизонтальное поле представления (H-фов) | Предлагаемое использование                             |
+  | Профиль                                         | Видео     | Предварительный просмотр   | Могут     | Частота кадров | Горизонтальное поле представления (H-фов) | Предлагаемое использование                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
   | Прежние, 0 Баланцедвидеоандфото, 100             | 2272x1278 | 2272x1278 |           | 15, 30       | 64,69                            | Высококачественная запись видео                |
   | Прежние, 0 Баланцедвидеоандфото, 100             | 896x504   | 896x504   |           | 15, 30       | 64,69                            | Предварительный просмотр потока для записи фотографий высокого качества |
@@ -49,8 +49,8 @@ HoloLens включает в себя камеру, подключенную к 
   | Баланцедвидеоандфото, 120                       | 1504x846  | 1504x846  |           | 15, 30       | 64,69                            | Сценарии длительной длительности                     |
   | Видеоконференции, 100                           | 1952x1100 | 1952x1100 | 1952x1100 | 15, 30, 60    | 64,69                            | Видеоконференции, сценарии длительной длительности |
   | Видеоконференции, 100                           | 1504x846  | 1504x846  |           | 5, 15, 30, 60  | 64,69                            | Видеоконференции, сценарии длительной длительности |
-  | Видеоконференции, 100 Баланцедвидеоандфото, 120 | 1920x1080 | 1920x1080 | 1920x1080 | 15, 30       | 64,69                            | Видеоконференции, сценарии длительной длительности |
-  | Видеоконференции, 100 Баланцедвидеоандфото, 120 | 1280 x 720.  | 1280 x 720.  | 1280 x 720.  | 15, 30       | 64,69                            | Видеоконференции, сценарии длительной длительности |
+  | Видеоконференции, 100 Баланцедвидеоандфото, 120 | 1920 x 1080 | 1920 x 1080 | 1920 x 1080 | 15, 30       | 64,69                            | Видеоконференции, сценарии длительной длительности |
+  | Видеоконференции, 100 Баланцедвидеоандфото, 120 | 1280 x 720  | 1280 x 720  | 1280 x 720  | 15, 30       | 64,69                            | Видеоконференции, сценарии длительной длительности |
   | Видеоконференции, 100 Баланцедвидеоандфото, 120 | 1128x636  |           |           | 15, 30       | 64,69                            | Видеоконференции, сценарии длительной длительности |
   | Видеоконференции, 100 Баланцедвидеоандфото, 120 | 960x540   |           |           | 15, 30       | 64,69                            | Видеоконференции, сценарии длительной длительности |
   | Видеоконференции, 100 Баланцедвидеоандфото, 120 | 760x428   |           |           | 15, 30       | 64,69                            | Видеоконференции, сценарии длительной длительности |
@@ -69,28 +69,131 @@ HoloLens включает в себя камеру, подключенную к 
 
 "Камера" в любой части документации по HoloLens может ссылаться на "виртуальная игровая Камера" (фрустум приложение готовится к просмотру). Если не указано иное, "Камера" на этой странице относится к реальной цветовой камере RGB.
 
-Сведения на этой странице охватываются с помощью класса [медиафрамереференце](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) . Однако существуют также API-интерфейсы для извлечения внутренних параметров и расположений камеры с помощью [Media Foundation атрибутов](https://msdn.microsoft.com/library/windows/desktop/mt740395(v=vs.85).aspx). Дополнительные сведения см. в [примере отслеживания holographic лиц](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) .
+### <a name="using-unity"></a>Использование Unity
 
-### <a name="images-with-coordinate-systems"></a>Образы с системами координат
+Чтобы перейти от "Камераинтринсикс" и "Камеракурдинатесистем" к своей системе координат приложения или мира, следуйте инструкциям в статье о [камере размещаемые в Unity](locatable-camera-in-unity.md) .  Камератоворлдматрикс автоматически предоставляется классом Фотокаптурефраме, поэтому вам не нужно беспокоиться о преобразованиях Камеракурдинатесистем, описанных ниже.
+
+### <a name="using-mediaframereference"></a>Использование Медиафрамереференце
+
+Эти инструкции применяются, если вы используете класс [медиафрамереференце](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) для чтения кадров изображения с камеры.
 
 Каждый кадр изображения (фото или видео) включает в себя [спатиалкурдинатесистем](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) с корнем на камере во время записи, доступ к которому можно получить с помощью свойства [курдинатесистем](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) [медиафрамереференце](https://docs.microsoft.com//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference). Кроме того, каждый кадр содержит описание модели линзы, которое можно найти в свойстве [камераинтринсикс](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) . Вместе эти преобразования определяются для каждого пикселя в трехмерном пространстве, представляющем путь, взятый фотоны, который создал пиксель. Эти лучи могут быть связаны с другим содержимым в приложении путем получения преобразования из системы координат кадра в другую систему координат (например, из [стационарной рамки ссылки](coordinate-systems.md#stationary-frame-of-reference)). В итоге каждый кадр изображения предоставляет следующие сведения:
 * Пиксельные данные (в формате RGB/NV12/JPEG/т. д.)
 * [Спатиалкурдинатесистем](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) из расположения записи
 * Класс [камераинтринсикс](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) , содержащий режим линзы камеры
 
-### <a name="camera-to-application-specified-coordinate-system"></a>С камеры на определенную приложением систему координат
+[Образец холографикфацетраккинг](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) показывает довольно простой способ запроса преобразования между системой координат камеры и собственными системами координат приложения.
 
-Чтобы переходить от "Камераинтринсикс" и "Камеракурдинатесистем" к своей системе координат приложения или мира, вам потребуется следующее:
+### <a name="using-media-foundation"></a>Использование Media Foundation
 
-[Камера размещаемые в Unity](locatable-camera-in-unity.md): камератоворлдматрикс автоматически предоставляется классом фотокаптурефраме (поэтому не нужно беспокоиться о преобразованиях камеракурдинатесистем).
+Если вы используете Media Foundation непосредственно для чтения кадров изображения с камеры, можно использовать [атрибуты MFSampleExtension_CameraExtrinsics](https://docs.microsoft.com/windows/win32/medfound/mfsampleextension-cameraextrinsics) и [MFSampleExtension_PinholeCameraIntrinsics](https://docs.microsoft.com/windows/win32/medfound/mfsampleextension-pinholecameraintrinsics) для каждого кадра, чтобы нахождение кадров камеры относительно других систем координат вашего приложения, как показано в следующем примере кода:
 
-[Камера размещаемые в DirectX](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking). образец отслеживания holographic лиц показывает довольно простой способ запроса преобразования между системой координат камеры и собственными системами координат приложения.
+```cpp
+#include <winrt/windows.perception.spatial.preview.h>
+#include <mfapi.h>
+#include <mfidl.h>
+ 
+using namespace winrt::Windows::Foundation;
+using namespace winrt::Windows::Foundation::Numerics;
+using namespace winrt::Windows::Perception;
+using namespace winrt::Windows::Perception::Spatial;
+using namespace winrt::Windows::Perception::Spatial::Preview;
+ 
+class CameraFrameLocator
+{
+public:
+    struct CameraFrameLocation
+    {
+        SpatialCoordinateSystem CoordinateSystem;
+        float4x4 CameraViewToCoordinateSytemTransform;
+        MFPinholeCameraIntrinsics Intrinsics;
+    };
+ 
+    std::optional<CameraFrameLocation> TryLocateCameraFrame(IMFSample* pSample)
+    {
+        MFCameraExtrinsics cameraExtrinsics;
+        MFPinholeCameraIntrinsics cameraIntrinsics;
+        UINT32 sizeCameraExtrinsics = 0;
+        UINT32 sizeCameraIntrinsics = 0;
+        UINT64 sampleTimeQpc = 0;
+ 
+        // query sample for calibration and validate
+        if (FAILED(pSample->GetUINT64(MFSampleExtension_DeviceTimestamp, &sampleTimeQpc)) ||
+            FAILED(pSample->GetBlob(MFSampleExtension_CameraExtrinsics, (UINT8*)& cameraExtrinsics, sizeof(cameraExtrinsics), &sizeCameraExtrinsics)) ||
+            FAILED(pSample->GetBlob(MFSampleExtension_PinholeCameraIntrinsics, (UINT8*)& cameraIntrinsics, sizeof(cameraIntrinsics), &sizeCameraIntrinsics)) ||
+            (sizeCameraExtrinsics != sizeof(cameraExtrinsics)) ||
+            (sizeCameraIntrinsics != sizeof(cameraIntrinsics)) ||
+            (cameraExtrinsics.TransformCount == 0))
+        {
+            return std::nullopt;
+        }
+ 
+        // compute extrinsic transform
+        const auto& calibratedTransform = cameraExtrinsics.CalibratedTransforms[0];
+        const GUID& dynamicNodeId = calibratedTransform.CalibrationId;
+        const float4x4 cameraToDynamicNode =
+            make_float4x4_from_quaternion(quaternion{ calibratedTransform.Orientation.x, calibratedTransform.Orientation.y, calibratedTransform.Orientation.z, calibratedTransform.Orientation.w }) *
+            make_float4x4_translation(calibratedTransform.Position.x, calibratedTransform.Position.y, calibratedTransform.Position.z);
+ 
+        // update locator cache for dynamic node
+        if (dynamicNodeId != m_currentDynamicNodeId || !m_locator)
+        {
+            m_locator = SpatialGraphInteropPreview::CreateLocatorForNode(dynamicNodeId);
+            if (!m_locator)
+            {
+                return std::nullopt;
+            }
+ 
+            m_frameOfReference = m_locator.CreateAttachedFrameOfReferenceAtCurrentHeading();
+            m_currentDynamicNodeId = dynamicNodeId;
+        }
+ 
+        // locate dynamic node
+        auto timestamp = PerceptionTimestampHelper::FromSystemRelativeTargetTime(TimeSpanFrodmQpcTicks(sampleTimeQpc));
+        auto coordinateSystem = m_frameOfReference.GetStationaryCoordinateSystemAtTimestamp(timestamp);
+        auto location = m_locator.TryLocateAtTimestamp(timestamp, coordinateSystem);
+        if (!location)
+        {
+            return std::nullopt;
+        }
+ 
+        const float4x4 dynamicNodeToCoordinateSystem = make_float4x4_from_quaternion(location.Orientation()) * make_float4x4_translation(location.Position());
+ 
+        return CameraFrameLocation{ coordinateSystem, cameraToDynamicNode * dynamicNodeToCoordinateSystem, cameraIntrinsics };
+    }
+ 
+private:
+    GUID m_currentDynamicNodeId{ GUID_NULL };
+    SpatialLocator m_locator{ nullptr };
+    SpatialLocatorAttachedFrameOfReference m_frameOfReference{ nullptr };
+ 
+    // Convert a duration value from a source tick frequency to a destination tick frequency.
+    static inline int64_t SourceDurationTicksToDestDurationTicks(int64_t sourceDurationInTicks, int64_t sourceTicksPerSecond, int64_t destTicksPerSecond)
+    {
+        int64_t whole = (sourceDurationInTicks / sourceTicksPerSecond) * destTicksPerSecond;                          // 'whole' is rounded down in the target time units.
+        int64_t part = (sourceDurationInTicks % sourceTicksPerSecond) * destTicksPerSecond / sourceTicksPerSecond;    // 'part' is the remainder in the target time units.
+        return whole + part;
+    }
+ 
+    static inline TimeSpan TimeSpanFromQpcTicks(int64_t qpcTicks)
+    {
+        static const int64_t qpcFrequency = []
+        {
+            LARGE_INTEGER frequency;
+            QueryPerformanceFrequency(&frequency);
+            return frequency.QuadPart;
+        }();
+ 
+        return TimeSpan{ SourceDurationTicksToDestDurationTicks(qpcTicks, qpcFrequency, winrt::clock::period::den) / winrt::clock::period::num };
+    }
+};
+```
 
 ### <a name="distortion-error"></a>Ошибка искажения
 
 В HoloLens поток видео и все еще не искажается в конвейере обработки образа системы до того, как фреймы становятся доступными для приложения (в предварительной версии потока содержатся исходные искаженные кадры). Поскольку доступны только Камераинтринсикс, приложения должны предположить, что кадры изображения представляют собой идеальную пинхоле камеру.
 
-В HoloLens (первое поколение) функция undistortия в обработчике изображений может оставить ошибку размером до 10 пикселей при использовании Камераинтринсикс в метаданных кадра. Во многих случаях эта ошибка не имеет значения, но если вы выводите голограммы на реальные плакаты и маркеры, а также заметили < 10px смещение (примерно 11mm для голограмм, расположенных на расстоянии 2 метров), эта ошибка может быть вызвана ошибкой искажения. 
+В HoloLens (первое поколение) функция undistortия в обработчике изображений может оставить ошибку размером до 10 пикселей при использовании Камераинтринсикс в метаданных кадра. Во многих случаях эта ошибка не имеет значения, но если вы выводите голограммы на реальные плакаты и маркеры, а также заметили <10px смещение (примерно 11mm для голограмм, расположенных на расстоянии 2 метров), эта ошибка может быть вызвана ошибкой искажения. 
 
 ## <a name="locatable-camera-usage-scenarios"></a>Сценарии использования камеры размещаемые
 
@@ -100,7 +203,7 @@ HoloLens включает в себя камеру, подключенную к 
 
 ### <a name="tag--pattern--poster--object-tracking"></a>Тег/шаблон/Афиша/Отслеживание объектов
 
-Многие приложения смешанной реальности используют распознаваемый образ или визуальный шаблон для создания отслеживающей точки в пространстве. Затем он используется для отрисовки объектов относительно этого момента или для создания известного расположения. Некоторые варианты использования HoloLens включают поиск объекта в реальном мире с тегами фидуЦиалс (например, ТВ-монитор с QR-кодом), размещение голограмм на фидуЦиалс и визуальное связывание с устройствами, не являющимися HoloLens, такими как планшеты, настроенные для обмена данными с HoloLens через Wi-Fi.
+Многие приложения смешанной реальности используют распознаваемый образ или визуальный шаблон для создания отслеживающей точки в пространстве. Затем он используется для отрисовки объектов относительно этого момента или для создания известного расположения. Некоторые способы использования HoloLens включают поиск объекта в реальном мире с тегами фидуЦиалс (например, ТВ-монитор с QR-кодом), размещение голограмм на фидуЦиалс и визуальное связывание с устройствами, не являющимися HoloLens, такими как планшеты, настроенные для обмена данными с HoloLens через Wi-Fi.
 
 Чтобы распознать визуальный шаблон, а затем поместить этот объект в мировое пространство приложений, потребуется выполнить несколько действий:
 1. Набор средств для распознавания шаблона изображения, например QR-код, Теги AR, поиск лиц, круговые инспекторы, распознавание текста и т. д.
@@ -112,7 +215,7 @@ HoloLens включает в себя камеру, подключенную к 
 * [OpenCV](https://opencv.org/)
 * [Теги QR](https://en.wikipedia.org/wiki/QR_code)
 * [фацесдк](https://research.microsoft.com/projects/facesdk/)
-* [Microsoft Research](https://www.microsoft.com/translator/business)
+* [Microsoft Translator](https://www.microsoft.com/translator/business)
 
 Поддержание интерактивной частоты кадров приложений очень важна, особенно при работе с долгосрочными алгоритмами распознавания изображений. По этой причине мы обычно используем следующий шаблон:
 1. Основной поток: управляет объектом Camera
@@ -166,7 +269,7 @@ public static Vector3 ClosestPointBetweenRays(
 
 ### <a name="track-or-identify-tagged-stationary-or-moving-real-world-objectsfaces-using-leds-or-other-recognizer-libraries"></a>Отслеживать или выявлять стационарные или переносить реальные объекты и лица с помощью индикаторов или других библиотек распознавателей;
 
-Примеры.
+Примеры
 * Промышленные роботы с индикаторами (или QR-коды для более медленных движущихся объектов)
 * Определение и распознавание объектов в комнате
 * Определение и распознавание людей в комнате (например, помещайте с помощью карточек контактных лиц)
