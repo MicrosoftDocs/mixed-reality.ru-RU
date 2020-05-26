@@ -7,14 +7,14 @@ ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, смешанная реальность, учебник, начало работы, MRTK, UXT, средства разработки пользовательского интерфейса, средства UX, документация
-ms.openlocfilehash: 17f7ab1c1126c47e5ac6388d125d45cf3f2c2d87
-ms.sourcegitcommit: 189a47b8712dd5b620e19815f5cf6d1ac0f29880
+ms.openlocfilehash: 2e4d26ed4e0b8199bfc629016aea688bd1c41ef8
+ms.sourcegitcommit: 09d9fa153cd9072f60e33a5f83ced8167496fcd7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82851557"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83520029"
 ---
-# <a name="3-making-your-scene-interactive"></a>3. Настройка интерактивной сцены
+# <a name="4-making-your-scene-interactive"></a>4. Настройка интерактивной сцены
 
 В этом разделе вы познакомитесь с подключаемым модулем разработки пользовательского интерфейса (UX) из набора средств для смешанной реальности, который содержит набор средств с открытым кодом для удобного добавления в сцену интерактивных возможностей. Когда вы завершите работу с этим разделом, шахматные фигуры будут реагировать на действия пользователя. 
 
