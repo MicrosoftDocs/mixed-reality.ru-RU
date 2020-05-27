@@ -6,17 +6,23 @@ ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: cd6d076c00fd21ca6fa60cafb94eb9d89796825a
-ms.sourcegitcommit: 48456c607a2d0dcf035a77e8ba67615396b0a211
+ms.openlocfilehash: b128f91947fa8700502f7541cba23c726238a067
+ms.sourcegitcommit: e65f1463aec3c040a1cd042e61fc2bd156a42ff8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81484304"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83866854"
 ---
 # <a name="holographic-remoting-version-history"></a>Журнал версий службы удаленного взаимодействия с holographic
 
 > [!IMPORTANT]
 > Это руководство относится к удаленному взаимодействию с HoloLens 2.
+
+## <a name="version-213-may-25-2020"></a>Версия 2.1.3 (25 мая, 2020)<a name="v2.1.3"></a>
+* Изменено поведение события [холографикспаце. камерааддед](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded?view=winrt-18362) . В предыдущих версиях **не** гарантируется, что добавленный [холографиккамера](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera?view=winrt-18362) также имеет допустимый [холографиккамерапосе](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose?view=winrt-18362) при создании следующего кадра через [холографикспаце. креатенекстфраме](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe?view=winrt-18362#Windows_Graphics_Holographic_HolographicSpace_CreateNextFrame). Начиная с версии 2.1.3 [холографикспаце. камерааддед](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded?view=winrt-18362) синхронизируется с данными о себе, поступающими от удаленного плеера holographic, и пользователи могут рассчитывать на то, что при добавлении камеры в следующем кадре также доступен допустимый [холографиккамерапосе](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose?view=winrt-18362) для этой камеры.
+* Добавлена **отключенная** в депсбуфферстреамресолутион, которую можно использовать для отключения потоковой передачи буфера глубины через Ремотеконтекст. конфигуредепсвидеостреам. Обратите внимание, что при использовании [холографиккамерарендерингпараметерс. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer?view=winrt-18362#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) завершится с ошибкой *E_ILLEGAL_METHOD_CALL*.
+* Экран запуска удаленного проигрывателя holographic был изменен и теперь не блокирует представление пользователей.
+* Улучшения стабильности и buf исправлений.
 
 ## <a name="version-212-april-5-2020"></a>Версия 2.1.2 (5 апреля, 2020)<a name="v2.1.2"></a>
 * Исправлена проблема совместимости аудио обратной связи между последним удаленным проигрывателем удаленного взаимодействия и удаленных приложений с использованием версии меньше 2.1.0.
@@ -55,9 +61,9 @@ ms.locfileid: "81484304"
 
 ## <a name="version-209-september-19-2019"></a>Версия 2.0.9 (19 сентября 2019 г.)<a name="v2.0.9"></a>
 * Добавлена поддержка [спатиаланчорекспортер](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter) .
-* Добавлен новый интерфейс ```IPlayerContext2``` (реализованный ```PlayerContext```), предоставляющий следующие члены:
+* Добавлен новый интерфейс ```IPlayerContext2``` (реализованный ```PlayerContext``` ), предоставляющий следующие члены:
   - Свойство [блитремотефраметимеаут](holographic-remoting-create-player.md#BlitRemoteFrameTimeout) .
-* Для ```BlitResult``` Добавлено ```Failed_RemoteFrameTooOld``` значение
+* Добавлено ```Failed_RemoteFrameTooOld``` значение в```BlitResult```
 * Улучшения стабильности и надежности
 
 ## <a name="version-208-august-20-2019"></a>Версия 2.0.8 (20 августа 2019 г.)<a name="v2.0.8"></a>
@@ -74,4 +80,4 @@ ms.locfileid: "81484304"
 * [Создание хост-приложения holographic с удаленным взаимодействием](holographic-remoting-create-host.md)
 * [Устранение неполадок и ограничения удаленного взаимодействия с holographic](holographic-remoting-troubleshooting.md)
 * [Условия лицензии на использование ПО для голографического удаленного взаимодействия](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
-* [Заявление о конфиденциальности Майкрософт](https://go.microsoft.com/fwlink/?LinkId=521839)
+* [Заявление Майкрософт о конфиденциальности](https://go.microsoft.com/fwlink/?LinkId=521839)
