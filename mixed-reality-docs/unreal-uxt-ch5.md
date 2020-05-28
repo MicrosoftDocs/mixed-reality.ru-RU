@@ -7,12 +7,12 @@ ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, смешанная реальность, учебник, начало работы, MRTK, UXT, средства разработки пользовательского интерфейса, средства UX, документация
-ms.openlocfilehash: df5ea22e7097fdd3b788ec298bc1cd78c315b585
-ms.sourcegitcommit: ba4c8c2a19bd6a9a181b2cec3cb8e0402f8cac62
+ms.openlocfilehash: 77fe2b59db970a2ac4b531d69efec6794478f7d5
+ms.sourcegitcommit: 09d9fa153cd9072f60e33a5f83ced8167496fcd7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82840403"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83519996"
 ---
 # <a name="5-adding-a-button--resetting-piece-locations"></a>5. Добавление кнопки и сброс расположений фигур
 
@@ -46,13 +46,13 @@ ms.locfileid: "82840403"
 
 ![Создание переменной](images/unreal-uxt/5-var.PNG)
 
-4.  Перетащите переменную WhiteKing из раздела **My Blueprint > Variables** (Моя схема > Переменные) на Simple Button Event Graph (Граф событий простой кнопки). Выберите **Get WhiteKing** (Получить элемент WhiteKing). 
+4.  Перетащите переменную WhiteKing из раздела **My Blueprint > Variables** (Моя схема > Переменные) на граф Reset Button Event Graph (Граф событий кнопки сброса). Выберите **Get WhiteKing** (Получить элемент WhiteKing). 
 
 5.  Перетащите закрепление вывода WhiteKing и отпустите его для размещения нового узла. Выберите функцию **Reset Location** (Сброс расположения). Наконец, перетащите выходное закрепление выполнения из события **On Button Pressed** (По нажатию кнопки) к входному закреплению выполнения функции **Reset Location** (Сброс расположения). **Скомпилируйте** и **сохраните** схему ResetButton, а затем вернитесь в главное окно. 
 
 ![Вызов функции сброса расположения из события нажатия кнопки](images/unreal-uxt/5-callresetloc.PNG)
 
-6.  Перетащите элемент **SimpleButton** в окно просмотра и задайте для его расположения значение X=50, Y=-25, Z=10. В разделе **Default** (По умолчанию) задайте для переменной WhiteKing значение **WhiteKing**.
+6.  Перетащите элемент **ResetButton** в окно просмотра и задайте для его расположения значение X=50, Y=-25, Z=10. В разделе **Default** (По умолчанию) задайте для переменной WhiteKing значение **WhiteKing**.
 
 ![Указание переменной](images/unreal-uxt/5-buttonlevel.PNG)
 

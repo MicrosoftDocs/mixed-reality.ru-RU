@@ -7,12 +7,12 @@ ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, смешанная реальность, учебник, начало работы, MRTK, UXT, средства разработки пользовательского интерфейса, средства UX, документация
-ms.openlocfilehash: 35b18e4bb289438f94433827846e94d1014385db
-ms.sourcegitcommit: ba4c8c2a19bd6a9a181b2cec3cb8e0402f8cac62
+ms.openlocfilehash: b3f0b5f9ca5347c337091539b1cc0e214515c989
+ms.sourcegitcommit: 09d9fa153cd9072f60e33a5f83ced8167496fcd7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82840383"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83519974"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Упаковка и развертывание на устройстве или в эмуляторе
 
@@ -34,6 +34,10 @@ ms.locfileid: "82840383"
 4.  Завершив подключение, щелкните в редакторе UE4 стрелку раскрывающегося списка справа от кнопки Play (Играть) и выберите значение VR Preview (Просмотр виртуальной реальности).
 
 ## <a name="package-and-deploy-your-app"></a>Упаковка и развертывание приложения 
+
+>[!NOTE]
+>Если вы впервые упаковываете приложение Unreal для HoloLens, потребуется скачать вспомогательные файлы из Epic Launcher. Для этого перейдите на вкладку **Library** (Библиотека) в Epic Games Launcher. Щелкните стрелку раскрывающегося списка рядом с полем **Launch** (Запуск) и выберите элемент **Options** (Параметры). В разделе **Target Platforms** (Целевые платформы) выберите элемент **HoloLens 2** и щелкните команду **Apply** (Применить). 
+>![Вкладка Project Settings (Параметры проекта), раздел Description (Описание)](images/unreal-uxt/6-installationoptions.PNG)
 
 1.  Перейдите к разделу **Edit > Project Settings** (Правка > Параметры проекта). В разделе **Project > Description > About > Project Name** (Проект > Описание > Сведения > Имя проекта) присвойте проекту имя. В разделе **Project > Description > Publisher > Company Distinguished Name** (Проект > Описание > Издатель > Название организации) поместите значение "CN={INSERT COMPANY NAME}". Если любое из этих полей останется пустым, процесс завершится ошибкой. 
 
