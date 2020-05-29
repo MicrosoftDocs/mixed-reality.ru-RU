@@ -20,6 +20,7 @@
 ### [Навигация по дому с технологией Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md)
 ### [Руководство для энтузиастов](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)
 ### [Развлечения на основе местоположения](location-based-experiences.md)
+## [Аксессуары к оборудованию](hardware-accessories.md)
 ## [Ресурсы сообщества](community.md)
 # Проектирование
 ## [Начало проектирования и создания прототипов](design.md)
@@ -117,6 +118,7 @@
 ###### [1. Начало работы с Пространственными привязками Azure](mrlearning-asa-ch1.md)
 ###### [2. Сохранение, получение и совместное использование пространственных привязок Azure](mrlearning-asa-ch2.md)
 ###### [3. Отображение отзывов по пространственным привязкам Azure](mrlearning-asa-ch3.md)
+###### [4. Пространственные привязки Azure для Android и iOS](mrlearning-asa-ch4.md)
 ##### Руководства по использованию службы "Речь" в Azure
 ###### [1. Интеграция и использование средств распознавания и транскрибирования речи](mrlearning-speechSDK-ch1.md)
 ###### [2. Добавление автономного режима для преобразования речи в текст в локальной среде](mrlearning-speechSDK-ch2.md)
