@@ -1,21 +1,21 @@
 ---
-title: Системный жест
-description: Системный жест для вызова меню "Пуск".
+title: Жест запуска
+description: Жест запуска для вызова меню "Пуск".
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Смешанная реальность, жесты, взаимодействие, проектирование
-ms.openlocfilehash: 9cfee1104cb9b8135dae51bea73850062fadd25c
-ms.sourcegitcommit: 0a1af2224c9cbb34591b6cb01159b60b37dfff0c
+ms.openlocfilehash: 84088156d0c9cdacc421985b922d5e9370f6a87e
+ms.sourcegitcommit: fd606e87e3c4785d3ca2a26632be3bb580e39afb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79375911"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84152516"
 ---
-# <a name="system-gesture"></a>Системный жест
+# <a name="start-gesture"></a>Жест запуска
 
-Системный жест — это жест руки, используемый для вызова меню "Пуск". Это эквивалентно нажатию клавиши Windows на клавиатуре, кнопки Xbox на контроллере Xbox или кнопки Windows на контроллере движения головного телефона. Важно понимать, какие жесты зарезервированы для системы на каждом устройстве смешанной реальности, чтобы предотвратить конфликты при проектировании взаимодействий.
+Жест запуска — это жест руки, используемый для вызова меню "Пуск". Это эквивалентно нажатию клавиши Windows на клавиатуре, кнопки Xbox на контроллере Xbox или кнопки Windows на контроллере движения головного телефона. Важно понимать, какие жесты зарезервированы для системы на каждом устройстве смешанной реальности, чтобы предотвратить конфликты при проектировании взаимодействий.
 
 ## <a name="device-support"></a>Поддержка устройств
 
@@ -27,13 +27,13 @@ ms.locfileid: "79375911"
     <col width="25%" />
     </colgroup>
     <tr>
-        <td><strong>Функциями</strong></td>
+        <td><strong>Компонент</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1-го поколения)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
     </tr>
      <tr>
-        <td>Раскрытия</td>
+        <td>Цветение</td>
         <td>✔️</td>
         <td>❌</td>
         <td>❌</td>
@@ -52,16 +52,16 @@ ms.locfileid: "79375911"
     </tr>
 </table>
 
-## <a name="bloom"></a>Раскрытия
+## <a name="bloom"></a>Цветение
 Чтобы открыть меню "Пуск" в HoloLens (1-й общий), мы разработали "раскрытия", который представляет собой символическое действие, копируя цветок цветок. Это отличительная необходимость в взаимодействии с сурефутед, простоте выполнения и быстром отзыве. Чтобы выполнить жест раскрытия на HoloLens (1-й общий), проведите руку с помощью карманного ПК, а затем откройте руку, добавив пальцы.
 
 :::row:::
     :::column:::
-        ![раскрытия Close](images/bloom-close.png)<br>
+        ![Раскрытия закрыть](images/bloom-close.png)<br>
         **Шаг 1. поладонь с помощью совместного воссоздания**<br>
     :::column-end:::
     :::column:::
-        ![раскрытия Open](images/bloom-open.png)<br>
+        ![Раскрытия открыть](images/bloom-open.png)<br>
         **Шаг 2. Ручная разворота**<br>
     :::column-end:::
 :::row-end:::
@@ -75,11 +75,11 @@ ms.locfileid: "79375911"
 
 :::row:::
     :::column:::
-        ![готовой кнопки "на](images/wrist-button-ready.png)<br>
+        ![Кнопка "воготовить"](images/wrist-button-ready.png)<br>
         **Шаг 1. Palm, чтобы отобразить кнопку "ручная"**<br>
     :::column-end:::
     :::column:::
-        Нажатие кнопки ![ого](images/wrist-button-press.png)<br>
+        ![Нажатие кнопки "нажимает"](images/wrist-button-press.png)<br>
         **Шаг 2. Нажмите кнопку "нажимаю"**<br>
     :::column-end:::
 :::row-end:::
@@ -100,11 +100,11 @@ ms.locfileid: "79375911"
 Вы также можете выполнить жест запуска только с одной рукой. Чтобы сделать это, проделайте свое руки и взгляните на **значок "начало** " на своем внутреннем кармане. **В то же время следите за значком**, сохранив палец и проиндексировать пальца вместе.<br>
 :::row:::
     :::column:::
-        ![готовой кнопки "на](images/wrist-button-ready.png)<br>
+        ![Кнопка "воготовить"](images/wrist-button-ready.png)<br>
         **Шаг 1. Palm, чтобы отобразить кнопку "ручная"**<br>
     :::column-end:::
     :::column:::
-        ![](images/wrist-button-pinch.png) сжатия кнопки<br>
+        ![Автосжатие кнопки](images/wrist-button-pinch.png)<br>
         **Шаг 2. взгляд на кнопку, затем сжатие**<br>
     :::column-end:::
 :::row-end:::
@@ -113,8 +113,8 @@ ms.locfileid: "79375911"
 
 ---
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 * [Инстинктивное взаимодействие](interaction-fundamentals.md)
-* [Направление взгляда](eye-tracking.md)
+* [Взгляд — взгляд](eye-tracking.md)
 * [Голосовой ввод](voice-input.md)
