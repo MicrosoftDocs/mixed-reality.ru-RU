@@ -4,8 +4,9 @@
 ## [Приготовьтесь к выпуску нового решения Microsoft Edge](new-microsoft-edge.md)
 ## Программы и мероприятия
 ### [Календарь мероприятий Reactor Academy в Сан-Франциско](sf-academy-events.md)
-### [CVPR 2019: семинар по смешанной реальности](cvpr-2019.md)
-## [Заметки о текущем выпуске Смешанной реальности](release-notes-may-2019.md)
+### [Mixed Reality Dev Days](mr-dev-days.md)
+#### [Записи сеанса](mr-dev-days-sessions.md)
+## [Заметки о текущем выпуске Смешанной реальности](release-notes-may-2020.md)
 ## [Ресурсы сообщества](community.md)
 ## [Участие в разработке этой документации](CONTRIBUTING.md)
 # Обнаружить
