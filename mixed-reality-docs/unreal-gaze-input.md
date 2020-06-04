@@ -1,34 +1,51 @@
 ---
 title: Взгляните на входные данные в нереальном режиме
-description: Объясняется, как использовать ввод с помощью взгляда в нереальных
-author: AndreyChistyakov
-ms.author: anchisty
+description: Руководство по настройке входных данных взгляда для HoloLens и нереального модуля
+author: hferrone
+ms.author: v-haferr
 ms.date: 04/08/2020
 ms.topic: article
-keywords: Windows Mixed Reality, голограммы, HoloLens, отслеживание глаз
-ms.openlocfilehash: 7387bb3f25cdbdfac32f508c173fbd098f844e84
-ms.sourcegitcommit: ba4c8c2a19bd6a9a181b2cec3cb8e0402f8cac62
+keywords: Windows Mixed Reality, голограммы, HoloLens 2, отслеживание глаз, входные данные с головного экрана, нереалная подсистема
+ms.openlocfilehash: c77e33df2a1dfffdb5ea55e685d30af3fc2a22da
+ms.sourcegitcommit: 1b8090ba6aed9ff128e4f32d40c96fac2e6a220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82835631"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84330626"
 ---
-# <a name="gaze-input"></a><span data-ttu-id="9424e-104">Входные данные взгляда</span><span class="sxs-lookup"><span data-stu-id="9424e-104">Gaze Input</span></span>
+# <a name="gaze-input"></a><span data-ttu-id="40165-104">Входные данные взгляда</span><span class="sxs-lookup"><span data-stu-id="40165-104">Gaze Input</span></span>
 
-<span data-ttu-id="9424e-105">Подключаемый модуль Windows Mixed Reality не предоставляет никаких специальных функций для ввода с помощью взгляда.</span><span class="sxs-lookup"><span data-stu-id="9424e-105">The Windows Mixed Reality plugin doesn’t provide any special functions for the gaze input.</span></span> <span data-ttu-id="9424e-106">Все работает, несмотря на стандартный нереалй API.</span><span class="sxs-lookup"><span data-stu-id="9424e-106">Everything works though the standard Unreal API.</span></span>
+## <a name="overview"></a><span data-ttu-id="40165-105">Обзор</span><span class="sxs-lookup"><span data-stu-id="40165-105">Overview</span></span>
 
-[<span data-ttu-id="9424e-107">API головного взгляда</span><span class="sxs-lookup"><span data-stu-id="9424e-107">Head gaze API</span></span>](https://docs.unrealengine.com/en-US/BlueprintAPI/Input/HeadMountedDisplay/index.html)
+<span data-ttu-id="40165-106">[Подключаемый модуль Windows Mixed Reality](https://docs.unrealengine.com/Platforms/VR/WMR/index.html) не предоставляет встроенных функций для ввода данных, но HoloLens 2 поддерживает отслеживание глаз.</span><span class="sxs-lookup"><span data-stu-id="40165-106">The [Windows Mixed Reality plugin](https://docs.unrealengine.com/Platforms/VR/WMR/index.html) doesn’t provide any built-in functions for gaze input, but HoloLens 2 does support eye tracking.</span></span> <span data-ttu-id="40165-107">Фактические функции отслеживания предоставляются в виде интерфейсов API **монитора** и **отслеживания взгляда** в режиме реального времени и включают:</span><span class="sxs-lookup"><span data-stu-id="40165-107">The actual tracking features are provided by Unreal's **Head Mounted Display** and **Eye Tracking** APIs and include:</span></span>
 
-## <a name="eye-tracking"></a><span data-ttu-id="9424e-108">Отслеживание взгляда</span><span class="sxs-lookup"><span data-stu-id="9424e-108">Eye tracking</span></span>
+- <span data-ttu-id="40165-108">Сведения об устройстве</span><span class="sxs-lookup"><span data-stu-id="40165-108">Device information</span></span>
+- <span data-ttu-id="40165-109">Датчики отслеживания</span><span class="sxs-lookup"><span data-stu-id="40165-109">Tracking sensors</span></span>
+- <span data-ttu-id="40165-110">Ориентация и положение</span><span class="sxs-lookup"><span data-stu-id="40165-110">Orientation and position</span></span>
+- <span data-ttu-id="40165-111">Области обрезки</span><span class="sxs-lookup"><span data-stu-id="40165-111">Clipping panes</span></span>
+- <span data-ttu-id="40165-112">Взгляните на данные и сведения об отслеживании</span><span class="sxs-lookup"><span data-stu-id="40165-112">Gaze data and tracking information</span></span>
 
-<span data-ttu-id="9424e-109">Чтобы использовать API отслеживания взгляда, разработчики должны включить возможность ввода с помощью взгляда в параметрах проекта HoloLens.</span><span class="sxs-lookup"><span data-stu-id="9424e-109">To use the eye tracking API, developers should enable the “Gaze Input” capability in their HoloLens project settings.</span></span> <span data-ttu-id="9424e-110">При запуске приложения пользователь увидит следующее приглашение на согласие</span><span class="sxs-lookup"><span data-stu-id="9424e-110">When the application starts, user will see the following consent prompt</span></span>
+<span data-ttu-id="40165-113">Полный список функций см. в документации по нереальному [подключению](https://docs.unrealengine.com/BlueprintAPI/Input/HeadMountedDisplay/index.html) и [отслеживания взглядов](https://docs.unrealengine.com/BlueprintAPI/EyeTracking/index.html) .</span><span class="sxs-lookup"><span data-stu-id="40165-113">You can find the full list of features in Unreal's [Head Mounted Display](https://docs.unrealengine.com/BlueprintAPI/Input/HeadMountedDisplay/index.html) and [Eye Tracking](https://docs.unrealengine.com/BlueprintAPI/EyeTracking/index.html) documentation.</span></span> 
+
+<span data-ttu-id="40165-114">В дополнение к нереальным API-интерфейсам ознакомьтесь с документацией по [взаимодействию на основе взгляда](eye-gaze-interaction.md) для hololens 2 и прочитайте о работе [отслеживания взгляда в hololens 2](https://docs.microsoft.com/windows/mixed-reality/eye-tracking) .</span><span class="sxs-lookup"><span data-stu-id="40165-114">In addition to the Unreal APIs, check out the documentation on [eye-gaze-based interaction](eye-gaze-interaction.md) for HoloLens 2 and read up on how [eye tracking on HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/eye-tracking) works.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="40165-115">Отслеживание взгляда поддерживается только в HoloLens 2.</span><span class="sxs-lookup"><span data-stu-id="40165-115">Eye tracking is only supported on HoloLens 2.</span></span> 
+
+## <a name="enabling-eye-tracking"></a><span data-ttu-id="40165-116">Включение отслеживания взгляда</span><span class="sxs-lookup"><span data-stu-id="40165-116">Enabling eye tracking</span></span>
+<span data-ttu-id="40165-117">Необходимо включить входные данные для параметров проекта HoloLens, прежде чем можно будет использовать интерфейсы API нереального времени.</span><span class="sxs-lookup"><span data-stu-id="40165-117">Gaze input needs to be enabled in the HoloLens project settings before you can use any of Unreal's APIs.</span></span> <span data-ttu-id="40165-118">При запуске приложения появится запрос на согласие, показанный на снимке экрана ниже.</span><span class="sxs-lookup"><span data-stu-id="40165-118">When the application starts you'll see a consent prompt shown in the screenshot below.</span></span>
+
+- <span data-ttu-id="40165-119">Выберите **Да** , чтобы задать разрешение и получить доступ к вводу с помощью взгляда.</span><span class="sxs-lookup"><span data-stu-id="40165-119">Select **Yes** to set the permission and get access to gaze input.</span></span> <span data-ttu-id="40165-120">Если необходимо изменить этот параметр в любое время, его можно найти в приложении " **Параметры** ".</span><span class="sxs-lookup"><span data-stu-id="40165-120">If you need to change this setting at any time, it can be found in the **Settings** app.</span></span>
 
 ![Разрешения на вход с глазами](images/unreal/eye-input-permissions.png)
- 
-<span data-ttu-id="9424e-112">Если пользователь предоставит свое разрешение, приложение получит доступ к входным данным.</span><span class="sxs-lookup"><span data-stu-id="9424e-112">If the user gives their permission, the application will get eye gaze input.</span></span> 
 
-<span data-ttu-id="9424e-113">[Здесь](https://docs.unrealengine.com/en-US/BlueprintAPI/EyeTracking/index.html) приведена документация по API отслеживания взгляда на нереалию</span><span class="sxs-lookup"><span data-stu-id="9424e-113">Unreal’s eye tracking API is documented is [here](https://docs.unrealengine.com/en-US/BlueprintAPI/EyeTracking/index.html)</span></span>
+> [!NOTE] 
+> <span data-ttu-id="40165-122">Отслеживание глаз HoloLens в нереальном режиме имеет один луч для обоих глаз, а не два луча, необходимых для отслеживания стереоскопик, что не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="40165-122">HoloLens eye tracking in Unreal only has a single gaze ray for both eyes instead of the two rays needed for stereoscopic tracking, which is not supported.</span></span>
 
-<span data-ttu-id="9424e-114">Технические сведения об отслеживании глаз [here](eye-tracking.md)</span><span class="sxs-lookup"><span data-stu-id="9424e-114">The technical details of eye tracking are [here](eye-tracking.md)</span></span>
+<span data-ttu-id="40165-123">Это все, что необходимо для того, чтобы добавить входные данные взгляда в приложения HoloLens 2 в нереальном виде.</span><span class="sxs-lookup"><span data-stu-id="40165-123">That's all the setup you'll need to start adding gaze input to your HoloLens 2 apps in Unreal.</span></span> <span data-ttu-id="40165-124">Дополнительные сведения о вводе и том, как он влияет на пользователей в смешанной реальности, можно найти по ссылкам ниже.</span><span class="sxs-lookup"><span data-stu-id="40165-124">More information on gaze input and how it affects users in mixed reality can be found at the links below.</span></span> <span data-ttu-id="40165-125">Не забудьте подумать об этих возможностях при создании интерактивных интерфейсов.</span><span class="sxs-lookup"><span data-stu-id="40165-125">Be sure to think about these when building your interactive experiences.</span></span> 
 
-<span data-ttu-id="9424e-115">Обратите внимание, что в частности, для отслеживания взгляда HoloLens в обоих глаза есть один луч.</span><span class="sxs-lookup"><span data-stu-id="9424e-115">Note that specifically for Unreal, HoloLens eye tracking has a single gaze ray for both eyes.</span></span> <span data-ttu-id="9424e-116">HoloLens не обеспечивает отслеживание стереоскопикных глаз.</span><span class="sxs-lookup"><span data-stu-id="9424e-116">HoloLens doesn’t provide stereoscopic eye tracking.</span></span>
+## <a name="see-also"></a><span data-ttu-id="40165-126">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="40165-126">See also</span></span>
+* [<span data-ttu-id="40165-127">Калибровка</span><span class="sxs-lookup"><span data-stu-id="40165-127">Calibration</span></span>](calibration.md)
+* [<span data-ttu-id="40165-128">Комфорт</span><span class="sxs-lookup"><span data-stu-id="40165-128">Comfort</span></span>](comfort.md)
+* [<span data-ttu-id="40165-129">Взгляд и фиксация</span><span class="sxs-lookup"><span data-stu-id="40165-129">Gaze and commit</span></span>](gaze-and-commit.md)
+* [<span data-ttu-id="40165-130">Голосовой ввод</span><span class="sxs-lookup"><span data-stu-id="40165-130">Voice input</span></span>](voice-design.md)
