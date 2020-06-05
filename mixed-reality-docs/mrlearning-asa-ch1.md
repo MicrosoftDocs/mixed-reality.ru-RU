@@ -7,24 +7,26 @@ ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: d0fd22ad6fbefc6889373b00847721cfc0655ce3
-ms.sourcegitcommit: 92ff5478a5c55b4e2c5cc2f44f1588702f4ec5d1
+ms.openlocfilehash: 2a171d601d094375a56734e8d7890c9d3e17c887
+ms.sourcegitcommit: e65f1463aec3c040a1cd042e61fc2bd156a42ff8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "82605005"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83866914"
 ---
 # <a name="1-getting-started-with-azure-spatial-anchors"></a>1. Начало работы с Пространственными привязками Azure
 
 ## <a name="overview"></a>Обзор
 
-Вас приветствует вторая серия руководств по HoloLens 2. В трех частях этой серии руководств вы получите основные сведения о Пространственных привязках Azure.
+Вас приветствует вторая серия руководств по HoloLens 2. В четырех частях этой серии руководств приводятся основные сведения о Пространственных привязках Azure.
 
 Первое руководство [Начало работы с Пространственными привязками Azure](mrlearning-asa-ch1.md) поможет изучить процессы, необходимые для запуска и завершения сеанса Azure, а также для создания, отправки и скачивания привязок Azure на одном устройстве.
 
 Из второго руководства [Сохранение, извлечение и совместное использование Пространственных привязок Azure](mrlearning-asa-ch2.md) вы узнаете, как сохранять Пространственные привязки Azure в нескольких сеансах приложения, сохраняя сведения о привязке в хранилище HoloLens 2, и как передать эти сведения о привязке на другие устройства для согласования привязок между несколькими устройствами.
 
 Из третьего руководства [Отображение отзывов от Пространственной привязки Azure](mrlearning-asa-ch3.md) вы узнаете, как предоставить пользователям информацию о событиях и состояниях привязки при использовании Пространственных привязок Azure.
+
+Из четвертого руководства [Пространственные привязки Azure для Android и iOS](mrlearning-asa-ch4.md) вы узнаете, как создать и развернуть проект на устройствах Android и iOS.
 
 ## <a name="objectives"></a>Задачи
 
@@ -42,6 +44,13 @@ ms.locfileid: "82605005"
 * Устройство HoloLens 2, [настроенное для разработки](using-visual-studio.md#enabling-developer-mode).
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> с Unity 2019.2.X и модулем поддержки сборки универсальной платформы Windows.
 * Выполните инструкции из раздела [Создание ресурса Пространственных привязок](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) в статье [Краткое руководство. Создание приложения Unity HoloLens, которое использует Пространственные привязки Azure](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens).
+* Если планируется развертывание на Android:
+    * Устройство Android с <a href="https://developer.android.com/studio/debug/dev-options" target="_blank">включенными возможностями разработки</a> и <a href="https://developers.google.com/ar/discover/supported-devices" target="_blank">поддержкой ARCore</a>, подключенное через USB к компьютеру Windows или macOS.
+    * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> с Unity 2019.2.X и модулем Android Build Support.
+* Если планируется развертывание на iOS:
+    * Компьютер macOS с последней версией <a href="https://geo.itunes.apple.com/us/app/xcode/id497799835?mt=12" target="_blank">Xcode</a> и <a href="https://cocoapods.org" target="_blank">CocoaPods</a>.
+    * <a href="https://developer.apple.com/documentation/arkit/verifying_device_support_and_user_permission" target="_blank">Совместимое с ARKit</a> устройство iOS, подключенное через USB к компьютеру macOS.
+    * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> с Unity 2019.2.X и модулем iOS Build Support.
 
 > [!IMPORTANT]
 > Рекомендуемая версия Unity для этой серии руководств — Unity 2019.2.X. Это заменяет все требования к версии Unity и рекомендации, указанные выше.
