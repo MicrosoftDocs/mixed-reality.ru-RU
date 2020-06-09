@@ -6,12 +6,12 @@ ms.author: v-haferr
 ms.date: 04/08/2020
 ms.topic: article
 keywords: Windows Mixed Reality, голограммы, HoloLens 2, отслеживание глаз, входные данные с головного экрана, нереалная подсистема
-ms.openlocfilehash: c77e33df2a1dfffdb5ea55e685d30af3fc2a22da
-ms.sourcegitcommit: 1b8090ba6aed9ff128e4f32d40c96fac2e6a220b
+ms.openlocfilehash: 0bc8b83a2e840b066eb5e30665584e1c68f7b021
+ms.sourcegitcommit: 7f50210b71a65631fd1bc3fdb215064e0db34333
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84330626"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84551810"
 ---
 # <a name="gaze-input"></a>Входные данные взгляда
 
@@ -25,12 +25,12 @@ ms.locfileid: "84330626"
 - Области обрезки
 - Взгляните на данные и сведения об отслеживании
 
-Полный список функций см. в документации по нереальному [подключению](https://docs.unrealengine.com/BlueprintAPI/Input/HeadMountedDisplay/index.html) и [отслеживания взглядов](https://docs.unrealengine.com/BlueprintAPI/EyeTracking/index.html) . 
+Полный список функций см. в документации по нереальному [подключению](https://docs.unrealengine.com/BlueprintAPI/Input/HeadMountedDisplay/index.html) и [отслеживания взглядов](https://docs.unrealengine.com/BlueprintAPI/EyeTracking/index.html) .
 
 В дополнение к нереальным API-интерфейсам ознакомьтесь с документацией по [взаимодействию на основе взгляда](eye-gaze-interaction.md) для hololens 2 и прочитайте о работе [отслеживания взгляда в hololens 2](https://docs.microsoft.com/windows/mixed-reality/eye-tracking) .
 
 > [!IMPORTANT]
-> Отслеживание взгляда поддерживается только в HoloLens 2. 
+> Отслеживание взгляда поддерживается только в HoloLens 2.
 
 ## <a name="enabling-eye-tracking"></a>Включение отслеживания взгляда
 Необходимо включить входные данные для параметров проекта HoloLens, прежде чем можно будет использовать интерфейсы API нереального времени. При запуске приложения появится запрос на согласие, показанный на снимке экрана ниже.
@@ -42,9 +42,9 @@ ms.locfileid: "84330626"
 > [!NOTE] 
 > Отслеживание глаз HoloLens в нереальном режиме имеет один луч для обоих глаз, а не два луча, необходимых для отслеживания стереоскопик, что не поддерживается.
 
-Это все, что необходимо для того, чтобы добавить входные данные взгляда в приложения HoloLens 2 в нереальном виде. Дополнительные сведения о вводе и том, как он влияет на пользователей в смешанной реальности, можно найти по ссылкам ниже. Не забудьте подумать об этих возможностях при создании интерактивных интерфейсов. 
+Это все, что необходимо для того, чтобы добавить входные данные взгляда в приложения HoloLens 2 в нереальном виде. Дополнительные сведения о вводе и том, как он влияет на пользователей в смешанной реальности, можно найти по ссылкам ниже. Не забудьте подумать об этих возможностях при создании интерактивных интерфейсов.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 * [Калибровка](calibration.md)
 * [Комфорт](comfort.md)
 * [Взгляд и фиксация](gaze-and-commit.md)
