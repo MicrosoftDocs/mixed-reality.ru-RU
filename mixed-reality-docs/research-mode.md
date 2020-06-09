@@ -1,85 +1,136 @@
 ---
 title: Режим исследования HoloLens
 description: С помощью режима исследований в HoloLens приложение может получать доступ к потокам датчиков устройств (глубина, отслеживание среды и IR-рефлективити).
-author: davidgedye
-ms.author: dgedye
+author: hferrone
+ms.author: v-haferr
 ms.date: 05/03/2018
 ms.topic: article
-keywords: режим исследования, КП, RS4, компьютерное зрение, исследование, HoloLens
-ms.openlocfilehash: 307df0c226221422f13af09d8f4944c22ead3865
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+keywords: режим исследований, ОПС, RS4, компьютерное зрение, исследование, HoloLens, HoloLens 2
+ms.openlocfilehash: ec6f7b73a1f25932f10c10a7f0daaf78e536c0c4
+ms.sourcegitcommit: 7f50210b71a65631fd1bc3fdb215064e0db34333
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73438304"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84533106"
 ---
-# <a name="hololens-research-mode"></a><span data-ttu-id="93ab5-104">Режим исследования HoloLens</span><span class="sxs-lookup"><span data-stu-id="93ab5-104">HoloLens Research mode</span></span>
+# <a name="hololens-research-mode"></a><span data-ttu-id="f255b-104">Режим исследования в HoloLens</span><span class="sxs-lookup"><span data-stu-id="f255b-104">HoloLens Research mode</span></span>
+
+## <a name="overview"></a><span data-ttu-id="f255b-105">Обзор</span><span class="sxs-lookup"><span data-stu-id="f255b-105">Overview</span></span>
+
+<span data-ttu-id="f255b-106">Режим исследования появился в первом поколение HoloLens, чтобы предоставить доступ к датчикам ключей на устройстве, специально для исследования приложений, которые не предназначены для развертывания.</span><span class="sxs-lookup"><span data-stu-id="f255b-106">Research mode was introduced in the 1st Generation HoloLens to give access to key sensors on the device, specifically for research applications that are not intended for deployment.</span></span> <span data-ttu-id="f255b-107">Теперь вы можете собирать данные из следующих входных данных:</span><span class="sxs-lookup"><span data-stu-id="f255b-107">You can now gather data from the following inputs:</span></span>
+
+* <span data-ttu-id="f255b-108">**Видимые камеры для отслеживания окружения** — используются системой для отслеживания и создания карт.</span><span class="sxs-lookup"><span data-stu-id="f255b-108">**Visible Light Environment Tracking Cameras** - Used by the system for head tracking and map building.</span></span>
+* <span data-ttu-id="f255b-109">**Камера с глубиной** — работает в двух режимах:</span><span class="sxs-lookup"><span data-stu-id="f255b-109">**Depth Camera** – Operates in two modes:</span></span>  
+    + <span data-ttu-id="f255b-110">Краткосрочное, с высокой частотой (30 кадров/с), которое используется для [отслеживания вручную](interaction-fundamentals.md)</span><span class="sxs-lookup"><span data-stu-id="f255b-110">Short-throw, high-frequency (30 FPS) near-depth sensing used for [Hand Tracking](interaction-fundamentals.md)</span></span>
+    + <span data-ttu-id="f255b-111">Длительное исключение (1-5 кадров/с низкой частотой), используемое для [пространственного сопоставления](spatial-mapping.md)</span><span class="sxs-lookup"><span data-stu-id="f255b-111">Long-throw, low-frequency (1-5 FPS) far-depth sensing used by [Spatial Mapping](spatial-mapping.md)</span></span>
+* <span data-ttu-id="f255b-112">**Две версии потока IR-рефлективити** , используемые HoloLens для расчета глубины.</span><span class="sxs-lookup"><span data-stu-id="f255b-112">**Two versions of the IR-reflectivity stream** - Used by the HoloLens to compute depth.</span></span> <span data-ttu-id="f255b-113">Эти изображения загораются инфракрасной связью и не зависят от внешнего видимого светового индикатора.</span><span class="sxs-lookup"><span data-stu-id="f255b-113">These images are illuminated by infrared and unaffected by ambient visible light.</span></span>
+
+<span data-ttu-id="f255b-114">Если вы используете HoloLens 2, вы также сможете получить доступ к следующим входным данным:</span><span class="sxs-lookup"><span data-stu-id="f255b-114">If you're using a HoloLens 2 you will also be able to access the following inputs:</span></span>
+
+* <span data-ttu-id="f255b-115">**Акселерометр** — используется системой для определения линейного ускорения по осям X, Y и Z, а также сила притяжения.</span><span class="sxs-lookup"><span data-stu-id="f255b-115">**Accelerometer** – Used by the system to determine linear acceleration along the X, Y and Z axes and gravity.</span></span>
+* <span data-ttu-id="f255b-116">**Гиро** — используется системой для определения поворотов.</span><span class="sxs-lookup"><span data-stu-id="f255b-116">**Gyro** – Used by the system to determine rotations.</span></span>
+* <span data-ttu-id="f255b-117">**Магнитометр** — используется системой для оценки абсолютной ориентации.</span><span class="sxs-lookup"><span data-stu-id="f255b-117">**Magnetometer** – Used by the system to estimate absolute orientation.</span></span>
+
+<span data-ttu-id="f255b-118">![Снимок экрана приложения в режиме исследования](images/sensor-stream-viewer.jpg)</span><span class="sxs-lookup"><span data-stu-id="f255b-118">![Research Mode app screenshot](images/sensor-stream-viewer.jpg)</span></span><br>
+<span data-ttu-id="f255b-119">*Запись в смешанной реальности тестового приложения, отображающего восемь потоков датчиков, доступных в режиме исследования.*</span><span class="sxs-lookup"><span data-stu-id="f255b-119">*A mixed reality capture of a test application that displays the eight sensor streams available in Research mode*</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="93ab5-105">Эта функция была добавлена как часть [обновления Windows 10 от апреля 2018](release-notes-april-2018.md) для HoloLens и недоступна в более ранних выпусках.</span><span class="sxs-lookup"><span data-stu-id="93ab5-105">This feature was added as part of the [Windows 10 April 2018 Update](release-notes-april-2018.md) for HoloLens, and is not available on earlier releases.</span></span>
+> <span data-ttu-id="f255b-120">Функция режима исследования была добавлена как часть [обновления Windows 10 от апреля 2018](release-notes-april-2018.md) для HoloLens и недоступна в более ранних выпусках.</span><span class="sxs-lookup"><span data-stu-id="f255b-120">The Research Mode feature was added as part of the [Windows 10 April 2018 Update](release-notes-april-2018.md) for HoloLens, and is not available on earlier releases.</span></span>
 
-<span data-ttu-id="93ab5-106">Режим исследования — это новая возможность HoloLens, которая предоставляет приложению доступ к датчикам ключей на устройстве.</span><span class="sxs-lookup"><span data-stu-id="93ab5-106">Research mode is a new capability of HoloLens that provides application access to the key sensors on the device.</span></span> <span data-ttu-id="93ab5-107">К ним можно отнести следующие.</span><span class="sxs-lookup"><span data-stu-id="93ab5-107">These include:</span></span>
-- <span data-ttu-id="93ab5-108">Четыре камеры отслеживания среды, используемые системой для отслеживания построений и головных карт.</span><span class="sxs-lookup"><span data-stu-id="93ab5-108">The four environment tracking cameras used by the system for map building and head tracking.</span></span>
-- <span data-ttu-id="93ab5-109">Две версии данных камеры с глубиной — один для высокоскоростного (30 КАДРОВого) подсчета, который обычно используется в отслеживании, а другой — для дальнего многофакторного определения (1-5 кадров/с), которое в настоящее время используется пространственным сопоставлением.</span><span class="sxs-lookup"><span data-stu-id="93ab5-109">Two versions of the depth camera data – one for high-frequency (30 FPS) near-depth sensing, commonly used in hand tracking, and the other for lower-frequency (1-5 FPS) far-depth sensing, currently used by Spatial Mapping,</span></span>
-- <span data-ttu-id="93ab5-110">Две версии потока рефлективити, используемые HoloLens для расчета глубины, но ценные в собственном виде, так как эти образы загораются из HoloLens и не зависят от внешнего освещения.</span><span class="sxs-lookup"><span data-stu-id="93ab5-110">Two versions of an IR-reflectivity stream, used by the HoloLens to compute depth, but valuable in its own right as these images are illuminated from the HoloLens and reasonably unaffected by ambient light.</span></span>
+## <a name="usage"></a><span data-ttu-id="f255b-121">Использование</span><span class="sxs-lookup"><span data-stu-id="f255b-121">Usage</span></span>
 
-<span data-ttu-id="93ab5-111">снимок экрана приложения ![режима исследования](images/sensor-stream-viewer.jpg)</span><span class="sxs-lookup"><span data-stu-id="93ab5-111">![Research Mode app screenshot](images/sensor-stream-viewer.jpg)</span></span><br>
-<span data-ttu-id="93ab5-112">*Запись в смешанной реальности тестового приложения, отображающего восемь потоков датчиков, доступных в режиме исследования.*</span><span class="sxs-lookup"><span data-stu-id="93ab5-112">*A mixed reality capture of a test application that displays the eight sensor streams available in Research mode*</span></span>
+<span data-ttu-id="f255b-122">Режим исследования предназначен для академических и промышленных исследователей, посвященных новым идеям в полях Компьютерное зрение и Robotics.</span><span class="sxs-lookup"><span data-stu-id="f255b-122">Research mode is designed for academic and industrial researchers exploring new ideas in the fields of Computer Vision and Robotics.</span></span>  <span data-ttu-id="f255b-123">Он не предназначен для приложений, развернутых в корпоративных средах или доступных через Microsoft Store или другие каналы распространения.</span><span class="sxs-lookup"><span data-stu-id="f255b-123">It's not intended for applications deployed in enterprise environments or available through the Microsoft Store or other distribution channels.</span></span>
 
-## <a name="device-support"></a><span data-ttu-id="93ab5-113">Поддержка устройств</span><span class="sxs-lookup"><span data-stu-id="93ab5-113">Device support</span></span>
+<span data-ttu-id="f255b-124">Кроме того, корпорация Майкрософт не предоставляет гарантии, что режим исследования или эквивалентные функции будут поддерживаться в будущих обновлениях оборудования или ОС.</span><span class="sxs-lookup"><span data-stu-id="f255b-124">Additionally, Microsoft doesn't provide assurances that research mode or equivalent functionality is going to be supported in future hardware or OS updates.</span></span> <span data-ttu-id="f255b-125">Однако это не должно помешать вам использовать его для разработки и тестирования новых идей!</span><span class="sxs-lookup"><span data-stu-id="f255b-125">However, this shouldn't stop you from using it to develop and test new ideas!</span></span>
+
+## <a name="security-and-performance"></a><span data-ttu-id="f255b-126">Безопасность и производительность</span><span class="sxs-lookup"><span data-stu-id="f255b-126">Security and performance</span></span>
+
+<span data-ttu-id="f255b-127">Имейте в виду, что включение режима исследования использует больше энергии аккумулятора, чем использование HoloLens 2 в нормальных условиях.</span><span class="sxs-lookup"><span data-stu-id="f255b-127">Be aware that enabling research mode uses more battery power than using the HoloLens 2 under normal conditions.</span></span> <span data-ttu-id="f255b-128">Это справедливо, даже если приложение, использующее функции режима исследования, не работает.</span><span class="sxs-lookup"><span data-stu-id="f255b-128">This is true even if the application using the research mode features is not running.</span></span>  <span data-ttu-id="f255b-129">Включение этого режима может также снизить общую безопасность устройства, так как приложения могут использовать данные датчика неверно.</span><span class="sxs-lookup"><span data-stu-id="f255b-129">Enabling this mode can also lower the overall security of your device because applications may misuse sensor data.</span></span>  <span data-ttu-id="f255b-130">Дополнительные сведения о безопасности устройств можно найти в [разделе вопросы и ответы о безопасности HoloLens](https://docs.microsoft.com/hololens/hololens-faq-security).</span><span class="sxs-lookup"><span data-stu-id="f255b-130">You can find more information on device security in the [HoloLens security FAQ](https://docs.microsoft.com/hololens/hololens-faq-security).</span></span>  
+
+
+## <a name="device-support"></a><span data-ttu-id="f255b-131">Поддержка устройств</span><span class="sxs-lookup"><span data-stu-id="f255b-131">Device support</span></span>
 
 <table>
     <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
+    <col width="50%" />
+    <col width="50%" />
+    <!-- <col width="33%" /> -->
     </colgroup>
     <tr>
-        <td><span data-ttu-id="93ab5-114"><strong>Функциями</strong></span><span class="sxs-lookup"><span data-stu-id="93ab5-114"><strong>Feature</strong></span></span></td>
-        <td><span data-ttu-id="93ab5-115"><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></span><span class="sxs-lookup"><span data-stu-id="93ab5-115"><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></span></span></td>
-        <td><span data-ttu-id="93ab5-116"><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></span><span class="sxs-lookup"><span data-stu-id="93ab5-116"><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></span></span></td>
+        <td><span data-ttu-id="f255b-132"><strong>Возможность</strong></span><span class="sxs-lookup"><span data-stu-id="f255b-132"><strong>Feature</strong></span></span></td>
+        <td><span data-ttu-id="f255b-133"><a href="hololens-hardware-details.md"><strong>Первое поколение HoloLens</strong></a></span><span class="sxs-lookup"><span data-stu-id="f255b-133"><a href="hololens-hardware-details.md"><strong>HoloLens 1st Gen</strong></a></span></span></td>
+        <!-- <td><a href="hololens2-hardware.md"><strong>HoloLens 2</strong></a></td> -->
     </tr>
      <tr>
-        <td><span data-ttu-id="93ab5-117">Режим исследования</span><span class="sxs-lookup"><span data-stu-id="93ab5-117">Research mode</span></span></td>
-        <td><span data-ttu-id="93ab5-118">✔️</span><span class="sxs-lookup"><span data-stu-id="93ab5-118">✔️</span></span></td>
+        <td><span data-ttu-id="f255b-134">Камеры для отслеживания головного подразделения</span><span class="sxs-lookup"><span data-stu-id="f255b-134">Head Tracking Cameras</span></span></td>
+        <td><span data-ttu-id="f255b-135">✔️</span><span class="sxs-lookup"><span data-stu-id="f255b-135">✔️</span></span></td>
+        <!-- <td>❌</td> -->
+    </tr>
+    <tr>
+        <td><span data-ttu-id="f255b-136">Глубина & ИК-камере</span><span class="sxs-lookup"><span data-stu-id="f255b-136">Depth & IR Camera</span></span></td>
+        <td><span data-ttu-id="f255b-137">✔️</span><span class="sxs-lookup"><span data-stu-id="f255b-137">✔️</span></span></td>
+        <!-- <td>❌</td> -->
+    </tr>
+    <tr>
+        <td><span data-ttu-id="f255b-138">Акселерометр</span><span class="sxs-lookup"><span data-stu-id="f255b-138">Accelerometer</span></span></td>
         <td>❌</td>
+        <!-- <td>❌</td> -->
+    </tr>
+    <tr>
+        <td><span data-ttu-id="f255b-139">Гироскоп</span><span class="sxs-lookup"><span data-stu-id="f255b-139">Gyroscope</span></span></td>
+        <td>❌</td>
+        <!-- <td>❌</td> -->
+    </tr>
+    <tr>
+        <td><span data-ttu-id="f255b-140">Магнитометр</span><span class="sxs-lookup"><span data-stu-id="f255b-140">Magnetometer</span></span></td>
+        <td>❌</td>
+        <!-- <td>❌</td> -->
     </tr>
 </table>
 
-## <a name="before-using-research-mode"></a><span data-ttu-id="93ab5-119">Перед использованием режима исследования</span><span class="sxs-lookup"><span data-stu-id="93ab5-119">Before using Research mode</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="f255b-141">Поддержка режима исследования для HoloLens 2 должна быть доступна в общедоступной предварительной версии в июле 2020 и будет включать все перечисленные выше компоненты.</span><span class="sxs-lookup"><span data-stu-id="f255b-141">Research Mode support for HoloLens 2 is expected to be available in public preview in July 2020 and will include all the features listed above.</span></span> <span data-ttu-id="f255b-142">Дополнительные сведения см. в этой обратной записи.</span><span class="sxs-lookup"><span data-stu-id="f255b-142">Please check back for more information.</span></span> 
 
-<span data-ttu-id="93ab5-120">Режим исследования хорошо назван: он предназначен для академических и отраслевых исследователей, пытающихся получить новые идеи в полях Компьютерное зрение и Robotics.</span><span class="sxs-lookup"><span data-stu-id="93ab5-120">Research mode is well named: it is intended for academic and industrial researchers trying out new ideas in the fields of Computer Vision and Robotics.</span></span>  <span data-ttu-id="93ab5-121">Режим исследования не предназначен для приложений, которые будут развернуты на предприятии или доступны в Microsoft Store.</span><span class="sxs-lookup"><span data-stu-id="93ab5-121">Research mode is not intended for applications that will be deployed across an enterprise or made available in the Microsoft Store.</span></span> <span data-ttu-id="93ab5-122">Это объясняется тем, что режим исследования снижает безопасность устройства и потребляет значительно больше энергии аккумулятора, чем нормальная работа.</span><span class="sxs-lookup"><span data-stu-id="93ab5-122">The reason for this is that Research mode lowers the security of your device and consumes significantly more battery power than normal operation.</span></span> <span data-ttu-id="93ab5-123">Корпорация Майкрософт не фиксирует поддержку этого режима на всех будущих устройствах.</span><span class="sxs-lookup"><span data-stu-id="93ab5-123">Microsoft is not committing to supporting this mode on any future devices.</span></span> <span data-ttu-id="93ab5-124">Поэтому рекомендуется использовать его для разработки и тестирования новых идей. Однако вы не сможете широко развертывать приложения, использующие режим исследования, или иметь возможность гарантировать, что она будет продолжать работать на будущем оборудовании.</span><span class="sxs-lookup"><span data-stu-id="93ab5-124">Thus, we recommend you use it to develop and test new ideas; however, you will not be able to widely deploy applications that use Research mode or have any assurance that it will continue to work on future hardware.</span></span>
+## <a name="enabling-research-mode"></a><span data-ttu-id="f255b-143">Включение режима исследования</span><span class="sxs-lookup"><span data-stu-id="f255b-143">Enabling Research mode</span></span>
 
-## <a name="enabling-research-mode"></a><span data-ttu-id="93ab5-125">Включение режима исследования</span><span class="sxs-lookup"><span data-stu-id="93ab5-125">Enabling Research mode</span></span>
+<span data-ttu-id="f255b-144">Режим исследования — это расширение режима разработчика.</span><span class="sxs-lookup"><span data-stu-id="f255b-144">Research mode is an extension of Developer Mode.</span></span> <span data-ttu-id="f255b-145">Перед началом работы необходимо включить функции разработчика устройства для доступа к параметрам режима исследования:</span><span class="sxs-lookup"><span data-stu-id="f255b-145">Before starting, the developer features of the device need to be enabled to access the research mode settings:</span></span> 
 
-<span data-ttu-id="93ab5-126">Режим исследования — это подраздел режима разработчика.</span><span class="sxs-lookup"><span data-stu-id="93ab5-126">Research mode is a sub-mode of developer mode.</span></span> <span data-ttu-id="93ab5-127">Сначала необходимо включить режим разработчика в приложении "Параметры" (**параметры > обновление & > безопасности для разработчиков**):</span><span class="sxs-lookup"><span data-stu-id="93ab5-127">You first need to enable developer mode in the Settings app (**Settings > Update & Security > For developers**):</span></span>
+* <span data-ttu-id="f255b-146">Откройте **меню "Пуск" > "Параметры** " и выберите " **обновления**".</span><span class="sxs-lookup"><span data-stu-id="f255b-146">Open **Start Menu > Settings** and select **Updates**.</span></span>
+* <span data-ttu-id="f255b-147">Выберите **для разработчиков** и включите **режим разработчика**.</span><span class="sxs-lookup"><span data-stu-id="f255b-147">Select **For Developers** and enable **Developer Mode**.</span></span>
+* <span data-ttu-id="f255b-148">Прокрутите вниз и включите **портал устройств**.</span><span class="sxs-lookup"><span data-stu-id="f255b-148">Scroll down and enable **Device Portal**.</span></span>
 
-1. <span data-ttu-id="93ab5-128">Установите для параметра "использовать функции разработчика" значение **вкл** .</span><span class="sxs-lookup"><span data-stu-id="93ab5-128">Set "Use developer features" to **On**</span></span>
-2. <span data-ttu-id="93ab5-129">Задайте для параметра "включить портал устройства" значение **вкл** .</span><span class="sxs-lookup"><span data-stu-id="93ab5-129">Set "Enable Device Portal" to **On**</span></span>
+<span data-ttu-id="f255b-149">После включения функций [для разработчиков подключитесь к порталу устройств](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens) , чтобы включить функции режима исследования.</span><span class="sxs-lookup"><span data-stu-id="f255b-149">After the developer features  are enabled, [connect to the device portal](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens) to enable the research mode features.</span></span>
 
-<span data-ttu-id="93ab5-130">Затем с помощью веб-браузера, подключенного к той же сети Wi-Fi, что и HoloLens, перейдите по IP-адресу HoloLens (с помощью **параметров > сеть & интернет > Wi-fi > свойства оборудования**).</span><span class="sxs-lookup"><span data-stu-id="93ab5-130">Then using a web browser that is connected to the same Wi-Fi network as your HoloLens, navigate to the IP address of your HoloLens (obtained through **Settings > Network & Internet > Wi-Fi > Hardware properties**).</span></span> <span data-ttu-id="93ab5-131">Это [портал устройств](using-the-windows-device-portal.md), и в разделе "система" на портале вы увидите страницу "режим исследований":</span><span class="sxs-lookup"><span data-stu-id="93ab5-131">This is the [Device Portal](using-the-windows-device-portal.md), and you will find a "Research mode" page in the "System" section of the portal:</span></span>
+<span data-ttu-id="f255b-150">В *HoloLens 1-го поколения*:</span><span class="sxs-lookup"><span data-stu-id="f255b-150">On *HoloLens 1st Gen*:</span></span>
 
-<span data-ttu-id="93ab5-132">Вкладка режима исследования ![на портале устройств HoloLens](images/ResearchModeDevPortal.png)</span><span class="sxs-lookup"><span data-stu-id="93ab5-132">![Research Mode tab of HoloLens Device Portal](images/ResearchModeDevPortal.png)</span></span><br>
-<span data-ttu-id="93ab5-133">*Режим исследования на портале устройств HoloLens*</span><span class="sxs-lookup"><span data-stu-id="93ab5-133">*Research mode in the HoloLens Device Portal*</span></span>
+* <span data-ttu-id="f255b-151">Перейдите в **режим "система > исследований** " на **портале устройств**.</span><span class="sxs-lookup"><span data-stu-id="f255b-151">Go to **System > Research mode** in the **Device Portal**.</span></span>
+* <span data-ttu-id="f255b-152">Выберите **Разрешить доступ к потоку датчика**.</span><span class="sxs-lookup"><span data-stu-id="f255b-152">Select **Allow access to sensor stream**.</span></span>
+* <span data-ttu-id="f255b-153">Перезапустите устройство из пункта меню " **Электропитание** " в верхней части страницы.</span><span class="sxs-lookup"><span data-stu-id="f255b-153">Restart the device from the **Power** menu item at the top of the page.</span></span>
 
-<span data-ttu-id="93ab5-134">После выбора параметра **Разрешить доступ к потокам датчиков**необходимо перезагрузить HoloLens.</span><span class="sxs-lookup"><span data-stu-id="93ab5-134">After selecting **Allow access to sensor streams**, you will need to reboot HoloLens.</span></span> <span data-ttu-id="93ab5-135">Это можно сделать на портале устройств в пункте меню "Power" в верхней части страницы.</span><span class="sxs-lookup"><span data-stu-id="93ab5-135">You can do this from the Device Portal, under the "Power" menu item at the top of the page.</span></span>
+<span data-ttu-id="f255b-154">После перезагрузки устройства приложения, загруженные с помощью **портала устройств** , могут получить доступ к потокам в режиме исследования.</span><span class="sxs-lookup"><span data-stu-id="f255b-154">Once you've restarted the device, the applications loaded through the **Device Portal** can access Research mode streams.</span></span>
 
-<span data-ttu-id="93ab5-136">После перезагрузки устройства приложения, загруженные с помощью портала устройств, должны иметь доступ к потокам в режиме исследования.</span><span class="sxs-lookup"><span data-stu-id="93ab5-136">Once your device has rebooted, applications that have been loaded through Device Portal should be able to access Research mode streams.</span></span>
+<span data-ttu-id="f255b-155">![Вкладка "режим исследования" портала устройств HoloLens](images/ResearchModeDevPortal.png)</span><span class="sxs-lookup"><span data-stu-id="f255b-155">![Research Mode tab of HoloLens Device Portal](images/ResearchModeDevPortal.png)</span></span><br>
+<span data-ttu-id="f255b-156">*Окно режима исследований на портале устройств HoloLens*</span><span class="sxs-lookup"><span data-stu-id="f255b-156">*Research mode window in the HoloLens Device Portal*</span></span>
 
-## <a name="using-sensor-data-in-your-apps"></a><span data-ttu-id="93ab5-137">Использование данных датчика в приложениях</span><span class="sxs-lookup"><span data-stu-id="93ab5-137">Using sensor data in your apps</span></span>
+## <a name="using-sensor-data-in-your-apps"></a><span data-ttu-id="f255b-157">Использование данных датчика в приложениях</span><span class="sxs-lookup"><span data-stu-id="f255b-157">Using sensor data in your apps</span></span>
 
-<span data-ttu-id="93ab5-138">Приложения могут получать доступ к данным потока датчиков, открывая [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197) потоки точно так же, как они обращаются к видеокамере или видеофильму.</span><span class="sxs-lookup"><span data-stu-id="93ab5-138">Applications can access sensor stream data by opening [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197) streams in exactly the same way they access the photo/video camera stream.</span></span> 
+<span data-ttu-id="f255b-158">*Первое поколение HoloLens*</span><span class="sxs-lookup"><span data-stu-id="f255b-158">*HoloLens 1st Gen*</span></span>
 
-<span data-ttu-id="93ab5-139">Все API-интерфейсы, работающие для разработки HoloLens, также доступны в режиме исследования.</span><span class="sxs-lookup"><span data-stu-id="93ab5-139">All APIs that work for HoloLens development are also available when in Research mode.</span></span> <span data-ttu-id="93ab5-140">В частности, приложение может точно понять, где HoloLens находится в 6DoF пространстве во время записи каждого кадра датчика.</span><span class="sxs-lookup"><span data-stu-id="93ab5-140">In particular, the application can know precisely where HoloLens is in 6DoF space at each sensor frame capture time.</span></span>
+<span data-ttu-id="f255b-159">Приложения могут получать доступ к данным потока датчика точно так же, как к видеокамере и видеокамерам обращаются через [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197).</span><span class="sxs-lookup"><span data-stu-id="f255b-159">Applications can access the sensor stream data in the same way that photo and video camera streams are accessed through [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197).</span></span> 
 
-<span data-ttu-id="93ab5-141">Примеры приложений, демонстрирующие доступ к различным потокам в режиме исследования, использование встроенных функций и внешних компонентов, а также запись потоков в [репозитории GitHub хололенсфоркв](https://github.com/Microsoft/HoloLensForCV).</span><span class="sxs-lookup"><span data-stu-id="93ab5-141">Sample applications showing how you access the various Research mode streams, how to use the intrinsics and extrinsics, and how to record streams are available in the [HoloLensForCV GitHub repo](https://github.com/Microsoft/HoloLensForCV).</span></span>
+<span data-ttu-id="f255b-160">Все API-интерфейсы, работающие для разработки HoloLens, также доступны в режиме исследований.</span><span class="sxs-lookup"><span data-stu-id="f255b-160">All APIs that work for HoloLens development are also available in Research mode.</span></span> <span data-ttu-id="f255b-161">В частности, приложение точно знает, где HoloLens находится в 6DoF пространстве во время записи каждого кадра датчика.</span><span class="sxs-lookup"><span data-stu-id="f255b-161">In particular, the application  knows precisely where HoloLens is in 6DoF space at each sensor frame capture time.</span></span>
 
-## <a name="known-issues"></a><span data-ttu-id="93ab5-142">Известные проблемы</span><span class="sxs-lookup"><span data-stu-id="93ab5-142">Known issues</span></span>
+<span data-ttu-id="f255b-162">Примеры приложений можно найти в, как получить доступ к различным потокам в режиме исследования, как использовать [встроенные функции и внешние компоненты](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world), а также как записывать потоки в репозитории [репозитория GitHub хололенсфоркв](https://github.com/Microsoft/HoloLensForCV) .</span><span class="sxs-lookup"><span data-stu-id="f255b-162">You can find sample applications on how to access the various Research mode streams, how to use the [intrinsics and extrinsics](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world), and how to record streams in the [HoloLensForCV GitHub repo](https://github.com/Microsoft/HoloLensForCV) repo.</span></span>
 
-<span data-ttu-id="93ab5-143">См. средство [записи проблем](https://github.com/Microsoft/HololensForCV/issues) в репозитории хололенсфоркв.</span><span class="sxs-lookup"><span data-stu-id="93ab5-143">See the [issue tracker](https://github.com/Microsoft/HololensForCV/issues) in the HoloLensForCV repository.</span></span>
+ > [!NOTE]
+ > <span data-ttu-id="f255b-163">В настоящее время образец Хололенсфоркв не работает в HoloLens 2.</span><span class="sxs-lookup"><span data-stu-id="f255b-163">At this time, the HoloLensForCV sample doesn't work on HoloLens 2.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="93ab5-144">См. также</span><span class="sxs-lookup"><span data-stu-id="93ab5-144">See also</span></span>
+## <a name="known-issues"></a><span data-ttu-id="f255b-164">Известные проблемы</span><span class="sxs-lookup"><span data-stu-id="f255b-164">Known issues</span></span>
 
-* [<span data-ttu-id="93ab5-145">Microsoft Media Foundation</span><span class="sxs-lookup"><span data-stu-id="93ab5-145">Microsoft Media Foundation</span></span>](https://msdn.microsoft.com/library/windows/desktop/ms694197)
-* [<span data-ttu-id="93ab5-146">Репозиторий GitHub Хололенсфоркв</span><span class="sxs-lookup"><span data-stu-id="93ab5-146">HoloLensForCV GitHub repo</span></span>](https://github.com/Microsoft/HoloLensForCV)
-* [<span data-ttu-id="93ab5-147">Использование портала устройств Windows</span><span class="sxs-lookup"><span data-stu-id="93ab5-147">Using the Windows Device Portal</span></span>](using-the-windows-device-portal.md)
+<span data-ttu-id="f255b-165">Вы можете использовать [средство отслеживания проблем](https://github.com/Microsoft/HololensForCV/issues) в репозитории хололенсфоркв, чтобы отслеживать известные проблемы.</span><span class="sxs-lookup"><span data-stu-id="f255b-165">You can use the [issue tracker](https://github.com/Microsoft/HololensForCV/issues) in the HoloLensForCV repository to follow known issues.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="f255b-166">См. также</span><span class="sxs-lookup"><span data-stu-id="f255b-166">See also</span></span>
+
+* [<span data-ttu-id="f255b-167">Microsoft Media Foundation</span><span class="sxs-lookup"><span data-stu-id="f255b-167">Microsoft Media Foundation</span></span>](https://msdn.microsoft.com/library/windows/desktop/ms694197)
+* [<span data-ttu-id="f255b-168">Репозиторий GitHub Хололенсфоркв</span><span class="sxs-lookup"><span data-stu-id="f255b-168">HoloLensForCV GitHub repo</span></span>](https://github.com/Microsoft/HoloLensForCV)
+* [<span data-ttu-id="f255b-169">Использование портала устройств Windows</span><span class="sxs-lookup"><span data-stu-id="f255b-169">Using the Windows Device Portal</span></span>](using-the-windows-device-portal.md)
