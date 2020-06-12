@@ -3,15 +3,15 @@ title: Режим исследования HoloLens
 description: С помощью режима исследований в HoloLens приложение может получать доступ к потокам датчиков устройств (глубина, отслеживание среды и IR-рефлективити).
 author: hferrone
 ms.author: v-haferr
-ms.date: 05/03/2018
+ms.date: 06/10/2020
 ms.topic: article
 keywords: режим исследований, ОПС, RS4, компьютерное зрение, исследование, HoloLens, HoloLens 2
-ms.openlocfilehash: ec6f7b73a1f25932f10c10a7f0daaf78e536c0c4
-ms.sourcegitcommit: 7f50210b71a65631fd1bc3fdb215064e0db34333
+ms.openlocfilehash: 62b82e3a36452d4b104bf04999e556ec19d2a5e3
+ms.sourcegitcommit: 45da0a056fa42088ff81ccdd11232830fbe8430f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84533106"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "84720400"
 ---
 # <a name="hololens-research-mode"></a>Режим исследования в HoloLens
 
@@ -57,7 +57,7 @@ ms.locfileid: "84533106"
     <!-- <col width="33%" /> -->
     </colgroup>
     <tr>
-        <td><strong>Возможность</strong></td>
+        <td><strong>Компонент</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>Первое поколение HoloLens</strong></a></td>
         <!-- <td><a href="hololens2-hardware.md"><strong>HoloLens 2</strong></a></td> -->
     </tr>
@@ -97,7 +97,7 @@ ms.locfileid: "84533106"
 
 * Откройте **меню "Пуск" > "Параметры** " и выберите " **обновления**".
 * Выберите **для разработчиков** и включите **режим разработчика**.
-* Прокрутите вниз и включите **портал устройств**.
+* Прокрутите вниз и включите **Портал устройств**.
 
 После включения функций [для разработчиков подключитесь к порталу устройств](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens) , чтобы включить функции режима исследования.
 
