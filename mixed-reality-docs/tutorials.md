@@ -8,12 +8,12 @@ ms.date: 10/22/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, академия, руководство
-ms.openlocfilehash: db60ff35156ea20aadd1ba04f9304aa27a2488cb
-ms.sourcegitcommit: ba4c8c2a19bd6a9a181b2cec3cb8e0402f8cac62
+ms.openlocfilehash: e5961a178d571d2f71e98ff4c3c729d6feb0fd40
+ms.sourcegitcommit: 7011ac6fde80e5c45f04192fa1db6e1eb559e3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82835653"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327964"
 ---
 # <a name="tutorials-and-sample-apps"></a>Руководства и примеры приложений
 
@@ -28,7 +28,7 @@ ms.locfileid: "82835653"
 * Руководства по началу работы
     * Unity — [1 из 7. Общие сведения и цели](mrlearning-base.md)
     * Unreal — [1 из 6. Начало работы](unreal-uxt-ch1.md)
-* Руководства по пространственной привязке Azure — [1 из 3, "Начало работы с пространственными привязками Azure"](mrlearning-asa-ch1.md)
+* Руководства по пространственным привязкам Azure, [часть 1 из 4, "Начало работы с пространственными привязками Azure"](mrlearning-asa-ch1.md)
 * Руководства по использованию службы "Речь" в Azure— [1 из 4, "Интеграция и использование средств распознавания и транскрибирования речи"](mrlearning-speechSDK-ch1.md)
 * Руководства по многопользовательским возможностям — [1 из 5, "Настройка Photon Unity Networking"](mrlearning-sharing(photon)-ch1.md)
 
