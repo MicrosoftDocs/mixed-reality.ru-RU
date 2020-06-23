@@ -94,7 +94,7 @@
 ## Ресурсы
 ### [Дополнительные сведения о Unity](https://learn.unity.com/)
 ### [Набор средств для смешанной реальности](https://github.com/Microsoft/MixedRealityToolkit-Unity)
-### [Лаборатории проектирования смешанной реальности](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)
+### [Лаборатории проектирования смешанной реальности](https://github.com/microsoft/MixedRealityDesignLabs_Unity)
 ### [Microsoft Maquette](https://www.maquette.ms)
 ### [Процесс создания ресурсов](asset-creation-process.md)
 ### [Разработка собственных иммерсивных сред](add-custom-home-environments.md)
@@ -136,10 +136,14 @@
 ###### [3. Придание пространственной формы звуку из видео](unity-spatial-audio-ch3.md)
 ###### [4. Включение и отключение пространственного звука во время выполнения](unity-spatial-audio-ch4.md)
 ###### [5. Использование реверберации для добавления эффекта расстояния пространственному звуку](unity-spatial-audio-ch5.md)
+#### Примеры приложений с открытым кодом для HoloLens 2
+##### [Surfaces](sampleapp-surfaces.md)
+##### [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+##### [Galaxy Explorer 2.0](galaxy-explorer-update.md)
 #### Примеры приложений с открытым кодом для HoloLens (1-го поколения)
-##### [Периодическая таблица элементов](periodic-table-of-the-elements.md)
+##### [Periodic Table of the Elements 1.0](periodic-table-of-the-elements.md)
+##### [Galaxy Explorer 1.0.](galaxy-explorer.md)
 ##### [Лунный модуль](lunar-module.md)
-##### [Исследование галактики](galaxy-explorer.md)
 #### Руководства по HoloLens (1-го поколения) и иммерсивным гарнитурам
 ##### [100. Основы смешанной реальности: начало работы с Unity](holograms-100.md)
 ##### [101. Основы смешанной реальности: полный проект с использованием устройства](holograms-101.md)
