@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: ГГВ, Voice, Кортана, речь, вход
-ms.openlocfilehash: 78ff63f2f794bb2b3a4868e38ccaff0582ccca8c
-ms.sourcegitcommit: 7ca383ef1c5dc895ca2a289435f2e9d4c1ee6e65
+ms.openlocfilehash: 37364e90aa1d8a7b607a99f4c9b830972f7f80b3
+ms.sourcegitcommit: 5612e8bfb9c548eac42182702cec87b160efbbfe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85345704"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85441831"
 ---
 # <a name="voice-input"></a>Голосовой ввод
 
@@ -96,6 +96,8 @@ ms.locfileid: "85345704"
 * "Сделать фотографию"
 * "Начать запись"
 * "Закончить запись"
+* "Показывать луч"
+* "Скрыть руки луча"
 * "Увеличить яркость"
 * "Уменьшить яркость"
 * "Увеличение объема тома"
@@ -286,7 +288,7 @@ ms.locfileid: "85345704"
 
 HoloLens 2 [поддерживает несколько языков](https://docs.microsoft.com/hololens/hololens2-language-support). Помните, что речевые команды всегда будут выполняться в языке интерфейса системы, даже если установлено несколько клавиатур или если приложения пытаются создать распознаватель речи на другом языке.
 
-## <a name="troubleshooting"></a>Диагностика
+## <a name="troubleshooting"></a>Устранение неполадок
 
 Если у вас возникли проблемы с помощью команды "выбрать" и "Привет, Кортана", попробуйте переместиться в скрытое место, отключив его от источника шума или нажимая звук. В настоящее время все распознавание речи в HoloLens настраивается и оптимизируется специально для собственных докладчиков США английского.
 

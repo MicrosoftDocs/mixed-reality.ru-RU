@@ -220,7 +220,7 @@
 ### [Отслеживание рук в Unreal](unreal-hand-tracking.md)
 ### [Ввод взглядом в Unreal](unreal-gaze-input.md)
 ### [Пространственное сопоставление в Unreal](unreal-spatial-mapping.md)
-### [Пространственный звук в Unreal](unreal-spatial-sound.md)
+### [Пространственный звук в Unreal](unreal-spatial-audio.md)
 ### [Пространственные привязки в Unreal](unreal-spatial-anchors.md)
 ### [Голосовой ввод в Unreal](unreal-voice-input.md)
 ### [Камера HoloLens в Unreal](unreal-hololens-camera.md)
