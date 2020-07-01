@@ -1,19 +1,19 @@
 ---
-title: Руководства по портированию приложений
+title: Руководства по переносу
 description: Пошаговое валсраугх объясняет, как перенести существующее иммерсивное приложение на Windows Mixed Reality.
 author: chimerascorn
 ms.author: alexturn
 ms.date: 10/02/2018
 ms.topic: article
 keywords: порт, перенос, Unity, по промежуточного слоя, ядро, UWP
-ms.openlocfilehash: 06501742d4b5c30036982deef2ec2a88171912bf
-ms.sourcegitcommit: d6ac8f1f545fe20cf1e36b83c0e7998b82fd02f8
+ms.openlocfilehash: 73126ae90ed12988177cc9192b7db41bae30fcc2
+ms.sourcegitcommit: f523b74a549721b6bec69cb5d2eca5b7673a793c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81278042"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85570315"
 ---
-# <a name="porting-guides"></a>Руководства по портированию приложений
+# <a name="porting-guides"></a>Руководства по переносу
 
 Windows 10 включает поддержку для повпечатляющих и holographic головных телефонов напрямую. Если вы создали содержимое для другого устройства, например Окулус Рифт или HTC Naopak, они имеют зависимости от библиотек, которые существуют над API платформы операционной системы. Внедрение существующего содержимого в Windows Mixed Reality предполагает изменение целевой платформы на использование этих пакетов SDK для интерфейсов Windows API. [Интерфейсы API платформы Windows для смешанной реальности](https://docs.microsoft.com/uwp/api/Windows.Perception) работают только в модели приложений универсальная платформа Windows (UWP). Если ваше приложение еще не создано для UWP, перенос в UWP будет частью процесса переноса.
 
@@ -38,7 +38,7 @@ Windows 10 включает поддержку для повпечатляющи
 1. Установка [обновления Windows 10 для дизайнеров](https://www.microsoft.com/software-download/windows10)
 2. [Присоединяйтесь](https://insider.windows.com/) к программе предварительной оценки Windows.
 3. Включить [режим разработчика](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
-4. Перейдите к разделу "быстрые изменения в [программе предварительной оценки Windows](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview) " в разделе "Параметры" — > Обновление & безопасности.
+4. Перейдите к разделу "быстрые изменения в [программе предварительной оценки Windows](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview) " в разделе "Параметры" — > обновление & безопасности.
 
 ### <a name="common-step-3-upgrade-to-the-most-recent-build-of-visual-studio"></a>Общий шаг 3. обновление до последней сборки Visual Studio
 * См. раздел [Установка средств на](install-the-tools.md#installation-checklist) странице Visual Studio 2019.
@@ -70,6 +70,7 @@ Windows 10 включает поддержку для повпечатляющи
 ### <a name="unity-step-4-target-your-application-to-run-on-universal-windows-platform-uwp"></a>Unity шаг 4. Настройка приложения для запуска на универсальная платформа Windows (UWP)
 
 После установки средств необходимо запустить приложение в качестве универсального приложения Windows.
+
 * Выполните [подробное](https://unity3d.com/partners/microsoft/porting-guides) пошаговое руководство, предоставляемое Unity. Обратите внимание, что вы должны остаться в последнем выпуске LTS (любой выпуск 20xx. 4) для Windows MR.
 * Для получения дополнительных ресурсов по разработке UWP ознакомьтесь с руководством по [разработке игр для Windows 10](https://docs.microsoft.com/windows/uwp/gaming/e2e).
 * Обратите внимание, что Unity продолжит совершенствовать поддержку IL2CPP; IL2CPP делает некоторые порты UWP значительно проще. Если в настоящее время используется серверная часть сценариев .NET, следует рассмотреть возможность преобразования, чтобы использовать серверную часть IL2CPP.
@@ -104,7 +105,7 @@ XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
 
 Этот параметр задает мировую систему координат Unity для отслеживания [стационарной рамки ссылки](coordinate-systems.md#spatial-coordinate-systems). В режиме нестационарного отслеживания содержимое, помещенное в редактор непосредственно перед расположением по умолчанию камеры (переадресация — Z), будет отображаться перед пользователем при запуске приложения. Чтобы перецентрировать исходный элемент пользователя, можно вызвать [XR Unity. Метод Инпуттраккинг. recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) .
 
-Если вы проведете переносные **средства или** **возможности масштабирования комнаты**, вы помещаете содержимое относительно пола. Вы указываете на этаж пользователя с помощью **[пространственного этапа](coordinate-systems.md#spatial-coordinate-systems)** , который представляет определенное пользователем происхождение на уровне пола и дополнительную границу комнаты, настраивается во время первого запуска. Для этих возможностей необходимо убедиться, что для Unity задан тип пространства отслеживания **румскале** . Хотя Румскале является значением по умолчанию, необходимо явно задать его и убедиться, что вы получаете значение true, чтобы выявить ситуации, в которых пользователь переместил компьютер за пределы разкалиброванной комнаты.
+Если вы проведете переносные **средства или** **возможности масштабирования комнаты**, вы помещаете содержимое относительно пола. Вы указываете на этаж пользователя с помощью **[пространственного этапа](coordinate-systems.md#spatial-coordinate-systems)**, который представляет определенное пользователем происхождение на уровне пола и дополнительную границу комнаты, настраивается во время первого запуска. Для этих возможностей необходимо убедиться, что для Unity задан тип пространства отслеживания **румскале** . Хотя Румскале является значением по умолчанию, необходимо явно задать его и убедиться, что вы получаете значение true, чтобы выявить ситуации, в которых пользователь переместил компьютер за пределы разкалиброванной комнаты.
 
 ```cs
 if (XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale))
@@ -152,7 +153,7 @@ Windows Mixed Reality будет доступна на широком класс
 
 [Unity](https://docs.unity3d.com/Manual/Profiler.html) и [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) включают в себя Профилировщики производительности, а как [Корпорация Майкрософт](understanding-performance-for-mixed-reality.md) , так и [Корпорация Intel](https://software.intel.com/articles/vr-content-developer-guide) публикуют рекомендации по профилированию и оптимизации производительности. Существует подробное обсуждение производительности, доступное [для понимания производительности смешанной реальности](understanding-performance-for-mixed-reality.md). Дополнительные сведения о Unity см. в разделе [рекомендации по повышению производительности для Unity](performance-recommendations-for-unity.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 * [Руководство по переносу логики ввода для Unity](input-porting-guide-for-unity.md)
 * [Минимальные рекомендации по совместимости Windows Mixed Reality с оборудованием ПК](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Основные сведения о производительности смешанной реальности](understanding-performance-for-mixed-reality.md)
