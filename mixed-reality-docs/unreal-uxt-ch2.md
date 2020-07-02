@@ -3,16 +3,16 @@ title: 2. Инициализация проекта и первое прилож
 description: Часть 2 (из 6) серии руководств по созданию простого приложения для игры в шахматы с помощью Unreal Engine 4 и подключаемого модуля средств UX из набора средств для смешанной реальности
 author: hferrone
 ms.author: v-haferr
-ms.date: 5/5/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, смешанная реальность, учебник, начало работы, MRTK, UXT, средства разработки пользовательского интерфейса, средства UX, документация
-ms.openlocfilehash: e8f03a87ec6b92e4c62cf3f88f519146254e7387
-ms.sourcegitcommit: 1b8090ba6aed9ff128e4f32d40c96fac2e6a220b
+ms.openlocfilehash: 150fee721bb9cd72d287737aca4262bd87dccba8
+ms.sourcegitcommit: 7ca383ef1c5dc895ca2a289435f2e9d4c1ee6e65
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84330377"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85345734"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2. Инициализация проекта и первое приложение
 
@@ -28,7 +28,7 @@ ms.locfileid: "84330377"
 * Создание субъектов и событий уровня скрипта.
 
 ## <a name="creating-a-new-unreal-project"></a>Создание проекта Unreal.
-Первое, что вам понадобится для работы — это проект.
+Первое, что вам понадобится для работы — это проект. Если вы впервые создаете приложение Unreal для HoloLens, вам потребуется [скачать вспомогательные файлы](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch6#packaging-and-deploying-the-app) из Epic Launcher.
 
 1. Запуск Unreal Engine
 
@@ -42,6 +42,9 @@ ms.locfileid: "84330377"
 
 4. В разделе **Project Settings** (Параметры проекта) выберите пункты **C++** , **Scalable 3D or 2D** (Масштабируемый трехмерный или двухмерный), Mobile / Tablet (Мобильное устройство или планшет) и **No Starter Content** (Без начального содержимого). 
     * Выберите папку для сохранения и нажмите кнопку **Create Project** (Создать проект). 
+
+> [!NOTE]
+> Выберите проект C++, а не проект шаблона, чтобы создать подключаемый модуль средств UX, который вы настроите позже (в разделе 4).
 
 ![Начальные параметры проекта](images/unreal-uxt/2-project-settings.PNG)
 

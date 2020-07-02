@@ -3,16 +3,16 @@ title: QR-коды в Unreal
 description: Введение в использование QR-кодов в Unreal
 author: hferrone
 ms.author: v-haferr
-ms.date: 5/5/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, смешанная реальность, разработка, функции, документация, руководства, голограммы, QR-коды
-ms.openlocfilehash: 90a51227ae455389168fb3262e83f34b64a7bfb5
-ms.sourcegitcommit: ee7f04148d3608b0284c59e33b394a67f0934255
+ms.openlocfilehash: cf6c113f6bf4a13a96f46d6420a3093966455c3b
+ms.sourcegitcommit: 45da0a056fa42088ff81ccdd11232830fbe8430f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84428751"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "84720390"
 ---
 # <a name="qr-codes-in-unreal"></a>QR-коды в Unreal
 
@@ -54,7 +54,7 @@ QR-коды выводятся в виде отслеживаемого изоб
 
 ![Пример отрисовки QR-кода](images/unreal-qr-render.PNG)
 
-Вот что здесь происходит:
+Что происходит:
 1. Сначала отслеживаемое изображение приводится к типу **ARTrackedQRCode** и проверяется, что текущее обновленное изображение содержит QR-код.  
 2. Закодированные данные извлекаются из переменной **QRCode**. Координаты левого верхнего угла QR-кода можно получить из расположения, возвращаемого функцией **GetLocalToWorldTransform**, а размеры кода — с помощью функции **GetEstimateSize**. 
 

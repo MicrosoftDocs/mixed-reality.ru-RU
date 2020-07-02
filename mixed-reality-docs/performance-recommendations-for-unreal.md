@@ -7,12 +7,12 @@ ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, смешанная реальность, производительность, оптимизация, параметры, документация
-ms.openlocfilehash: 3c65eb519b57457e6c9e9747af0ad75e6a5e1b4d
-ms.sourcegitcommit: 1b8090ba6aed9ff128e4f32d40c96fac2e6a220b
+ms.openlocfilehash: 9f128a3ef09f29fc745c21b09b7ec97f5db33605
+ms.sourcegitcommit: 7f50210b71a65631fd1bc3fdb215064e0db34333
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84330205"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84533126"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Рекомендации по производительности для Unreal
 
@@ -30,7 +30,7 @@ ms.locfileid: "84330205"
 
 2. Отключение отбрасывания загораживаемых объектов:
     * Прокрутите до раздела **Engine** (Подсистема), выберите **Rendering** (Отрисовка), разверните раздел **Culling** (Отбрасывание объектов) и снимите флажок **Occlusion Culling** (Отбрасывание загораживаемых объектов).
-        + Если вам требуется удаление скрытых объектов для подробной отрисовки сцены, рекомендуется установить флажок **Support Software Occlusion Culling** (Поддержка программного отбрасывания загораживаемых объектов) в разделе **Engine > Rendering** (Подсистема > Отрисовка). Это позволит Unreal выполнять соответствующую обработку на центральном процессоре, избегая запросов для этой цели к GPU, которые выполняются неэффективно на HoloLens 2.
+        + Если вам требуется удаление скрытых объектов для подробной отрисовки сцены, рекомендуется установить флажок **Support Software Occlusion Culling** (Поддержка программного удаления скрытых объектов) в разделе **Engine > Rendering** (Движок > Отрисовка). Это позволит Unreal выполнять соответствующую обработку на центральном процессоре, избегая запросов для этой цели к GPU, которые выполняются неэффективно на HoloLens 2.
 
 ![Выбор мобильного устройства в качестве целевого](images/unreal/performance-recommendations-img-02.png)
 

@@ -7,12 +7,12 @@ ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: ec078015304e1cddc9b042fb5e94cf1904a302cb
-ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
+ms.openlocfilehash: 9a19ad59e520a2743aafd954910f43c6f51d6c8a
+ms.sourcegitcommit: 5612e8bfb9c548eac42182702cec87b160efbbfe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "79376091"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85441861"
 ---
 # <a name="6-exploring-advanced-input-options"></a>6. Изучение дополнительных входных параметров
 
@@ -38,10 +38,15 @@ ms.locfileid: "79376091"
 5. Реализация события ответа для речевой команды.
 
 ### <a name="1-clone-the-default-input-system-profile"></a>1. Клонирование профиля по умолчанию для системы ввода
-
 В окне "Иерархия" выберите объект **MixedRealityToolkit**, затем в окне "Инспектор" выберите вкладку **Input** (Ввод) и клонируйте объект **DefaultHoloLens2InputSystemProfile**, чтобы заменить его собственным настраиваемым **профилем системы ввода**:
 
 ![mrlearning-base](images/mrlearning-base/tutorial5-section1-step1-1.png)
+
+> [!NOTE]
+> Если вы используете MRTK 2.4.0 или более поздней версии:
+> * Выберите объект **MixedRealityToolkit** на вкладке Hierarchy (Иерархия), откройте вкладку **Input** (Вводные данные) в окне Inspector (Инспектор) и разверните раздел **Pointers** (Указатели). 
+> * Клонируйте профиль **DefaultMixedRealityInputPointerProfile** и замените его своим собственным настраиваемым профилем **Input Pointer Profile**.
+> * Убедитесь, что для параметра **Is Eye Tracked Enabled** (Отслеживание глаз включено) установлено значение true в разделе **Gaze Settings** (Параметры отслеживания взгляда). 
 
 > [!TIP]
 > Чтобы вспомнить, как правильно клонировать профили MRTK, воспользуйтесь инструкциями из раздела о [настройке Набора средств для смешанной реальности](mrlearning-base-ch2.md#how-to-configure-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option).

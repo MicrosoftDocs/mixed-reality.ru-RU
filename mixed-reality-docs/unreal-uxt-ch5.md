@@ -3,16 +3,16 @@ title: 5. Добавление кнопки и сброс расположени
 description: Часть 5 (из 6) серии руководств по созданию простого приложения для игры в шахматы с помощью Unreal Engine 4 и подключаемого модуля средств UX из набора средств для смешанной реальности
 author: hferrone
 ms.author: v-haferr
-ms.date: 5/5/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, смешанная реальность, учебник, начало работы, MRTK, UXT, средства разработки пользовательского интерфейса, средства UX, документация
-ms.openlocfilehash: 49cab5c5a8c6736b800b5ba05de2c88edf008008
-ms.sourcegitcommit: 1b8090ba6aed9ff128e4f32d40c96fac2e6a220b
+ms.openlocfilehash: 473f47884bbc492451007436f80e8d9762cf1ab7
+ms.sourcegitcommit: 45da0a056fa42088ff81ccdd11232830fbe8430f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84330271"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "84720260"
 ---
 # <a name="5-adding-a-button--resetting-piece-locations"></a>5. Добавление кнопки и сброс расположений фигур
 
@@ -54,7 +54,7 @@ ms.locfileid: "84330271"
 
 ![Создайте новую схему как подкласс SimpleButton](images/unreal-uxt/5-subclass.PNG)
 
-2. На панели **Components** (Компоненты) щелкните **PressableButton (Inherited)** и прокрутите панель **Details** (Сведения) до раздела **Events** (События). 
+2. На панели **Components** (Компоненты) щелкните **Pressable Button (Inherited)** (Кнопка с возможностью нажатия (наследованная)) и прокрутите панель **Details** (Сведения) до раздела **Events** (События). 
     * Нажмите зеленую кнопку **+** рядом с событием **On Button Pressed** (По нажатию кнопки), чтобы добавить это событие в граф событий. Добавленное событие будет инициироваться при нажатии кнопки, которую мы создаем. 
     
 Из этого события мы будем вызывать функцию **Reset Location** (Сброс расположения) элемента **WhiteKing**, для чего требуется ссылка на субъект **WhiteKing** на данном уровне. 

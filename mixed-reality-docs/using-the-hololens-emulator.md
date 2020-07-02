@@ -3,16 +3,16 @@ title: Использование эмулятора HoloLens
 description: С помощью эмулятора HoloLens можно тестировать приложения смешанной реальности на обычном компьютере без физического устройства HoloLens.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 5/12/2020
+ms.date: 6/8/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulator
-ms.openlocfilehash: f525276d127bc0bbb682d7cea6821028258c6177
-ms.sourcegitcommit: 6d9d01d53137435c787f247f095d5255581695fc
+ms.openlocfilehash: dba0b1a1260c62ac7f26bc80678439d12183d77f
+ms.sourcegitcommit: dc60c6ca075e7086b87478f1d7e87ebe02160c0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83227989"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84631507"
 ---
 # <a name="using-the-hololens-emulator"></a>Использование эмулятора HoloLens
 
@@ -28,7 +28,7 @@ ms.locfileid: "83227989"
 Скачайте эмулятор HoloLens.
 
 Доступные версии: 
-* [эмулятор HoloLens 2 (Windows Holographic, версия 2004)](https://go.microsoft.com/fwlink/?linkid=2129088);
+* [Эмулятор HoloLens 2 (Windows Holographic, версия 2004 с обновлением за июнь 2020 г.)](https://go.microsoft.com/fwlink/?linkid=2132415).
 * [эмулятор HoloLens (1-го поколения) и шаблоны голографических проектов](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 Более ранние сборки эмулятора HoloLens и заметки о выпусках можно найти на странице [архива эмулятора HoloLens](hololens-emulator-archive.md).
@@ -251,7 +251,7 @@ ms.locfileid: "83227989"
 
 ## <a name="known-issues"></a>Известные проблемы
 
-* При удалении эмулятора HoloLens 2 образ жесткого диска (Flash.vhdx) может остаться на жестком диске в папке Windows Kits\10\Emulation\HoloLens\<номер сборки>.  Этот файл можно спокойно удалить.
+* При удалении эмулятора HoloLens 2 образ жесткого диска (Flash.vhdx) может остаться на жестком диске в папке Windows Kits\10\Emulation\HoloLens\<build number>.  Этот файл можно спокойно удалить.
 * Включение аппаратного ускорения графики может привести к сбою приложений Holographic в некоторых системах с графическими технологиями AMD или Intel.  Чтобы устранить эту проблему, отключите аппаратное ускорение графики в окне средств эмулятора.
 
 ## <a name="troubleshooting"></a>Диагностика
