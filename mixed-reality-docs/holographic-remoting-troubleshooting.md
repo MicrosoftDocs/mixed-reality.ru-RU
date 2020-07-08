@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
 keywords: Windows Mixed Reality, голограммы, holographic удаленное взаимодействие, удаленная визуализация, Сетевая визуализация, HoloLens, удаленные голограммы, устранение неполадок, помощь
-ms.openlocfilehash: fc379eb4ad849fb5b236b82719711b37fead8a68
-ms.sourcegitcommit: 48456c607a2d0dcf035a77e8ba67615396b0a211
+ms.openlocfilehash: 79650ceab5d0125a8a06c776a59a45a78d0aa20c
+ms.sourcegitcommit: fef42e2908e49822f2d13b05d2f9260bf0d72158
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81484314"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86061117"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Устранение неполадок удаленного взаимодействия с holographic
 
@@ -24,17 +24,21 @@ ms.locfileid: "81484314"
 
 Если вы получаете неустранимую ошибку компоновщика, в которой говорится, что не удается открыть "vccorlib. lib", убедитесь, что Рабочая нагрузка Visual Studio включает библиотеки, снижающие опасность устранением рисков Spectre. Дополнительные сведения см. в разделе https://aka.ms/Ofhn4c.
 
+## <a name="speech"></a>Речь
+
+Проигрыватель holographic Remoting поддерживает наложение диагностики, которую можно включить, произнося ```Enable Diagnostics``` и отключая, произнося ```Disable Diagnostics``` . Если у вас возникли проблемы с этими голосовыми командами, можно также запустить проигрыватель holographic Remoting через веб-браузер, используя ```ms-holographic-remoting:?stats``` в качестве URL-адреса.
+
 ## <a name="limitations"></a>Ограничения
 
-В настоящее время следующие API **не** поддерживаются при использовании удаленного взаимодействия holographic для HoloLens 2 и вызывают ошибку ```ERROR_NOT_SUPPORTED```, если не указано иное:
+В настоящее время следующие API **не** поддерживаются при использовании удаленного взаимодействия holographic для HoloLens 2 и вызывают ошибку, ```ERROR_NOT_SUPPORTED``` если не указано иное:
 
 [Windows.Graphics.Holographic](https://docs.microsoft.com/uwp/api/windows.graphics.holographic)
 
-* [Холографиккамера. Виевконфигуратион](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration)
+* [HolographicCamera.ViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration)
   - Поддерживается начиная с версии [2.0.18](holographic-remoting-version-history.md#v2.0.18)
   - В предыдущих версиях всегда вызывает ошибку.
-* [Холографиккамера. Ишардвареконтентпротектионенаблед](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled#Windows_Graphics_Holographic_HolographicCamera_IsHardwareContentProtectionEnabled)
-* [Холографиквиевконфигуратион. Рекуестрендертаржетсизе](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration.requestrendertargetsize#Windows_Graphics_Holographic_HolographicViewConfiguration_RequestRenderTargetSize_Windows_Foundation_Size_)
+* [HolographicCamera.IsHardwareContentProtectionEnabled](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled#Windows_Graphics_Holographic_HolographicCamera_IsHardwareContentProtectionEnabled)
+* [HolographicViewConfiguration.RequestRenderTargetSize](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration.requestrendertargetsize#Windows_Graphics_Holographic_HolographicViewConfiguration_RequestRenderTargetSize_Windows_Foundation_Size_)
   - Не завершается ошибкой, но размер целевого объекта прорисовки не изменится.
 * [Холографиккамерапосе. Оверридепрожектионтрансформ](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideprojectiontransform)
 * [Холографиккамерапосе. Оверридевиевпорт](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewport)
@@ -42,8 +46,8 @@ ms.locfileid: "81484314"
 * [Холографиккамерарендерингпараметерс. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)
   - Не завершается ошибкой, но буфер глубины не будет удален.
   - Поддерживается начиная с версии [2.1.0](holographic-remoting-version-history.md#v2.1.0)
-* [Холографикдисплай. Трижетвиевконфигуратион](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay.trygetviewconfiguration)
-  - Запрос Холографиквиевконфигуратионкинд. Фотовидеокамера всегда будет возвращать ```nullptr```.
+* [HolographicDisplay.TryGetViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay.trygetviewconfiguration)
+  - Запрос Холографиквиевконфигуратионкинд. Фотовидеокамера всегда будет возвращать ```nullptr``` .
   - Поддерживается начиная с версии [2.0.18](holographic-remoting-version-history.md#v2.0.18)
   - В предыдущих версиях всегда вызывает ошибку.
 * [Холографикспаце. Креатефрамепресентатионмонитор](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createframepresentationmonitor)
@@ -54,45 +58,48 @@ ms.locfileid: "81484314"
 [Windows.Perception.Spatial](https://docs.microsoft.com/uwp/api/windows.perception.spatial)
 
 * [SpatialLocation. Абсолутеангуларакцелератион](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absoluteangularacceleration)
-* [SpatialLocation. Абсолутеангуларакцелератионаксисангле](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absoluteangularaccelerationaxisangle)
+* [SpatialLocation.AbsoluteAngularAccelerationAxisAngle](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absoluteangularaccelerationaxisangle)
 * [SpatialLocation. АбсолутеангуларвелоЦити](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absoluteangularvelocity)
-* [SpatialLocation. АбсолутеангуларвелоЦитяксисангле](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absoluteangularvelocityaxisangle)
+* [SpatialLocation.AbsoluteAngularVelocityAxisAngle](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absoluteangularvelocityaxisangle)
 * [SpatialLocation. Абсолутелинеаракцелератион](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absolutelinearacceleration)
 * [SpatialLocation. АбсолутелинеарвелоЦити](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absolutelinearvelocity)
 * [Спатиалстажефрамеофреференце. Current](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)
-  - Всегда возвращает ```nullptr```.
+  - Поддерживается начиная с версии [2.2.0](holographic-remoting-version-history.md#v2.2.0)
+  - В предыдущих версиях всегда возвращает ```nullptr``` .
 * [Спатиалстажефрамеофреференце. Рекуестневстажеасинк](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)
+  - Поддерживается начиная с версии [2.2.0](holographic-remoting-version-history.md#v2.2.0)
 * [Спатиаланчор. Ремоведбюсер](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor.removedbyuser)
-* [Спатиаланчорекспортер. по умолчанию](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter.getdefault
+* [SpatialAnchorExporter.GetDefault](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter.getdefault
 )
   - Поддерживается начиная с версии [2.0.9](holographic-remoting-version-history.md#v2.0.9). 
-  - В предыдущих версиях всегда возвращает ```nullptr```. 
-* [Спатиаланчорекспортер. Рекуестакцессасинк](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter.requestaccessasync
+  - В предыдущих версиях всегда возвращает ```nullptr``` . 
+* [SpatialAnchorExporter.RequestAccessAsync](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter.requestaccessasync
 )
   - Поддерживается начиная с версии [2.0.9](holographic-remoting-version-history.md#v2.0.9). 
-  - В предыдущих версиях асинхронная операция всегда завершается с ```SpatialPerceptionAccessStatus.DeniedBySystem```.
+  - В предыдущих версиях асинхронная операция всегда завершилась с ```SpatialPerceptionAccessStatus.DeniedBySystem``` .
 * [Спатиаланчортрансферманажер. Рекуестакцессасинк](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchortransfermanager.requestaccessasync#Windows_Perception_Spatial_SpatialAnchorTransferManager_RequestAccessAsync)
-  - Асинхронная операция всегда завершается с ```SpatialPerceptionAccessStatus.DeniedBySystem```.
+  - Асинхронная операция всегда завершается с ```SpatialPerceptionAccessStatus.DeniedBySystem``` .
 * [Спатиаланчортрансферманажер. Трекспортанчорсасинк](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchortransfermanager.tryexportanchorsasync#Windows_Perception_Spatial_SpatialAnchorTransferManager_TryExportAnchorsAsync_Windows_Foundation_Collections_IIterable_Windows_Foundation_Collections_IKeyValuePair_System_String_Windows_Perception_Spatial_SpatialAnchor___Windows_Storage_Streams_IOutputStream_)
-  - Асинхронная операция всегда завершается с ```false```.
+  - Асинхронная операция всегда завершается с ```false``` .
 * [Спатиаланчортрансферманажер. Тримпортанчорсасинк](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchortransfermanager.tryimportanchorsasync
 )
-  - Асинхронная операция всегда завершается с ```nullptr```.
+  - Асинхронная операция всегда завершается с ```nullptr``` .
 
 [Windows.UI.Input.Spatial](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial)
 
-* [Спатиалинтерактионсаурце. Трикреатехандмешобсервер](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserver#Windows_UI_Input_Spatial_SpatialInteractionSource_TryCreateHandMeshObserver)
-* [Спатиалинтерактионсаурце. Трикреатехандмешобсерверасинк](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserverasync)
+* [SpatialInteractionSource.TryCreateHandMeshObserver](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserver#Windows_UI_Input_Spatial_SpatialInteractionSource_TryCreateHandMeshObserver)
+* [SpatialInteractionSource.TryCreateHandMeshObserverAsync](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserverasync)
 * [Спатиалинтерактионсаурце. Controller](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller)
+  - Поддерживается начиная с версии [2.2.0](holographic-remoting-version-history.md#v2.2.0)
 
 [Windows.Perception.Spatial.Preview](https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview)
 
-* [Спатиалграфинтероппревиев. Креателокаторфорноде](https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createlocatorfornode)
-* [Спатиалграфинтероппревиев. Трикреатефрамеофреференце](https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.trycreateframeofreference)
+* [SpatialGraphInteropPreview.CreateLocatorForNode](https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createlocatorfornode)
+* [SpatialGraphInteropPreview.TryCreateFrameOfReference](https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.trycreateframeofreference)
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 * [Журнал версий службы удаленного взаимодействия с holographic](holographic-remoting-version-history.md)
-* [Создание удаленного приложения holographic с удаленным взаимодействием](holographic-remoting-create-host.md)
-* [Написание пользовательского приложения для удаленного взаимодействия holographic](holographic-remoting-create-player.md)
+* [Создание приложения с голографическим удаленным взаимодействием](holographic-remoting-create-host.md)
+* [Создание пользовательского проигрывателя для голографического удаленного взаимодействия](holographic-remoting-create-player.md)
 * [Условия лицензии на использование ПО для голографического удаленного взаимодействия](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Заявление о конфиденциальности Майкрософт](https://go.microsoft.com/fwlink/?LinkId=521839)

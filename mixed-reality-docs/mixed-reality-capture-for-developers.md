@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Нормативная бумага, Фото, видео, захват, Камера
-ms.openlocfilehash: 1116e9a0923129aa2b18d838917eebf12adae694
-ms.sourcegitcommit: 45da0a056fa42088ff81ccdd11232830fbe8430f
+ms.openlocfilehash: 44b853e96ab956e5ea6c03d8c23a61e91ac733d4
+ms.sourcegitcommit: fef42e2908e49822f2d13b05d2f9260bf0d72158
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84720420"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86061147"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>Съемка смешанной реальности для разработчиков
 
@@ -64,10 +64,10 @@ HoloLens 2 добавляет возможность визуализации и
 Чтобы принять участие в подготовке к отображению с камеры PV, приложение просто включает [Холографиквиевконфигуратион](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration)фотовидеокамера:
 ```csharp
 var display = Windows.Graphics.Holographic.HolographicDisplay.GetDefault();
-var view = display.TryGetViewConfiguration(Windows.Graphics.Holographic.HolographicViewConfiguration.PhotoVideoCamera);
+var view = display.TryGetViewConfiguration(Windows.Graphics.Holographic.HolographicViewConfigurationKind.PhotoVideoCamera);
 if (view != null)
 {
-   view.IsEnabled = true;
+    view.IsEnabled = true;
 }
 ```
 
@@ -173,7 +173,7 @@ if (view != null)
 
 ![Ожидаемый результат при очистке на прозрачный черный](images/cleartransparentblack-300px.png)
 
-**Решение**.
+**Решение**
 * Измените любое содержимое, которое отображается как непрозрачный черный, для альфа-значения 0.
 * Убедитесь, что приложение очищено до прозрачного черного.
 * По умолчанию Unity имеет значение Clear, чтобы автоматически очищать Микседреалититулкит, но если это приложение, отличное от Unity, необходимо изменить цвет, используемый с ID3D11DeiceContext:: Клеаррендертаржетвиев (). Необходимо убедиться, что для прозрачного черного (0, 0, 0, 0) вместо непрозрачного черного (0, 0, 0, 1).
@@ -221,7 +221,7 @@ if (view != null)
 
 Воздействие на видео с нормативными материалами (**Windows. Media. микседреалитикаптуре. микседреалитикаптуревидеоеффект**)
 
-|  Имя свойства  |  Type  |  Значение по умолчанию  |  Описание |
+|  Имя свойства  |  Type  |  Значение по умолчанию  |  Описание: |
 |----------|----------|----------|----------|
 |  StreamType  |  UINT32 ([медиастреамтипе](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (Видеорекорд)  |  Опишите поток отслеживания, для которого используется этот результат. Звук недоступен. |
 |  холограмкомпоситионенаблед  |  Логическое  |  TRUE  |  Флаг для включения или отключения голограмм в видеозаписи. |
@@ -241,7 +241,7 @@ if (view != null)
 
 НОРМАТИВный звуковой результат (**Windows. Media. микседреалитикаптуре. микседреалитикаптуреаудиоеффект**)
 
-| Имя свойства | Type | Значение по умолчанию | Описание |
+| Имя свойства | Type | Значение по умолчанию | Описание: |
 |----------|----------|----------|----------|
 | миксермоде | ЗНАЧЕНИЕМ | 2 (MIC и системные аудио) | Перечисление, используемое для указания того, какие источники звука следует использовать: 0 (только MIC Audio), 1 (только для системных аудио), 2 (MIC и системные аудио) |
 | лупбаккгаин | FLOAT | Настройка **усиления звука приложения** на портале устройств Windows | Применить к системному звуковому тому. Диапазон от 0,0 до 5,0. Поддерживается только в HoloLens 2 |
@@ -288,7 +288,7 @@ if (view != null)
 
 ## <a name="see-also"></a>См. также
 
-* [Запись смешанной реальности](mixed-reality-capture.md)
+* [Смешанный захват реальности](mixed-reality-capture.md)
 * [Зрительское представление](spectator-view.md)
 * [Общие сведения о разработке Unity](unity-development-overview.md)
 * [Обзор разработки для Unreal](unreal-development-overview.md)

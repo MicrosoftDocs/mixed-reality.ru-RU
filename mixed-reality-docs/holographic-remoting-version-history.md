@@ -6,21 +6,32 @@ ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
 keywords: HoloLens, удаленное взаимодействие, удаленное взаимодействие с holographic
-ms.openlocfilehash: 319e76efbbe1085fc9d60251a6f0f38133de6505
-ms.sourcegitcommit: 7011ac6fde80e5c45f04192fa1db6e1eb559e3b0
+ms.openlocfilehash: 131c5237801c381a371b197a5b7d8e0ec64fa2d6
+ms.sourcegitcommit: fef42e2908e49822f2d13b05d2f9260bf0d72158
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84327904"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86061127"
 ---
 # <a name="holographic-remoting-version-history"></a>Журнал версий службы удаленного взаимодействия с holographic
 
 > [!IMPORTANT]
 > Это руководство относится к удаленному взаимодействию с HoloLens 2.
 
+## <a name="version-221-july-6-2020"></a>Версия 2.2.1 (6 июля, 2020)<a name="v2.2.1"></a>
+> [!IMPORTANT]
+> Проверка [комплекта сертификации приложений Windows](https://developer.microsoft.com/windows/downloads/app-certification-kit/) с версией [2.2.0](holographic-remoting-version-history.md#v2.2.0) завершится ошибкой. Если вы используете версию [2.2.0](holographic-remoting-version-history.md#v2.2.0) и хотите отправить приложение в Microsoft Store, обновите по меньшей мере версию 2.2.1.
+* Исправлены проблемы соответствия [комплекта сертификации приложений для Windows](https://developer.microsoft.com/windows/downloads/app-certification-kit/) .
+
+## <a name="version-220-july-1-2020"></a>Версия 2.2.0 (1 июля 2020 г.)<a name="v2.2.0"></a>
+* Проигрыватель holographic Remoting теперь можно установить на ПК под управлением [Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md), что позволяет выполнять потоковую передачу на впечатляющие гарнитуры.
+* [Контроллеры движения](motion-controllers.md) теперь поддерживаются с помощью удаленного взаимодействия, а данные, зависящие от контроллера, можно получить через [спатиалинтерактионсаурце. Controller](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller).
+* [Спатиалстажефрамеофреференце](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference) теперь поддерживается, и текущий этап можно получить с помощью [спатиалстажефрамеофреференце. Current](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current). Кроме того, можно запросить новый этап с помощью [спатиалстажефрамеофреференце. рекуестневстажеасинк](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync).
+* В предыдущих версиях прогнозирование "выработка" было полностью обработано на стороне проигрывателя с помощью удаленного плеера Holographic. Начиная с версии 2.2.0, holographic удаленное взаимодействие имеет синхронизацию времени, а прогноз полностью выполняется удаленным приложением. Кроме того, в случае сложных сетевых ситуаций пользователи должны были повысить стабильность работы.
+
 ## <a name="version-213-may-25-2020"></a>Версия 2.1.3 (25 мая, 2020)<a name="v2.1.3"></a>
 * Изменено поведение события [холографикспаце. камерааддед](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded?view=winrt-18362) . В предыдущих версиях **не** гарантируется, что добавленный [холографиккамера](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera?view=winrt-18362) также имеет допустимый [холографиккамерапосе](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose?view=winrt-18362) при создании следующего кадра через [холографикспаце. креатенекстфраме](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe?view=winrt-18362#Windows_Graphics_Holographic_HolographicSpace_CreateNextFrame). Начиная с версии 2.1.3 [холографикспаце. камерааддед](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded?view=winrt-18362) синхронизируется с данными о себе, поступающими от удаленного плеера holographic, и пользователи могут рассчитывать на то, что при добавлении камеры в следующем кадре также доступен допустимый [холографиккамерапосе](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose?view=winrt-18362) для этой камеры.
-* Добавлена **отключенная** в депсбуфферстреамресолутион, которую можно использовать для отключения потоковой передачи буфера глубины через Ремотеконтекст. конфигуредепсвидеостреам. Обратите внимание, что при использовании [холографиккамерарендерингпараметерс. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer?view=winrt-18362#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) завершится с ошибкой *E_ILLEGAL_METHOD_CALL*.
+* Добавлена **отключенная** в депсбуфферстреамресолутион, которую можно использовать для отключения потоковой передачи буфера глубины через RemoteContext.Configуредепсвидеостреам. Обратите внимание, что при использовании [холографиккамерарендерингпараметерс. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer?view=winrt-18362#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) завершится с ошибкой *E_ILLEGAL_METHOD_CALL*.
 * Экран запуска удаленного проигрывателя holographic был изменен и теперь не блокирует представление пользователей.
 * Улучшения стабильности и исправления ошибок.
 
@@ -75,9 +86,9 @@ ms.locfileid: "84327904"
 
 * Первый общедоступный выпуск holographic Remoting для HoloLens 2.
 
-## <a name="see-also"></a>См. также:
-* [Написание пользовательского приложения для удаленного взаимодействия holographic](holographic-remoting-create-player.md)
+## <a name="see-also"></a>См. также
+* [Создание пользовательского проигрывателя для голографического удаленного взаимодействия](holographic-remoting-create-player.md)
 * [Создание хост-приложения holographic с удаленным взаимодействием](holographic-remoting-create-host.md)
 * [Устранение неполадок и ограничения удаленного взаимодействия с holographic](holographic-remoting-troubleshooting.md)
 * [Условия лицензии на использование ПО для голографического удаленного взаимодействия](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
-* [Заявление Майкрософт о конфиденциальности](https://go.microsoft.com/fwlink/?LinkId=521839)
+* [Заявление о конфиденциальности Майкрософт](https://go.microsoft.com/fwlink/?LinkId=521839)
