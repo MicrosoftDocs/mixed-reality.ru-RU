@@ -1,0 +1,1 @@
+# <a name="welcome-to-mrtk-docs"></a><span data-ttu-id="27009-101">Приветствуем на странице документации по MRTK!</span><span class="sxs-lookup"><span data-stu-id="27009-101">Welcome to mrtk-docs!</span></span>
