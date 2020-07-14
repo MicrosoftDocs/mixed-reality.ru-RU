@@ -7,12 +7,12 @@ ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: b2342e7d0d502af2787ca311d18a44f8726acf2d
-ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
+ms.openlocfilehash: 8cebe1fb203aeed9a262a2e9f482993b4775e0a6
+ms.sourcegitcommit: 96ae8258539b2f3edc104dd0dce8bc66f3647cdd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "79028478"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86303665"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. Настройка намерения и распознавания естественного языка
 
@@ -63,7 +63,7 @@ ms.locfileid: "79028478"
 > На момент написания этой статьи не нужно было создавать ресурс разработки, так как пробный ключ разработки автоматически создается в LUIS при создании службы LUIS, как описывается в следующем разделе.
 
 > [!TIP]
-> Если у вас есть другая подходящая группа ресурсов в учетной записи Azure, например, после выполнения инструкций из руководства по [Пространственным привязкам Azure](mrlearning-asa-ch1.md), можно использовать эту группу ресурсов вместо создания новой.
+> Если у вас есть другая подходящая группа ресурсов в учетной записи Azure, например, после выполнения инструкций из руководства по [Пространственным привязкам Azure](mr-learning-asa-01.md), можно использовать эту группу ресурсов вместо создания новой.
 
 На странице "Создание" введите следующие значения:
 
