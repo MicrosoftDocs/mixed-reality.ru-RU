@@ -112,34 +112,47 @@
 ### Unity
 #### Руководства по HoloLens 2
 ##### Руководства по началу работы
-###### [1. Общие сведения и цели](mrlearning-base.md)
-###### [2. Инициализация проекта и первое приложение](mrlearning-base-ch1.md)
-###### [3. Создание пользовательского интерфейса и настройка набора средств для Смешанной реальности](mrlearning-base-ch2.md)
-###### [4. Размещение динамического содержимого и использование решателей](mrlearning-base-ch3.md)
-###### [5. Взаимодействие с трехмерными объектами](mrlearning-base-ch4.md)
-###### [6. Изучение дополнительных входных параметров](mrlearning-base-ch5.md)
-###### [7. Создание примера приложения лунного модуля](mrlearning-base-ch6.md)
+###### [1. Введение](mr-learning-base-01.md)
+###### [2. Инициализация проекта и первое приложение](mr-learning-base-02.md)
+###### [3. Настройка профилей набора средств для Смешанной реальности](mr-learning-base-03.md)
+###### [4. Размещение объектов в сцене](mr-learning-base-04.md)
+###### [5. Создание динамического содержимого с помощью решателей](mr-learning-base-05.md)
+###### [6. Создание пользовательского интерфейса](mr-learning-base-06.md)
+###### [7. Взаимодействие с трехмерными объектами](mr-learning-base-07.md)
+###### [8. Использование отслеживания взгляда](mr-learning-base-08.md)
+###### [9. Использование голосовых команд](mr-learning-base-09.md)
 ##### Руководства по Пространственным привязкам Azure
-###### [1. Начало работы с Пространственными привязками Azure](mrlearning-asa-ch1.md)
-###### [2. Сохранение, получение и совместное использование пространственных привязок Azure](mrlearning-asa-ch2.md)
-###### [3. Отображение отзывов по пространственным привязкам Azure](mrlearning-asa-ch3.md)
-###### [4. Пространственные привязки Azure для Android и iOS](mrlearning-asa-ch4.md)
+###### [1. Введение](mr-learning-asa-01.md)
+###### [2. Начало работы с Пространственными привязками Azure](mr-learning-asa-02.md)
+###### [3. Сохранение, получение и совместное использование Пространственных привязок Azure](mr-learning-asa-03.md)
+###### [4. Отображение отзывов по пространственным привязкам Azure](mr-learning-asa-04.md)
+###### [5. Пространственные привязки Azure для Android и iOS](mr-learning-asa-05.md)
+##### Руководства по многопользовательским возможностям
+###### [1. Введение](mr-learning-sharing-01.md)
+###### [2. Настройка Photon Unity Networking](mr-learning-sharing-02.md)
+###### [3. Подключение нескольких пользователей](mr-learning-sharing-03.md)
+###### [4. Предоставление общего доступа к сведениям о перемещении объекта нескольким пользователям](mr-learning-sharing-04.md)
+###### [5. Интеграция Пространственных привязок Azure в общий интерфейс](mr-learning-sharing-05.md)
 ##### Руководства по использованию службы "Речь" в Azure
 ###### [1. Интеграция и использование средств распознавания и транскрибирования речи](mrlearning-speechSDK-ch1.md)
 ###### [2. Добавление автономного режима для преобразования речи в текст в локальной среде](mrlearning-speechSDK-ch2.md)
 ###### [3. Добавление компонента перевода речи Azure Cognitive Services](mrlearning-speechSDK-ch3.md)
 ###### [4. Настройка намерения и распознавание естественного языка](mrlearning-speechSDK-ch4.md)
-##### Руководства по многопользовательским возможностям
-###### [1. Настройка Photon Unity Networking](mrlearning-sharing(photon)-ch1.md)
-###### [2. Подключение нескольких пользователей](mrlearning-sharing(photon)-ch2.md)
-###### [3. Предоставление общего доступа к сведениям о перемещении объекта нескольким пользователям](mrlearning-sharing(photon)-ch3.md)
-###### [4. Интеграция Пространственных привязок Azure в общий интерфейс](mrlearning-sharing(photon)-ch4.md)
 ##### Учебники по пространственному звуку
 ###### [1. Добавление пространственного звука в проект](unity-spatial-audio-ch1.md)
 ###### [2. Придание пространственной формы звуку при взаимодействии с кнопками](unity-spatial-audio-ch2.md)
 ###### [3. Придание пространственной формы звуку из видео](unity-spatial-audio-ch3.md)
 ###### [4. Включение и отключение пространственного звука во время выполнения](unity-spatial-audio-ch4.md)
 ###### [5. Использование реверберации для добавления эффекта расстояния пространственному звуку](unity-spatial-audio-ch5.md)
+#### Руководства по Облачным службам Azure
+##### [1. Облачные службы Azure для HoloLens 2](mr-learning-azure-01.md)
+##### [2. Интеграция службы хранилища Azure](mr-learning-azure-02.md)
+##### [3. Интеграция Пользовательского визуального распознавания Azure](mr-learning-azure-03.md)
+##### [4. Интеграция Пространственных привязок Azure](mr-learning-azure-04.md)
+##### [5. Интеграция Службы Azure Bot](mr-learning-azure-05.md)
+#### Руководства по голографическому удаленному взаимодействию с ПК
+##### [1. Голографическое удаленное взаимодействие с ПК: начало работы](mr-learning-pc-holographic-remoting-01.md)
+##### [2. Создание приложения для голографического удаленного взаимодействия с ПК](mr-learning-pc-holographic-remoting-02.md)
 #### Примеры приложений с открытым кодом для HoloLens 2
 ##### [Surfaces](sampleapp-surfaces.md)
 ##### [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
@@ -217,15 +230,17 @@
 
 ## Unreal
 ### [Обзор разработки для Unreal](unreal-development-overview.md)
-### [Отслеживание рук в Unreal](unreal-hand-tracking.md)
 ### [Ввод взглядом в Unreal](unreal-gaze-input.md)
+### [Отслеживание рук в Unreal](unreal-hand-tracking.md)
+### [Камера HoloLens в Unreal](unreal-hololens-camera.md)
+### [QR-коды в Unreal](unreal-qr-codes.md)
 ### [Пространственное сопоставление в Unreal](unreal-spatial-mapping.md)
 ### [Пространственный звук в Unreal](unreal-spatial-audio.md)
 ### [Пространственные привязки в Unreal](unreal-spatial-anchors.md)
-### [Голосовой ввод в Unreal](unreal-voice-input.md)
-### [Камера HoloLens в Unreal](unreal-hololens-camera.md)
-### [QR-коды в Unreal](unreal-qr-codes.md)
 ### [Потоковая передача данных в Unreal](unreal-streaming.md)
+### [Развертывание на устройстве в Unreal](unreal-deploying.md)
+### [Голосовой ввод в Unreal](unreal-voice-input.md)
+### [WinRT в Unreal](unreal-winrt.md)
 ### [Рекомендации по производительности для Unreal](performance-recommendations-for-unreal.md)
 
 ## JavaScript
