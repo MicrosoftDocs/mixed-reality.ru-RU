@@ -5,20 +5,20 @@ author: alfred-msft
 ms.author: yuripek
 ms.date: 05/16/2019
 ms.topic: article
-keywords: лбе, Микседреалитиспатиалдатапаккажер. exe, Микседреалитиспатиалдатапаккажер
-ms.openlocfilehash: 3beb8f9168bfb6fd921d6d5c1eb6d250c70a714d
-ms.sourcegitcommit: 83698638b93c5ba77b3ffc399f1706482539f27b
+keywords: лбе, MixedRealitySpatialDataPackager.exe, Микседреалитиспатиалдатапаккажер
+ms.openlocfilehash: 4a285cbd7423d7cacaf52370e6e19acf42672289
+ms.sourcegitcommit: cfca6cb016d8683fa2c611a97d493a4947935dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74539677"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402743"
 ---
 # <a name="mixed-reality-spatial-data-packager-documentation"></a>Документация по диспетчеру пространственных данных в смешанной реальности
 
 >[!NOTE]
 > Это средство и его операция предлагаются "как есть". Он может быть изменен без уведомления и не должен быть совместим с будущими выпусками Windows или Windows Mixed Reality ХМД.
 
-## <a name="download"></a>"Скачать"
+## <a name="download"></a>Скачать
  Скачайте [микседреалитиспатиалдатапаккажер здесь](https://download.microsoft.com/download/A/1/2/A12B8A90-B3F7-4ED9-A4BB-D59DDCDAA125/MixedRealitySpatialDataPackager.zip)
 
 ## <a name="device-support"></a>Поддержка устройств
@@ -31,7 +31,7 @@ ms.locfileid: "74539677"
     <col width="25%" />
     </colgroup>
     <tr>
-        <td><strong>Функциями</strong></td>
+        <td><strong>Компонент</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1-го поколения)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Иммерсивные гарнитуры</strong></a></td>
@@ -44,7 +44,7 @@ ms.locfileid: "74539677"
     </tr>
 </table>
 
-## <a name="quickstart"></a>QuickStart
+## <a name="quickstart"></a>Краткое руководство
 
 Средство упаковщика пространственных данных Mixed Reality копирует пространственные данные целевого приложения с одного компьютера на другой через два этапа экспорта и импорта. Средство должно быть запущено с правами администратора и удаляет существующие пространственные данные при импорте. При экспорте существующие пространственные данные остаются неизменными.
 
@@ -60,7 +60,7 @@ ms.locfileid: "74539677"
 
 ## <a name="mapping-best-practices"></a>Рекомендации по сопоставлению
 
-1. Удалить существующие карты из панели управления (параметры-> Смешанная реальность — > Среда — > Очистить данные среды)
+1. Удалить существующие карты из панели управления (параметры-> Смешанная реальность — > среда — > очистить данные среды)
 2. Обеспечьте достаточное освещение для хорошего отслеживания и, если режим заблокированной схемы пытается сохранить одно освещение
 3. Если возможно, не используйте динамический диапазон освещения, избегая областей высокого освещения рядом с темными, затененными областями.
 4. Сократите пустое число поверхностей, например, поместите диапазон различных плакатов на белые стены.
@@ -71,7 +71,7 @@ ms.locfileid: "74539677"
 
 ## <a name="running-mixed-reality-spatial-data-packager-with-companion-script"></a>Запуск упаковщика пространственных данных Mixed Reality с сопутствующим скриптом
 
-Мы предоставили Мрспатиалпаккажерхелперскрипт. ps1, который запускает средства диспетчера карт. 
+Мы предоставили MRSpatialPackagerHelperScript.ps1, в которых выполняется Упаковщик Map Tools. 
 
 
 Параметры сценария определены ниже:
@@ -135,14 +135,14 @@ Started SPECTRUM
 IMPORT SUCCESS
 ```
 
-### <a name="how-to-export-using-mixedrealitypackagerexe"></a>Экспорт с помощью Микседреалитипаккажер. exe
+### <a name="how-to-export-using-mixedrealityspatialdatapackagerexe"></a>Экспорт с помощью MixedRealitySpatialDataPackager.exe
 ```
 MixedRealitySpatialDataPackager.exe export <folderpath to mapx files> <source package family name>    
 ```
 
 При экспорте карт из устройства создаются два файла мапкс: Хет. мапкс и SA. мапкс. Во время экспорта все пространственные привязки удаляются, за исключением указанного приложения и созданной пользователем границы (если она существует). Имя семейства пакетов исходного пакета должно совпадать с существующим установленным приложением, иначе exe завершится ошибкой.
 
-### <a name="how-to-import-using-mixedrealitypackagerexe"></a>Импорт с помощью Микседреалитипаккажер. exe
+### <a name="how-to-import-using-mixedrealityspatialdatapackagerexe"></a>Импорт с помощью MixedRealitySpatialDataPackager.exe
 ```
 MixedRealitySpatialDataPackager.exe import <folderpath to mapx files> <target package family name> <user SID>
 ```
@@ -150,7 +150,7 @@ MixedRealitySpatialDataPackager.exe import <folderpath to mapx files> <target pa
 
 
 ***
-## <a name="error-messages"></a>Сообщения об ошибке
+## <a name="error-messages"></a>сообщения об ошибках
 Кроме того, сообщения об ошибках, приведенные ниже, также будут сопровождаться значением HRESULT.
 
 ### <a name="if-there-was-an-error-invalid-arguments"></a>Если произошла ошибка недопустимых аргументов
