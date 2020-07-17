@@ -230,18 +230,21 @@
 
 ## Unreal
 ### [Обзор разработки для Unreal](unreal-development-overview.md)
-### [Ввод взглядом в Unreal](unreal-gaze-input.md)
-### [Отслеживание рук в Unreal](unreal-hand-tracking.md)
-### [Камера HoloLens в Unreal](unreal-hololens-camera.md)
-### [QR-коды в Unreal](unreal-qr-codes.md)
-### [Пространственное сопоставление в Unreal](unreal-spatial-mapping.md)
-### [Пространственный звук в Unreal](unreal-spatial-audio.md)
-### [Пространственные привязки в Unreal](unreal-spatial-anchors.md)
-### [Потоковая передача данных в Unreal](unreal-streaming.md)
-### [Развертывание на устройстве в Unreal](unreal-deploying.md)
-### [Голосовой ввод в Unreal](unreal-voice-input.md)
-### [WinRT в Unreal](unreal-winrt.md)
-### [Рекомендации по производительности для Unreal](performance-recommendations-for-unreal.md)
+### Основные компоненты
+#### [Ввод взглядом в Unreal](unreal-gaze-input.md)
+#### [Отслеживание рук в Unreal](unreal-hand-tracking.md)
+#### [Пространственное сопоставление в Unreal](unreal-spatial-mapping.md)
+#### [Пространственный звук в Unreal](unreal-spatial-audio.md)
+#### [Пространственные привязки в Unreal](unreal-spatial-anchors.md)
+#### [Голосовой ввод в Unreal](unreal-voice-input.md)
+### Возможности и интерфейсы API платформы
+#### [Камера HoloLens в Unreal](unreal-hololens-camera.md)
+#### [QR-коды в Unreal](unreal-qr-codes.md)
+#### [WinRT в Unreal](unreal-winrt.md)
+### Развертывание и производительность
+#### [Развертывание на устройстве в Unreal](unreal-deploying.md)
+#### [Рекомендации по производительности для Unreal](performance-recommendations-for-unreal.md)
+#### [Потоковая передача данных в Unreal](unreal-streaming.md)
 
 ## JavaScript
 ### [Обзор разработки в JavaScript](javascript-development-overview.md)
