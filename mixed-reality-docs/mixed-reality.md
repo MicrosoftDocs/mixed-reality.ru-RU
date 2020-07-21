@@ -7,12 +7,12 @@ ms.date: 03/21/2018
 ms.topic: article
 keywords: Смешанная реальность, голографический, AR, VR, MR, XR, дополненная реальность, виртуальная реальность, объяснение
 ms.localizationpriority: high
-ms.openlocfilehash: 7b0dcbdb88f880d4c1632fae874ba6a610f023fb
-ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
+ms.openlocfilehash: 541752ef32149f64f9b85616883c284b33bb8fed
+ms.sourcegitcommit: 8daefb763d1f23fe02b95b766b00b373f04c5c2d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "81278052"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86447910"
 ---
 # <a name="what-is-mixed-reality"></a>Что такое смешанная реальность?
 
@@ -117,7 +117,7 @@ ms.locfileid: "81278052"
 ## <a name="see-also"></a>См. также статью
 
 * [Что такое голограмма?](hologram.md)
-* [Основные концепции смешанной реальности](index.md#understand-the-basics)
+* [Основные концепции смешанной реальности](get-started-with-mr.md#understand-the-basics)
 * [Начало разработки и создания прототипов](design.md)
 * [Изучение инструментов и архитектуры](development.md)
 
