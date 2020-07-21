@@ -1,28 +1,26 @@
-# Новые возможности 
-## [Подготовка приложения для HL2](mrtk-porting-guide.md)
-## [Дополнительные сведения о службах Azure](azure-services.md)
-## [Приготовьтесь к выпуску нового решения Microsoft Edge](new-microsoft-edge.md)
-## Программы и мероприятия
-### [Календарь мероприятий Reactor Academy в Сан-Франциско](sf-academy-events.md)
-### [Mixed Reality Dev Days](mr-dev-days.md)
-#### [Записи сеанса](mr-dev-days-sessions.md)
-## [Заметки о текущем выпуске Смешанной реальности](release-notes-may-2020.md)
-## [Ресурсы сообщества](community.md)
-## [Участие в разработке этой документации](CONTRIBUTING.md)
+<!-- Hub landing page -->
+# [Добро пожаловать в смешанную реальность](index.yml)
+
+<!-- Discover top level folder -->
 # Обнаружить
-## [Начало работы со смешанной реальностью](index.md)
+## [Начало работы со смешанной реальностью](get-started-with-mr.md)
 ## [Расширение процесса разработки](case-study-expanding-the-design-process-for-mixed-reality.md)
-## [Коллекция примеров использования](case-studies-overview.md)
+
 ## Оборудование HoloLens
 ### [Сведения об оборудовании HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
 ### [Сведения об оборудовании HoloLens (1-го поколения)](https://docs.microsoft.com/hololens/hololens1-hardware)
+
 ## Иммерсивные гарнитуры
 ### [Сведения об оборудовании иммерсивных гарнитур](immersive-headset-hardware-details.md)
 ### [Навигация по дому с технологией Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md)
 ### [Руководство для энтузиастов](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)
 ### [Развлечения на основе местоположения](location-based-experiences.md)
-## [Аксессуары к оборудованию](hardware-accessories.md)
+
 ## [Ресурсы сообщества](community.md)
+## [Коллекция примеров использования](case-studies-overview.md)
+## [Аксессуары к оборудованию](hardware-accessories.md)
+
+<!-- Design top level folder -->
 # Проектирование
 ## [Начало проектирования и создания прототипов](design.md)
 ## [Сведения о руководстве по проектированию](about-this-design-guidance.md)
@@ -60,6 +58,7 @@
 #### [Определение направления взгляда и фиксация](gaze-and-commit-eyes.md)
 #### [Направление головы и фиксация](gaze-and-commit-head.md)
 ### [Взаимодействие на основе взгляда](eye-gaze-interaction.md)
+
 ## Элементы пользовательского интерфейса
 ### [Обзор](app-patterns-landingpage.md)
 ### Основные элементы
@@ -92,6 +91,7 @@
 #### [Биллбординг и закрепление элемента в пространстве](billboarding-and-tag-along.md)
 #### [Индикация хода выполнения](progress.md)
 #### [Притяжение к поверхности](surface-magnetism.md)
+
 ## Ресурсы
 ### [Дополнительные сведения о Unity](https://learn.unity.com/)
 ### [Набор средств для смешанной реальности](https://github.com/Microsoft/MixedRealityToolkit-Unity)
@@ -100,16 +100,28 @@
 ### [Процесс создания ресурсов](asset-creation-process.md)
 ### [Разработка собственных иммерсивных сред](add-custom-home-environments.md)
 
+<!-- Develop top level folder -->
 # Разработка
 ## [Изучение инструментов и архитектуры](development.md)
 ## [Установка средств](install-the-tools.md)
+## [Общие сведения об облачных службах](mixed-reality-cloud-services.md)
 
-## Облачные службы смешанной реальности
-### [Удаленная отрисовка Azure](https://docs.microsoft.com/azure/remote-rendering)
-### [Пространственные привязки Azure](https://docs.microsoft.com/azure/spatial-anchors)
+<!-- Deprecated
+## Mixed reality cloud services
+### [Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering)
+### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+-->
 
-## [Руководства и примеры приложений](tutorials.md)
-### Unity
+<!-- Unity section -->
+## Unity
+### [Обзор разработки в Unity](unity-development-overview.md)
+### Начало работы
+#### [Приступая к работе с набором средств для смешанной реальности версии 2](mrtk-getting-started.md)
+#### [Настройка проекта Unity для Windows Mixed Reality](Configure-Unity-Project.md)
+#### [Подготовка приложения для HL2](mrtk-porting-guide.md)
+
+### Учебники
+#### [Обзор](tutorials.md)
 #### Руководства по HoloLens 2
 ##### Руководства по началу работы
 ###### [1. Введение](mr-learning-base-01.md)
@@ -122,57 +134,43 @@
 ###### [8. Использование отслеживания взгляда](mr-learning-base-08.md)
 ###### [9. Использование голосовых команд](mr-learning-base-09.md)
 ##### Руководства по Пространственным привязкам Azure
-###### [1. Введение](mr-learning-asa-01.md)
-###### [2. Начало работы с Пространственными привязками Azure](mr-learning-asa-02.md)
-###### [3. Сохранение, получение и совместное использование Пространственных привязок Azure](mr-learning-asa-03.md)
-###### [4. Отображение отзывов по пространственным привязкам Azure](mr-learning-asa-04.md)
-###### [5. Пространственные привязки Azure для Android и iOS](mr-learning-asa-05.md)
-##### Руководства по многопользовательским возможностям
-###### [1. Введение](mr-learning-sharing-01.md)
-###### [2. Настройка Photon Unity Networking](mr-learning-sharing-02.md)
-###### [3. Подключение нескольких пользователей](mr-learning-sharing-03.md)
-###### [4. Предоставление общего доступа к сведениям о перемещении объекта нескольким пользователям](mr-learning-sharing-04.md)
-###### [5. Интеграция Пространственных привязок Azure в общий интерфейс](mr-learning-sharing-05.md)
+###### [1. Начало работы с Пространственными привязками Azure](mrlearning-asa-ch1.md)
+###### [2. Сохранение, получение и совместное использование пространственных привязок Azure](mrlearning-asa-ch2.md)
+###### [3. Отображение отзывов по пространственным привязкам Azure](mrlearning-asa-ch3.md)
+###### [4. Пространственные привязки Azure для Android и iOS](mrlearning-asa-ch4.md)
 ##### Руководства по использованию службы "Речь" в Azure
 ###### [1. Интеграция и использование средств распознавания и транскрибирования речи](mrlearning-speechSDK-ch1.md)
 ###### [2. Добавление автономного режима для преобразования речи в текст в локальной среде](mrlearning-speechSDK-ch2.md)
 ###### [3. Добавление компонента перевода речи Azure Cognitive Services](mrlearning-speechSDK-ch3.md)
 ###### [4. Настройка намерения и распознавание естественного языка](mrlearning-speechSDK-ch4.md)
+##### Руководства по многопользовательским возможностям
+###### [1. Настройка Photon Unity Networking](mrlearning-sharing(photon)-ch1.md)
+###### [2. Подключение нескольких пользователей](mrlearning-sharing(photon)-ch2.md)
+###### [3. Предоставление общего доступа к сведениям о перемещении объекта нескольким пользователям](mrlearning-sharing(photon)-ch3.md)
+###### [4. Интеграция Пространственных привязок Azure в общий интерфейс](mrlearning-sharing(photon)-ch4.md)
 ##### Учебники по пространственному звуку
 ###### [1. Добавление пространственного звука в проект](unity-spatial-audio-ch1.md)
 ###### [2. Придание пространственной формы звуку при взаимодействии с кнопками](unity-spatial-audio-ch2.md)
 ###### [3. Придание пространственной формы звуку из видео](unity-spatial-audio-ch3.md)
 ###### [4. Включение и отключение пространственного звука во время выполнения](unity-spatial-audio-ch4.md)
 ###### [5. Использование реверберации для добавления эффекта расстояния пространственному звуку](unity-spatial-audio-ch5.md)
+
 #### Руководства по Облачным службам Azure
 ##### [1. Облачные службы Azure для HoloLens 2](mr-learning-azure-01.md)
 ##### [2. Интеграция службы хранилища Azure](mr-learning-azure-02.md)
 ##### [3. Интеграция Пользовательского визуального распознавания Azure](mr-learning-azure-03.md)
 ##### [4. Интеграция Пространственных привязок Azure](mr-learning-azure-04.md)
 ##### [5. Интеграция Службы Azure Bot](mr-learning-azure-05.md)
+
 #### Руководства по голографическому удаленному взаимодействию с ПК
 ##### [1. Голографическое удаленное взаимодействие с ПК: начало работы](mr-learning-pc-holographic-remoting-01.md)
 ##### [2. Создание приложения для голографического удаленного взаимодействия с ПК](mr-learning-pc-holographic-remoting-02.md)
-#### Примеры приложений с открытым кодом для HoloLens 2
-##### [Surfaces](sampleapp-surfaces.md)
-##### [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
-##### [Galaxy Explorer 2.0](galaxy-explorer-update.md)
-#### Примеры приложений с открытым кодом для HoloLens (1-го поколения)
-##### [Periodic Table of the Elements 1.0](periodic-table-of-the-elements.md)
-##### [Galaxy Explorer 1.0.](galaxy-explorer.md)
-##### [Лунный модуль](lunar-module.md)
+
 #### Руководства по HoloLens (1-го поколения) и иммерсивным гарнитурам
 ##### [100. Основы смешанной реальности: начало работы с Unity](holograms-100.md)
 ##### [101. Основы смешанной реальности: полный проект с использованием устройства](holograms-101.md)
 ##### [101E. Основы смешанной реальности: полный проект с использованием эмулятора](holograms-101e.md)
-##### [210. Ввод в смешанной реальности: взгляд](holograms-210.md)
-##### [211. Ввод в смешанной реальности: жест](holograms-211.md)
-##### [212. Ввод в смешанной реальности: голос](holograms-212.md)
-##### [213. Ввод в смешанной реальности: контроллеры движения](mixed-reality-213.md)
-##### [220. Пространство в смешанной реальности: пространственный звук](holograms-220.md)
-##### [230. Пространство в смешанной реальности: пространственное сопоставление](holograms-230.md)
-##### [240. Общий доступ в смешанной реальности: несколько устройств HoloLens](holograms-240.md)
-##### [250. Общий доступ в смешанной реальности: HoloLens (1-го поколения) и иммерсивные гарнитуры](mixed-reality-250.md)
+
 #### Руководства по смешанной реальности и службам Azure
 ##### [301. Смешанная реальность и Azure: перевод с одного языка на другой](mr-azure-301.md)
 ##### [302. Смешанная реальность и Azure: компьютерное зрение](mr-azure-302.md)
@@ -188,24 +186,18 @@
 ##### [311. Смешанная реальность и Azure: Microsoft Graph](mr-azure-311.md)
 ##### [312. Смешанная реальность и Azure: интеграция ботов](mr-azure-312.md)
 ##### [313. Смешанная реальность и Azure: служба "Центр Интернета вещей"](mr-azure-313.md)
-### Unreal
-#### [1. Начало работы](unreal-uxt-ch1.md)
-#### [2. Инициализация проекта и первое приложение](unreal-uxt-ch2.md)
-#### [3. Настройка проекта для смешанной реальности](unreal-uxt-ch3.md)
-#### [4. Настройка интерактивной сцены](unreal-uxt-ch4.md)
-#### [5. Добавление кнопки и сброс расположений фрагментов](unreal-uxt-ch5.md)
-#### [6. Упаковка и развертывание на устройстве или в эмуляторе](unreal-uxt-ch6.md)
 
-## Unity
-### [Обзор разработки в Unity](unity-development-overview.md)
-### Начало работы
-#### [Приступая к работе с набором средств для смешанной реальности версии 2](mrtk-getting-started.md)
-#### [Настройка проекта Unity для Windows Mixed Reality](Configure-Unity-Project.md)
-#### [Рекомендуемые параметры для Unity](recommended-settings-for-unity.md)
-#### [Режим воспроизведения в Unity](unity-play-mode.md)
-#### [Экспорт и разработка решения Visual Studio для Unity](exporting-and-building-a-unity-visual-studio-solution.md)
-#### [Рекомендации по работе с Unity и Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
-#### [Управляемая отладка с помощью Unity IL2CPP](managed-debugging-with-unity-il2cpp.md)
+<!-- Deprecated HTK tutorials
+##### [MR Input 210: Gaze](holograms-210.md)
+##### [MR Input 211: Gesture](holograms-211.md)
+##### [MR Input 212: Voice](holograms-212.md)
+##### [MR Input 213: Motion controllers](mixed-reality-213.md)
+##### [MR Spatial 220: Spatial sound](holograms-220.md)
+##### [MR Spatial 230: Spatial mapping](holograms-230.md)
+##### [MR Sharing 240: Multiple HoloLens devices](holograms-240.md)
+##### [MR Sharing 250: HoloLens (1st gen) and immersive headsets](mixed-reality-250.md)
+-->
+
 ### Основные компоненты
 #### [MRTK 101: как использовать набор средств смешанной реальности в Unity для реализации простых взаимодействий](mrtk-101.md)
 #### [Камера в Unity](camera-in-unity.md)
@@ -218,6 +210,7 @@
 #### [Голосовой ввод в Unity](voice-input-in-unity.md)
 #### [Пространственное сопоставление в Unity](spatial-mapping-in-unity.md)
 #### [Пространственный звук в Unity](spatial-sound-in-unity.md)
+
 ### Возможности и интерфейсы API платформы
 #### [Общий доступ в Unity](shared-experiences-in-unity.md)
 #### [Камера с определяемым местоположением в Unity](locatable-camera-in-unity.md)
@@ -228,8 +221,35 @@
 #### [Собственные объекты смешанной реальности в Unity](unity-xrdevice-advanced.md)
 #### [Использование Vuforia с Unity](vuforia-development-overview.md)
 
+### Примеры приложений
+#### HoloLens 2 
+##### [Surfaces](sampleapp-surfaces.md)
+##### [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+##### [Galaxy Explorer 2.0](galaxy-explorer-update.md)
+#### HoloLens (1-го поколения)
+##### [Periodic Table of the Elements 1.0](periodic-table-of-the-elements.md)
+##### [Galaxy Explorer 1.0.](galaxy-explorer.md)
+##### [Лунный модуль](lunar-module.md)
+
+### Параметры и отладка
+#### [Управляемая отладка с помощью Unity IL2CPP](managed-debugging-with-unity-il2cpp.md)
+#### [Рекомендуемые параметры для Unity](recommended-settings-for-unity.md)
+#### [Режим воспроизведения в Unity](unity-play-mode.md)
+### Решения Visual Studio
+#### [Экспорт и разработка решения Visual Studio для Unity](exporting-and-building-a-unity-visual-studio-solution.md)
+#### [Рекомендации по работе с Unity и Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
+
+<!-- Unreal section -->
 ## Unreal
 ### [Обзор разработки для Unreal](unreal-development-overview.md)
+### Учебники
+#### Создание приложения для игры в шахматы с помощью средств взаимодействия с пользователем из MRTK
+##### [1. Начало работы](unreal-uxt-ch1.md)
+##### [2. Инициализация проекта](unreal-uxt-ch2.md)
+##### [3. Настройка смешанной реальности](unreal-uxt-ch3.md)
+##### [4. Добавление интерактивности](unreal-uxt-ch4.md)
+##### [5. Пользовательский интерфейс и функции](unreal-uxt-ch5.md)
+##### [6. Упаковка и развертывание](unreal-uxt-ch6.md)
 ### Основные компоненты
 #### [Ввод взглядом в Unreal](unreal-gaze-input.md)
 #### [Отслеживание рук в Unreal](unreal-hand-tracking.md)
@@ -246,6 +266,7 @@
 #### [Рекомендации по производительности для Unreal](performance-recommendations-for-unreal.md)
 #### [Потоковая передача данных в Unreal](unreal-streaming.md)
 
+<!-- Javascript section -->
 ## JavaScript
 ### [Обзор разработки в JavaScript](javascript-development-overview.md)
 ### [WebXR](webxr-overview.md)
@@ -322,11 +343,27 @@
 ### [Обновление приложения SteamVR для Windows Mixed Reality](updating-your-steamvr-application-for-windows-mixed-reality.md)
 ### [Обновление двухмерных приложений UWP для смешанной реальности](building-2d-apps.md)
 
+<!-- Distribute top level folder -->
 # Распространение
-## [Руководство по проектированию средств запуска трехмерных приложений](3d-app-launcher-design-guidance.md)
-## [Создание трехмерных моделей для использования в домашних условиях](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
-## [Реализация средств запуска трехмерных приложений (приложения UWP)](implementing-3d-app-launchers.md)
-## [Реализация средств запуска трехмерных приложений (приложения Win32)](implementing-3d-app-launchers-win32.md)
-## [Размещение трехмерных моделей в доме](enable-placement-of-3d-models-in-the-home.md)
+## Средства запуска трехмерных приложений
+### [Руководство по проектированию](3d-app-launcher-design-guidance.md)
+### [Создание трехмерных моделей для домашнего использования](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+### Реализация средств запуска трехмерных приложений
+#### [Приложения UWP](implementing-3d-app-launchers.md)
+#### [Приложения Win32](implementing-3d-app-launchers-win32.md)
+### [Размещение трехмерных моделей в доме](enable-placement-of-3d-models-in-the-home.md)
 ## [Покупки из приложения](in-app-purchases.md)
 ## [Отправка приложения в Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
+
+<!-- What's new? top level folder -->
+# Новые возможности
+## [Дополнительные сведения о службах Azure](azure-services.md)
+## [Приготовьтесь к выпуску нового решения Microsoft Edge](new-microsoft-edge.md)
+## Программы и мероприятия
+### [Календарь мероприятий Reactor Academy в Сан-Франциско](sf-academy-events.md)
+### [Mixed Reality Dev Days](mr-dev-days.md)
+#### [Записи сеанса](mr-dev-days-sessions.md)
+## [Заметки о текущем выпуске Смешанной реальности](release-notes-may-2020.md)
+## [Ресурсы сообщества](community.md)
+## [Участие в разработке этой документации](CONTRIBUTING.md)
+## [Развертывание HoloLens в большом масштабе](https://docs.microsoft.com/hololens/)
