@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, смешанная реальность, учебник, начало работы, MRTK, UXT, средства разработки пользовательского интерфейса, средства UX, документация
-ms.openlocfilehash: 99407a4069f914bf077e6323dde3e12978f6b765
-ms.sourcegitcommit: 7ca383ef1c5dc895ca2a289435f2e9d4c1ee6e65
+ms.openlocfilehash: c49e2a69cb97a996da4bf601a105c2176ccf267f
+ms.sourcegitcommit: 96ae8258539b2f3edc104dd0dce8bc66f3647cdd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85345694"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86303545"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Упаковка и развертывание на устройстве или в эмуляторе
 
@@ -30,15 +30,15 @@ ms.locfileid: "85345694"
 
 Если вы выбрали этот вариант для своего шахматного приложения, нужны будут следующие приготовления:
 
-1.  Установите и запустите **проигрыватель голографического удаленного взаимодействия** из Microsoft Store на устройстве HoloLens 2.
+1.  Установите и запустите **проигрыватель голографического удаленного взаимодействия** из Microsoft Store на устройстве HoloLens 2. Запишите IP-адрес, отображаемый в приложении.
 
-2.  Выберите **Edit > Project Settings** (Правка > Параметры проекта) и в разделе **Holographic Remoting** (Голографическое удаленное взаимодействие) установите флажок **enable remoting** (включить удаленное взаимодействие).
+2.  В редакторе Unreal выберите **Edit > Project Settings** (Правка > Параметры проекта) и в разделе **Holographic Remoting** (Голографическое удаленное взаимодействие) установите флажок **Enable Remoting** (Включить удаленное взаимодействие).
 
-3.  Перезапустите редактор, [найдите IP-адрес своего устройства](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens#connect-over-wi-fi) и введите его, а затем нажмите кнопку **Connect** (Подключить).
+3.  Перезапустите редактор, а затем введите IP-адрес устройства (как показано в приложении Holographic Remoting Player), а затем нажмите кнопку **Connect** (Подключить).
 
 Когда устройство подключится, щелкните стрелку раскрывающегося списка справа от кнопки **Play** (Воспроизведение) и выберите вариант **VR Preview** (Просмотр виртуальной реальности). Приложение запустится в окне просмотра виртуальной реальности с потоковой передачей на гарнитуру HoloLens. 
 
-## <a name="packaging-and-deploying-the-app"></a>Упаковка и развертывание приложения 
+## <a name="packaging-and-deploying-the-app-via-device-portal"></a>Упаковка и развертывание приложения на портале устройств
 
 >[!NOTE]
 >Если вы впервые упаковываете приложение Unreal для HoloLens, потребуется скачать вспомогательные файлы из Epic Launcher. 

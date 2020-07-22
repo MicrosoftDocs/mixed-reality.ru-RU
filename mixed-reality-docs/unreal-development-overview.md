@@ -3,20 +3,20 @@ title: Обзор разработки в Unreal
 description: Общие сведения о разработке для смешанной реальности в Unreal Engine 4
 author: hferrone
 ms.author: v-haferr
-ms.date: 06/10/2020
+ms.date: 7/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, потоковая передача, удаленное взаимодействие, смешанная реальность, разработка, начало работы, функции, новый проект, эмулятор, документация, руководства, функции, голограммы, разработка игр
-ms.openlocfilehash: 0e3f40c7aa05a9c5f93d7eb9dc9793b6daeb8b90
-ms.sourcegitcommit: 45da0a056fa42088ff81ccdd11232830fbe8430f
+ms.openlocfilehash: ecf982eb5d8128734c862bac2d8be29c1554edfe
+ms.sourcegitcommit: 96ae8258539b2f3edc104dd0dce8bc66f3647cdd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84720370"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86303625"
 ---
 # <a name="unreal-development-overview"></a>Обзор разработки в Unreal
 
-Приступить к разработке <a href="https://docs.microsoft.com/en-us/windows/mixed-reality" target="_blank" title="Документация по Смешанной реальности">приложений для смешанной реальности</a> — масштабная задача. Отпугивать здесь может необходимость осваивать новые понятия, платформы и ультрасовременные периферийные устройства. Но если вы уже разрабатываете в Unreal, для вас есть хорошие новости. В последнем <a href="https://docs.unrealengine.com/en-US/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="Заметки о выпуске Unreal Engine 4.25">выпуске</a> Unreal Engine реализована поддержка <a href="https://www.microsoft.com/en-us/windows/windows-mixed-reality" target="_blank" title="Документация по Windows Mixed Reality">Windows Mixed Reality</a> (смешанной реальности) и <a href="https://www.microsoft.com/en-us/hololens/hardware" target="_blank" title="Документация по HoloLens 2">HoloLens 2</a> (дополненной реальности). Особенности этого обновления:
+Приступить к разработке <a href="https://docs.microsoft.com/windows/mixed-reality" target="_blank" title="Документация по Смешанной реальности">приложений для смешанной реальности</a> — масштабная задача. Отпугивать здесь может необходимость осваивать новые понятия, платформы и ультрасовременные периферийные устройства. Но если вы уже разрабатываете в Unreal, для вас есть хорошие новости. В последнем <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="Заметки о выпуске Unreal Engine 4.25">выпуске</a> Unreal Engine реализована поддержка <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Документация по Windows Mixed Reality">Windows Mixed Reality</a> (смешанной реальности) и <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="Документация по HoloLens 2">HoloLens 2</a> (дополненной реальности). Особенности этого обновления:
 * поддержка подключаемого модуля средств UX смешанной реальности;
 * поддержка OpenXR;
 * удаленное взаимодействие с приложениями из настольного приложения;
@@ -24,7 +24,7 @@ ms.locfileid: "84720370"
 * Смешанный захват реальности
 * начальная поддержка пространственных привязок Azure.
 
-Если же вы новичок в разработке с использованием Unreal, советуем сначала изучить наши материалы: ознакомьтесь с <a href="https://docs.unrealengine.com//GettingStarted/index.html" target="_blank">серией руководств</a> по Unreal, чтобы войти в курс дела, и воспользуйтесь материалами и поддержкой, которые вы найдете на площадке <a href="https://www.unrealengine.com/marketplace//store" target="_blank">Unreal Marketplace</a> и на <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">форумах</a> по смешанной реальности. Эти ресурсы послужат вам путевкой в сообщество разработчиков и специалистов по решению задач на сегодняшнем рынке смешанной реальности.
+Если же вы новичок в разработке с использованием Unreal, советуем сначала изучить наши материалы: ознакомьтесь с <a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">серией руководств</a> по Unreal, чтобы войти в курс дела, и воспользуйтесь материалами и поддержкой, которые вы найдете на площадке <a href="https://www.unrealengine.com/marketplace/store" target="_blank">Unreal Marketplace</a> и на <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">форумах</a> по смешанной реальности. Эти ресурсы послужат вам путевкой в сообщество разработчиков и специалистов по решению задач на сегодняшнем рынке смешанной реальности.
 
 ## <a name="mixed-reality-toolkit-for-unreal"></a>Набор средств для смешанной реальности для Unreal
 
@@ -39,8 +39,8 @@ ms.locfileid: "84720370"
 
 Подробные сведения об этой функциональности и о настройке своего проекта можно найти в репозитории GitHub [UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 
-## <a name="additional-files"></a>Дополнительные файлы
-Если вы впервые создаете или развертываете приложение Unreal для HoloLens, вам потребуется [скачать вспомогательные файлы](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch6#packaging-and-deploying-the-app) из Epic Launcher.
+## <a name="hololens-2-platform-support"></a>Поддержка платформы HoloLens 2
+Если вы впервые создаете или развертываете приложение Unreal для HoloLens, вам потребуется [скачать вспомогательные файлы для поддерживаемой платформы](unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) из Epic Launcher.
 
 ## <a name="tutorial"></a>Руководство
 
@@ -48,22 +48,27 @@ ms.locfileid: "84720370"
 
 Это комплексная серия руководств позволяет получить практический опыт работы с распространенными интерактивными компонентами пользовательского интерфейса и сценариями взаимодействия с пользователем. Вы научитесь настраивать проект, добавлять взаимодействия в сцену и развертывать приложение на устройстве или эмуляторе. Все, что вам потребуется — это Windows 10, эмулятор и Visual Studio 2019.
 
+## <a name="debugging"></a>Отладка
+
+Чтобы выполнить отладку приложения, работающего в HoloLens 2, с помощью Visual Studio, следуйте приведенным здесь инструкциям по [отладке установленного приложения UWP на удаленном устройстве](https://docs.microsoft.com/visualstudio/debugger/debug-installed-app-package?view=vs-2019#remote).
 
 ## <a name="performance"></a>Производительность
 
-При разработке для смешанной реальности необходимо учитывать требования к производительности, которые зависят от платформы. Приложение HoloLens 2 должно обрабатывать 60 кадров в секунду, чтобы голограммы работали стабильно и с приемлемым временем отклика. Добиться этого в своих приложениях вам помогут [рекомендации Unreal по оптимизации производительности](performance-recommendations-for-unreal.md).
+При разработке для смешанной реальности необходимо учитывать требования к производительности, которые зависят от платформы. Приложение HoloLens 2 должно обрабатывать 60 кадров в секунду, чтобы голограммы работали стабильно и с приемлемым временем отклика. Достичь этого в приложениях Unreal можно, выполнив наши [рекомендации по повышению производительности](performance-recommendations-for-unreal.md).
 
 ## <a name="guides-to-specific-features"></a>Руководства по отдельным функциям
 
 Ряд ключевых функций смешанной реальности не описан в нашей серии руководств по разработке. Подробные сведения об этих функциях и их практическом применении вы найдете в следующих руководствах: 
-* [Отслеживание рук](unreal-hand-tracking.md)
 * [Отслеживание взгляда](unreal-gaze-input.md)
-* [Пространственное сопоставление](unreal-spatial-mapping.md)
-* [Пространственные привязки](unreal-spatial-anchors.md)
-* [Голосовой ввод](unreal-voice-input.md)
+* [Отслеживание рук](unreal-hand-tracking.md)
 * [Камера HoloLens](unreal-hololens-camera.md)
+* [Пространственные привязки](unreal-spatial-anchors.md)
+* [Пространственное сопоставление](unreal-spatial-mapping.md)
+* [Пространственный звук](unreal-spatial-audio.md)
+* [Потоковая передача](unreal-streaming.md)
+* [Голосовой ввод](unreal-voice-input.md)
 * [QR-коды](unreal-qr-codes.md)
-
+* [Рекомендации по повышению производительности](performance-recommendations-for-unreal.md)
 
 ## <a name="supported-features"></a>Поддерживаемые компоненты
 
@@ -81,15 +86,15 @@ ms.locfileid: "84720370"
 | Пространственный звук | 4.23 |
 | Поддержка потоковой передачи на экран для зрителей | 4.24 |
 | Планарные координаты LSR при потоковой передаче | 4.24 |
-| Примеры приложений ([HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples) и [Mission AR](https://docs.unrealengine.com/en-US/Resources/Showcases/MissionAR/index.html)) | 4.24 |
+| Примеры приложений ([HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples) и [Mission AR](https://docs.unrealengine.com/Resources/Showcases/MissionAR/index.html)) | 4.24 |
 | Просмотр на нескольких мобильных устройствах: Производительность до 60 кадров/с | 4.25 |
 | Отрисовка для третьей камеры | 4.25 |
-| Потоковая передача из упакованного классического приложения | 4.25 |
+| Потоковая передача из упакованного классического приложения | 4.25.1 |
 | Пространственные привязки Azure для HoloLens 2 (бета-версия) | 4.25 |
 | Поддержка OpenXR (бета-версия) | 4.25 |
 | Поддержка средств UX (0.8) | 4.25 |
 | Документация и руководства для разработчиков | 4.25 |
 
 ## <a name="see-also"></a>См. также статью
-* <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/index.html" target="_blank">Документация Unreal по потоковой передаче, развертыванию в эмуляторе и на устройстве</a>
-* <a href="https://docs.unrealengine.com//Platforms/Mobile/Performance/index.html" target="_blank">Рекомендации по производительности Unreal для мобильных устройств</a>
+* <a href="https://docs.unrealengine.com/Platforms/AR/HoloLens2/index.html" target="_blank">Документация Unreal по потоковой передаче, развертыванию в эмуляторе и на устройстве</a>
+* <a href="https://docs.unrealengine.com/Platforms/Mobile/Performance/index.html" target="_blank">Рекомендации по производительности Unreal для мобильных устройств</a>

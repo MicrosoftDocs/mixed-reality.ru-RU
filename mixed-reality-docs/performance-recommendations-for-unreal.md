@@ -7,12 +7,12 @@ ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, смешанная реальность, производительность, оптимизация, параметры, документация
-ms.openlocfilehash: 9f128a3ef09f29fc745c21b09b7ec97f5db33605
-ms.sourcegitcommit: 7f50210b71a65631fd1bc3fdb215064e0db34333
+ms.openlocfilehash: a7972962eeb2b1480a7da38210b5ee77104f508b
+ms.sourcegitcommit: 96ae8258539b2f3edc104dd0dce8bc66f3647cdd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84533126"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86303643"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Рекомендации по производительности для Unreal
 
@@ -32,10 +32,11 @@ ms.locfileid: "84533126"
     * Прокрутите до раздела **Engine** (Подсистема), выберите **Rendering** (Отрисовка), разверните раздел **Culling** (Отбрасывание объектов) и снимите флажок **Occlusion Culling** (Отбрасывание загораживаемых объектов).
         + Если вам требуется удаление скрытых объектов для подробной отрисовки сцены, рекомендуется установить флажок **Support Software Occlusion Culling** (Поддержка программного удаления скрытых объектов) в разделе **Engine > Rendering** (Движок > Отрисовка). Это позволит Unreal выполнять соответствующую обработку на центральном процессоре, избегая запросов для этой цели к GPU, которые выполняются неэффективно на HoloLens 2.
 
-![Выбор мобильного устройства в качестве целевого](images/unreal/performance-recommendations-img-02.png)
+![Отключение отбрасывания загораживаемых объектов](images/unreal/performance-recommendations-img-02.png)
 
-3. Обновление отрисовки виртуальной реальности:
-    * Прокрутите до раздела **Engine** (Подсистема), выберите пункт **Rendering** (Отрисовка), разверните раздел **VR** (Виртуальная реальность) и установите флажки **Instanced Stereo** (Параллельное стерео) и **Mobile Multi-View** (Мобильная мультиотрисовка).
-        + Возможно, для включения параметра **Mobile Multi-View** (Мобильная мультиотрисовка) потребуется снять флажок **Mobile Post-Processing** (Постобработка на мобильном устройстве).
+3. Использование нескольких представлений для мобильных устройств:
+    * Прокрутите до раздела **Engine** (Подсистема), выберите пункт **Rendering** (Отрисовка), разверните раздел **VR** (Виртуальная реальность) и установите флажки **Instanced Stereo** (Параллельное стерео) и **Mobile Multi-View** (Мобильная мультиотрисовка). Необходимо снять флажок Mobile HDR (HDR для мобильных устройств).
 
-![Выбор мобильного устройства в качестве целевого](images/unreal/performance-recommendations-img-03.png)
+![Параметры отрисовки виртуальной реальности](images/unreal/performance-recommendations-img-03.png)
+
+4. Установите для параметра **Maximum number of CSM cascades to render** (Максимальное число каскадов CSM для отрисовки) значение **1** и для параметра **Max Movable Spotlights / Point Lights** (Максимальное число перемещаемых прожекторов или точечных источников) значение **0**. 

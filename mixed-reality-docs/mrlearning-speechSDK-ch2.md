@@ -7,12 +7,12 @@ ms.date: 06/27/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 75ddce9063bb9d33f5fe2343fe30178222a5f8ac
-ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
+ms.openlocfilehash: 7a0fa915a80763300eff470e29356034d6a0f841
+ms.sourcegitcommit: 96ae8258539b2f3edc104dd0dce8bc66f3647cdd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "79031624"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86303675"
 ---
 # <a name="2-using-speech-recognition-to-execute-commands"></a>2. Использование функции распознавания речи для выполнения команд
 
@@ -46,7 +46,7 @@ ms.locfileid: "79031624"
 > Этому приложению требуется подключение к Azure, поэтому не забудьте проверить связь компьютера или устройства с Интернетом.
 
 > [!TIP]
-> Если вы ожидаете, что подключение к Azure часто будет невозможным, речевые команды можно реализовать с помощью МRТК по инструкциям из раздела [Enabling Voice Commands](mrlearning-base-ch5.md#enabling-voice-commands) (Включение голосовых команд).
+> Если вы ожидаете, что подключение к Azure часто будет невозможным, речевые команды можно реализовать с помощью МRТК по инструкциям из статьи [Использование голосовых команд](mr-learning-base-09.md).
 
 ## <a name="congratulations"></a>Поздравляем!
 
