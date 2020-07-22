@@ -1,21 +1,21 @@
 ---
 title: Потоковая передача в Unreal
 description: Руководство по потоковой передаче в Unreal для HoloLens 2
-author: suwu
+author: sw5813
 ms.author: suwu
-ms.date: 6/8/2020
+ms.date: 7/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, смешанная реальность, потоковая передача, компьютер, голографическое удаленное взаимодействие с приложением, проигрыватель для голографического удаленного взаимодействия, документация
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 78a019f5b74b254c1f32ec85dc639df47648555f
-ms.sourcegitcommit: ff0e89b07d0b4a945967d64c5b8845a21dc5f476
+ms.openlocfilehash: d25efbcf83e45749cc4eb8b99581b71105c59c9d
+ms.sourcegitcommit: 96ae8258539b2f3edc104dd0dce8bc66f3647cdd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84888915"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86303535"
 ---
 # <a name="streaming-in-unreal"></a>Потоковая передача в Unreal
 
@@ -32,7 +32,8 @@ ms.locfileid: "84888915"
 При потоковой передаче вы получаете доступ практически ко всем возможностям HoloLens, которые можно использовать при запуске приложения на устройстве. К ним относятся [отслеживание суставов рук](unreal-hand-tracking.md) (если вы используете HoloLens 2), [пространственное картирование](unreal-spatial-mapping.md) и [пространственные привязки](unreal-spatial-anchors.md). Но при этом недоступны функции из этого [списка ограничений](holographic-remoting-troubleshooting.md). 
 
 > [!NOTE]
-> Качество потоковой передачи в значительной степени зависит от уровня сигнала вашей беспроводной сети.
+> * Качество потоковой передачи в значительной степени зависит от уровня сигнала вашей беспроводной сети.
+> * Все возможности автоматически включаются в приложении Holographic Remoting Player. Если вы обнаружите возможность, для включения которой требуется разрешение пользователя (например, отслеживание движения глаз) при потоковой передаче, но не при выполнении на устройстве, убедитесь, что вы включили необходимые возможности в параметрах проекта.
 
 ## <a name="device-support"></a>Поддержка устройств
 
@@ -50,7 +51,7 @@ ms.locfileid: "84888915"
     </tr>
      <tr>
         <td>Unreal Editor</td>
-        <td>✔</td>
+        <td>✔️</td>
         <td>✔️</td>
         <td>❌</td>
     </tr>
