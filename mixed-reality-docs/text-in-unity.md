@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, проектирование, элементы управления, шрифт, типография, Пользовательский интерфейс, UX
-ms.openlocfilehash: 8662ff8a8e1e99455354392d7dc852feb1fe1589
-ms.sourcegitcommit: 7ca383ef1c5dc895ca2a289435f2e9d4c1ee6e65
+ms.openlocfilehash: 6aa03eedf717fb73877db8660526e13444c43fe9
+ms.sourcegitcommit: 2f5f95a9ca1b02d94eb9163f0f4ff6b1e4126de2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85345714"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87376576"
 ---
 # <a name="text-in-unity"></a>Текст в Unity
 
@@ -65,14 +65,14 @@ ms.locfileid: "85345714"
  *в пределах диапазона практически и дальнего взаимодействия*
 
 ### <a name="the-minimum-legible-font-size"></a>Минимальный размер неудобочитаемого шрифта
-| Distance | Угол просмотра | Высота текста | Размер шрифта |
+| расстояние; | Угол просмотра | Высота текста | Размер шрифта |
 |---------|---------|---------|---------|
 | 45cm (расстояние прямого манипулирования) | 0,4 ° — 0,5 ° | 3,14 — 3,9 мм | 8.9 — 11.13 PT |
 | 2 | 0,35 °-0,4 ° | 12.21 – 13.97 мм | 34.63-39.58 PT |
 
 
 ### <a name="the-comfortably-legible-font-size"></a>Удобно, чтобы размер шрифта разборчиво
-| Distance | Угол просмотра | Высота текста | Размер шрифта |
+| расстояние; | Угол просмотра | Высота текста | Размер шрифта |
 |---------|---------|---------|---------|
 | 45cm (расстояние прямого манипулирования) | 0.65 °-0,8 ° | 5.1 – 6.3 мм | 14.47-17.8 PT |
 | 2 | 0,6 °-0,75 ° | 20,9-26,2 мм | 59.4-74.2 pt |
@@ -98,8 +98,8 @@ Segoe UI (шрифт по умолчанию для Windows) хорошо раб
 *Шейдер с поддержкой перекрытия*
 
 
-## <a name="see-also"></a>См. также
-* [Текст prefab в МРТК](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Prefabs/Text)
+## <a name="see-also"></a>См. также раздел
+* [Текст prefab в МРТК](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
 * [Оформление текста](typography.md)
 
  
