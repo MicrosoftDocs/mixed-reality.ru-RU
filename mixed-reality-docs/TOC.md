@@ -156,17 +156,15 @@
 ###### [3. Придание пространственной формы звуку из видео](unity-spatial-audio-ch3.md)
 ###### [4. Включение и отключение пространственного звука во время выполнения](unity-spatial-audio-ch4.md)
 ###### [5. Использование реверберации для добавления эффекта расстояния пространственному звуку](unity-spatial-audio-ch5.md)
-
-#### Руководства по Облачным службам Azure
-##### [1. Облачные службы Azure для HoloLens 2](mr-learning-azure-01.md)
-##### [2. Интеграция службы хранилища Azure](mr-learning-azure-02.md)
-##### [3. Интеграция Пользовательского визуального распознавания Azure](mr-learning-azure-03.md)
-##### [4. Интеграция Пространственных привязок Azure](mr-learning-azure-04.md)
-##### [5. Интеграция Службы Azure Bot](mr-learning-azure-05.md)
-
-#### Руководства по голографическому удаленному взаимодействию с ПК
-##### [1. Голографическое удаленное взаимодействие с ПК: начало работы](mr-learning-pc-holographic-remoting-01.md)
-##### [2. Создание приложения для голографического удаленного взаимодействия с ПК](mr-learning-pc-holographic-remoting-02.md)
+##### Руководства по Облачным службам Azure
+###### [1. Облачные службы Azure для HoloLens 2](mr-learning-azure-01.md)
+###### [2. Интеграция службы хранилища Azure](mr-learning-azure-02.md)
+###### [3. Интеграция Пользовательского визуального распознавания Azure](mr-learning-azure-03.md)
+###### [4. Интеграция Пространственных привязок Azure](mr-learning-azure-04.md)
+###### [5. Интеграция Службы Azure Bot](mr-learning-azure-05.md)
+##### Руководства по голографическому удаленному взаимодействию с ПК
+###### [1. Голографическое удаленное взаимодействие с ПК: начало работы](mr-learning-pc-holographic-remoting-01.md)
+###### [2. Создание приложения для голографического удаленного взаимодействия с ПК](mr-learning-pc-holographic-remoting-02.md)
 
 #### Руководства по HoloLens (1-го поколения) и иммерсивным гарнитурам
 ##### [100. Основы смешанной реальности: начало работы с Unity](holograms-100.md)
@@ -224,7 +222,7 @@
 #### [Использование Vuforia с Unity](vuforia-development-overview.md)
 
 ### Примеры приложений
-#### HoloLens 2 
+#### HoloLens 2
 ##### [Surfaces](sampleapp-surfaces.md)
 ##### [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 ##### [Galaxy Explorer 2.0](galaxy-explorer-update.md)
@@ -257,7 +255,8 @@
 #### [Отслеживание рук в Unreal](unreal-hand-tracking.md)
 #### [Пространственное сопоставление в Unreal](unreal-spatial-mapping.md)
 #### [Пространственный звук в Unreal](unreal-spatial-audio.md)
-#### [Пространственные привязки в Unreal](unreal-spatial-anchors.md)
+#### [Локальные пространственные привязки в Unreal](unreal-spatial-anchors.md)
+#### [Пространственные привязки Azure в Unreal](unreal-azure-spatial-anchors.md)
 #### [Голосовой ввод в Unreal](unreal-voice-input.md)
 ### Возможности и интерфейсы API платформы
 #### [Камера HoloLens в Unreal](unreal-hololens-camera.md)
