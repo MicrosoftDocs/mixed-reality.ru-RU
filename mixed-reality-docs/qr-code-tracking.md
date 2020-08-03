@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: VR, лбе, развлечения на основе расположения, VR Аркадные, Аркадные, иммерсивное, QR, QR-код, hololens2
-ms.openlocfilehash: e14fe14fd76bceaf506dd7b85a57825c3f18d223
-ms.sourcegitcommit: 6bc6757b9b273a63f260f1716c944603dfa51151
+ms.openlocfilehash: 6d3dc442c28e498cc00e14325398de2026261a17
+ms.sourcegitcommit: ef0bf03833eda826ed0b884859b4573775112aba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73438118"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87476766"
 ---
 # <a name="qr-code-tracking"></a>Отслеживание QR-кода
 
@@ -21,14 +21,14 @@ HoloLens 2 может обнаруживать QR-коды в окружении
 
 <table>
 <tr>
-<th>Возможность</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивные гарнитуры</a></th>
+<th>Функция</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1-го поколения)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Иммерсивные гарнитуры</a></th>
 </tr><tr>
-<td> Обнаружение QR-кода</td><td style="text-align: center;">‎</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">См. Примечание</td>
+<td> Обнаружение QR-кода</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>
 </table>
 
 >[!NOTE]
->Поддержка впечатляющих головных телефонов Windows Mixed Reality на настольных ПК в настоящее время не поддерживается в пакете NuGet ниже.  Следите за дальнейшими обновлениями в службе поддержки настольных систем.
+>Отслеживание QR-кодов с помощью впечатляющих головных телефонов Windows Mixed Reality на настольных компьютерах поддерживается в Windows 10 версии 2004 и более поздних версиях. Используйте API Microsoft. Микседреалити. Кркодеватчер. support (), чтобы определить, поддерживается ли эта функция на текущем устройстве.
 
 ## <a name="getting-the-qr-package"></a>Получение QR-пакета
 Пакет NuGet для обнаружения QR-кода можно скачать [здесь](https://nuget.org/Packages/Microsoft.MixedReality.QR).
@@ -36,16 +36,16 @@ HoloLens 2 может обнаруживать QR-коды в окружении
 ## <a name="detecting-qr-codes"></a>Обнаружение QR-кодов
 
 ### <a name="adding-the-webcam-capability"></a>Добавление возможности веб-камеры
-Для обнаружения QR-кодов необходимо добавить `webcam` возможностей в манифест. Эта возможность необходима, так как данные в обнаруженных кодах в пользовательской среде могут содержать конфиденциальные сведения.
+Для обнаружения QR-кодов необходимо добавить в `webcam` Манифест возможность. Эта возможность необходима, так как данные в обнаруженных кодах в пользовательской среде могут содержать конфиденциальные сведения.
 
-Разрешение можно запросить, вызвав `QRCodeWatcher.RequestAccessAsync()`:
+Разрешение можно запросить, вызвав `QRCodeWatcher.RequestAccessAsync()` :
 
-_C#:_
+_См_
 ```cs
 await QRCodeWatcher.RequestAccessAsync();
 ```
 
-_C++:_
+_C++_
 ```cpp
 co_await QRCodeWatcher.RequestAccessAsync();
 ```
@@ -58,9 +58,9 @@ co_await QRCodeWatcher.RequestAccessAsync();
 
 Вы можете использовать API обнаружения QR-кода в Unity, не принимая зависимость от МРТК. Для этого необходимо установить пакет NuGet с помощью [NuGet для Unity](https://github.com/GlitchEnzo/NuGetForUnity).
 
-Существует пример приложения Unity, которое отображает holographic-квадрат над QR-кодами вместе со связанными данными, такими как GUID, физический размер, метка времени и декодированные данные. Это приложение можно найти по адресу https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes.
+Существует пример приложения Unity, которое отображает holographic-квадрат над QR-кодами вместе со связанными данными, такими как GUID, физический размер, метка времени и декодированные данные. Это приложение можно найти по адресу https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes .
 
-### <a name="detecting-qr-codes-in-c"></a>Обнаружение QR-кодов вC++
+### <a name="detecting-qr-codes-in-c"></a>Обнаружение QR-кодов в C++
 
 ```cpp
 using namespace winrt::Windows::Foundation;
@@ -128,7 +128,7 @@ private:
 
 ![Система координат QR-кода](images/Qr-coordinatesystem.png) 
 
-Для объекта Кркоде в следующем C++ коде показано, как создать прямоугольник и поместить его с помощью системы координат QR-кода:
+Для объекта Кркоде в следующем коде C++ показано, как создать прямоугольник и разместить его с помощью системы координат QR-кода:
 
 ```cpp
 // Creates a 2D rectangle in the x-y plane, with the specified properties.
@@ -190,7 +190,7 @@ void MyApplication::OnAddedQRCode(const QRCodeAddedEventArgs& args)
 
 [QR-спецификация](https://www.qrcode.com/en/howto/code.html) содержит дополнительные сведения о зонах «тихий».
 
-### <a name="lighting-and-backdrop"></a>Освещение и подложка
+### <a name="lighting-and-backdrop"></a>Освещение и фон
 Качество обнаружения QR-кодов является уязвимым для различных освещения и подложки. 
 
 В сцене с особенно ярким освещением распечатайте черный цвет на сером фоне. В противном случае распечатайте черный QR-код на белом фоне.
