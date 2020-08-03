@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/07/2020
 ms.topic: article
 keywords: порт, перенос, Unity, по промежуточного слоя, ядро, UWP, Win32
-ms.openlocfilehash: ff97f843d6af62a5d49d7920abdf78fa4d1e46c9
-ms.sourcegitcommit: 2813f5b3027d47f7c6e9772338935eeccfa2aaec
+ms.openlocfilehash: ed6c613c8aa3649cffb42d08dbb18661f06b9a53
+ms.sourcegitcommit: ef0bf03833eda826ed0b884859b4573775112aba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86408202"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87476936"
 ---
 # <a name="porting-guides"></a>Руководства по переносу
 
@@ -33,7 +33,7 @@ Windows 10 включает прямую поддержку для впечат�
 
 ### <a name="common-step-1-make-sure-you-have-the-right-development-hardware"></a>Общий шаг 1. Убедитесь, что у вас есть правильное оборудование для разработки
 
-На странице [Установка средств](install-the-tools.md#for-immersive-vr-headset-development) перечислены рекомендуемые средства разработки.
+На странице [Установка средств](install-the-tools.md#immersive-vr-headset-requirements) перечислены рекомендуемые средства разработки.
 
 ### <a name="common-step-2-upgrade-to-the-latest-flight-of-windows-10"></a>Общий шаг 2. обновление до последнего рейса Windows 10
 
@@ -154,7 +154,7 @@ Windows Mixed Reality будет доступна на широком класс
 
 [Unity](https://docs.unity3d.com/Manual/Profiler.html) и [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) включают в себя Профилировщики производительности, а как [Корпорация Майкрософт](understanding-performance-for-mixed-reality.md) , так и [Корпорация Intel](https://software.intel.com/articles/vr-content-developer-guide) публикуют рекомендации по профилированию и оптимизации производительности. Существует подробное обсуждение производительности, доступное [для понимания производительности смешанной реальности](understanding-performance-for-mixed-reality.md). Дополнительные сведения о Unity см. в разделе [рекомендации по повышению производительности для Unity](performance-recommendations-for-unity.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 * [Руководство по переносу логики ввода для Unity](input-porting-guide-for-unity.md)
 * [Минимальные рекомендации по совместимости Windows Mixed Reality с оборудованием ПК](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Основные сведения о производительности смешанной реальности](understanding-performance-for-mixed-reality.md)

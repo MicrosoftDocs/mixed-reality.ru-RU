@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, проектирование, элементы управления, шрифт, типография, Пользовательский интерфейс, UX
-ms.openlocfilehash: 6aa03eedf717fb73877db8660526e13444c43fe9
-ms.sourcegitcommit: 2f5f95a9ca1b02d94eb9163f0f4ff6b1e4126de2
+ms.openlocfilehash: 63f0992a4623cf91c1b9c62c4ebf30de12529515
+ms.sourcegitcommit: ef0bf03833eda826ed0b884859b4573775112aba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87376576"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87476946"
 ---
 # <a name="text-in-unity"></a>Текст в Unity
 
@@ -83,22 +83,24 @@ Segoe UI (шрифт по умолчанию для Windows) хорошо раб
 ![Просмотр угла ](images/Text_In_Unity_ViewingAngle.jpg)
  *просмотра расстояния, угла и высоты текста*
 
-## <a name="sharp-text-rendering-quality-with-proper-dimension"></a>Качество отрисовки текста с правильным измерением
+## <a name="text-with-mixed-reality-toolkit-v2"></a>Текст с набором средств Mixed Reality версии 2
+
+### <a name="sharp-text-rendering-quality-with-proper-dimension"></a>Качество отрисовки текста с правильным измерением
 
 На основе этих коэффициентов масштабирования мы создали [текст Prefabs с текстом пользовательского интерфейса и сеткой трехмерного текста](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text). Разработчики могут использовать эти Prefabs, чтобы получить четкий текст и согласовать размер шрифта.
 
 ![Качество отрисовки текста с правильным измерением](images/hug-text-06-1000px.png)<br>
 *Качество отрисовки текста с правильным измерением*
 
-## <a name="shader-with-occlusion-support"></a>Шейдер с поддержкой перекрытия
+### <a name="shader-with-occlusion-support"></a>Шейдер с поддержкой перекрытия
 
-Материал шрифта по умолчанию Unity не поддерживает перекрытия. По этой причине текст позади объектов будет отображаться по умолчанию. Мы включили простой [шейдер, который поддерживает перекрытия](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit/StandardAssets/Shaders/Text3DShader.shader). На рисунке ниже показан текст со стандартным материалом шрифта (слева) и текстом с правильным перекрытия (справа).
+Материал шрифта по умолчанию Unity не поддерживает перекрытия. По этой причине текст позади объектов будет отображаться по умолчанию. Мы включили простой [шейдер, который поддерживает перекрытия](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MRTK/Core/StandardAssets/Shaders/Text3DShader.shader). На рисунке ниже показан текст со стандартным материалом шрифта (слева) и текстом с правильным перекрытия (справа).
 
 ![Шейдер с поддержкой перекрытия](images/hug-text-07-1000px.png)<br>
 *Шейдер с поддержкой перекрытия*
 
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 * [Текст prefab в МРТК](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
 * [Оформление текста](typography.md)
 
