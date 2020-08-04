@@ -8,17 +8,17 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Смешанная реальность, обнаружение, распространение, указательный, целевая страница, проектирование, разработка, руководства, примеры приложений, основы, примеры, ресурсы, практические руководства по HoloLens, проекты с открытым кодом, основные понятия, взаимодействие
-ms.openlocfilehash: 708a6f83c2de149be9c221130b83f5d787f8f56a
-ms.sourcegitcommit: 8daefb763d1f23fe02b95b766b00b373f04c5c2d
+ms.openlocfilehash: a95de2020e4020db86e7e226a81fcad8a12e7427
+ms.sourcegitcommit: ef0bf03833eda826ed0b884859b4573775112aba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86447920"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87476874"
 ---
 # <a name="start-designing-and-prototyping"></a>Начните проектировать и создавать прототипы
 
 
-![фрагмент проекта смешанной реальности](images/03_Design.png)
+![фрагмент проекта смешанной реальности](images/design-hero-image.png)
 
 ## <a name="expand-your-design-process"></a>[Расширение процесса разработки](case-study-expanding-the-design-process-for-mixed-reality.md)
 
