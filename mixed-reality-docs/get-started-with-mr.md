@@ -3,16 +3,16 @@ title: Приступая к работе со смешанной реально
 description: Эта статья поможет тем, кто еще не работал со смешанной реальностью, узнать, что это такое, и понять ее возможности.
 author: grbury
 ms.author: grbury
-ms.date: 08/24/2019
+ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
-ms.openlocfilehash: 720261164a4b2eedc47c1054f19edfb109ed3f83
-ms.sourcegitcommit: 8daefb763d1f23fe02b95b766b00b373f04c5c2d
+ms.openlocfilehash: 010e0b9d73b5537d480a28ee510fe2ae1bde3b10
+ms.sourcegitcommit: ef0bf03833eda826ed0b884859b4573775112aba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86451380"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87476926"
 ---
 # <a name="get-started-with-mixed-reality"></a>Приступая к работе со смешанной реальностью
 
@@ -184,7 +184,7 @@ HoloLens 2 предлагает наиболее комфортную и имм
     :::column:::
        [![Попробуйте](images/icon-hololensuser.jpg)](https://www.microsoft.com//windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)<br>
         **[Попробуйте смешанную реальность](https://www.microsoft.com//windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)**<br>
-        Получите демоверсию Смешанной реальности и HoloLens в вашем местном Microsoft Store. 
+        Получите демоверсию Смешанной реальности и HoloLens в вашем местном Microsoft Store.
     :::column-end:::
     :::column:::
         [![Станьте автором](images/icon-design.jpg)](design.md)<br>
@@ -211,4 +211,4 @@ HoloLens 2 предлагает наиболее комфортную и имм
 
 
 >[!IMPORTANT]
->Все материалы по разработке решений смешанной реальности, содержащиеся на этом сайте, предоставляются исключительно для ознакомления. Вы как разработчик приложения несете полную ответственность за приложение, его использование и влияние на конечных пользователей. В частности, вы гарантируете, что приложение не станет причиной дискомфорта, травмирования или любого другого вреда для пользователей. Также вы отвечаете за наличие соответствующих предупреждений и заявлений об отказе от ответственности. Вы должны во всех случаях предпринимать соответствующие действия, касающиеся разработки и публикации приложения, чтобы гарантировать его безопасность и выполнение всех обязательств, установленных в [соглашении между разработчиком приложений и корпорацией Майкрософт](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement). 
+>Все материалы по разработке решений смешанной реальности, содержащиеся на этом сайте, предоставляются исключительно для ознакомления. Вы как разработчик приложения несете полную ответственность за приложение, его использование и влияние на конечных пользователей. В частности, вы гарантируете, что приложение не станет причиной дискомфорта, травмирования или любого другого вреда для пользователей. Также вы отвечаете за наличие соответствующих предупреждений и заявлений об отказе от ответственности. Вы должны во всех случаях предпринимать соответствующие действия, касающиеся разработки и публикации приложения, чтобы гарантировать его безопасность и выполнение всех обязательств, установленных в [соглашении между разработчиком приложений и корпорацией Майкрософт](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement).

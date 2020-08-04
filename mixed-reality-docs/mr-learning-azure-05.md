@@ -3,16 +3,16 @@ title: Учебники по облачным службам Azure, часть 
 description: Пройдите этот курс, чтобы узнать, как реализовать Службу Azure Bot и возможность распознавания естественного языка в приложении HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 07/01/2020
 ms.topic: article
 keywords: смешанная реальность, unity, учебник, hololens, hololens 2, служба azure bot, luis, естественный язык, чат-бот
 ms.localizationpriority: high
-ms.openlocfilehash: e3a64488b1d6d22ac52f798fe90356ce8e995e26
-ms.sourcegitcommit: 96ae8258539b2f3edc104dd0dce8bc66f3647cdd
+ms.openlocfilehash: daf97cde1477a84c1776a069ec5b8d1a185b63cc
+ms.sourcegitcommit: 2f5f95a9ca1b02d94eb9163f0f4ff6b1e4126de2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86306514"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87376456"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5. Интеграция Службы Azure Bot
 

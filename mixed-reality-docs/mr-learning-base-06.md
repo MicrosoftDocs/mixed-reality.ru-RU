@@ -3,16 +3,16 @@ title: Серия руководств по началу работы, част�
 description: Из этого курса вы узнаете, как с помощью набора средств для смешанной реальности (MRTK) создавать приложения смешанной реальности.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: a7c4ea140a9c27f1a92680da6bbe1fb3a4bdc233
-ms.sourcegitcommit: 96ae8258539b2f3edc104dd0dce8bc66f3647cdd
+ms.openlocfilehash: 4eecbd7d292a4d23e0dddc8e9244ed2701a10381
+ms.sourcegitcommit: 2f5f95a9ca1b02d94eb9163f0f4ff6b1e4126de2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86306250"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87376626"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Создание пользовательских интерфейсов
 

@@ -3,16 +3,16 @@ title: Руководства по началу работы Инициализ�
 description: Из этого курса вы узнаете, как с помощью набора средств для смешанной реальности (MRTK) создавать приложения смешанной реальности.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 11/01/2019
+ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 4f72f70b9eaac159f7d9231e61f23d18d708d0c7
-ms.sourcegitcommit: 96ae8258539b2f3edc104dd0dce8bc66f3647cdd
+ms.openlocfilehash: 5cac7d6f776619cbc2a0e0891b7915b656708726
+ms.sourcegitcommit: 2f5f95a9ca1b02d94eb9163f0f4ff6b1e4126de2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86306277"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87376656"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Инициализация проекта и развертывание первого приложения
 

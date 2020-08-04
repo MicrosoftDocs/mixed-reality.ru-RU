@@ -3,16 +3,16 @@ title: Руководства по многопользовательским в
 description: В рамках этого курса вы узнаете, как реализовать многопользовательские возможности в приложении HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: eff600ba6388732ab9aa200ce41494cac1dddf35
-ms.sourcegitcommit: 96ae8258539b2f3edc104dd0dce8bc66f3647cdd
+ms.openlocfilehash: ebdef9818aace28b32e91384cd9d3278da2733b4
+ms.sourcegitcommit: 2f5f95a9ca1b02d94eb9163f0f4ff6b1e4126de2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86306799"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87376346"
 ---
 # <a name="1-introduction"></a>1. Введение
 

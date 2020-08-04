@@ -8,12 +8,12 @@ ms.date: 06/5/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: смешанная реальность, разрабатывать, разработка, HoloLens, облачные службы
-ms.openlocfilehash: 80b0b802222684c1219987b197e4219eca8bfc56
-ms.sourcegitcommit: 8daefb763d1f23fe02b95b766b00b373f04c5c2d
+ms.openlocfilehash: 26c5f91eab2b39fbd809010ab0ac738d81dff854
+ms.sourcegitcommit: 161f3c5a80f6988a9c4af26e29481fee06840e0f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86451390"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87390221"
 ---
 # <a name="cloud-services"></a>Облачные службы
 
@@ -31,7 +31,7 @@ ms.locfileid: "86451390"
 ![Пример использования службы "Удаленная отрисовка Azure" в демонстрационном приложении Unity](images/showcase-app.png)
 
 ### <a name="azure-spatial-anchors"></a>Пространственные привязки Azure
-[Пространственные привязки Azure](https://docs.microsoft.com/azure/spatial-anchors) (ASA) — это кросс-платформенная служба, позволяющая создавать приложения смешанной реальности с поддержкой пространственных данных. С помощью Пространственных привязок Azure вы можете картировать, сохранять голографическое содержимое и предоставлять к нему доступ на различных устройства и в реальном масштабе. 
+[Пространственные привязки Azure](https://docs.microsoft.com/azure/spatial-anchors) (ASA) — это кросс-платформенная служба, позволяющая создавать приложения смешанной реальности с поддержкой пространственных данных. С помощью Пространственных привязок Azure вы можете картировать, сохранять голографическое содержимое и предоставлять к нему доступ на различных устройства и в реальном масштабе.
 
 ![Пример использования службы "Пространственные привязки Azure"](images/persistence.gif)
 
