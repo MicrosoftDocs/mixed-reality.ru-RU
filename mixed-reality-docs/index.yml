@@ -1,99 +1,219 @@
-### YamlMime:Landing
-title: Добро пожаловать в смешанную реальность
-summary: Погрузитесь в расширяющийся мир приложений смешанной реальности с Windows Mixed Reality, набором средств для смешанной реальности (MRTK), Unity, Unreal и многими другими решениями для HoloLens и иммерсивных гарнитур Windows.
+### YamlMime:Hub
+title: Документация по смешанной реальности
+summary: Исследуйте расширяющийся мир приложений смешанной реальности с Windows Mixed Reality, набором средств для смешанной реальности (MRTK), Unity, Unreal, а также многими другими решениями для HoloLens и иммерсивных гарнитур Windows.
+brand: windows
 metadata:
-  title: Добро пожаловать в смешанную реальность
-  description: Узнайте, как использовать средства и функции смешанной реальности на таких устройствах, как HoloLens 2.
-  ms.topic: landing-page
+  title: Документация по смешанной реальности
+  description: Погрузитесь в расширяющийся мир приложений смешанной реальности с Windows Mixed Reality, набором средств для смешанной реальности (MRTK), Unity, Unreal и многими другими решениями для HoloLens и иммерсивных гарнитур Windows.
+  services: service
+  ms.service: service
+  ms.subservice: subservice
+  ms.topic: hub-page
+  ms.collection: collection
   author: hferrone
   ms.author: v-haferr
-  ms.date: 07/03/2020
-  ms.openlocfilehash: 4e4d070b04c722c66c04bb28c5880dc64f46b15b
-  ms.sourcegitcommit: 161f3c5a80f6988a9c4af26e29481fee06840e0f
+  ms.date: 07/23/2020
+  ms.openlocfilehash: def9c41323029265a3f7d1c89b811eda94d88cbf
+  ms.sourcegitcommit: 36316e2658d3dfa804d798b9f4fb2f9186052144
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 07/29/2020
-  ms.locfileid: "87390201"
-landingContent:
-- title: Знакомство с новыми захватывающими мирами
-  linkLists:
-  - linkListType: overview
+  ms.lasthandoff: 08/01/2020
+  ms.locfileid: "87507708"
+highlightedContent:
+  items:
+  - title: Что такое смешанная реальность?
+    itemType: overview
+    url: mixed-reality.md
+  - title: Знакомство с HoloLens 2
+    itemType: overview
+    url: https://docs.microsoft.com/hololens/hololens2-hardware
+  - title: Опробовать приложение-пример
+    itemType: sample
+    url: samples.md
+  - title: Разработчикам
+    itemType: overview
+    url: development.md
+  - title: ИТ-администраторы
+    itemType: concept
+    url: https://docs.microsoft.com/hololens/hololens-requirements
+  - title: Любители виртуальной реальности
+    itemType: overview
+    url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
+productDirectory:
+  title: Углубленное изучение смешанной реальности
+  summary: У нас есть специализированные курируемые схемы развития основных навыков работы со смешанной реальностью для проектировщиков, разработчиков и ИТ-специалистов.
+  items:
+  - title: Проектирование
+    imageSrc: images/icon-design.jpg
     links:
-    - text: Что такое смешанная реальность?
-      url: get-started-with-mr.md
-    - text: Общие сведения о смешанной реальности
-      url: case-study-expanding-the-design-process-for-mixed-reality.md
-    - text: Участие в жизни сообщества
-      url: community.md
-- title: Проектирование решений для смешанной реальности
-  linkLists:
-  - linkListType: concept
+    - url: design.md
+      text: Проектирование и создание прототипа
+    - url: types-of-mixed-reality-apps.md
+      text: Выбор типа приложения смешанной реальности
+    - url: case-study-expanding-the-design-process-for-mixed-reality.md
+      text: Расширение процесса проектирования
+    - url: app-patterns-landingpage.md
+      text: Сведения об элементах пользовательского интерфейса
+    - url: comfort.md
+      text: Сведения об удобстве работы пользователя
+    - url: interaction-fundamentals.md
+      text: Объяснение основ взаимодействия
+  - title: Разработка
+    imageSrc: images/icon-developer.jpg
     links:
-    - text: Начните проектировать и создавать прототипы
-      url: design.md
-    - text: Знакомство с основными принципами проектирования
-      url: core-concepts-landingpage.md
-    - text: Основы взаимодействия
-      url: interaction-fundamentals.md
-    - text: Включение элементов взаимодействия с пользователем
-      url: app-patterns-landingpage.md
-- title: Разработка решений смешанной реальности
-  linkLists:
-  - linkListType: get-started
+    - url: development.md
+      text: Выбор технологии
+    - url: install-the-tools.md
+      text: Установка инструментов
+    - url: unity-development-overview.md
+      text: Начало работы с Unity
+    - url: unreal-development-overview.md
+      text: Начало работы с Unreal
+    - url: directx-development-overview.md
+      text: Начало работы с Native
+    - url: mrtk-porting-guide.md
+      text: Подготовка приложения для использования с HoloLens 2
+  - title: Развертывание HoloLens 2
+    imageSrc: images/icon-distribution.png
     links:
-    - text: Выбор технологии разработки смешанной реальности
-      url: development.md
-    - text: Установка средств
-      url: install-the-tools.md
-    - text: Обучение по руководствам
-      url: tutorials.md
-    - text: Начало работы с Unity
+    - url: https://docs.microsoft.com/hololens/hololens-requirements
+      text: Подготовка к коммерческому развертыванию
+    - url: https://docs.microsoft.com/hololens/hololens-identity
+      text: Управление удостоверениями пользователей и входом в систему
+    - url: https://docs.microsoft.com/hololens/hololens-enroll-mdm
+      text: Регистрация устройств
+    - url: https://docs.microsoft.com/hololens/hololens-updates
+      text: Управление обновлениями HoloLens
+    - url: https://docs.microsoft.com/hololens/hololens-release-notes
+      text: Заметки о выпуске
+    - url: https://docs.microsoft.com/hololens/hololens-feedback
+      text: Устранение неполадок и поддержка
+conceptualContent:
+  title: Платформы
+  summary: Если для разработки вы используете предпочитаемый язык, подсистему или определенное оборудование, у нас есть все необходимые вам инструменты.
+  items:
+  - title: Unity
+    summary: Создание, настройка и развертывание приложений в Unity с помощью пакета SDK для смешанной реальности.
+    links:
+    - url: unity-development-overview.md
+      itemType: overview
+      text: Обзор разработки в Unity
+    - url: mrtk-getting-started.md
+      itemType: overview
+      text: Что такое MRTK?
+    - url: mr-learning-base-01.md
+      itemType: tutorial
+      text: Серия руководств по HoloLens 2
+    - url: mrtk-101.md
+      itemType: concept
+      text: Основные компоненты
+    - url: shared-experiences-in-unity.md
+      itemType: concept
+      text: Возможности и интерфейсы API платформы
+    - url: exporting-and-building-a-unity-visual-studio-solution.md
+      itemType: deploy
+      text: Развертывание на устройстве или в эмуляторе
+    footerLink:
       url: unity-development-overview.md
-    - text: Начало работы с Unreal
+      text: Дополнительные сведения
+  - title: Unreal
+    summary: Сборка, настройка и развертывание приложений в Unreal с помощью пакета SDK для смешанной реальности.
+    links:
+    - url: unreal-development-overview.md
+      itemType: overview
+      text: Обзор разработки для Unreal
+    - url: unreal-uxt-ch1.md
+      itemType: tutorial
+      text: Серия руководств по созданию приложения для игры в шахматы
+    - url: unreal-gaze-input.md
+      itemType: concept
+      text: Основные компоненты
+    - url: unreal-hololens-camera.md
+      itemType: concept
+      text: Возможности и интерфейсы API платформы
+    - url: performance-recommendations-for-unreal.md
+      itemType: concept
+      text: Рекомендации по повышению производительности
+    - url: unreal-deploying.md
+      itemType: deploy
+      text: Развертывание на устройстве или в эмуляторе
+    footerLink:
       url: unreal-development-overview.md
-    - text: Начало работы с JavaScript
-      url: javascript-development-overview.md
-    - text: Начало работы с нативными средствами (OpenXR/WinRT)
+      text: Дополнительные сведения
+  - title: Собственный
+    summary: Создавайте нативные голографические интерфейсы с помощью OpenXR, WinRT и DirectX.
+    links:
+    - url: directx-development-overview.md
+      itemType: overview
+      text: Обзор разработки для собственной платформы
+    - url: openxr.md
+      itemType: overview
+      text: Что такое OpenXR?
+    - url: openxr-getting-started.md
+      itemType: get-started
+      text: Начало работы с OpenXR
+    - url: openxr-best-practices.md
+      itemType: concept
+      text: Рекомендации по работе с OpenXR
+    - url: openxr-troubleshooting.md
+      itemType: reference
+      text: Устранение неполадок с OpenXR
+    footerLink:
       url: directx-development-overview.md
-- title: Распространение приложений
-  linkLists:
-  - linkListType: deploy
-    links:
-    - text: Руководство по проектированию средств запуска трехмерных приложений
-      url: 3d-app-launcher-design-guidance.md
-    - text: Интеграция покупок из приложения
-      url: in-app-purchases.md
-    - text: Отправка приложений в Microsoft Store
-      url: submitting-an-app-to-the-microsoft-store.md
-- title: Подробные сведения о HoloLens
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: Что такое HoloLens?
-      url: https://docs.microsoft.com/hololens/
-    - text: Оборудование HoloLens 2
-      url: https://docs.microsoft.com/hololens/hololens2-hardware
-    - text: Знакомство с HoloLens 2
-      url: https://docs.microsoft.com/hololens/hololens2-basic-usage
-    - text: Развертывание HoloLens в коммерческой среде
-      url: https://docs.microsoft.com/hololens/hololens-requirements
-- title: Службы для разработчиков Azure
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: Общие сведения об облачных службах
-      url: mixed-reality-cloud-services.md
-    - text: Работа с Пространственными привязками Azure
-      url: https://docs.microsoft.com/azure/spatial-anchors/
-    - text: Разработка с использованием Удаленной отрисовки Azure
-      url: https://docs.microsoft.com/azure/remote-rendering/
-- title: Узнайте, что нового
-  linkLists:
-  - linkListType: whats-new
-    links:
-    - text: Сведения о службах Azure
-      url: azure-services.md
-    - text: Новая версия Microsoft Edge
-      url: new-microsoft-edge.md
-    - text: Присоединяйтесь к сообществу смешанной реальности
-      url: community.md
+      text: Дополнительные сведения
+tools:
+  title: Пакеты SDK и API
+  summary: Начните работу с пакетом SDK для смешанной реальности на любом игровом движке.
+  items:
+  - title: MRTK для Unity
+    imageSrc: images/Final_mrtk-small_logo.png
+    url: https://github.com/microsoft/MixedRealityToolkit-Unity
+  - title: MRTK для Unreal
+    imageSrc: images/Final_mrtk-small_logo.png
+    url: https://github.com/microsoft/MixedRealityToolkit-Unreal
+  - title: Подключаемый модуль XR для Unity
+    imageSrc: images/Final_unity_logo.png
+    url: https://docs.unity3d.com/Manual/com.unity.xr.windowsmr.html
+  - title: Характеристики OpenXR
+    imageSrc: images/Final_mrdl_logo.png
+    url: https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html
+  - title: API OpenXR
+    imageSrc: images/Final_mrdl_logo.png
+    url: https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html
+additionalContent:
+  sections:
+  - title: Дополнительные ресурсы
+    summary: Подготовьте свои приложения для коммерческого развертывания, интегрируйте облачные службы Azure или протестируйте примеры приложений.
+    items:
+    - title: Распространение
+      links:
+      - text: Проектирование средства запуска трехмерных приложений
+        url: 3d-app-launcher-design-guidance.md
+      - text: Создание трехмерных моделей для дома в смешанной реальности
+        url: creating-3d-models-for-use-in-the-windows-mixed-reality-home.md
+      - text: Реализация средств запуска трехмерных приложений в приложениях UWP
+        url: implementing-3d-app-launchers.md
+      - text: Добавление возможности покупки из приложения
+        url: in-app-purchases.md
+      - text: Отправка приложения в Microsoft Store
+        url: submitting-an-app-to-the-microsoft-store.md
+    - title: Облачные службы Azure
+      links:
+      - text: Общие сведения об облачных службах
+        url: mixed-reality-cloud-services.md
+      - text: Работа с Пространственными привязками Azure
+        url: https://docs.microsoft.com/azure/spatial-anchors/
+      - text: Руководства по Пространственным привязкам Azure
+        url: mr-learning-asa-01.md
+      - text: Разработка с использованием Удаленной отрисовки Azure
+        url: https://docs.microsoft.com/azure/remote-rendering/
+      - text: Руководства по службе "Удаленная отрисовка Azure"
+        url: https://docs.microsoft.com/en-us/azure/remote-rendering/tutorials/unity/tutorial-landing
+    - title: Примеры приложений для HoloLens 2
+      links:
+      - text: Surfaces
+        url: sampleapp-surfaces.md
+      - text: Periodic Table of the Elements 2.0
+        url: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
+      - text: Galaxy Explorer 2.0.
+        url: galaxy-explorer-update.md

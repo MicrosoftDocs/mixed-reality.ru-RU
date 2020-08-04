@@ -102,7 +102,7 @@
 
 <!-- Develop top level folder -->
 # Разработка
-## [Изучение инструментов и архитектуры](development.md)
+## [Введение в разработку приложений смешанной реальности](development.md)
 ## [Установка средств](install-the-tools.md)
 ## [Общие сведения об облачных службах](mixed-reality-cloud-services.md)
 
@@ -222,6 +222,7 @@
 #### [Использование Vuforia с Unity](vuforia-development-overview.md)
 
 ### Примеры приложений
+#### [Обзор](samples.md)
 #### HoloLens 2
 ##### [Surfaces](sampleapp-surfaces.md)
 ##### [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
