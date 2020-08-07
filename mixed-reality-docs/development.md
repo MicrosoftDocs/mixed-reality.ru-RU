@@ -4,164 +4,60 @@ title: Изучите инструменты и архитектуру.
 description: Документация для разработчиков приложений смешанной реальности для HoloLens и иммерсивных гарнитур.
 author: grbury
 ms.author: grbury
-ms.date: 04/27/2020
+ms.date: 07/31/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Смешанная реальность, создание, разработка, HoloLens, Unity, Unreal, DirectX
-ms.openlocfilehash: 3c874e45e555ec6defa611bd5404abbb18e6612e
-ms.sourcegitcommit: 8daefb763d1f23fe02b95b766b00b373f04c5c2d
+ms.openlocfilehash: 56da3a795fe8b2cfcc5eca371bc00c87d72b4a8c
+ms.sourcegitcommit: ef0bf03833eda826ed0b884859b4573775112aba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86447860"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87476837"
 ---
-# <a name="learn-the-tools-and-architecture"></a>Изучите инструменты и архитектуру.
+# <a name="introduction-to-mixed-reality-development"></a>Введение в разработку приложений смешанной реальности
 
-![Абстрактная трехмерная сфера](images/07_Development.png)
+![Абстрактная трехмерная сфера](images/development-hero-image.png)
 
-## <a name="expand-your-design-process"></a>[Расширение процесса разработки](case-study-expanding-the-design-process-for-mixed-reality.md)
-
-Когда корпорация Майкрософт представила HoloLens аудитории нетерпеливых разработчиков в 2016 году, наша группа уже сотрудничала со студиями в корпорации Майкрософт и сторонними студиями для разработки средств запуска устройств. Эти команды учились, открывая новые возможности и сталкиваясь с проблемами в новой области проектирования смешанной реальности. [Подробнее](case-study-expanding-the-design-process-for-mixed-reality.md)
-
-
-<br>
-
----
-
+Смешанная реальность — это огромное пространство, точка, в которой сталкиваются реальный и виртуальный миры. Его возможности безграничны — все зависит от вас. Выберите свой движок, скачайте необходимые средства и достаньте клавиатуру. Приветствуем в экосистеме смешанной реальности — пришло время творить.
 
 ## <a name="what-technology-path-are-you-interested-in"></a>Какая технология вас интересует? 
 
+При изучении нашей документации вы можете выбрать разные направления разработки. Первый шаг заключается в подборе оптимальной технологии. Если вы уже определились с технологией, просто откройте соответствующую вкладку ниже. Если вы еще раздумываете или только начинаете разработку, изучите все технологии, их преимущества, доступные платформы и инструменты и приступайте к творчеству!
 
-:::row:::   
-    :::column:::    
-       [![Unity](images/unity_logo.png)](development.md#unity)<br>
-        **[Unity](development.md#unity)**<br>   
-        Unity позволяет создать кроссплатформенное полнофункциональное приложение смешанной реальности.
-    :::column-end:::    
-    :::column:::    
-        [![Unreal](images/Unreal_logo.png)](development.md#unreal)<br>
-        **[Unreal](development.md#unreal)**<br> 
-        В Unreal Engine привлекательные возможности смешанной реальности сочетаются с поддержкой рабочей среды. 
-    :::column-end:::
-    :::column:::    
-        [![JavaScript](images/web-logo.png)](development.md#javascript)<br>
-        **[JavaScript](development.md#javascript)**<br>
-        API устройства JavaScript и WebXR — это открытая спецификация, которая позволяет работать со смешанной реальностью в браузере на любой платформе.    
-    :::column-end:::        
-    :::column:::    
-        [![Собственные решения](images/VisualStudio-small_logo.png)](development.md#native)<br>
-        **[Собственные решения](development.md#native)**<br> 
-        Создавайте приложения смешанной реальности, непосредственно используя в коде интерфейсы API Windows Mixed Reality. 
-    :::column-end:::    
-:::row-end:::
+[!INCLUDE[](~/includes/tech-path-overview.md)]
 
-<br>
+## <a name="whats-next"></a>Дальнейшие действия
 
----
+Теперь, когда вы выбрали технологию, получите необходимые инструменты для начала разработки.
 
-## <a name="unity"></a>Unity
+> [!div class="nextstepaction"]
+> [Установка средств](install-the-tools.md)
 
-
-### <a name="unity-development-overview"></a>[Обзор разработки в Unity](unity-development-overview.md)
-Рекомендуется потратить некоторое время на изучение руководств по Unity. Если вам нужны ресурсы, в Unity есть исчерпывающий портал Asset Store. 
-
-<br>
-
-### <a name="microsofts-mixed-reality-toolkit-mrtk-for-unity"></a>[Mixed Reality Toolkit (MRTK) для Unity от корпорации Майкрософт](mrtk-getting-started.md)
-MRTK версии 2 для Unity — это кроссплатформенный пакет SDK с открытым кодом, предназначенный для приложений смешанной реальности. MRTK версии 2 используется для ускорения разработки приложений, нацеленных на Microsoft HoloLens, иммерсивные гарнитуры (гарнитур виртуальной реальности) Windows Mixed Reality и платформу OpenVR.
-
-<br>
-
-### <a name="open-source-sample-apps-and-step-by-step-tutorials"></a>[Примеры приложений с открытым кодом и пошаговые руководства](tutorials.md)
-Руководства по HoloLens 2 призваны помочь разработчикам в изучении методик и рекомендаций по разработке приложений смешанной реальности. Эти руководства основаны на Mixed Reality Toolkit 2.0 (MRTK 2.0).
-
-<br>
-
-### <a name="hand-interaction-examples-scene-mrtk-for-unity"></a>[Пример сцены для взаимодействия с помощью рук (МРТК) для Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor)
-Пример сцены HandInteractionExamples.unity содержит различного вида взаимодействия и элементы управления пользовательского интерфейса, выделяемые при вводе с помощью рук.
->[!NOTE]
->Требует установки пакета МРТК Foundation и пакета примеров для Unity.
-
-### <a name="eye-tracking-examples-mrtk-for-unity"></a>[Примеры с отслеживанием глаз (МРТК) для Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html)
-На этой странице описывается, как быстро приступить к работе с отслеживанием глаз в МРТК, взяв за основу предоставленные примеры с отслеживанием глаз для МРТК.
->[!NOTE]
->Требует установки пакета МРТК Foundation и пакета примеров для Unity.
-
-<br>
-
----
-
-## <a name="unreal"></a>Unreal
-
-### <a name="unreal-development-overview"></a>[Обзор разработки для Unreal](unreal-development-overview.md)
-Узнайте, как создать приложение смешанной реальности на платформе Unreal.
-
-<br>
-
-### <a name="microsofts-mixed-reality-toolkit-mrtk-for-unreal"></a>[Набор средств для смешанной реальности для Unreal, созданный корпорацией Майкрософт](https://github.com/microsoft/MixedRealityToolkit-Unreal)
-Набор средств смешанной реальности для Unreal (MRTK-Unreal) представляет собой набор таких компонентов, как подключаемые модули, примеры и документы, созданных для ускорения разработки приложений смешанной реальности с использованием Unreal Engine.
-
-<br>
-
-### <a name="open-source-sample-apps-and-a-step-by-step-tutorial"></a>[Примеры приложений с открытым кодом и пошаговые руководства](unreal-uxt-ch1.md)
-В руководстве по началу разработки систем смешанной реальности в Unreal описан полный процесс создания приложения HoloLens 2 с использованием [средств разработки пользовательского интерфейса (UX) для Unreal версии 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
-
-<br>
-
----
-
-## <a name="javascript"></a>JavaScript   
-
-### <a name="javascript-development-overview"></a>[Обзор разработки в JavaScript](javascript-development-overview.md)   
-Узнайте, как создать приложение смешанной реальности для любой платформы с помощью JavaScript.
-
-<br>
-
----
-
-## <a name="native"></a>Собственный
-
-
-### <a name="native-development-overview"></a>[Обзор разработки для собственной платформы](directx-development-overview.md)
-Самый быстрый способ создать собственное приложение смешанной реальности.
-
-<br>
-
-### <a name="directx-uwp-app-templates-for-mixed-reality"></a>[Шаблоны приложений UWP с использованием DirectX для смешанной реальности](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)
-Все необходимое, чтобы начать создание приложения смешанной реальности с помощью DirectX.
-
-<br>
-
----
-
-
-## <a name="what-would-you-like-to-do-next"></a>Что бы вы хотели сделать дальше?
-
+<!-- 
+## What would you like to do next?
 
 :::row:::
     :::column:::
-       [![Изучение основ](images/icon-lightbulb.png)](get-started-with-mr.md#understand-the-basics)<br>
-        **[Изучение основ](get-started-with-mr.md#understand-the-basics)**<br>
-        Получите более полное представление о том, что определяет смешанную реальность и как она используется.
+       [![Understand the basics](images/icon-lightbulb.png)](get-started-with-mr.md#understand-the-basics)<br>
+        **[Understand the basics](get-started-with-mr.md#understand-the-basics)**<br>
+        Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::
     :::column:::
-        [![Станьте автором](images/icon-design.jpg)](design.md)<br>
-         **[Станьте автором](design.md)**<br>
-        Изучите основные понятия, необходимые для начала разработки и создания прототипов.
+        [![Become a creator](images/icon-design.jpg)](design.md)<br>
+         **[Become a creator](design.md)**<br>
+        Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
     :::column:::
-        [![Установка инструментов](images/icon-developer.jpg)](install-the-tools.md)<br>
-         **[Установка инструментов](install-the-tools.md)**<br>
-        Используйте контрольный список установки, чтобы получить инструменты, необходимые для создания приложений для HoloLens и смешанной реальности.
+        [![Install the tools](images/icon-developer.jpg)](install-the-tools.md)<br>
+         **[Install the tools](install-the-tools.md)**<br>
+        Use the installation checklist to get the tools you need to build apps for HoloLens and mixed reality.
     :::column-end:::
     :::column:::
-        [![Посетите мероприятие](images/icon-calendar.jpg)](sf-academy-events.md)<br>
-         **[Посетите мероприятие](sf-academy-events.md)**<br>
-        Ознакомьтесь с оборудованием и получите практическое руководство по созданию первого приложения HoloLens 2.
+        [![Come to an event](images/icon-calendar.jpg)](sf-academy-events.md)<br>
+         **[Come to an event](sf-academy-events.md)**<br>
+        See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
 :::row-end:::
+-->
 
-
-<br>
-
-<br>
