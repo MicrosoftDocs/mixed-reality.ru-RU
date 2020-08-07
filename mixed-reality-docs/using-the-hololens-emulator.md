@@ -7,12 +7,12 @@ ms.date: 7/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulator
-ms.openlocfilehash: e7c89cc2d839edc46a73a765acad603341b52716
-ms.sourcegitcommit: 3c867622e99c07f95db92e88551d2b904ceb8def
+ms.openlocfilehash: 597a0a9103f8313d26449b996c1e7af6f5619b2c
+ms.sourcegitcommit: 2f5f95a9ca1b02d94eb9163f0f4ff6b1e4126de2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86383076"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87376666"
 ---
 # <a name="using-the-hololens-emulator"></a>Использование эмулятора HoloLens
 
@@ -253,6 +253,8 @@ ms.locfileid: "86383076"
 
 * При удалении эмулятора HoloLens 2 образ жесткого диска (Flash.vhdx) может остаться на жестком диске в папке Windows Kits\10\Emulation\HoloLens\<build number>.  Этот файл можно спокойно удалить.
 * Включение аппаратного ускорения графики может привести к сбою приложений Holographic в некоторых системах с графическими технологиями AMD или Intel.  Чтобы устранить эту проблему, отключите аппаратное ускорение графики в окне средств эмулятора.
+* После установки последних обновлений Windows по состоянию на июль 2020 г. аппаратное ускорение графики в эмуляторе HoloLens (1-го поколения) может быть больше не доступно.
+Компонент RemoteFX, необходимый для аппаратного ускорения графики, теперь не рекомендуется и будет удален в будущем выпуске Windows.  Чтобы повторно включить аппаратное ускорение графики, используйте [командлет PowerShell Enable-VMRemoteFXPhysicalVideoAdapter](https://docs.microsoft.com/powershell/module/hyper-v/enable-vmremotefxphysicalvideoadapter?view=win10-ps).  Дополнительные сведения см. в [документации по прекращению поддержки и удалению RemoteFX в Windows](https://support.microsoft.com/help/4570006/update-to-disable-and-remove-the-remotefx-vgpu-component). 
 
 ## <a name="troubleshooting"></a>Диагностика
 

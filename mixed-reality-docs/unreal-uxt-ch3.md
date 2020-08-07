@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, смешанная реальность, учебник, начало работы, MRTK, UXT, средства разработки пользовательского интерфейса, средства UX, документация
-ms.openlocfilehash: f79985b2ce9e26971c23acf36a3538bf7f3c166e
-ms.sourcegitcommit: ff0e89b07d0b4a945967d64c5b8845a21dc5f476
+ms.openlocfilehash: 105e817e54f7de12afdcab9fde1dfce0c38ff4a7
+ms.sourcegitcommit: 2f5f95a9ca1b02d94eb9163f0f4ff6b1e4126de2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84879562"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87376386"
 ---
 # <a name="3-setting-up-your-project-for-mixed-reality"></a>3. Настройка проекта для смешанной реальности
 
@@ -57,7 +57,7 @@ ms.locfileid: "84879562"
 Пока что в проекте недостает объекта-игрока. В Unreal объект **Pawn** представляет игрока в игре, но в нашем случае вместо игры будет взаимодействие в HoloLens 2.
 
 1. В папке **Content** выберите **Add New > Blueprint Class** (Добавить > Класс схемы) и разверните расположенный внизу раздел **All Classes** (Все классы). 
-    * Найдите элемент **DefaultPawn**, нажмите кнопку **Select** (Выбрать) и дважды щелкните новый ресурс, чтобы открыть его. 
+    * Найдите элемент **DefaultPawn**, нажмите кнопку **Select** (Выбрать), присвойте ему имя **MRPawn** и дважды щелкните ресурс, чтобы открыть его. 
 
 ![Создание нового объекта Pawn, наследующего от DefaultPawn](images/unreal-uxt/3-defaultpawn.PNG)
 
@@ -66,9 +66,13 @@ ms.locfileid: "84879562"
 
 2. В панели **Components** (Компоненты) выберите компонент **CollisionComponent**, а затем в панели **Details** (Сведения) прокрутите вниз до раздела **Collision** (Столкновение). 
     * Щелкните стрелку раскрывающегося списка **Collision Presets** (Предустановленные режимы столкновения) и выберите в нем значение **NoCollision**. 
-    * Проделайте то же самое с компонентом **MeshComponent**, а затем скомпилируйте (**Compile**) и сохраните (**Save**) схему. 
+    * Выполните те же действия для компонента **MeshComponent**.
 
 ![Изменение параметров столкновения для объекта Pawn](images/unreal-uxt/3-nocollision.PNG)
+
+3. Щелкните **Add Component (Добавить компонент) > Camera (Камера)** в панели **Components** (Компоненты) и присвойте ему имя **Camera** (Камера). Это позволит камере игрока перемещаться вместе с устройством HoloLens 2.
+
+4. **Скомпилируйте** и **сохраните** схему.
 
 Закончив с этим, вернитесь в главное окно.
 

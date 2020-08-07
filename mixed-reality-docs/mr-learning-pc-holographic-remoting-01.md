@@ -3,16 +3,16 @@ title: Учебники по голографическому удаленном
 description: Пройдите этот курс, чтобы узнать, как реализовать удаленное взаимодействие в режиме смешанной реальности между вашим компьютером и HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 05/19/2020
+ms.date: 07/29/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: cbbad9548abeb1b8392b99d187b5b051d5b4ddd4
-ms.sourcegitcommit: 96ae8258539b2f3edc104dd0dce8bc66f3647cdd
+ms.openlocfilehash: 4929634d70a082e835eb7bd6b5680719338a5e92
+ms.sourcegitcommit: ef0bf03833eda826ed0b884859b4573775112aba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86306735"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87476976"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Начало работы с голографическим удаленным взаимодействием с ПК
 
@@ -38,10 +38,11 @@ ms.locfileid: "86306735"
 * Устройство HoloLens 2, [настроенное для разработки](using-visual-studio.md#enabling-developer-mode).
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> с Unity 2019.3.X и модулем поддержки сборки универсальной платформы Windows.
 
->Настоятельно рекомендуется ознакомиться с серией учебников по началу работы или иметь хотя бы базовый опыт работы с Unity и MRTK.
+Мы **настоятельно рекомендуем** предварительно ознакомиться с серией учебников [по началу работы](mr-learning-base-01.md) или иметь хотя бы базовый опыт работы с Unity и MRTK.
 
 > [!IMPORTANT]
-> Рекомендуемая версия Unity для этой серии учебников — Unity 2019.3.X. Это заменяет все требования к версии Unity и рекомендации, указанные выше.
+> * Рекомендуемая версия Unity для этой серии учебников — Unity 2019.3.X. Это заменяет все требования к версии Unity и рекомендации, указанные выше.
+> * Голографическое удаленное взаимодействие с проектами MRTK будет работать только с устаревшими API XR. Паке SDK XR в настоящее время не поддерживается.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Создание и подготовка проекта Unity
 
@@ -55,7 +56,7 @@ ms.locfileid: "86306735"
 
 1. [Импорт требуемых ресурсов TextMeshPro.](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 
-1. [Импорт набора средств для смешанной реальности (MRTK).](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+1. [Импорт набора средств для Смешанной реальности (MRTK).](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 
 1. [Настройка проекта Unity.](mr-learning-base-02.md#configuring-the-unity-project)
 
@@ -168,11 +169,11 @@ ms.locfileid: "86306735"
 
 Из этого раздела вы узнаете, как включить отслеживание взгляда в нашем демонстрационном проекте. Например, вы реализуете функции, чтобы выделить прикрепленные к деталям MarsCuriosityRover подсказки, когда вы на них смотрите, и скрыть их при отводе взгляда.
 
-### <a name="1-identify-target-objects-and-associated-tooltips"></a>1. Определение целевых объектов и связанных с ними подсказок.
+### <a name="1-identify-target-objects-and-associated-tooltips"></a>1. Определите целевые объекты и связанные с ними подсказки.
 
 В окне Hierarchy (Иерархия) выберите объект ModelParent. Разверните иерархию ***MarsCuriosity -> Rover***, чтобы найти пять основных деталей MarsCuriosityRover: **POI-Camera**, **POI-Wheels**, **POI-Antena**, **POI-Spectrometer** и **POI-RUHF Antenna**.
 
-* Обратите внимание на пять соответствующих объектов подсказок, связанных с деталями MarsCuriosityRover в окне Hierarchy (Иерархия). 
+* Обратите внимание на пять соответствующих объектов подсказок, связанных с деталями MarsCuriosityRover в окне Hierarchy (Иерархия).
 * Эти объекты будут настроены, чтобы выделять элементы при просмотре деталей MarsCuriosityRover.
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step1-1.png)

@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, смешанная реальность, учебник, начало работы, MRTK, UXT, средства разработки пользовательского интерфейса, средства UX, документация
-ms.openlocfilehash: 473f47884bbc492451007436f80e8d9762cf1ab7
-ms.sourcegitcommit: 45da0a056fa42088ff81ccdd11232830fbe8430f
+ms.openlocfilehash: e81da5a4550f258b629443df9b2b655d81108c21
+ms.sourcegitcommit: 2f5f95a9ca1b02d94eb9163f0f4ff6b1e4126de2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84720260"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87376366"
 ---
 # <a name="5-adding-a-button--resetting-piece-locations"></a>5. Добавление кнопки и сброс расположений фигур
 
@@ -59,8 +59,8 @@ ms.locfileid: "84720260"
     
 Из этого события мы будем вызывать функцию **Reset Location** (Сброс расположения) элемента **WhiteKing**, для чего требуется ссылка на субъект **WhiteKing** на данном уровне. 
 
-1.  Прокрутите панель **Details** (Сведения) до раздела **Variables** (Переменные), нажмите кнопку **+** и присвойте вновь созданной переменной имя **WhiteKing**. 
-    * Щелкните раскрывающийся список рядом с полем **Variable Type** (Тип переменной), затем выполните поиск по слову **WhiteKing** и выберите **Object Reference** (Ссылка на объект). 
+1.  В панели **My Blueprint** (Моя схема) перейдите к разделу **Variables** (Переменные), нажмите кнопку **+** и присвойте переменной имя **WhiteKing**. 
+    * На панели **Details** (Сведения) щелкните раскрывающийся список рядом с полем **Variable Type** (Тип переменной), затем выполните поиск по слову **WhiteKing** и выберите **Object Reference** (Ссылка на объект). 
     * Установите флажок **Instance Editable** (Редактируемый экземпляр). Это позволит задавать значение переменной из уровня Main. 
 
 ![Создание переменной](images/unreal-uxt/5-var.PNG)

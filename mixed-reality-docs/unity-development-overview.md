@@ -3,28 +3,26 @@ title: Обзор разработки в Unity
 description: Приступите к созданию приложений смешанной реальности в Unity.
 author: thetuvix
 ms.author: kurtie
-ms.date: 10/25/2018
+ms.date: 07/29/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, смешанная реальность, разработка, приступая к работе, новый проект, перенос, возможность, камера, имитация, эмуляция, документация
-ms.openlocfilehash: e0fe775f5fe891416145d91e52a5a801e049c568
-ms.sourcegitcommit: 9df82dba06a91a8d2cedbe38a4328f8b86bb2146
+ms.openlocfilehash: 4679e1a2b58a7e0d77e6b295803624a4de1fac19
+ms.sourcegitcommit: ef0bf03833eda826ed0b884859b4573775112aba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "81433420"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87476716"
 ---
 # <a name="unity-development-overview"></a>Обзор разработки в Unity
 
 Самым быстрым средством создания [приложения смешанной реальности](app-views.md) является [Unity](https://unity.com). Рекомендуется потратить некоторое время на изучение [руководств по Unity](https://unity3d.com/learn/tutorials). Если вам нужны ресурсы, в Unity есть исчерпывающий портал [Asset Store](https://www.assetstore.unity3d.com/). Изучив основы Unity, вы можете перейти к [руководствам](tutorials.md), чтобы изучить особенности разработки смешанной реальности с помощью Unity. Обязательно посетите [форумы по смешанной реальности Unity](https://forum.unity3d.com/forums/hololens.102/), чтобы присоединиться к остальным участникам сообщества разработчиков приложений смешанной реальности в Unity и находить решения проблем, с которыми вы можете столкнуться.
 
-Чтобы приступить к созданию приложений смешанной реальности с помощью Unity, сначала [установите инструменты](install-the-tools.md). 
-
->[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Setting-up-your-HoloLens-2-development-environment/player?format=ny]
+Чтобы приступить к созданию приложений смешанной реальности с помощью Unity, сначала [установите инструменты](install-the-tools.md).
 
 ## <a name="new-unity-project-with-mixed-reality-toolkit"></a>Создание проекта Unity с помощью набора средств для смешанной реальности (MRTK) 
 
-Проще всего разрабатывать приложения в Unity с помощью набора средств для смешанной реальности. Это обеспечит автоматическую настройку проекта и предоставит набор функций смешанной реальности, позволяющих ускорить разработку. Чтобы узнать больше и приступить к работе, ознакомьтесь с [набором средств для смешанной реальности версии 2](mrtk-getting-started.md). 
+Проще всего разрабатывать приложения в Unity с помощью Mixed Reality Toolkit, который обеспечит автоматическую настройку проекта и предоставит набор функций смешанной реальности, позволяющих ускорить разработку. Чтобы узнать больше и приступить к работе, ознакомьтесь с [Mixed Reality Toolkit версии 2](mrtk-getting-started.md). 
 
 ## <a name="porting-an-existing-unity-app-to-windows-mixed-reality"></a>Перенос существующего приложения Unity в Windows Mixed Reality
 
@@ -32,7 +30,7 @@ ms.locfileid: "81433420"
 
 ## <a name="configuring-new-unity-project-for-windows-mixed-reality"></a>Настройка нового проекта Unity для Windows Mixed Reality
 
-Если вы хотите создать проект Unity без импорта набора средств для смешанной реальности, то вам потребуется вручную настроить несколько параметров Unity для Windows Mixed Reality. Они делятся на две категории: параметры проекта и параметры сцены. Пошаговые инструкции приведены в разделе [Настройка нового проекта Unity для Windows Mixed Reality](Configure-Unity-Project.md).
+Если вы хотите создать проект Unity без импорта Mixed Reality Toolkit, то вам потребуется настроить несколько параметров Unity для Windows Mixed Reality. Они делятся на две категории: параметры проекта и параметры сцены. Пошаговые инструкции приведены в разделе [Настройка нового проекта Unity для Windows Mixed Reality](Configure-Unity-Project.md).
 
 ## <a name="adding-mixed-reality-capabilities-and-inputs"></a>Добавление возможностей и средств ввода смешанной реальности
 

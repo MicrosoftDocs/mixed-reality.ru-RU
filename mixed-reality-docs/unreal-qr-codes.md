@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, смешанная реальность, разработка, функции, документация, руководства, голограммы, QR-коды
-ms.openlocfilehash: cf6c113f6bf4a13a96f46d6420a3093966455c3b
-ms.sourcegitcommit: 45da0a056fa42088ff81ccdd11232830fbe8430f
+ms.openlocfilehash: a53fad14ab76136f1da419379dd39eca3a29701a
+ms.sourcegitcommit: 2f5f95a9ca1b02d94eb9163f0f4ff6b1e4126de2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84720390"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87376106"
 ---
 # <a name="qr-codes-in-unreal"></a>QR-коды в Unreal
 
@@ -32,6 +32,8 @@ ms.locfileid: "84720390"
     + Разверните раздел **Capabilities** (Возможности) и установите флажок **Webcam** (Веб-камера).  
 
 Необходимо также включить отслеживание QR-кодов, [добавив ресурс ARSessionConfig](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset) (по умолчанию оно выключено).
+
+Непосредственно перед использованием вручную включите отслеживание, вызвав функцию `UHoloLensARFunctionLibrary::StartQRCodeCapture()`. Завершив отслеживание кода QR, отключите его, вызвав функцию `UHoloLensARFunctionLibrary::StopCameraCapture()`, чтобы уменьшить нагрузку на ресурсы устройства. 
 
 ## <a name="setting-up-a-tracked-image"></a>Настройка отслеживаемого изображения
 

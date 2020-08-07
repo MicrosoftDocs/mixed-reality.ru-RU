@@ -1,27 +1,27 @@
 ---
 layout: LandingPage
-title: Руководства и примеры приложений
-description: Примеры кода и руководства по разработке смешанной реальности.
+title: Учебники
+description: Учебники по разработке смешанной реальности.
 author: keveleigh
 ms.author: kurtie
-ms.date: 10/22/2019
+ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, академия, руководство
-ms.openlocfilehash: b1c448e7a5289c6d099d73c3bcf18d0f552dbc51
-ms.sourcegitcommit: 96ae8258539b2f3edc104dd0dce8bc66f3647cdd
+keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, учебник
+ms.openlocfilehash: dc446be531e2a2fa1b27cdaefbf3adfeb7814740
+ms.sourcegitcommit: ef0bf03833eda826ed0b884859b4573775112aba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86303655"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87477006"
 ---
-# <a name="tutorials-and-sample-apps"></a>Руководства и примеры приложений
+# <a name="tutorials"></a>Учебники 
 
 ![Пользователь HoloLens 2](images/08_Tutorials.png)
 
 Сейчас все наши руководства и примеры приложений основаны на Unity или Unreal. По мере разработки содержимого для других подсистем и платформ вы сможете находить соответствующие руководства по заголовку в содержании.
 
-## <a name="hololens-2-tutorials"></a>Руководства по HoloLens 2
+## <a name="hololens-2"></a>HoloLens 2 
 
 Руководства по HoloLens 2 призваны помочь разработчикам в изучении методик и рекомендаций по разработке приложений смешанной реальности. Учебники по Unity основаны на [наборе средств для смешанной реальности (MRTK) версии 2.0](https://github.com/microsoft/MixedRealityToolkit-Unity), а в учебниках по Unreal используются [средства разработки пользовательского интерфейса (UX) для Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 
@@ -32,21 +32,7 @@ ms.locfileid: "86303655"
 * Руководства по многопользовательским возможностям — [1 из 5. Введение](mr-learning-sharing-01.md)
 * Руководства по использованию службы "Речь" в Azure— [1 из 4, "Интеграция и использование средств распознавания и транскрибирования речи"](mrlearning-speechSDK-ch1.md)
 
-## <a name="open-source-sample-apps"></a>Примеры приложений с открытым кодом
-
-Примеры приложений с открытым кодом — это приложения, созданные нашими группами разработчиков, для которых мы предоставили исходный код, чтобы другие разработчики могли просматривать его и изучать наши проекты.
-
-### <a name="hololens-2-open-source-sample-apps"></a>Примеры приложений с открытым кодом для HoloLens 2
-* [Surfaces](sampleapp-surfaces.md)
-* [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
-* [Galaxy Explorer 2.0](galaxy-explorer-update.md)
-
-### <a name="hololens-1st-gen-open-source-sample-apps"></a>Примеры приложений с открытым кодом для HoloLens (1-го поколения)
-* [Periodic Table of the Elements 1.0](periodic-table-of-the-elements.md)
-* [Galaxy Explorer 1.0.](galaxy-explorer.md)
-* [Лунный модуль](lunar-module.md)
-
-## <a name="mixed-reality-academy-tutorials"></a>Руководства Mixed Reality Academy
+## <a name="mixed-reality-academy"></a>Mixed Reality Academy 
 
 Academy Mixed Reality — это набор пошаговых руководств в сети с соответствующими файлами проектов.
 
